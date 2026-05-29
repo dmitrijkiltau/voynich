@@ -2,11 +2,14 @@
 	let { LEXICON, onInsert } = $props();
 
 	const CATEGORIES = [
-		{ id: 'symptom', label: 'A. Medizinische Nomina & Symptome' },
-		{ id: 'prognose', label: 'B. Prognose-Termini' },
-		{ id: 'syntax',   label: 'C. Syntaktische Konnektoren' },
-		{ id: 'verb',     label: 'D. Verbformen' },
-		{ id: 'akteur',   label: 'E. Akteure, Anatomie & Botanik' },
+		{ id: 'symptom',    label: 'A. Medizinische Nomina — Symptome & Befunde' },
+		{ id: 'prognose',   label: 'B. Prognose-Termini' },
+		{ id: 'kolophon',   label: 'C. Kolophon-Formeln' },
+		{ id: 'syntax',     label: 'D. Syntaktische Konnektoren' },
+		{ id: 'akteur',     label: 'E. Akteure, Anatomie & Botanika' },
+		{ id: 'verb',       label: 'F. Verbparadigma' },
+		{ id: 'kompositum', label: 'G. Bestätigte Komposita' },
+		{ id: 'possessiv',  label: 'H. Possessiv-Formen' },
 	];
 
 	/** @param {string} cat */

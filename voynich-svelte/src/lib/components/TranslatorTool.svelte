@@ -347,7 +347,7 @@
 	<!-- ── Methodology note ── -->
 	<div class="box red method-note">
 		<div class="box-title">Hinweis zur Methodik</div>
-		<p>Das Tool arbeitet auf dem bestätigten Lexikon v5.2 (65 Einträge, ★★★ oder höher). Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
+		<p>Das Tool arbeitet auf dem bestätigten Lexikon v5.3 (85 Einträge, ★★★ oder höher). Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
 	</div>
 
 </section>

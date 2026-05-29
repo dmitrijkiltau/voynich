@@ -71,7 +71,7 @@
 		<div class="sidebar-brand">
 			<div class="brand-kicker">Forschungswerkzeug</div>
 			<div class="brand-name">Voynich</div>
-			<div class="brand-sub">EVA → Hebräisch · v5.2</div>
+			<div class="brand-sub">EVA → Hebräisch · v5.3</div>
 		</div>
 
 		<nav class="sidebar-nav">
@@ -87,7 +87,7 @@
 		</nav>
 
 		<div class="sidebar-stats">
-			{#each [['65', 'Lexikon'], ['88%', 'Rückw.-Test'], ['22', 'Regeln']] as [n, l]}
+			{#each [['85', 'Lexikon'], ['88%', 'Rückw.-Test'], ['23', 'Regeln']] as [n, l]}
 				<div class="sidebar-stat">
 					<span class="ss-n">{n}</span>
 					<span class="ss-l">{l}</span>
@@ -102,13 +102,13 @@
 	<main class="main-content">
 
 		<header class="page-header">
-			<div class="kicker">Forschungswerkzeug · Voynich-Manuskript · Mapping v5.2</div>
+			<div class="kicker">Forschungswerkzeug · Voynich-Manuskript · Mapping v5.3</div>
 			<h1>EVA → Hebräisch-Übersetzer</h1>
 			<div class="subtitle">Interaktives Übersetzungstool auf Basis des formalen Zeichenmappings</div>
 			<div class="meta-line">
 				<span>Mischna-Hebräisch / Jüdisch-Aramäisch</span>
 				<span>·</span>
-				<span>65 Lexikoneinträge · 22 Grammatikregeln</span>
+				<span>85 Lexikoneinträge · 23 Grammatikregeln</span>
 				<span>·</span>
 				<span>Mai 2026</span>
 			</div>
@@ -138,7 +138,7 @@
 
 		<!-- III. LEXIKON -->
 		<section class="section" id="lexikon">
-			<h2>III. Bestätigtes Lexikon (65 Einträge)</h2>
+			<h2>III. Bestätigtes Lexikon (85 Einträge)</h2>
 			<p>Alle Einträge mit ★★★ oder höher. Klick auf eine Zeile fügt das EVA-Wort in die Eingabe ein.</p>
 			<LexiconSection {LEXICON} onInsert={insertEva} />
 		</section>
@@ -162,8 +162,8 @@
 		</section>
 
 		<footer class="page-footer">
-			<p>Voynich-Manuskript — EVA-Übersetzer · Auf Basis des Mapping-Dokuments v5.2 · Mai 2026</p>
-			<p>Lexikon: 65 Einträge · Grammatikregeln: 22 · Rückwärtstest: 88 % (23/26)</p>
+			<p>Voynich-Manuskript — EVA-Übersetzer · Auf Basis des Mapping-Dokuments v5.3 · Mai 2026</p>
+			<p>Lexikon: 85 Einträge · Grammatikregeln: 23 · Rückwärtstest: 88 % (23/26)</p>
 			<p class="disclaimer">Dieses Tool ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein.<br>
 			Konfidenzbewertungen beziehen sich auf Konsistenz im vorliegenden Korpus.</p>
 			<a href="https://kiltau.com/legal-notice" target="_blank" rel="noopener" class="legal-link">Impressum & Datenschutz</a>

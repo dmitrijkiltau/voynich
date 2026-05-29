@@ -70,13 +70,13 @@
   <div>
     <h3>5 · f103r P.42 — Sterbens-Terminologie</h3>
     <div class="box blue ref-card">
-      <div class="layer-eva">tshey · sheol · chalal</div>
-      <div class="layer-heb">חָלָל · שְׁאוֹל · שֵׁי</div>
-      <div class="layer-en">"Wohlbefinden — Scheol — Sterbender."</div>
+      <div class="layer-eva">tshey · sheol · cheolshy · chalal</div>
+      <div class="layer-heb">חָלָל · [כְּעוֹלְשִׁי] · שְׁאוֹל · תְּשֵׁי</div>
+      <div class="layer-en">"Erschöpfung — Scheol — [wie die Last] — der Sterbende."</div>
       <p class="ref-note">
-        Dreifache Prognose: Gabe (Hoffnung) → Tod → Patient im Sterben.
+        Dreifache Prognose: Erschöpfung → Tod → Patient im Sterben. <span class="eva">chalal</span> erscheint ausschließlich <em>nach</em> sheol.
       </p>
-      <button class="ref-insert-btn" onclick={() => onInsert('tshey sheol chalal')}>In Übersetzer laden</button>
+      <button class="ref-insert-btn" onclick={() => onInsert('tshey sheol cheolshy chalal')}>In Übersetzer laden</button>
     </div>
   </div>
 </div>

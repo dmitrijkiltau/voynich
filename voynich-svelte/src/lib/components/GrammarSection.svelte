@@ -3,7 +3,8 @@
 		{ eva: 'qo-', heb: 'וְ',  fn: 'Vav conjunctive „und/auch"',              ex_eva: 'qokedam',  ex_heb: 'וְכְּדָּם',    stars: '★★★★',  is5: false },
 		{ eva: 'o-',  heb: 'עַ',  fn: 'Ayin „auf/bei/von"',                      ex_eva: 'okol',     ex_heb: 'עַכֹּל',      stars: '★★★★',  is5: false },
 		{ eva: 'l-',  heb: 'לְ',  fn: 'Lamed „zu/für/nach"',                     ex_eva: 'lchedy',   ex_heb: 'לְכְּדֵי',    stars: '★★★★',  is5: false },
-		{ eva: 'd-',  heb: 'דְּ', fn: 'Dalet „von/aus/der"',                     ex_eva: 'dshedy',   ex_heb: 'דְּשֶׁדִּי',  stars: '★★★',   is5: false },
+		{ eva: 'd-',  heb: 'דְּ', fn: 'Dalet „von/aus/der“',                     ex_eva: 'dsholdy',  ex_heb: 'דְּשׁוֹל+דִּי', stars: '★★★★★', is5: true  },
+		{ eva: 'p-',  heb: 'פְּ', fn: 'Pe-Präfix (Nominalkonstrukt)',            ex_eva: 'pchedal',  ex_heb: 'פְּכֶּדַּל',    stars: '★★★',   is5: false },
 		{ eva: 'y-',  heb: 'יְ',  fn: 'Imperfekt 3. Pers. Sg. Mask.',            ex_eva: 'yshdal',   ex_heb: 'יְשַׁדַּל',   stars: '★★★★',  is5: false },
 		{ eva: 't-',  heb: 'תָּ', fn: 'Imperfekt 3. Pers. Sg. Fem. / 2. Pers.', ex_eva: 'taiir',    ex_heb: 'תָּאִיר',     stars: '★★★★',  is5: false },
 	];
@@ -12,8 +13,7 @@
 		{ eva: '-dy',   heb: 'דִּי',         fn: 'Aramäisch: Genitiv/Relativ „von/dessen"',               stars: '★★★★',  is5: false },
 		{ eva: '-dam',  heb: 'דָּם',         fn: '„Blut" — Zeilenabschluss-Refrain in f57r',             stars: '★★★★★', is5: true },
 		{ eva: '-dal',  heb: 'דַּל',         fn: '„schwach/dünn" — Diagnose-Refrain',                    stars: '★★★★',  is5: false },
-		{ eva: '-aiin', heb: 'עַיִן', fn: '„Auge" — diagnostischer Terminus in Suffixposition', stars: '★★★★',  is5: false },
-	];
+		{ eva: '-aiin', heb: 'עַיִן', fn: '„Auge" — diagnostischer Terminus in Suffixposition', stars: '★★★★',  is5: false },		{ eva: '-ody',  heb: '+דִּי',  fn: 'Vokalhelfer + דִּי; Listenregister f57r P.3–P.4', stars: '★★★',   is5: false },	];
 </script>
 
 <div class="grammar-systems">
@@ -69,26 +69,62 @@
 </div>
 
 <div class="box hl">
-	<div class="box-title">Prognose-Schema (hippokratisch-mittelalterlich)</div>
+	<div class="box-title">Prognose-Schema Quire A (Kräuter, Spr. A)</div>
+	<p style="margin-bottom:.5rem;font-size:.92rem">Jeder Paragraph folgt dem botanischen Schema:</p>
+	<div class="schema">
+		<div class="schema-step">
+			<span class="heb-sm">דָּם·כְּהִי·חַם</span>
+			<span class="lbl">Symptom (links)</span>
+		</div>
+		<span class="schema-arrow">‡</span>
+		<div class="schema-step" style="background:rgba(28,61,90,.06);border-color:var(--blue)">
+			<span class="heb-sm">{'{'+'plant}'}</span>
+			<span class="lbl">Trennmarker</span>
+		</div>
+		<span class="schema-arrow">‡</span>
+		<div class="schema-step">
+			<span class="heb-sm">שַׂם·חֲקַר</span>
+			<span class="lbl">Therapie (rechts)</span>
+		</div>
+		<span class="schema-arrow">→</span>
+		<div class="schema-step" style="background:rgba(122,28,28,.08);border-color:var(--red)">
+			<span class="heb-sm">שְאוֹל·אוֹר</span>
+			<span class="lbl">sheol / or<br>Prognose</span>
+		</div>
+		<span class="schema-arrow">→</span>
+		<div class="schema-step" style="background:rgba(154,122,42,.08)">
+			<span class="heb-sm">= / קַיָּם</span>
+			<span class="lbl">Kolophon</span>
+		</div>
+	</div>
+</div>
+
+<div class="box hl">
+	<div class="box-title">Prognose-Schema Quire T / Sprache B</div>
 	<p style="margin-bottom:.5rem;font-size:.92rem">Jeder vollständige Paragraph folgt dem Schema:</p>
 	<div class="schema">
 		<div class="schema-step">
 			<span class="heb-sm">דִּין</span>
-			<span class="lbl">Urteilseröffnung</span>
+			<span class="lbl">daiin<br>Urteil</span>
+		</div>
+		<span class="schema-arrow">→</span>
+		<div class="schema-step">
+			<span class="heb-sm">שֶׁ+Symptom</span>
+			<span class="lbl">shedy+X</span>
 		</div>
 		<span class="schema-arrow">→</span>
 		<div class="schema-step">
 			<span class="heb-sm">כְּהִי · דַּל · דָּם</span>
-			<span class="lbl">Symptombeschreibung</span>
+			<span class="lbl">Befund</span>
 		</div>
 		<span class="schema-arrow">→</span>
 		<div class="schema-step">
-			<span class="heb-sm">שַׂר עַל</span>
-			<span class="lbl">Arzt-Indikation</span>
+			<span class="heb-sm">לְכְּדֵי</span>
+			<span class="lbl">lchedy<br>Therapieziel</span>
 		</div>
 		<span class="schema-arrow">→</span>
-		<div class="schema-step">
-			<span class="heb-sm">אוֹר · שְׁאוֹל</span>
+		<div class="schema-step" style="background:rgba(122,28,28,.08);border-color:var(--red)">
+			<span class="heb-sm">שְׁאוֹל · אוֹר</span>
 			<span class="lbl">Prognose (Tod/Heilung)</span>
 		</div>
 	</div>
