@@ -79,6 +79,29 @@
       <button class="ref-insert-btn" onclick={() => onInsert('tshey sheol cheolshy chalal')}>In Übersetzer laden</button>
     </div>
   </div>
+
+  <div>
+    <h3>6 · f11r P.6 / f11v P.6 — Pupillenheilung &amp; positiver Kolophon <span class="new-badge">Neu v5.3</span></h3>
+    <div class="box green ref-card">
+      <div class="antonym-grid">
+        <div>
+          <div class="layer-eva">odl · chaiin · ykchor · dair</div>
+          <div class="layer-heb">דְּ+אִיר · יְ+כְּ+חֹר · חַיִּין · עַ+דַּל</div>
+          <div class="layer-en" style="font-size:.9rem">"Über die Schwäche — Leben — er heilt die Pupille — der Leuchtende."</div>
+        </div>
+        <div>
+          <div class="layer-eva">ycheor · dor · schold=</div>
+          <div class="layer-heb">שׁ+כֹּ+לֵד · דּוֹר · יְ+כְּ+אוֹר</div>
+          <div class="layer-en" style="font-size:.9rem">"Er wird wie Licht heilen — Generation — [Schlussformel]."</div>
+        </div>
+      </div>
+      <p class="ref-note" style="margin-top:.6rem">
+        Erster Beleg von <span class="eva">ykchor</span> (er heilt die Pupille — 4. Verb im y+k+[Terminus]-Paradigma) und von <span class="eva">ycheor=</span> als positivem Schluss-Kolophon. f11v (Borago-Typ) ist das positivste Prognosefolio in Quire B.
+        <span class="conf5">★★★★★</span>
+      </p>
+      <button class="ref-insert-btn" onclick={() => onInsert('odl chaiin ykchor dair ycheor')}>In Übersetzer laden</button>
+    </div>
+  </div>
 </div>
 
 
