@@ -147,28 +147,38 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: .5rem;
-    margin-top: .7rem;
+    gap: .6rem .5rem;
+    margin-top: .85rem;
   }
 
   .schema-step {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .2rem;
+    gap: .25rem;
     text-align: center;
+    background: var(--parch-d);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: .55rem .9rem;
+    min-width: 5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .07);
 
     & .lbl {
-      font-size: .68rem;
+      font-size: .62rem;
       font-family: var(--font-smallcaps);
-      letter-spacing: .08em;
+      letter-spacing: .09em;
+      text-transform: uppercase;
       color: var(--ink-f);
+      line-height: 1.4;
     }
   }
 
   .schema-arrow {
-    color: var(--border);
-    font-size: 1.2rem;
-    margin: 0 .2rem;
+    color: var(--ink-f);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    margin: 0 .1rem;
+    opacity: .55;
   }
 </style>
