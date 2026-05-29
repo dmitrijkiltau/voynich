@@ -87,12 +87,18 @@
 		</nav>
 
 		<div class="sidebar-stats">
-			{#each [['85', 'Lexikon'], ['88%', 'Rückw.-Test'], ['23', 'Regeln']] as [n, l]}
-				<div class="sidebar-stat">
-					<span class="ss-n">{n}</span>
-					<span class="ss-l">{l}</span>
-				</div>
-			{/each}
+			<div class="sidebar-stat">
+				<span class="ss-n">85</span>
+				<span class="ss-l">Lexikon</span>
+			</div>
+			<div class="sidebar-stat">
+				<span class="ss-n">23</span>
+				<span class="ss-l">Regeln</span>
+			</div>
+			<div class="sidebar-stat sidebar-stat--full">
+				<span class="ss-n">88%</span>
+				<span class="ss-l">Rückwärtstest</span>
+			</div>
 		</div>
 
 		<div class="sidebar-meta">Mai 2026</div>
@@ -284,11 +290,13 @@
 
 	.sidebar-stats {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		gap: .35rem;
 		padding: 1rem;
 		border-top: 1px solid var(--parch-dk);
 		margin-top: auto;
+
+		& .sidebar-stat--full { grid-column: 1 / -1; }
 
 		& .sidebar-stat {
 			text-align: center;
