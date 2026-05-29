@@ -166,7 +166,17 @@
 			<p>Lexikon: 65 Einträge · Grammatikregeln: 22 · Rückwärtstest: 88 % (23/26)</p>
 			<p class="disclaimer">Dieses Tool ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein.<br>
 			Konfidenzbewertungen beziehen sich auf Konsistenz im vorliegenden Korpus.</p>
+			<a href="https://kiltau.com/legal-notice" target="_blank" rel="noopener" class="legal-link">Impressum & Datenschutz</a>
 		</footer>
 
 	</main>
 </div>
+
+<style>
+	.legal-link {
+		display: inline-block;
+		font-size: .8rem;
+		color: var(--color-text);
+		text-decoration: none;
+	}
+</style>
