@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Hebrew:wght@300;400;600&display=swap');
+
+/* ── DESIGN TOKENS ───────────────────────────────────── */
+
+:root {
+  --ink: #1a1208;
+  --ink-l: #3d2e14;
+  --ink-f: #6a5535;
+  --parch: #f4ead5;
+  --parch-d: #e8d8b8;
+  --parch-dk: #d4be96;
+  --red: #7a1c1c;
+  --gold: #9a7a2a;
+  --border: #c4a86a;
+  --blue: #1c3d5a;
+  --green: #1a4a28;
+
+  --font-serif: 'Crimson Text', Georgia, serif;
+  --font-display: 'IM Fell English', serif;
+  --font-smallcaps: 'IM Fell English SC', serif;
+  --font-hebrew: 'Noto Serif Hebrew', serif;
+  --font-mono: 'Courier Prime', Courier, monospace;
+}
+
+/* ── BASE ────────────────────────────────────────────── */
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--parch);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.78;
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(180, 150, 80, .07) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 85%, rgba(160, 120, 60, .05) 0%, transparent 55%);
+}
+
+/* ── PAGE CONTAINER ──────────────────────────────────── */
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem 7rem;
+}
+
+/* ── NAVIGATION / TOC ────────────────────────────────── */
+
+.toc {
+  background: var(--parch-d);
+  border: 1px solid var(--border);
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 2.8rem;
+  border-radius: 2px;
+  font-size: .88rem;
+
+  & h3 {
+    font-family: var(--font-smallcaps);
+    font-size: .7rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--ink-f);
+    margin-bottom: .6rem;
+    font-weight: 400;
+  }
+
+  & ol {
+    padding-left: 1.3rem;
+    column-count: 2;
+    column-gap: 2rem;
+  }
+
+  & li {
+    margin-bottom: .2rem;
+    list-style: decimal;
+  }
+
+  & a {
+    color: var(--ink-l);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+
+    &:hover {
+      border-bottom-color: var(--border);
+    }
+  }
+
+  @media (max-width: 600px) {
+    & ol {
+      column-count: 1;
+    }
+  }
+}
+
+/* ── MASTHEAD ────────────────────────────────────────── */
+
+.masthead {
+  text-align: center;
+  padding-bottom: 2.8rem;
+  margin-bottom: 2.8rem;
+  border-bottom: 1.5px solid var(--border);
+  position: relative;
+
+  &::after {
+    content: '✦ ✦ ✦';
+    position: absolute;
+    bottom: -.65rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--parch);
+    padding: 0 .8rem;
+    color: var(--border);
+    font-size: .75rem;
+    letter-spacing: .4em;
+  }
+}
+
+.kicker {
+  font-family: var(--font-smallcaps);
+  font-size: .68rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--ink-f);
+  margin-bottom: .9rem;
+}
+
+.subtitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--ink-l);
+  margin-bottom: 1.1rem;
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+.meta-line {
+  font-size: .8rem;
+  color: var(--ink-f);
+  letter-spacing: .04em;
+
+  & span {
+    margin: 0 .4rem;
+  }
+}
+
+/* ── HEADINGS ────────────────────────────────────────── */
+
+h1 {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: .45rem;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--red);
+  padding-bottom: .35rem;
+  border-bottom: 1px solid var(--parch-dk);
+  margin-bottom: 1.2rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-family: var(--font-smallcaps);
+  font-size: .75rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--ink-f);
+  margin: 1.6rem 0 .6rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--ink-l);
+  margin: 1rem 0 .4rem;
+}
+
+/* ── LAYOUT PRIMITIVES ───────────────────────────────── */
+
+p {
+  margin-bottom: .9rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+  padding-top: .5rem;
+}
+
+hr.rule {
+  border: none;
+  border-top: 1px solid var(--parch-dk);
+  margin: 2.6rem 0 2.2rem;
+}
+
+/* ── DROPCAP ─────────────────────────────────────────── */
+
+.dropcap {
+  &::first-letter {
+    float: left;
+    font-family: var(--font-display);
+    font-size: 3.8rem;
+    line-height: .82;
+    margin: .06rem .18rem 0 0;
+    color: var(--red);
+  }
+}
+
+/* ── CALLOUT BOXES ───────────────────────────────────── */
+
+.box {
+  background: var(--parch-d);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 1.1rem 1.5rem;
+  margin: 1.2rem 0;
+  font-size: .95rem;
+
+  &.hl {
+    border-left: 3px solid var(--gold);
+    background: linear-gradient(to right, rgba(232, 216, 174, .6), var(--parch-d));
+  }
+
+  &.red {
+    border-left: 3px solid var(--red);
+  }
+
+  &.blue {
+    border-left: 3px solid var(--blue);
+  }
+
+  &.green {
+    border-left: 3px solid var(--green);
+  }
+}
+
+.box-title {
+  font-family: var(--font-smallcaps);
+  font-size: .7rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--ink-f);
+  margin-bottom: .5rem;
+}
+
+/* ── DATA TABLES ─────────────────────────────────────── */
+
+table.dt {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .88rem;
+  margin: .9rem 0;
+
+  & th {
+    font-family: var(--font-smallcaps);
+    font-size: .7rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-f);
+    padding: .45rem .7rem;
+    border-bottom: 1.5px solid var(--border);
+    text-align: left;
+    font-weight: 400;
+    background: rgba(0, 0, 0, .02);
+  }
+
+  & td {
+    padding: .38rem .7rem;
+    border-bottom: 1px solid var(--parch-dk);
+    vertical-align: baseline;
+  }
+
+  & tr:last-child td {
+    border-bottom: none;
+  }
+
+  & tr:hover td {
+    background: rgba(255, 255, 255, .35);
+  }
+
+  & td:first-child {
+    white-space: nowrap;
+  }
+}
+
+.cstar {
+  & td:first-child {
+    font-family: monospace;
+    color: var(--ink-f);
+    font-size: .82rem;
+  }
+}
+
+/* ── INLINE TYPOGRAPHY ───────────────────────────────── */
+
+.eva {
+  font-family: var(--font-mono);
+  color: #5a3f1a;
+  font-size: .84rem;
+  background: rgba(0, 0, 0, .04);
+  padding: .05rem .25rem;
+  border-radius: 2px;
+}
+
+.heb {
+  font-family: var(--font-hebrew);
+  font-size: 1.15rem;
+  direction: rtl;
+  display: inline-block;
+  color: var(--blue);
+  font-weight: 400;
+}
+
+.heb-sm {
+  font-family: var(--font-hebrew);
+  font-size: .95rem;
+  direction: rtl;
+  display: inline-block;
+  color: var(--blue);
+}
+
+.conf {
+  color: var(--gold);
+  letter-spacing: .05em;
+  white-space: nowrap;
+}
+
+.conf5 {
+  color: #8b0000;
+}
+
+.meaning {
+  font-style: italic;
+  color: var(--ink-l);
+}
+
+.note-cell {
+  color: var(--ink-f);
+  font-size: .82rem;
+}
+
+.new-badge {
+  font-family: var(--font-smallcaps);
+  font-size: .6rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background: var(--green);
+  color: white;
+  padding: .1rem .35rem;
+  border-radius: 1px;
+  vertical-align: middle;
+  margin-left: .3rem;
+}
+
+/* ── CHARACTER GRID ──────────────────────────────────── */
+
+.mgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+  gap: .38rem;
+  margin: .8rem 0;
+}
+
+.mcell {
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .32rem .55rem;
+  background: rgba(255, 255, 255, .4);
+  border: 1px solid var(--parch-dk);
+  font-size: .85rem;
+
+  & .e {
+    font-family: monospace;
+    color: #5a3f1a;
+    font-size: .82rem;
+    min-width: 3rem;
+    background: rgba(0, 0, 0, .04);
+    padding: .05rem .2rem;
+    border-radius: 2px;
+  }
+
+  & .arr {
+    color: var(--border);
+    font-size: .75rem;
+  }
+
+  & .h {
+    font-family: var(--font-hebrew);
+    font-size: 1.1rem;
+    color: var(--blue);
+    min-width: 2rem;
+    text-align: center;
+  }
+
+  & .g {
+    color: var(--ink-l);
+    font-style: italic;
+    font-size: .8rem;
+  }
+}
+
+/* ── SENTENCE BLOCKS ─────────────────────────────────── */
+
+.sent-block {
+  background: rgba(255, 255, 255, .3);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 1.3rem 1.5rem;
+  margin: 1.2rem 0;
+
+  & .layer {
+    margin-bottom: .7rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.layer-label {
+  font-family: var(--font-smallcaps);
+  font-size: .65rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--ink-f);
+  display: block;
+  margin-bottom: .2rem;
+}
+
+.layer-eva {
+  font-family: monospace;
+  font-size: .9rem;
+  color: #5a3f1a;
+  word-spacing: .3em;
+  line-height: 1.9;
+}
+
+.layer-heb {
+  font-family: var(--font-hebrew);
+  font-size: 1.1rem;
+  color: var(--blue);
+  direction: rtl;
+  line-height: 2;
+  word-spacing: .3em;
+}
+
+.layer-en {
+  font-style: italic;
+  color: var(--ink-l);
+  font-size: 1rem;
+  border-left: 2px solid var(--gold);
+  padding-left: .8rem;
+  margin-top: .3rem;
+}
+
+.sent-note {
+  margin-top: .7rem;
+  font-size: .85rem;
+  color: var(--ink-f);
+}
+
+/* ── STAT BARS ───────────────────────────────────────── */
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  margin: .4rem 0;
+  font-size: .88rem;
+}
+
+.stat-label {
+  min-width: 160px;
+  color: var(--ink-l);
+}
+
+.stat-bar-wrap {
+  flex: 1;
+  background: var(--parch-dk);
+  border-radius: 1px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.stat-bar {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 1px;
+}
+
+.stat-num {
+  color: var(--ink-f);
+  min-width: 3rem;
+  text-align: right;
+  font-family: monospace;
+  font-size: .82rem;
+}
+
+/* ── PROGNOSIS SCHEMA ────────────────────────────────── */
+
+.schema {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: .88rem;
+}
+
+.schema-step {
+  background: var(--parch-d);
+  border: 1px solid var(--border);
+  padding: .4rem .75rem;
+  border-radius: 2px;
+  text-align: center;
+
+  & .heb-sm {
+    display: block;
+    margin-bottom: .1rem;
+  }
+
+  & .lbl {
+    font-size: .72rem;
+    color: var(--ink-f);
+  }
+}
+
+.schema-arrow {
+  color: var(--border);
+  font-size: 1.1rem;
+}
+
+/* ── OPEN QUESTIONS ──────────────────────────────────── */
+
+.oq-list {
+  list-style: none;
+  padding: 0;
+  counter-reset: oq;
+
+  & li {
+    counter-increment: oq;
+    display: flex;
+    gap: .8rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid var(--parch-dk);
+    font-size: .93rem;
+
+    &::before {
+      content: counter(oq);
+      font-family: var(--font-smallcaps);
+      color: var(--gold);
+      font-size: 1rem;
+      min-width: 1.2rem;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+/* ── ORNAMENT ────────────────────────────────────────── */
+
+.ornament {
+  text-align: center;
+  color: var(--border);
+  font-size: .85rem;
+  letter-spacing: .4em;
+  margin: 2rem 0;
+  user-select: none;
+}
+
+/* ── FOOTER ──────────────────────────────────────────── */
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--parch-dk);
+  text-align: center;
+  font-size: .78rem;
+  color: var(--ink-f);
+  line-height: 1.9;
+}
+
+/* ── PRINT ───────────────────────────────────────────── */
+
+@media print {
+  body {
+    background: #fff;
+    font-size: 11pt;
+  }
+
+  .toc {
+    page-break-after: always;
+  }
+
+  h2 {
+    page-break-before: always;
+  }
+
+  .sent-block,
+  .box {
+    break-inside: avoid;
+  }
+}
+
+/* ── RESPONSIVE ──────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .mgrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .schema {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
