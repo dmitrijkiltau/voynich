@@ -173,6 +173,310 @@
 </div>
 
 <style>
+	/* ── App shell ──────────────────────────────────────── */
+
+	.app-shell {
+		display: grid;
+		grid-template-columns: var(--sidebar-w) 1fr;
+		min-height: 100dvh;
+
+		@media (max-width: 768px) {
+			grid-template-columns: 1fr;
+			padding-top: var(--nav-h);
+		}
+	}
+
+	/* ── Sidebar ────────────────────────────────────────── */
+
+	.sidebar {
+		position: sticky;
+		top: 0;
+		height: 100dvh;
+		overflow-y: auto;
+		background: var(--parch-d);
+		border-right: 1px solid var(--border);
+		display: flex;
+		flex-direction: column;
+		padding: 1.8rem 0 2rem;
+		z-index: 100;
+		transition: transform .25s ease;
+
+		&::-webkit-scrollbar { width: 4px; }
+		&::-webkit-scrollbar-thumb { background: var(--parch-dk); border-radius: 2px; }
+
+		@media (max-width: 768px) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			transform: translateX(-100%);
+			box-shadow: 2px 0 16px rgba(0, 0, 0, .15);
+
+			&.open { transform: translateX(0); }
+		}
+	}
+
+	.sidebar-brand {
+		padding: 0 1.4rem 1.4rem;
+		border-bottom: 1px solid var(--border);
+		margin-bottom: 1rem;
+		text-align: center;
+
+		& .brand-kicker {
+			font-family: var(--font-smallcaps);
+			font-size: .6rem;
+			letter-spacing: .2em;
+			text-transform: uppercase;
+			color: var(--ink-f);
+			margin-bottom: .4rem;
+		}
+
+		& .brand-name {
+			font-family: var(--font-display);
+			font-size: 1.4rem;
+			color: var(--red);
+			line-height: 1.2;
+		}
+
+		& .brand-sub {
+			font-family: var(--font-smallcaps);
+			font-size: .62rem;
+			letter-spacing: .1em;
+			color: var(--ink-f);
+			margin-top: .25rem;
+		}
+	}
+
+	.sidebar-nav {
+		display: flex;
+		flex-direction: column;
+		gap: .1rem;
+		padding: 0 .8rem;
+		flex: 1;
+	}
+
+	.nav-item {
+		display: block;
+		width: 100%;
+		text-align: left;
+		padding: .55rem .8rem;
+		font-family: var(--font-smallcaps);
+		font-size: .72rem;
+		letter-spacing: .08em;
+		color: var(--ink-l);
+		border-radius: 2px;
+		border-left: 2px solid transparent;
+		cursor: pointer;
+		transition: all .15s;
+
+		&:hover {
+			background: rgba(0, 0, 0, .04);
+			color: var(--ink);
+		}
+
+		&.active {
+			background: rgba(122, 28, 28, .07);
+			color: var(--red);
+			border-left-color: var(--red);
+			padding-left: .6rem;
+		}
+	}
+
+	.sidebar-stats {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: .35rem;
+		padding: 1rem;
+		border-top: 1px solid var(--parch-dk);
+		margin-top: auto;
+
+		& .sidebar-stat {
+			text-align: center;
+			padding: .4rem .2rem;
+			background: rgba(255, 255, 255, .3);
+			border: 1px solid var(--parch-dk);
+			border-radius: 2px;
+
+			& .ss-n {
+				display: block;
+				font-family: var(--font-display);
+				font-size: 1.1rem;
+				color: var(--red);
+				line-height: 1.1;
+			}
+
+			& .ss-l {
+				display: block;
+				font-family: var(--font-smallcaps);
+				font-size: .52rem;
+				letter-spacing: .08em;
+				text-transform: uppercase;
+				color: var(--ink-f);
+			}
+		}
+	}
+
+	.sidebar-meta {
+		font-size: .68rem;
+		color: var(--ink-f);
+		text-align: center;
+		padding: .7rem 1rem 0;
+		font-family: var(--font-smallcaps);
+		letter-spacing: .1em;
+	}
+
+	/* ── Mobile header ──────────────────────────────────── */
+
+	.mobile-header {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: var(--nav-h);
+		z-index: 200;
+		background: var(--parch-d);
+		border-bottom: 1px solid var(--border);
+		align-items: center;
+		padding: 0 1rem;
+		gap: .8rem;
+
+		@media (max-width: 768px) { display: flex; }
+
+		& .mobile-title {
+			font-family: var(--font-display);
+			font-size: 1.1rem;
+			color: var(--red);
+			flex: 1;
+		}
+
+		& .menu-toggle {
+			width: 36px;
+			height: 36px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.1rem;
+			color: var(--ink-l);
+			border: 1px solid var(--parch-dk);
+			border-radius: 2px;
+			background: rgba(255, 255, 255, .5);
+			cursor: pointer;
+			transition: all .15s;
+
+			&:hover {
+				background: rgba(255, 255, 255, .8);
+				color: var(--ink);
+			}
+		}
+	}
+
+	.menu-overlay {
+		display: none;
+		position: fixed;
+		inset: 0;
+		background: rgba(0, 0, 0, .3);
+		z-index: 99;
+
+		@media (max-width: 768px) {
+			&.visible { display: block; }
+		}
+	}
+
+	/* ── Main content ───────────────────────────────────── */
+
+	.main-content {
+		min-width: 0;
+		padding: 0 2.5rem 6rem;
+
+		@media (max-width: 1100px) { padding: 0 1.8rem 5rem; }
+		@media (max-width: 768px)  { padding: 0 1rem 4rem; }
+	}
+
+	/* ── Page header ────────────────────────────────────── */
+
+	.page-header {
+		text-align: center;
+		padding: 3rem 0 2.6rem;
+		margin-bottom: 2.8rem;
+		border-bottom: 1.5px solid var(--border);
+		position: relative;
+
+		&::after {
+			content: '✦ ✦ ✦';
+			position: absolute;
+			bottom: -.65rem;
+			left: 50%;
+			transform: translateX(-50%);
+			background: var(--parch);
+			padding: 0 .8rem;
+			color: var(--border);
+			font-size: .75rem;
+			letter-spacing: .4em;
+		}
+
+		& .kicker {
+			font-family: var(--font-smallcaps);
+			font-size: .68rem;
+			letter-spacing: .22em;
+			text-transform: uppercase;
+			color: var(--ink-f);
+			margin-bottom: .9rem;
+		}
+
+		& h1 {
+			font-family: var(--font-display);
+			font-size: 2.4rem;
+			font-weight: 400;
+			line-height: 1.2;
+			margin-bottom: .45rem;
+		}
+
+		& .subtitle {
+			font-family: var(--font-display);
+			font-style: italic;
+			font-size: 1.1rem;
+			color: var(--ink-l);
+			margin-bottom: 1.1rem;
+		}
+
+		& .meta-line {
+			font-size: .8rem;
+			color: var(--ink-f);
+			letter-spacing: .04em;
+
+			& span { margin: 0 .4rem; }
+		}
+	}
+
+	/* ── Sections ───────────────────────────────────────── */
+
+	.section {
+		margin-bottom: 3rem;
+		padding-top: .5rem;
+		scroll-margin-top: 2rem;
+	}
+
+	/* ── Page footer ────────────────────────────────────── */
+
+	.page-footer {
+		margin-top: 4rem;
+		padding-top: 2rem;
+		border-top: 1px solid var(--parch-dk);
+		font-size: .82rem;
+		color: var(--ink-f);
+		text-align: center;
+		line-height: 1.7;
+
+		& p { margin-bottom: .3rem; }
+
+		& .disclaimer {
+			margin-top: .5rem;
+			font-size: .72rem;
+			opacity: .7;
+		}
+	}
+
 	.legal-link {
 		display: inline-block;
 		font-size: .8rem;

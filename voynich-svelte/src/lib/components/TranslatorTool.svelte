@@ -1,5 +1,6 @@
 <script>
 	import { PREFIXES, LEXICON, FOLIO_PAGES } from '$lib/translator-data.js';
+	import { browser } from '$app/environment';
 
 	let { input = $bindable('') } = $props();
 
@@ -74,7 +75,7 @@
 		folioConsent = false;
 	}
 
-	let folioConsent = $state(readConsent());
+	let folioConsent = $state(browser && readConsent());
 
 	function acceptConsent() {
 		writeConsent();

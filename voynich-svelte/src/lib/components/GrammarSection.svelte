@@ -104,4 +104,35 @@
       flex: 1 1 480px;
     }
   }
+
+  /* ── Schema diagram ─────────────────────────────────── */
+
+  .schema {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: .7rem;
+  }
+
+  .schema-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2rem;
+    text-align: center;
+
+    & .lbl {
+      font-size: .68rem;
+      font-family: var(--font-smallcaps);
+      letter-spacing: .08em;
+      color: var(--ink-f);
+    }
+  }
+
+  .schema-arrow {
+    color: var(--border);
+    font-size: 1.2rem;
+    margin: 0 .2rem;
+  }
 </style>
