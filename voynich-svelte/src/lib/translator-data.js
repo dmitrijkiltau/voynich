@@ -69,6 +69,9 @@ export const LEXICON = [
   { eva: 'odol',      heb: 'עַ+דָּוֶה',    de: 'auf die Krankheit (o+dol)',         stars: '★★★★',  cat: 'symptom' },
   { eva: 'dolar',     heb: 'דָּוֶה+לְאוֹר', de: 'Krankheit zur Heilung',            stars: '★★★',   cat: 'symptom' },
   { eva: 'shees',     heb: 'אֵשׁ',         de: 'Feuer / Fieberbrand',              stars: '★★★',   cat: 'symptom' },
+  { eva: 'shorodo',   heb: 'שׁוֹר+עוֹדוֹ',  de: 'das Zeichen besteht fort',          stars: '★★★',   cat: 'symptom' },
+  { eva: 'oeees',     heb: 'עַ+אֵשׁ',      de: 'auf dem Feuer/Fieber',             stars: '★★★',   cat: 'symptom' },
+  { eva: 'octhos',    heb: 'עַ+כְּ+תֹ+שׁ', de: 'auf wie Feuer/Fieber',             stars: '★★★',   cat: 'symptom' },
   // ── Prognose-Termini ────────────────────────────────
   { eva: 'or',        heb: 'אוֹר',         de: 'Licht / Heilung',                  stars: '★★★★',  cat: 'prognose' },
   { eva: 'sheol',     heb: 'שְׁאוֹל',      de: 'Scheol / Tod',                     stars: '★★★★',  cat: 'prognose' },
@@ -90,9 +93,11 @@ export const LEXICON = [
   { eva: 'dsholdy',   heb: 'דְּ+שׁוֹל+דִּי', de: 'von Scheol — dessen (Genitiv)',   stars: '★★★★★', cat: 'prognose' },
   { eva: 'dsho',      heb: 'דְּ+שׁוֹ',     de: 'von Scheol (Kurzform)',             stars: '★★★★',  cat: 'prognose' },
   { eva: 'shoiin',    heb: 'שׁוֹ+עַיִן',   de: 'Scheol des Auges',                 stars: '★★★★',  cat: 'prognose' },
+  { eva: 'shoin',     heb: 'שׁוֹ+יִן',     de: 'Scheol des Auges (Kurzform)',      stars: '★★★★',  cat: 'prognose' },
   { eva: 'darchor',   heb: 'דַּרְכּוֹר',   de: 'sein Krankheitsverlauf',           stars: '★★★',   cat: 'prognose' },
   { eva: 'otan',      heb: 'עֹתָן',        de: 'Zeit / Jahreszeit der Erkrankung', stars: '★★★',   cat: 'prognose' },
   { eva: 'kaiim',     heb: 'קַיָּם',       de: 'gültig / beständig (Schlussformel)', stars: '★★★★★', cat: 'kolophon' },
+  { eva: 'okorory',   heb: 'עַכְּאוֹראוֹרִי', de: 'auf das Licht — mein Licht / zum Licht', stars: '★★★', cat: 'kolophon' },
   { eva: 'cphar',     heb: 'כְּ+פַּר',     de: 'Sühne / Bedeckung (Kolophon-Formel)', stars: '★★★', cat: 'kolophon' },
   // ── Syntaktische Konnektoren ────────────────────────
   { eva: 'chedy',     heb: 'כְּדֵי',       de: 'damit / um zu',                    stars: '★★★★',  cat: 'syntax' },
@@ -109,6 +114,7 @@ export const LEXICON = [
   { eva: 'qodaiin',   heb: 'וְדִּין',      de: 'und Urteil',                       stars: '★★★★',  cat: 'syntax' },
   { eva: 'daiim',     heb: 'דִּין+ם',      de: 'Urteile (Plural)',                 stars: '★★★',   cat: 'syntax' },
   { eva: 'keey',      heb: 'כֵּי',         de: 'denn / weil (Kausalpartikel)',     stars: '★★★★',  cat: 'syntax' },
+  { eva: 'qoky',      heb: 'וְ+כִּי',      de: 'und denn / weil',                  stars: '★★★★★', cat: 'syntax' },
   { eva: 'cthom',     heb: 'כְּ+תֹם',      de: 'wie Vollständigkeit (Kolophon)',   stars: '★★★',   cat: 'kolophon' },
   // ── Verbformen ──────────────────────────────────────
   { eva: 'taiir',     heb: 'תָּאִיר',      de: 'es wird leuchten / heilen',        stars: '★★★★',  cat: 'verb' },
@@ -128,6 +134,7 @@ export const LEXICON = [
   { eva: 'ychor',     heb: 'יְ+חֹר',      de: 'er wird die Pupille weiten',        stars: '★★★★',  cat: 'verb' },
   { eva: 'yodaiin',   heb: 'יוֹדִּין',     de: 'er weiß das Urteil',               stars: '★★★★',  cat: 'verb' },
   { eva: 'ytchody',   heb: 'יְ+תְּ+כֹּ+דִּי', de: 'er wird urteilen (Doppelpräfix)', stars: '★★★',   cat: 'verb' },
+  { eva: 'ytaiin',    heb: 'יְ+תָּ+עַיִן', de: 'er wird das Auge heilen',          stars: '★★★★',  cat: 'verb' },
   { eva: 'ykoiin',    heb: 'יְכוֹיִן',     de: 'er wird sich erholen',             stars: '★★★',   cat: 'verb' },
   // ── Akteure, Anatomie & Botanik ─────────────────────
   { eva: 'sar',       heb: 'שַׂר',         de: 'Arzt / Meister / Vorsteher',       stars: '★★★★',  cat: 'akteur' },
@@ -138,6 +145,10 @@ export const LEXICON = [
   { eva: 'ol',        heb: 'עַל',          de: 'auf / über / betreffend',          stars: '★★★★',  cat: 'akteur' },
   { eva: 'saiin',     heb: 'שַׂעַיִן',     de: 'Augenarzt',                        stars: '★★★★',  cat: 'akteur' },
   { eva: 'dain',      heb: 'דַּ+עַיִן',    de: 'das Auge (Kurzform)',              stars: '★★★',   cat: 'akteur' },
+  { eva: 'oiin',      heb: 'עַ+יִן',       de: 'das Auge (direkte Form)',          stars: '★★★★',  cat: 'akteur' },
+  { eva: 'doaiin',    heb: 'דְּ+עַיִן',    de: 'vom Auge',                         stars: '★★★★',  cat: 'akteur' },
+  { eva: 'doiin',     heb: 'דְּ+עַיִן',    de: 'vom Auge (Kurzform)',              stars: '★★★★',  cat: 'akteur' },
+  { eva: 'kchol',     heb: 'כְּ+חֹל',      de: 'wie Kohl-Pigment / Blaupigment',   stars: '★★★',   cat: 'akteur' },
   { eva: 'sam',       heb: 'שַׂם',         de: 'Arznei / er gibt',                 stars: '★★★',   cat: 'akteur' },
   { eva: 'shty',      heb: 'שְׁתִי',       de: 'Getränk / Trank',                  stars: '★★★',   cat: 'akteur' },
   { eva: 'pol',       heb: 'פֹּל',         de: 'Bohne / Beere',                    stars: '★★★',   cat: 'akteur' },
