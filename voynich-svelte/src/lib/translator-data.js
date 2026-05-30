@@ -42,7 +42,7 @@ export const PREFIXES = [
   { eva: 't',   heb: 'תָּ',  de: 'Imperfekt 3.Sg.f./2.Sg.' },
 ];
 
-// Confirmed lexicon v5.4 — 98 entries ★★★+
+// Confirmed lexicon with entries ★★★+
 export const LEXICON = [
   // ── Medizinische Nomina & Symptome ──────────────────
   { eva: 'dam',       heb: 'דָּם',         de: 'Blut',                             stars: '★★★★★', cat: 'symptom' },
@@ -59,6 +59,8 @@ export const LEXICON = [
   { eva: 'sheoldam',  heb: 'שְׁאוֹל+דָּם', de: 'tödlicher Blutverlust',            stars: '★★★★★', cat: 'symptom' },
   { eva: 'damo',      heb: 'דָּמוֹ',       de: 'sein Blut (Possessiv)',            stars: '★★★★',  cat: 'symptom' },
   { eva: 'cham',      heb: 'חַם',          de: 'Wärme / Entzündung',               stars: '★★★',   cat: 'symptom' },
+  { eva: 'torshor',   heb: 'תֹּר+שׁוֹר',   de: 'Jahreszeit-Zeichen / saisonaler Eintrag', stars: '★★★',   cat: 'symptom' },
+  { eva: 'dchm',      heb: 'דְּ+חָם',      de: 'von der Entzündung',                stars: '★★★',   cat: 'symptom' },
   { eva: 'dalor',     heb: 'דַּלאוֹר',     de: 'schwaches Augenlicht',             stars: '★★★',   cat: 'symptom' },
   { eva: 'char',      heb: 'חַר',          de: 'heiß / Fieber',                    stars: '★★★★',  cat: 'symptom' },
   { eva: 'chary',     heb: 'חַרִי',        de: 'sein Fieber (Possessiv)',           stars: '★★★',   cat: 'symptom' },
@@ -130,7 +132,8 @@ export const LEXICON = [
   // ── Akteure, Anatomie & Botanik ─────────────────────
   { eva: 'sar',       heb: 'שַׂר',         de: 'Arzt / Meister / Vorsteher',       stars: '★★★★',  cat: 'akteur' },
   { eva: 'sary',      heb: 'שַׂרִי',       de: 'mein Arzt (Possessiv)',             stars: '★★★',   cat: 'akteur' },
-  { eva: 'pchy',      heb: 'פְּחִי',       de: 'mein Atem / mein Mund',             stars: '★★',    cat: 'akteur' },
+  { eva: 'pchy',      heb: 'פְּחִי',       de: 'mein Atem / mein Mund',             stars: '★★★',   cat: 'akteur' },
+  { eva: 'opchor',    heb: 'עַ+פְּ+חֹר',   de: 'auf die Pupille (Atemweg-Befund)',   stars: '★★★',   cat: 'akteur' },
   { eva: 'al',        heb: 'עַל',          de: 'auf / über / betreffend',          stars: '★★★★',  cat: 'akteur' },
   { eva: 'ol',        heb: 'עַל',          de: 'auf / über / betreffend',          stars: '★★★★',  cat: 'akteur' },
   { eva: 'saiin',     heb: 'שַׂעַיִן',     de: 'Augenarzt',                        stars: '★★★★',  cat: 'akteur' },
@@ -176,9 +179,9 @@ export const FOLIO_PAGES = [
 ];
 
 export const STATS = {
-  version:          '5.4',
+  version:          '5.5',
   lexicon:          LEXICON.length,
-  rules:            23,
+  rules:            24,
   backtest:         '88%',
   backtestFraction: '23/26',
 };

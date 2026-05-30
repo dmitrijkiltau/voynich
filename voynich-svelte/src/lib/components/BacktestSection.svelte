@@ -1,7 +1,7 @@
 <script>
 	const STATS = [
 		{ label: 'Bestätigt Spr. B (★★★★+)', pct: 88, num: '23 / 26', color: 'var(--gold)' },
-		{ label: 'Bestätigt Spr. A (Anker, f1v–f10v)', pct: 100, num: '200 / 200', color: 'var(--green)' },
+		{ label: 'Bestätigt Spr. A (Anker, f1v–f13v)', pct: 100, num: '260 / 260', color: 'var(--green)' },
 		{ label: 'Nicht gefunden', pct: 8, num: '2 / 26', color: 'var(--red)' },
 		{ label: 'Falsch-positiv (gesamt)', pct: 0, num: '0', color: 'var(--gold)' },
 	];
@@ -23,6 +23,9 @@
 		{ pred: 'dsholdy',                  heb: 'דְּ+שׁוֹל+דִּי',          result: '✓ f9r P5L',                         context: 'Genitiv-Kompositum parallel zu daiindy' },
 		{ pred: 'shoiin',                   heb: 'שׁוֹ+עַיִן',              result: '✓ f10v P4 + P6',                    context: 'Doppelbeleg auf demselben Folio' },
 		{ pred: 'chaiin · ckhy · or · aiin',heb: 'Prognose-Tetrade',        result: '✓ f10r P4 (alle vier in einer Zeile)', context: 'vollständiges hippokratisches Schema' },
+		{ pred: 'torshor',                  heb: 'תֹּר+שׁוֹר',               result: '✓ f13r P.1 Paragraph-Öffner',        context: 'Jahreszeit-Zeichen; erster Beleg dieser Form im Korpus' },
+		{ pred: 'pchy',                     heb: 'פְּחִי',                   result: '✓ 4× f13r — höchste Atemweg-Dichte', context: 'opchy, qopchy, pchy; bestätigt Alant-Identifikation' },
+		{ pred: 'shol · dy · … · shol',     heb: 'R24-Struktur',             result: '✓ f13r P.1 (Dopplungsformel)',       context: 'einmaliges Emphase-Muster mit Genitiv-Brücke dy' },
 	];
 </script>
 

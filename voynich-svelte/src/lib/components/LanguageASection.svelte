@@ -25,6 +25,10 @@
 		{ folio: 'f9v',  plant: 'Viola tricolor',        signal: 'chkaiin·ckhy·chor= (Diagnosekolophon); daiin 7×',                      stars: '★★★★★', is5: true  },
 		{ folio: 'f10r', plant: 'Wegwarte (Cichorium)',  signal: 'Prognose-Tetrade chaiin·ckhy·or·aiin; chor 7×',                        stars: '★★★★',  is5: false },
 		{ folio: 'f10v', plant: 'Convolvulus / Glockenblume', signal: 'daiin 8× (Rekord); shoiin×2; dsho=; chckhan=',                    stars: '★★★★',  is5: false },
+		{ folio: 'f11r', plant: 'Lungenkraut-Typ II',   signal: 'ykchor·dair·ycheor (Pupillenheilung-Tripel); positiver Kolophon',       stars: '★★★★',  is5: false },
+		{ folio: 'f11v', plant: 'Kräuter-Komplex',      signal: 'chkaiin·ckhy·chor= (Diagnosekolophon, 2. Beleg); odl·chaiin',           stars: '★★★★',  is5: false },
+		{ folio: 'f13r', plant: 'Großer Alant (Inula helenium)', signal: 'torshor (NEU); pchy 4× — Atemweg-Rekord; shol×2; Doppelkolophon', stars: '★★★',   is5: false },
+		{ folio: 'f13v', plant: 'Schachtelhalm-Typ (Equisetum)', signal: '9 × {plant}-Marker (Rekord Quire B); qoky·daiin= (Minikolophon)', stars: '★★★',   is5: false },
 	];
 </script>
 

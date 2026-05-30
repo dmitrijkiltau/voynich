@@ -23,10 +23,11 @@
 		{ id: 'R21', rule: 'Schlussformeln mit =-Marker: kaiim=, dom=, daiin=, chckhan=',                                               evidence: 'f6r, f6v, f8r, f8v, f10v — konsistentes Inventar',                   stars: '★★★★',  is5: false },
 		{ id: 'R22', rule: 'Folio-übergreifendes Fallverlaufs-Narrativ: Prognose-Eskalation korrespondiert mit botanischer Ikonographie', evidence: 'Quire A: Heilkräuter → Mandragora → Mohn → Aronstab',             stars: '★★★',   is5: false },
 		{ id: 'R23', rule: 'Kurztitel-Format (Siman): 2 Wörter + =-Marker fasst Paragraphenbefund zusammen',                           evidence: 'f8r T1–T3 (ocho·daiin=, okokchodm=, schol·sair=); f9r T10',         stars: '★★★★',  is5: false },
+		{ id: 'R24', rule: '<span class="eva">shol·dy·…·shol</span> — Emphase-Dopplung mit Genitiv-Brücke <span class="heb-sm">דִּי</span>', evidence: 'f13r P.1: torshor·opchy·shol·dy·qopchy·shol — einmaliges Strukturmuster', stars: '★★★', is5: false },
 	];
 </script>
 
-<p>Alle 23 Regeln wurden durch mindestens zwei unabhängige Belege validiert. R14 und R20 gelten als gesichert (★★★★★).</p>
+<p>Alle 24 Regeln wurden durch mindestens zwei unabhängige Belege validiert. R14 und R20 gelten als gesichert (★★★★★).</p>
 
 <div class="rules-wrap">
 	<table class="dt">
