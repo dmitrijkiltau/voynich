@@ -6,20 +6,22 @@
 <div class="sprache-a">
 	<div class="box hl">
 		<div class="box-title">Sprache A vs. B — Hauptunterschiede</div>
-		<table class="dt">
-			<thead>
-				<tr><th>Merkmal</th><th>Sprache B (f57r, f103r)</th><th>Sprache A ({STATS.foliosA})</th></tr>
-			</thead>
-			<tbody>
-				{#each COMPARISON as c}
-					<tr>
-						<td class="feature-cell">{c.feature}</td>
-						<td class="note-cell">{c.langB}</td>
-						<td class="note-cell">{c.langA}</td>
-					</tr>
-				{/each}
-			</tbody>
-		</table>
+		<div class="table-wrap">
+			<table class="dt">
+				<thead>
+					<tr><th>Merkmal</th><th>Sprache B (f57r, f103r)</th><th>Sprache A ({STATS.foliosA})</th></tr>
+				</thead>
+				<tbody>
+					{#each COMPARISON as c}
+						<tr>
+							<td class="feature-cell">{c.feature}</td>
+							<td class="note-cell">{c.langB}</td>
+							<td class="note-cell">{c.langA}</td>
+						</tr>
+					{/each}
+				</tbody>
+			</table>
+		</div>
 	</div>
 
 	<h3>Quire A — Botanische Kohärenz (alle Folios)</h3>

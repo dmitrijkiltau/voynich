@@ -68,13 +68,13 @@
 			</div>
 		</div>
 		<div class="fp-counts">
-			<span class="fpc done">{totalDone}&thinsp;<em>vollständig</em></span>
+			<span class="fpc done">{totalDone}&nbsp;<em>analysiert</em></span>
 			<span class="fpc-sep">·</span>
-			<span class="fpc partial">{totalPartial}&thinsp;<em>Anker</em></span>
+			<span class="fpc partial">{totalPartial}&nbsp;<em>Anker</em></span>
 			<span class="fpc-sep">·</span>
-			<span class="fpc none">{totalNone}&thinsp;<em>ausstehend</em></span>
+			<span class="fpc none">{totalNone}&nbsp;<em>ausstehend</em></span>
 			<span class="fpc-sep">·</span>
-			<span class="fpc total">{totalPages}&thinsp;<em>Seiten</em></span>
+			<span class="fpc total">{totalPages}&nbsp;<em>Seiten</em></span>
 		</div>
 
 		<!-- Segmented global progress bar -->
@@ -115,7 +115,7 @@
               {#each q.pages as p}
                 <span
                   class="fpc-chip fpc-chip--{p.st}"
-                  title="{p.id} · {p.st === 'done' ? 'vollständig dekodiert' : p.st === 'partial' ? 'Teilanalyse / Anker bekannt' : 'nicht analysiert'}"
+                  title="{p.id} · {p.st === 'done' ? 'analysiert' : p.st === 'partial' ? 'Teilanalyse / Anker bekannt' : 'nicht analysiert'}"
                 >{p.label}</span>
               {/each}
             </div>
@@ -127,7 +127,7 @@
       <div class="fp-legend" style="border-top:none">
         <span class="fpl-item">
           <span class="fpl-swatch done"></span>
-          vollständig dekodiert
+          analysiert
         </span>
         <span class="fpl-item">
           <span class="fpl-swatch partial"></span>

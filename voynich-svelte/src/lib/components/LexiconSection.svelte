@@ -115,8 +115,8 @@
   }
 
   .table-wrap {
-    max-height: 560px;
-    overflow-y: auto;
+    max-width: calc(100vw - 2rem);
+    max-height: 480px;
   }
 
   .dt {

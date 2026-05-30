@@ -509,7 +509,7 @@
 		border-radius: 2px;
 		padding: .55rem .75rem;
 		word-break: break-word;
-		overflow-y: auto;
+		overflow: auto;
 
 		&.empty {
 			color: var(--ink-f);
@@ -573,7 +573,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0;
-		overflow-y: auto;
+		overflow: auto;
 
 		@container (max-width: 1280px) {
 			max-height: 200px;

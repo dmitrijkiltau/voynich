@@ -287,7 +287,7 @@
 		position: sticky;
 		top: 0;
 		height: 100dvh;
-		overflow-y: auto;
+		overflow: auto;
 		background: var(--parch-d);
 		border-right: 1px solid var(--border);
 		display: flex;

@@ -137,6 +137,10 @@ hr.rule {
   margin: 2.6rem 0 2.2rem;
 }
 
+.table-wrap {
+	overflow-x: auto;
+}
+
 /* ── CALLOUT BOXES ───────────────────────────────────── */
 
 .box {

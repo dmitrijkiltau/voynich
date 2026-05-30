@@ -11,21 +11,23 @@
 	</div>
 
 	<h3>Sterntypen und Funktionen</h3>
-	<table class="dt">
-		<thead>
-			<tr><th>Typ</th><th>Morphologie</th><th>Funktion</th><th>Konf.</th></tr>
-		</thead>
-		<tbody>
-			{#each STAR_TYPES as s}
-				<tr>
-					<td><strong>{s.type}</strong></td>
-					<td class="note-cell">{s.morph}</td>
-					<td class="note-cell">{s.fn}</td>
-					<td><span class="conf">{s.stars}</span></td>
-				</tr>
-			{/each}
-		</tbody>
-	</table>
+	<div class="table-wrap">
+		<table class="dt">
+			<thead>
+				<tr><th>Typ</th><th>Morphologie</th><th>Funktion</th><th>Konf.</th></tr>
+			</thead>
+			<tbody>
+				{#each STAR_TYPES as s}
+					<tr>
+						<td><strong>{s.type}</strong></td>
+						<td class="note-cell">{s.morph}</td>
+						<td class="note-cell">{s.fn}</td>
+						<td><span class="conf">{s.stars}</span></td>
+					</tr>
+				{/each}
+			</tbody>
+		</table>
+	</div>
 
 	<h3>Dreischritt-Schema (f103r)</h3>
 	<p>Die Sternsequenz folgt einem quasi-periodischen Trio <strong>Rot → Leer → Punkt</strong> (viermal vollständig), das einem klassischen medizinischen Dreischritt entspricht:</p>
@@ -52,20 +54,22 @@
 	</div>
 
 	<h3>Folio-übergreifender Vergleich</h3>
-	<table class="dt">
-		<thead>
-			<tr><th>Folio</th><th>Sternprinzip</th><th>Besonderheit</th></tr>
-		</thead>
-		<tbody>
-			{#each FOLIOS as f}
-				<tr>
-					<td class="folio-cell">{f.folio}</td>
-					<td class="note-cell">{f.principle}</td>
-					<td class="note-cell">{f.note}</td>
-				</tr>
-			{/each}
-		</tbody>
-	</table>
+	<div class="table-wrap">
+		<table class="dt">
+			<thead>
+				<tr><th>Folio</th><th>Sternprinzip</th><th>Besonderheit</th></tr>
+			</thead>
+			<tbody>
+				{#each FOLIOS as f}
+					<tr>
+						<td class="folio-cell">{f.folio}</td>
+						<td class="note-cell">{f.principle}</td>
+						<td class="note-cell">{f.note}</td>
+					</tr>
+				{/each}
+			</tbody>
+		</table>
+	</div>
 </div>
 
 <style>

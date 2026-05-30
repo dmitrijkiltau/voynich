@@ -2,7 +2,7 @@
 	import { CLASSES } from '$lib/word-classes-data.js';
 </script>
 
-<div class="wortklassen">
+<div class="wordclasses">
 	<table class="dt">
 		<thead>
 			<tr><th>Klasse</th><th>Wörter (EVA)</th><th>Funktion im Text</th></tr>
@@ -30,6 +30,10 @@
 </div>
 
 <style>
+	.wordclasses {
+		overflow-x: auto;
+	}
+	
 	.excl-box {
 		margin-top: 1.2rem;
 	}
