@@ -32,4 +32,6 @@ export const FOLIOS = [
   { folio: 'f14v', plant: 'Farn-Typ (Dryopteris-Gruppe)', signal: 'dam (Blut-Triade P.8, Erstbeleg Quire B); dchckhy= (Intensiv-Siegel); Dreisegment-Kolophon; dy×3 (R25)', stars: '★★★', is5: false },
   { folio: 'f15r', plant: 'Silberdistel (Carlina acaulis)', signal: 'qotchor ★★★★★ (Pupillen-Zeichen, Kolophon); ykshol P.12 (erster negativer y+k+Terminus); sheey·cthy·dain (Gabe+Heilung+Auge); chaiin+Abwägungskolophon', stars: '★★★★', is5: false },
   { folio: 'f15v', plant: 'Einbeere (Paris quadrifolia)', signal: 'soloiin P.11 (Arznei für Auge) ★★★★★; sor P.10 (Heilungsarznei); opchor P.1 (Atemweg-Pupillen-Befund); cthor·chor= (vollständige Heilung, Kolophon)', stars: '★★★★', is5: false },
+  { folio: 'f16r', plant: 'Wunderbaum (Ricinus communis)', signal: 'tchor P2.5 (fem. Pupillen-Verb, 1. Beleg); saiin·ytaiin= (Intra-Paragraph-Kolophon); qokchor·dl·dy·shey= (Schlusskolophon)', stars: '★★★★', is5: false },
+  { folio: 'f16v', plant: 'Alpen-Mannstreu (Eryngium alpinum)', signal: 'chkar·chkar (Doppel-Untersuchungsformel, einmalig); okaiin×2; otor P.12 (Zeichen des Lichts); sokar·oaorar= (Quire-B-Abschlusskolophon)', stars: '★★★★★', is5: true },
 ];

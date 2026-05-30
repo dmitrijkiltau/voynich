@@ -55,8 +55,8 @@
 </div>
 
 <div class="box hl">
-	<div class="box-title">Verb-Paradigma y+k+[Terminus] — vollständig ab f15r</div>
-	<p style="margin-bottom:.5rem;font-size:.92rem">Alle klinischen Ankerbegriffe erhalten eine Verbform durch Präfix-Schichtung <span class="eva">y</span> + <span class="eva">k</span> + Terminus (fünf positiv, ein negativ):</p>
+	<div class="box-title">Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 1 Kandidat (f16r)</div>
+	<p style="margin-bottom:.5rem;font-size:.92rem">Alle klinischen Ankerbegriffe erhalten eine Verbform durch Präfix-Schichtung <span class="eva">y</span> + <span class="eva">k</span> + Terminus (fünf positiv, ein negativ, ein Kandidat):</p>
 	<div class="table-scroll">
 		<table class="dt" style="margin-top:.4rem">
 			<thead>
@@ -104,6 +104,13 @@
 					<td class="meaning">er wird zu Scheol gehen <em>(negativ)</em></td>
 					<td>f15r P12</td>
 					<td><span class="conf">★★★★</span></td>
+				</tr>
+				<tr style="opacity:.65;font-style:italic">
+					<td><span class="eva">ykair</span></td>
+					<td><span class="heb-sm">יְ+כְּ+אִיר</span></td>
+					<td class="meaning">er heilt leuchtend <em style="font-size:.8em;opacity:.8">(Kandidat)</em></td>
+					<td>f16r P1.3</td>
+					<td><span class="conf">★★★</span></td>
 				</tr>
 			</tbody>
 		</table>

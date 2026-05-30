@@ -24,4 +24,6 @@ export const RULES = [
   { id: 'R23', rule: 'Kurztitel-Format (Siman): 2 Wörter + =-Marker fasst Paragraphenbefund zusammen', evidence: 'f8r T1–T3 (ocho·daiin=, okokchodm=, schol·sair=); f9r T10', stars: '★★★★', is5: false },
   { id: 'R24', rule: '<span class="eva">shol·dy·…·shol</span> — Emphase-Dopplung mit Genitiv-Brücke <span class="heb-sm">דִּי</span>', evidence: 'f13r P.1: torshor·opchy·shol·dy·qopchy·shol — einmaliges Strukturmuster', stars: '★★★', is5: false },
   { id: 'R25', rule: '<span class="eva">dy × n</span> — Genitivkette als Intensitätsskala: ×1 Standard / ×2 Emphase / ×3 absoluter Superlativ', evidence: 'f14r P.10, f14v P.7 (×2); f14v P.6 (×3, einmalig) — Kandidat', stars: '★★★', is5: false },
+  { id: 'R28', rule: '<span class="eva">y+t+[Terminus]</span> — intensivierte/aspektuell verstärkte Imperfektform: y- (3. Sg. Mask.) + t- (3. Sg. Fem. / temporal) kombiniert', evidence: 'ytchor (f16v P.2), ytchy (f16v P.5); Vorläufer ytchody — Kandidat', stars: '★★★', is5: false },
+  { id: 'R29', rule: '<span class="eva">oto+or</span> erscheint nur in Finalposition unmittelbar vor einem Quire-Abschlusskolophon = positive Prognose-Abschluss-Geste', evidence: 'otor in f16v P.12 (vor sokar·oaorar= Quire-B-Abschluss) — Kandidat', stars: '★★', is5: false },
 ];

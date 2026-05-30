@@ -119,7 +119,7 @@ export const LEXICON = [
   { eva: 'shydal',    heb: 'שֵׁי+דַּל',         de: 'die Gabe der Schwäche',                       stars: '★★★',   cat: 'kompositum' },
   // ── Possessiv-Formen ────────────────────────────────
   { eva: 'olsho',     heb: 'שׁוֹ+לוֹ',          de: 'sein Scheol (Possessiv)',                     stars: '★★★',   cat: 'possessiv' },
-  // ── Neue Einträge v5.6 (f14r + f14v) ────────────────
+  // ── v5.6 (f14r + f14v) ────────────────
   { eva: 'pcho',      heb: 'פְּחֹ',             de: 'Atem/Mund (Spr.-A-Variante von pchy)',         stars: '★★★',   cat: 'akteur' },
   { eva: 'chok',      heb: 'חֹק',               de: 'Vorschrift / ärztliche Anordnung / Rezept',    stars: '★★★',   cat: 'symptom' },
   { eva: 'choky',     heb: 'חֹקֵּי',            de: 'die Vorschriften des [Falls] (Konstr.-Plural)',stars: '★★★',   cat: 'symptom' },
@@ -143,6 +143,31 @@ export const LEXICON = [
   { eva: 'koiin',     heb: 'כֹּ+עַיִן',         de: 'wie das Auge (komparativ, kol-Stamm)',         stars: '★★★',   cat: 'akteur' },
   { eva: 'kaiin',     heb: 'כְּ+עַיִן',         de: 'wie das Auge (komparativ, k-Präfix)',          stars: '★★★',   cat: 'akteur' },
   { eva: 'okshy',     heb: 'עַ+כְּ+שֵׁי',       de: 'auf/für die Gabe (therapeutischer Direktional)',stars: '★★★',  cat: 'akteur' },
-  { eva: 'cthor',     heb: 'כְּ+תֹּר',          de: 'wie [zur] Zeit der Behandlung (temporal)',     stars: '★★★',   cat: 'syntax' },
+  { eva: 'cthor',     heb: 'כְּ+תֹּר',          de: 'vollständige Heilung',                         stars: '★★★',   cat: 'verb' },
   { eva: 'dshy',      heb: 'דְּ+שֵׁי',          de: 'von der Gabe (d-Genitivkonstrukt)',            stars: '★★★',   cat: 'kompositum' },
+  // ── v5.8 (f16r + f16v) ────────────────
+  // f16r
+  { eva: 'tchor',     heb: 'תְּ+חֹר',           de: 'sie heilt die Pupille (fem. Imperfekt)',        stars: '★★★★',  cat: 'verb' },
+  { eva: 'ykair',     heb: 'יְ+כְּ+אִיר',        de: 'er heilt leuchtend (Kandidat 7. y+k+Terminus)', stars: '★★★',   cat: 'verb' },
+  { eva: 'pocheody',  heb: 'פְּ+חֹ+דִּי',        de: 'des Atemwegs (Genitiv von pcho)',              stars: '★★★',   cat: 'akteur' },
+  { eva: 'toror',     heb: 'תְּ+אוֹר+אוֹר',      de: 'sie heilt — Licht — Licht (Doppel-Licht-Heilung)', stars: '★★★', cat: 'verb' },
+  { eva: 'daly·dal',  heb: 'דַּלִּי+דַּל',       de: 'seine Schwäche — schwach (R19 Dopplung ×2)',   stars: '★★★★',  cat: 'symptom' },
+  { eva: 'dalchy',    heb: 'דַּל+כְּהִי',        de: 'die Schwäche der Blässe',                      stars: '★★★★',  cat: 'symptom' },
+  { eva: 'dainod',    heb: 'דַּ+אִין+עֹד',       de: 'er behandelt das Auge weiter',                 stars: '★★★',   cat: 'verb' },
+  { eva: 'shody',     heb: 'שְׁאוֹ+דִּי',        de: 'von Scheol — dessen (Genitiv)',                stars: '★★★',   cat: 'prognose' },
+  { eva: 'otly',      heb: 'אוֹת+לֵ',            de: 'Zeichen zu/für (oto-Direktional)',             stars: '★★★',   cat: 'kompositum' },
+  { eva: 'opchy',     heb: 'עַ+פְּ+הִי',         de: 'auf den Atemweg (o+pchy-Direktional)',         stars: '★★★',   cat: 'akteur' },
+  // f16v
+  { eva: 'ytchor',    heb: 'יְ+תְּ+חֹר',         de: 'er/sie wird die Pupille heilen (y+t-Doppelpräfix)', stars: '★★★', cat: 'verb' },
+  { eva: 'ytchy',     heb: 'יְ+תְּ+כְּהִי',      de: 'er/sie wird Blässe zeigen (y+t-Doppelpräfix)', stars: '★★★',  cat: 'verb' },
+  { eva: 'pchraiin',  heb: 'פְּ+רְ+עַיִן',       de: 'für/bei das Licht des Auges',                 stars: '★★★',   cat: 'akteur' },
+  { eva: 'sholo',     heb: 'שְׁאוֹ+לוֹ',         de: 'Scheol für ihn (Dativ-Form)',                  stars: '★★★',   cat: 'prognose' },
+  { eva: 'otor',      heb: 'אוֹת+אוֹר',          de: 'Zeichen des Lichts / der Heilung',             stars: '★★★',   cat: 'kompositum' },
+  { eva: 'otain',     heb: 'אוֹת+אַיִן',         de: 'Zeichen des Nichts / Endes',                   stars: '★★★',   cat: 'kompositum' },
+  { eva: 'okytaiin',  heb: 'עַ+כְּ+תָּ+עַיִן',   de: 'auf die Weise, dass er das Auge heilt',        stars: '★★★',   cat: 'verb' },
+  { eva: 'dairin',    heb: 'דְּ+אִיר+יִן',       de: 'von dem Leuchtenden (Genitiv-Form)',           stars: '★★★',   cat: 'prognose' },
+  { eva: 'sokar',     heb: 'שׂ+אוֹ+כְּ+אָר',     de: 'Heilungs-Arzt des Lichts (Quire-B-Kolophon)',  stars: '★★★',   cat: 'kolophon' },
+  { eva: 'oaorar',    heb: 'עַ+אַ+אוֹר+אָר',     de: 'auf das Licht der Heilung (Doppel-Licht-Formel)', stars: '★★★★', cat: 'kolophon' },
+  { eva: 'dan',       heb: 'דָּן',               de: 'er hat geurteilt (Qal Perfekt)',               stars: '★★★',   cat: 'verb' },
+  { eva: 'koshet',    heb: 'כֹּ+שֵׁ+תְּ',        de: 'Scheol-Vollständigkeit (temporaler Abschlussterm)', stars: '★★', cat: 'prognose' },
 ];

@@ -127,7 +127,7 @@
   </div>
 
   <div>
-    <h3>8 · f15r / f15v — Bifolio bB2 Abschluss <span class="new-badge">Neu v5.7</span></h3>
+    <h3>8 · f15r / f15v — Bifolio bB2 Abschluss</h3>
     <div class="box green ref-card">
       <div class="antonym-grid">
         <div>
@@ -142,10 +142,33 @@
         </div>
       </div>
       <p class="ref-note" style="margin-top:.6rem">
-        <span class="eva">soloiin</span> (f15v P.11) = „Arznei für das Auge" — therapeutisch präzisestes Kompositum im Gesamtkorpus. <span class="eva">ykshol</span> (f15r P.12) = erster negativer y+k+Terminus — Paradigma mit 6 Gliedern vollständig. Bifolio bB2 (f10r/f10v/f15r/f15v) schließt konsistentes ophthalmologisches Programm ab.
+        <span class="eva">soloiin</span> (f15v P.11) = „Arznei für das Auge" — therapeutisch präzisestes Kompositum im Gesamtkorpus. <span class="eva">ykshol</span> (f15r P.12) = erster negativer y+k+Terminus — Paradigma mit 6 Gliedern + Kandidat <span class="eva">ykair</span>. Bifolio bB2 (f10r/f10v/f15r/f15v) schließt konsistentes ophthalmologisches Programm ab.
         <span class="conf5">★★★★★</span>
       </p>
       <button class="ref-insert-btn" onclick={() => onInsert('soloiin sor cthor chor')}>In Übersetzer laden</button>
+    </div>
+  </div>
+
+  <div>
+    <h3>9 · f16r / f16v — Bifolio bB1 · Quire-B-Abschluss <span class="new-badge">Neu v5.8</span></h3>
+    <div class="box green ref-card">
+      <div class="antonym-grid">
+        <div>
+          <div class="layer-eva">saiin · ytaiin=</div>
+          <div class="layer-heb">יְ+תָּ+עַיִן &nbsp;·&nbsp; שַׂעַיִן</div>
+          <div class="layer-en" style="font-size:.9rem">f16r Mini-Kolophon: "Augenarzt — er wird das Auge heilen" <em>(positiv)</em></div>
+        </div>
+        <div>
+          <div class="layer-eva">sokar · oaorar=</div>
+          <div class="layer-heb">עַ+אַ+אוֹר+אָר &nbsp;·&nbsp; שׂ+אוֹ+כְּ+אָר</div>
+          <div class="layer-en" style="font-size:.9rem">f16v Quire-Kolophon: "Heilungs-Arzt des Lichts — auf das Licht der Heilung" <em>(positiv)</em></div>
+        </div>
+      </div>
+      <p class="ref-note" style="margin-top:.6rem">
+        <span class="eva">tchor</span> (תְּ+חֹר) — fem. Pupillen-Heilungsverb, zwei Belege in bB1 bestätigt ★★★★. <span class="eva">chkar·chkar</span> (f16v P.6) — erste Doppel-Untersuchungsformel im Corpus. Bifolio bB1 (f9r/f9v/f16r/f16v) vollständig — Quire B abgeschlossen; erster rein positiver Quire-Abschluss im analysierten Corpus.
+        <span class="conf5">★★★★★</span>
+      </p>
+      <button class="ref-insert-btn" onclick={() => onInsert('saiin ytaiin sokar oaorar')}>In Übersetzer laden</button>
     </div>
   </div>
 </div>
