@@ -533,17 +533,21 @@
 		border-bottom: 1.5px solid var(--border);
 		position: relative;
 
-		&::after {
+		&::before, &::after {
 			content: '✦ ✦ ✦';
 			position: absolute;
-			bottom: -.65rem;
+			bottom: -.7rem;
 			left: 50%;
 			transform: translateX(-50%);
-			background: var(--parch);
 			padding: 0 .8rem;
-			color: var(--border);
+			color: var(--red);
 			font-size: .75rem;
 			letter-spacing: .4em;
+		}
+
+		&::before {
+			background: var(--parch);
+			filter: blur(4px);
 		}
 
 		& .kicker {
@@ -561,6 +565,7 @@
 			font-weight: 400;
 			line-height: 1.2;
 			margin-bottom: .45rem;
+			color: var(--red);
 		}
 
 		& .subtitle {
