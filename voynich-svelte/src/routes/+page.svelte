@@ -86,7 +86,6 @@
 {/if}
 
 <div class="app-shell">
-
 	<!-- Sidebar -->
 	<aside class="sidebar" class:open={menuOpen} aria-label="Seitennavigation">
 		<div class="sidebar-brand">
@@ -127,7 +126,6 @@
 
 	<!-- Main content -->
 	<main class="main-content">
-
 		<header class="page-header">
 			<div class="kicker">Formales Mapping-Dokument · Voynich-Manuskript · Version 5.3</div>
 			<h1>EVA → Hebräisch-Aramäisch</h1>
@@ -147,15 +145,11 @@
 			<SummarySection />
 		</section>
 
-		<hr class="rule" />
-
 		<!-- II. METHODIK -->
 		<section class="section" id="methodik">
 			<h2>II. Methodik</h2>
 			<MethodologySection />
 		</section>
-
-		<hr class="rule" />
 
 		<!-- III. ÜBERSETZER -->
 		<section class="section" id="tool">
@@ -165,8 +159,6 @@
 				<TranslatorTool bind:input={evaInput} />
 			</div>
 		</section>
-
-		<hr class="rule" />
 
 		<!-- IV. ZEICHENMAPPING -->
 		<section class="section" id="mapping">
@@ -179,16 +171,12 @@
 			</div>
 		</section>
 
-		<hr class="rule" />
-
 		<!-- V. LEXIKON -->
 		<section class="section" id="lexikon">
 			<h2>V. Bestätigtes Lexikon ({STATS.lexicon} Einträge)</h2>
 			<p>Alle Einträge mit ★★★ oder höher. Klick auf eine Zeile fügt das EVA-Wort in die Eingabe ein.</p>
 			<LexiconSection {LEXICON} onInsert={insertEva} />
 		</section>
-
-		<hr class="rule" />
 
 		<!-- VI. GRAMMATIK -->
 		<section class="section" id="grammar">
@@ -197,8 +185,6 @@
 			<GrammarSection />
 		</section>
 
-		<hr class="rule" />
-
 		<!-- VII. GRAMMATIKREGELN -->
 		<section class="section" id="grammatikregeln">
 			<h2>VII. Grammatikregeln (vollständig)</h2>
@@ -206,15 +192,11 @@
 			<GrammarRulesSection />
 		</section>
 
-		<hr class="rule" />
-
 		<!-- VIII. RÜCKWÄRTSTEST -->
 		<section class="section" id="rueckwaerts">
 			<h2>VIII. Rückwärtstest-Statistik</h2>
 			<BacktestSection />
 		</section>
-
-		<hr class="rule" />
 
 		<!-- IX. REFERENZEN -->
 		<section class="section" id="referenz">
@@ -223,8 +205,6 @@
 			<ReferencesSection onInsert={insertEva} />
 		</section>
 
-		<hr class="rule" />
-
 		<!-- X. WORTKLASSEN -->
 		<section class="section" id="wortklassen">
 			<h2>X. Wortklassen-System</h2>
@@ -232,15 +212,11 @@
 			<WordClassesSection />
 		</section>
 
-		<hr class="rule" />
-
 		<!-- XI. SPRACHE A -->
 		<section class="section" id="spracheA">
 			<h2>XI. Sprache A — Quires A &amp; B (f1v–f10v)</h2>
 			<LanguageASection />
 		</section>
-
-		<hr class="rule" />
 
 		<!-- XII. RANDSTERNE -->
 		<section class="section" id="sterne">
@@ -255,7 +231,6 @@
 			Konfidenzbewertungen beziehen sich auf Konsistenz im vorliegenden Korpus.</p>
 			<a href="https://kiltau.com/legal-notice" target="_blank" rel="noopener" class="legal-link">Impressum & Datenschutz</a>
 		</footer>
-
 	</main>
 </div>
 
@@ -544,6 +519,10 @@
 		margin-bottom: 3rem;
 		padding-top: .5rem;
 		scroll-margin-top: 2rem;
+
+		& + section {
+			margin-bottom: 6rem;
+		}
 	}
 
 	/* ── Page footer ────────────────────────────────────── */
