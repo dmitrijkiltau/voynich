@@ -4,7 +4,14 @@
 	import MappingGrid from '$lib/components/MappingGrid.svelte';
 	import LexiconSection from '$lib/components/LexiconSection.svelte';
 	import GrammarSection from '$lib/components/GrammarSection.svelte';
-	import ReferenzSection from '$lib/components/ReferenzSection.svelte';
+	import GrammarRulesSection from '$lib/components/GrammarRulesSection.svelte';
+	import ReferencesSection from '$lib/components/ReferencesSection.svelte';
+	import SummarySection from '$lib/components/SummarySection.svelte';
+	import MethodologySection from '$lib/components/MethodologySection.svelte';
+	import BacktestSection from '$lib/components/BacktestSection.svelte';
+	import WordClassesSection from '$lib/components/WordClassesSection.svelte';
+	import LanguageASection from '$lib/components/LanguageASection.svelte';
+	import MarginStarsSection from '$lib/components/MarginStarsSection.svelte';
 
 	let evaInput      = $state('');
 	let activeSection = $state('tool');
@@ -18,11 +25,18 @@
 	};
 
 	const NAV_ITEMS = [
-		{ id: 'tool',     label: 'I. Übersetzer' },
-		{ id: 'mapping',  label: 'II. Zeichenmapping' },
-		{ id: 'lexikon',  label: 'III. Lexikon' },
-		{ id: 'grammar',  label: 'IV. Grammatik' },
-		{ id: 'referenz', label: 'V. Referenzen' },
+		{ id: 'abstract',        label: 'I. Zusammenfassung' },
+		{ id: 'methodik',        label: 'II. Methodik' },
+		{ id: 'tool',            label: 'III. Übersetzer' },
+		{ id: 'mapping',         label: 'IV. Zeichenmapping' },
+		{ id: 'lexikon',         label: 'V. Lexikon' },
+		{ id: 'grammar',         label: 'VI. Grammatik' },
+		{ id: 'grammatikregeln', label: 'VII. Grammatikregeln' },
+		{ id: 'rueckwaerts',     label: 'VIII. Rückwärtstest' },
+		{ id: 'referenz',        label: 'IX. Referenzen' },
+		{ id: 'wortklassen',     label: 'X. Wortklassen' },
+		{ id: 'spracheA',        label: 'XI. Sprache A' },
+		{ id: 'sterne',          label: 'XII. Randsterne' },
 	];
 
 	// Scrollspy via IntersectionObserver
@@ -60,7 +74,7 @@
 
 <!-- Mobile top bar -->
 <header class="mobile-header">
-	<span class="mobile-title">Voynich · EVA → Hebräisch</span>
+	<span class="mobile-title">Voynich · Mapping-Dokument v5.3</span>
 	<button class="menu-toggle" onclick={() => menuOpen = !menuOpen} aria-label="Navigation öffnen/schließen">
 		{menuOpen ? '✕' : '☰'}
 	</button>
@@ -115,30 +129,46 @@
 	<main class="main-content">
 
 		<header class="page-header">
-			<div class="kicker">Forschungswerkzeug · Voynich-Manuskript · Mapping v5.3</div>
-			<h1>EVA → Hebräisch-Übersetzer</h1>
-			<div class="subtitle">Interaktives Übersetzungstool auf Basis des formalen Zeichenmappings</div>
+			<div class="kicker">Formales Mapping-Dokument · Voynich-Manuskript · Version 5.3</div>
+			<h1>EVA → Hebräisch-Aramäisch</h1>
+			<div class="subtitle">Zeichenmapping, Lexikon und Grammatikregeln · Sprachen A und B</div>
 			<div class="meta-line">
-				<span>Mischna-Hebräisch / Jüdisch-Aramäisch</span>
+				<span>Analysierte Folios: f1v–f10v (Quires A–B), f57r, f103r/v, f114v, f115r/v, f116r/v</span>
 				<span>·</span>
-				<span>{STATS.lexicon} Lexikoneinträge · {STATS.rules} Grammatikregeln</span>
+				<span>Lexikon: {STATS.lexicon} Einträge · Grammatikregeln: {STATS.rules} · Rückwärtstest: {STATS.backtest}</span>
 				<span>·</span>
-				<span>Mai 2026</span>
+				<span>Mai 2026 · Version 5.3</span>
 			</div>
 		</header>
 
-		<!-- I. ÜBERSETZER -->
+		<!-- I. ZUSAMMENFASSUNG -->
+		<section class="section" id="abstract">
+			<h2>I. Zusammenfassung</h2>
+			<SummarySection />
+		</section>
+
+		<hr class="rule" />
+
+		<!-- II. METHODIK -->
+		<section class="section" id="methodik">
+			<h2>II. Methodik</h2>
+			<MethodologySection />
+		</section>
+
+		<hr class="rule" />
+
+		<!-- III. ÜBERSETZER -->
 		<section class="section" id="tool">
-			<h2>I. Übersetzungstool</h2>
+			<h2>III. Übersetzungstool</h2>
 			<p class="dropcap">EVA-Text in das Eingabefeld eingeben (Wörter durch Leerzeichen oder · getrennt). Das Tool durchsucht das bestätigte Lexikon, erkennt Präfixe und zeigt Hebräisch, Wort-für-Wort-Analyse und deutsche Bedeutung an. Unbekannte Wörter werden als solche markiert.</p>
 			<TranslatorTool bind:input={evaInput} />
 		</section>
 
 		<hr class="rule" />
 
-		<!-- II. ZEICHENMAPPING -->
+		<!-- IV. ZEICHENMAPPING -->
 		<section class="section" id="mapping">
-			<h2>II. Zeichenmapping EVA → Hebräisch</h2>
+			<h2>IV. Zeichenmapping EVA → Hebräisch</h2>
 			<p>Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab. Klick auf eine Zelle fügt das Zeichen in die Eingabe ein.</p>
 			<MappingGrid {MAPPING} onInsert={insertEva} />
 			<div class="box red">
@@ -149,33 +179,75 @@
 
 		<hr class="rule" />
 
-		<!-- III. LEXIKON -->
+		<!-- V. LEXIKON -->
 		<section class="section" id="lexikon">
-			<h2>III. Bestätigtes Lexikon ({STATS.lexicon} Einträge)</h2>
+			<h2>V. Bestätigtes Lexikon ({STATS.lexicon} Einträge)</h2>
 			<p>Alle Einträge mit ★★★ oder höher. Klick auf eine Zeile fügt das EVA-Wort in die Eingabe ein.</p>
 			<LexiconSection {LEXICON} onInsert={insertEva} />
 		</section>
 
 		<hr class="rule" />
 
-		<!-- IV. GRAMMATIK -->
+		<!-- VI. GRAMMATIK -->
 		<section class="section" id="grammar">
-			<h2>IV. Grammatik-Kurzübersicht</h2>
+			<h2>VI. Grammatik — Präfixe, Suffixe &amp; Schemata</h2>
 			<p>Die wichtigsten morphologischen Regeln für das Lesen von EVA-Sequenzen.</p>
 			<GrammarSection />
 		</section>
 
 		<hr class="rule" />
 
-		<!-- V. REFERENZ -->
+		<!-- VII. GRAMMATIKREGELN -->
+		<section class="section" id="grammatikregeln">
+			<h2>VII. Grammatikregeln (vollständig)</h2>
+			<p>Alle 23 validierten Regeln des EVA-Hebräisch-Systems mit Evidenz und Konfidenz.</p>
+			<GrammarRulesSection />
+		</section>
+
+		<hr class="rule" />
+
+		<!-- VIII. RÜCKWÄRTSTEST -->
+		<section class="section" id="rueckwaerts">
+			<h2>VIII. Rückwärtstest-Statistik</h2>
+			<BacktestSection />
+		</section>
+
+		<hr class="rule" />
+
+		<!-- IX. REFERENZEN -->
 		<section class="section" id="referenz">
-			<h2>V. Verankerte Referenz-Sequenzen</h2>
+			<h2>IX. Verankerte Referenz-Sequenzen</h2>
 			<p>Die am besten verifizierten Sequenzen des Korpus — als Orientierungshilfe beim Übersetzen.</p>
-			<ReferenzSection onInsert={insertEva} />
+			<ReferencesSection onInsert={insertEva} />
+		</section>
+
+		<hr class="rule" />
+
+		<!-- X. WORTKLASSEN -->
+		<section class="section" id="wortklassen">
+			<h2>X. Wortklassen-System</h2>
+			<p>Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.</p>
+			<WordClassesSection />
+		</section>
+
+		<hr class="rule" />
+
+		<!-- XI. SPRACHE A -->
+		<section class="section" id="spracheA">
+			<h2>XI. Sprache A — Quires A &amp; B (f1v–f10v)</h2>
+			<LanguageASection />
+		</section>
+
+		<hr class="rule" />
+
+		<!-- XII. RANDSTERNE -->
+		<section class="section" id="sterne">
+			<h2>XII. Das Randstern-System</h2>
+			<MarginStarsSection />
 		</section>
 
 		<footer class="page-footer">
-			<p>Voynich-Manuskript — EVA-Übersetzer · Auf Basis des Mapping-Dokuments v5.3 · Mai 2026</p>
+			<p>Voynich-Manuskript — Formales Mapping-Dokument · Version 5.3 · Mai 2026</p>
 			<p>Lexikon: {STATS.lexicon} Einträge · Grammatikregeln: {STATS.rules} · Rückwärtstest: {STATS.backtest} ({STATS.backtestFraction})</p>
 			<p class="disclaimer">Dieses Tool ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein.<br>
 			Konfidenzbewertungen beziehen sich auf Konsistenz im vorliegenden Korpus.</p>
