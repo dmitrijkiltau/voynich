@@ -38,7 +38,7 @@
 	}
 
 	const words = $derived(
-		input.split(/[\s·,·]+/).map(s => s.trim()).filter(Boolean)
+		input.split(/[\s·,.]+/).map(s => s.trim()).filter(Boolean)
 	);
 
 	const results = $derived(words.map(w => ({ word: w, lookup: lookupWord(w) })));
