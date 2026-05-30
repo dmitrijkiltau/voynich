@@ -42,7 +42,7 @@ export const PREFIXES = [
   { eva: 't',   heb: 'תָּ',  de: 'Imperfekt 3.Sg.f./2.Sg.' },
 ];
 
-// Confirmed lexicon v5.3 — 85 entries ★★★+
+// Confirmed lexicon v5.3 — 98 entries ★★★+
 export const LEXICON = [
   // ── Medizinische Nomina & Symptome ──────────────────
   { eva: 'dam',       heb: 'דָּם',         de: 'Blut',                             stars: '★★★★★', cat: 'symptom' },

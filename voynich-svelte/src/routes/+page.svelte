@@ -227,7 +227,7 @@
 		<footer class="page-footer">
 			<p>Voynich-Manuskript — Formales Mapping-Dokument · Version 5.3 · Mai 2026</p>
 			<p>Lexikon: {STATS.lexicon} Einträge · Grammatikregeln: {STATS.rules} · Rückwärtstest: {STATS.backtest} ({STATS.backtestFraction})</p>
-			<p class="disclaimer">Dieses Tool ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein.<br>
+			<p class="disclaimer">Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein.<br>
 			Konfidenzbewertungen beziehen sich auf Konsistenz im vorliegenden Korpus.</p>
 			<a href="https://kiltau.com/legal-notice" target="_blank" rel="noopener" class="legal-link">Impressum & Datenschutz</a>
 		</footer>
@@ -552,7 +552,33 @@
 		text-decoration: none;
 	}
 
-	
+	/* ── Print ──────────────────────────────────────────── */
+
+	@media print {
+		.sidebar,
+		.mobile-header,
+		.menu-overlay,
+		#tool {
+			display: none !important;
+		}
+
+		.app-shell {
+			display: block;
+		}
+
+		.main-content {
+			padding: 0;
+		}
+
+		.section {
+			break-inside: avoid;
+
+			& + section {
+				margin-bottom: 3rem;
+			}
+		}
+	}
+
   .tool {
     display: flex;
     flex-wrap: wrap;
