@@ -1,6 +1,6 @@
 <script>
 	import { PREFIXES, LEXICON, FOLIO_PAGES } from '$lib';
-	import { browser } from '$app/environment';
+	import { browser, dev } from '$app/environment';
 
 	let { input = $bindable('') } = $props();
 
@@ -104,7 +104,8 @@
 	 */
 	function folioUrl(quire, pageId) {
 		const target = `https://voynich.nu/${quire}/${folioFilename(pageId)}_tr.txt`;
-		return `https://corsproxy.io/?url=${encodeURIComponent(target)}`;
+		if (dev) return `https://corsproxy.io/?url=${encodeURIComponent(target)}`;
+		return target;
 	}
 
 	/** @param {string} raw */
@@ -177,7 +178,6 @@
 </script>
 
 <div class="tool-area" aria-label="EVA-Übersetzer">
-
 	<!-- ── Top grid: Input | Output | Folio ── -->
 	<div class="top-grid">
 
@@ -260,7 +260,7 @@
 								{#each group.pages as page}
 									<button
 										class="folio-btn"
-										onclick={() => fetchFolio(group.q, page)}
+										onclick={() => dev ? fetchFolio(group.q, page) : window.open(folioUrl(group.q, page), '_blank')}
 										aria-label="Folio {page} laden"
 									>{page}</button>
 								{/each}
