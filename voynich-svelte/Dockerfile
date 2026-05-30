@@ -4,7 +4,7 @@ FROM node:26-alpine AS builder
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-RUN npm ci && npm install @sveltejs/adapter-node
+RUN npm ci
 
 COPY . .
 RUN npm run build

@@ -29,6 +29,13 @@ npm run build
 npm run preview
 ```
 
+## Docker (production)
+
+```sh
+docker build -t voynich-app .
+docker run -p 3000:3000 voynich-app
+```
+
 ## Type checking
 
 ```sh
