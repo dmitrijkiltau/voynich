@@ -84,7 +84,7 @@
 		<div class="sidebar-brand">
 			<div class="brand-kicker">Forschungswerkzeug</div>
 			<div class="brand-name">Voynich</div>
-			<div class="brand-sub">EVA → Hebräisch · v{STATS.version}</div>
+			<div class="brand-sub">EVA → Hebräisch</div>
 		</div>
 
 		<nav class="sidebar-nav">
@@ -118,7 +118,7 @@
 			⎙ Exportieren/Drucken
 		</button>
 
-		<div class="sidebar-meta">Mai 2026</div>
+		<div class="sidebar-meta">Mai 2026 · v{STATS.version}</div>
 	</aside>
 
 	<!-- Main content -->

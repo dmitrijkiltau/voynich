@@ -45,7 +45,7 @@
   </div>
 
   <div>
-    <h3>4 · f6v/f7v — Direktionales Antonymenpaar <span class="new-badge">Neu v5.2</span></h3>
+    <h3>4 · f6v/f7v — Direktionales Antonymenpaar</h3>
     <div class="box green ref-card">
       <div class="antonym-grid">
         <div>
@@ -81,7 +81,7 @@
   </div>
 
   <div>
-    <h3>6 · f11r P.6 / f11v P.6 — Pupillenheilung &amp; positiver Kolophon <span class="new-badge">Neu v5.4</span></h3>
+    <h3>6 · f11r P.6 / f11v P.6 — Pupillenheilung &amp; positiver Kolophon</h3>
     <div class="box green ref-card">
       <div class="antonym-grid">
         <div>

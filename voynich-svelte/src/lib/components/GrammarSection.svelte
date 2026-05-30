@@ -55,43 +55,45 @@
 </div>
 
 <div class="box hl">
-	<div class="box-title">Verb-Paradigma y+k+[Terminus] — vollständig ab f11r/f11v <span class="new-badge">Neu v5.4</span></div>
+	<div class="box-title">Verb-Paradigma y+k+[Terminus] — vollständig ab f11r/f11v</div>
 	<p style="margin-bottom:.5rem;font-size:.92rem">Alle vier klinischen Ankerbegriffe erhalten eine Verbform durch Präfix-Schichtung <span class="eva">y</span> + <span class="eva">k</span> + Terminus:</p>
-	<table class="dt" style="margin-top:.4rem">
-		<thead>
-			<tr><th>EVA</th><th>Hebräisch</th><th>Bedeutung</th><th>Erstbeleg</th><th>Konf.</th></tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><span class="eva">ykchaiin</span></td>
-				<td><span class="heb-sm">יְ+כְּ+חַיִּין</span></td>
-				<td class="meaning">er wird wie Leben werden</td>
-				<td>f9r</td>
-				<td><span class="conf">★★★★</span></td>
-			</tr>
-			<tr>
-				<td><span class="eva">ycheor</span></td>
-				<td><span class="heb-sm">יְ+כְּ+אוֹר</span></td>
-				<td class="meaning">er wird wie Licht heilen</td>
-				<td>f10r</td>
-				<td><span class="conf">★★★★</span></td>
-			</tr>
-			<tr>
-				<td><span class="eva">ykchor</span></td>
-				<td><span class="heb-sm">יְ+כְּ+חֹר</span></td>
-				<td class="meaning">er heilt die Pupille</td>
-				<td>f11r P6</td>
-				<td><span class="conf5">★★★★★</span></td>
-			</tr>
-			<tr>
-				<td><span class="eva">ykchy</span></td>
-				<td><span class="heb-sm">יְ+כְּ+הִי</span></td>
-				<td class="meaning">er wird Blässe zeigen</td>
-				<td>f11v P2</td>
-				<td><span class="conf">★★★★</span></td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="table-scroll">
+		<table class="dt" style="margin-top:.4rem">
+			<thead>
+				<tr><th>EVA</th><th>Hebräisch</th><th>Bedeutung</th><th>Erstbeleg</th><th>Konf.</th></tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><span class="eva">ykchaiin</span></td>
+					<td><span class="heb-sm">יְ+כְּ+חַיִּין</span></td>
+					<td class="meaning">er wird wie Leben werden</td>
+					<td>f9r</td>
+					<td><span class="conf">★★★★</span></td>
+				</tr>
+				<tr>
+					<td><span class="eva">ycheor</span></td>
+					<td><span class="heb-sm">יְ+כְּ+אוֹר</span></td>
+					<td class="meaning">er wird wie Licht heilen</td>
+					<td>f10r</td>
+					<td><span class="conf">★★★★</span></td>
+				</tr>
+				<tr>
+					<td><span class="eva">ykchor</span></td>
+					<td><span class="heb-sm">יְ+כְּ+חֹר</span></td>
+					<td class="meaning">er heilt die Pupille</td>
+					<td>f11r P6</td>
+					<td><span class="conf5">★★★★★</span></td>
+				</tr>
+				<tr>
+					<td><span class="eva">ykchy</span></td>
+					<td><span class="heb-sm">יְ+כְּ+הִי</span></td>
+					<td class="meaning">er wird Blässe zeigen</td>
+					<td>f11v P2</td>
+					<td><span class="conf">★★★★</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
 
 <div class="box hl">
@@ -164,7 +166,12 @@
 
     & > div {
       flex: 1 1 480px;
+      overflow-x: auto;
     }
+  }
+
+  .table-scroll {
+    overflow-x: auto;
   }
 
   /* ── Schema diagram ─────────────────────────────────── */
