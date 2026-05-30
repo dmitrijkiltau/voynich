@@ -114,6 +114,10 @@
 			</div>
 		</div>
 
+		<button class="print-btn" onclick={() => window.print()} title="Exportieren oder drucken">
+			⎙ Exportieren/Drucken
+		</button>
+
 		<div class="sidebar-meta">Mai 2026</div>
 	</aside>
 
@@ -129,6 +133,16 @@
 				<span>Mai 2026, Version {STATS.version}</span>
 			</div>
 		</header>
+
+		<!-- Print-only table of contents -->
+		<nav class="toc" aria-label="Inhaltsangabe">
+			<h2 class="toc-title">Inhaltsangabe</h2>
+			<ol class="toc-list">
+				{#each NAV_ITEMS as item}
+					<li class:toc-dim={item.id === 'tool'}>{item.label}</li>
+				{/each}
+			</ol>
+		</nav>
 
 		<!-- I. ZUSAMMENFASSUNG -->
 		<section class="section" id="abstract">
@@ -380,6 +394,59 @@
 		}
 	}
 
+	.print-btn {
+		margin: .5rem 1rem 0;
+		width: calc(100% - 2rem);
+		padding: .45rem .8rem;
+		font-family: var(--font-smallcaps);
+		font-size: .65rem;
+		letter-spacing: .12em;
+		text-transform: uppercase;
+		color: var(--ink-f);
+		border: 1px solid var(--parch-dk);
+		border-radius: 2px;
+		background: rgba(255, 255, 255, .3);
+		cursor: pointer;
+		transition: all .15s;
+
+		&:hover {
+			background: rgba(255, 255, 255, .7);
+			color: var(--ink);
+			border-color: var(--border);
+		}
+	}
+
+	.toc {
+		display: none;
+
+		& .toc-title {
+			font-family: var(--font-display);
+			font-size: 1.4rem;
+			font-weight: 400;
+			margin-bottom: 1rem;
+			border-bottom: 1px solid var(--border);
+			padding-bottom: .5rem;
+		}
+
+		& .toc-list {
+			list-style: none;
+			columns: 2;
+			gap: 2rem;
+
+			& li {
+				padding: .25rem 0;
+				font-family: var(--font-smallcaps);
+				font-size: .85rem;
+				letter-spacing: .06em;
+				border-bottom: 1px dotted var(--parch-dk);
+			}
+
+			& .toc-dim {
+				opacity: .4;
+			}
+		}
+	}
+
 	.sidebar-meta {
 		font-size: .68rem;
 		color: var(--ink-f);
@@ -558,8 +625,13 @@
 		.sidebar,
 		.mobile-header,
 		.menu-overlay,
-		#tool {
+		.print-btn {
 			display: none !important;
+		}
+
+		#tool {
+			opacity: .35;
+			filter: grayscale(1);
 		}
 
 		.app-shell {
@@ -576,6 +648,11 @@
 			& + section {
 				margin-bottom: 3rem;
 			}
+		}
+
+		.toc {
+			display: block;
+			break-after: page;
 		}
 	}
 
