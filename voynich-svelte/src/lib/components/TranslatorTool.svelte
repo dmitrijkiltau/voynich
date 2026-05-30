@@ -11,6 +11,7 @@
 		{ label: 'f103r P.17', text: 'or aiin sheol daiin' },
 		{ label: 'f103r P.42', text: 'tshey sheol chalal' },
 		{ label: 'f6v/f7v',    text: 'lor lshol kaiim' },
+		{ label: 'f13r P.1',   text: 'torshor opchy shol dy qopchy shol' },
 	];
 
 	/** @param {string} w */
@@ -347,7 +348,7 @@
 	<!-- ── Methodology note ── -->
 	<div class="box red method-note">
 		<div class="box-title">Hinweis zur Methodik</div>
-		<p>Das Tool arbeitet auf dem bestätigten Lexikon v{STATS.version} ({STATS.lexicon} Einträge, ★★★ oder höher), erweitert durch Neubelege aus f11r/f11v (Quire B): <em>ykchor</em>, <em>qokchor</em>, <em>otchor</em>, <em>tchey</em>, <em>chodl</em>, <em>dair</em>, <em>cphar</em>. Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
+		<p>Das Tool arbeitet auf dem bestätigten Lexikon v{STATS.version} ({STATS.lexicon} Einträge, ★★★ oder höher), erweitert durch Neubelege aus f11r/f11v (Quire B): <em>ykchor</em>, <em>qokchor</em>, <em>otchor</em>, <em>tchey</em>, <em>chodl</em>, <em>dair</em>, <em>cphar</em>; sowie aus f13r/f13v: <em>torshor</em> (Jahreszeit-Zeichen), <em>pchy</em> (Atem/Mund). Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
 	</div>
 </div>
 
