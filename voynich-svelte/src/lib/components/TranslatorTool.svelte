@@ -58,6 +58,9 @@
 	const knownCount  = $derived(results.filter(r => r.lookup).length);
 	const totalCount  = $derived(results.length);
 
+	let hideUnknown = $state(false);
+	const glossResults = $derived(hideUnknown ? results.filter(r => r.lookup) : results);
+
 	// ── Cookie consent ──────────────────────────────────
 
 	const CONSENT_COOKIE = 'voynich_folio_consent';
@@ -322,7 +325,13 @@
 		<!-- ── Gloss table ── -->
 		{#if results.length > 0}
 			<div class="gloss-wrap">
-				<span class="panel-label">Wort-für-Wort-Analyse</span>
+				<div class="gloss-header">
+					<span class="panel-label">Wort-für-Wort-Analyse</span>
+					<label class="hide-unknown-toggle">
+						<input type="checkbox" bind:checked={hideUnknown} />
+						<span>Unbekannte ausblenden</span>
+					</label>
+				</div>
 				<div class="gloss-scroll">
 					<table class="gloss-table" aria-label="Wort-für-Wort-Analyse">
 						<thead>
@@ -335,7 +344,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							{#each results as r}
+							{#each glossResults as r}
 								<tr class:row-unknown={!r.lookup}>
 									<td class="g-eva">{r.word}</td>
 									<td class="g-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '—'}</td>
@@ -819,6 +828,35 @@
 		margin-top: .85rem;
 		padding-top: .85rem;
 		border-top: 1px solid var(--parch-dk);
+	}
+
+	.gloss-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: .75rem;
+	}
+
+	.hide-unknown-toggle {
+		display: flex;
+		align-items: center;
+		gap: .3rem;
+		cursor: pointer;
+		font-family: var(--font-smallcaps);
+		font-size: .6rem;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		color: var(--ink-f);
+		user-select: none;
+
+		& input[type="checkbox"] {
+			accent-color: var(--gold);
+			width: .85rem;
+			height: .85rem;
+			cursor: pointer;
+		}
+
+		&:hover span { color: var(--ink-l); }
 	}
 
 	.gloss-scroll {
