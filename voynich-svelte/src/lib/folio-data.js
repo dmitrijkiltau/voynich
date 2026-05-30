@@ -21,3 +21,39 @@ export const FOLIO_PAGES = [
   { q: 'q19', label: 'Lage 19 — Pharmazeutisch · f99–f102', pages: ['f99r','f99v','f100r','f100v','f101r','f101v2','f101v1','f102r1','f102r2','f102v2','f102v1'] },
   { q: 'q20', label: 'Lage 20 — Rezepte/Sterne · f103–f116',pages: ['f103r','f103v','f104r','f104v','f105r','f105v','f106r','f106v','f107r','f107v','f108r','f108v','f111r','f111v','f112r','f112v','f113r','f113v','f114r','f114v','f115r','f115v','f116r','f116v'] },
 ];
+
+// Decryption/analysis status per folio page
+// 'done'    — full translation file or heavily confirmed (★★★★+) in backtest
+// 'partial' — image studied, lexicon anchors known, or Language-A range without full txt
+// 'none'    — not yet analyzed (default)
+export const FOLIO_STATUS = {
+  // ── Lage 1 · Kräuter A (f1–f8) — Language-A lexicon range ────────────────
+  f1v:'partial', f2r:'partial', f2v:'partial',
+  f3r:'done',    f3v:'done',    f4r:'partial', f4v:'partial',
+  f5r:'partial', f5v:'partial', f6r:'partial', f6v:'partial',
+  f7r:'partial', f7v:'partial', f8r:'partial', f8v:'partial',
+
+  // ── Lage 2 · Kräuter A (f9–f15) — translation HTMLs + txt transcriptions ──
+  f9r:'done',  f9v:'done',
+  f10r:'done', f10v:'done',
+  f11r:'done', f11v:'done',
+  f13r:'done', f13v:'done',
+  f14r:'done', f14v:'done',
+  f15r:'done', f15v:'done',
+
+  // ── Lage 3 · Kräuter A — f33r image studied ──────────────────────────────
+  f33r:'partial',
+
+  // ── Lage 8 · Astronomisch — f57r fully confirmed in backtest ─────────────
+  f57r:'done',
+
+  // ── Lage 14 · Kosmologisch — f85v+f86r txt+jpg asset ────────────────────
+  f85r1:'partial', f85r2:'partial', fRos:'partial',
+  f86v4:'partial', f86v6:'partial', f86v5:'partial', f86v3:'partial',
+
+  // ── Lage 20 · Rezepte / Randsterne ───────────────────────────────────────
+  f103r:'done', f103v:'done',
+  f114v:'done',
+  f115r:'done', f115v:'done',
+  f116r:'done', f116v:'done',
+};

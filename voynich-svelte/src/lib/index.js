@@ -1,9 +1,9 @@
 import { MAPPING, PREFIXES } from './mapping-data.js';
 import { LEXICON } from './lexicon-data.js';
-import { FOLIO_PAGES } from './folio-data.js';
+import { FOLIO_PAGES, FOLIO_STATUS } from './folio-data.js';
 import { RULES } from './grammar-rules-data.js';
 
-export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, RULES };
+export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_STATUS, RULES };
 
 export const STATS = {
   version: '5.7',

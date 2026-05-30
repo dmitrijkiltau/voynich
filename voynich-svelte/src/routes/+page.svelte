@@ -12,10 +12,22 @@
 	import WordClassesSection from '$lib/components/WordClassesSection.svelte';
 	import LanguageASection from '$lib/components/LanguageASection.svelte';
 	import MarginStarsSection from '$lib/components/MarginStarsSection.svelte';
+	import FolioProgress from '$lib/components/FolioProgress.svelte';
 
-	let evaInput      = $state('');
-	let activeSection = $state('tool');
-	let menuOpen      = $state(false);
+	let evaInput       = $state('');
+	let activeSection  = $state('tool');
+	let menuOpen       = $state(false);
+	let scrollProgress = $state(0);
+
+	$effect(() => {
+		function updateProgress() {
+			const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+			scrollProgress = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0;
+		}
+		window.addEventListener('scroll', updateProgress, { passive: true });
+		updateProgress();
+		return () => window.removeEventListener('scroll', updateProgress);
+	});
 
 	const NAV_ITEMS = [
 		{ id: 'abstract',        label: 'I. Zusammenfassung' },
@@ -64,6 +76,11 @@
 		scrollTo('tool');
 	}
 </script>
+
+<!-- Reading progress bar -->
+<div class="reading-progress" role="progressbar" aria-valuenow={Math.round(scrollProgress)} aria-valuemin="0" aria-valuemax="100" aria-label="Lesefortschritt">
+	<div class="reading-progress-fill" style="width: {scrollProgress}%"></div>
+</div>
 
 <!-- Mobile top bar -->
 <header class="mobile-header">
@@ -133,6 +150,8 @@
 				<span>Mai 2026</span>
 			</div>
 		</header>
+
+		<FolioProgress />
 
 		<!-- Print-only table of contents -->
 		<nav class="toc" aria-label="Inhaltsangabe">
@@ -624,19 +643,40 @@
 		text-decoration: none;
 	}
 
+	/* ── Reading progress bar ───────────────────────────── */
+
+	.reading-progress {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		z-index: 1000;
+		background: rgba(0, 0, 0, .06);
+		pointer-events: none;
+
+		& .reading-progress-fill {
+			height: 100%;
+			background: linear-gradient(
+				90deg,
+				var(--red) 0%,
+				color-mix(in srgb, var(--red) 65%, var(--gold)) 100%
+			);
+			transition: width 60ms linear;
+			box-shadow: 0 0 10px color-mix(in srgb, var(--red) 60%, transparent);
+		}
+	}
+
 	/* ── Print ──────────────────────────────────────────── */
 
 	@media print {
+		.reading-progress,
 		.sidebar,
 		.mobile-header,
 		.menu-overlay,
-		.print-btn {
-			display: none !important;
-		}
-
+		.print-btn,
 		#tool {
-			opacity: .35;
-			filter: grayscale(1);
+			display: none !important;
 		}
 
 		.app-shell {
