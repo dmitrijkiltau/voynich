@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Hebrew:wght@300;400;600&display=swap');
 
+/* ── SCROLLBARS ──────────────────────────────────────── */
+
+::-webkit-scrollbar         { width: 4px; height: 4px; }
+::-webkit-scrollbar-track   { background: transparent; }
+::-webkit-scrollbar-thumb   { background: var(--parch-dk); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border); }
+
 /* ── RESET ───────────────────────────────────────────── */
 
 *, *::before, *::after {

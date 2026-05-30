@@ -188,18 +188,22 @@
 					</span>
 				{/if}
 			</header>
-			<textarea
-				class="eva-input"
-				bind:value={input}
-				placeholder="z.B.  daiin · shedy · sar · al · dam"
-				rows="5"
-				aria-labelledby="lbl-input"
-			></textarea>
+			<div class="textarea-wrap">
+				<textarea
+					class="eva-input"
+					bind:value={input}
+					placeholder="z.B.  daiin · shedy · sar · al · dam"
+					rows="5"
+					aria-labelledby="lbl-input"
+				></textarea>
+				{#if input}
+					<button class="clear-btn" onclick={() => input = ''} aria-label="Eingabe löschen">✕</button>
+				{/if}
+			</div>
 			<div class="example-btns" role="group" aria-label="Beispielsequenzen">
 				{#each EXAMPLES as ex}
 					<button class="ex-btn" onclick={() => input = ex.text} title={ex.text}>{ex.label}</button>
 				{/each}
-				<button class="clear-btn" onclick={() => input = ''} aria-label="Eingabe löschen">✕ Löschen</button>
 			</div>
 		</div>
 
@@ -476,22 +480,34 @@
 		}
 	}
 
+	/* ── Textarea wrapper + clear icon ───────────────────── */
+
+	.textarea-wrap {
+		position: relative;
+
+		&:hover .clear-btn,
+		&:focus-within .clear-btn {
+			opacity: 1;
+		}
+	}
+
 	.clear-btn {
-		font-family: var(--font-smallcaps);
-		font-size: .6rem;
-		letter-spacing: .1em;
-		text-transform: uppercase;
+		position: absolute;
+		top: .4rem;
+		right: .4rem;
+		font-size: .8rem;
+		line-height: 1;
 		color: var(--red);
-		background: transparent;
-		border: 1px solid rgba(122, 28, 28, .25);
+		background: rgba(255, 255, 255, .75);
+		border: 1px solid rgba(122, 28, 28, .2);
 		border-radius: 2px;
-		padding: .18rem .55rem;
+		padding: .2rem .35rem;
 		cursor: pointer;
-		margin-left: auto;
-		transition: all .13s;
+		opacity: 0;
+		transition: opacity .15s, background .13s, border-color .13s;
 
 		&:hover, &:focus-visible {
-			background: rgba(122, 28, 28, .06);
+			background: rgba(255, 255, 255, .97);
 			border-color: var(--red);
 			outline: none;
 		}
@@ -576,9 +592,6 @@
 		gap: 0;
 		max-height: 200px;
 		overflow-y: auto;
-
-		&::-webkit-scrollbar { width: 4px; }
-		&::-webkit-scrollbar-thumb { background: var(--parch-dk); border-radius: 2px; }
 	}
 
 	.folio-group {
@@ -798,9 +811,6 @@
 	.gloss-scroll {
 		margin-top: .4rem;
 		overflow-x: auto;
-
-		&::-webkit-scrollbar { height: 4px; }
-		&::-webkit-scrollbar-thumb { background: var(--parch-dk); border-radius: 2px; }
 	}
 
 	.gloss-table {
