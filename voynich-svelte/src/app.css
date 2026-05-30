@@ -190,10 +190,13 @@ table.dt {
   }
 
   & tr:last-child td { border-bottom: none; }
-  & tr:hover td { background: rgba(255, 255, 255, .35); }
+  & tr:hover td { background: var(--parch-d); }
   & td:first-child { white-space: nowrap; }
 
-  & tr[data-clickable] { cursor: pointer; }
+  & tr[data-clickable] {
+    cursor: pointer;
+    &:hover td { background: color-mix(in srgb, var(--border) 18%, var(--parch)); }
+  }
 }
 
 /* ── INLINE TYPOGRAPHY ───────────────────────────────── */
