@@ -81,7 +81,7 @@
   </div>
 
   <div>
-    <h3>6 · f11r P.6 / f11v P.6 — Pupillenheilung &amp; positiver Kolophon <span class="new-badge">Neu v5.3</span></h3>
+    <h3>6 · f11r P.6 / f11v P.6 — Pupillenheilung &amp; positiver Kolophon <span class="new-badge">Neu v5.4</span></h3>
     <div class="box green ref-card">
       <div class="antonym-grid">
         <div>

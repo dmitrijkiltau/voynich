@@ -69,7 +69,7 @@
 </div>
 
 <div class="box hl">
-	<div class="box-title">Verb-Paradigma y+k+[Terminus] — vollständig ab f11r/f11v <span class="new-badge">Neu v5.3</span></div>
+	<div class="box-title">Verb-Paradigma y+k+[Terminus] — vollständig ab f11r/f11v <span class="new-badge">Neu v5.4</span></div>
 	<p style="margin-bottom:.5rem;font-size:.92rem">Alle vier klinischen Ankerbegriffe erhalten eine Verbform durch Präfix-Schichtung <span class="eva">y</span> + <span class="eva">k</span> + Terminus:</p>
 	<table class="dt" style="margin-top:.4rem">
 		<thead>

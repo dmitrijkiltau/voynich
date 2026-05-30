@@ -1,5 +1,5 @@
 <script>
-	import { MAPPING, LEXICON } from '$lib/translator-data.js';
+	import { MAPPING, LEXICON, STATS } from '$lib/translator-data.js';
 	import TranslatorTool from '$lib/components/TranslatorTool.svelte';
 	import MappingGrid from '$lib/components/MappingGrid.svelte';
 	import LexiconSection from '$lib/components/LexiconSection.svelte';
@@ -16,13 +16,6 @@
 	let evaInput      = $state('');
 	let activeSection = $state('tool');
 	let menuOpen      = $state(false);
-
-	const STATS = {
-		lexicon:   LEXICON.length,
-		rules:     23,
-		backtest: '88%',
-		backtestFraction: '23/26',
-	};
 
 	const NAV_ITEMS = [
 		{ id: 'abstract',        label: 'I. Zusammenfassung' },
@@ -74,7 +67,7 @@
 
 <!-- Mobile top bar -->
 <header class="mobile-header">
-	<span class="mobile-title">Voynich · Mapping-Dokument v5.3</span>
+	<span class="mobile-title">Voynich · Mapping-Dokument v{STATS.version}</span>
 	<button class="menu-toggle" onclick={() => menuOpen = !menuOpen} aria-label="Navigation öffnen/schließen">
 		{menuOpen ? '✕' : '☰'}
 	</button>
@@ -91,7 +84,7 @@
 		<div class="sidebar-brand">
 			<div class="brand-kicker">Forschungswerkzeug</div>
 			<div class="brand-name">Voynich</div>
-			<div class="brand-sub">EVA → Hebräisch · v5.3</div>
+			<div class="brand-sub">EVA → Hebräisch · v{STATS.version}</div>
 		</div>
 
 		<nav class="sidebar-nav">
@@ -127,15 +120,13 @@
 	<!-- Main content -->
 	<main class="main-content">
 		<header class="page-header">
-			<div class="kicker">Formales Mapping-Dokument · Voynich-Manuskript · Version 5.3</div>
+			<div class="kicker">Formales Mapping-Dokument · Voynich-Manuskript</div>
 			<h1>EVA → Hebräisch-Aramäisch</h1>
 			<div class="subtitle">Zeichenmapping, Lexikon und Grammatikregeln · Sprachen A und B</div>
 			<div class="meta-line">
 				<span>Analysierte Folios: f1v–f10v (Quires A–B), f57r, f103r/v, f114v, f115r/v, f116r/v</span>
 				<span>·</span>
-				<span>Lexikon: {STATS.lexicon} Einträge · Grammatikregeln: {STATS.rules} · Rückwärtstest: {STATS.backtest}</span>
-				<span>·</span>
-				<span>Mai 2026 · Version 5.3</span>
+				<span>Mai 2026, Version {STATS.version}</span>
 			</div>
 		</header>
 
@@ -225,7 +216,7 @@
 		</section>
 
 		<footer class="page-footer">
-			<p>Voynich-Manuskript — Formales Mapping-Dokument · Version 5.3 · Mai 2026</p>
+			<p>Voynich-Manuskript — Formales Mapping-Dokument · Version {STATS.version} · Mai 2026</p>
 			<p>Lexikon: {STATS.lexicon} Einträge · Grammatikregeln: {STATS.rules} · Rückwärtstest: {STATS.backtest} ({STATS.backtestFraction})</p>
 			<p class="disclaimer">Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein.<br>
 			Konfidenzbewertungen beziehen sich auf Konsistenz im vorliegenden Korpus.</p>

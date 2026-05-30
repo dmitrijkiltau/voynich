@@ -16,7 +16,7 @@
 				<tr><td>Sprache A Anker</td><td>f1v–f10v: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (20 Seiten)</td></tr>
 				<tr><td>Grammatikregeln</td><td><strong>23</strong></td></tr>
 				<tr>
-					<td>Hauptneufunde v5.3</td>
+					<td>Hauptneufunde v5.4</td>
 					<td>
 						Prognose-Tetrade (<span class="conf5">chaiin · ckhy · or · aiin</span>, f10r P4) ★★★★★ ·
 						Dreier-Diagnosekolophon (<span class="conf5">chkaiin · ckhy · chor=</span>, f8v+f9v) ★★★★★ ·

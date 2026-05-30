@@ -1,5 +1,5 @@
 <script>
-	import { PREFIXES, LEXICON, FOLIO_PAGES } from '$lib/translator-data.js';
+	import { PREFIXES, LEXICON, FOLIO_PAGES, STATS } from '$lib/translator-data.js';
 	import { browser } from '$app/environment';
 
 	let { input = $bindable('') } = $props();
@@ -347,7 +347,7 @@
 	<!-- ── Methodology note ── -->
 	<div class="box red method-note">
 		<div class="box-title">Hinweis zur Methodik</div>
-		<p>Das Tool arbeitet auf dem bestätigten Lexikon v5.3 (92 Einträge, ★★★ oder höher), erweitert durch Neubelege aus f11r/f11v (Quire B): <em>ykchor</em>, <em>qokchor</em>, <em>otchor</em>, <em>tchey</em>, <em>chodl</em>, <em>dair</em>, <em>cphar</em>. Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
+		<p>Das Tool arbeitet auf dem bestätigten Lexikon v{STATS.version} ({STATS.lexicon} Einträge, ★★★ oder höher), erweitert durch Neubelege aus f11r/f11v (Quire B): <em>ykchor</em>, <em>qokchor</em>, <em>otchor</em>, <em>tchey</em>, <em>chodl</em>, <em>dair</em>, <em>cphar</em>. Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
 	</div>
 </div>
 

@@ -42,7 +42,7 @@ export const PREFIXES = [
   { eva: 't',   heb: 'תָּ',  de: 'Imperfekt 3.Sg.f./2.Sg.' },
 ];
 
-// Confirmed lexicon v5.3 — 98 entries ★★★+
+// Confirmed lexicon v5.4 — 98 entries ★★★+
 export const LEXICON = [
   // ── Medizinische Nomina & Symptome ──────────────────
   { eva: 'dam',       heb: 'דָּם',         de: 'Blut',                             stars: '★★★★★', cat: 'symptom' },
@@ -174,3 +174,11 @@ export const FOLIO_PAGES = [
   { q: 'q19', label: 'Lage 19 — Pharmazeutisch · f99–f102', pages: ['f99r','f99v','f100r','f100v','f101r','f101v2','f101v1','f102r1','f102r2','f102v2','f102v1'] },
   { q: 'q20', label: 'Lage 20 — Rezepte/Sterne · f103–f116', pages: ['f103r','f103v','f104r','f104v','f105r','f105v','f106r','f106v','f107r','f107v','f108r','f108v','f111r','f111v','f112r','f112v','f113r','f113v','f114r','f114v','f115r','f115v','f116r','f116v'] },
 ];
+
+export const STATS = {
+  version:          '5.4',
+  lexicon:          LEXICON.length,
+  rules:            23,
+  backtest:         '88%',
+  backtestFraction: '23/26',
+};
