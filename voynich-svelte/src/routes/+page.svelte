@@ -160,8 +160,10 @@
 		<!-- III. ÜBERSETZER -->
 		<section class="section" id="tool">
 			<h2>III. Übersetzungstool</h2>
-			<p class="dropcap">EVA-Text in das Eingabefeld eingeben (Wörter durch Leerzeichen oder · getrennt). Das Tool durchsucht das bestätigte Lexikon, erkennt Präfixe und zeigt Hebräisch, Wort-für-Wort-Analyse und deutsche Bedeutung an. Unbekannte Wörter werden als solche markiert.</p>
-			<TranslatorTool bind:input={evaInput} />
+			<div class="tool">
+				<p class="dropcap">EVA-Text in das Eingabefeld eingeben (Wörter durch Leerzeichen oder · getrennt). Das Tool durchsucht das bestätigte Lexikon, erkennt Präfixe und zeigt Hebräisch, Wort-für-Wort-Analyse und deutsche Bedeutung an. Unbekannte Wörter werden als solche markiert.</p>
+				<TranslatorTool bind:input={evaInput} />
+			</div>
 		</section>
 
 		<hr class="rule" />
@@ -570,4 +572,15 @@
 		color: var(--color-text);
 		text-decoration: none;
 	}
+
+	
+  .tool {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+
+    & > p {
+      flex: 1 1 360px;
+    }
+  }
 </style>

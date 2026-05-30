@@ -1,7 +1,8 @@
-<div class="zusammenfassung">
-	<p class="dropcap">Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.</p>
-
-	<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose. Version 5.3 schließt die Analyse von Quire A vollständig ab (f1v–f8v) und erweitert auf die ersten vier Bifolios von Quire B (f9r–f10v).</p>
+<div class="summary">
+	<div>
+		<p class="dropcap">Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.</p>
+		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose. Version 5.3 schließt die Analyse von Quire A vollständig ab (f1v–f8v) und erweitert auf die ersten vier Bifolios von Quire B (f9r–f10v).</p>
+	</div>
 
 	<div class="box hl">
 		<div class="box-title">Kernbefunde — Version 5.3</div>
@@ -31,6 +32,16 @@
 </div>
 
 <style>
+  .summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+
+    & > div {
+      flex: 1 1 480px;
+    }
+  }
+
 	.findings-table td:first-child {
 		color: var(--ink-f);
 		font-size: .85rem;

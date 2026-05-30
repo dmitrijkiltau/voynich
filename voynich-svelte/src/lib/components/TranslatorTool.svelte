@@ -172,7 +172,7 @@
 	}
 </script>
 
-<section class="tool-area" aria-label="EVA-Übersetzer">
+<div class="tool-area" aria-label="EVA-Übersetzer">
 
 	<!-- ── Top grid: Input | Output | Folio ── -->
 	<div class="top-grid">
@@ -349,10 +349,13 @@
 		<div class="box-title">Hinweis zur Methodik</div>
 		<p>Das Tool arbeitet auf dem bestätigten Lexikon v5.3 (92 Einträge, ★★★ oder höher), erweitert durch Neubelege aus f11r/f11v (Quire B): <em>ykchor</em>, <em>qokchor</em>, <em>otchor</em>, <em>tchey</em>, <em>chodl</em>, <em>dair</em>, <em>cphar</em>. Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
 	</div>
-
-</section>
+</div>
 
 <style>
+	.tool-area {
+		flex: 2 2 960px;
+	}
+
 	/* ── Shell ─────────────────────────────────────────── */
 
 	.tool-area {
