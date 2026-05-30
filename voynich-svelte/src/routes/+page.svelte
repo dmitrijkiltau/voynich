@@ -1,5 +1,5 @@
 <script>
-	import { MAPPING, LEXICON, STATS } from '$lib/translator-data.js';
+	import { MAPPING, LEXICON, STATS } from '$lib';
 	import TranslatorTool from '$lib/components/TranslatorTool.svelte';
 	import MappingGrid from '$lib/components/MappingGrid.svelte';
 	import LexiconSection from '$lib/components/LexiconSection.svelte';

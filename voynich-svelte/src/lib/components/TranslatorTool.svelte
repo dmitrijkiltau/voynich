@@ -1,5 +1,5 @@
 <script>
-	import { PREFIXES, LEXICON, FOLIO_PAGES, STATS } from '$lib/translator-data.js';
+	import { PREFIXES, LEXICON, FOLIO_PAGES, STATS } from '$lib';
 	import { browser } from '$app/environment';
 
 	let { input = $bindable('') } = $props();

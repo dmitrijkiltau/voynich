@@ -1,3 +1,7 @@
+<script>
+	import { RULES } from '$lib/grammar-rules-data.js';
+</script>
+
 <div class="summary">
 	<div>
 		<p class="dropcap">Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.</p>
@@ -14,7 +18,7 @@
 				<tr><td>Bestätigte Wörter</td><td><strong>88</strong> (★★★ oder höher)</td></tr>
 				<tr><td>Rückwärtstest (Spr. B)</td><td>23/26 Vorhersagen bestätigt (88,5 %); 0 Falsch-Positive</td></tr>
 				<tr><td>Sprache A Anker</td><td>f1v–f13v: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (26 Seiten)</td></tr>
-				<tr><td>Grammatikregeln</td><td><strong>24</strong></td></tr>
+				<tr><td>Grammatikregeln</td><td><strong>{RULES.length}</strong></td></tr>
 				<tr>
 					<td>Hauptneufunde v5.5</td>
 					<td>

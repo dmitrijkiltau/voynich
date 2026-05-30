@@ -1,0 +1,43 @@
+// EVA → Hebrew character mapping
+export const MAPPING = [
+  { eva: 'a',    heb: 'אַ',    name: 'Alef / Patach' },
+  { eva: 'b',    heb: 'בּ',    name: 'Bet' },
+  { eva: 'c',    heb: 'כּ',    name: 'Kaf (stark)' },
+  { eva: 'ch',   heb: 'כ/ח',  name: 'Kaf / Ḥet' },
+  { eva: 'd',    heb: 'ד',    name: 'Dalet' },
+  { eva: 'e',    heb: 'ֶ',    name: 'Vokal: Segol' },
+  { eva: 'ee',   heb: 'ֵ',    name: 'Vokal: Ṣere' },
+  { eva: 'f',    heb: 'פ/ף',  name: 'Pe (schwach)' },
+  { eva: 'g',    heb: 'ג',    name: 'Gimel' },
+  { eva: 'h',    heb: 'ה',    name: 'He' },
+  { eva: 'i',    heb: 'י',    name: 'Yod / Ḥiriq' },
+  { eva: 'ii',   heb: 'יִ',   name: 'Yod + Ḥiriq' },
+  { eva: 'k',    heb: 'כ',    name: 'Kaf (weich)' },
+  { eva: 'l',    heb: 'ל',    name: 'Lamed' },
+  { eva: 'm',    heb: 'מ',    name: 'Mem' },
+  { eva: 'n',    heb: 'נ',    name: 'Nun' },
+  { eva: 'o',    heb: 'ע/ֹ',  name: 'Ayin / Ḥolam' },
+  { eva: 'oo',   heb: 'וֹ',   name: 'Vav Ḥolam' },
+  { eva: 'p',    heb: 'פּ',   name: 'Pe (stark)' },
+  { eva: 'q',    heb: 'ק',    name: 'Qof' },
+  { eva: 'r',    heb: 'ר',    name: 'Reš' },
+  { eva: 's',    heb: 'שׂ/ס', name: 'Sin / Samech' },
+  { eva: 'sh',   heb: 'שׁ',   name: 'Šin' },
+  { eva: 't',    heb: 'ת/ט',  name: 'Tav / Ṭet' },
+  { eva: 'y',    heb: 'יְ/וֹ', name: 'Yod-Vav / Verb-Präfix' },
+  { eva: 'aiin', heb: 'עַיִן', name: 'Auge-Suffix' },
+  { eva: 'ai',   heb: 'ַי',   name: 'Patach + Yod' },
+];
+
+// Morphological prefix table (sorted longest-first for greedy matching)
+export const PREFIXES = [
+  { eva: 'qok', heb: 'וְכְּ', de: 'und wie' },
+  { eva: 'qod', heb: 'וְדְּ', de: 'und von' },
+  { eva: 'qo',  heb: 'וְ',   de: 'und/auch' },
+  { eva: 'o',   heb: 'עַ',   de: 'auf/bei' },
+  { eva: 'l',   heb: 'לְ',   de: 'zu/für' },
+  { eva: 'd',   heb: 'דְּ',  de: 'von/aus' },
+  { eva: 'p',   heb: 'פְּ',  de: 'Pe-Präfix' },
+  { eva: 'y',   heb: 'יְ',   de: 'Imperfekt 3.Sg.m.' },
+  { eva: 't',   heb: 'תָּ',  de: 'Imperfekt 3.Sg.f./2.Sg.' },
+];
