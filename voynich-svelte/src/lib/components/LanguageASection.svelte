@@ -24,7 +24,7 @@
 		</div>
 	</div>
 
-	<h3>Quire A — Botanische Kohärenz (alle Folios)</h3>
+	<h3>Quire A — Textkorpus (alle analysierten Folios)</h3>
 	<div class="folio-wrap">
 		<table class="dt">
 			<thead>

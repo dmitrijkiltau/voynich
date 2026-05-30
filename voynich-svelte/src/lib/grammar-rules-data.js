@@ -1,5 +1,5 @@
 export const RULES = [
-  { id: 'R1', rule: '<span class="eva">qo-</span> = <span class="heb-sm">וְ</span> (Vav conjunctive) an jedem Wortanfang', evidence: 'qokedam, qokol, qokeedy', stars: '★★★★', is5: false },
+  { id: 'R1', rule: '<span class="eva">qo-</span> = <span class="heb-sm">וְ</span> (Vav conjunctive) an jedem Wortanfang — <strong>ausschließlich Sprache B</strong>; in Sprache A vollständig absent', evidence: 'qokedam, qokol, qokeedy (f57r, f103r); f001r Spr. A: 0 Belege in 260 Tokens ★★★★★', stars: '★★★★★', is5: true },
   { id: 'R2', rule: '<span class="eva">o-</span> am Wortanfang = <span class="heb-sm">עַ</span> (Ayin)', evidence: 'okol, okoldm, okaiin, odol', stars: '★★★★', is5: false },
   { id: 'R3', rule: 'y-initiale Wörter = Imperfekt 3. Sg. Mask.', evidence: 'yteechy, yshdal, ykchaiin, ycheor, ychor', stars: '★★★★', is5: false },
   { id: 'R4', rule: 't-initiale Wörter = Imperfekt 3. Sg. Fem. / 2. Sg.', evidence: 'taiir; tsheoarom', stars: '★★★★', is5: false },
@@ -26,4 +26,7 @@ export const RULES = [
   { id: 'R25', rule: '<span class="eva">dy × n</span> — Genitivkette als Intensitätsskala: ×1 Standard / ×2 Emphase / ×3 absoluter Superlativ', evidence: 'f14r P.10, f14v P.7 (×2); f14v P.6 (×3, einmalig) — Kandidat', stars: '★★★', is5: false },
   { id: 'R28', rule: '<span class="eva">y+t+[Terminus]</span> — intensivierte/aspektuell verstärkte Imperfektform: y- (3. Sg. Mask.) + t- (3. Sg. Fem. / temporal) kombiniert', evidence: 'ytchor (f16v P.2), ytchy (f16v P.5); Vorläufer ytchody — Kandidat', stars: '★★★', is5: false },
   { id: 'R29', rule: '<span class="eva">oto+or</span> erscheint nur in Finalposition unmittelbar vor einem Quire-Abschlusskolophon = positive Prognose-Abschluss-Geste', evidence: 'otor in f16v P.12 (vor sokar·oaorar= Quire-B-Abschluss) — Kandidat', stars: '★★', is5: false },
+  { id: 'R30', rule: '<span class="eva">sho-</span> + Nomen = Scheol-Lokalisierung / Todesform des Nomens — Kandidat', evidence: 'shodain (f001r P3.12), shoaiin (f001r P4.24), shokcheey (f001r P4.22); shoiin (f13v) ★★★★', stars: '★★★', is5: false },
+  { id: 'R31', rule: 'Temperatur-Antonymenpaar <span class="eva">kor</span> (<span class="heb-sm">קֹר</span>, Kälte) ↔ <span class="eva">kchom</span> (<span class="heb-sm">כְּ+חֹם</span>, Fieber) in aufeinanderfolgenden Zeilen = hippokratisches Diagnostikschema — Kandidat', evidence: 'f001r P3.15 (kor) + P3.16 (kchom); Parallele zu lor↔lshol (R20)', stars: '★★★', is5: false },
+  { id: 'R32', rule: 'Dreifach-Relativpartikel <span class="eva">dydyd</span> (<span class="heb-sm">דִּי+דִּי+דִּי</span>) = extremer Betonungsmodus der absoluten Zugehörigkeit — Kandidat', evidence: 'f001r P3.17: einmaliger Beleg im Gesamtkorpus; Parallele zu R15 (×3 absolutes Urteil), R19', stars: '★★', is5: false },
 ];

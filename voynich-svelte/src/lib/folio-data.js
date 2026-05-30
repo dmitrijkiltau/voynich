@@ -28,6 +28,7 @@ export const FOLIO_PAGES = [
 // 'none'    — not yet analyzed (default)
 export const FOLIO_STATUS = {
   // ── Lage 1 · Kräuter A (f1–f8) — Language-A lexicon range ────────────────
+  f1r:'done',
   f1v:'partial', f2r:'partial', f2v:'partial',
   f3r:'done',    f3v:'done',    f4r:'partial', f4v:'partial',
   f5r:'partial', f5v:'partial', f6r:'partial', f6v:'partial',

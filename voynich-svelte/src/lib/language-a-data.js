@@ -1,13 +1,15 @@
 export const COMPARISON = [
-  { feature: 'Kernvokabular', langB: 'sheol, daiin, dal, ckhy, dam, sar, or', langA: 'Identisch — alle 10 Ankerwörter je Folio bestätigt' },
+  { feature: 'Kernvokabular', langB: 'sheol, daiin, dal, ckhy, dam, sar, or', langA: 'Identisch — alle 10 Ankerwörter je Folio bestätigt (f1r: 10/10 ★★★★★)' },
+  { feature: 'qo-Präfix (R1)', langB: '8+ Belege; Kernmerkmal Spr. B ★★★★★', langA: 'Vollständig absent — B-exklusives Merkmal; f1r: 0 Belege in 260 Tokens' },
   { feature: 'Dominanter Vokal', langB: 'e / ee (Segol/Ṣere)', langA: 'o (Ḥolam) häufiger; dol statt dal, ckho neben ckhy' },
-  { feature: 'Struktur', langB: 'Prosa ohne Bildtrennmarker', langA: '{plant}-Marker teilt jeden Paragraphen (R14)' },
+  { feature: 'Struktur', langB: 'Prosa ohne Bildtrennmarker', langA: '{plant}-Marker in Kräuter-Folios (R14); f1r: Prosa ohne Marker (Haskama-Typ, sui generis)' },
   { feature: 'Kolophon-Inventar', langB: 'cphedom=, daiin·cheeodam', langA: 'kaiim=, dom=, daiin=, chckhan=, Kurztitel (R23)' },
   { feature: 'Verbparadigma', langB: 'taiir, yshdal', langA: 'ykchaiin, ycheor, ychor, ytchody — vollständiger' },
   { feature: 'Quire-Grenze', langB: 'Quire A → B (f8v → f9r):', langA: 'textlich unsichtbar — identische Ankerverteilung' },
 ];
 
 export const FOLIOS = [
+  { folio: 'f1r', plant: 'Kein Botanical — Haskama (deklarativer Prosatext)', signal: 'qo-: 0 Belege; 10/10 Ankerwörter; 4 Absätze + T1–T4; &252/&253 Aries-Großinitialen; Erased Key (Jim Reeds 1994)', stars: '★★★★', is5: false },
   { folio: 'f1v', plant: 'Belladonna', signal: 'shol 5×, pol (Beere), otoaiin (Pupille)', stars: '★★★★★', is5: true },
   { folio: 'f2r', plant: 'Kornblume (Augenwasser)', signal: 'ytoain=, saiin, aiin 8+ Komposita', stars: '★★★★★', is5: true },
   { folio: 'f2v', plant: 'Seerose', signal: 'shty (Trank), chokeos (Kelch)', stars: '★★★★', is5: false },

@@ -170,4 +170,10 @@ export const LEXICON = [
   { eva: 'oaorar',    heb: 'עַ+אַ+אוֹר+אָר',     de: 'auf das Licht der Heilung (Doppel-Licht-Formel)', stars: '★★★★', cat: 'kolophon' },
   { eva: 'dan',       heb: 'דָּן',               de: 'er hat geurteilt (Qal Perfekt)',               stars: '★★★',   cat: 'verb' },
   { eva: 'koshet',    heb: 'כֹּ+שֵׁ+תְּ',        de: 'Scheol-Vollständigkeit (temporaler Abschlussterm)', stars: '★★', cat: 'prognose' },
+  // ── v5.9 (f1r — Eröffnungsfolio, Haskama) ────────────
+  { eva: 'shodain',  heb: 'שׁוֹד+דַּ+עַיִן',   de: 'Zerstörung des Auges (schärfste negative Augenprognose)', stars: '★★★★', cat: 'kompositum' },
+  { eva: 'shoaiin',  heb: 'שְׁאוֹל+עַיִן',      de: 'Scheol des Auges (Todesurteil für das Sehorgan)',        stars: '★★★★', cat: 'prognose'   },
+  { eva: 'kchom',    heb: 'כְּ+חֹם',            de: 'wie Hitze / wie Fieber (Temperatur-Komparativ)',         stars: '★★★',  cat: 'symptom'    },
+  { eva: 'oksho',    heb: 'עַ+כְּ+שׁוֹ',        de: 'auf/gegen Scheol (erste präpositionale Scheol-Form Spr. A)', stars: '★★★★', cat: 'prognose' },
+  { eva: 'dydyd',    heb: 'דִּי+דִּי+דִּי',     de: 'dreifacher Relativpartikel — extremer Betonungsmodus',  stars: '★★★',  cat: 'syntax'     },
 ];
