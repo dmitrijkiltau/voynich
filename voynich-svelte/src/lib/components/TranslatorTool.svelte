@@ -251,49 +251,27 @@
 				{/if}
 			</header>
 
-			{#if folioConsent}
-				<div class="folio-keyboard" role="navigation" aria-labelledby="lbl-folio">
-					{#each FOLIO_PAGES as group}
-						<details class="folio-group">
-							<summary class="folio-group-label">{group.label}</summary>
-							<div class="folio-btns">
-								{#each group.pages as page}
-									<button
-										class="folio-btn"
-										onclick={() => dev ? fetchFolio(group.q, page) : window.open(folioUrl(group.q, page), '_blank')}
-										aria-label="Folio {page} laden"
-									>{page}</button>
-								{/each}
-							</div>
-						</details>
-					{/each}
-				</div>
+			<div class="folio-keyboard" role="navigation" aria-labelledby="lbl-folio">
+				{#each FOLIO_PAGES as group}
+					<details class="folio-group">
+						<summary class="folio-group-label">{group.label}</summary>
+						<div class="folio-btns">
+							{#each group.pages as page}
+								<button
+									class="folio-btn"
+									onclick={() => dev ? fetchFolio(group.q, page) : window.open(folioUrl(group.q, page), '_blank')}
+									aria-label="Folio {page} laden"
+								>{page}</button>
+							{/each}
+						</div>
+					</details>
+				{/each}
+			</div>
 
-				{#if folioMsg}
-					<p class="folio-status" class:ok={folioType === 'ok'} class:error={folioType === 'error'}>
-						{folioMsg}
-					</p>
-				{/if}
-
-				<button class="consent-revoke-btn" onclick={revokeConsent} aria-label="Verbindungserlaubnis widerrufen">
-					Erlaubnis widerrufen
-				</button>
-			{:else}
-				<div class="consent-notice" role="region" aria-label="Externe Verbindung erforderlich">
-					<p class="consent-text">
-						Diese Funktion lädt Transkriptionsdaten direkt aus dem Internet. Dabei werden folgende externe Verbindungen hergestellt:
-					</p>
-					<ul class="consent-list">
-						<li><code>voynich.nu</code> — Quelle der EVA-Transkriptionsdateien</li>
-						<li><code>corsproxy.io</code> — CORS-Proxy, der die Anfrage weiterleitet</li>
-					</ul>
-					<p class="consent-text">
-						Beide Server erhalten deine IP-Adresse. Die Zustimmung wird als Cookie gespeichert.
-					</p>
-					<button class="consent-accept-btn" onclick={acceptConsent}>
-						Verbindungen erlauben
-					</button>
-				</div>
+			{#if folioMsg}
+				<p class="folio-status" class:ok={folioType === 'ok'} class:error={folioType === 'error'}>
+					{folioMsg}
+				</p>
 			{/if}
 		</div>
 
@@ -677,82 +655,6 @@
 
 		&.ok    { color: var(--green); }
 		&.error { color: var(--red); }
-	}
-
-	/* ── Consent notice ───────────────────────────────── */
-
-	.consent-notice {
-		display: flex;
-		flex-direction: column;
-		gap: .55rem;
-		padding: .65rem .75rem .75rem;
-	}
-
-	.consent-text {
-		font-family: var(--font-serif);
-		font-size: .78rem;
-		color: var(--ink-l);
-		line-height: 1.55;
-		margin: 0;
-	}
-
-	.consent-list {
-		font-family: var(--font-mono);
-		font-size: .72rem;
-		color: var(--ink);
-		line-height: 1.7;
-		margin: 0;
-		padding-left: 1.1rem;
-
-		& code {
-			background: rgba(0, 0, 0, .05);
-			border: 1px solid var(--parch-dk);
-			border-radius: 2px;
-			padding: .03rem .3rem;
-			font-size: .7rem;
-		}
-	}
-
-	.consent-accept-btn {
-		align-self: flex-start;
-		font-family: var(--font-smallcaps);
-		font-size: .65rem;
-		letter-spacing: .1em;
-		text-transform: uppercase;
-		color: var(--ink);
-		background: rgba(255, 255, 255, .6);
-		border: 1px solid var(--border);
-		border-radius: 2px;
-		padding: .32rem .75rem;
-		cursor: pointer;
-		transition: all .13s;
-
-		&:hover, &:focus-visible {
-			background: rgba(255, 255, 255, .95);
-			border-color: var(--gold);
-			outline: none;
-		}
-	}
-
-	.consent-revoke-btn {
-		font-family: var(--font-smallcaps);
-		font-size: .55rem;
-		letter-spacing: .08em;
-		text-transform: uppercase;
-		color: var(--ink-f);
-		background: transparent;
-		border: none;
-		border-top: 1px solid var(--parch-dk);
-		padding: .3rem .7rem;
-		cursor: pointer;
-		text-align: left;
-		transition: color .13s;
-		margin-top: auto;
-
-		&:hover, &:focus-visible {
-			color: var(--red);
-			outline: none;
-		}
 	}
 
 	.token-gloss {
