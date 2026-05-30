@@ -17,8 +17,9 @@ export const TESTED = [
   { pred: 'chaiin · ckhy · or · aiin', heb: 'Prognose-Tetrade', result: '✓ f10r P4 (alle vier in einer Zeile)', context: 'vollständiges hippokratisches Schema' },
   { pred: 'torshor', heb: 'תֹּר+שׁוֹר', result: '✓ f13r P.1 Paragraph-Öffner', context: 'Jahreszeit-Zeichen; erster Beleg dieser Form im Korpus' },
   { pred: 'pchy', heb: 'פְּחִי', result: '✓ 4× f13r — höchste Atemweg-Dichte', context: 'opchy, qopchy, pchy; bestätigt Alant-Identifikation' },
-  { pred: 'shol · dy · … · shol', heb: 'R24-Struktur', result: '✓ f13r P.1 (Dopplungsformel)', context: 'einmaliges Emphase-Muster mit Genitiv-Brücke dy' },
-];
+  { pred: 'shol · dy · … · shol', heb: 'R24-Struktur', result: '✓ f13r P.1 (Dopplungsformel)', context: 'einmaliges Emphase-Muster mit Genitiv-Brücke dy' },  { pred: 'ykaiin (y+k+aiin)', heb: 'יְ+כְּ+עַיִן', result: '✓ f14r P.8 — 5. Paradigma-Mitglied', context: 'ykchaiin→ycheor→ykchor→ykchy→ykaiin: alle 5 klinischen Ankerpunkte' },
+  { pred: 'chckhy= (Diagnosekolophon)', heb: 'כְּ+כְּ+הִי', result: '✓ 4× Korpus: f9v, f11v P.6, f14r P.7, f14v P.6', context: 'Konzentration in Bifolio bB3; auch medial belegt (f14v P.6)' },
+  { pred: 'dam (Quire B)', heb: 'דָּם', result: '✓ f14v P.8 (Blut-Triade)', context: 'dol · dair · dam — Erstbeleg Blutpathologie in bB3; verbindet f14v mit f3r' },];
 
 export const STATS = [
   { label: 'Bestätigt Spr. B (★★★★+)', pct: 88, num: '23 / 26', color: 'var(--gold)' },

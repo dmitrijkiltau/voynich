@@ -6,7 +6,7 @@ import { RULES } from './grammar-rules-data.js';
 export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, RULES };
 
 export const STATS = {
-  version: '5.5',
+  version: '5.6',
   lexicon: LEXICON.length,
   rules: RULES.length,
   backtest: '88%',

@@ -23,4 +23,5 @@ export const RULES = [
   { id: 'R22', rule: 'Folio-übergreifendes Fallverlaufs-Narrativ: Prognose-Eskalation korrespondiert mit botanischer Ikonographie', evidence: 'Quire A: Heilkräuter → Mandragora → Mohn → Aronstab', stars: '★★★', is5: false },
   { id: 'R23', rule: 'Kurztitel-Format (Siman): 2 Wörter + =-Marker fasst Paragraphenbefund zusammen', evidence: 'f8r T1–T3 (ocho·daiin=, okokchodm=, schol·sair=); f9r T10', stars: '★★★★', is5: false },
   { id: 'R24', rule: '<span class="eva">shol·dy·…·shol</span> — Emphase-Dopplung mit Genitiv-Brücke <span class="heb-sm">דִּי</span>', evidence: 'f13r P.1: torshor·opchy·shol·dy·qopchy·shol — einmaliges Strukturmuster', stars: '★★★', is5: false },
+  { id: 'R25', rule: '<span class="eva">dy × n</span> — Genitivkette als Intensitätsskala: ×1 Standard / ×2 Emphase / ×3 absoluter Superlativ', evidence: 'f14r P.10, f14v P.7 (×2); f14v P.6 (×3, einmalig) — Kandidat', stars: '★★★', is5: false },
 ];

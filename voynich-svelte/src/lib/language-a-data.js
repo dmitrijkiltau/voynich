@@ -28,4 +28,6 @@ export const FOLIOS = [
   { folio: 'f11v', plant: 'Kräuter-Komplex', signal: 'chkaiin·ckhy·chor= (Diagnosekolophon, 2. Beleg); odl·chaiin', stars: '★★★★', is5: false },
   { folio: 'f13r', plant: 'Großer Alant (Inula helenium)', signal: 'torshor (NEU); pchy 4× — Atemweg-Rekord; shol×2; Doppelkolophon', stars: '★★★', is5: false },
   { folio: 'f13v', plant: 'Schachtelhalm-Typ (Equisetum)', signal: '9 × {plant}-Marker (Rekord Quire B); qoky·daiin= (Minikolophon)', stars: '★★★', is5: false },
+  { folio: 'f14r', plant: 'Schlangenwurz-Typ (Bistorta officinalis)', signal: 'dain + chor dominant; chckhy= (3. Korpus-Beleg); Doppelkolophon P.7 + P.13; ykaiin (5. y+k-Verb)', stars: '★★★', is5: false },
+  { folio: 'f14v', plant: 'Farn-Typ (Dryopteris-Gruppe)', signal: 'dam (Blut-Triade P.8, Erstbeleg Quire B); dchckhy= (Intensiv-Siegel); Dreisegment-Kolophon; dy×3 (R25)', stars: '★★★', is5: false },
 ];

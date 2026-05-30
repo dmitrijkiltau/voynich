@@ -102,6 +102,29 @@
       <button class="ref-insert-btn" onclick={() => onInsert('odl chaiin ykchor dair ycheor')}>In Übersetzer laden</button>
     </div>
   </div>
+
+  <div>
+    <h3>7 · f14r P.8 / f14v P.8 — y+k-Paradigma &amp; Blut-Triade <span class="new-badge">Neu v5.6</span></h3>
+    <div class="box green ref-card">
+      <div class="antonym-grid">
+        <div>
+          <div class="layer-eva">ykaiin</div>
+          <div class="layer-heb">יְ+כְּ+עַיִן</div>
+          <div class="layer-en" style="font-size:.9rem">"er heilt das Auge" — 5. y+k+Terminus-Verb</div>
+        </div>
+        <div>
+          <div class="layer-eva">dol · dair · dam</div>
+          <div class="layer-heb">דֶּוֶה · דְּ+אִיר · דָּם</div>
+          <div class="layer-en" style="font-size:.9rem">"Schmerz — das Licht davon — Blut"</div>
+        </div>
+      </div>
+      <p class="ref-note" style="margin-top:.6rem">
+        <span class="eva">ykaiin</span> vervollständigt das y+k+[Terminus]-Paradigma auf fünf klinische Verbformen (Leben, Licht, Pupille, Blässe, Auge). Die Blut-Triade <span class="eva">dol·dair·dam</span> (f14v P.8) ist der erste <span class="eva">dam</span>-Beleg in Quire B und verbindet f14v mit f3r (Blutpflanze).
+        <span class="conf5">★★★★★</span>
+      </p>
+      <button class="ref-insert-btn" onclick={() => onInsert('ykaiin dol dair dam')}>In Übersetzer laden</button>
+    </div>
+  </div>
 </div>
 
 
