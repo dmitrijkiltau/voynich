@@ -1,6 +1,6 @@
 export const COMPARISON = [
   { feature: 'Kernvokabular', langB: 'sheol, daiin, dal, ckhy, dam, sar, or', langA: 'Identisch — alle 10 Ankerwörter je Folio bestätigt (f1r: 10/10 ★★★★★)' },
-  { feature: 'qo-Präfix (R1/R33)', langB: '8+ Belege; Kernmerkmal Spr. B ★★★★★', langA: 'Absent in Quires I–II (0 / ~800 Token); ab Quire III präsent: 13 Belege f17r/f17v (R33 Kandidat ★★★)' },
+  { feature: 'qo-Präfix (R1/R33)', langB: '8+ Belege; Kernmerkmal Spr. B ★★★★★', langA: 'Absent in Quires I–II (0 / ~800 Token); ab Quire III präsent: 13 Belege f17r/f17v + weitere in f18r/f18v (R33 Kandidat ★★★); R37: qo-Präfix-Dopplung ab f18v (qokchy·qokchy, qoky·qoky)' },
   { feature: 'Dominanter Vokal', langB: 'e / ee (Segol/Ṣere)', langA: 'o (Ḥolam) häufiger; dol statt dal, ckho neben ckhy' },
   { feature: 'Struktur', langB: 'Prosa ohne Bildtrennmarker', langA: '{plant}-Marker in Kräuter-Folios (R14); f1r: Prosa ohne Marker (Haskama-Typ, sui generis)' },
   { feature: 'Kolophon-Inventar', langB: 'cphedom=, daiin·cheeodam', langA: 'kaiim=, dom=, daiin=, chckhan=, Kurztitel (R23)' },
@@ -38,4 +38,6 @@ export const FOLIOS = [
   { folio: 'f16v', plant: 'Alpen-Mannstreu (Eryngium alpinum)', signal: 'chkar·chkar (Doppel-Untersuchungsformel, einmalig); okaiin×2; otor P.12 (Zeichen des Lichts); sokar·oaorar= (Quire-B-Abschlusskolophon)', stars: '★★★★★', is5: true },
   { folio: 'f17r', plant: 'Skabiosen-Flockenblume (Centaurea scabiosa)', signal: '3 =-Kolophone P.3+P.6+P.12 (Corpus-Rekord für ein Folio); chor 3×; 7 qo-Formen in Spr. A (R33); Marginalinschrift (nicht Voynichesisch, vermutl. Latein)', stars: '★★★★', is5: false },
   { folio: 'f17v', plant: 'Schwarze Zaunrübe (Tamus communis)', signal: '23 Paragraphen (Kräuter-Rekord); sar P.17 ohne {plant} (wie f57r/f103r); sheol Vollform Spr. A P.13 (R34); char im Schlusskolophon; or·okaiin·or Palindrom P.6', stars: '★★★', is5: false },
+  { folio: 'f18r', plant: 'Berg-Flockenblume (Centaurea montana)', signal: '13 P. + Siman T.14; 2 =-Kolophone P.4+P.13; chor/qokchor 5× (Leitterm); dar·dar R36-Erstbeleg P.6; doldaiin Corpus-Erstbeleg P.7; doppelter {plant}-Marker P.8; Schlusskolophon or·shaiin·cthor·okal·dar= (stark positiv ★★★★★)', stars: '★★★★', is5: false },
+  { folio: 'f18v', plant: 'Drachenwurz (Dracunculus vulgaris)', signal: '10 P.; qokchy/chy 5× (Leitterm); Zoomorphe Drachen-Figur (Corpus-Erstbeleg bot. Abschnitt); {plant} am Kolophon-Anfang R38; qokchy·qokchy R37-Erstbeleg P.2; ykam/ytor (Auferstehungsverben) P.8; dom= Schlusskolophon-Finale Spr. A (R39)', stars: '★★★★', is5: false },
 ];

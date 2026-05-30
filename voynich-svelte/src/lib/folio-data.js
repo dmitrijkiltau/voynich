@@ -45,6 +45,7 @@ export const FOLIO_STATUS = {
 
   // ── Lage 3 · Kräuter A (f17–f24) — Quire C Eröffnung ────────────────────
   f17r:'done', f17v:'done',
+  f18r:'done', f18v:'done',
 
   // ── Lage 3 · Kräuter A — f33r image studied ──────────────────────────────
   f33r:'partial',

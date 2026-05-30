@@ -150,7 +150,7 @@
   </div>
 
   <div>
-    <h3>9 · f16r / f16v — Bifolio bB1 · Quire-B-Abschluss <span class="new-badge">Neu v5.8</span></h3>
+    <h3>9 · f16r / f16v — Bifolio bB1 · Quire-B-Abschluss</h3>
     <div class="box green ref-card">
       <div class="antonym-grid">
         <div>
@@ -169,6 +169,29 @@
         <span class="conf5">★★★★★</span>
       </p>
       <button class="ref-insert-btn" onclick={() => onInsert('saiin ytaiin sokar oaorar')}>In Übersetzer laden</button>
+    </div>
+  </div>
+
+  <div>
+    <h3>10 · f18r / f18v — Bifolio bC2 · Quire C <span class="new-badge">Neu v6.1</span></h3>
+    <div class="box green ref-card">
+      <div class="antonym-grid">
+        <div>
+          <div class="layer-eva">or · shaiin · cthor · cthal · okal · dar=</div>
+          <div class="layer-heb">אוֹר · שַׁ+עַיִן · כְּ+תֹּר · כְּ+תַּ+חַל · עַ+כָּל · דַּר=</div>
+          <div class="layer-en" style="font-size:.9rem">f18r Schlusskolophon P.13: „Licht des Auges — vollständige Heilung — wie vollständig — über alles — leuchtend." <em>(stark positiv ★★★★★)</em></div>
+        </div>
+        <div>
+          <div class="layer-eva">yko · dshy · dair · ykol · dom=</div>
+          <div class="layer-heb">יְ+כוֹ · דְּ+שֵׁי · דְּ+אִיר · יְ+כֹּל · דּוֹם=</div>
+          <div class="layer-en" style="font-size:.9rem">f18v Schlusskolophon P.10: „Er wird sich erholen — von der Gabe — der Leuchtende — er heilt alles — Stille/Ende." <em>(positiv-neutral, R39-Erstbeleg dom= in Spr. A)</em></div>
+        </div>
+      </div>
+      <p class="ref-note" style="margin-top:.6rem">
+        f18r: <em>Centaurea montana</em> — stärkstes Schlusskolophon in Quire C; <span class="eva">dar·dar</span> (R36-Erstbeleg), <span class="eva">doldaiin</span> (Krankheits-Urteil, Corpus-Erstbeleg). f18v: <em>Dracunculus vulgaris</em> — erste zoomorphe Begleitfigur im botanischen Corpus (Drachen-Figur = ikonische Inschrift des Pflanzennamens nach Signaturenlehre); <span class="eva">ykam</span>/<span class="eva">ytor</span> Auferstehungsverben; <span class="eva">qokchy·qokchy</span> R37-Erstbeleg.
+        <span class="conf5">★★★★</span>
+      </p>
+      <button class="ref-insert-btn" onclick={() => onInsert('or shaiin cthor okal dar doldaiin ykam ytor dom')}>In Übersetzer laden</button>
     </div>
   </div>
 </div>

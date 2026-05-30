@@ -6,7 +6,7 @@
 <div class="summary">
 	<div>
 		<p class="dropcap">Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.</p>
-		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose. Version 6.0 eröffnet Quire C mit f17r/f17v (Bifolio bC1, Sprache A, Hand 1) und belegt erstmals das <span class="eva">qo-</span>-Präfix in Sprache-A-Texten (13 Belege — R33 Kandidat ★★★) sowie <span class="eva">sheol</span> (Vollform) in Sprache A (R34 Kandidat). f17r identifiziert <em>Centaurea scabiosa</em> (Pupillen/Augenblässe) mit Corpus-Rekord: drei =-Kolophone auf einem Folio. f17v identifiziert <em>Tamus communis</em> (Fieber + Atemweg des Auges) mit 23 Paragraphen — neuem Kräuter-Rekord.</p>
+		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose. Version 6.1 erweitert Quire C mit f18r/f18v (Bifolio bC2, Sprache A, Hand 1) und belegt die erste zoomorphe Begleitfigur im botanischen Corpus (Drache/Salamander, f18v). f18r identifiziert <em>Centaurea montana</em> (Berg-Flockenblume, Pupillen/Augenblässe) mit stärkstem Schlusskolophon in Quire C: <span class="eva">or·shaiin·cthor·okal·dar=</span>. f18v identifiziert <em>Dracunculus vulgaris</em> (Drachenwurz, Fieber + Blässe) mit <span class="eva">dom=</span> als erstmaligem Kolophon-Finale in Sprache A (R39). Vier neue Grammatikregel-Kandidaten: R36 (dar·dar-Dopplung), R37 (qo-Präfix-Dopplung), R38 ({'{plant}'}-am-Anfang), R39 (dom= in Spr. A).</p>
 	</div>
 
 	<div class="box hl">
@@ -21,14 +21,15 @@
 				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C Eröffnung)</td></tr>
 				<tr><td>Grammatikregeln</td><td><strong>{RULES.length}</strong> (24 validiert + {RULES.length - 24} Kandidaten)</td></tr>
 				<tr>
-					<td>Hauptneufunde v6.0</td>
+					<td>Hauptneufunde v6.1</td>
 					<td>
 						<ul>
-							<li>f17r: <em>Centaurea scabiosa</em> — 3 =-Kolophone (Corpus-Rekord); Augenpflanze mit Signaturenwurzel ★★★★</li>
-							<li>f17v: <em>Tamus communis</em> — 23 Paragraphen (Kräuter-Rekord); <span class="eva">char</span> im Schlusskolophon bestätigt Fieber-Indikation ★★★</li>
-							<li>R33: <span class="eva">qo-</span>-Präfix in Sprache A ab Quire C — 13 Belege; dialektale Übergangszone ★★★</li>
-							<li>R34: <span class="eva">sheol</span> (Vollform) in Sprache A — Erstbeleg f17v P.13 ★★★</li>
-							<li>R35: <span class="eva">chol·chol</span> — Vollheilungs-Emphase; R19-Erweiterung auf Nominalstämme ★★★</li>
+							<li>f18r: <em>Centaurea montana</em> — 2 =-Kolophone; stärkstes Schlusskolophon Quire C (<span class="eva">or·shaiin·cthor·okal·dar=</span>) ★★★★</li>
+							<li>f18v: <em>Dracunculus vulgaris</em> — zoomorphe Drachen-Figur (Corpus-Erstbeleg bot. Abschnitt); <span class="eva">ykam</span>/<span class="eva">ytor</span> Auferstehungsverben ★★★★</li>
+							<li>R36: <span class="eva">dar·dar</span> — Bilateral-/Intensiv-Dopplung (Erstbeleg f18r P.6) ★★★</li>
+							<li>R37: qo-Präfix-Dopplung (<span class="eva">qokchy·qokchy</span>, <span class="eva">qoky·qoky</span>) — intensive Konnektivität (2 Belege f18v) ★★★</li>
+							<li>R38: <span class="eva">{'{plant}'}</span>-Marker am Paragraphenanfang = Illustrations-Rahmung (Erstbeleg f18v P.10) ★★★</li>
+							<li>R39: <span class="eva">dom=</span> als Kolophon-Finale in Sprache A — Erstbeleg f18v P.10 ★★★</li>
 						</ul>
 					</td>
 				</tr>
