@@ -1,6 +1,6 @@
 export const COMPARISON = [
   { feature: 'Kernvokabular', langB: 'sheol, daiin, dal, ckhy, dam, sar, or', langA: 'Identisch — alle 10 Ankerwörter je Folio bestätigt (f1r: 10/10 ★★★★★)' },
-  { feature: 'qo-Präfix (R1)', langB: '8+ Belege; Kernmerkmal Spr. B ★★★★★', langA: 'Vollständig absent — B-exklusives Merkmal; f1r: 0 Belege in 260 Tokens' },
+  { feature: 'qo-Präfix (R1/R33)', langB: '8+ Belege; Kernmerkmal Spr. B ★★★★★', langA: 'Absent in Quires I–II (0 / ~800 Token); ab Quire III präsent: 13 Belege f17r/f17v (R33 Kandidat ★★★)' },
   { feature: 'Dominanter Vokal', langB: 'e / ee (Segol/Ṣere)', langA: 'o (Ḥolam) häufiger; dol statt dal, ckho neben ckhy' },
   { feature: 'Struktur', langB: 'Prosa ohne Bildtrennmarker', langA: '{plant}-Marker in Kräuter-Folios (R14); f1r: Prosa ohne Marker (Haskama-Typ, sui generis)' },
   { feature: 'Kolophon-Inventar', langB: 'cphedom=, daiin·cheeodam', langA: 'kaiim=, dom=, daiin=, chckhan=, Kurztitel (R23)' },
@@ -36,4 +36,6 @@ export const FOLIOS = [
   { folio: 'f15v', plant: 'Einbeere (Paris quadrifolia)', signal: 'soloiin P.11 (Arznei für Auge) ★★★★★; sor P.10 (Heilungsarznei); opchor P.1 (Atemweg-Pupillen-Befund); cthor·chor= (vollständige Heilung, Kolophon)', stars: '★★★★', is5: false },
   { folio: 'f16r', plant: 'Wunderbaum (Ricinus communis)', signal: 'tchor P2.5 (fem. Pupillen-Verb, 1. Beleg); saiin·ytaiin= (Intra-Paragraph-Kolophon); qokchor·dl·dy·shey= (Schlusskolophon)', stars: '★★★★', is5: false },
   { folio: 'f16v', plant: 'Alpen-Mannstreu (Eryngium alpinum)', signal: 'chkar·chkar (Doppel-Untersuchungsformel, einmalig); okaiin×2; otor P.12 (Zeichen des Lichts); sokar·oaorar= (Quire-B-Abschlusskolophon)', stars: '★★★★★', is5: true },
+  { folio: 'f17r', plant: 'Skabiosen-Flockenblume (Centaurea scabiosa)', signal: '3 =-Kolophone P.3+P.6+P.12 (Corpus-Rekord für ein Folio); chor 3×; 7 qo-Formen in Spr. A (R33); Marginalinschrift (nicht Voynichesisch, vermutl. Latein)', stars: '★★★★', is5: false },
+  { folio: 'f17v', plant: 'Schwarze Zaunrübe (Tamus communis)', signal: '23 Paragraphen (Kräuter-Rekord); sar P.17 ohne {plant} (wie f57r/f103r); sheol Vollform Spr. A P.13 (R34); char im Schlusskolophon; or·okaiin·or Palindrom P.6', stars: '★★★', is5: false },
 ];

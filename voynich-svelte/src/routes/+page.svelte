@@ -247,7 +247,7 @@
 
 		<!-- XI. SPRACHE A -->
 		<section class="section" id="spracheA">
-			<h2>XI. Sprache A — Quires A &amp; B ({STATS.foliosA})</h2>
+			<h2>XI. Sprache A — Quires A–C ({STATS.foliosA})</h2>
 			<LanguageASection />
 		</section>
 

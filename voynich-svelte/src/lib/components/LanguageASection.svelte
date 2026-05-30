@@ -24,7 +24,7 @@
 		</div>
 	</div>
 
-	<h3>Quire A — Textkorpus (alle analysierten Folios)</h3>
+	<h3>Quires A–C — Textkorpus (alle analysierten Folios)</h3>
 	<div class="folio-wrap">
 		<table class="dt">
 			<thead>
@@ -44,8 +44,8 @@
 	</div>
 
 	<div class="box green conclusion">
-		<div class="box-title">Schlussfolgerung: Sprache A = Sprache B, dialektale Variante</div>
-		<p style="margin:0;font-size:.92rem">Die Sprachen A und B sind dialektale Varianten desselben Mischna-Hebräisch/Aramäisch-Systems: A hat höhere o-Vokalfrequenz (Ḥolam), B mehr e-Vokale (Segol/Ṣere). Textgenre, Prognose-Schema, Präfix-System und Kolophon-Konventionen sind identisch. Die Quire-Grenze A→B (f8v→f9r) ist textlich unsichtbar. Das Werk ist als Einheit konzipiert.</p>
+		<div class="box-title">Schlussfolgerung: Sprache A = Sprache B, dialektale Variante — Quire C als Übergangszone</div>
+		<p style="margin:0;font-size:.92rem">Die Sprachen A und B sind dialektale Varianten desselben Mischna-Hebräisch/Aramäisch-Systems: A hat höhere o-Vokalfrequenz (Ḥolam), B mehr e-Vokale (Segol/Ṣere). Textgenre, Prognose-Schema, Präfix-System und Kolophon-Konventionen sind identisch. Die Quire-Grenze A→B (f8v→f9r) ist textlich unsichtbar. <strong>Quire C (f17–)</strong> zeigt erstmals B-Merkmale in Sprache-A-Texten: das <span class="eva">qo-</span>-Präfix tritt auf (13 Belege, R33 ★★★) und <span class="eva">sheol</span> (Vollform) erscheint am Paragraphenende (R34 ★★★) — Quire C ist eine dialektale Übergangszone. Das Werk ist als Einheit konzipiert.</p>
 	</div>
 </div>
 

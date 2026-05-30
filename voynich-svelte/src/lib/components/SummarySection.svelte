@@ -6,7 +6,7 @@
 <div class="summary">
 	<div>
 		<p class="dropcap">Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.</p>
-		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose. Version 5.9 analysiert das Eröffnungsfolio f001r (bA1, Quire A, Sprache A, Hand 1) — den einzigen bisher untersuchten deklarativen Prosatext des Gesamtkorpus. Die Analyse belegt den vollständigen Ausfall des <span class="eva">qo-</span>Präfixes als B-exklusives Merkmal (★★★★★), bestätigt 10/10 Sprache-A-Ankerwörter (100 %) und stützt die Hypothese, f001r sei eine <strong>Haskama</strong> — eine rabbinische Billigungsseite mit Vier-Absatz-Layout, roten Großinitialen (&252/&253 = Aries-Symbol ★★★★) und dem historischen „Erased Key" (Jim Reeds, 1994).</p>
+		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose. Version 6.0 eröffnet Quire C mit f17r/f17v (Bifolio bC1, Sprache A, Hand 1) und belegt erstmals das <span class="eva">qo-</span>-Präfix in Sprache-A-Texten (13 Belege — R33 Kandidat ★★★) sowie <span class="eva">sheol</span> (Vollform) in Sprache A (R34 Kandidat). f17r identifiziert <em>Centaurea scabiosa</em> (Pupillen/Augenblässe) mit Corpus-Rekord: drei =-Kolophone auf einem Folio. f17v identifiziert <em>Tamus communis</em> (Fieber + Atemweg des Auges) mit 23 Paragraphen — neuem Kräuter-Rekord.</p>
 	</div>
 
 	<div class="box hl">
@@ -18,17 +18,17 @@
 				<tr><td>Analysierte Folios</td><td>{STATS.foliosAll}</td></tr>
 				<tr><td>Bestätigte Wörter</td><td><strong>{STATS.lexicon}</strong> (★★★ oder höher)</td></tr>
 				<tr><td>Rückwärtstest (Spr. B)</td><td>{STATS.backtestFraction} Vorhersagen bestätigt ({STATS.backtest}); 0 Falsch-Positive</td></tr>
-				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig)</td></tr>
+				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C Eröffnung)</td></tr>
 				<tr><td>Grammatikregeln</td><td><strong>{RULES.length}</strong> (24 validiert + {RULES.length - 24} Kandidaten)</td></tr>
 				<tr>
-					<td>Hauptneufunde v5.9</td>
+					<td>Hauptneufunde v6.0</td>
 					<td>
 						<ul>
-							<li>f001r als <strong>Haskama</strong> — deklarativer Texttyp sui generis; 4 Absätze + Kurztitel T1–T4 ★★★</li>
-							<li><span class="eva">qo-</span>-Präfix vollständig absent in Sprache A — R1 als <strong>B-exklusiv</strong> gesichert ★★★★★</li>
-							<li><span class="conf5">shodain</span> (שׁוֹד+דַּ+עַיִן) — Zerstörung des Auges; schärfste Erblindungs-Formel ★★★★</li>
-							<li><span class="conf5">oksho</span> (עַ+כְּ+שׁוֹ) — erste präpositionale Scheol-Form in Sprache A ★★★★</li>
-							<li><span class="eva">kor</span> ↔ <span class="eva">kchom</span> — Temperatur-Antonymenpaar; hippokratisches Diagnostikschema R31 ★★★</li>
+							<li>f17r: <em>Centaurea scabiosa</em> — 3 =-Kolophone (Corpus-Rekord); Augenpflanze mit Signaturenwurzel ★★★★</li>
+							<li>f17v: <em>Tamus communis</em> — 23 Paragraphen (Kräuter-Rekord); <span class="eva">char</span> im Schlusskolophon bestätigt Fieber-Indikation ★★★</li>
+							<li>R33: <span class="eva">qo-</span>-Präfix in Sprache A ab Quire C — 13 Belege; dialektale Übergangszone ★★★</li>
+							<li>R34: <span class="eva">sheol</span> (Vollform) in Sprache A — Erstbeleg f17v P.13 ★★★</li>
+							<li>R35: <span class="eva">chol·chol</span> — Vollheilungs-Emphase; R19-Erweiterung auf Nominalstämme ★★★</li>
 						</ul>
 					</td>
 				</tr>
