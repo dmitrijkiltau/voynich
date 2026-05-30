@@ -104,7 +104,7 @@
   </div>
 
   <div>
-    <h3>7 · f14r P.8 / f14v P.8 — y+k-Paradigma &amp; Blut-Triade <span class="new-badge">Neu v5.6</span></h3>
+    <h3>7 · f14r P.8 / f14v P.8 — y+k-Paradigma &amp; Blut-Triade</h3>
     <div class="box green ref-card">
       <div class="antonym-grid">
         <div>
@@ -123,6 +123,29 @@
         <span class="conf5">★★★★★</span>
       </p>
       <button class="ref-insert-btn" onclick={() => onInsert('ykaiin dol dair dam')}>In Übersetzer laden</button>
+    </div>
+  </div>
+
+  <div>
+    <h3>8 · f15r / f15v — Bifolio bB2 Abschluss <span class="new-badge">Neu v5.7</span></h3>
+    <div class="box green ref-card">
+      <div class="antonym-grid">
+        <div>
+          <div class="layer-eva">qotchor · chaiin · chy · kol · daky=</div>
+          <div class="layer-heb">קוֹ+תְּ+כֹּר · חַיִּין · כְּהִי · כֹּל · דַּכִּי=</div>
+          <div class="layer-en" style="font-size:.9rem">f15r Kolophon: "Zeichen der Pupille — Leben — Blässe — alles — Reinheit" <em>(positiv-ambivalent)</em></div>
+        </div>
+        <div>
+          <div class="layer-eva">daiin · cthor · chol · chor=</div>
+          <div class="layer-heb">דִּין · כְּ+תֹּר · כֹּל · כֹּר=</div>
+          <div class="layer-en" style="font-size:.9rem">f15v Kolophon: "Urteil — vollständige Heilung — alles — Pupille" <em>(positiv)</em></div>
+        </div>
+      </div>
+      <p class="ref-note" style="margin-top:.6rem">
+        <span class="eva">soloiin</span> (f15v P.11) = „Arznei für das Auge" — therapeutisch präzisestes Kompositum im Gesamtkorpus. <span class="eva">ykshol</span> (f15r P.12) = erster negativer y+k+Terminus — Paradigma mit 6 Gliedern vollständig. Bifolio bB2 (f10r/f10v/f15r/f15v) schließt konsistentes ophthalmologisches Programm ab.
+        <span class="conf5">★★★★★</span>
+      </p>
+      <button class="ref-insert-btn" onclick={() => onInsert('soloiin sor cthor chor')}>In Übersetzer laden</button>
     </div>
   </div>
 </div>

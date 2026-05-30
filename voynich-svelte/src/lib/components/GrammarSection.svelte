@@ -55,8 +55,8 @@
 </div>
 
 <div class="box hl">
-	<div class="box-title">Verb-Paradigma y+k+[Terminus] — vollständig ab f11r/f11v</div>
-	<p style="margin-bottom:.5rem;font-size:.92rem">Alle vier klinischen Ankerbegriffe erhalten eine Verbform durch Präfix-Schichtung <span class="eva">y</span> + <span class="eva">k</span> + Terminus:</p>
+	<div class="box-title">Verb-Paradigma y+k+[Terminus] — vollständig ab f15r</div>
+	<p style="margin-bottom:.5rem;font-size:.92rem">Alle klinischen Ankerbegriffe erhalten eine Verbform durch Präfix-Schichtung <span class="eva">y</span> + <span class="eva">k</span> + Terminus (fünf positiv, ein negativ):</p>
 	<div class="table-scroll">
 		<table class="dt" style="margin-top:.4rem">
 			<thead>
@@ -89,6 +89,20 @@
 					<td><span class="heb-sm">יְ+כְּ+הִי</span></td>
 					<td class="meaning">er wird Blässe zeigen</td>
 					<td>f11v P2</td>
+					<td><span class="conf">★★★★</span></td>
+				</tr>
+				<tr>
+					<td><span class="eva">ykaiin</span></td>
+					<td><span class="heb-sm">יְ+כְּ+עַיִן</span></td>
+					<td class="meaning">er heilt das Auge</td>
+					<td>f14r P8</td>
+					<td><span class="conf">★★★★</span></td>
+				</tr>
+				<tr style="color:var(--red)">
+					<td><span class="eva">ykshol</span></td>
+					<td><span class="heb-sm">יְ+כְּ+שׁוֹל</span></td>
+					<td class="meaning">er wird zu Scheol gehen <em>(negativ)</em></td>
+					<td>f15r P12</td>
 					<td><span class="conf">★★★★</span></td>
 				</tr>
 			</tbody>

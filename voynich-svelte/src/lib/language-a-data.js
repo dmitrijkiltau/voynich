@@ -30,4 +30,6 @@ export const FOLIOS = [
   { folio: 'f13v', plant: 'Schachtelhalm-Typ (Equisetum)', signal: '9 × {plant}-Marker (Rekord Quire B); qoky·daiin= (Minikolophon)', stars: '★★★', is5: false },
   { folio: 'f14r', plant: 'Schlangenwurz-Typ (Bistorta officinalis)', signal: 'dain + chor dominant; chckhy= (3. Korpus-Beleg); Doppelkolophon P.7 + P.13; ykaiin (5. y+k-Verb)', stars: '★★★', is5: false },
   { folio: 'f14v', plant: 'Farn-Typ (Dryopteris-Gruppe)', signal: 'dam (Blut-Triade P.8, Erstbeleg Quire B); dchckhy= (Intensiv-Siegel); Dreisegment-Kolophon; dy×3 (R25)', stars: '★★★', is5: false },
+  { folio: 'f15r', plant: 'Silberdistel (Carlina acaulis)', signal: 'qotchor ★★★★★ (Pupillen-Zeichen, Kolophon); ykshol P.12 (erster negativer y+k+Terminus); sheey·cthy·dain (Gabe+Heilung+Auge); chaiin+Abwägungskolophon', stars: '★★★★', is5: false },
+  { folio: 'f15v', plant: 'Einbeere (Paris quadrifolia)', signal: 'soloiin P.11 (Arznei für Auge) ★★★★★; sor P.10 (Heilungsarznei); opchor P.1 (Atemweg-Pupillen-Befund); cthor·chor= (vollständige Heilung, Kolophon)', stars: '★★★★', is5: false },
 ];

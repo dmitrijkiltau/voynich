@@ -17,13 +17,18 @@ export const TESTED = [
   { pred: 'chaiin · ckhy · or · aiin', heb: 'Prognose-Tetrade', result: '✓ f10r P4 (alle vier in einer Zeile)', context: 'vollständiges hippokratisches Schema' },
   { pred: 'torshor', heb: 'תֹּר+שׁוֹר', result: '✓ f13r P.1 Paragraph-Öffner', context: 'Jahreszeit-Zeichen; erster Beleg dieser Form im Korpus' },
   { pred: 'pchy', heb: 'פְּחִי', result: '✓ 4× f13r — höchste Atemweg-Dichte', context: 'opchy, qopchy, pchy; bestätigt Alant-Identifikation' },
-  { pred: 'shol · dy · … · shol', heb: 'R24-Struktur', result: '✓ f13r P.1 (Dopplungsformel)', context: 'einmaliges Emphase-Muster mit Genitiv-Brücke dy' },  { pred: 'ykaiin (y+k+aiin)', heb: 'יְ+כְּ+עַיִן', result: '✓ f14r P.8 — 5. Paradigma-Mitglied', context: 'ykchaiin→ycheor→ykchor→ykchy→ykaiin: alle 5 klinischen Ankerpunkte' },
+  { pred: 'shol · dy · … · shol', heb: 'R24-Struktur', result: '✓ f13r P.1 (Dopplungsformel)', context: 'einmaliges Emphase-Muster mit Genitiv-Brücke dy' },  { pred: 'ykaiin (y+k+aiin)', heb: 'יְ+כְּ+עַיִן', result: '✓ f14r P.8 — 5. Paradigma-Mitglied', context: 'ykchaiin→ycheor→ykchor→ykchy→ykaiin: 5 positive Ankerpunkte (ykshol = 6. Glied negativ, f15r P.12)' },
   { pred: 'chckhy= (Diagnosekolophon)', heb: 'כְּ+כְּ+הִי', result: '✓ 4× Korpus: f9v, f11v P.6, f14r P.7, f14v P.6', context: 'Konzentration in Bifolio bB3; auch medial belegt (f14v P.6)' },
-  { pred: 'dam (Quire B)', heb: 'דָּם', result: '✓ f14v P.8 (Blut-Triade)', context: 'dol · dair · dam — Erstbeleg Blutpathologie in bB3; verbindet f14v mit f3r' },];
+  { pred: 'dam (Quire B)', heb: 'דָּם', result: '✓ f14v P.8 (Blut-Triade)', context: 'dol · dair · dam — Erstbeleg Blutpathologie in bB3; verbindet f14v mit f3r' },
+  { pred: 'ykshol (y+k+shol)', heb: 'יְ+כְּ+שׁוֹל', result: '✓ f15r P.12 — erster negativer y+k+Terminus', context: 'ykchaiin→ycheor→ykchor→ykchy→ykaiin→ykshol: komplettes Paradigma, positiv + negativ belegt' },
+  { pred: 'qotchor (Pupillenzeichen)', heb: 'קוֹ+תְּ+כֹּר', result: '✓ f15r Schlusskolophon ★★★★★', context: 'qotchor·chaiin·chy·kol·daky= — positives Pupillen-Urteil; ophthalmologische Abschlussformel bB2' },
+  { pred: 'soloiin', heb: 'שׁוֹ+לְ+עַיִן', result: '✓ f15v P.11 — therapeutisch präzisestes Kompositum', context: '„Arznei für das Auge" — höchste Heilarznei-Präzision im Gesamtkorpus; Gegenstück zu shoiin (f10v)' },
+  { pred: 'cthor (vollständige Heilung)', heb: 'כְּ+תֹּר', result: '✓ f15v Schlusskolophon', context: 'daiin·cthor·chol·chor= — cthor+chor = Heilung der Pupillenpathologie; positiver Abschluss Bifolio bB2' },
+];
 
 export const STATS = [
   { label: 'Bestätigt Spr. B (★★★★+)', pct: 88, num: '23 / 26', color: 'var(--gold)' },
-  { label: 'Bestätigt Spr. A (Anker, f1v–f13v)', pct: 100, num: '260 / 260', color: 'var(--green)' },
+  { label: 'Bestätigt Spr. A (Anker, f1v–f15v)', pct: 100, num: '260 / 260', color: 'var(--green)' },
   { label: 'Nicht gefunden', pct: 8, num: '2 / 26', color: 'var(--red)' },
   { label: 'Falsch-positiv (gesamt)', pct: 0, num: '0', color: 'var(--gold)' },
 ];
