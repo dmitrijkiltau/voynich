@@ -1,42 +1,38 @@
-# sv
+# Voynich Manuscript — Decipherment Research App
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A SvelteKit-based research application presenting a systematic decipherment of the Voynich Manuscript. The app covers character mapping (EVA → proposed phonetic values), a lexicon, grammar rules, a live translator tool, backtest results, and linguistic analysis (Language A/B registers, Randstern margin notation).
 
-## Creating a project
+Current mapping version: **v5.6** — backtest accuracy: **88%** (23/26 folios), covering **f1v–f14v** (Quires A–B) plus selected folios f57r, f103r/v, f114v, f115r/v, f116r/v.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Tech stack
 
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.15.3 create --template minimal --types jsdoc --install npm voynich-svelte
-```
+- [SvelteKit](https://kit.svelte.dev/) with Svelte 5
+- Vite 8
+- JSDoc for types (no TypeScript compilation)
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies and start the dev server:
 
 ```sh
+npm install
 npm run dev
 
-# or start the server and open the app in a new browser tab
+# open in browser automatically
 npm run dev -- --open
 ```
 
 ## Building
 
-To create a production version of your app:
-
 ```sh
 npm run build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+## Type checking
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```sh
+npm run check
+# or watch mode
+npm run check:watch
+```
