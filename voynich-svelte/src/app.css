@@ -168,7 +168,10 @@ table.dt {
   width: 100%;
   border-collapse: collapse;
   font-size: .88rem;
-  margin: .9rem 0;
+
+  & thead {
+    background: var(--parch-d);
+  }
 
   & th {
     font-family: var(--font-smallcaps);
@@ -177,10 +180,8 @@ table.dt {
     text-transform: uppercase;
     color: var(--ink-f);
     padding: .45rem .7rem;
-    border-bottom: 1.5px solid var(--border);
     text-align: left;
     font-weight: 400;
-    background: rgba(0, 0, 0, .02);
   }
 
   & td {
@@ -214,6 +215,7 @@ table.dt {
   font-family: var(--font-hebrew);
   font-size: .95rem;
   direction: rtl;
+  unicode-bidi: isolate;
   display: inline-block;
   color: var(--blue);
 }
@@ -295,5 +297,7 @@ table.dt {
 
   .box { break-inside: avoid; }
   table { break-inside: avoid; }
-}
 
+  table.dt tr:hover td,
+  table.dt tr[data-clickable]:hover td { background: none; }
+}

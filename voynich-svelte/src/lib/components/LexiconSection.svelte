@@ -55,48 +55,50 @@
   {#each CATEGORIES as cat}
     <div>
       <h3>{cat.label}</h3>
-      <table class="dt">
-        <thead>
-          <tr>
-            {#each COLS as col}
-              {@const s = sortStates[cat.id]}
-              <th
-                data-sortable
-                aria-sort={s.col === col.key ? (s.dir === 1 ? 'ascending' : 'descending') : 'none'}
-                onclick={() => toggleSort(cat.id, col.key)}
-                onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleSort(cat.id, col.key)}
+      <div class="table-wrap">
+        <table class="dt">
+          <thead>
+            <tr>
+              {#each COLS as col}
+                {@const s = sortStates[cat.id]}
+                <th
+                  data-sortable
+                  aria-sort={s.col === col.key ? (s.dir === 1 ? 'ascending' : 'descending') : 'none'}
+                  onclick={() => toggleSort(cat.id, col.key)}
+                  onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleSort(cat.id, col.key)}
+                  tabindex="0"
+                >
+                  {col.label}
+                  <span class="sort-icon" aria-hidden="true">
+                    {#if s.col === col.key}
+                      {s.dir === 1 ? '▲' : '▼'}
+                    {:else}
+                      ⇅
+                    {/if}
+                  </span>
+                </th>
+              {/each}
+            </tr>
+          </thead>
+          <tbody>
+            {#each entriesByCat(cat.id) as entry}
+              {@const is5 = entry.stars.length >= 9}
+              <tr
+                data-clickable
+                title="In Eingabe einfügen: {entry.eva}"
+                onclick={() => onInsert(entry.eva)}
+                onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onInsert(entry.eva)}
                 tabindex="0"
               >
-                {col.label}
-                <span class="sort-icon" aria-hidden="true">
-                  {#if s.col === col.key}
-                    {s.dir === 1 ? '▲' : '▼'}
-                  {:else}
-                    ⇅
-                  {/if}
-                </span>
-              </th>
+                <td><span class="eva">{entry.eva}</span></td>
+                <td><span class="heb-sm">{entry.heb}</span></td>
+                <td class="meaning">{entry.de}</td>
+                <td><span class={is5 ? 'conf5' : 'conf'}>{entry.stars}</span></td>
+              </tr>
             {/each}
-          </tr>
-        </thead>
-        <tbody>
-          {#each entriesByCat(cat.id) as entry}
-            {@const is5 = entry.stars.length >= 9}
-            <tr
-              data-clickable
-              title="In Eingabe einfügen: {entry.eva}"
-              onclick={() => onInsert(entry.eva)}
-              onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onInsert(entry.eva)}
-              tabindex="0"
-            >
-              <td><span class="eva">{entry.eva}</span></td>
-              <td><span class="heb-sm">{entry.heb}</span></td>
-              <td class="meaning">{entry.de}</td>
-              <td><span class={is5 ? 'conf5' : 'conf'}>{entry.stars}</span></td>
-            </tr>
-          {/each}
-        </tbody>
-      </table>
+          </tbody>
+        </table>
+      </div>
     </div>
   {/each}
 </div>
@@ -108,7 +110,29 @@
     gap: 0 2rem;
 
     & > div {
-      flex: 1 1 480px;
+      flex: 1 1 560px;
+    }
+  }
+
+  .table-wrap {
+    max-height: 560px;
+    overflow-y: auto;
+  }
+
+  .dt {
+    width: 100%;
+
+    & thead {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+  }
+
+  @media print {
+    .table-wrap {
+      max-height: none;
+      overflow: visible;
     }
   }
 
