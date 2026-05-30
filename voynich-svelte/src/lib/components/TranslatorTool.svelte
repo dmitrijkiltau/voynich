@@ -349,11 +349,6 @@
 		</div>
 	{/if}
 
-	<!-- ── Methodology note ── -->
-	<div class="box red method-note">
-		<div class="box-title">Hinweis zur Methodik</div>
-		<p>Das Tool arbeitet auf dem bestätigten Lexikon v{STATS.version} ({STATS.lexicon} Einträge, ★★★ oder höher), erweitert durch Neubelege aus f11r/f11v (Quire B): <em>ykchor</em>, <em>qokchor</em>, <em>otchor</em>, <em>tchey</em>, <em>chodl</em>, <em>dair</em>, <em>cphar</em>; sowie aus f13r/f13v: <em>torshor</em> (Jahreszeit-Zeichen), <em>pchy</em> (Atem/Mund). Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
-	</div>
 </div>
 
 <style>
@@ -858,14 +853,5 @@
 			color: var(--ink-f);
 			white-space: nowrap;
 		}
-	}
-
-	/* ── Methodology note ─────────────────────────────── */
-
-	.method-note {
-		margin-top: 1rem;
-		font-size: .88rem;
-
-		& p { margin: 0; }
 	}
 </style>

@@ -76,6 +76,20 @@ body {
     radial-gradient(ellipse at 80% 85%, rgba(160, 120, 60, .05) 0%, transparent 55%);
 }
 
+a {
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(122, 28, 28, .35);
+  transition: text-decoration-color .15s, color .15s;
+
+  &:hover, &:focus-visible {
+    color: var(--ink);
+    text-decoration-color: var(--border);
+    outline: none;
+  }
+}
+
 /* ── SECTIONS ────────────────────────────────────────── */
 
 h2 {
