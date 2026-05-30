@@ -82,9 +82,9 @@
 	<!-- Sidebar -->
 	<aside class="sidebar" class:open={menuOpen} aria-label="Seitennavigation">
 		<div class="sidebar-brand">
-			<div class="brand-kicker">Forschungswerkzeug</div>
-			<div class="brand-name">Voynich</div>
-			<div class="brand-sub">EVA → Hebräisch</div>
+			<div class="brand-kicker">Voynich-Manuskript</div>
+			<div class="brand-name">EVA → Hebräisch</div>
+			<div class="brand-sub">Formales Mapping-Dokument</div>
 		</div>
 
 		<nav class="sidebar-nav">
@@ -124,13 +124,13 @@
 	<!-- Main content -->
 	<main class="main-content">
 		<header class="page-header">
-			<div class="kicker">Formales Mapping-Dokument · Voynich-Manuskript</div>
-			<h1>EVA → Hebräisch-Aramäisch</h1>
-			<div class="subtitle">Zeichenmapping, Lexikon und Grammatikregeln · Sprachen A und B</div>
+			<div class="kicker">Formales Mapping-Dokument · Version {STATS.version}</div>
+			<h1>Voynich-Manuskript</h1>
+			<div class="subtitle">EVA → Hebräisch-Aramäisch · Zeichenmapping, Lexikon und Grammatikregeln</div>
 			<div class="meta-line">
-				<span>Analysierte Folios: f1v–f10v (Quires A–B), f57r, f103r/v, f114v, f115r/v, f116r/v</span>
+				<span>Sprachen A &amp; B · Folios {STATS.foliosAll}</span>
 				<span>·</span>
-				<span>Mai 2026, Version {STATS.version}</span>
+				<span>Mai 2026</span>
 			</div>
 		</header>
 
@@ -228,7 +228,7 @@
 
 		<!-- XI. SPRACHE A -->
 		<section class="section" id="spracheA">
-			<h2>XI. Sprache A — Quires A &amp; B (f1v–f10v)</h2>
+			<h2>XI. Sprache A — Quires A &amp; B ({STATS.foliosA})</h2>
 			<LanguageASection />
 		</section>
 

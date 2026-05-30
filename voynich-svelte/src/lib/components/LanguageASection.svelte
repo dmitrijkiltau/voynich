@@ -1,5 +1,6 @@
 ﻿<script>
 	import { COMPARISON, FOLIOS } from '$lib/language-a-data.js';
+	import { STATS } from '$lib';
 </script>
 
 <div class="sprache-a">
@@ -7,7 +8,7 @@
 		<div class="box-title">Sprache A vs. B — Hauptunterschiede</div>
 		<table class="dt">
 			<thead>
-				<tr><th>Merkmal</th><th>Sprache B (f57r, f103r)</th><th>Sprache A (f1v–f10v)</th></tr>
+				<tr><th>Merkmal</th><th>Sprache B (f57r, f103r)</th><th>Sprache A ({STATS.foliosA})</th></tr>
 			</thead>
 			<tbody>
 				{#each COMPARISON as c}
