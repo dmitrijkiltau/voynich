@@ -38,13 +38,14 @@
 
 <style>
 	.methodik-grid {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0 2rem;
+    display: flex;
+		justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0 2rem;
 
-		& > div {
-			flex: 1 1 420px;
-		}
+    & > div {
+      flex: 0 1 680px;
+    }
 	}
 
 	.anchor-card {

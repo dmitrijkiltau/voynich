@@ -296,69 +296,68 @@
 
 	</div>
 
-	<!-- ── Token row ── -->
-	{#if results.length > 0}
-		<div class="token-section">
-			<span class="panel-label">Token-Analyse</span>
-			<div class="token-row" role="list" aria-label="Erkannte Tokens">
-				{#each results as r}
-					<span
-						class="tok"
-						class:found={r.lookup?.matchType === 'found'}
-						class:prefix={r.lookup?.matchType === 'prefix'}
-						class:unknown={!r.lookup}
-						role="listitem"
-						title={r.lookup ? r.lookup.de : 'unbekannt'}
-					>
-						<span class="tok-eva">{r.word}</span>
-						<span class="tok-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '?'}</span>
-					</span>
-				{/each}
+	<div class="token-gloss">
+		<!-- ── Token row ── -->
+		{#if results.length > 0}
+			<div class="token-section">
+				<span class="panel-label">Token-Analyse</span>
+				<div class="token-row" role="list" aria-label="Erkannte Tokens">
+					{#each results as r}
+						<span
+							class="tok"
+							class:found={r.lookup?.matchType === 'found'}
+							class:prefix={r.lookup?.matchType === 'prefix'}
+							class:unknown={!r.lookup}
+							role="listitem"
+							title={r.lookup ? r.lookup.de : 'unbekannt'}
+						>
+							<span class="tok-eva">{r.word}</span>
+							<span class="tok-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '?'}</span>
+						</span>
+					{/each}
+				</div>
 			</div>
-		</div>
-	{/if}
+		{/if}
 
-	<!-- ── Gloss table ── -->
-	{#if results.length > 0}
-		<div class="gloss-wrap">
-			<span class="panel-label">Wort-für-Wort-Analyse</span>
-			<div class="gloss-scroll">
-				<table class="gloss-table" aria-label="Wort-für-Wort-Analyse">
-					<thead>
-						<tr>
-							<th scope="col">EVA</th>
-							<th scope="col">Hebräisch</th>
-							<th scope="col">Bedeutung</th>
-							<th scope="col">Konf.</th>
-							<th scope="col">Kat.</th>
-						</tr>
-					</thead>
-					<tbody>
-						{#each results as r}
-							<tr class:row-unknown={!r.lookup}>
-								<td class="g-eva">{r.word}</td>
-								<td class="g-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '—'}</td>
-								<td class="g-de">{r.lookup ? r.lookup.de : 'unbekannt'}</td>
-								<td class="g-st" class:g5={r.lookup && r.lookup.stars.length >= 9}>{r.lookup ? r.lookup.stars : '—'}</td>
-								<td class="g-cat">{r.lookup ? r.lookup.cat : '—'}</td>
+		<!-- ── Gloss table ── -->
+		{#if results.length > 0}
+			<div class="gloss-wrap">
+				<span class="panel-label">Wort-für-Wort-Analyse</span>
+				<div class="gloss-scroll">
+					<table class="gloss-table" aria-label="Wort-für-Wort-Analyse">
+						<thead>
+							<tr>
+								<th scope="col">EVA</th>
+								<th scope="col">Hebräisch</th>
+								<th scope="col">Bedeutung</th>
+								<th scope="col">Konf.</th>
+								<th scope="col">Kat.</th>
 							</tr>
-						{/each}
-					</tbody>
-				</table>
+						</thead>
+						<tbody>
+							{#each results as r}
+								<tr class:row-unknown={!r.lookup}>
+									<td class="g-eva">{r.word}</td>
+									<td class="g-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '—'}</td>
+									<td class="g-de">{r.lookup ? r.lookup.de : 'unbekannt'}</td>
+									<td class="g-st" class:g5={r.lookup && r.lookup.stars.length >= 9}>{r.lookup ? r.lookup.stars : '—'}</td>
+									<td class="g-cat">{r.lookup ? r.lookup.cat : '—'}</td>
+								</tr>
+							{/each}
+						</tbody>
+					</table>
+				</div>
 			</div>
-		</div>
-	{/if}
-
+		{/if}
+	</div>
 </div>
 
 <style>
-	.tool-area {
-		flex: 2 2 960px;
-	}
-
 	/* ── Shell ─────────────────────────────────────────── */
 
 	.tool-area {
+		flex: 1 1 960px;
+		container-type: inline-size;
 		background: rgba(255, 255, 255, .22);
 		border: 1px solid var(--border);
 		border-radius: 3px;
@@ -374,7 +373,7 @@
 		gap: 1.2rem;
 		align-items: start;
 
-		@media (max-width: 900px) {
+		@container (max-width: 1280px) {
 			grid-template-columns: 1fr 1fr;
 
 			& .folio-col {
@@ -382,7 +381,7 @@
 			}
 		}
 
-		@media (max-width: 560px) {
+		@container (max-width: 560px) {
 			grid-template-columns: 1fr;
 		}
 	}
@@ -511,6 +510,8 @@
 	/* ── Hebrew / German output ───────────────────────── */
 
 	.result-heb {
+		min-height: 100px;
+		max-height: 17rem;
 		font-family: var(--font-hebrew);
 		font-size: 1.25rem;
 		direction: rtl;
@@ -520,8 +521,8 @@
 		border: 1px solid var(--parch-dk);
 		border-radius: 2px;
 		padding: .55rem .75rem;
-		min-height: 100px;
 		word-break: break-word;
+		overflow-y: auto;
 
 		&.empty {
 			color: var(--ink-f);
@@ -585,8 +586,11 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0;
-		max-height: 200px;
 		overflow-y: auto;
+
+		@container (max-width: 1280px) {
+			max-height: 200px;
+		}
 	}
 
 	.folio-group {
@@ -739,6 +743,20 @@
 		&:hover, &:focus-visible {
 			color: var(--red);
 			outline: none;
+		}
+	}
+
+	.token-gloss {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+
+		& > .token-section {
+			flex: 1 1 320px;
+		}
+
+		& > .gloss-wrap {
+			flex: 1 1 480px;
 		}
 	}
 

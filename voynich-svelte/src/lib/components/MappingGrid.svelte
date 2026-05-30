@@ -22,6 +22,7 @@
 
 <style>
 	.mgrid {
+		flex: 1 1 360px;
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
 		gap: .38rem;

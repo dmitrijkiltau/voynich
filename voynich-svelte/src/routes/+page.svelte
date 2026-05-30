@@ -160,11 +160,15 @@
 		<!-- IV. ZEICHENMAPPING -->
 		<section class="section" id="mapping">
 			<h2>IV. Zeichenmapping EVA → Hebräisch</h2>
-			<p>Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab. Klick auf eine Zelle fügt das Zeichen in die Eingabe ein.</p>
-			<MappingGrid {MAPPING} onInsert={insertEva} />
-			<div class="box red">
-				<div class="box-title">Sonderregel: o als Ayin vs. Ḥolam</div>
-				<p style="margin:0;font-size:.92rem">Das EVA-Zeichen <span class="eva">o</span> hat zwei Funktionen: (1) als konsonantisches <span class="heb-sm">ע</span> (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam <span class="heb-sm">ֹ</span> im Wortinneren. Das Präfix <span class="eva">o-</span> am Wortanfang entspricht fast immer <span class="heb-sm">עַ</span>.</p>
+			<div class="mapping">
+				<div class="mapping-intro">
+					<p>Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab. Klick auf eine Zelle fügt das Zeichen in die Eingabe ein.</p>
+					<div class="box red">
+						<div class="box-title">Sonderregel: o als Ayin vs. Ḥolam</div>
+						<p style="margin:0;font-size:.92rem">Das EVA-Zeichen <span class="eva">o</span> hat zwei Funktionen: (1) als konsonantisches <span class="heb-sm">ע</span> (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam <span class="heb-sm">ֹ</span> im Wortinneren. Das Präfix <span class="eva">o-</span> am Wortanfang entspricht fast immer <span class="heb-sm">עַ</span>.</p>
+					</div>
+				</div>
+				<MappingGrid {MAPPING} onInsert={insertEva} />
 			</div>
 		</section>
 
@@ -184,8 +188,7 @@
 
 		<!-- VII. GRAMMATIKREGELN -->
 		<section class="section" id="grammatikregeln">
-			<h2>VII. Grammatikregeln (vollständig)</h2>
-			<p>Alle 23 validierten Regeln des EVA-Hebräisch-Systems mit Evidenz und Konfidenz.</p>
+			<h2>VII. Grammatikregeln</h2>
 			<GrammarRulesSection />
 		</section>
 
@@ -582,15 +585,25 @@
     gap: 0 2rem;
 
     & > .tool-intro {
-      flex: 1 1 360px;
+      flex: 0 1 480px;
 
       & .method-note {
         margin-top: .9rem;
         font-size: .88rem;
 
         & p { margin: 0; }
-
       }
     }
   }
+
+	.mapping {
+    display: flex;
+		align-items: start;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+		
+    & > .mapping-intro {
+      flex: 0 1 480px;
+		}
+	}
 </style>

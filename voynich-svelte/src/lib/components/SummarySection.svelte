@@ -40,11 +40,12 @@
 <style>
   .summary {
     display: flex;
+		justify-content: space-between;
     flex-wrap: wrap;
     gap: 0 2rem;
 
     & > div {
-      flex: 1 1 480px;
+      flex: 0 1 680px;
     }
   }
 
