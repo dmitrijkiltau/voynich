@@ -148,7 +148,7 @@ export const LEXICON = [
   // ── v5.8 (f16r + f16v) ────────────────
   // f16r
   { eva: 'tchor',     heb: 'תְּ+חֹר',           de: 'sie heilt die Pupille (fem. Imperfekt)',        stars: '★★★★',  cat: 'verb' },
-  { eva: 'ykair',     heb: 'יְ+כְּ+אִיר',        de: 'er heilt leuchtend (Kandidat 7. y+k+Terminus)', stars: '★★★',   cat: 'verb' },
+  { eva: 'ykair',     heb: 'יְ+כְּ+אִיר',        de: 'er heilt leuchtend (Kandidat 7. y+k+Terminus) — R43 provisorisch ★★: nur f16r (1×), unter Mindestgrenze 8×', stars: '★★',    cat: 'verb' },
   { eva: 'pocheody',  heb: 'פְּ+חֹ+דִּי',        de: 'des Atemwegs (Genitiv von pcho)',              stars: '★★★',   cat: 'akteur' },
   { eva: 'toror',     heb: 'תְּ+אוֹר+אוֹר',      de: 'sie heilt — Licht — Licht (Doppel-Licht-Heilung)', stars: '★★★', cat: 'verb' },
   { eva: 'daly·dal',  heb: 'דַּלִּי+דַּל',       de: 'seine Schwäche — schwach (R19 Dopplung ×2)',   stars: '★★★★',  cat: 'symptom' },
@@ -173,7 +173,7 @@ export const LEXICON = [
   // ── v5.9 (f1r — Eröffnungsfolio, Haskama) ────────────
   { eva: 'shodain',  heb: 'שׁוֹד+דַּ+עַיִן',   de: 'Zerstörung des Auges (schärfste negative Augenprognose)', stars: '★★★★', cat: 'kompositum' },
   { eva: 'shoaiin',  heb: 'שְׁאוֹל+עַיִן',      de: 'Scheol des Auges (Todesurteil für das Sehorgan)',        stars: '★★★★', cat: 'prognose'   },
-  { eva: 'kchom',    heb: 'כְּ+חֹם',            de: 'wie Hitze / wie Fieber (Temperatur-Komparativ)',         stars: '★★★',  cat: 'symptom'    },
+  { eva: 'kchom',    heb: 'כְּ+חֹם',            de: 'wie Hitze / wie Fieber (Temperatur-Komparativ) — R43 Kand.-Flag: f001r (2×, 1 Folio), nächste 5 Folios prüfen',  stars: '★★★',  cat: 'symptom'    },
   { eva: 'oksho',    heb: 'עַ+כְּ+שׁוֹ',        de: 'auf/gegen Scheol (erste präpositionale Scheol-Form Spr. A)', stars: '★★★★', cat: 'prognose' },
   { eva: 'dydyd',    heb: 'דִּי+דִּי+דִּי',     de: 'dreifacher Relativpartikel — extremer Betonungsmodus',  stars: '★★★',  cat: 'syntax'     },
   // ── v6.0 (f17r + f17v — Quire C Eröffnung) ───────────
@@ -240,8 +240,8 @@ export const LEXICON = [
   { eva: 'chod',      heb: 'חֹד',                 de: 'Schärfe / Akutheit (medizinischer Terminus)',                 stars: '★★★',  cat: 'symptom'    },
   { eva: 'tolol',     heb: 'תֹּלֹל',              de: 'geschwächt / hängend (med. Zustand, Adj.)',                   stars: '★★★',  cat: 'symptom'    },
   { eva: 'cphoy',     heb: 'כְּ+פְּ+הוֹ',         de: 'wie sein Atemweg / wie sein Mund (Komparativ)',               stars: '★★★',  cat: 'akteur'     },
-  { eva: 'ytor',      heb: 'יְ+תֹּ+אוֹר',         de: 'er/sie wird zum Licht werden (Auferstehungs-Heilungsverb)',   stars: '★★★★', cat: 'verb'       },
-  { eva: 'ykam',      heb: 'יְ+קָם',              de: 'er wird aufstehen / sich erheben (y-Imperfekt von קום qum)',  stars: '★★★',  cat: 'verb'       },
+  { eva: 'ytor',      heb: 'יְ+תֹּ+אוֹר',         de: 'er/sie wird zum Licht werden (Auferstehungs-Heilungsverb) — R43 Kand.: nur f18v (3×), zweiter Folio-Beleg ausstehend',   stars: '★★★',  cat: 'verb'       },
+  { eva: 'ykam',      heb: 'יְ+קָם',              de: 'er wird aufstehen / sich erheben (y-Imperfekt von קום qum) — R43 Kand.: nur f18v (4×), zweiter Folio-Beleg ausstehend',  stars: '★★★',  cat: 'verb'       },
   { eva: 'doky',      heb: 'דּוֹ+כִּי',           de: 'sein denn / weil (Genitiv-Kausalpartikel)',                   stars: '★★★',  cat: 'syntax'     },
   { eva: 'qoeees',    heb: 'וְ+עַ+אֵשׁ',          de: 'und auf dem Feuer / Fieber (qo + oeees)',                    stars: '★★★★', cat: 'symptom'    },
   { eva: 'qokeees',   heb: 'וְ+כְּ+עֵשׁ',         de: 'und wie Feuer / Fieber (qo + k + esh)',                      stars: '★★★★', cat: 'symptom'    },

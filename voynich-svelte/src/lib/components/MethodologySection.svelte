@@ -10,10 +10,11 @@
 					<tr><th>Sterne</th><th>Bedeutung</th><th>Kriterien</th></tr>
 				</thead>
 				<tbody>
-					<tr><td><span class="conf5">★★★★★</span></td><td>Gesichert</td><td>Rückwärtstest ✓, 3+ Kontexte, 0 Gegenbeispiele, R42-Kongruenz bestätigt</td></tr>
-					<tr><td><span class="conf">★★★★</span></td><td>Sehr stark</td><td>Rückwärtstest ✓, konsistente Kontextverteilung, R42-Kongruenz bestätigt</td></tr>
-					<tr><td><span class="conf">★★★</span></td><td>Stark</td><td>Semantisch kohärent, morphologisch konsistent, Basiswurzel ≥ 3 Konsonanten (R40)</td></tr>
-					<tr><td><span class="conf">★★</span></td><td>Möglich</td><td>Passt in Kontext, mehrere Alternativlesarten <em>oder</em> Kurzwurzel ≤ 2 Konsonanten (R40)</td></tr>
+					<tr><td><span class="conf5">★★★★★</span></td><td>Gesichert</td><td>Rückwärtstest ✓, ≥ 3 Folios, 0 Gegenbeispiele, R42-Kongruenz ✓, R43 erfüllt</td></tr>
+					<tr><td><span class="conf">★★★★</span></td><td>Sehr stark</td><td>Rückwärtstest ✓, ≥ 2 Folios, konsistente Kontextverteilung, R42-Kongruenz ✓, R43 erfüllt</td></tr>
+					<tr><td><span class="conf">★★★</span></td><td>Stark</td><td>Semantisch kohärent, morphologisch konsistent, Basiswurzel ≥ 4 Konsonanten (R40 v2), R43 erfüllt</td></tr>
+					<tr><td><span class="conf">★★★ Kand.</span></td><td>Stark-Kandidat</td><td>★★★-Kriterien erfüllt, R43 ausstehend (Einzel-Folio ≥ 8×, Bestätigung binnen 5 Folios)</td></tr>
+					<tr><td><span class="conf">★★</span></td><td>Möglich</td><td>Passt in Kontext, mehrere Alternativlesarten <em>oder</em> Basiswurzel ≤ 3 Konsonanten ohne 2 Ausnahmen (R40 v2)</td></tr>
 					<tr><td><span class="conf">★</span></td><td>Spekulativ</td><td>Erste Hypothese, noch nicht getestet</td></tr>
 				</tbody>
 			</table>

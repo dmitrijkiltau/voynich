@@ -126,7 +126,7 @@
 		const d1 = tokens.some((t, i) => i > 0 && CONSONANT_SET.has(t) && t === tokens[i - 1]);
 		const d2 = tokens.some((t, i) => i > 0 && LARYNGEAL_SET.has(t) && LARYNGEAL_SET.has(tokens[i - 1]));
 
-		const r40      = count <= 2 ? 'cap' : 'pass';
+		const r40      = count <= 3 ? 'cap' : 'pass';
 		const maxStars = r40 === 'cap' ? '★★' : '★★★';
 
 		return { word, inLexicon: false, prefixes, root, rootCons: count,
@@ -153,7 +153,7 @@
 		const d1count  = results.filter(r => r.d1).length;
 		const d2count  = results.filter(r => r.d2).length;
 		const passRate = Math.round((passed + lexhits) / total * 100);
-		const failR40  = passRate > 20;
+		const failR40  = passRate > 15;
 		return { total, invalid, capped, passed, lexhits, d1count, d2count, passRate, failR40 };
 	})() : null);
 
@@ -167,7 +167,7 @@
 </script>
 
 <div class="gib-intro">
-	<p>Der Gibberish-Test prüft, wie viele EVA-Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik die v6.2-Systembarrieren passieren. Nach <em>Priorität 3 (Methodendokument v6.2)</em> gilt: Wenn mehr als <strong>20 %</strong> der Pseudowörter strukturell ★★★ oder höher erreichen, muss R40 verschärft werden. Das Tool generiert Wörter mittels gewichteter Markov-Kette auf Basis bekannter EVA-Häufigkeiten und analysiert jedes Wort mit R40, R41 und D1/D2.</p>
+	<p>Der Gibberish-Test prüft, wie viele EVA-Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik die v6.3-Systembarrieren passieren. Empirischer Befund v6.2: Mittlere ★★★+-Rate = <strong>31 %</strong> (10 × 50 Wörter) — Schwelle 20 % überschritten → R40 v2 verschärft. Ab v6.3 gilt: Abbruchschwelle <strong>&gt; 15 %</strong>, Zielkorridor <strong>≤ 10 %</strong>. R40 v2 kappt Basiswurzeln mit ≤ 3 Konsonanten (v6.2: ≤ 2). Das Tool analysiert jedes Wort mit R40 v2, R41 und D1/D2.</p>
 </div>
 
 <!-- Controls -->
@@ -192,10 +192,12 @@
 			<div class="box-title">Strukturell ★★★ (Falsch-Positiv-Rate)</div>
 			<div class="stat-rate" class:rate-fail={stats.failR40}>{stats.passRate} %</div>
 			<div class="stat-verdict">
-				{#if stats.failR40}
-					⚠ > 20 % — R40 muss verschärft werden
+				{#if stats.passRate > 15}
+					⚠ > 15 % — R40 v2 muss weiter verschärft werden
+				{:else if stats.passRate > 10}
+					⚠ 11–15 % Warnzone — Systembeobachtung
 				{:else}
-					✓ ≤ 20 % — R40 ist ausreichend
+					✓ ≤ 10 % — Zielkorridor erreicht
 				{/if}
 			</div>
 		</div>
