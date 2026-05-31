@@ -50,8 +50,9 @@ export const FOLIO_STATUS = {
   // ── Lage 3 · Kräuter A — f33r image studied ──────────────────────────────
   f33r:'partial',
 
-  // ── Lage 8 · Astronomisch — f57r fully confirmed in backtest ─────────────
+  // ── Lage 8 · Astronomisch — f57r+f58r analysiert ─────────────────────────
   f57r:'done',
+  f58r:'done',
 
   // ── Lage 14 · Kosmologisch — f85v+f86r txt+jpg asset ────────────────────
   f85r1:'partial', f85r2:'partial', fRos:'partial',
