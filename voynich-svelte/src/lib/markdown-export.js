@@ -50,7 +50,6 @@ const TOC = [
   'X. Wortklassen',
   'XI. Sprache A',
   'XII. Randsterne',
-  'XIII. Gibberish-Test',
 ];
 
 export function generateMarkdown() {
@@ -78,19 +77,21 @@ export function generateMarkdown() {
   // ── I. Zusammenfassung ─────────────────────────────────────────
   h(2, 'I. Zusammenfassung');
   line();
-  line('Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.');
+  line('Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.');
   line();
-  line('Version 6.3 ist eine empirisch ausgelöste Revision: Der GibberishTest (10 × 50 Pseudowörter) ergab eine mittlere ★★★+-Rate von 31 % — die selbst gesetzte Abbruchschwelle von 20 % war überschritten. Drei neue Härtungsmaßnahmen wurden eingeführt: R40 v2 (Kurzwurzel-Schwelle auf ≤ 3 Konsonanten), R43 (Multi-Folio-Validierungspflicht) und R44 (Konsekutive Kurzwurzel-Sequenzsperre).');
+  line('**Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.');
+  line();
+  line('Version 6.3 ist eine empirisch ausgelöste Revision: Der GibberishTest (10 × 50 Pseudowörter) ergab eine mittlere ★★★+-Rate von 31 % — die selbst gesetzte Abbruchschwelle von 20 % war überschritten. Drei neue Härtungsmaßnahmen wurden eingeführt: R40 v2 (Kurzwurzel-Schwelle auf ≤ 3 Konsonanten, kumulative 2/3-Ausnahmen), R43 (Multi-Folio-Validierungspflicht) und R44 (Konsekutive Kurzwurzel-Sequenzsperre). Die GibberishTest-Abbruchschwelle wurde auf > 15 % verschärft, Zielkorridor ≤ 10 %.');
   line();
   h(3, `Kernbefunde — Version ${STATS.version}`);
   line();
   s.push(tbl(['Eigenschaft', 'Wert'], [
     ['Identifizierte Sprache', 'Mischna-Hebräisch / Jüdisch-Aramäisch'],
-    ['Texttyp', 'Medizinischer Traktat — Pharmakopöe; f1r: Haskama-Typ (sui generis)'],
+    ['Texttyp', 'Medizinischer Traktat — Pharmakopöe (Diagnose, Prognostik); f1r: deklarativer Haskama-Typ (sui generis)'],
     ['Analysierte Folios', STATS.foliosAll],
     ['Bestätigte Wörter', `${STATS.lexicon} (★★★ oder höher)`],
-    ['Rückwärtstest (Spr. B)', `${STATS.backtestFraction} bestätigt (${STATS.backtest}); 0 Falsch-Positive`],
-    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 %`],
+    ['Rückwärtstest (Spr. B)', `${STATS.backtestFraction} Vorhersagen bestätigt (${STATS.backtest}); 0 Falsch-Positive`],
+    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C Eröffnung)`],
     ['Grammatikregeln', `${RULES.length} (24 validiert + ${RULES.length - 24} Kandidaten)`],
   ]));
   line();
@@ -251,18 +252,6 @@ export function generateMarkdown() {
   h(3, 'Folio-Prinzipien');
   line();
   s.push(tbl(['Folio', 'Prinzip', 'Notiz'], STAR_FOLIOS.map(f => [f.folio, f.principle, f.note])));
-  line();
-
-  // ── XIII. Gibberish-Test ───────────────────────────────────────
-  h(2, 'XIII. Gibberish-Test (v6.3)');
-  line();
-  line('Empirisches Falsifikationswerkzeug nach Methodendokument v6.3: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch R40 v2, R41 und D1/D2 geführt.');
-  line();
-  line('- **Abbruchschwelle:** > 15 %');
-  line('- **Warnzone:** 11–15 %');
-  line('- **Zielkorridor:** ≤ 10 % strukturelle Falsch-Positive (★★★)');
-  line('- **Auslöser v6.3:** Mittlere ★★★+-Rate 31 % bei 10 × 50 Pseudowörtern — selbst gesetzte Abbruchschwelle 20 % überschritten');
-  line('- **Maßnahmen:** R40 v2 (Schwelle ≤ 3 Kons.), R43 (Multi-Folio-Pflicht), R44 (Konsekutive Kurzwurzel-Sequenzsperre)');
   line();
 
   // ── Footer ─────────────────────────────────────────────────────
