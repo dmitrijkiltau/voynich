@@ -304,4 +304,6 @@ table.dt {
 
   table.dt tr:hover td,
   table.dt tr[data-clickable]:hover td { background: none; }
+
+  .hidden-print { display: none; }
 }
