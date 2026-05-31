@@ -60,7 +60,7 @@ export const LEXICON = [
   { eva: 'kedy',      heb: 'כְּדֵי',            de: 'damit / um zu',                               stars: '★★★★',  cat: 'syntax' },
   { eva: 'shedy',     heb: 'שֶׁדִּי',           de: 'das/welches von',                             stars: '★★★★',  cat: 'syntax' },
   { eva: 'shdy',      heb: 'שֶׁדִּי',           de: 'das/welches von (Kurz)',                      stars: '★★★★',  cat: 'syntax' },
-  { eva: 'dy',        heb: 'דִּי',              de: 'von / dessen (Aram.)',                        stars: '★★★★',  cat: 'syntax' },
+  { eva: 'dy',        heb: 'דִּי',              de: 'von / dessen (Aram.)',                        stars: '★★',    cat: 'syntax' },
   { eva: 'lchedy',    heb: 'לְכְּדֵי',          de: 'um zu / bis zur Grenze',                      stars: '★★★★',  cat: 'syntax' },
   { eva: 'chal',      heb: 'חָל',               de: 'gilt für / betrifft',                         stars: '★★★',   cat: 'syntax' },
   { eva: 'shodaiin',  heb: 'שׁוֹדִּין',         de: 'Todesurteil',                                 stars: '★★★★',  cat: 'syntax' },

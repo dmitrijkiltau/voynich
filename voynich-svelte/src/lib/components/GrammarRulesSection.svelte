@@ -2,7 +2,7 @@
 	import { RULES } from '$lib/grammar-rules-data.js';
 </script>
 
-<p>Alle {RULES.length} Regeln wurden durch mindestens zwei unabhängige Belege validiert. R14 und R20 gelten als gesichert (★★★★★).</p>
+<p>{RULES.length} Regeln gesamt: <strong>24 validiert</strong> (≥ 2 unabhängige Belege) + <strong>{RULES.length - 24} Kandidaten</strong> (darunter v6.2-Härtungsmaßnahmen R40–R42 und D1/D2). R14 und R20 gelten als gesichert (★★★★★). Regeln mit ⚠ im Titel sind Warnsignale ohne automatische Konfidenzreduktion.</p>
 
 <div class="rules-wrap">
 	<table class="dt">
@@ -14,7 +14,7 @@
 				<tr>
 					<td class="rule-id">{r.id}</td>
 					<td>{@html r.rule}</td>
-					<td class="note-cell">{r.evidence}</td>
+					<td class="note-cell">{@html r.evidence}</td>
 					<td><span class={r.is5 ? 'conf5' : 'conf'}>{r.stars}</span></td>
 				</tr>
 			{/each}
