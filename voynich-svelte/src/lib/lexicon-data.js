@@ -232,7 +232,7 @@ export const LEXICON = [
   { eva: 'chod',      heb: 'חֹד',                 de: 'Schärfe / Akutheit (medizinischer Terminus)',                 stars: '★★★',  cat: 'symptom'    },
   { eva: 'tolol',     heb: 'תֹּלֹל',              de: 'geschwächt / hängend (med. Zustand, Adj.)',                   stars: '★★★',  cat: 'symptom'    },
   { eva: 'cphoy',     heb: 'כְּ+פְּ+הוֹ',         de: 'wie sein Atemweg / wie sein Mund (Komparativ)',               stars: '★★★',  cat: 'akteur'     },
-  { eva: 'ytor',      heb: 'יְ+תֹּ+אוֹר',         de: 'er/sie wird zum Licht werden / erleuchten (Auferstehungs-/Illuminations-Verb; Langform: yteor) — R43 bestätigt: f18v (3×) + f58r P.30', stars: '★★★★', cat: 'verb'       },
+  { eva: 'ytor',      heb: 'יְ+תֹּ+אוֹר',         de: 'er/sie wird zum Licht werden / erleuchten (Auferstehungs-/Illuminations-Verb; Langform: yteor) — R43 dreifach bestätigt: f18v (3×) + f58r P.30 + f19v P.12 → ★★★★★ Kand.', stars: '★★★★★', cat: 'verb'       },
   { eva: 'ykam',      heb: 'יְ+קָם',              de: 'er wird aufstehen / sich erheben (y-Imperfekt von קום qum) — R43 Kand.: nur f18v (4×), zweiter Folio-Beleg ausstehend',  stars: '★★★',  cat: 'verb'       },
   { eva: 'doky',      heb: 'דּוֹ+כִּי',           de: 'sein denn / weil (Genitiv-Kausalpartikel)',                   stars: '★★★',  cat: 'syntax'     },
   { eva: 'qoeees',    heb: 'וְ+עַ+אֵשׁ',          de: 'und auf dem Feuer / Fieber (qo + oeees)',                    stars: '★★★★', cat: 'symptom'    },
@@ -245,4 +245,22 @@ export const LEXICON = [
   { eva: 'ytalar',      heb: 'יְ+תַּ+אֹר',             de: 'er wird [Licht] geben/erleuchten (or-Ketten-Verb, f58r P.5)',                                                          stars: '★★★',  cat: 'verb'       },
   { eva: 'dshor',       heb: 'דְּ+שׁוֹר / דְּ+אֹר',   de: 'von/des Lichts (Aramaismus: d-Relativpräfix R45, kein D1-Flag) — f58r P.4',                                           stars: '★★★',  cat: 'prognose'   },
   { eva: 'opsheolaiin', heb: 'עַ+פֶּ+שְׁאוֹל+עַיִן',  de: 'am Nadir-Punkt des Sternauges (op-Koordinatenmarker, R41-Erweiterung) — f58r P.26',                                   stars: '★★★',  cat: 'kompositum' },
+  // ── v6.5 (f19r + f19v — Bifolio bC3: Stephanskraut + Teufelsabbiss) ──────
+  // f19r — Delphinium staphisagria
+  { eva: 'oscheor',   heb: 'עַ+שֶׁ+אוֹר',          de: 'auf dem was Licht ist (o + she + cheor-Kompositum) — f19r P.3',                                                          stars: '★★★',  cat: 'prognose'   },
+  { eva: 'qokorar',   heb: 'וְ+כֹּ+אוֹר+אָר',       de: 'und alles Licht der Heilung (qo + kol + or + ar) — f19r P.4',                                                           stars: '★★★',  cat: 'kompositum' },
+  { eva: 'cthar',     heb: 'כְּ+תַּ+חַר',           de: 'wie vollständiges Fieber (Quire-C-a-Vokal-Variante von cthor) — f19r P.7',                                              stars: '★★★',  cat: 'symptom'    },
+  { eva: 'otytchy',   heb: 'אוֹת+יְ+תְּ+כְּ+הִי',  de: 'das Zeichen er-wird-Blässe-zeigen (ot + ytchy-Kompositum) — f19r P.6',                                                 stars: '★★★',  cat: 'kompositum' },
+  { eva: 'daiinol',   heb: 'דִּין+עַל',             de: 'Urteil über [etwas] (daiin + ol-Direktional) — f19r P.12',                                                              stars: '★★★',  cat: 'syntax'     },
+  { eva: 'octhor',    heb: 'עַ+כְּ+תֹּר',           de: 'auf vollständige Heilung (o-Direktional + cthor, Schlusskolophon-Term) — f19r P.13',                                    stars: '★★★★', cat: 'kolophon'   },
+  // f19v — Succisa pratensis
+  { eva: 'pochaiin',  heb: 'פֹּ+כְּ+עַיִן',         de: 'beim/am Auge (Pe-Direktional + kaiin-Basis) — f19v P.1',                                                               stars: '★★★',  cat: 'akteur'     },
+  { eva: 'darom',     heb: 'דָּרוֹם',               de: 'Süden (erster Richtungsterm im botanischen Corpus) — f19v P.2',                                                         stars: '★★★',  cat: 'symptom'    },
+  { eva: 'ytol',      heb: 'יְ+תֹּלֹל',             de: 'er wird geschwächt (y-Imperfekt von tolol) — f19v P.3',                                                                 stars: '★★★',  cat: 'verb'       },
+  { eva: 'ddor',      heb: 'דְּ+דֹּר',              de: 'von Generation/Zeitraum [intensiv] (d-Relativpräfix + dor) — f19v P.8',                                                 stars: '★★★',  cat: 'symptom'    },
+  { eva: 'okchan',    heb: 'עַ+כְּ+חָן',            de: 'auf/für die Gnade (o + k + chan, positive Prognose-Direktional) — f19v P.9',                                            stars: '★★★★', cat: 'prognose'   },
+  { eva: 'otam',      heb: 'אוֹת+תָּם',             de: 'Zeichen der Vollständigkeit/Integrität (ot + tam) — f19v P.10',                                                         stars: '★★★',  cat: 'kompositum' },
+  { eva: 'okchod',    heb: 'עַ+כְּ+חֹד',            de: 'auf die Schärfe/Akutheit (o + k + chod, therapeutischer Direktional) — f19v P.11',                                     stars: '★★★★', cat: 'kompositum' },
+  { eva: 'yees',      heb: 'יְ+אֵשׁ',               de: 'er löscht das Feuer/Fieber (y-Imperfekt + esh-Stamm) — f19v P.12',                                                      stars: '★★★',  cat: 'verb'       },
+  { eva: 'ytar',      heb: 'יְ+תַּ+אָר',            de: 'er wird Licht geben (Quire-C-a-Vokal-Variante von ytor) — f19v P.12',                                                  stars: '★★★',  cat: 'verb'       },
 ];

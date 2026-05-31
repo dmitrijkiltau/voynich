@@ -1,7 +1,7 @@
 # Voynich-Manuskript — Formales Mapping-Dokument
-**EVA → Hebräisch-Aramäisch · Version 6.4 · Mai 2026**
+**EVA → Hebräisch-Aramäisch · Version 6.5 · Mai 2026**
 
-Sprachen A & B · Folios f1r, f1v–f18v (Quires A–B+C-Eröffnung), f57r, f58r, f103r/v, f114v, f115r/v, f116r/v
+Sprachen A & B · Folios f1r, f1v–f19v (Quires A–B+C-bC3), f57r, f58r, f103r/v, f114v, f115r/v, f116r/v
 
 ---
 
@@ -27,19 +27,21 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 
 **Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
 
-Version 6.4 wird ausgelöst durch den ersten astronomischen Stresstest (f58r, Quire H, Sprache A). Vier neue Formalisierungen: R45 (Aramäisches d-Relativpräfix — 6 D1-Fehlklassifikationen zurückgezogen), R46 (Wurzelketten-Ausnahme für R44), R47 (qo-Präfix vollständig in Sprache A ab Quire H), R48 (Randstern-System register-übergreifend bestätigt). Methodisch wichtigstes Ergebnis: Das Mapping-System besteht den Register-Invarianz-Test — alle validierten Ankerwörter behalten ihre Bedeutungen im astronomischen Kontext ohne eine einzige Ad-hoc-Anpassung. `ytor` wird durch R43-Bestätigung (f18v + f58r P.30) auf ★★★★ hochgestuft.
+Version 6.4 wird ausgelöst durch den ersten astronomischen Stresstest (f58r, Quire H, Sprache A). Vier neue Formalisierungen: R45 (Aramäisches d-Relativpräfix — 6 D1-Fehlklassifikationen zurückgezogen), R46 (Wurzelketten-Ausnahme für R44), R47 (qo-Präfix vollständig in Sprache A ab Quire H), R48 (Randstern-System register-übergreifend bestätigt). `ytor` auf ★★★★ hochgestuft (R43: f18v + f58r P.30).
 
-### Kernbefunde — Version 6.4
+Version 6.5 wird ausgelöst durch Bifolio bC3 (f19r + f19v — Stephanskraut + Teufelsabbiss). Strukturelle Höhepunkte: erste daiin·daiin-Dopplung (R19-Erweiterung), erste 7-gliedrige y+t-Verb-Litanei (R49 Kandidat), dritter ytor-Beleg → ★★★★★, erster Richtungsterm darom (Süden, f19v P.2), stärkste qo-Dichte in Quire C (~10 %, R33-Erweiterung). 15 neue Lexikonkandidaten.
+
+### Kernbefunde — Version 6.5
 
 | Eigenschaft | Wert |
 | --- | --- |
 | Identifizierte Sprache | Mischna-Hebräisch / Jüdisch-Aramäisch |
 | Texttyp | Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis) |
-| Analysierte Folios | f1r, f1v–f18v (Quires A–B+C-Eröffnung), f57r, f58r, f103r/v, f114v, f115r/v, f116r/v |
-| Bestätigte Wörter | 226 (★★★ oder höher) |
+| Analysierte Folios | f1r, f1v–f19v (Quires A–B+C-bC3), f57r, f58r, f103r/v, f114v, f115r/v, f116r/v |
+| Bestätigte Wörter | 241 (★★★ oder höher) |
 | Rückwärtstest (Spr. B) | 23/26 Vorhersagen bestätigt (88%); 0 Falsch-Positive |
-| Sprache A Anker | f1r, f1v–f18v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C Eröffnung) |
-| Grammatikregeln | 47 (24 validiert + 23 Kandidaten) |
+| Sprache A Anker | f1r, f1v–f19v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC3) |
+| Grammatikregeln | 48 (24 validiert + 24 Kandidaten) |
 
 
 ## II. Methodik
@@ -122,7 +124,7 @@ Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 
 **Sonderregel:** Das EVA-Zeichen `o` hat zwei Funktionen: (1) als konsonantisches ע (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam im Wortinneren.
 
-## V. Bestätigtes Lexikon (226 Einträge)
+## V. Bestätigtes Lexikon (241 Einträge)
 
 Alle Einträge mit ★★★ oder höher.
 
@@ -176,6 +178,9 @@ Alle Einträge mit ★★★ oder höher.
 | tolol | תֹּלֹל | geschwächt / hängend (med. Zustand, Adj.) | ★★★ |
 | qoeees | וְ+עַ+אֵשׁ | und auf dem Feuer / Fieber (qo + oeees) | ★★★★ |
 | qokeees | וְ+כְּ+עֵשׁ | und wie Feuer / Fieber (qo + k + esh) | ★★★★ |
+| cthar | כְּ+תַּ+חַר | wie vollständiges Fieber (Quire-C-a-Vokal-Variante von cthor) — f19r P.7 | ★★★ |
+| darom | דָּרוֹם | Süden (erster Richtungsterm im botanischen Corpus) — f19v P.2 | ★★★ |
+| ddor | דְּ+דֹּר | von Generation/Zeitraum [intensiv] (d-Relativpräfix + dor) — f19v P.8 | ★★★ |
 
 
 ### Prognose-Termini
@@ -223,6 +228,8 @@ Alle Einträge mit ★★★ oder höher.
 | daiir | דַּ+אִיר | der Leuchtende (verlängerte Form von dair) | ★★★ |
 | shalom | שָׁלוֹם | Friede / günstige Konstellation — Corpus-Erstbeleg; R43-Kand.: f58r P.4 (beide Transkriptoren identisch) | ★★★ |
 | dshor | דְּ+שׁוֹר / דְּ+אֹר | von/des Lichts (Aramaismus: d-Relativpräfix R45, kein D1-Flag) — f58r P.4 | ★★★ |
+| oscheor | עַ+שֶׁ+אוֹר | auf dem was Licht ist (o + she + cheor-Kompositum) — f19r P.3 | ★★★ |
+| okchan | עַ+כְּ+חָן | auf/für die Gnade (o + k + chan, positive Prognose-Direktional) — f19v P.9 | ★★★★ |
 
 
 ### Kolophon-Formeln
@@ -240,6 +247,7 @@ Alle Einträge mit ★★★ oder höher.
 | chkeey | כְּ+כְּ+אֵ+יִ | wie wie Lebendigkeit (doppelter Lebens-Komparativ) | ★★★ |
 | okeom | עַ+כְּ+אֵוֹם | auf die Vollendung hin (Kolophon-Direktional) | ★★★ |
 | cthal | כְּ+תַּ+חַל | wie vollständig (Kolophon-Variante von cthor) | ★★★ |
+| octhor | עַ+כְּ+תֹּר | auf vollständige Heilung (o-Direktional + cthor, Schlusskolophon-Term) — f19r P.13 | ★★★★ |
 
 
 ### Syntaktische Konnektoren
@@ -268,6 +276,7 @@ Alle Einträge mit ★★★ oder höher.
 | qokay | וְ+כְּ+חַי | und wie lebendig (qo + k + chay) | ★★★ |
 | qol | וְ+עַל | und auf/über (qo-Präfix + ol-Direktional) | ★★★ |
 | doky | דּוֹ+כִּי | sein denn / weil (Genitiv-Kausalpartikel) | ★★★ |
+| daiinol | דִּין+עַל | Urteil über [etwas] (daiin + ol-Direktional) — f19r P.12 | ★★★ |
 
 
 ### Verbformen
@@ -321,10 +330,13 @@ Alle Einträge mit ★★★ oder höher.
 | ydl | יִדַּל | er wird schwach werden (Imperfekt Qal von דלל) | ★★★ |
 | ychoees | יְ+כֹּ+עֵשׁ | er löscht das Feuer / heilt das Fieber (y + kol + esh) | ★★★ |
 | ychol | יְ+כֹּל | er heilt alles (Verbform, y-Imperfekt + kol; Var.: ykol f18v P.10) | ★★★★ |
-| ytor | יְ+תֹּ+אוֹר | er/sie wird zum Licht werden / erleuchten (Auferstehungs-/Illuminations-Verb; Langform: yteor) — R43 bestätigt: f18v (3×) + f58r P.30 | ★★★★ |
+| ytor | יְ+תֹּ+אוֹר | er/sie wird zum Licht werden / erleuchten (Auferstehungs-/Illuminations-Verb; Langform: yteor) — R43 dreifach bestätigt: f18v (3×) + f58r P.30 + f19v P.12 → ★★★★★ Kand. | ★★★★★ |
 | ykam | יְ+קָם | er wird aufstehen / sich erheben (y-Imperfekt von קום qum) — R43 Kand.: nur f18v (4×), zweiter Folio-Beleg ausstehend | ★★★ |
 | ykar | יְ+כְּ+אָר | er heilt leuchtend (Variante von ykair, Quire-C-Form) | ★★★★ |
 | ytalar | יְ+תַּ+אֹר | er wird [Licht] geben/erleuchten (or-Ketten-Verb, f58r P.5) | ★★★ |
+| ytol | יְ+תֹּלֹל | er wird geschwächt (y-Imperfekt von tolol) — f19v P.3 | ★★★ |
+| yees | יְ+אֵשׁ | er löscht das Feuer/Fieber (y-Imperfekt + esh-Stamm) — f19v P.12 | ★★★ |
+| ytar | יְ+תַּ+אָר | er wird Licht geben (Quire-C-a-Vokal-Variante von ytor) — f19v P.12 | ★★★ |
 
 
 ### Akteure, Anatomie & Botanik
@@ -357,6 +369,7 @@ Alle Einträge mit ★★★ oder höher.
 | okain | עַ+כְּ+עַיִן | auf das Auge (Kurzform von okaiin) | ★★★ |
 | chekhol | כְּ+כָּ+חֹל | wie das Augenpigment (doppelter Komparativ) | ★★★ |
 | cphoy | כְּ+פְּ+הוֹ | wie sein Atemweg / wie sein Mund (Komparativ) | ★★★ |
+| pochaiin | פֹּ+כְּ+עַיִן | beim/am Auge (Pe-Direktional + kaiin-Basis) — f19v P.1 | ★★★ |
 
 
 ### Bestätigte Komposita
@@ -391,6 +404,10 @@ Alle Einträge mit ★★★ oder höher.
 | qokshy | וְ+כְּ+שֵׁי | und wie die Gabe (qo-Präfix + okshy) | ★★★ |
 | qor | וְ+אֹר | und Licht (qo-Konjunktion + or-Anker, astronomisch) — f58r P.5 | ★★★★ |
 | opsheolaiin | עַ+פֶּ+שְׁאוֹל+עַיִן | am Nadir-Punkt des Sternauges (op-Koordinatenmarker, R41-Erweiterung) — f58r P.26 | ★★★ |
+| qokorar | וְ+כֹּ+אוֹר+אָר | und alles Licht der Heilung (qo + kol + or + ar) — f19r P.4 | ★★★ |
+| otytchy | אוֹת+יְ+תְּ+כְּ+הִי | das Zeichen er-wird-Blässe-zeigen (ot + ytchy-Kompositum) — f19r P.6 | ★★★ |
+| otam | אוֹת+תָּם | Zeichen der Vollständigkeit/Integrität (ot + tam) — f19v P.10 | ★★★ |
+| okchod | עַ+כְּ+חֹד | auf die Schärfe/Akutheit (o + k + chod, therapeutischer Direktional) — f19v P.11 | ★★★★ |
 
 
 ### Possessiv-Formen
@@ -448,7 +465,7 @@ Alle Einträge mit ★★★ oder höher.
 
 ## VII. Grammatikregeln
 
-47 Regeln gesamt: **24 validiert** (≥ 2 unabhängige Belege) + **23 Kandidaten**. R14 und R20 gelten als gesichert (★★★★★).
+48 Regeln gesamt: **24 validiert** (≥ 2 unabhängige Belege) + **24 Kandidaten**. R14 und R20 gelten als gesichert (★★★★★).
 
 | # | Regel | Evidenz | Konf. |
 | --- | --- | --- | --- |
@@ -482,7 +499,7 @@ Alle Einträge mit ★★★ oder höher.
 | R30 | sho- + Nomen = Scheol-Lokalisierung / Todesform des Nomens — Kandidat | shodain (f001r P3.12), shoaiin (f001r P4.24), shokcheey (f001r P4.22); shoiin (f13v) ★★★★ | ★★★ |
 | R31 | Temperatur-Antonymenpaar kor (קֹר, Kälte) ↔ kchom (כְּ+חֹם, Fieber) in aufeinanderfolgenden Zeilen = hippokratisches Diagnostikschema — Kandidat | f001r P3.15 (kor) + P3.16 (kchom); Parallele zu lor↔lshol (R20) | ★★★ |
 | R32 | Dreifach-Relativpartikel dydyd (דִּי+דִּי+דִּי) = extremer Betonungsmodus der absoluten Zugehörigkeit — Kandidat | f001r P3.17: einmaliger Beleg im Gesamtkorpus; Parallele zu R15 (×3 absolutes Urteil), R19 | ★★ |
-| R33 | qo--Präfix tritt ab Quire C (Beinecke Quire III) auch in **Sprache-A-Texten** auf — Quire C ist eine dialektale Übergangszone; R1 (qo- = B-exklusiv) gilt mit vollem Geltungsbereich nur für Quires I–II. Vollständige Integration in Quire H: s. R47 — Kandidat | f17r: 7 qo-Formen (Spr. A); f17v: 6 qo-Formen (Spr. A) — 13 Belege in ~250 Token; 0 Belege in Quires A+B Spr. A (~800 Token); f58r (Quire H, Spr. A): 28+ qo-Formen in ~350 Token (~8 %) — Vollintegration, s. R47 | ★★★ |
+| R33 | qo--Präfix tritt ab Quire C (Beinecke Quire III) auch in **Sprache-A-Texten** auf — Quire C ist eine dialektale Übergangszone mit folio-intern ansteigender qo-Integration: bC1 (f17) ~5 %, bC2 (f18) ~4–5 %, bC3 (f19) ~10 % (= Quire-H-äquivalent). R1 (qo- = B-exklusiv) gilt mit vollem Geltungsbereich nur für Quires I–II. Ab Bifolio bC3 ist vollständige qo-Integration zu erwarten. Vollständige Integration in Quire H: s. R47 — Kandidat | f17r: 7 qo-Formen (Spr. A); f17v: 6 qo-Formen (Spr. A) — 13 Belege in ~250 Token (~5,2 %); f18r/v (bC2): 8–10 qo-Formen in ~200 Token (~4–5 %); f19r/v (bC3): ~18 qo-Formen in ~175 Token (~10 %) — überschreitet Quire-H-Dichte; 0 Belege in Quires A+B Spr. A (~800 Token); f58r (Quire H, Spr. A): 28+ qo-Formen in ~350 Token (~8 %) — Vollintegration, s. R47 | ★★★ |
 | R34 | sheol (Vollform שְׁאוֹל) erscheint ab Quire C auch in Sprache-A-Texten am Paragraphenende — shol (apokor.) bleibt dominant; R17 gilt uneingeschränkt nur für Quires I–II — Kandidat | f17v P.13: ykeor·chol·chol·cthol·chkor·sheol-{plant} — Erstbeleg Spr. A sheol am Paragraphenende; 0 Belege in Quires A+B Spr. A | ★★★ |
 | R35 | Dopplung chol·chol (כֹּל·כֹּל = alles-alles) = Vollheilungs-Emphase vor nachfolgender Todesformel — erweitert R19-Intensivierungsschema auf Nominalstämme — Kandidat | f17v P.13: chol·chol·cthol·chkor·sheol — Erstbeleg; Parallele zu chol·chol·chol auf f8v (R19) | ★★★ |
 | R36 | Dopplung dar·dar (דַּר·דַּר) = Bilateral-/Intensiv-Dopplung für dar (leuchtend/Licht-davon) in ophthalmologischem Kontext — mögliche Bedeutung: bilaterale Augenbeteiligung oder maximale Lichtintensivierung als diagnostische Emphase — Kandidat | f18r P.6: dar.dar — Corpus-Erstbeleg; R19-Strukturkonformität identisch zu daly·dal, chol·chol, or·or-Palindrom | ★★★ |
@@ -499,6 +516,7 @@ Alle Einträge mit ★★★ oder höher.
 | R46 | **Wurzelketten-Ausnahme für R44 (v6.4):** Wenn ≥ 3 aufeinanderfolgende EVA-Tokens morphologisch nachweislich dieselbe validierte Basiswurzel teilen — als Komposita, Ableitungen, Präfixformen oder Intensivierungen eines einzigen Rückwärtstest-Ankers — greift **R44 nicht**. Begründung: R44 soll zufällige Kollisionen verschiedener schwacher Kurzwurzeln blockieren; eine kohärente Wurzelkette ist das morphologische Gegenteil — bewusste stilistische Amplifikation (vgl. R19, R35). **Nachweis-Anforderung:** Explizite Dokumentation der Basiswurzel und aller Ableitungsformen; ein nicht-ableitbares Token bricht die Kette. **GibberishTest-Neutralität:** Pseudowörter bilden keine systematischen Wurzelketten — R46 erhöht die Testrate nicht — Kandidat | f58r P.5: char.ar.al.char.arary.ytalar — 6 Tokens, alle Derivate der validierten Basiswurzel א-ו-ר (Licht); R44 greift nicht, da keine zufällige Diversität sondern kohärente Intensivierung; semantisch: astronomische Licht-Litanei über Sternglanz | ★★★ |
 | R47 | **qo-Präfix-Vollintegration ab Quire H (Erweiterung von R33, v6.4):** Das qo--Präfix (וְ) ist in Quire H (Beinecke VIII) vollständig in Sprache A integriert — Belegdichte ~8 % der Tokens, gleichauf mit Sprache B auf f57r. Quire H ist keine Übergangszone (wie Quire C per R33), sondern ein voll-integrierter qo--Bereich. **Quire-Progressionsskala:** Quires A+B: absent · Quire C: emergierend (R33) · Quire T: vollständig · Quire H: **vollständig (NEU)**. **Konsequenz für R1:** R1 gilt nur für Quires A+B (Beinecke I+II). **Offene Frage:** Quires D–G (Beinecke IV–VII) noch nicht analysiert — monotone Zunahme erwartet — Kandidat | f58r (Quire H, Spr. A): 28+ qo--Formen in ~350 Token (Stichprobe: qor, qokaiin, qocphody, qokalam, qotyshey, qokaldy, qotaily u. a.); Vergleich: f17r/v Quire C (R33): 13 Belege/250 Token; f57r Quire T (Spr. B): ~8 %; f001r Quire A: 0/260 Token | ★★★ |
 | R48 | **Randstern-System Quire H — astronomisches Register (v6.4):** Das Randstern-System (bisher formal für f103r/v als medizinisches Register-Trennsystem dokumentiert) ist auch in Quire H aktiv. Auf f58r markieren drei goldene Randsterne drei Textblöcke. **Morphologie:** 6-Zacken (kein Kern) · 7-Zacken (kleiner Kern) · 8-Zacken (größerer Kern) — steigende Komplexität korrespondiert mit steigender astronomischer Spezifität. **Parallele zu f103r:** Auf f103r markieren Sternmorphologien Schweregrade medizinischer Fälle; auf f58r markieren sie astronomische Registerkategorien. Das zugrunde liegende Prinzip ist register-übergreifend identisch: Randstern = strukturell funktionaler Gliederungsmarker, nicht dekorative Illustration — Kandidat | f58r: Stern 1 (6-Zacken, kein Kern) über P.1 → Block P.1–P.15 (~150 Token, generisches Sternen-Register); Stern 2 (7-Zacken, kleiner Kern) über P.16 → Block P.16–P.25 (~100 Token, Planetenreihe); Stern 3 (8-Zacken, größerer Kern) über P.26 → Block P.26–P.40 (~155 Token, op-Koordinatenformat); Kolophone (=) an P.15 und P.25 als Blockabschluss | ★★★ |
+| R49 | **y+t-Verb-Litanei als Schlusskolophon (v6.5):** Eine Sequenz von ≥ 4 aufeinanderfolgenden y+t-präfigierten Heilungsverben in Finalposition (unmittelbar vor dem =-Schlusskolophon) bildet eine **positive Prognose-Litanei**. Die Verben sind thematisch kohärent (Heilung von Organen oder Zuständen), müssen aber nicht dieselbe Basiswurzel teilen (Unterschied zu R46-Wurzelketten). Die Litanei-Struktur folgt einem dreistufigen Schema: Ursachen-Verb(en) → Illuminations-Verb(en) → Organ-Heilungs-Verb(en). Alle vier Transkriptoren (H, C, F, U) stimmen im einzigen bekannten Beleg vollständig überein — stärkste Transkriptionskonvergenz des Folios — Kandidat | f19v P.12: yees.ykchol.oty.ytor.ytar.ytchor.ytaiin= (7 y-Verben — Corpus-Rekord): yees (Fieber löschen) → ykchol (alles heilen) → oty (Zeichen) → ytor+ytar (Illumination ×2, R19) → ytchor+ytaiin (Pupille→Auge, Organ-Spezifizierung); semantisch kohärent; alle 4 Transkriptoren (H, C, F, U) identisch — Kandidat, 1 Beleg, erfordert Folgebestätigung | ★★★ |
 
 
 ## VIII. Rückwärtstest-Statistik
@@ -672,14 +690,14 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 | Kolophon-Formeln | kaiim=, dom=, daiin=, chckhan=, ocho·daiin= | Abschlussformeln: rechtlich / diagnostisch / Titel |
 
 
-## XI. Sprache A — Quires A–C (f1r, f1v–f18v)
+## XI. Sprache A — Quires A–C (f1r, f1v–f19v)
 
 ### Sprachvergleich Spr. A vs. Spr. B
 
 | Merkmal | Sprache B | Sprache A |
 | --- | --- | --- |
 | Kernvokabular | sheol, daiin, dal, ckhy, dam, sar, or | Identisch — alle 10 Ankerwörter je Folio bestätigt (f1r: 10/10 ★★★★★) |
-| qo-Präfix (R1/R33) | 8+ Belege; Kernmerkmal Spr. B ★★★★★ | Absent in Quires I–II (0 / ~800 Token); ab Quire III präsent: 13 Belege f17r/f17v + weitere in f18r/f18v (R33 Kandidat ★★★); R37: qo-Präfix-Dopplung ab f18v (qokchy·qokchy, qoky·qoky) |
+| qo-Präfix (R1/R33) | 8+ Belege; Kernmerkmal Spr. B ★★★★★ | Absent in Quires I–II (0 / ~800 Token); ab Quire III präsent: 13 Belege f17r/f17v (~5%) + 8–10 in f18r/f18v (~4–5%) + ~18 in f19r/f19v (~10% = Quire-H-äquivalent, R33-Erweiterung); R37: qo-Präfix-Dopplung ab f18v; R49: y+t-Verb-Litanei f19v P.12 |
 | Dominanter Vokal | e / ee (Segol/Ṣere) | o (Ḥolam) häufiger; dol statt dal, ckho neben ckhy |
 | Struktur | Prosa ohne Bildtrennmarker | {plant}-Marker in Kräuter-Folios (R14); f1r: Prosa ohne Marker (Haskama-Typ, sui generis) |
 | Kolophon-Inventar | cphedom=, daiin·cheeodam | kaiim=, dom=, daiin=, chckhan=, Kurztitel (R23) |
@@ -722,6 +740,8 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 | f17v | Schwarze Zaunrübe (Tamus communis) | 23 Paragraphen (Kräuter-Rekord); sar P.17 ohne {plant} (wie f57r/f103r); sheol Vollform Spr. A P.13 (R34); char im Schlusskolophon; or·okaiin·or Palindrom P.6 | ★★★ |
 | f18r | Berg-Flockenblume (Centaurea montana) | 13 P. + Siman T.14; 2 =-Kolophone P.4+P.13; chor/qokchor 5× (Leitterm); dar·dar R36-Erstbeleg P.6; doldaiin Corpus-Erstbeleg P.7; doppelter {plant}-Marker P.8; Schlusskolophon or·shaiin·cthor·okal·dar= (stark positiv ★★★★★) | ★★★★ |
 | f18v | Drachenwurz (Dracunculus vulgaris) | 10 P.; qokchy/chy 5× (Leitterm); Zoomorphe Drachen-Figur (Corpus-Erstbeleg bot. Abschnitt); {plant} am Kolophon-Anfang R38; qokchy·qokchy R37-Erstbeleg P.2; ykam/ytor (Auferstehungsverben) P.8; dom= Schlusskolophon-Finale Spr. A (R39) | ★★★★ |
+| f19r | Stephanskraut (Delphinium staphisagria) | 13 P. + Schlusskolophon P.13; pchor-Eröffnung (Pupillen-Direktional, Primärindikation); chor/ykchor 6×; ckhy-Kompositionen 8× (stärkste Blässe-Dichte in Quire C); ~9 qo-Formen (~11 %); daiin.cthor.chol.ykchor.chordy (P.10, f15v-Parallele) | ★★★★ |
+| f19v | Teufelsabbiss (Succisa pratensis) | 12 P. + T.13 Siman; 3 =-Kolophone (P.6a Mini + P.12 Haupt + T.13); daiin·daiin R19-Dopplung P.4 (Corpus-Erstbeleg); yees.ykchol.oty.ytor.ytar.ytchor.ytaiin= (P.12, 7-Verb-Litanei — R49, Corpus-Rekord); ytor 3. Folio-Beleg → ★★★★★; darom (Süden, erster Richtungsterm bot. Corpus) | ★★★★ |
 
 
 ## XII. Das Randstern-System
@@ -753,7 +773,7 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 
 ---
 
-Voynich-Manuskript — Formales Mapping-Dokument · Version 6.4 · Mai 2026
-Lexikon: 226 Einträge · Grammatikregeln: 47 · Rückwärtstest: 88% (23/26)
+Voynich-Manuskript — Formales Mapping-Dokument · Version 6.5 · Mai 2026
+Lexikon: 241 Einträge · Grammatikregeln: 48 · Rückwärtstest: 88% (23/26)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

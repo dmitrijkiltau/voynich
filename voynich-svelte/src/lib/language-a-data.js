@@ -1,6 +1,6 @@
 export const COMPARISON = [
   { feature: 'Kernvokabular', langB: 'sheol, daiin, dal, ckhy, dam, sar, or', langA: 'Identisch — alle 10 Ankerwörter je Folio bestätigt (f1r: 10/10 ★★★★★)' },
-  { feature: 'qo-Präfix (R1/R33)', langB: '8+ Belege; Kernmerkmal Spr. B ★★★★★', langA: 'Absent in Quires I–II (0 / ~800 Token); ab Quire III präsent: 13 Belege f17r/f17v + weitere in f18r/f18v (R33 Kandidat ★★★); R37: qo-Präfix-Dopplung ab f18v (qokchy·qokchy, qoky·qoky)' },
+  { feature: 'qo-Präfix (R1/R33)', langB: '8+ Belege; Kernmerkmal Spr. B ★★★★★', langA: 'Absent in Quires I–II (0 / ~800 Token); ab Quire III präsent: 13 Belege f17r/f17v (~5%) + 8–10 in f18r/f18v (~4–5%) + ~18 in f19r/f19v (~10% = Quire-H-äquivalent, R33-Erweiterung); R37: qo-Präfix-Dopplung ab f18v; R49: y+t-Verb-Litanei f19v P.12' },
   { feature: 'Dominanter Vokal', langB: 'e / ee (Segol/Ṣere)', langA: 'o (Ḥolam) häufiger; dol statt dal, ckho neben ckhy' },
   { feature: 'Struktur', langB: 'Prosa ohne Bildtrennmarker', langA: '{plant}-Marker in Kräuter-Folios (R14); f1r: Prosa ohne Marker (Haskama-Typ, sui generis)' },
   { feature: 'Kolophon-Inventar', langB: 'cphedom=, daiin·cheeodam', langA: 'kaiim=, dom=, daiin=, chckhan=, Kurztitel (R23)' },
@@ -40,4 +40,6 @@ export const FOLIOS = [
   { folio: 'f17v', plant: 'Schwarze Zaunrübe (Tamus communis)', signal: '23 Paragraphen (Kräuter-Rekord); sar P.17 ohne {plant} (wie f57r/f103r); sheol Vollform Spr. A P.13 (R34); char im Schlusskolophon; or·okaiin·or Palindrom P.6', stars: '★★★', is5: false },
   { folio: 'f18r', plant: 'Berg-Flockenblume (Centaurea montana)', signal: '13 P. + Siman T.14; 2 =-Kolophone P.4+P.13; chor/qokchor 5× (Leitterm); dar·dar R36-Erstbeleg P.6; doldaiin Corpus-Erstbeleg P.7; doppelter {plant}-Marker P.8; Schlusskolophon or·shaiin·cthor·okal·dar= (stark positiv ★★★★★)', stars: '★★★★', is5: false },
   { folio: 'f18v', plant: 'Drachenwurz (Dracunculus vulgaris)', signal: '10 P.; qokchy/chy 5× (Leitterm); Zoomorphe Drachen-Figur (Corpus-Erstbeleg bot. Abschnitt); {plant} am Kolophon-Anfang R38; qokchy·qokchy R37-Erstbeleg P.2; ykam/ytor (Auferstehungsverben) P.8; dom= Schlusskolophon-Finale Spr. A (R39)', stars: '★★★★', is5: false },
+  { folio: 'f19r', plant: 'Stephanskraut (Delphinium staphisagria)', signal: '13 P. + Schlusskolophon P.13; pchor-Eröffnung (Pupillen-Direktional, Primärindikation); chor/ykchor 6×; ckhy-Kompositionen 8× (stärkste Blässe-Dichte in Quire C); ~9 qo-Formen (~11 %); daiin.cthor.chol.ykchor.chordy (P.10, f15v-Parallele)', stars: '★★★★', is5: false },
+  { folio: 'f19v', plant: 'Teufelsabbiss (Succisa pratensis)', signal: '12 P. + T.13 Siman; 3 =-Kolophone (P.6a Mini + P.12 Haupt + T.13); daiin·daiin R19-Dopplung P.4 (Corpus-Erstbeleg); yees.ykchol.oty.ytor.ytar.ytchor.ytaiin= (P.12, 7-Verb-Litanei — R49, Corpus-Rekord); ytor 3. Folio-Beleg → ★★★★★; darom (Süden, erster Richtungsterm bot. Corpus)', stars: '★★★★', is5: false },
 ];

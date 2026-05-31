@@ -81,7 +81,7 @@ export function generateMarkdown() {
   line();
   line('**Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.');
   line();
-  line('Version 6.4 wird ausgelöst durch den ersten astronomischen Stresstest (f58r, Quire H, Sprache A). Vier neue Formalisierungen: R45 (Aramäisches d-Relativpräfix — 6 D1-Fehlklassifikationen zurückgezogen), R46 (Wurzelketten-Ausnahme für R44), R47 (qo-Präfix vollständig in Sprache A ab Quire H), R48 (Randstern-System register-übergreifend bestätigt). Methodisch wichtigstes Ergebnis: Das Mapping-System besteht den Register-Invarianz-Test — alle validierten Ankerwörter behalten ihre Bedeutungen im astronomischen Kontext ohne eine einzige Ad-hoc-Anpassung. `ytor` wird durch R43-Bestätigung (f18v + f58r P.30) auf ★★★★ hochgestuft.');
+  line('Version 6.5 wird ausgelöst durch Bifolio bC3 (f19r + f19v — Stephanskraut + Teufelsabbiss). Strukturelle Höhepunkte: erste daiin·daiin-Dopplung (R19-Erweiterung), erste 7-gliedrige y+t-Verb-Litanei (R49 Kandidat), dritter ytor-Beleg → ★★★★★, erster Richtungsterm darom (Süden, f19v P.2), stärkste qo-Dichte in Quire C (~10 %, R33-Erweiterung). 15 neue Lexikonkandidaten.');
   line();
   h(3, `Kernbefunde — Version ${STATS.version}`);
   line();
@@ -91,7 +91,7 @@ export function generateMarkdown() {
     ['Analysierte Folios', STATS.foliosAll],
     ['Bestätigte Wörter', `${STATS.lexicon} (★★★ oder höher)`],
     ['Rückwärtstest (Spr. B)', `${STATS.backtestFraction} Vorhersagen bestätigt (${STATS.backtest}); 0 Falsch-Positive`],
-    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C Eröffnung)`],
+    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC3)`],
     ['Grammatikregeln', `${RULES.length} (24 validiert + ${RULES.length - 24} Kandidaten)`],
   ]));
   line();
