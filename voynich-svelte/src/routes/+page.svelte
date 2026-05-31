@@ -12,6 +12,7 @@
 	import WordClassesSection from '$lib/components/WordClassesSection.svelte';
 	import LanguageASection from '$lib/components/LanguageASection.svelte';
 	import MarginStarsSection from '$lib/components/MarginStarsSection.svelte';
+	import GibberishTest from '$lib/components/GibberishTest.svelte';
 	import FolioProgress from '$lib/components/FolioProgress.svelte';
 
 	let evaInput       = $state('');
@@ -42,6 +43,7 @@
 		{ id: 'wortklassen',     label: 'X. Wortklassen' },
 		{ id: 'spracheA',        label: 'XI. Sprache A' },
 		{ id: 'sterne',          label: 'XII. Randsterne' },
+		{ id: 'gibberish',       label: 'XIII. Gibberish-Test' },
 	];
 
 	// Scrollspy via IntersectionObserver
@@ -255,6 +257,13 @@
 		<section class="section" id="sterne">
 			<h2>XII. Das Randstern-System</h2>
 			<MarginStarsSection />
+		</section>
+
+		<!-- XIII. GIBBERISH-TEST -->
+		<section class="section" id="gibberish">
+			<h2>XIII. Gibberish-Test (v6.2)</h2>
+			<p>Falsifikationswerkzeug nach Methodendokument v6.2, Abschnitt 5 &amp; 7: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch R40, R41 und D1/D2 geführt. Zielwert: ≤ 20 % strukturelle Falsch-Positive (★★★).</p>
+			<GibberishTest />
 		</section>
 
 		<footer class="page-footer">

@@ -6,7 +6,7 @@
 <div class="summary">
 	<div>
 		<p class="dropcap">Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.</p>
-		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose. Version 6.1 erweitert Quire C mit f18r/f18v (Bifolio bC2, Sprache A, Hand 1) und belegt die erste zoomorphe Begleitfigur im botanischen Corpus (Drache/Salamander, f18v). f18r identifiziert <em>Centaurea montana</em> (Berg-Flockenblume, Pupillen/Augenblässe) mit stärkstem Schlusskolophon in Quire C: <span class="eva">or·shaiin·cthor·okal·dar=</span>. f18v identifiziert <em>Dracunculus vulgaris</em> (Drachenwurz, Fieber + Blässe) mit <span class="eva">dom=</span> als erstmaligem Kolophon-Finale in Sprache A (R39). Vier neue Grammatikregel-Kandidaten: R36 (dar·dar-Dopplung), R37 (qo-Präfix-Dopplung), R38 ({'{plant}'}-am-Anfang), R39 (dom= in Spr. A).</p>
+		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose. Version 6.1 erweitert Quire C mit f18r/f18v (Bifolio bC2, Sprache A, Hand 1) und belegt die erste zoomorphe Begleitfigur im botanischen Corpus (Drache/Salamander, f18v). f18r identifiziert <em>Centaurea montana</em> (Berg-Flockenblume, Pupillen/Augenblässe) mit stärkstem Schlusskolophon in Quire C: <span class="eva">or·shaiin·cthor·okal·dar=</span>. f18v identifiziert <em>Dracunculus vulgaris</em> (Drachenwurz, Fieber + Blässe) mit <span class="eva">dom=</span> als erstmaligem Kolophon-Finale in Sprache A (R39). Version 6.2 konsolidiert diesen Bestand ohne neue Folio-Analysen und formalisiert vier methodische Härtungsmaßnahmen: drei harte Abbruchbedingungen (R40 Kurzwurzel-Konfidenzdeckel, R41 Präfix-Hierarchie-Protokoll, R42 Kongruenzpflicht ★★★★+) und zwei phonotaktische Warnsignale (D1/D2). Lexikalische Aktualisierung: <span class="eva">dy</span> von ★★★★ auf ★★ herabgestuft (R40: 2-Konsonanten-Kurzwurzel, Funktionswort-Ausnahme nicht bestätigt).</p>
 	</div>
 
 	<div class="box hl">
@@ -26,10 +26,19 @@
 						<ul>
 							<li>f18r: <em>Centaurea montana</em> — 2 =-Kolophone; stärkstes Schlusskolophon Quire C (<span class="eva">or·shaiin·cthor·okal·dar=</span>) ★★★★</li>
 							<li>f18v: <em>Dracunculus vulgaris</em> — zoomorphe Drachen-Figur (Corpus-Erstbeleg bot. Abschnitt); <span class="eva">ykam</span>/<span class="eva">ytor</span> Auferstehungsverben ★★★★</li>
-							<li>R36: <span class="eva">dar·dar</span> — Bilateral-/Intensiv-Dopplung (Erstbeleg f18r P.6) ★★★</li>
-							<li>R37: qo-Präfix-Dopplung (<span class="eva">qokchy·qokchy</span>, <span class="eva">qoky·qoky</span>) — intensive Konnektivität (2 Belege f18v) ★★★</li>
-							<li>R38: <span class="eva">{'{plant}'}</span>-Marker am Paragraphenanfang = Illustrations-Rahmung (Erstbeleg f18v P.10) ★★★</li>
-							<li>R39: <span class="eva">dom=</span> als Kolophon-Finale in Sprache A — Erstbeleg f18v P.10 ★★★</li>
+							<li>R36–R39: <span class="eva">dar·dar</span>-Dopplung, qo-Präfix-Dopplung, {'{plant}'}-Anfangsposition, <span class="eva">dom=</span> in Spr. A ★★★</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>Methodische Härtung v6.2</td>
+					<td>
+						<ul>
+							<li>R40 Kurzwurzel-Konfidenzdeckel — Basiswurzel ≤ 2 Konsonanten → max. ★★ (Ausnahmen: Funktionswort, Langwurzel-Anker)</li>
+							<li>R41 Präfix-Hierarchie-Protokoll — drei harte Abbruchbedingungen für illegale Präfix-Kombinationen</li>
+							<li>R42 Kongruenzpflicht ★★★★+ — Genus/Numerus-Kongruenz + Parallelbeleg als Pflichtkriterium</li>
+							<li>D1/D2 Phonotaktische Warnsignale — Doppelkonsonanz- und Kehlkopf-Cluster-Flag (kein Hard Stop)</li>
+							<li>Lexikon: <span class="eva">dy</span> ★★★★ → ★★ (R40; Funktionswort-Ausnahme unbestätigt)</li>
 						</ul>
 					</td>
 				</tr>
