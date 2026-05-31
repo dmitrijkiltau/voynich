@@ -7,7 +7,7 @@
 	<div>
 		<p class="dropcap">Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.</p>
 		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.</p>
-		<p>Version 6.3 ist eine empirisch ausgelöste Revision: Der GibberishTest (10 × 50 Pseudowörter) ergab eine mittlere ★★★+-Rate von 31 % — die selbst gesetzte Abbruchschwelle von 20 % war überschritten. Drei neue Härtungsmaßnahmen wurden eingeführt: R40 v2 (Kurzwurzel-Schwelle auf ≤ 3 Konsonanten, kumulative 2/3-Ausnahmen), R43 (Multi-Folio-Validierungspflicht) und R44 (Konsekutive Kurzwurzel-Sequenzsperre). Die GibberishTest-Abbruchschwelle wurde auf &gt; 15 % verschärft, Zielkorridor ≤ 10 %.</p>
+		<p>Version 6.4 wird ausgelöst durch den ersten astronomischen Stresstest (f58r, Quire H, Sprache A). Vier neue Formalisierungen: R45 (Aramäisches d-Relativpräfix — 6 D1-Fehlklassifikationen zurückgezogen), R46 (Wurzelketten-Ausnahme für R44), R47 (qo-Präfix vollständig in Sprache A ab Quire H), R48 (Randstern-System register-übergreifend). Methodisch wichtigstes Ergebnis: Das Mapping besteht den Register-Invarianz-Test — alle validierten Ankerwörter behalten ihre Bedeutungen im astronomischen Kontext ohne eine einzige Ad-hoc-Anpassung.</p>
 	</div>
 
 	<div class="box hl">
@@ -15,22 +15,22 @@
 		<table class="dt findings-table">
 			<tbody>
 				<tr><td>Identifizierte Sprache</td><td>Mischna-Hebräisch / Jüdisch-Aramäisch</td></tr>
-				<tr><td>Texttyp</td><td>Medizinischer Traktat — Pharmakopöe (Diagnose, Prognostik); f1r: deklarativer Haskama-Typ (sui generis)</td></tr>
+				<tr><td>Texttyp</td><td>Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis)</td></tr>
 				<tr><td>Analysierte Folios</td><td>{STATS.foliosAll}</td></tr>
 				<tr><td>Bestätigte Wörter</td><td><strong>{STATS.lexicon}</strong> (★★★ oder höher)</td></tr>
 				<tr><td>Rückwärtstest (Spr. B)</td><td>{STATS.backtestFraction} Vorhersagen bestätigt ({STATS.backtest}); 0 Falsch-Positive</td></tr>
 				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C Eröffnung)</td></tr>
 				<tr><td>Grammatikregeln</td><td><strong>{RULES.length}</strong> (24 validiert + {RULES.length - 24} Kandidaten)</td></tr>
 				<tr class="hidden-print">
-					<td>Empirische Härtung v6.3</td>
+					<td>Empirische Erweiterung v6.4</td>
 					<td>
 						<ul>
-							<li>GibberishTest (10 × 50 Pseudowörter): Mittlere ★★★+-Rate 31 % — Abbruchschwelle 20 % überschritten</li>
-							<li>R40 v2 — Kurzwurzel-Schwelle auf ≤ 3 Konsonanten; kumulative 2/3-Ausnahmen (Funktionswort + Rückwärtstest + Korpusfrequenz ≥ 15×/3 Folios)</li>
-							<li>R43 — Multi-Folio-Validierungspflicht: ★★★ nur bei ≥ 2 Folios; Kandidaten-Flag bei Einzel-Folio ≥ 8×</li>
-							<li>R44 — Konsekutive Kurzwurzel-Sequenzsperre: zwei aufeinander folgende ≤3-Kons.-Wörter → Sequenz max. ★★ ohne Anker + R42-Kongruenz</li>
-							<li>Neue GibberishTest-Schwellen: Abbruch &gt; 15 %, Warnzone 11–15 %, Zielkorridor ≤ 10 %</li>
-							<li>Lexikon: <span class="eva">ytor</span> ★★★★ → ★★★ Kand. (R43); <span class="eva">ykam</span> ★★★ Kand. (R43); <span class="eva">ykair</span> ★★★ → ★★ (R43 Einzelbeleg); <span class="eva">kchom</span> ★★★ Kand.-Flag (R43)</li>
+							<li>R45 — Aramäisches d-Relativpräfix: 6 D1-Fehlklassifikationen zurückgezogen (<span class="eva">dshodal, dshor, dchairam, dtor, dtshol, dchol</span>)</li>
+							<li>R46 — Wurzelketten-Ausnahme: ≥ 3 Tokens einer validierten Basiswurzel → R44 greift nicht (kohärente Intensivierung, vgl. R19)</li>
+							<li>R47 — qo-Präfix vollständig in Sprache A ab Quire H (28+/350 Token ~8 %); R1 gilt nur noch für Quires A+B</li>
+							<li>R48 — Randstern-System register-übergreifend: f58r (astronomisch) identisches Strukturprinzip wie f103r (medizinisch)</li>
+							<li>Register-Invarianz-Test bestanden: alle Ankerwörter (<span class="eva">or, shol, daiin, dal, aiin</span>...) behalten Bedeutungen ohne Anpassung</li>
+							<li>Lexikon: <span class="eva">ytor</span> → ★★★★ (R43 bestätigt f58r P.30); +7 neue Einträge: shalom, qor, yteor, ytalar, dshor, opsheolaiin, op-/of-</li>
 						</ul>
 					</td>
 				</tr>

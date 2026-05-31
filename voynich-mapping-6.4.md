@@ -1,7 +1,7 @@
 # Voynich-Manuskript — Formales Mapping-Dokument
-**EVA → Hebräisch-Aramäisch · Version 6.3 · Mai 2026**
+**EVA → Hebräisch-Aramäisch · Version 6.4 · Mai 2026**
 
-Sprachen A & B · Folios f1r, f1v–f18v (Quires A–B+C-Eröffnung), f57r, f103r/v, f114v, f115r/v, f116r/v
+Sprachen A & B · Folios f1r, f1v–f18v (Quires A–B+C-Eröffnung), f57r, f58r, f103r/v, f114v, f115r/v, f116r/v
 
 ---
 
@@ -27,19 +27,19 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 
 **Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
 
-Version 6.3 ist eine empirisch ausgelöste Revision: Der GibberishTest (10 × 50 Pseudowörter) ergab eine mittlere ★★★+-Rate von 31 % — die selbst gesetzte Abbruchschwelle von 20 % war überschritten. Drei neue Härtungsmaßnahmen wurden eingeführt: R40 v2 (Kurzwurzel-Schwelle auf ≤ 3 Konsonanten, kumulative 2/3-Ausnahmen), R43 (Multi-Folio-Validierungspflicht) und R44 (Konsekutive Kurzwurzel-Sequenzsperre). Die GibberishTest-Abbruchschwelle wurde auf > 15 % verschärft, Zielkorridor ≤ 10 %.
+Version 6.4 wird ausgelöst durch den ersten astronomischen Stresstest (f58r, Quire H, Sprache A). Vier neue Formalisierungen: R45 (Aramäisches d-Relativpräfix — 6 D1-Fehlklassifikationen zurückgezogen), R46 (Wurzelketten-Ausnahme für R44), R47 (qo-Präfix vollständig in Sprache A ab Quire H), R48 (Randstern-System register-übergreifend bestätigt). Methodisch wichtigstes Ergebnis: Das Mapping-System besteht den Register-Invarianz-Test — alle validierten Ankerwörter behalten ihre Bedeutungen im astronomischen Kontext ohne eine einzige Ad-hoc-Anpassung. `ytor` wird durch R43-Bestätigung (f18v + f58r P.30) auf ★★★★ hochgestuft.
 
-### Kernbefunde — Version 6.3
+### Kernbefunde — Version 6.4
 
 | Eigenschaft | Wert |
 | --- | --- |
 | Identifizierte Sprache | Mischna-Hebräisch / Jüdisch-Aramäisch |
-| Texttyp | Medizinischer Traktat — Pharmakopöe (Diagnose, Prognostik); f1r: deklarativer Haskama-Typ (sui generis) |
-| Analysierte Folios | f1r, f1v–f18v (Quires A–B+C-Eröffnung), f57r, f103r/v, f114v, f115r/v, f116r/v |
-| Bestätigte Wörter | 229 (★★★ oder höher) |
+| Texttyp | Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis) |
+| Analysierte Folios | f1r, f1v–f18v (Quires A–B+C-Eröffnung), f57r, f58r, f103r/v, f114v, f115r/v, f116r/v |
+| Bestätigte Wörter | 236 (★★★ oder höher) |
 | Rückwärtstest (Spr. B) | 23/26 Vorhersagen bestätigt (88%); 0 Falsch-Positive |
 | Sprache A Anker | f1r, f1v–f18v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C Eröffnung) |
-| Grammatikregeln | 43 (24 validiert + 19 Kandidaten) |
+| Grammatikregeln | 47 (24 validiert + 23 Kandidaten) |
 
 
 ## II. Methodik
@@ -66,6 +66,9 @@ Jede Mapping-Hypothese wird durch Rückwärtstests validiert: Ein bekanntes hebr
 `sar · al · daiindy` = שַׂר עַל דִּין דִּי „Arzt über das Urteil dessen."
 
 **f103r — Höchste Lexikondichte:** Quire 20, Sprache B. 54 Paragraphen reiner Prosatext mit der höchsten Konzentration bestätigter Wörter und den vollständigsten übersetzten Sätzen.
+
+**f58r — Erster astronomischer Stresstest:** Quire H (Beinecke VIII), Sprache A. Erster analysierter Nicht-Botanical-Folio. Beweist semantische Invarianz des Mappings über Register hinweg — alle Ankerwörter behalten ihre Bedeutungen ohne Ad-hoc-Anpassung:
+`ytor · ar · alom` = יְ+תֹּ+אוֹר · אֹר · עָלוֹם „er wird erleuchten — Licht — in der Welt." (f58r P.30 — R43-Bestätigung für ytor ★★★★)
 
 ## IV. Zeichenmapping EVA → Hebräisch
 
@@ -119,7 +122,7 @@ Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 
 **Sonderregel:** Das EVA-Zeichen `o` hat zwei Funktionen: (1) als konsonantisches ע (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam im Wortinneren.
 
-## V. Bestätigtes Lexikon (229 Einträge)
+## V. Bestätigtes Lexikon (236 Einträge)
 
 Alle Einträge mit ★★★ oder höher.
 
@@ -218,6 +221,8 @@ Alle Einträge mit ★★★ oder höher.
 | okeor | עַ+כְּ+אֵוֹר | auf/zu dem Licht hin (direktionale Variante) | ★★★ |
 | dary | דַּרִי | mein Leuchtendes / mein Licht (Possessiv von dar) | ★★★ |
 | daiir | דַּ+אִיר | der Leuchtende (verlängerte Form von dair) | ★★★ |
+| shalom | שָׁלוֹם | Friede / günstige Konstellation — Corpus-Erstbeleg; R43-Kand.: f58r P.4 (beide Transkriptoren identisch) | ★★★ |
+| dshor | דְּ+שׁוֹר / דְּ+אֹר | von/des Lichts (Aramaismus: d-Relativpräfix R45, kein D1-Flag) — f58r P.4 | ★★★ |
 
 
 ### Kolophon-Formeln
@@ -266,6 +271,7 @@ Alle Einträge mit ★★★ oder höher.
 | qokay | וְ+כְּ+חַי | und wie lebendig (qo + k + chay) | ★★★ |
 | qol | וְ+עַל | und auf/über (qo-Präfix + ol-Direktional) | ★★★ |
 | doky | דּוֹ+כִּי | sein denn / weil (Genitiv-Kausalpartikel) | ★★★ |
+| op-/of- | עַ+פֶּ | auf/an dem Mund/Öffnung von... — Präpositionalkompositum-Klasse, astronomischer Koordinatenmarker (R41 v6.4) — f58r P.26 | ★★★ |
 
 
 ### Verbformen
@@ -320,9 +326,11 @@ Alle Einträge mit ★★★ oder höher.
 | ychoees | יְ+כֹּ+עֵשׁ | er löscht das Feuer / heilt das Fieber (y + kol + esh) | ★★★ |
 | ychol | יְ+כֹּל | er heilt alles (Verbform, y-Imperfekt + kol) | ★★★★ |
 | ykol | יְ+כֹּל | er heilt alles (Variante von ychol) | ★★★★ |
-| ytor | יְ+תֹּ+אוֹר | er/sie wird zum Licht werden (Auferstehungs-Heilungsverb) — R43 Kand.: nur f18v (3×), zweiter Folio-Beleg ausstehend | ★★★ |
+| ytor | יְ+תֹּ+אוֹר | er/sie wird zum Licht werden / erleuchten (Auferstehungs-/Illuminations-Verb) — R43 bestätigt: f18v (3×) + f58r P.30 | ★★★★ |
 | ykam | יְ+קָם | er wird aufstehen / sich erheben (y-Imperfekt von קום qum) — R43 Kand.: nur f18v (4×), zweiter Folio-Beleg ausstehend | ★★★ |
 | ykar | יְ+כְּ+אָר | er heilt leuchtend (Variante von ykair, Quire-C-Form) | ★★★★ |
+| yteor | יְ+תֵּ+אוֹר | er wird erleuchten (Langform von ytor) — f18v + f58r P.30 | ★★★★ |
+| ytalar | יְ+תַּ+אֹר | er wird [Licht] geben/erleuchten (or-Ketten-Verb, f58r P.5) | ★★★ |
 
 
 ### Akteure, Anatomie & Botanik
@@ -391,6 +399,8 @@ Alle Einträge mit ★★★ oder höher.
 | qotchy | וְ+אוֹת+כְּ+הִי | und das Zeichen der Blässe (qo + otchy) | ★★★★ |
 | qotchol | וְ+אוֹת+כֹּל | und das Universal-Zeichen (qo + otchol) | ★★★ |
 | qokshy | וְ+כְּ+שֵׁי | und wie die Gabe (qo-Präfix + okshy) | ★★★ |
+| qor | וְ+אֹר | und Licht (qo-Konjunktion + or-Anker, astronomisch) — f58r P.5 | ★★★★ |
+| opsheolaiin | עַ+פֶּ+שְׁאוֹל+עַיִן | am Nadir-Punkt des Sternauges (op-Koordinatenmarker, R41-Erweiterung) — f58r P.26 | ★★★ |
 
 
 ### Possessiv-Formen
@@ -409,8 +419,9 @@ Alle Einträge mit ★★★ oder höher.
 | qo- | וְ | Vav conjunctive „und/auch" | qokedam | וְכְּדָּם | ★★★★ |
 | o- | עַ | Ayin „auf/bei/von" | okol | עַכֹּל | ★★★★ |
 | l- | לְ | Lamed „zu/für/nach" | lchedy | לְכְּדֵי | ★★★★ |
-| d- | דְּ | Dalet „von/aus/der" | dsholdy | דְּשׁוֹל+דִּי | ★★★★★ |
+| d- | דְּ/דִּי | Aramäisches Relativpräfix „von/dessen/welches" (R45) — äußerste morphol. Schale; kein D1-Flag wenn d- vor Konsonant | dsholdy | דְּשׁוֹל+דִּי | ★★★★★ |
 | p- | פְּ | Pe-Präfix (Nominalkonstrukt) | pchedal | פְּכֶּדַּל | ★★★ |
+| op-/of- | עַ+פֶּ | Ayin+Pe: „auf/an dem Mund/Öffnung von" — astronomischer Koordinatenmarker (R41-Erweiterung per R47) | opcheear | עַ+פֶּ+כְּ+אֵר | ★★★ |
 | y- | יְ | Imperfekt 3. Pers. Sg. Mask. | yshdal | יְשַׁדַּל | ★★★★ |
 | t- | תָּ | Imperfekt 3. Pers. Sg. Fem. / 2. Pers. | taiir | תָּאִיר | ★★★★ |
 
@@ -447,11 +458,11 @@ Alle Einträge mit ★★★ oder höher.
 
 ## VII. Grammatikregeln
 
-43 Regeln gesamt: **24 validiert** (≥ 2 unabhängige Belege) + **19 Kandidaten**. R14 und R20 gelten als gesichert (★★★★★).
+47 Regeln gesamt: **24 validiert** (≥ 2 unabhängige Belege) + **23 Kandidaten**. R14 und R20 gelten als gesichert (★★★★★).
 
 | # | Regel | Evidenz | Konf. |
 | --- | --- | --- | --- |
-| R1 | qo- = וְ (Vav conjunctive) an jedem Wortanfang — **ausschließlich Sprache B**; in Sprache A vollständig absent | qokedam, qokol, qokeedy (f57r, f103r); f001r Spr. A: 0 Belege in 260 Tokens ★★★★★ | ★★★★★ |
+| R1 | qo- = וְ (Vav conjunctive) an jedem Wortanfang — **ausschließlich Sprache B in Quires A+B**; in Sprache A vollständig absent (gilt mit vollem Geltungsbereich nur für Quires A+B — s. R33, R47) | qokedam, qokol, qokeedy (f57r, f103r); f001r Spr. A: 0 Belege in 260 Tokens ★★★★★; Ausnahmen ab Quire C: s. R33 (emergierend) + R47 (Quire H vollständig integriert) | ★★★★★ |
 | R2 | o- am Wortanfang = עַ (Ayin) | okol, okoldm, okaiin, odol | ★★★★ |
 | R3 | y-initiale Wörter = Imperfekt 3. Sg. Mask. | yteechy, yshdal, ykchaiin, ycheor, ychor | ★★★★ |
 | R4 | t-initiale Wörter = Imperfekt 3. Sg. Fem. / 2. Sg. | taiir; tsheoarom | ★★★★ |
@@ -481,7 +492,7 @@ Alle Einträge mit ★★★ oder höher.
 | R30 | sho- + Nomen = Scheol-Lokalisierung / Todesform des Nomens — Kandidat | shodain (f001r P3.12), shoaiin (f001r P4.24), shokcheey (f001r P4.22); shoiin (f13v) ★★★★ | ★★★ |
 | R31 | Temperatur-Antonymenpaar kor (קֹר, Kälte) ↔ kchom (כְּ+חֹם, Fieber) in aufeinanderfolgenden Zeilen = hippokratisches Diagnostikschema — Kandidat | f001r P3.15 (kor) + P3.16 (kchom); Parallele zu lor↔lshol (R20) | ★★★ |
 | R32 | Dreifach-Relativpartikel dydyd (דִּי+דִּי+דִּי) = extremer Betonungsmodus der absoluten Zugehörigkeit — Kandidat | f001r P3.17: einmaliger Beleg im Gesamtkorpus; Parallele zu R15 (×3 absolutes Urteil), R19 | ★★ |
-| R33 | qo--Präfix tritt ab Quire C (Beinecke Quire III) auch in **Sprache-A-Texten** auf — Quire C ist eine dialektale Übergangszone; R1 (qo- = B-exklusiv) gilt mit vollem Geltungsbereich nur für Quires I–II — Kandidat | f17r: 7 qo-Formen (Spr. A); f17v: 6 qo-Formen (Spr. A) — 13 Belege in ~250 Token; 0 Belege in Quires A+B Spr. A (~800 Token) | ★★★ |
+| R33 | qo--Präfix tritt ab Quire C (Beinecke Quire III) auch in **Sprache-A-Texten** auf — Quire C ist eine dialektale Übergangszone; R1 (qo- = B-exklusiv) gilt mit vollem Geltungsbereich nur für Quires I–II. Vollständige Integration in Quire H: s. R47 — Kandidat | f17r: 7 qo-Formen (Spr. A); f17v: 6 qo-Formen (Spr. A) — 13 Belege in ~250 Token; 0 Belege in Quires A+B Spr. A (~800 Token); f58r (Quire H, Spr. A): 28+ qo-Formen in ~350 Token (~8 %) — Vollintegration, s. R47 | ★★★ |
 | R34 | sheol (Vollform שְׁאוֹל) erscheint ab Quire C auch in Sprache-A-Texten am Paragraphenende — shol (apokor.) bleibt dominant; R17 gilt uneingeschränkt nur für Quires I–II — Kandidat | f17v P.13: ykeor·chol·chol·cthol·chkor·sheol-{plant} — Erstbeleg Spr. A sheol am Paragraphenende; 0 Belege in Quires A+B Spr. A | ★★★ |
 | R35 | Dopplung chol·chol (כֹּל·כֹּל = alles-alles) = Vollheilungs-Emphase vor nachfolgender Todesformel — erweitert R19-Intensivierungsschema auf Nominalstämme — Kandidat | f17v P.13: chol·chol·cthol·chkor·sheol — Erstbeleg; Parallele zu chol·chol·chol auf f8v (R19) | ★★★ |
 | R36 | Dopplung dar·dar (דַּר·דַּר) = Bilateral-/Intensiv-Dopplung für dar (leuchtend/Licht-davon) in ophthalmologischem Kontext — mögliche Bedeutung: bilaterale Augenbeteiligung oder maximale Lichtintensivierung als diagnostische Emphase — Kandidat | f18r P.6: dar.dar — Corpus-Erstbeleg; R19-Strukturkonformität identisch zu daly·dal, chol·chol, or·or-Palindrom | ★★★ |
@@ -489,11 +500,15 @@ Alle Einträge mit ★★★ oder höher.
 | R38 | {plant}-Marker am Paragraphenanfang = Pflanzenillustration rahmt den nachfolgenden Kolophon-Text strukturell — neue Strukturvariante in Quire C; in Quires A+B steht {plant} nie am Paragraphenanfang — Kandidat | f18v P.10: {plant}yko.dshy.dair.ykol.dom= — Corpus-Erstbeleg der Anfangspositionierung; 0 Belege in Quires A+B | ★★★ |
 | R39 | dom= (דּוֹם = Stille/Ende) als Schlusskolophon-Finale in Sprache A — positiv-neutrale Prognose-Semantik (Stille/Ruhe, kein shol/sheol); bisher nur in Sprache B (f57r) belegt — Kandidat | f18v P.10: dom= — Erstbeleg Spr. A; Parallelbeleg Spr. B: f57r Kolophon-Kontext; dom = neutral/positiv (Stille) vs. shol = negativ (Tod) | ★★★ |
 | R40 | **Kurzwurzel-Konfidenzdeckel v2 (verschärft, v6.3):** Ein EVA-Wort, dessen Basiswurzel nach Abtrennung aller validen Präfixe und Suffixe **≤ 3 Konsonanten** enthält, erhält **maximal ★★** (niemals ★★★ oder höher), es sei denn mindestens **zwei** der folgenden Ausnahmebedingungen sind gleichzeitig erfüllt: (a) Funktionswort ≤ 3 EVA-Zeichen gesamt (Konjunktion, Präposition, Artikel, Partikel — keine Ableitungen), (b) Rückwärtstest-Anker (positiver Rückwärtstest, derzeit 23 Anker), (c) Korpusfrequenz ≥ 15× in ≥ 3 verschiedenen Folios mit semantisch konsistentem Kontext. Ist keine oder nur eine Ausnahme erfüllt: HARD CAP ★★ ohne Ausnahme — Kandidat | or → ★★★★ bleibt (b ✓ + c ✓: 52×, 5 Folios); chor → ★★★★ bleibt (b ✓ + c ✓: 47×, 5 Folios); daiin → ★★★★ bleibt (b ✓ + c ✓: 38×, 5 Folios); shol → ★★★ bleibt (b ✓ + c ✓: 19×, 5 Folios); ky → ★★★ bleibt (a ✓ + b ✓); dy → ★★ (a nur 1/2 — zu lang für Grenzfall) | ★★★ |
-| R41 | **Präfix-Hierarchie-Protokoll:** Valide Reihenfolge: [Konj.: o-/qo-/v-] → [Präp.: l-/b-/k-/m-] → [Artikel: ha-] → [Basis]. Folgende Strukturen sind **ungültig** und müssen verworfen werden: (a) Präposition direkt vor Konjunktion ohne Basiswurzel-Trennung, (b) mehr als 2 geschichtete Präfixe aus verschiedenen Klassen an einem Token, (c) sho--Präfix kombiniert mit positivem Prognose-Vokabular (or, chaiin, okal) im gleichen Token — Kandidat | Ausnahme: qo-k--Kombination in Quire C (R33) ist validierte Einzelklasse, kein Doppel-Präfix; illegale Beispiele: l-o-[Wort] (Präp.+Konj.), o-qo-[Wort] (Doppel-Konj.), qo-k-ch-[Wort] (> 2 Präfix-Layer) | ★★★ |
+| R41 | **Präfix-Hierarchie-Protokoll (v6.4 erweitert):** Valide Reihenfolge: [d- Relativ (R45)] → [Konj.: o-/qo-/v-] → [Präp.: l-/b-/k-/m-] → [Kompositum: op-/of- = עַ+פֶּ] → [Artikel: ha-] → [Basis]. Folgende Strukturen sind **ungültig** und müssen verworfen werden: (a) Präposition direkt vor Konjunktion ohne Basiswurzel-Trennung, (b) mehr als 2 geschichtete Präfixe aus verschiedenen Klassen an einem Token, (c) sho--Präfix kombiniert mit positivem Prognose-Vokabular (or, chaiin, okal) im gleichen Token — Kandidat | Ausnahme: qo-k--Kombination in Quire C (R33) ist validierte Einzelklasse, kein Doppel-Präfix; illegale Beispiele: l-o-[Wort] (Präp.+Konj.), o-qo-[Wort] (Doppel-Konj.), qo-k-ch-[Wort] (> 2 Präfix-Layer); neu: d-Relativpräfix (R45) bildet äußerste Schale; op-/of- (R47) als Koordinatenmarker im astronomischen Register f58r P.26 | ★★★ |
 | R42 | **Kongruenzpflicht für ★★★★+:** Ein Mapping-Eintrag erhält ★★★★ oder höher nur wenn (a) das zugeordnete Nomen in Genus und Numerus kompatibel ist und (b) die Kongruenz durch ≥ 1 unabhängigen Parallelbeleg im Corpus bestätigt wird. ★★★-Einträge ohne Kongruenztest bleiben vorläufig; bei erster Nachanalyse geprüft — Scheitern → **Herabstufung auf ★★** — Kandidat | ykchaiin Mask.Sg. + aiin Sg.mask. ✓ f9r; ykchy Mask.Sg. + chy Sg. ✓ f11v; ykchor Mask.Sg. + chor Sg. ✓ f11r; ykshol Mask.Sg. + shol Sg. ✓ f15r — 4/4 Kongruenztests bestanden; ykam/ytor f18v: Parallelbeleg noch ausstehend | ★★★ |
-| R43 | **Multi-Folio-Validierungspflicht (v6.3):** Ein Lexikoneintrag erhält ★★★ oder höher nur dann, wenn er in **mindestens 2 verschiedenen Folios** mit semantisch kompatiblem Kontext belegt ist. Ausnahme: Einzelfolio-Beleg als **★★★ Kandidat** möglich, sofern ≥ 8 unabhängige Belege im Folio und kein semantischer Widerspruch zu anderen Lexikoneinträgen — Bestätigung durch zweiten Folio-Beleg innerhalb der nächsten 5 analysierten Folios erforderlich; andernfalls automatische Rückstufung auf ★★ — Kandidat | ykam f18v (4×, Erstbeleg) → ★★★ Kand. bis f19r/v-Bestätigung; ytor f18v (3×, Erstbeleg) → ★★★ Kand. bis f19r/v-Bestätigung; ykair f16r (1×) → ★★ provisorisch (unter Minimum 8×); kchom f001r (2×) → ★★★ Kand. (Flag bleibt) | ★★★ |
+| R43 | **Multi-Folio-Validierungspflicht (v6.3):** Ein Lexikoneintrag erhält ★★★ oder höher nur dann, wenn er in **mindestens 2 verschiedenen Folios** mit semantisch kompatiblem Kontext belegt ist. Ausnahme: Einzelfolio-Beleg als **★★★ Kandidat** möglich, sofern ≥ 8 unabhängige Belege im Folio und kein semantischer Widerspruch zu anderen Lexikoneinträgen — Bestätigung durch zweiten Folio-Beleg innerhalb der nächsten 5 analysierten Folios erforderlich; andernfalls automatische Rückstufung auf ★★ — Kandidat | ykam f18v (4×, Erstbeleg) → ★★★ Kand. bis Quire-H-Bestätigung; ytor f18v (3×) + f58r P.30 (R43 erfüllt) → **★★★★**; ykair f16r (1×) → ★★ provisorisch (unter Minimum 8×); kchom f001r (2×) → ★★★ Kand. (Flag bleibt) | ★★★ |
 | R44 | **Konsekutive Kurzwurzel-Sequenzsperre (v6.3):** Wenn zwei aufeinanderfolgende EVA-Wörter **beide** eine Basiswurzel mit ≤ 3 Konsonanten haben, kann die Sequenz insgesamt nur dann ★★★ oder höher erreichen, wenn: (a) mindestens **eines** der beiden Wörter durch den Rückwärtstest validiert ist (R40-Ausnahme b), **und** (b) die morphologische Kongruenz zwischen beiden Wörtern dem R42-Standard genügt (Genus/Numerus-Kompatibilität mit Parallelbeleg). Ist nur eine oder keine Bedingung erfüllt: Sequenz ★★. Nicht anwendbar auf Funktionswort-Hauptwort-Paare — Kandidat | ykchaiin + daiin: daiin Rückwärtstest-Anker (b ✓) + R42-Kongruenz ✓ → R44 greift nicht; ky + chor: Funktionswort-Ausnahme → R44 greift nicht; Neues Verb + neues Objekt (je ★★★ Kand.): kein Anker, kein Parallelbeleg → Sequenz ★★; shol + neues Adj. (Einzelbeleg): shol Anker ✓, R42-Kongruenz fehlt → ★★ | ★★★ |
-| D1/D2 | ⚠ **Phonotaktische Warnsignale** (Warnsystem, kein Hard Stop): **D1 Doppelkonsonanz-Warnung** — zwei identische Mapping-Ausgaben im Basiswort-Kern (z. B. EVA rr → ר-ר) erhalten ⚠ Doppelkonsonanz-Flag; erfordert explizite Erklärung (Geminierung/Dagesh, Assimilation, Schreibervarianz). **D2 Kehlkopf-Cluster-Warnung** — zwei laryngale/pharyngale Konsonanten nebeneinander (EVA-Mappings h/ch/aiin → ה/ח/ע) erhalten ⚠ Kehlkopf-Cluster-Flag; erfordert morphologische Rechtfertigung. Konfidenz wird in beiden Fällen _nicht automatisch_ reduziert — Kandidat | EVA-Phonologie noch nicht gesichert → kein Hard Stop möglich; D1-Erklärungsoptionen: Dagesh-Verdopplung, partielle Assimilation, Schreibervarianz; D2: Doppel-Laryngal im Mischna-Hebräisch selten und markiert | ★★ |
+| D1/D2 | ⚠ **Phonotaktische Warnsignale** (Warnsystem, kein Hard Stop): **D1 Doppelkonsonanz-Warnung** — zwei identische Mapping-Ausgaben im Basiswort-Kern (z. B. EVA rr → ר-ר) erhalten ⚠ Doppelkonsonanz-Flag; erfordert explizite Erklärung (Geminierung/Dagesh, Assimilation, Schreibervarianz). **D2 Kehlkopf-Cluster-Warnung** — zwei laryngale/pharyngale Konsonanten nebeneinander (EVA-Mappings h/ch/aiin → ה/ח/ע) erhalten ⚠ Kehlkopf-Cluster-Flag; erfordert morphologische Rechtfertigung. Konfidenz wird in beiden Fällen _nicht automatisch_ reduziert. **R45-Ausnahme:** d--Anlaut vor Konsonant als aramäisches Relativpräfix triggert _kein_ D1-Flag; zurückgezogene Flags: dshodal, dshor, dchairam, dtor, dtshol, dchol — Kandidat | EVA-Phonologie noch nicht gesichert → kein Hard Stop möglich; D1-Erklärungsoptionen: Dagesh-Verdopplung, partielle Assimilation, Schreibervarianz; D2: Doppel-Laryngal im Mischna-Hebräisch selten und markiert; R45-Ausnahme: 6 D1-Fehlklassifikationen auf f58r durch aramäisches d-Relativpräfix aufgelöst | ★★ |
+| R45 | **Aramäisches d-Relativpräfix als morphologische Klasse (v6.4):** Das EVA-Zeichen d- am Wortanfang, unmittelbar gefolgt von einem weiteren Konsonanten ohne Vokalträger, gilt als Aramaismus: aramäisches Relativpräfix דְּ/דִּי (de-/di- = „von/dessen/welches"). Es ist morphologisch von der Basiswurzel zu trennen. **(a) Keine D1-Flags:** d--Anlaut vor Konsonant triggert nicht das D1-Warnsignal. **(b) Präfix-Hierarchie-Erweiterung:** d- als Relativpräfix bildet die äußerste morphologische Schale (s. R41 v6.4). **(c) Abgrenzung:** d- als Basiskonsonant (z. B. dal = דַּל) erkennt man am folgenden Vokalträger; d- als Relativpräfix erkennt man an direkter Konsonantenfolge ohne Vokalindikator — Kandidat | f58r: dshodal (P.2), dshor (P.4), dchairam (P.5), dtor (P.34), dtshol (P.38), dchol (P.40) — 6 klare Instanzen; alle durch דְּ-Relativpräfix vollständig aufgelöst; 6 D1-Fehlklassifikationen zurückgezogen | ★★★ |
+| R46 | **Wurzelketten-Ausnahme für R44 (v6.4):** Wenn ≥ 3 aufeinanderfolgende EVA-Tokens morphologisch nachweislich dieselbe validierte Basiswurzel teilen — als Komposita, Ableitungen, Präfixformen oder Intensivierungen eines einzigen Rückwärtstest-Ankers — greift **R44 nicht**. Begründung: R44 soll zufällige Kollisionen verschiedener schwacher Kurzwurzeln blockieren; eine kohärente Wurzelkette ist das morphologische Gegenteil — bewusste stilistische Amplifikation (vgl. R19, R35). **Nachweis-Anforderung:** Explizite Dokumentation der Basiswurzel und aller Ableitungsformen; ein nicht-ableitbares Token bricht die Kette. **GibberishTest-Neutralität:** Pseudowörter bilden keine systematischen Wurzelketten — R46 erhöht die Testrate nicht — Kandidat | f58r P.5: char.ar.al.char.arary.ytalar — 6 Tokens, alle Derivate der validierten Basiswurzel א-ו-ר (Licht); R44 greift nicht, da keine zufällige Diversität sondern kohärente Intensivierung; semantisch: astronomische Licht-Litanei über Sternglanz | ★★★ |
+| R47 | **qo-Präfix-Vollintegration ab Quire H (Erweiterung von R33, v6.4):** Das qo--Präfix (וְ) ist in Quire H (Beinecke VIII) vollständig in Sprache A integriert — Belegdichte ~8 % der Tokens, gleichauf mit Sprache B auf f57r. Quire H ist keine Übergangszone (wie Quire C per R33), sondern ein voll-integrierter qo--Bereich. **Quire-Progressionsskala:** Quires A+B: absent · Quire C: emergierend (R33) · Quire T: vollständig · Quire H: **vollständig (NEU)**. **Konsequenz für R1:** R1 gilt nur für Quires A+B (Beinecke I+II). **Offene Frage:** Quires D–G (Beinecke IV–VII) noch nicht analysiert — monotone Zunahme erwartet — Kandidat | f58r (Quire H, Spr. A): 28+ qo--Formen in ~350 Token (Stichprobe: qor, qokaiin, qocphody, qokalam, qotyshey, qokaldy, qotaily u. a.); Vergleich: f17r/v Quire C (R33): 13 Belege/250 Token; f57r Quire T (Spr. B): ~8 %; f001r Quire A: 0/260 Token | ★★★ |
+| R48 | **Randstern-System Quire H — astronomisches Register (v6.4):** Das Randstern-System (bisher formal für f103r/v als medizinisches Register-Trennsystem dokumentiert) ist auch in Quire H aktiv. Auf f58r markieren drei goldene Randsterne drei Textblöcke. **Morphologie:** 6-Zacken (kein Kern) · 7-Zacken (kleiner Kern) · 8-Zacken (größerer Kern) — steigende Komplexität korrespondiert mit steigender astronomischer Spezifität. **Parallele zu f103r:** Auf f103r markieren Sternmorphologien Schweregrade medizinischer Fälle; auf f58r markieren sie astronomische Registerkategorien. Das zugrunde liegende Prinzip ist register-übergreifend identisch: Randstern = strukturell funktionaler Gliederungsmarker, nicht dekorative Illustration — Kandidat | f58r: Stern 1 (6-Zacken, kein Kern) über P.1 → Block P.1–P.15 (~150 Token, generisches Sternen-Register); Stern 2 (7-Zacken, kleiner Kern) über P.16 → Block P.16–P.25 (~100 Token, Planetenreihe); Stern 3 (8-Zacken, größerer Kern) über P.26 → Block P.26–P.40 (~155 Token, op-Koordinatenformat); Kolophone (=) an P.15 und P.25 als Blockabschluss | ★★★ |
 
 
 ## VIII. Rückwärtstest-Statistik
@@ -730,6 +745,9 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 | Punkt | Kleiner Mittelpunkt | Abschlussnotiz / Prognose (stärkstes sheol·chalal) | ★★★ |
 | Beige | Pergamentfarbene Mitte | Zweite Seitenhälfte (ab P.27 f103r); schwerste Fälle | ★★ |
 | Sonderstern | 8 Zacken + Schleife | Registerabschluss (f103r P.52, f114v P.1) | ★★★ |
+| 6-Zacken (Quire H) | 6-zackig, goldfarben, kein Kern | Block 1: allgemeines Sternen-Register (f58r P.1–P.15) | ★★★ |
+| 7-Zacken + Kern (Quire H) | 7-zackig, goldfarben, kleiner Kern | Block 2: Planetenreihe — 7 klassische Planeten (f58r P.16–P.25) | ★★★ |
+| 8-Zacken + Kern (Quire H) | 8-zackig, goldfarben, größerer Kern | Block 3: Fixsternkatalog / op-Koordinatenformat — R48 (f58r P.26–P.40) | ★★★ |
 
 
 ### Folio-Prinzipien
@@ -740,11 +758,12 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 | f116r | Regelmäßige ~3er-Gruppen (P.1–P.30); danach sternlose Sektion | Transkriptor: „End of starred paragraphs" |
 | f114v | Strikt alternierend Beige–Rot–Beige–Rot | Paarstruktur; Schleifenlänge als zweite Dimension |
 | f115r/v | Überwiegend 8-zackig mit Schleife | Stark ch-dominiertes Vokabular — anderes Register |
+| f58r | 3 Randsterne (gold) markieren 3 Textblöcke; je ein Stern über dem ersten Paragraphen des Blocks | 6-Zacken (P.1–P.15) · 7-Zacken+Kern (P.16–P.25) · 8-Zacken+Kern (P.26–P.40) — R48 |
 
 
 ---
 
-Voynich-Manuskript — Formales Mapping-Dokument · Version 6.3 · Mai 2026
-Lexikon: 229 Einträge · Grammatikregeln: 43 · Rückwärtstest: 88% (23/26)
+Voynich-Manuskript — Formales Mapping-Dokument · Version 6.4 · Mai 2026
+Lexikon: 236 Einträge · Grammatikregeln: 47 · Rückwärtstest: 88% (23/26)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

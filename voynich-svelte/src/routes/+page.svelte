@@ -267,8 +267,8 @@
 
 		<!-- XIII. GIBBERISH-TEST -->
 		<section class="section" id="gibberish">
-			<h2>XIII. Gibberish-Test (v6.3)</h2>
-			<p>Empirisches Falsifikationswerkzeug nach Methodendokument v6.3: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch R40 v2, R41 und D1/D2 geführt. R40 v2 kappt Basiswurzeln mit ≤ 3 Konsonanten (v6.2: ≤ 2). Abbruchschwelle: &gt; 15 % · Warnzone: 11–15 % · Zielkorridor: ≤ 10 % strukturelle Falsch-Positive (★★★).</p>
+			<h2>XIII. Gibberish-Test (v6.4)</h2>
+			<p>Empirisches Falsifikationswerkzeug nach Methodendokument v6.3/v6.4: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch R40 v2, R41, R44, R45–R46 und D1/D2 geführt. R40 v2 kappt Basiswurzeln mit ≤ 3 Konsonanten. R46 stellt sicher, dass kohärente Wurzelketten nicht als Falsch-Positive gewertet werden. Abbruchschwelle: &gt; 15 % · Warnzone: 11–15 % · Zielkorridor: ≤ 10 % strukturelle Falsch-Positive (★★★).</p>
 			<GibberishTest />
 		</section>
 

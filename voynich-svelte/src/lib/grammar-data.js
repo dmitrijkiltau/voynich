@@ -2,8 +2,9 @@ export const GRAMMAR_PREFIXES = [
   { eva: 'qo-', heb: 'וְ', fn: 'Vav conjunctive „und/auch"', ex_eva: 'qokedam', ex_heb: 'וְכְּדָּם', stars: '★★★★', is5: false },
   { eva: 'o-', heb: 'עַ', fn: 'Ayin „auf/bei/von"', ex_eva: 'okol', ex_heb: 'עַכֹּל', stars: '★★★★', is5: false },
   { eva: 'l-', heb: 'לְ', fn: 'Lamed „zu/für/nach"', ex_eva: 'lchedy', ex_heb: 'לְכְּדֵי', stars: '★★★★', is5: false },
-  { eva: 'd-', heb: 'דְּ', fn: 'Dalet „von/aus/der"', ex_eva: 'dsholdy', ex_heb: 'דְּשׁוֹל+דִּי', stars: '★★★★★', is5: true },
+  { eva: 'd-', heb: 'דְּ/דִּי', fn: 'Aramäisches Relativpräfix „von/dessen/welches" (R45) — äußerste morphol. Schale; kein D1-Flag wenn d- vor Konsonant', ex_eva: 'dsholdy', ex_heb: 'דְּשׁוֹל+דִּי', stars: '★★★★★', is5: true },
   { eva: 'p-', heb: 'פְּ', fn: 'Pe-Präfix (Nominalkonstrukt)', ex_eva: 'pchedal', ex_heb: 'פְּכֶּדַּל', stars: '★★★', is5: false },
+  { eva: 'op-/of-', heb: 'עַ+פֶּ', fn: 'Ayin+Pe: „auf/an dem Mund/Öffnung von" — astronomischer Koordinatenmarker (R41-Erweiterung per R47)', ex_eva: 'opcheear', ex_heb: 'עַ+פֶּ+כְּ+אֵר', stars: '★★★', is5: false },
   { eva: 'y-', heb: 'יְ', fn: 'Imperfekt 3. Pers. Sg. Mask.', ex_eva: 'yshdal', ex_heb: 'יְשַׁדַּל', stars: '★★★★', is5: false },
   { eva: 't-', heb: 'תָּ', fn: 'Imperfekt 3. Pers. Sg. Fem. / 2. Pers.', ex_eva: 'taiir', ex_heb: 'תָּאִיר', stars: '★★★★', is5: false },
 ];

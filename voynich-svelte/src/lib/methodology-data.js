@@ -24,4 +24,12 @@ export const ANCHOR_FOLIOS = [
     heb: null,
     gloss: null,
   },
+  {
+    folio: 'f58r',
+    subtitle: 'Erster astronomischer Stresstest',
+    desc: 'Quire H (Beinecke VIII), Sprache A. Erster analysierter Nicht-Botanical-Folio. Beweist semantische Invarianz des Mappings über Register hinweg — alle Ankerwörter behalten ihre Bedeutungen ohne Ad-hoc-Anpassung:',
+    eva: 'ytor · ar · alom',
+    heb: 'יְ+תֹּ+אוֹר · אֹר · עָלוֹם',
+    gloss: '„er wird erleuchten — Licht — in der Welt." (f58r P.30 — R43-Bestätigung für ytor ★★★★)',
+  },
 ];
