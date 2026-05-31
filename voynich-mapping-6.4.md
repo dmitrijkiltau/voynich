@@ -36,7 +36,7 @@ Version 6.4 wird ausgelöst durch den ersten astronomischen Stresstest (f58r, Qu
 | Identifizierte Sprache | Mischna-Hebräisch / Jüdisch-Aramäisch |
 | Texttyp | Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis) |
 | Analysierte Folios | f1r, f1v–f18v (Quires A–B+C-Eröffnung), f57r, f58r, f103r/v, f114v, f115r/v, f116r/v |
-| Bestätigte Wörter | 236 (★★★ oder höher) |
+| Bestätigte Wörter | 226 (★★★ oder höher) |
 | Rückwärtstest (Spr. B) | 23/26 Vorhersagen bestätigt (88%); 0 Falsch-Positive |
 | Sprache A Anker | f1r, f1v–f18v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C Eröffnung) |
 | Grammatikregeln | 47 (24 validiert + 23 Kandidaten) |
@@ -122,7 +122,7 @@ Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 
 **Sonderregel:** Das EVA-Zeichen `o` hat zwei Funktionen: (1) als konsonantisches ע (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam im Wortinneren.
 
-## V. Bestätigtes Lexikon (236 Einträge)
+## V. Bestätigtes Lexikon (226 Einträge)
 
 Alle Einträge mit ★★★ oder höher.
 
@@ -202,7 +202,7 @@ Alle Einträge mit ★★★ oder höher.
 | dsholdy | דְּ+שׁוֹל+דִּי | von Scheol — dessen (Genitiv) | ★★★★★ |
 | dsho | דְּ+שׁוֹ | von Scheol (Kurzform) | ★★★★ |
 | shoiin | שׁוֹ+עַיִן | Scheol des Auges | ★★★★ |
-| shoin | שׁוֹ+יִן | Scheol des Auges (Kurzform) | ★★★★ |
+| shoin | שׁוֹ+יִן | Scheol des Auges (Var. von shoiin; abw. Transkription) | ★★ |
 | darchor | דַּרְכּוֹר | sein Krankheitsverlauf | ★★★ |
 | otan | עֹתָן | Zeit / Jahreszeit der Erkrankung | ★★★ |
 | chey | חֵי | lebendig / am Leben (Adj.) | ★★★ |
@@ -232,12 +232,11 @@ Alle Einträge mit ★★★ oder höher.
 | kaiim | קַיָּם | gültig / beständig (Schlussformel) | ★★★★★ |
 | okorory | עַכְּאוֹראוֹרִי | auf das Licht — mein Licht / zum Licht | ★★★ |
 | cphar | כְּ+פַּר | Sühne / Bedeckung (Kolophon-Formel) | ★★★ |
-| cthom | כְּ+תֹם | wie Vollständigkeit (Kolophon) | ★★★ |
+| cthom | כְּ+תֹם | wie Vollständigkeit (Kolophon; Vokalvar.: chetom) | ★★★ |
 | otcho | אוֹת+כֹּ | das Zeichen des [Atems] (Kolophon-Kurzform) | ★★★ |
 | dchckhy | דְּ+כְּ+כְּ+הִי | von tiefer Blässe (Intensiv-Diagnosesiegel) | ★★★★ |
 | sokar | שׂ+אוֹ+כְּ+אָר | Heilungs-Arzt des Lichts (Quire-B-Kolophon) | ★★★ |
 | oaorar | עַ+אַ+אוֹר+אָר | auf das Licht der Heilung (Doppel-Licht-Formel) | ★★★★ |
-| chetom | כְּ+תֹּם | wie Vollständigkeit (Kolophon, Variante von cthom) | ★★★ |
 | chkeey | כְּ+כְּ+אֵ+יִ | wie wie Lebendigkeit (doppelter Lebens-Komparativ) | ★★★ |
 | okeom | עַ+כְּ+אֵוֹם | auf die Vollendung hin (Kolophon-Direktional) | ★★★ |
 | cthal | כְּ+תַּ+חַל | wie vollständig (Kolophon-Variante von cthor) | ★★★ |
@@ -247,8 +246,7 @@ Alle Einträge mit ★★★ oder höher.
 
 | EVA | Hebräisch | Deutsch | Konf. |
 | --- | --- | --- | --- |
-| chedy | כְּדֵי | damit / um zu | ★★★★ |
-| kedy | כְּדֵי | damit / um zu | ★★★★ |
+| chedy | כְּדֵי | damit / um zu (Var.: kedy) | ★★★★ |
 | shedy | שֶׁדִּי | das/welches von | ★★★★ |
 | shdy | שֶׁדִּי | das/welches von (Kurz) | ★★★★ |
 | dy | דִּי | von / dessen (Aram.) | ★★ |
@@ -256,8 +254,7 @@ Alle Einträge mit ★★★ oder höher.
 | chal | חָל | gilt für / betrifft | ★★★ |
 | shodaiin | שׁוֹדִּין | Todesurteil | ★★★★ |
 | sheodaiin | שְׁאוֹדִּין | Todesurteil (Vollform) | ★★★★★ |
-| daiidy | דִּין+דִּי | das Urteil dessen | ★★★★★ |
-| daiindy | דִּין+דִּי | das Urteil dessen | ★★★★★ |
+| daiindy | דִּין+דִּי | das Urteil dessen (Var.: daiidy) | ★★★★★ |
 | qodaiin | וְדִּין | und Urteil | ★★★★ |
 | daiim | דִּין+ם | Urteile (Plural) | ★★★ |
 | keey | כֵּי | denn / weil (Kausalpartikel) | ★★★★ |
@@ -271,7 +268,6 @@ Alle Einträge mit ★★★ oder höher.
 | qokay | וְ+כְּ+חַי | und wie lebendig (qo + k + chay) | ★★★ |
 | qol | וְ+עַל | und auf/über (qo-Präfix + ol-Direktional) | ★★★ |
 | doky | דּוֹ+כִּי | sein denn / weil (Genitiv-Kausalpartikel) | ★★★ |
-| op-/of- | עַ+פֶּ | auf/an dem Mund/Öffnung von... — Präpositionalkompositum-Klasse, astronomischer Koordinatenmarker (R41 v6.4) — f58r P.26 | ★★★ |
 
 
 ### Verbformen
@@ -324,12 +320,10 @@ Alle Einträge mit ★★★ oder höher.
 | ytchm | יְ+תְּ+חֵם | er/sie wird Wärme bringen (y+t-Doppelpräfix + cham) | ★★★ |
 | ydl | יִדַּל | er wird schwach werden (Imperfekt Qal von דלל) | ★★★ |
 | ychoees | יְ+כֹּ+עֵשׁ | er löscht das Feuer / heilt das Fieber (y + kol + esh) | ★★★ |
-| ychol | יְ+כֹּל | er heilt alles (Verbform, y-Imperfekt + kol) | ★★★★ |
-| ykol | יְ+כֹּל | er heilt alles (Variante von ychol) | ★★★★ |
-| ytor | יְ+תֹּ+אוֹר | er/sie wird zum Licht werden / erleuchten (Auferstehungs-/Illuminations-Verb) — R43 bestätigt: f18v (3×) + f58r P.30 | ★★★★ |
+| ychol | יְ+כֹּל | er heilt alles (Verbform, y-Imperfekt + kol; Var.: ykol f18v P.10) | ★★★★ |
+| ytor | יְ+תֹּ+אוֹר | er/sie wird zum Licht werden / erleuchten (Auferstehungs-/Illuminations-Verb; Langform: yteor) — R43 bestätigt: f18v (3×) + f58r P.30 | ★★★★ |
 | ykam | יְ+קָם | er wird aufstehen / sich erheben (y-Imperfekt von קום qum) — R43 Kand.: nur f18v (4×), zweiter Folio-Beleg ausstehend | ★★★ |
 | ykar | יְ+כְּ+אָר | er heilt leuchtend (Variante von ykair, Quire-C-Form) | ★★★★ |
-| yteor | יְ+תֵּ+אוֹר | er wird erleuchten (Langform von ytor) — f18v + f58r P.30 | ★★★★ |
 | ytalar | יְ+תַּ+אֹר | er wird [Licht] geben/erleuchten (or-Ketten-Verb, f58r P.5) | ★★★ |
 
 
@@ -341,14 +335,12 @@ Alle Einträge mit ★★★ oder höher.
 | sary | שַׂרִי | mein Arzt (Possessiv) | ★★★ |
 | pchy | פְּחִי | mein Atem / mein Mund | ★★★ |
 | opchor | עַ+פְּ+חֹר | auf die Pupille (Atemweg-Befund) | ★★★ |
-| al | עַל | auf / über / betreffend | ★★★★ |
-| ol | עַל | auf / über / betreffend | ★★★★ |
+| al | עַל | auf / über / betreffend (Var.: ol) | ★★★★ |
 | saiin | שַׂעַיִן | Augenarzt | ★★★★ |
 | dain | דַּ+עַיִן | das Auge (Kurzform) | ★★★ |
 | oiin | עַ+יִן | das Auge (direkte Form) | ★★★★ |
-| doaiin | דְּ+עַיִן | vom Auge | ★★★★ |
-| doiin | דְּ+עַיִן | vom Auge (Kurzform) | ★★★★ |
-| kchol | כְּ+חֹל | wie Kohl-Pigment / Blaupigment | ★★★ |
+| doaiin | דְּ+עַיִן | vom Auge (Var.: doiin) | ★★★★ |
+| kchol | כְּ+חֹל | wie Augensalbe / Kohl-Pigment (Blaupigment) | ★★★ |
 | sam | שַׂם | Arznei / er gibt | ★★★ |
 | shty | שְׁתִי | Getränk / Trank | ★★★ |
 | pol | פֹּל | Bohne / Beere | ★★★ |
@@ -357,14 +349,12 @@ Alle Einträge mit ★★★ oder höher.
 | pcho | פְּחֹ | Atem/Mund (Spr.-A-Variante von pchy) | ★★★ |
 | schol | שׂ+כֹּל | Arznei für alles / Universalheilmittel | ★★★ |
 | koiin | כֹּ+עַיִן | wie das Auge (komparativ, kol-Stamm) | ★★★ |
-| kaiin | כְּ+עַיִן | wie das Auge (komparativ, k-Präfix) | ★★★ |
+| kaiin | כְּ+עַיִן | wie das Auge (komparativ, k-Präfix; Var.: keaiin) | ★★★ |
 | okshy | עַ+כְּ+שֵׁי | auf/für die Gabe (therapeutischer Direktional) | ★★★ |
 | pocheody | פְּ+חֹ+דִּי | des Atemwegs (Genitiv von pcho) | ★★★ |
 | opchy | עַ+פְּ+הִי | auf den Atemweg (o+pchy-Direktional) | ★★★ |
 | pchraiin | פְּ+רְ+עַיִן | für/bei das Licht des Auges | ★★★ |
-| keaiin | כְּ+עַיִן | wie das Auge (k-Komparativ + Auge-Suffix) | ★★★ |
 | okain | עַ+כְּ+עַיִן | auf das Auge (Kurzform von okaiin) | ★★★ |
-| ckhol | כְּ+חֹל | wie Augensalbe (Komparativ zu khol) | ★★★ |
 | chekhol | כְּ+כָּ+חֹל | wie das Augenpigment (doppelter Komparativ) | ★★★ |
 | cphoy | כְּ+פְּ+הוֹ | wie sein Atemweg / wie sein Mund (Komparativ) | ★★★ |
 
@@ -380,7 +370,7 @@ Alle Einträge mit ★★★ oder höher.
 | qokchor | וְ+עַ+כְּ+חֹר | und für die Pupille | ★★★★★ |
 | shydal | שֵׁי+דַּל | die Gabe der Schwäche | ★★★ |
 | chokshor | כְּ+חֹק+שׁוֹר | wie die Vorschrift des Zeichens | ★★★★ |
-| qotchor | וְ+אוֹת+חֹר | und das Zeichen der Pupille (qo+otchor) | ★★★★ |
+| qotchor | קוֹ+תְּ+כֹּר | Pupillen-Zeichen / Urteil der Pupille (Schlusskolophon f15r) | ★★★★★ |
 | dshy | דְּ+שֵׁי | von der Gabe (d-Genitivkonstrukt) | ★★★ |
 | otly | אוֹת+לֵ | Zeichen zu/für (oto-Direktional) | ★★★ |
 | otor | אוֹת+אוֹר | Zeichen des Lichts / der Heilung | ★★★ |
@@ -500,11 +490,11 @@ Alle Einträge mit ★★★ oder höher.
 | R38 | {plant}-Marker am Paragraphenanfang = Pflanzenillustration rahmt den nachfolgenden Kolophon-Text strukturell — neue Strukturvariante in Quire C; in Quires A+B steht {plant} nie am Paragraphenanfang — Kandidat | f18v P.10: {plant}yko.dshy.dair.ykol.dom= — Corpus-Erstbeleg der Anfangspositionierung; 0 Belege in Quires A+B | ★★★ |
 | R39 | dom= (דּוֹם = Stille/Ende) als Schlusskolophon-Finale in Sprache A — positiv-neutrale Prognose-Semantik (Stille/Ruhe, kein shol/sheol); bisher nur in Sprache B (f57r) belegt — Kandidat | f18v P.10: dom= — Erstbeleg Spr. A; Parallelbeleg Spr. B: f57r Kolophon-Kontext; dom = neutral/positiv (Stille) vs. shol = negativ (Tod) | ★★★ |
 | R40 | **Kurzwurzel-Konfidenzdeckel v2 (verschärft, v6.3):** Ein EVA-Wort, dessen Basiswurzel nach Abtrennung aller validen Präfixe und Suffixe **≤ 3 Konsonanten** enthält, erhält **maximal ★★** (niemals ★★★ oder höher), es sei denn mindestens **zwei** der folgenden Ausnahmebedingungen sind gleichzeitig erfüllt: (a) Funktionswort ≤ 3 EVA-Zeichen gesamt (Konjunktion, Präposition, Artikel, Partikel — keine Ableitungen), (b) Rückwärtstest-Anker (positiver Rückwärtstest, derzeit 23 Anker), (c) Korpusfrequenz ≥ 15× in ≥ 3 verschiedenen Folios mit semantisch konsistentem Kontext. Ist keine oder nur eine Ausnahme erfüllt: HARD CAP ★★ ohne Ausnahme — Kandidat | or → ★★★★ bleibt (b ✓ + c ✓: 52×, 5 Folios); chor → ★★★★ bleibt (b ✓ + c ✓: 47×, 5 Folios); daiin → ★★★★ bleibt (b ✓ + c ✓: 38×, 5 Folios); shol → ★★★ bleibt (b ✓ + c ✓: 19×, 5 Folios); ky → ★★★ bleibt (a ✓ + b ✓); dy → ★★ (a nur 1/2 — zu lang für Grenzfall) | ★★★ |
-| R41 | **Präfix-Hierarchie-Protokoll (v6.4 erweitert):** Valide Reihenfolge: [d- Relativ (R45)] → [Konj.: o-/qo-/v-] → [Präp.: l-/b-/k-/m-] → [Kompositum: op-/of- = עַ+פֶּ] → [Artikel: ha-] → [Basis]. Folgende Strukturen sind **ungültig** und müssen verworfen werden: (a) Präposition direkt vor Konjunktion ohne Basiswurzel-Trennung, (b) mehr als 2 geschichtete Präfixe aus verschiedenen Klassen an einem Token, (c) sho--Präfix kombiniert mit positivem Prognose-Vokabular (or, chaiin, okal) im gleichen Token — Kandidat | Ausnahme: qo-k--Kombination in Quire C (R33) ist validierte Einzelklasse, kein Doppel-Präfix; illegale Beispiele: l-o-[Wort] (Präp.+Konj.), o-qo-[Wort] (Doppel-Konj.), qo-k-ch-[Wort] (> 2 Präfix-Layer); neu: d-Relativpräfix (R45) bildet äußerste Schale; op-/of- (R47) als Koordinatenmarker im astronomischen Register f58r P.26 | ★★★ |
+| R41 | **Präfix-Hierarchie-Protokoll (v6.4 erweitert):** Valide Reihenfolge: [d- Relativ (R45)] → [Konj.: o-/qo-/v-] → [Präp.: l-/b-/k-/m-] → [Kompositum: op-/of- = עַ+פֶּ] → [Artikel: ha-] → [Basis]. Folgende Strukturen sind **ungültig** und müssen verworfen werden: (a) Präposition direkt vor Konjunktion ohne Basiswurzel-Trennung, (b) mehr als 2 geschichtete Präfixe aus verschiedenen Klassen an einem Token, (c) sho--Präfix kombiniert mit positivem Prognose-Vokabular (or, chaiin, okal) im gleichen Token — Kandidat | Ausnahme: qo-k--Kombination in Quire C (R33) ist validierte Einzelklasse, kein Doppel-Präfix; illegale Beispiele: l-o-[Wort] (Präp.+Konj.), o-qo-[Wort] (Doppel-Konj.), qo-k-ch-[Wort] (> 2 Präfix-Layer); neu: d-Relativpräfix (R45) bildet äußerste Schale; op-/of- (R48, Quire H) als Koordinatenmarker im astronomischen Register f58r P.26 | ★★★ |
 | R42 | **Kongruenzpflicht für ★★★★+:** Ein Mapping-Eintrag erhält ★★★★ oder höher nur wenn (a) das zugeordnete Nomen in Genus und Numerus kompatibel ist und (b) die Kongruenz durch ≥ 1 unabhängigen Parallelbeleg im Corpus bestätigt wird. ★★★-Einträge ohne Kongruenztest bleiben vorläufig; bei erster Nachanalyse geprüft — Scheitern → **Herabstufung auf ★★** — Kandidat | ykchaiin Mask.Sg. + aiin Sg.mask. ✓ f9r; ykchy Mask.Sg. + chy Sg. ✓ f11v; ykchor Mask.Sg. + chor Sg. ✓ f11r; ykshol Mask.Sg. + shol Sg. ✓ f15r — 4/4 Kongruenztests bestanden; ykam/ytor f18v: Parallelbeleg noch ausstehend | ★★★ |
 | R43 | **Multi-Folio-Validierungspflicht (v6.3):** Ein Lexikoneintrag erhält ★★★ oder höher nur dann, wenn er in **mindestens 2 verschiedenen Folios** mit semantisch kompatiblem Kontext belegt ist. Ausnahme: Einzelfolio-Beleg als **★★★ Kandidat** möglich, sofern ≥ 8 unabhängige Belege im Folio und kein semantischer Widerspruch zu anderen Lexikoneinträgen — Bestätigung durch zweiten Folio-Beleg innerhalb der nächsten 5 analysierten Folios erforderlich; andernfalls automatische Rückstufung auf ★★ — Kandidat | ykam f18v (4×, Erstbeleg) → ★★★ Kand. bis Quire-H-Bestätigung; ytor f18v (3×) + f58r P.30 (R43 erfüllt) → **★★★★**; ykair f16r (1×) → ★★ provisorisch (unter Minimum 8×); kchom f001r (2×) → ★★★ Kand. (Flag bleibt) | ★★★ |
 | R44 | **Konsekutive Kurzwurzel-Sequenzsperre (v6.3):** Wenn zwei aufeinanderfolgende EVA-Wörter **beide** eine Basiswurzel mit ≤ 3 Konsonanten haben, kann die Sequenz insgesamt nur dann ★★★ oder höher erreichen, wenn: (a) mindestens **eines** der beiden Wörter durch den Rückwärtstest validiert ist (R40-Ausnahme b), **und** (b) die morphologische Kongruenz zwischen beiden Wörtern dem R42-Standard genügt (Genus/Numerus-Kompatibilität mit Parallelbeleg). Ist nur eine oder keine Bedingung erfüllt: Sequenz ★★. Nicht anwendbar auf Funktionswort-Hauptwort-Paare — Kandidat | ykchaiin + daiin: daiin Rückwärtstest-Anker (b ✓) + R42-Kongruenz ✓ → R44 greift nicht; ky + chor: Funktionswort-Ausnahme → R44 greift nicht; Neues Verb + neues Objekt (je ★★★ Kand.): kein Anker, kein Parallelbeleg → Sequenz ★★; shol + neues Adj. (Einzelbeleg): shol Anker ✓, R42-Kongruenz fehlt → ★★ | ★★★ |
-| D1/D2 | ⚠ **Phonotaktische Warnsignale** (Warnsystem, kein Hard Stop): **D1 Doppelkonsonanz-Warnung** — zwei identische Mapping-Ausgaben im Basiswort-Kern (z. B. EVA rr → ר-ר) erhalten ⚠ Doppelkonsonanz-Flag; erfordert explizite Erklärung (Geminierung/Dagesh, Assimilation, Schreibervarianz). **D2 Kehlkopf-Cluster-Warnung** — zwei laryngale/pharyngale Konsonanten nebeneinander (EVA-Mappings h/ch/aiin → ה/ח/ע) erhalten ⚠ Kehlkopf-Cluster-Flag; erfordert morphologische Rechtfertigung. Konfidenz wird in beiden Fällen _nicht automatisch_ reduziert. **R45-Ausnahme:** d--Anlaut vor Konsonant als aramäisches Relativpräfix triggert _kein_ D1-Flag; zurückgezogene Flags: dshodal, dshor, dchairam, dtor, dtshol, dchol — Kandidat | EVA-Phonologie noch nicht gesichert → kein Hard Stop möglich; D1-Erklärungsoptionen: Dagesh-Verdopplung, partielle Assimilation, Schreibervarianz; D2: Doppel-Laryngal im Mischna-Hebräisch selten und markiert; R45-Ausnahme: 6 D1-Fehlklassifikationen auf f58r durch aramäisches d-Relativpräfix aufgelöst | ★★ |
+| D1/D2 | ⚠ **Phonotaktische Warnsignale** (Warnsystem, kein Hard Stop): **D1 Doppelkonsonanz-Warnung** — zwei identische Mapping-Ausgaben im Basiswort-Kern (z. B. EVA rr → ר-ר) erhalten ⚠ Doppelkonsonanz-Flag; erfordert explizite Erklärung (Geminierung/Dagesh, Assimilation, Schreibervarianz). **D2 Kehlkopf-Cluster-Warnung** — zwei laryngale/pharyngale Konsonanten nebeneinander (EVA-Mappings h/ch/aiin → ה/ח/ע) erhalten ⚠ Kehlkopf-Cluster-Flag; erfordert morphologische Rechtfertigung. Konfidenz wird in beiden Fällen _nicht automatisch_ reduziert. **R45-Ausnahme:** d--Anlaut vor Konsonant triggert kein D1-Flag (s. R45) — Kandidat | EVA-Phonologie noch nicht gesichert → kein Hard Stop möglich; D1-Erklärungsoptionen: Dagesh-Verdopplung, partielle Assimilation, Schreibervarianz; D2: Doppel-Laryngal im Mischna-Hebräisch selten und markiert; R45-Ausnahme: 6 D1-Fehlklassifikationen auf f58r durch aramäisches d-Relativpräfix aufgelöst | ★★ |
 | R45 | **Aramäisches d-Relativpräfix als morphologische Klasse (v6.4):** Das EVA-Zeichen d- am Wortanfang, unmittelbar gefolgt von einem weiteren Konsonanten ohne Vokalträger, gilt als Aramaismus: aramäisches Relativpräfix דְּ/דִּי (de-/di- = „von/dessen/welches"). Es ist morphologisch von der Basiswurzel zu trennen. **(a) Keine D1-Flags:** d--Anlaut vor Konsonant triggert nicht das D1-Warnsignal. **(b) Präfix-Hierarchie-Erweiterung:** d- als Relativpräfix bildet die äußerste morphologische Schale (s. R41 v6.4). **(c) Abgrenzung:** d- als Basiskonsonant (z. B. dal = דַּל) erkennt man am folgenden Vokalträger; d- als Relativpräfix erkennt man an direkter Konsonantenfolge ohne Vokalindikator — Kandidat | f58r: dshodal (P.2), dshor (P.4), dchairam (P.5), dtor (P.34), dtshol (P.38), dchol (P.40) — 6 klare Instanzen; alle durch דְּ-Relativpräfix vollständig aufgelöst; 6 D1-Fehlklassifikationen zurückgezogen | ★★★ |
 | R46 | **Wurzelketten-Ausnahme für R44 (v6.4):** Wenn ≥ 3 aufeinanderfolgende EVA-Tokens morphologisch nachweislich dieselbe validierte Basiswurzel teilen — als Komposita, Ableitungen, Präfixformen oder Intensivierungen eines einzigen Rückwärtstest-Ankers — greift **R44 nicht**. Begründung: R44 soll zufällige Kollisionen verschiedener schwacher Kurzwurzeln blockieren; eine kohärente Wurzelkette ist das morphologische Gegenteil — bewusste stilistische Amplifikation (vgl. R19, R35). **Nachweis-Anforderung:** Explizite Dokumentation der Basiswurzel und aller Ableitungsformen; ein nicht-ableitbares Token bricht die Kette. **GibberishTest-Neutralität:** Pseudowörter bilden keine systematischen Wurzelketten — R46 erhöht die Testrate nicht — Kandidat | f58r P.5: char.ar.al.char.arary.ytalar — 6 Tokens, alle Derivate der validierten Basiswurzel א-ו-ר (Licht); R44 greift nicht, da keine zufällige Diversität sondern kohärente Intensivierung; semantisch: astronomische Licht-Litanei über Sternglanz | ★★★ |
 | R47 | **qo-Präfix-Vollintegration ab Quire H (Erweiterung von R33, v6.4):** Das qo--Präfix (וְ) ist in Quire H (Beinecke VIII) vollständig in Sprache A integriert — Belegdichte ~8 % der Tokens, gleichauf mit Sprache B auf f57r. Quire H ist keine Übergangszone (wie Quire C per R33), sondern ein voll-integrierter qo--Bereich. **Quire-Progressionsskala:** Quires A+B: absent · Quire C: emergierend (R33) · Quire T: vollständig · Quire H: **vollständig (NEU)**. **Konsequenz für R1:** R1 gilt nur für Quires A+B (Beinecke I+II). **Offene Frage:** Quires D–G (Beinecke IV–VII) noch nicht analysiert — monotone Zunahme erwartet — Kandidat | f58r (Quire H, Spr. A): 28+ qo--Formen in ~350 Token (Stichprobe: qor, qokaiin, qocphody, qokalam, qotyshey, qokaldy, qotaily u. a.); Vergleich: f17r/v Quire C (R33): 13 Belege/250 Token; f57r Quire T (Spr. B): ~8 %; f001r Quire A: 0/260 Token | ★★★ |
@@ -764,6 +754,6 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 ---
 
 Voynich-Manuskript — Formales Mapping-Dokument · Version 6.4 · Mai 2026
-Lexikon: 236 Einträge · Grammatikregeln: 47 · Rückwärtstest: 88% (23/26)
+Lexikon: 226 Einträge · Grammatikregeln: 47 · Rückwärtstest: 88% (23/26)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._
