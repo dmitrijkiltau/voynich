@@ -14,22 +14,42 @@
 		{ label: 'f13r P.1',   text: 'torshor opchy shol dy qopchy shol' },
 	];
 
+	// Canonical redirects for forms consolidated into primary entries (Redundanzanalyse v6.5)
+	const ALIASES = /** @type {Record<string,string>} */ ({
+		daiidy:  'daiindy',
+		kedy:    'chedy',
+		doiin:   'doaiin',
+		ykol:    'ychol',
+		ol:      'al',
+		keaiin:  'kaiin',
+		ckhol:   'kchol',
+		chetom:  'cthom',
+		yteor:   'ytor',
+	});
+
+	/** @param {string} eva */
+	function lexLookup(eva) {
+		return LEXICON.find(e => e.eva === eva)
+			?? LEXICON.find(e => e.eva === ALIASES[eva]);
+	}
+
 	/** @param {string} w */
 	function lookupWord(w) {
 		const wl = w.toLowerCase().trim();
-		const direct = LEXICON.find(e => e.eva === wl);
-		if (direct) return { ...direct, matchType: 'found' };
+
+		const direct = lexLookup(wl);
+		if (direct) return { ...direct, eva: wl, matchType: 'found' };
 
 		for (const pre of PREFIXES) {
 			if (wl.startsWith(pre.eva) && wl.length > pre.eva.length) {
 				const rest = wl.slice(pre.eva.length);
-				const found = LEXICON.find(e => e.eva === rest);
-				if (found) return {
+				const base = lexLookup(rest);
+				if (base) return {
 					eva: w,
-					heb: pre.heb + found.heb,
-					de: pre.de + ' + ' + found.de,
-					stars: found.stars,
-					cat: found.cat,
+					heb: pre.heb + base.heb,
+					de: pre.de + ' + ' + base.de,
+					stars: base.stars,
+					cat: base.cat,
 					matchType: 'prefix',
 				};
 			}
