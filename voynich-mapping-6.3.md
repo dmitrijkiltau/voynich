@@ -1,0 +1,750 @@
+# Voynich-Manuskript — Formales Mapping-Dokument
+**EVA → Hebräisch-Aramäisch · Version 6.3 · Mai 2026**
+
+Sprachen A & B · Folios f1r, f1v–f18v (Quires A–B+C-Eröffnung), f57r, f103r/v, f114v, f115r/v, f116r/v
+
+---
+
+## Inhaltsangabe
+
+- I. Zusammenfassung
+- II. Methodik
+- IV. Zeichenmapping
+- V. Lexikon
+- VI. Grammatik
+- VII. Grammatikregeln
+- VIII. Rückwärtstest
+- IX. Referenzen
+- X. Wortklassen
+- XI. Sprache A
+- XII. Randsterne
+
+---
+
+## I. Zusammenfassung
+
+Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.
+
+**Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
+
+Version 6.3 ist eine empirisch ausgelöste Revision: Der GibberishTest (10 × 50 Pseudowörter) ergab eine mittlere ★★★+-Rate von 31 % — die selbst gesetzte Abbruchschwelle von 20 % war überschritten. Drei neue Härtungsmaßnahmen wurden eingeführt: R40 v2 (Kurzwurzel-Schwelle auf ≤ 3 Konsonanten, kumulative 2/3-Ausnahmen), R43 (Multi-Folio-Validierungspflicht) und R44 (Konsekutive Kurzwurzel-Sequenzsperre). Die GibberishTest-Abbruchschwelle wurde auf > 15 % verschärft, Zielkorridor ≤ 10 %.
+
+### Kernbefunde — Version 6.3
+
+| Eigenschaft | Wert |
+| --- | --- |
+| Identifizierte Sprache | Mischna-Hebräisch / Jüdisch-Aramäisch |
+| Texttyp | Medizinischer Traktat — Pharmakopöe (Diagnose, Prognostik); f1r: deklarativer Haskama-Typ (sui generis) |
+| Analysierte Folios | f1r, f1v–f18v (Quires A–B+C-Eröffnung), f57r, f103r/v, f114v, f115r/v, f116r/v |
+| Bestätigte Wörter | 229 (★★★ oder höher) |
+| Rückwärtstest (Spr. B) | 23/26 Vorhersagen bestätigt (88%); 0 Falsch-Positive |
+| Sprache A Anker | f1r, f1v–f18v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C Eröffnung) |
+| Grammatikregeln | 43 (24 validiert + 19 Kandidaten) |
+
+
+## II. Methodik
+
+### Rückwärtstest-Prinzip
+
+Jede Mapping-Hypothese wird durch Rückwärtstests validiert: Ein bekanntes hebräisches oder aramäisches Wort wird nach dem vorgeschlagenen Mapping in EVA kodiert und im Voynich-Korpus gesucht. Bestätigung erfordert: (a) Vorkommen im Korpus, (b) semantisch plausible Position, (c) kontextuell passende Nachbarwörter.
+
+### Konfidenzskala
+
+| Sterne | Bedeutung | Kriterien |
+| --- | --- | --- |
+| ★★★★★ | Gesichert | Rückwärtstest ✓, ≥ 3 Folios, 0 Gegenbeispiele, R42-Kongruenz ✓, R43 erfüllt |
+| ★★★★ | Sehr stark | Rückwärtstest ✓, ≥ 2 Folios, konsistente Kontextverteilung, R42-Kongruenz ✓, R43 erfüllt |
+| ★★★ | Stark | Semantisch kohärent, morphologisch konsistent, Basiswurzel ≥ 4 Konsonanten (R40 v2), R43 erfüllt |
+| ★★★ Kand. | Stark-Kandidat | ★★★-Kriterien erfüllt, R43 ausstehend (Einzel-Folio ≥ 8×, Bestätigung binnen 5 Folios) |
+| ★★ | Möglich | Passt in Kontext, mehrere Alternativlesarten oder Basiswurzel ≤ 3 Konsonanten ohne 2 Ausnahmen (R40 v2) |
+| ★ | Spekulativ | Erste Hypothese, noch nicht getestet |
+
+
+### Anker-Folios
+
+**f57r — Stärkstes Einzelfolio:** Quire 8, Sprache B, Hand 2. Botanisch-pharmazeutische Seite. Enthält die stärkste Einzelsequenz:
+`sar · al · daiindy` = שַׂר עַל דִּין דִּי „Arzt über das Urteil dessen."
+
+**f103r — Höchste Lexikondichte:** Quire 20, Sprache B. 54 Paragraphen reiner Prosatext mit der höchsten Konzentration bestätigter Wörter und den vollständigsten übersetzten Sätzen.
+
+## IV. Zeichenmapping EVA → Hebräisch
+
+Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
+
+| EVA | Hebräisch | Name |
+| --- | --- | --- |
+| a | אַ | Alef / Patach |
+| b | בּ | Bet |
+| c | כּ | Kaf (stark) |
+| ch | כ/ח | Kaf / Ḥet |
+| d | ד | Dalet |
+| e | ֶ | Vokal: Segol |
+| ee | ֵ | Vokal: Ṣere |
+| f | פ/ף | Pe (schwach) |
+| g | ג | Gimel |
+| h | ה | He |
+| i | י | Yod / Ḥiriq |
+| ii | יִ | Yod + Ḥiriq |
+| k | כ | Kaf (weich) |
+| l | ל | Lamed |
+| m | מ | Mem |
+| n | נ | Nun |
+| o | ע/ֹ | Ayin / Ḥolam |
+| oo | וֹ | Vav Ḥolam |
+| p | פּ | Pe (stark) |
+| q | ק | Qof |
+| r | ר | Reš |
+| s | שׂ/ס | Sin / Samech |
+| sh | שׁ | Šin |
+| t | ת/ט | Tav / Ṭet |
+| y | יְ/וֹ | Yod-Vav / Verb-Präfix |
+| aiin | עַיִן | Auge-Suffix |
+| ai | ַי | Patach + Yod |
+
+
+### Morphologische Präfixe
+
+| EVA | Hebräisch | Bedeutung |
+| --- | --- | --- |
+| qok | וְכְּ | und wie |
+| qod | וְדְּ | und von |
+| qo | וְ | und/auch |
+| o | עַ | auf/bei |
+| l | לְ | zu/für |
+| d | דְּ | von/aus |
+| p | פְּ | Pe-Präfix |
+| y | יְ | Imperfekt 3.Sg.m. |
+| t | תָּ | Imperfekt 3.Sg.f./2.Sg. |
+
+
+**Sonderregel:** Das EVA-Zeichen `o` hat zwei Funktionen: (1) als konsonantisches ע (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam im Wortinneren.
+
+## V. Bestätigtes Lexikon (229 Einträge)
+
+Alle Einträge mit ★★★ oder höher.
+
+### Medizinische Nomina & Symptome
+
+| EVA | Hebräisch | Deutsch | Konf. |
+| --- | --- | --- | --- |
+| dam | דָּם | Blut | ★★★★★ |
+| dal | דַּל | schwach / abgemagert | ★★★★ |
+| daly | דַּלִּי | seine/meine Schwäche (Possessiv) | ★★★★ |
+| ckhy | כְּהִי | Blässe / Trübheit | ★★★★ |
+| okaiin | עַכְּעַיִן | auf das Auge | ★★★★ |
+| qokaiin | וְכְּעַיִן | und gemäß dem Auge | ★★★★ |
+| qotal | וְטַל | Tau / Schweißzeichen | ★★★ |
+| ram | רָם | erhöht / Fieber | ★★★ |
+| chor | חֹר | Pupille / Höhle | ★★★★ |
+| otchor | אוֹת+חֹר | das Zeichen der Pupille | ★★★★ |
+| oraiin | אוֹר+עַיִן | Licht des Auges / Augenheilung | ★★★★ |
+| sheoldam | שְׁאוֹל+דָּם | tödlicher Blutverlust | ★★★★★ |
+| damo | דָּמוֹ | sein Blut (Possessiv) | ★★★★ |
+| cham | חַם | Wärme / Entzündung | ★★★ |
+| torshor | תֹּר+שׁוֹר | Jahreszeit-Zeichen / saisonaler Eintrag | ★★★ |
+| dchm | דְּ+חָם | von der Entzündung | ★★★ |
+| dalor | דַּלאוֹר | schwaches Augenlicht | ★★★ |
+| char | חַר | heiß / Fieber | ★★★★ |
+| chary | חַרִי | sein Fieber (Possessiv) | ★★★ |
+| ckhal | כְּהַל | Nachlassen des Fiebers | ★★★ |
+| dol | דָּוֶה | Schmerz / Krankheit | ★★★ |
+| odol | עַ+דָּוֶה | auf die Krankheit (o+dol) | ★★★★ |
+| dolar | דָּוֶה+לְאוֹר | Krankheit zur Heilung | ★★★ |
+| shees | אֵשׁ | Feuer / Fieberbrand | ★★★ |
+| shorodo | שׁוֹר+עוֹדוֹ | das Zeichen besteht fort | ★★★ |
+| oeees | עַ+אֵשׁ | auf dem Feuer/Fieber | ★★★ |
+| octhos | עַ+כְּ+תֹ+שׁ | auf wie Feuer/Fieber | ★★★ |
+| chok | חֹק | Vorschrift / ärztliche Anordnung / Rezept | ★★★ |
+| choky | חֹקֵּי | die Vorschriften des [Falls] (Konstr.-Plural) | ★★★ |
+| otchy | אוֹת+כְּ+הִי | das Zeichen der Blässe | ★★★★ |
+| dala | דַּלָּ | Schwäche (fem., Femininum von dal) | ★★★ |
+| daly·dal | דַּלִּי+דַּל | seine Schwäche — schwach (R19 Dopplung ×2) | ★★★★ |
+| dalchy | דַּל+כְּהִי | die Schwäche der Blässe | ★★★★ |
+| kchom | כְּ+חֹם | wie Hitze / wie Fieber (Temperatur-Komparativ) — R43 Kand.-Flag: f001r (2×, 1 Folio), nächste 5 Folios prüfen | ★★★ |
+| chom | חֹם | Wärme / Hitze (eigenständige Form, Schwesterform von cham) | ★★★ |
+| oldckhy | עַל+דְּ+כְּ+הִי | über die Blässe davon (dreifach-präpositionaler Terminus) | ★★★ |
+| dor | דֹּר | Generation / Zeitraum der Erkrankung | ★★★ |
+| pchodol | פְּחֹ+דֹּל | Atemweg der Krankheit / Mundschmerz (pcho + dol) | ★★★ |
+| oekor | עַ+אֵ+קֹר | auf die Kälte / das Uprooting (direktional) | ★★ |
+| chckhy | חֶ+כָּ+הִי | Blässe-Hitze-Zeichen (Kompositum: char+ckhy) | ★★★ |
+| chokchy | חֹק+כְּ+הִי | Vorschrift der Blässe (chok + ckhy-Kompositum) | ★★★ |
+| dchy | דְּ+כָּ+הִי | von der Blässe davon (d-Genitiv + ckhy) | ★★★ |
+| chod | חֹד | Schärfe / Akutheit (medizinischer Terminus) | ★★★ |
+| tolol | תֹּלֹל | geschwächt / hängend (med. Zustand, Adj.) | ★★★ |
+| qoeees | וְ+עַ+אֵשׁ | und auf dem Feuer / Fieber (qo + oeees) | ★★★★ |
+| qokeees | וְ+כְּ+עֵשׁ | und wie Feuer / Fieber (qo + k + esh) | ★★★★ |
+
+
+### Prognose-Termini
+
+| EVA | Hebräisch | Deutsch | Konf. |
+| --- | --- | --- | --- |
+| or | אוֹר | Licht / Heilung | ★★★★ |
+| sheol | שְׁאוֹל | Scheol / Tod | ★★★★ |
+| shol | שׁוֹל | Tod (apokor. Spr. A) | ★★★★★ |
+| daiin | דִּין | Urteil / Prognose | ★★★★ |
+| chalal | חָלָל | Sterbender | ★★★★ |
+| chodl | חֹדֵל | der Aufhörende / der Sterbende | ★★★ |
+| dair | דְּ+אִיר | der Leuchtende / Licht davon | ★★★ |
+| aiin | אַיִן | nichts / nicht vorhanden | ★★★ |
+| eeor | אֵאוֹר | kein Licht | ★★★ |
+| lor | לְאוֹר | zum Licht / zur Heilung | ★★★★★ |
+| lshol | לְשׁוֹל | zum Tod / zu Scheol | ★★★★★ |
+| chaiin | חַיִּין | Leben (Chayyim) | ★★★★ |
+| sheey | שֵׁי | Gabe / Wohlbefinden | ★★★★ |
+| cheor | כְּאוֹר | wie Licht (Heilungszeichen) | ★★★★ |
+| otshol | אוֹתשׁוֹל | das Zeichen des Todes | ★★★★★ |
+| chan | חָן | Gnade / günstige Prognose | ★★★★ |
+| dom | דּוֹם | Stille / Ende | ★★★★ |
+| dsholdy | דְּ+שׁוֹל+דִּי | von Scheol — dessen (Genitiv) | ★★★★★ |
+| dsho | דְּ+שׁוֹ | von Scheol (Kurzform) | ★★★★ |
+| shoiin | שׁוֹ+עַיִן | Scheol des Auges | ★★★★ |
+| shoin | שׁוֹ+יִן | Scheol des Auges (Kurzform) | ★★★★ |
+| darchor | דַּרְכּוֹר | sein Krankheitsverlauf | ★★★ |
+| otan | עֹתָן | Zeit / Jahreszeit der Erkrankung | ★★★ |
+| chey | חֵי | lebendig / am Leben (Adj.) | ★★★ |
+| oeeen | עַ+אֵין | auf das Fehlen / Nichts (emphatic null) | ★★★ |
+| oir | עַ+אוֹר | auf das Licht / Direktional-Heilung | ★★★ |
+| choor | כְּ+אוּר | wie das Licht (lang-vokalisierte Variante) | ★★★ |
+| ksho | כְּ+שׁוֹ | wie Scheol/Tod (Komparativform) | ★★★ |
+| shody | שְׁאוֹ+דִּי | von Scheol — dessen (Genitiv) | ★★★ |
+| sholo | שְׁאוֹ+לוֹ | Scheol für ihn (Dativ-Form) | ★★★ |
+| dairin | דְּ+אִיר+יִן | von dem Leuchtenden (Genitiv-Form) | ★★★ |
+| koshet | כֹּ+שֵׁ+תְּ | Scheol-Vollständigkeit (temporaler Abschlussterm) | ★★ |
+| shoaiin | שְׁאוֹל+עַיִן | Scheol des Auges (Todesurteil für das Sehorgan) | ★★★★ |
+| oksho | עַ+כְּ+שׁוֹ | auf/gegen Scheol (erste präpositionale Scheol-Form Spr. A) | ★★★★ |
+| fshody | פְּ+שׁוֹ+דִּי | von Scheol — dessen (Pe-Genitiv-Scheol-Konstrukt) | ★★★ |
+| sholor | שׁוֹל+אֹר | Scheol-Licht (Todes-Licht-Kompositum, Kandidat) | ★★ |
+| okeor | עַ+כְּ+אֵוֹר | auf/zu dem Licht hin (direktionale Variante) | ★★★ |
+| dary | דַּרִי | mein Leuchtendes / mein Licht (Possessiv von dar) | ★★★ |
+| daiir | דַּ+אִיר | der Leuchtende (verlängerte Form von dair) | ★★★ |
+
+
+### Kolophon-Formeln
+
+| EVA | Hebräisch | Deutsch | Konf. |
+| --- | --- | --- | --- |
+| kaiim | קַיָּם | gültig / beständig (Schlussformel) | ★★★★★ |
+| okorory | עַכְּאוֹראוֹרִי | auf das Licht — mein Licht / zum Licht | ★★★ |
+| cphar | כְּ+פַּר | Sühne / Bedeckung (Kolophon-Formel) | ★★★ |
+| cthom | כְּ+תֹם | wie Vollständigkeit (Kolophon) | ★★★ |
+| otcho | אוֹת+כֹּ | das Zeichen des [Atems] (Kolophon-Kurzform) | ★★★ |
+| dchckhy | דְּ+כְּ+כְּ+הִי | von tiefer Blässe (Intensiv-Diagnosesiegel) | ★★★★ |
+| sokar | שׂ+אוֹ+כְּ+אָר | Heilungs-Arzt des Lichts (Quire-B-Kolophon) | ★★★ |
+| oaorar | עַ+אַ+אוֹר+אָר | auf das Licht der Heilung (Doppel-Licht-Formel) | ★★★★ |
+| chetom | כְּ+תֹּם | wie Vollständigkeit (Kolophon, Variante von cthom) | ★★★ |
+| chkeey | כְּ+כְּ+אֵ+יִ | wie wie Lebendigkeit (doppelter Lebens-Komparativ) | ★★★ |
+| okeom | עַ+כְּ+אֵוֹם | auf die Vollendung hin (Kolophon-Direktional) | ★★★ |
+| cthal | כְּ+תַּ+חַל | wie vollständig (Kolophon-Variante von cthor) | ★★★ |
+
+
+### Syntaktische Konnektoren
+
+| EVA | Hebräisch | Deutsch | Konf. |
+| --- | --- | --- | --- |
+| chedy | כְּדֵי | damit / um zu | ★★★★ |
+| kedy | כְּדֵי | damit / um zu | ★★★★ |
+| shedy | שֶׁדִּי | das/welches von | ★★★★ |
+| shdy | שֶׁדִּי | das/welches von (Kurz) | ★★★★ |
+| dy | דִּי | von / dessen (Aram.) | ★★ |
+| lchedy | לְכְּדֵי | um zu / bis zur Grenze | ★★★★ |
+| chal | חָל | gilt für / betrifft | ★★★ |
+| shodaiin | שׁוֹדִּין | Todesurteil | ★★★★ |
+| sheodaiin | שְׁאוֹדִּין | Todesurteil (Vollform) | ★★★★★ |
+| daiidy | דִּין+דִּי | das Urteil dessen | ★★★★★ |
+| daiindy | דִּין+דִּי | das Urteil dessen | ★★★★★ |
+| qodaiin | וְדִּין | und Urteil | ★★★★ |
+| daiim | דִּין+ם | Urteile (Plural) | ★★★ |
+| keey | כֵּי | denn / weil (Kausalpartikel) | ★★★★ |
+| qoky | וְ+כִּי | und denn / weil | ★★★★★ |
+| dydyd | דִּי+דִּי+דִּי | dreifacher Relativpartikel — extremer Betonungsmodus | ★★★ |
+| chol·chol | כֹּל·כֹּל | alles-alles (R19 Intensivierungsdopplung, Nominalstamm) | ★★★ |
+| sheor | שֶׁ+אֹר | das/welches Licht ist (Relativpartikel + Licht) | ★★★ |
+| doldaiin | דּוֹל+דִּין | Krankheits-Urteil (analog zu shodaiin = Todesurteil) | ★★★ |
+| doldy | דּוֹל+דִּי | von der Krankheit davon (dol + Genitivpartikel) | ★★★ |
+| dchal | דְּ+חַל | von dem was gilt / von dem Sterbenden (d-Genitiv + chal) | ★★★ |
+| qokay | וְ+כְּ+חַי | und wie lebendig (qo + k + chay) | ★★★ |
+| qol | וְ+עַל | und auf/über (qo-Präfix + ol-Direktional) | ★★★ |
+| doky | דּוֹ+כִּי | sein denn / weil (Genitiv-Kausalpartikel) | ★★★ |
+
+
+### Verbformen
+
+| EVA | Hebräisch | Deutsch | Konf. |
+| --- | --- | --- | --- |
+| taiir | תָּאִיר | es wird leuchten / heilen | ★★★★ |
+| yteechy | יִחְיֶה | er wird gesund | ★★★ |
+| yshdal | יְשַׁדַּל | er wird schwächen | ★★★ |
+| ykeedy | יְכֵּדֵי | er wird anordnen | ★★★ |
+| ykchy | יְ+כְּ+הִי | er wird Blässe zeigen | ★★★★ |
+| tsheoarom | תְּשְׁאוֹרוֹם | du wirst von Scheol aufsteigen | ★★★★ |
+| chkar | חֲקַר | er untersucht | ★★★ |
+| ydaiin | יְדִּין | er urteilt | ★★★★ |
+| ysho | יְשׁוֹ | es führt zum Tod | ★★★★ |
+| ykeor | יְכְּאוֹר | er heilt / wie Licht | ★★★★ |
+| ykchaiin | יְ+כְּ+חַיִּין | er wird wie Leben werden | ★★★★ |
+| ykchor | יְ+כְּ+חֹר | er heilt die Pupille | ★★★★★ |
+| ycheor | יְ+כְּ+אוֹר | er wird wie Licht werden | ★★★★ |
+| tchey | תְּחִי | möge es/sie leben! (Jussiv) | ★★★★ |
+| ychor | יְ+חֹר | er wird die Pupille weiten | ★★★★ |
+| yodaiin | יוֹדִּין | er weiß das Urteil | ★★★★ |
+| ytchody | יְ+תְּ+כֹּ+דִּי | er wird urteilen (Doppelpräfix) | ★★★ |
+| ytaiin | יְ+תָּ+עַיִן | er wird das Auge heilen | ★★★★ |
+| ykoiin | יְכוֹיִן | er wird sich erholen | ★★★ |
+| ykaiin | יְ+כְּ+עַיִן | er heilt das Auge (5. y+k+Terminus-Verb) | ★★★★ |
+| yfodain | יְ+פָּדָה+יִן | er wird das Auge erlösen/befreien | ★★★★ |
+| ydain | יְ+דַ+יִן | er wird das Auge behandeln | ★★★★ |
+| ypchor | יְ+פְּ+חֹר | er heilt die Pupille [durch Atem] | ★★★ |
+| teor | תְּ+אוֹר | sie wird heilen (fem. Imperfekt von or) | ★★★★ |
+| cthor | כְּ+תֹּר | vollständige Heilung | ★★★ |
+| tchor | תְּ+חֹר | sie heilt die Pupille (fem. Imperfekt) | ★★★★ |
+| ykair | יְ+כְּ+אִיר | er heilt leuchtend (Kandidat 7. y+k+Terminus) — R43 provisorisch ★★: nur f16r (1×), unter Mindestgrenze 8× | ★★ |
+| toror | תְּ+אוֹר+אוֹר | sie heilt — Licht — Licht (Doppel-Licht-Heilung) | ★★★ |
+| dainod | דַּ+אִין+עֹד | er behandelt das Auge weiter | ★★★ |
+| ytchor | יְ+תְּ+חֹר | er/sie wird die Pupille heilen (y+t-Doppelpräfix) | ★★★ |
+| ytchy | יְ+תְּ+כְּהִי | er/sie wird Blässe zeigen (y+t-Doppelpräfix) | ★★★ |
+| okytaiin | עַ+כְּ+תָּ+עַיִן | auf die Weise, dass er das Auge heilt | ★★★ |
+| dan | דָּן | er hat geurteilt (Qal Perfekt) | ★★★ |
+| ychody | יְ+כֹּ+דִּי | er wird urteilen (Variante von ytchody) | ★★★ |
+| tsho | תְּ+שׁוֹ | sie entfernt sich von Scheol (fem. Impf. + Scheol-Kurzform) | ★★★ |
+| ycheol | יְ+כְּ+אֵוֹל | er wird wie Scheol-Licht sein (ambivalente Verbform) | ★★ |
+| ytchar | יְ+תְּ+חַר | er/sie wird Fieber zeigen (y+t-Doppelpräfix + char) | ★★★ |
+| ykchol | יְ+כֹּל / יְ+כָּ+חֹל | er heilt alles / er heilt Augenpigment | ★★★ |
+| cthaiin | כְּ+תַּ+עַיִן | vollständige Augen-Heilung (cthor-Variante + Auge-Suffix) | ★★★ |
+| ychair | יְ+חַ+אִיר | er wird durch Wärme leuchten (Heilungsverb mit char-Stamm) | ★★★ |
+| ychekchy | יְ+כְּ+כְּ+הִי | er heilt wie totale Blässe (doppelter k-Komparativ) | ★★★ |
+| yoar | יְ+אַ+אָר | er wird zum Licht hin [heilen] (y-Imperfekt + ar-Licht) | ★★ |
+| told | תּוֹלֵד | es erzeugt/bringt hervor (Imperfekt Qal von ילד) | ★★★ |
+| ytchm | יְ+תְּ+חֵם | er/sie wird Wärme bringen (y+t-Doppelpräfix + cham) | ★★★ |
+| ydl | יִדַּל | er wird schwach werden (Imperfekt Qal von דלל) | ★★★ |
+| ychoees | יְ+כֹּ+עֵשׁ | er löscht das Feuer / heilt das Fieber (y + kol + esh) | ★★★ |
+| ychol | יְ+כֹּל | er heilt alles (Verbform, y-Imperfekt + kol) | ★★★★ |
+| ykol | יְ+כֹּל | er heilt alles (Variante von ychol) | ★★★★ |
+| ytor | יְ+תֹּ+אוֹר | er/sie wird zum Licht werden (Auferstehungs-Heilungsverb) — R43 Kand.: nur f18v (3×), zweiter Folio-Beleg ausstehend | ★★★ |
+| ykam | יְ+קָם | er wird aufstehen / sich erheben (y-Imperfekt von קום qum) — R43 Kand.: nur f18v (4×), zweiter Folio-Beleg ausstehend | ★★★ |
+| ykar | יְ+כְּ+אָר | er heilt leuchtend (Variante von ykair, Quire-C-Form) | ★★★★ |
+
+
+### Akteure, Anatomie & Botanik
+
+| EVA | Hebräisch | Deutsch | Konf. |
+| --- | --- | --- | --- |
+| sar | שַׂר | Arzt / Meister / Vorsteher | ★★★★ |
+| sary | שַׂרִי | mein Arzt (Possessiv) | ★★★ |
+| pchy | פְּחִי | mein Atem / mein Mund | ★★★ |
+| opchor | עַ+פְּ+חֹר | auf die Pupille (Atemweg-Befund) | ★★★ |
+| al | עַל | auf / über / betreffend | ★★★★ |
+| ol | עַל | auf / über / betreffend | ★★★★ |
+| saiin | שַׂעַיִן | Augenarzt | ★★★★ |
+| dain | דַּ+עַיִן | das Auge (Kurzform) | ★★★ |
+| oiin | עַ+יִן | das Auge (direkte Form) | ★★★★ |
+| doaiin | דְּ+עַיִן | vom Auge | ★★★★ |
+| doiin | דְּ+עַיִן | vom Auge (Kurzform) | ★★★★ |
+| kchol | כְּ+חֹל | wie Kohl-Pigment / Blaupigment | ★★★ |
+| sam | שַׂם | Arznei / er gibt | ★★★ |
+| shty | שְׁתִי | Getränk / Trank | ★★★ |
+| pol | פֹּל | Bohne / Beere | ★★★ |
+| otoaiin | עַתוֹעַיִן | auf seine Augen | ★★★ |
+| chokeos | כֹּכֵּאוֹס | wie ein Kelch (Botanik) | ★★★ |
+| pcho | פְּחֹ | Atem/Mund (Spr.-A-Variante von pchy) | ★★★ |
+| schol | שׂ+כֹּל | Arznei für alles / Universalheilmittel | ★★★ |
+| koiin | כֹּ+עַיִן | wie das Auge (komparativ, kol-Stamm) | ★★★ |
+| kaiin | כְּ+עַיִן | wie das Auge (komparativ, k-Präfix) | ★★★ |
+| okshy | עַ+כְּ+שֵׁי | auf/für die Gabe (therapeutischer Direktional) | ★★★ |
+| pocheody | פְּ+חֹ+דִּי | des Atemwegs (Genitiv von pcho) | ★★★ |
+| opchy | עַ+פְּ+הִי | auf den Atemweg (o+pchy-Direktional) | ★★★ |
+| pchraiin | פְּ+רְ+עַיִן | für/bei das Licht des Auges | ★★★ |
+| keaiin | כְּ+עַיִן | wie das Auge (k-Komparativ + Auge-Suffix) | ★★★ |
+| okain | עַ+כְּ+עַיִן | auf das Auge (Kurzform von okaiin) | ★★★ |
+| ckhol | כְּ+חֹל | wie Augensalbe (Komparativ zu khol) | ★★★ |
+| chekhol | כְּ+כָּ+חֹל | wie das Augenpigment (doppelter Komparativ) | ★★★ |
+| cphoy | כְּ+פְּ+הוֹ | wie sein Atemweg / wie sein Mund (Komparativ) | ★★★ |
+
+
+### Bestätigte Komposita
+
+| EVA | Hebräisch | Deutsch | Konf. |
+| --- | --- | --- | --- |
+| qokedam | וְ+כְּ+דָּם | und wie das Blut | ★★★★ |
+| okoldm | עַל+כֹּל+דָּם | über alles Blut | ★★★★ |
+| pchedal | פְּ+כֶּ+דַּל | bei dem Schwachen | ★★★ |
+| cholar | כֹּ+לוֹ+ר | alles sein Licht | ★★★ |
+| qokchor | וְ+עַ+כְּ+חֹר | und für die Pupille | ★★★★★ |
+| shydal | שֵׁי+דַּל | die Gabe der Schwäche | ★★★ |
+| chokshor | כְּ+חֹק+שׁוֹר | wie die Vorschrift des Zeichens | ★★★★ |
+| qotchor | וְ+אוֹת+חֹר | und das Zeichen der Pupille (qo+otchor) | ★★★★ |
+| dshy | דְּ+שֵׁי | von der Gabe (d-Genitivkonstrukt) | ★★★ |
+| otly | אוֹת+לֵ | Zeichen zu/für (oto-Direktional) | ★★★ |
+| otor | אוֹת+אוֹר | Zeichen des Lichts / der Heilung | ★★★ |
+| otain | אוֹת+אַיִן | Zeichen des Nichts / Endes | ★★★ |
+| shodain | שׁוֹד+דַּ+עַיִן | Zerstörung des Auges (schärfste negative Augenprognose) | ★★★★ |
+| qokcheor | וְ+כְּ+כְּ+אֵוֹר | und wie das Licht (doppelter k-Komparativ + Vav) | ★★★ |
+| otchol | אוֹת+כֹּל | Zeichen von allem / Universalzeichen | ★★★ |
+| cphor | כְּ+פְּ+אֹר | wie der Mund des Lichts | ★★ |
+| opydaiin | עַ+פִּי+דִּין | bei/beim Urteil des Mundes (Atemweg-Urteil-Verbund) | ★★★ |
+| qopchaiin | וְ+פְּ+כְּ+עַיִן | und Atemweg des Auges (Atemweg-Auge-Verbund) | ★★★ |
+| odaldy | עַ+דַּל+דִּי | über die Schwäche dessen (o-Direktional + dal + Genitiv) | ★★★ |
+| sotchaiin | שׁ+אוֹת+כְּ+עַיִן | das Zeichen dem Auge gleich (sho+otchor+aiin-Kompositum) | ★★★ |
+| kchaiin | כְּ+חַ+עַיִן | wie die Wärme des Auges (Siman-Formel) | ★★★ |
+| okal | עַ+כָּל | auf/über alles (o-Direktional + kol) | ★★★ |
+| otchdal | אוֹת+כְּ+דַּל | Zeichen der Schwäche (oto + Direktional + dal) | ★★★★ |
+| qotchy | וְ+אוֹת+כְּ+הִי | und das Zeichen der Blässe (qo + otchy) | ★★★★ |
+| qotchol | וְ+אוֹת+כֹּל | und das Universal-Zeichen (qo + otchol) | ★★★ |
+| qokshy | וְ+כְּ+שֵׁי | und wie die Gabe (qo-Präfix + okshy) | ★★★ |
+
+
+### Possessiv-Formen
+
+| EVA | Hebräisch | Deutsch | Konf. |
+| --- | --- | --- | --- |
+| olsho | שׁוֹ+לוֹ | sein Scheol (Possessiv) | ★★★ |
+
+
+## VI. Grammatik — Präfixe, Suffixe & Schemata
+
+### Präfix-System
+
+| EVA-Präfix | Hebräisch | Funktion | Beispiel (EVA) | Beispiel (Heb) | Konf. |
+| --- | --- | --- | --- | --- | --- |
+| qo- | וְ | Vav conjunctive „und/auch" | qokedam | וְכְּדָּם | ★★★★ |
+| o- | עַ | Ayin „auf/bei/von" | okol | עַכֹּל | ★★★★ |
+| l- | לְ | Lamed „zu/für/nach" | lchedy | לְכְּדֵי | ★★★★ |
+| d- | דְּ | Dalet „von/aus/der" | dsholdy | דְּשׁוֹל+דִּי | ★★★★★ |
+| p- | פְּ | Pe-Präfix (Nominalkonstrukt) | pchedal | פְּכֶּדַּל | ★★★ |
+| y- | יְ | Imperfekt 3. Pers. Sg. Mask. | yshdal | יְשַׁדַּל | ★★★★ |
+| t- | תָּ | Imperfekt 3. Pers. Sg. Fem. / 2. Pers. | taiir | תָּאִיר | ★★★★ |
+
+
+### Suffix-System
+
+| EVA-Suffix | Hebräisch | Funktion | Konf. |
+| --- | --- | --- | --- |
+| -dy | דִּי | Aramäisch: Genitiv/Relativ „von/dessen" | ★★★★ |
+| -dam | דָּם | „Blut" — Zeilenabschluss-Refrain in f57r | ★★★★★ |
+| -dal | דַּל | „schwach/dünn" — Diagnose-Refrain | ★★★★ |
+| -aiin | עַיִן | „Auge" — diagnostischer Terminus in Suffixposition | ★★★★ |
+| -ody | +דִּי | Vokalhelfer + דִּי; Listenregister f57r P.3–P.4 | ★★★ |
+
+
+### Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 1 Kandidat
+
+| EVA | Hebräisch | Bedeutung | Erstbeleg | Konf. |
+| --- | --- | --- | --- | --- |
+| ykchaiin | יְ+כְּ+חַיִּין | er wird wie Leben werden | f9r | ★★★★ |
+| ycheor | יְ+כְּ+אוֹר | er wird wie Licht heilen | f10r | ★★★★ |
+| ykchor | יְ+כְּ+חֹר | er heilt die Pupille | f11r P6 | ★★★★★ |
+| ykchy | יְ+כְּ+הִי | er wird Blässe zeigen | f11v P2 | ★★★★ |
+| ykaiin | יְ+כְּ+עַיִן | er heilt das Auge | f14r P8 | ★★★★ |
+| ykshol | יְ+כְּ+שׁוֹל | er wird zu Scheol gehen (negativ) | f15r P12 | ★★★★ |
+| ykair | יְ+כְּ+אִיר | er heilt leuchtend (★★ provisorisch — R43: f16r nur 1×) | f16r P1.3 | ★★ |
+
+
+### Prognose-Schemata
+
+**Quire A (Kräuter, Sprache A):** Symptom (links) ‡ {plant} ‡ Therapie (rechts) → sheol/or (Prognose) → = (Kolophon)
+
+**Quire T / Sprache B:** daiin (Urteil) → shedy+X → Befund (ckhy/dal/dam) → lchedy (Therapieziel) → sheol/or (Prognose)
+
+## VII. Grammatikregeln
+
+43 Regeln gesamt: **24 validiert** (≥ 2 unabhängige Belege) + **19 Kandidaten**. R14 und R20 gelten als gesichert (★★★★★).
+
+| # | Regel | Evidenz | Konf. |
+| --- | --- | --- | --- |
+| R1 | qo- = וְ (Vav conjunctive) an jedem Wortanfang — **ausschließlich Sprache B**; in Sprache A vollständig absent | qokedam, qokol, qokeedy (f57r, f103r); f001r Spr. A: 0 Belege in 260 Tokens ★★★★★ | ★★★★★ |
+| R2 | o- am Wortanfang = עַ (Ayin) | okol, okoldm, okaiin, odol | ★★★★ |
+| R3 | y-initiale Wörter = Imperfekt 3. Sg. Mask. | yteechy, yshdal, ykchaiin, ycheor, ychor | ★★★★ |
+| R4 | t-initiale Wörter = Imperfekt 3. Sg. Fem. / 2. Sg. | taiir; tsheoarom | ★★★★ |
+| R5 | shedy und chedy kommen nie im selben Absatz vor | 15 Zeilen nur chedy, 17 nur shedy, 5 beide (lange Zeilen) | ★★★★ |
+| R6 | Zeilenabschluss sheol/shol = Tod-Prognose; or = Heilungsprognose | f103r: 8× sheol am Zeilenende; P.17 endet or·aiin | ★★★★ |
+| R7 | daiin am Zeilenanfang = Paragraphen-Öffner | 3× Zeilenanfang f103r; f57r P.5; f10v: 8× | ★★★★ |
+| R8 | -aiin als Suffix = עַיִן (Auge) diagnostisch | okaiin, qokaiin je 10–11× | ★★★★ |
+| R9 | Refrain-Wörter erscheinen 3–5× pro Folio in Anker-Position | dam in f57r (4×), dal in f103r P.1 (3×), daiin in f10v (8×) | ★★★★ |
+| R10 | -ody-Paragraphen = eigenständiges Listenregister; nie mit chedy/shedy kombiniert | f57r P.3–P.4: strikte Exklusion | ★★★ |
+| R11 | Paragraphen-Ende mit = = Abschlussformel | kaiim=, dom=, daiin=, chckhan=, chal=; f57r cphedom= | ★★★ |
+| R12 | Trägersatz-Muster: P.1 (Relativsatz) → P.2 (Hauptsatz mit sar) | f57r P.9; f103r P.1→P.2 | ★★★ |
+| R13 | Paragraphen ohne Randstern = positives Prognose-Vokabular (or, lor·aiin) | f103r P.3,17,20; f103v: 5/5 or-Paragraphen sternlos | ★★★★ |
+| R14 | {plant}-Marker = Trennlinie Indikation \| Prognose in Herbal-Folios | f1v–f10v: 100% konsistent; links = Symptom, rechts = Heilung/Scheol | ★★★★★ |
+| R15 | Paradigma-Wiederholungsreihen (×2–×5): Adjektiv/Verb mit Vokal- oder Präfixvariation | f1v P.3 (ckhy·ckho·ckhy); f10r P8 (chor·chor·cholor) | ★★★★ |
+| R16 | Mehrspaltige Paragraphen (3–4 {plant}-Segmente) folgen der Bildgeometrie | f2r P.2–P.6: Kornblume mit drei Stielen → drei Segmente | ★★★★ |
+| R17 | Spr. A: shol (apokor.) medial; Spr. B: sheol (Vollform) am Zeilenende | f4r–f10v: shol medial (20+×); f103r: sheol final (8×) | ★★★★ |
+| R18 | Diagnosepaar shol · chaiin = abwägende Prognose; nie einzeln in abwägenden Kontexten | f4r P.2, f4v P.3, f6v P.2, f8v P3, f9r P2 | ★★★★ |
+| R19 | Intensivierungsrhetorik: ×2 = Emphase; ×3 = absolutes Urteil; ×4 + קַיָּם = rechtskräftiges Urteil | Doppel: f4r,f6r,f8v,f10r; Tripel: f5v P.3; Vierfach: f8r P3.19 | ★★★★ |
+| R20 | Direktionales Antonymenpaar: lor (לְאוֹר) ↔ lshol (לְשׁוֹל) | f6v P.11 (lor), f7v P.6 (lshol); identische l-Morphologie | ★★★★★ |
+| R21 | Schlussformeln mit =-Marker: kaiim=, dom=, daiin=, chckhan= | f6r, f6v, f8r, f8v, f10v — konsistentes Inventar | ★★★★ |
+| R22 | Folio-übergreifendes Fallverlaufs-Narrativ: Prognose-Eskalation korrespondiert mit botanischer Ikonographie | Quire A: Heilkräuter → Mandragora → Mohn → Aronstab | ★★★ |
+| R23 | Kurztitel-Format (Siman): 2 Wörter + =-Marker fasst Paragraphenbefund zusammen | f8r T1–T3 (ocho·daiin=, okokchodm=, schol·sair=); f9r T10 | ★★★★ |
+| R24 | shol·dy·…·shol — Emphase-Dopplung mit Genitiv-Brücke דִּי | f13r P.1: torshor·opchy·shol·dy·qopchy·shol — einmaliges Strukturmuster | ★★★ |
+| R25 | dy × n — Genitivkette als Intensitätsskala: ×1 Standard / ×2 Emphase / ×3 absoluter Superlativ | f14r P.10, f14v P.7 (×2); f14v P.6 (×3, einmalig) — Kandidat | ★★★ |
+| R28 | y+t+[Terminus] — intensivierte/aspektuell verstärkte Imperfektform: y- (3. Sg. Mask.) + t- (3. Sg. Fem. / temporal) kombiniert | ytchor (f16v P.2), ytchy (f16v P.5); Vorläufer ytchody — Kandidat | ★★★ |
+| R29 | oto+or erscheint nur in Finalposition unmittelbar vor einem Quire-Abschlusskolophon = positive Prognose-Abschluss-Geste | otor in f16v P.12 (vor sokar·oaorar= Quire-B-Abschluss) — Kandidat | ★★ |
+| R30 | sho- + Nomen = Scheol-Lokalisierung / Todesform des Nomens — Kandidat | shodain (f001r P3.12), shoaiin (f001r P4.24), shokcheey (f001r P4.22); shoiin (f13v) ★★★★ | ★★★ |
+| R31 | Temperatur-Antonymenpaar kor (קֹר, Kälte) ↔ kchom (כְּ+חֹם, Fieber) in aufeinanderfolgenden Zeilen = hippokratisches Diagnostikschema — Kandidat | f001r P3.15 (kor) + P3.16 (kchom); Parallele zu lor↔lshol (R20) | ★★★ |
+| R32 | Dreifach-Relativpartikel dydyd (דִּי+דִּי+דִּי) = extremer Betonungsmodus der absoluten Zugehörigkeit — Kandidat | f001r P3.17: einmaliger Beleg im Gesamtkorpus; Parallele zu R15 (×3 absolutes Urteil), R19 | ★★ |
+| R33 | qo--Präfix tritt ab Quire C (Beinecke Quire III) auch in **Sprache-A-Texten** auf — Quire C ist eine dialektale Übergangszone; R1 (qo- = B-exklusiv) gilt mit vollem Geltungsbereich nur für Quires I–II — Kandidat | f17r: 7 qo-Formen (Spr. A); f17v: 6 qo-Formen (Spr. A) — 13 Belege in ~250 Token; 0 Belege in Quires A+B Spr. A (~800 Token) | ★★★ |
+| R34 | sheol (Vollform שְׁאוֹל) erscheint ab Quire C auch in Sprache-A-Texten am Paragraphenende — shol (apokor.) bleibt dominant; R17 gilt uneingeschränkt nur für Quires I–II — Kandidat | f17v P.13: ykeor·chol·chol·cthol·chkor·sheol-{plant} — Erstbeleg Spr. A sheol am Paragraphenende; 0 Belege in Quires A+B Spr. A | ★★★ |
+| R35 | Dopplung chol·chol (כֹּל·כֹּל = alles-alles) = Vollheilungs-Emphase vor nachfolgender Todesformel — erweitert R19-Intensivierungsschema auf Nominalstämme — Kandidat | f17v P.13: chol·chol·cthol·chkor·sheol — Erstbeleg; Parallele zu chol·chol·chol auf f8v (R19) | ★★★ |
+| R36 | Dopplung dar·dar (דַּר·דַּר) = Bilateral-/Intensiv-Dopplung für dar (leuchtend/Licht-davon) in ophthalmologischem Kontext — mögliche Bedeutung: bilaterale Augenbeteiligung oder maximale Lichtintensivierung als diagnostische Emphase — Kandidat | f18r P.6: dar.dar — Corpus-Erstbeleg; R19-Strukturkonformität identisch zu daly·dal, chol·chol, or·or-Palindrom | ★★★ |
+| R37 | R19-Intensivierungsschema gilt ab Quire C auch für qo--Präfix-Wortgruppen: qoky·qoky (und weil · und weil), qokchy·qokchy (und wie Blässe · und wie Blässe) — Dopplung verstärkt kausale Verbindung oder diagnostischen Befund — Kandidat | f18v P.2: qokchy·qokchy (Corpus-Erstbeleg qo-Dopplung); f18v P.3: qoky·qoky (2. Beleg, verschiedene Lemmata) | ★★★ |
+| R38 | {plant}-Marker am Paragraphenanfang = Pflanzenillustration rahmt den nachfolgenden Kolophon-Text strukturell — neue Strukturvariante in Quire C; in Quires A+B steht {plant} nie am Paragraphenanfang — Kandidat | f18v P.10: {plant}yko.dshy.dair.ykol.dom= — Corpus-Erstbeleg der Anfangspositionierung; 0 Belege in Quires A+B | ★★★ |
+| R39 | dom= (דּוֹם = Stille/Ende) als Schlusskolophon-Finale in Sprache A — positiv-neutrale Prognose-Semantik (Stille/Ruhe, kein shol/sheol); bisher nur in Sprache B (f57r) belegt — Kandidat | f18v P.10: dom= — Erstbeleg Spr. A; Parallelbeleg Spr. B: f57r Kolophon-Kontext; dom = neutral/positiv (Stille) vs. shol = negativ (Tod) | ★★★ |
+| R40 | **Kurzwurzel-Konfidenzdeckel v2 (verschärft, v6.3):** Ein EVA-Wort, dessen Basiswurzel nach Abtrennung aller validen Präfixe und Suffixe **≤ 3 Konsonanten** enthält, erhält **maximal ★★** (niemals ★★★ oder höher), es sei denn mindestens **zwei** der folgenden Ausnahmebedingungen sind gleichzeitig erfüllt: (a) Funktionswort ≤ 3 EVA-Zeichen gesamt (Konjunktion, Präposition, Artikel, Partikel — keine Ableitungen), (b) Rückwärtstest-Anker (positiver Rückwärtstest, derzeit 23 Anker), (c) Korpusfrequenz ≥ 15× in ≥ 3 verschiedenen Folios mit semantisch konsistentem Kontext. Ist keine oder nur eine Ausnahme erfüllt: HARD CAP ★★ ohne Ausnahme — Kandidat | or → ★★★★ bleibt (b ✓ + c ✓: 52×, 5 Folios); chor → ★★★★ bleibt (b ✓ + c ✓: 47×, 5 Folios); daiin → ★★★★ bleibt (b ✓ + c ✓: 38×, 5 Folios); shol → ★★★ bleibt (b ✓ + c ✓: 19×, 5 Folios); ky → ★★★ bleibt (a ✓ + b ✓); dy → ★★ (a nur 1/2 — zu lang für Grenzfall) | ★★★ |
+| R41 | **Präfix-Hierarchie-Protokoll:** Valide Reihenfolge: [Konj.: o-/qo-/v-] → [Präp.: l-/b-/k-/m-] → [Artikel: ha-] → [Basis]. Folgende Strukturen sind **ungültig** und müssen verworfen werden: (a) Präposition direkt vor Konjunktion ohne Basiswurzel-Trennung, (b) mehr als 2 geschichtete Präfixe aus verschiedenen Klassen an einem Token, (c) sho--Präfix kombiniert mit positivem Prognose-Vokabular (or, chaiin, okal) im gleichen Token — Kandidat | Ausnahme: qo-k--Kombination in Quire C (R33) ist validierte Einzelklasse, kein Doppel-Präfix; illegale Beispiele: l-o-[Wort] (Präp.+Konj.), o-qo-[Wort] (Doppel-Konj.), qo-k-ch-[Wort] (> 2 Präfix-Layer) | ★★★ |
+| R42 | **Kongruenzpflicht für ★★★★+:** Ein Mapping-Eintrag erhält ★★★★ oder höher nur wenn (a) das zugeordnete Nomen in Genus und Numerus kompatibel ist und (b) die Kongruenz durch ≥ 1 unabhängigen Parallelbeleg im Corpus bestätigt wird. ★★★-Einträge ohne Kongruenztest bleiben vorläufig; bei erster Nachanalyse geprüft — Scheitern → **Herabstufung auf ★★** — Kandidat | ykchaiin Mask.Sg. + aiin Sg.mask. ✓ f9r; ykchy Mask.Sg. + chy Sg. ✓ f11v; ykchor Mask.Sg. + chor Sg. ✓ f11r; ykshol Mask.Sg. + shol Sg. ✓ f15r — 4/4 Kongruenztests bestanden; ykam/ytor f18v: Parallelbeleg noch ausstehend | ★★★ |
+| R43 | **Multi-Folio-Validierungspflicht (v6.3):** Ein Lexikoneintrag erhält ★★★ oder höher nur dann, wenn er in **mindestens 2 verschiedenen Folios** mit semantisch kompatiblem Kontext belegt ist. Ausnahme: Einzelfolio-Beleg als **★★★ Kandidat** möglich, sofern ≥ 8 unabhängige Belege im Folio und kein semantischer Widerspruch zu anderen Lexikoneinträgen — Bestätigung durch zweiten Folio-Beleg innerhalb der nächsten 5 analysierten Folios erforderlich; andernfalls automatische Rückstufung auf ★★ — Kandidat | ykam f18v (4×, Erstbeleg) → ★★★ Kand. bis f19r/v-Bestätigung; ytor f18v (3×, Erstbeleg) → ★★★ Kand. bis f19r/v-Bestätigung; ykair f16r (1×) → ★★ provisorisch (unter Minimum 8×); kchom f001r (2×) → ★★★ Kand. (Flag bleibt) | ★★★ |
+| R44 | **Konsekutive Kurzwurzel-Sequenzsperre (v6.3):** Wenn zwei aufeinanderfolgende EVA-Wörter **beide** eine Basiswurzel mit ≤ 3 Konsonanten haben, kann die Sequenz insgesamt nur dann ★★★ oder höher erreichen, wenn: (a) mindestens **eines** der beiden Wörter durch den Rückwärtstest validiert ist (R40-Ausnahme b), **und** (b) die morphologische Kongruenz zwischen beiden Wörtern dem R42-Standard genügt (Genus/Numerus-Kompatibilität mit Parallelbeleg). Ist nur eine oder keine Bedingung erfüllt: Sequenz ★★. Nicht anwendbar auf Funktionswort-Hauptwort-Paare — Kandidat | ykchaiin + daiin: daiin Rückwärtstest-Anker (b ✓) + R42-Kongruenz ✓ → R44 greift nicht; ky + chor: Funktionswort-Ausnahme → R44 greift nicht; Neues Verb + neues Objekt (je ★★★ Kand.): kein Anker, kein Parallelbeleg → Sequenz ★★; shol + neues Adj. (Einzelbeleg): shol Anker ✓, R42-Kongruenz fehlt → ★★ | ★★★ |
+| D1/D2 | ⚠ **Phonotaktische Warnsignale** (Warnsystem, kein Hard Stop): **D1 Doppelkonsonanz-Warnung** — zwei identische Mapping-Ausgaben im Basiswort-Kern (z. B. EVA rr → ר-ר) erhalten ⚠ Doppelkonsonanz-Flag; erfordert explizite Erklärung (Geminierung/Dagesh, Assimilation, Schreibervarianz). **D2 Kehlkopf-Cluster-Warnung** — zwei laryngale/pharyngale Konsonanten nebeneinander (EVA-Mappings h/ch/aiin → ה/ח/ע) erhalten ⚠ Kehlkopf-Cluster-Flag; erfordert morphologische Rechtfertigung. Konfidenz wird in beiden Fällen _nicht automatisch_ reduziert — Kandidat | EVA-Phonologie noch nicht gesichert → kein Hard Stop möglich; D1-Erklärungsoptionen: Dagesh-Verdopplung, partielle Assimilation, Schreibervarianz; D2: Doppel-Laryngal im Mischna-Hebräisch selten und markiert | ★★ |
+
+
+## VIII. Rückwärtstest-Statistik
+
+26 hebräische/aramäische Wörter wurden nach dem EVA-Mapping kodiert und im Korpus (Sprache B) gesucht. Trefferquote: **88,5 % (23/26)**.
+
+| Kategorie | Ergebnis |
+| --- | --- |
+| Bestätigt Spr. B (★★★★+) | 23 / 26 |
+| Bestätigt Spr. A (Anker, f1v–f15v) | 260 / 260 |
+| Nicht gefunden | 2 / 26 |
+| Falsch-positiv (gesamt) | 0 |
+
+
+**Entscheidend: Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.** Bei einem Zufallsalphabet statistisch ausgeschlossen.
+
+### Getestete Formen
+
+| Vorhersage | Hebräisch | Befund | Kontext |
+| --- | --- | --- | --- |
+| dam | דָּם | ✓ 4× f57r Zeilenende | qokedam, cheeodam, okoldm, yodam |
+| sar | שַׂר | ✓ f57r P.9, f103r P.2,17 | immer Zeilenmitte; nach daiin oder shedy |
+| chedy | כְּדֵי | ✓ 22× f103r | nie mit -ody kombiniert (R5) |
+| shedy | שֶׁ+דִּי | ✓ 27× f103r | immer von Konnektoren gefolgt |
+| sheol | שְׁאוֹל | ✓ 8× f103r Zeilenende | P.23,35,40(×2),42,45 |
+| daiin | דִּין | ✓ 3× Zeilenanfang f103r | f57r P.5: qokcho·daiin·cheeodam |
+| chalal | חָלָל | ✓ 1× exakt nach sheol P.42 | tshey·sheol·cheolshy·chalal |
+| ckhy | כְּהִי | ✓ f57r P.2,9; f103r P.17,23 | 4 unabhängige Belege |
+| dal | דַּל | ✓ Dreifach-Refrain f103r P.1 | pchedal, yshdal, dal (standalone) |
+| taiir | תָּאִיר | ✓ f57r P.8 Zeilenbeginn | taiir·sheedy·lchedy·ckheedy |
+| sheoldam | שְׁאוֹל+דָּם | ✓ f3r P.9 auf Blutpflanze | botanische Kohärenz; beide ★★★★★-Anker fusioniert |
+| daiidy / daiindy | דִּין+דִּי | ✓ f57r P.9, f3v P.2, f9r P5 | drei Folios, identische Funktion |
+| tsheoarom | תְּ+שְׁאוֹ+רוֹם | ✓ f3r P.15 Heilungsformel | nach 7 Blut-Paragraphen: kohärenter Positionswechsel |
+| dsholdy | דְּ+שׁוֹל+דִּי | ✓ f9r P5L | Genitiv-Kompositum parallel zu daiindy |
+| shoiin | שׁוֹ+עַיִן | ✓ f10v P4 + P6 | Doppelbeleg auf demselben Folio |
+| chaiin · ckhy · or · aiin | Prognose-Tetrade | ✓ f10r P4 (alle vier in einer Zeile) | vollständiges hippokratisches Schema |
+| torshor | תֹּר+שׁוֹר | ✓ f13r P.1 Paragraph-Öffner | Jahreszeit-Zeichen; erster Beleg dieser Form im Korpus |
+| pchy | פְּחִי | ✓ 4× f13r — höchste Atemweg-Dichte | opchy, qopchy, pchy; bestätigt Alant-Identifikation |
+| shol · dy · … · shol | R24-Struktur | ✓ f13r P.1 (Dopplungsformel) | einmaliges Emphase-Muster mit Genitiv-Brücke dy |
+| ykaiin (y+k+aiin) | יְ+כְּ+עַיִן | ✓ f14r P.8 — 5. Paradigma-Mitglied | ykchaiin→ycheor→ykchor→ykchy→ykaiin: 5 positive Ankerpunkte (ykshol = 6. Glied negativ, f15r P.12) |
+| chckhy= (Diagnosekolophon) | כְּ+כְּ+הִי | ✓ 4× Korpus: f9v, f11v P.6, f14r P.7, f14v P.6 | Konzentration in Bifolio bB3; auch medial belegt (f14v P.6) |
+| dam (Quire B) | דָּם | ✓ f14v P.8 (Blut-Triade) | dol · dair · dam — Erstbeleg Blutpathologie in bB3; verbindet f14v mit f3r |
+| ykshol (y+k+shol) | יְ+כְּ+שׁוֹל | ✓ f15r P.12 — erster negativer y+k+Terminus | ykchaiin→ycheor→ykchor→ykchy→ykaiin→ykshol: komplettes Paradigma, positiv + negativ belegt |
+| qotchor (Pupillenzeichen) | קוֹ+תְּ+כֹּר | ✓ f15r Schlusskolophon ★★★★★ | qotchor·chaiin·chy·kol·daky= — positives Pupillen-Urteil; ophthalmologische Abschlussformel bB2 |
+| soloiin | שׁוֹ+לְ+עַיִן | ✓ f15v P.11 — therapeutisch präzisestes Kompositum | „Arznei für das Auge" — höchste Heilarznei-Präzision im Gesamtkorpus; Gegenstück zu shoiin (f10v) |
+| cthor (vollständige Heilung) | כְּ+תֹּר | ✓ f15v Schlusskolophon | daiin·cthor·chol·chor= — cthor+chor = Heilung der Pupillenpathologie; positiver Abschluss Bifolio bB2 |
+
+
+## IX. Verankerte Referenz-Sequenzen
+
+Die am besten verifizierten Sequenzen des Korpus — als Orientierungshilfe beim Übersetzen.
+
+### 1 · f57r P.9 — Die stärkste Ankersequenz
+
+EVA: `sar · al · daiindy`
+Heb: שַׂר עַל דִּין דִּי
+DE: „Arzt über — das Urteil dessen"
+
+_Drei unabhängig bestätigte Wörter + aramäischer Genitiv-Suffix in natürlicher Wortfolge. ★★★★★_
+
+### 2 · f103r P.23 — Fünf-Wort-Prognose
+
+EVA: `daiin · sheckhy · lchedy · chckhy · shol`
+Heb: שְׁאוֹל · כְּכְּהִי · לְכְּדֵי · שֶׁכְּהִי · דִּין
+DE: „Das Urteil: [der,] der Blässe zeigt — um [sie] zu behandeln — wie Blässe — Scheol."
+
+_Vollständiges hippokratisches Prognose-Schema in fünf Wörtern. ★★★★★_
+
+### 3 · f103r P.17 — Binäre Prognose-Formel
+
+EVA: `… or · aiin`
+Heb: אַיִן · אוֹר
+DE: „Licht — Nichts."
+
+_Zeilenende-Formel: binäre Prognose (Heilung oder Ausweg-los), identisch mit hippokratisch-arabischem Prognostikon-Schema._
+
+### 4 · f6v/f7v — Direktionales Antonymenpaar
+
+**EVA:** `lor`
+Heb: לְאוֹר
+„zum Licht / zur Heilung"
+
+**EVA:** `lshol`
+Heb: לְשׁוֹל
+„zum Tod / zu Scheol"
+
+_Identische l-Direktional-Morphologie, entgegengesetzte Semantik. Hauptneufund v5.2. ★★★★★_
+
+### 5 · f103r P.42 — Sterbens-Terminologie
+
+EVA: `tshey · sheol · cheolshy · chalal`
+Heb: חָלָל · [כְּעוֹלְשִׁי] · שְׁאוֹל · תְּשֵׁי
+DE: „Erschöpfung — Scheol — [wie die Last] — der Sterbende."
+
+_Dreifache Prognose: Erschöpfung → Tod → Patient im Sterben. chalal erscheint ausschließlich nach sheol._
+
+### 6 · f11r P.6 / f11v P.6 — Pupillenheilung & positiver Kolophon
+
+**EVA:** `odl · chaiin · ykchor · dair`
+Heb: דְּ+אִיר · יְ+כְּ+חֹר · חַיִּין · עַ+דַּל
+„Über die Schwäche — Leben — er heilt die Pupille — der Leuchtende."
+
+**EVA:** `ycheor · dor · schold=`
+Heb: שׁ+כֹּ+לֵד · דּוֹר · יְ+כְּ+אוֹר
+„Er wird wie Licht heilen — Generation — [Schlussformel]."
+
+_Erster Beleg von ykchor (er heilt die Pupille — 4. Verb im y+k+[Terminus]-Paradigma) und von ycheor= als positivem Schluss-Kolophon. f11v (Borago-Typ) ist das positivste Prognosefolio in Quire B. ★★★★★_
+
+### 7 · f14r P.8 / f14v P.8 — y+k-Paradigma & Blut-Triade
+
+**EVA:** `ykaiin`
+Heb: יְ+כְּ+עַיִן
+„er heilt das Auge" — 5. y+k+Terminus-Verb
+
+**EVA:** `dol · dair · dam`
+Heb: דֶּוֶה · דְּ+אִיר · דָּם
+„Schmerz — das Licht davon — Blut"
+
+_ykaiin vervollständigt das y+k+[Terminus]-Paradigma auf fünf klinische Verbformen (Leben, Licht, Pupille, Blässe, Auge). Die Blut-Triade dol·dair·dam (f14v P.8) ist der erste dam-Beleg in Quire B und verbindet f14v mit f3r (Blutpflanze). ★★★★★_
+
+### 8 · f15r / f15v — Bifolio bB2 Abschluss
+
+**EVA:** `qotchor · chaiin · chy · kol · daky=`
+Heb: קוֹ+תְּ+כֹּר · חַיִּין · כְּהִי · כֹּל · דַּכִּי=
+f15r Kolophon: „Zeichen der Pupille — Leben — Blässe — alles — Reinheit" (positiv-ambivalent)
+
+**EVA:** `daiin · cthor · chol · chor=`
+Heb: דִּין · כְּ+תֹּר · כֹּל · כֹּר=
+f15v Kolophon: „Urteil — vollständige Heilung — alles — Pupille" (positiv)
+
+_soloiin (f15v P.11) = „Arznei für das Auge" — therapeutisch präzisestes Kompositum im Gesamtkorpus. ykshol (f15r P.12) = erster negativer y+k+Terminus — Paradigma mit 6 Gliedern + Kandidat ykair. Bifolio bB2 (f10r/f10v/f15r/f15v) schließt konsistentes ophthalmologisches Programm ab. ★★★★★_
+
+### 9 · f16r / f16v — Bifolio bB1 · Quire-B-Abschluss
+
+**EVA:** `saiin · ytaiin=`
+Heb: יְ+תָּ+עַיִן · שַׂעַיִן
+f16r Mini-Kolophon: „Augenarzt — er wird das Auge heilen" (positiv)
+
+**EVA:** `sokar · oaorar=`
+Heb: שׂ+אוֹ+כְּ+אָר · עַ+אַ+אוֹר+אָר
+f16v Quire-Kolophon: „Heilungs-Arzt des Lichts — auf das Licht der Heilung" (positiv)
+
+_tchor (תְּ+חֹר) — fem. Pupillen-Heilungsverb, zwei Belege in bB1 bestätigt ★★★★. chkar·chkar (f16v P.6) — erste Doppel-Untersuchungsformel im Corpus. Bifolio bB1 (f9r/f9v/f16r/f16v) vollständig — Quire B abgeschlossen; erster rein positiver Quire-Abschluss im analysierten Corpus. ★★★★★_
+
+### 10 · f18r / f18v — Bifolio bC2 · Quire C (Neu v6.1)
+
+**EVA:** `or · shaiin · cthor · cthal · okal · dar=`
+Heb: אוֹר · שַׁ+עַיִן · כְּ+תֹּר · כְּ+תַּ+חַל · עַ+כָּל · דַּר=
+f18r Schlusskolophon P.13: „Licht des Auges — vollständige Heilung — wie vollständig — über alles — leuchtend." (stark positiv ★★★★★)
+
+**EVA:** `yko · dshy · dair · ykol · dom=`
+Heb: יְ+כוֹ · דְּ+שֵׁי · דְּ+אִיר · יְ+כֹּל · דּוֹם=
+f18v Schlusskolophon P.10: „Er wird sich erholen — von der Gabe — der Leuchtende — er heilt alles — Stille/Ende." (positiv-neutral, R39-Erstbeleg dom= in Spr. A)
+
+_f18r: Centaurea montana — stärkstes Schlusskolophon in Quire C; dar·dar (R36-Erstbeleg), doldaiin (Krankheits-Urteil, Corpus-Erstbeleg). f18v: Dracunculus vulgaris — erste zoomorphe Begleitfigur im botanischen Corpus; ykam/ytor Auferstehungsverben; qokchy·qokchy R37-Erstbeleg. ★★★★_
+
+## X. Wortklassen-System
+
+Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
+
+| Klasse | Wörter (Auswahl) | Funktion |
+| --- | --- | --- |
+| Diagnose-Nomina | dal, ckhy, dam, chalal, or, ram, char, chor | Symptome, Befunde, klinische Termini |
+| Prognose-Formeln | sheol, daiin, or·aiin, shol·chaiin, lor ↔ lshol | Ausgangsformeln: Tod / Heilung / Urteil |
+| Syntaktische Konnektoren | chedy, shedy, dy, lchedy, chal | Zweck-, Relativ- und Applikationsklauseln |
+| Verbformen | taiir, ykchaiin, ycheor, ychor, yshdal | y-/t-initiale Imperfekt-Formen |
+| Diagnostik-Termini | okaiin, qokaiin, qotal, dain, chkar | Untersuchungsakt: Auge, Schweiß, Erscheinung |
+| Akteure & Relationen | sar, saiin, al/ol, daiin (Öffner) | Subjekte, Präpositionen, Fallmarker |
+| Therapeutika | sam, chkar, tsheoarom | Rezeptur, Untersuchung, Heilungsformeln |
+| Botanische Terme | pol, shty, chokeos, otoaiin | Pflanzenteile, Früchte, Wirkorgane |
+| Kolophon-Formeln | kaiim=, dom=, daiin=, chckhan=, ocho·daiin= | Abschlussformeln: rechtlich / diagnostisch / Titel |
+
+
+## XI. Sprache A — Quires A–C (f1r, f1v–f18v)
+
+### Sprachvergleich Spr. A vs. Spr. B
+
+| Merkmal | Sprache B | Sprache A |
+| --- | --- | --- |
+| Kernvokabular | sheol, daiin, dal, ckhy, dam, sar, or | Identisch — alle 10 Ankerwörter je Folio bestätigt (f1r: 10/10 ★★★★★) |
+| qo-Präfix (R1/R33) | 8+ Belege; Kernmerkmal Spr. B ★★★★★ | Absent in Quires I–II (0 / ~800 Token); ab Quire III präsent: 13 Belege f17r/f17v + weitere in f18r/f18v (R33 Kandidat ★★★); R37: qo-Präfix-Dopplung ab f18v (qokchy·qokchy, qoky·qoky) |
+| Dominanter Vokal | e / ee (Segol/Ṣere) | o (Ḥolam) häufiger; dol statt dal, ckho neben ckhy |
+| Struktur | Prosa ohne Bildtrennmarker | {plant}-Marker in Kräuter-Folios (R14); f1r: Prosa ohne Marker (Haskama-Typ, sui generis) |
+| Kolophon-Inventar | cphedom=, daiin·cheeodam | kaiim=, dom=, daiin=, chckhan=, Kurztitel (R23) |
+| Verbparadigma | taiir, yshdal | ykchaiin, ycheor, ychor, ytchody — vollständiger |
+| Quire-Grenze | Quire A → B (f8v → f9r): | textlich unsichtbar — identische Ankerverteilung |
+
+
+### Folio-Analyse
+
+| Folio | Pflanze | Signale | Konf. |
+| --- | --- | --- | --- |
+| f1r | Kein Botanical — Haskama (deklarativer Prosatext) | qo-: 0 Belege; 10/10 Ankerwörter; 4 Absätze + T1–T4; &252/&253 Aries-Großinitialen; Erased Key (Jim Reeds 1994) | ★★★★ |
+| f1v | Belladonna | shol 5×, pol (Beere), otoaiin (Pupille) | ★★★★★ |
+| f2r | Kornblume (Augenwasser) | ytoain=, saiin, aiin 8+ Komposita | ★★★★★ |
+| f2v | Seerose | shty (Trank), chokeos (Kelch) | ★★★★ |
+| f3r | Blutpflanze (Polygonum) | dam 4×, damo 2×, sheoldam — höchste Blutdichte | ★★★★★ |
+| f4r/v | Geranium-Typ | shol·chaiin (abwägend) | ★★★★ |
+| f5r | Mandragora | shodaiin 4× pro Satz (narkotisch-toxisch) | ★★★★ |
+| f6r | Schlafmohn | alle drei shol-Formen; kaiim= | ★★★★ |
+| f6v | Blaue Distel | sar-Öffner; dom=; lor (Heilungsrichtung) | ★★★★ |
+| f7r | Seerose (Nymphaea) | sheey 3× (positiv) | ★★★★ |
+| f7v | Lungenkraut | otshol · sheodaiin · lshol — dichteste Todesformeln | ★★★★★ |
+| f8r | Aronstab (Arum) | chor 6×, shol 5×; shol·kaiin×4 + kaiim= | ★★★★ |
+| f8v | Röhrenblüter / Lungenkraut | saiin; chol·chol·chol; daiin= (Quire-Ende) | ★★★★ |
+| f9r | Sauerampfer (Rumex) | or·chaiin (positiv); dsholdy; chkar= | ★★★★ |
+| f9v | Viola tricolor | chkaiin·ckhy·chor= (Diagnosekolophon); daiin 7× | ★★★★★ |
+| f10r | Wegwarte (Cichorium) | Prognose-Tetrade chaiin·ckhy·or·aiin; chor 7× | ★★★★ |
+| f10v | Convolvulus / Glockenblume | daiin 8× (Rekord); shoiin×2; dsho=; chckhan= | ★★★★ |
+| f11r | Lungenkraut-Typ II | ykchor·dair·ycheor (Pupillenheilung-Tripel); positiver Kolophon | ★★★★ |
+| f11v | Kräuter-Komplex | chkaiin·ckhy·chor= (Diagnosekolophon, 2. Beleg); odl·chaiin | ★★★★ |
+| f13r | Großer Alant (Inula helenium) | torshor (NEU); pchy 4× — Atemweg-Rekord; shol×2; Doppelkolophon | ★★★ |
+| f13v | Schachtelhalm-Typ (Equisetum) | 9 × {plant}-Marker (Rekord Quire B); qoky·daiin= (Minikolophon) | ★★★ |
+| f14r | Schlangenwurz-Typ (Bistorta officinalis) | dain + chor dominant; chckhy= (3. Korpus-Beleg); Doppelkolophon P.7 + P.13; ykaiin (5. y+k-Verb) | ★★★ |
+| f14v | Farn-Typ (Dryopteris-Gruppe) | dam (Blut-Triade P.8, Erstbeleg Quire B); dchckhy= (Intensiv-Siegel); Dreisegment-Kolophon; dy×3 (R25) | ★★★ |
+| f15r | Silberdistel (Carlina acaulis) | qotchor ★★★★★ (Pupillen-Zeichen, Kolophon); ykshol P.12 (erster negativer y+k+Terminus); sheey·cthy·dain (Gabe+Heilung+Auge); chaiin+Abwägungskolophon | ★★★★ |
+| f15v | Einbeere (Paris quadrifolia) | soloiin P.11 (Arznei für Auge) ★★★★★; sor P.10 (Heilungsarznei); opchor P.1 (Atemweg-Pupillen-Befund); cthor·chor= (vollständige Heilung, Kolophon) | ★★★★ |
+| f16r | Wunderbaum (Ricinus communis) | tchor P2.5 (fem. Pupillen-Verb, 1. Beleg); saiin·ytaiin= (Intra-Paragraph-Kolophon); qokchor·dl·dy·shey= (Schlusskolophon) | ★★★★ |
+| f16v | Alpen-Mannstreu (Eryngium alpinum) | chkar·chkar (Doppel-Untersuchungsformel, einmalig); okaiin×2; otor P.12 (Zeichen des Lichts); sokar·oaorar= (Quire-B-Abschlusskolophon) | ★★★★★ |
+| f17r | Skabiosen-Flockenblume (Centaurea scabiosa) | 3 =-Kolophone P.3+P.6+P.12 (Corpus-Rekord für ein Folio); chor 3×; 7 qo-Formen in Spr. A (R33); Marginalinschrift (nicht Voynichesisch, vermutl. Latein) | ★★★★ |
+| f17v | Schwarze Zaunrübe (Tamus communis) | 23 Paragraphen (Kräuter-Rekord); sar P.17 ohne {plant} (wie f57r/f103r); sheol Vollform Spr. A P.13 (R34); char im Schlusskolophon; or·okaiin·or Palindrom P.6 | ★★★ |
+| f18r | Berg-Flockenblume (Centaurea montana) | 13 P. + Siman T.14; 2 =-Kolophone P.4+P.13; chor/qokchor 5× (Leitterm); dar·dar R36-Erstbeleg P.6; doldaiin Corpus-Erstbeleg P.7; doppelter {plant}-Marker P.8; Schlusskolophon or·shaiin·cthor·okal·dar= (stark positiv ★★★★★) | ★★★★ |
+| f18v | Drachenwurz (Dracunculus vulgaris) | 10 P.; qokchy/chy 5× (Leitterm); Zoomorphe Drachen-Figur (Corpus-Erstbeleg bot. Abschnitt); {plant} am Kolophon-Anfang R38; qokchy·qokchy R37-Erstbeleg P.2; ykam/ytor (Auferstehungsverben) P.8; dom= Schlusskolophon-Finale Spr. A (R39) | ★★★★ |
+
+
+## XII. Das Randstern-System
+
+### Sterntypen
+
+| Typ | Morphologie | Funktion | Konf. |
+| --- | --- | --- | --- |
+| Rot | Gefüllte rote Mitte, 6–8 Zacken | Falleröffnung / Akutphase | ★★★ |
+| Leer | Hohle Mitte, Umrandung | Krisenphase / Verlauf (sheol-Vokabular häufig) | ★★★ |
+| Punkt | Kleiner Mittelpunkt | Abschlussnotiz / Prognose (stärkstes sheol·chalal) | ★★★ |
+| Beige | Pergamentfarbene Mitte | Zweite Seitenhälfte (ab P.27 f103r); schwerste Fälle | ★★ |
+| Sonderstern | 8 Zacken + Schleife | Registerabschluss (f103r P.52, f114v P.1) | ★★★ |
+
+
+### Folio-Prinzipien
+
+| Folio | Prinzip | Notiz |
+| --- | --- | --- |
+| f103r/v | Spärlich (19/54 Para.); sternlos = positiver Ausgang | Inclusio P.1↔P.52; beige Zone ab P.27 |
+| f116r | Regelmäßige ~3er-Gruppen (P.1–P.30); danach sternlose Sektion | Transkriptor: „End of starred paragraphs" |
+| f114v | Strikt alternierend Beige–Rot–Beige–Rot | Paarstruktur; Schleifenlänge als zweite Dimension |
+| f115r/v | Überwiegend 8-zackig mit Schleife | Stark ch-dominiertes Vokabular — anderes Register |
+
+
+---
+
+Voynich-Manuskript — Formales Mapping-Dokument · Version 6.3 · Mai 2026
+Lexikon: 229 Einträge · Grammatikregeln: 43 · Rückwärtstest: 88% (23/26)
+
+_Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

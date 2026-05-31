@@ -2,8 +2,8 @@
 	import { CONFIDENCE_SCALE, ANCHOR_FOLIOS } from '$lib/methodology-data.js';
 </script>
 
-<div class="methodik">
-	<div class="methodik-grid">
+<div class="methodology">
+	<div class="methodology-grid">
 		<div>
 			<h3>Rückwärtstest-Prinzip</h3>
 			<p>Jede Mapping-Hypothese wird durch Rückwärtstests validiert: Ein bekanntes hebräisches oder aramäisches Wort wird nach dem vorgeschlagenen Mapping in EVA kodiert und im Voynich-Korpus gesucht. Bestätigung erfordert: (a) Vorkommen im Korpus, (b) semantisch plausible Position, (c) kontextuell passende Nachbarwörter.</p>
@@ -43,14 +43,18 @@
 </div>
 
 <style>
-	.methodik-grid {
+	.methodology-grid {
     display: flex;
 		justify-content: space-between;
     flex-wrap: wrap;
     gap: 0 2rem;
 
-    & > div {
+    & > div:first-child {
       flex: 0 1 680px;
+    }
+
+    & > div:last-child {
+      flex: 0 1 360px;
     }
 	}
 
