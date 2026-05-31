@@ -81,7 +81,7 @@ export function generateMarkdown() {
   line();
   line('**Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.');
   line();
-  line('Version 6.5 wird ausgelöst durch Bifolio bC3 (f19r + f19v — Stephanskraut + Teufelsabbiss). Strukturelle Höhepunkte: erste daiin·daiin-Dopplung (R19-Erweiterung), erste 7-gliedrige y+t-Verb-Litanei (R49 Kandidat), dritter ytor-Beleg → ★★★★★, erster Richtungsterm darom (Süden, f19v P.2), stärkste qo-Dichte in Quire C (~10 %, R33-Erweiterung). 15 neue Lexikonkandidaten.');
+  line('Version 6.6 wird ausgelöst durch f77r (D2-Phonotaktik-Härtetest, Quire M/XIII). Strukturelle Höhepunkte: R50 — Galiläische Guttural-Abschwächung formalisiert `ee`/`oo` als reine Vokalmarker (Tsere/Holam); D2-Reduktion 42→3 (93 %). 3 Residualkonflikte identifizieren genuine ח-ע-Cluster (`cheol`/`cheeol`). Neuer Lexikonkandidat: `cheol` ★★ (schöpfen/heben, balneologisch).');
   line();
   h(3, `Kernbefunde — Version ${STATS.version}`);
   line();

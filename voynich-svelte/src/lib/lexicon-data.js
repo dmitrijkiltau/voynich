@@ -263,4 +263,6 @@ export const LEXICON = [
   { eva: 'okchod',    heb: 'עַ+כְּ+חֹד',            de: 'auf die Schärfe/Akutheit (o + k + chod, therapeutischer Direktional) — f19v P.11',                                     stars: '★★★★', cat: 'kompositum' },
   { eva: 'yees',      heb: 'יְ+אֵשׁ',               de: 'er löscht das Feuer/Fieber (y-Imperfekt + esh-Stamm) — f19v P.12',                                                      stars: '★★★',  cat: 'verb'       },
   { eva: 'ytar',      heb: 'יְ+תַּ+אָר',            de: 'er wird Licht geben (Quire-C-a-Vokal-Variante von ytor) — f19v P.12',                                                  stars: '★★★',  cat: 'verb'       },
+  // ── v6.6 (f77r — D2-Phonotaktik-Härtetest, Quire M) ─────────────────────
+  { eva: 'cheol',          heb: 'ח-ע-ל',           de: 'schöpfen / heben (Hypothese; Var. cheeol P.21; genuine ח-ע-Cluster, nicht durch R50 auflösbar; balneologisch: Aquädukt-Ikonographie f77r) — f77r P.21, P.24, P.38', stars: '★★',   cat: 'verb'       },
 ];
