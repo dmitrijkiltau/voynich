@@ -1,4 +1,4 @@
-<script>
+﻿<script>
 	import { MAPPING, LEXICON, STATS } from '$lib';
 	import TranslatorTool from '$lib/components/TranslatorTool.svelte';
 	import MappingGrid from '$lib/components/MappingGrid.svelte';
@@ -14,7 +14,6 @@
 	import MarginStarsSection from '$lib/components/MarginStarsSection.svelte';
 	import GibberishTest from '$lib/components/GibberishTest.svelte';
 	import FolioProgress from '$lib/components/FolioProgress.svelte';
-
 	let evaInput       = $state('');
 	let activeSection  = $state('tool');
 	let menuOpen       = $state(false);
@@ -77,6 +76,10 @@
 		evaInput = cur + (cur && !cur.endsWith(' ') ? ' ' : '') + text + ' ';
 		scrollTo('tool');
 	}
+
+	function exportMarkdown() {
+		window.open(`/voynich-mapping-${STATS.version}.md`, '_blank');
+	}
 </script>
 
 <!-- Reading progress bar -->
@@ -134,7 +137,10 @@
 		</div>
 
 		<button class="print-btn" onclick={() => window.print()} title="Exportieren oder drucken">
-			⎙ Exportieren/Drucken
+			Drucken
+		</button>
+		<button class="print-btn" onclick={exportMarkdown} title="Markdown-Export in neuem Tab öffnen">
+			Markdown
 		</button>
 
 		<div class="sidebar-meta">Mai 2026 · v{STATS.version}</div>
