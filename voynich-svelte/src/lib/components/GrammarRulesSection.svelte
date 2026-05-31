@@ -2,7 +2,7 @@
 	import { RULES } from '$lib/grammar-rules-data.js';
 </script>
 
-<p>{RULES.length} Regeln gesamt: <strong>24 validiert</strong> (≥ 2 unabhängige Belege) + <strong>{RULES.length - 24} Kandidaten</strong> (darunter v6.2-Härtungsmaßnahmen R40–R42 und D1/D2). R14 und R20 gelten als gesichert (★★★★★). Regeln mit ⚠ im Titel sind Warnsignale ohne automatische Konfidenzreduktion.</p>
+<p>{RULES.length} Regeln gesamt: <strong>24 validiert</strong> (≥ 2 unabhängige Belege) + <strong>{RULES.length - 24} Kandidaten</strong> (darunter v6.2-Härtungsmaßnahmen R40–R42, D1/D2 und v6.3-Härtungsmaßnahmen R43–R44). R14 und R20 gelten als gesichert (★★★★★). Regeln mit ⚠ im Titel sind Warnsignale ohne automatische Konfidenzreduktion.</p>
 
 <div class="rules-wrap">
 	<table class="dt">

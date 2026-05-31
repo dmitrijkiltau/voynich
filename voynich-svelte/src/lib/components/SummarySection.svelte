@@ -6,7 +6,8 @@
 <div class="summary">
 	<div>
 		<p class="dropcap">Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.</p>
-		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose. Version 6.1 erweitert Quire C mit f18r/f18v (Bifolio bC2, Sprache A, Hand 1) und belegt die erste zoomorphe Begleitfigur im botanischen Corpus (Drache/Salamander, f18v). f18r identifiziert <em>Centaurea montana</em> (Berg-Flockenblume, Pupillen/Augenblässe) mit stärkstem Schlusskolophon in Quire C: <span class="eva">or·shaiin·cthor·okal·dar=</span>. f18v identifiziert <em>Dracunculus vulgaris</em> (Drachenwurz, Fieber + Blässe) mit <span class="eva">dom=</span> als erstmaligem Kolophon-Finale in Sprache A (R39). Version 6.2 konsolidiert diesen Bestand ohne neue Folio-Analysen und formalisiert vier methodische Härtungsmaßnahmen: drei harte Abbruchbedingungen (R40 Kurzwurzel-Konfidenzdeckel, R41 Präfix-Hierarchie-Protokoll, R42 Kongruenzpflicht ★★★★+) und zwei phonotaktische Warnsignale (D1/D2). Lexikalische Aktualisierung: <span class="eva">dy</span> von ★★★★ auf ★★ herabgestuft (R40: 2-Konsonanten-Kurzwurzel, Funktionswort-Ausnahme nicht bestätigt).</p>
+		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.</p>
+		<p>Version 6.3 ist eine empirisch ausgelöste Revision: Der GibberishTest (10 × 50 Pseudowörter) ergab eine mittlere ★★★+-Rate von 31 % — die selbst gesetzte Abbruchschwelle von 20 % war überschritten. Drei neue Härtungsmaßnahmen wurden eingeführt: R40 v2 (Kurzwurzel-Schwelle auf ≤ 3 Konsonanten, kumulative 2/3-Ausnahmen), R43 (Multi-Folio-Validierungspflicht) und R44 (Konsekutive Kurzwurzel-Sequenzsperre). Die GibberishTest-Abbruchschwelle wurde auf &gt; 15 % verschärft, Zielkorridor ≤ 10 %.</p>
 	</div>
 
 	<div class="box hl">
@@ -20,25 +21,16 @@
 				<tr><td>Rückwärtstest (Spr. B)</td><td>{STATS.backtestFraction} Vorhersagen bestätigt ({STATS.backtest}); 0 Falsch-Positive</td></tr>
 				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C Eröffnung)</td></tr>
 				<tr><td>Grammatikregeln</td><td><strong>{RULES.length}</strong> (24 validiert + {RULES.length - 24} Kandidaten)</td></tr>
-				<tr>
-					<td>Hauptneufunde v6.1</td>
+				<tr class="hidden-print">
+					<td>Empirische Härtung v6.3</td>
 					<td>
 						<ul>
-							<li>f18r: <em>Centaurea montana</em> — 2 =-Kolophone; stärkstes Schlusskolophon Quire C (<span class="eva">or·shaiin·cthor·okal·dar=</span>) ★★★★</li>
-							<li>f18v: <em>Dracunculus vulgaris</em> — zoomorphe Drachen-Figur (Corpus-Erstbeleg bot. Abschnitt); <span class="eva">ykam</span>/<span class="eva">ytor</span> Auferstehungsverben ★★★★</li>
-							<li>R36–R39: <span class="eva">dar·dar</span>-Dopplung, qo-Präfix-Dopplung, {'{plant}'}-Anfangsposition, <span class="eva">dom=</span> in Spr. A ★★★</li>
-						</ul>
-					</td>
-				</tr>
-				<tr>
-					<td>Methodische Härtung v6.2</td>
-					<td>
-						<ul>
-							<li>R40 Kurzwurzel-Konfidenzdeckel — Basiswurzel ≤ 2 Konsonanten → max. ★★ (Ausnahmen: Funktionswort, Langwurzel-Anker)</li>
-							<li>R41 Präfix-Hierarchie-Protokoll — drei harte Abbruchbedingungen für illegale Präfix-Kombinationen</li>
-							<li>R42 Kongruenzpflicht ★★★★+ — Genus/Numerus-Kongruenz + Parallelbeleg als Pflichtkriterium</li>
-							<li>D1/D2 Phonotaktische Warnsignale — Doppelkonsonanz- und Kehlkopf-Cluster-Flag (kein Hard Stop)</li>
-							<li>Lexikon: <span class="eva">dy</span> ★★★★ → ★★ (R40; Funktionswort-Ausnahme unbestätigt)</li>
+							<li>GibberishTest (10 × 50 Pseudowörter): Mittlere ★★★+-Rate 31 % — Abbruchschwelle 20 % überschritten</li>
+							<li>R40 v2 — Kurzwurzel-Schwelle auf ≤ 3 Konsonanten; kumulative 2/3-Ausnahmen (Funktionswort + Rückwärtstest + Korpusfrequenz ≥ 15×/3 Folios)</li>
+							<li>R43 — Multi-Folio-Validierungspflicht: ★★★ nur bei ≥ 2 Folios; Kandidaten-Flag bei Einzel-Folio ≥ 8×</li>
+							<li>R44 — Konsekutive Kurzwurzel-Sequenzsperre: zwei aufeinander folgende ≤3-Kons.-Wörter → Sequenz max. ★★ ohne Anker + R42-Kongruenz</li>
+							<li>Neue GibberishTest-Schwellen: Abbruch &gt; 15 %, Warnzone 11–15 %, Zielkorridor ≤ 10 %</li>
+							<li>Lexikon: <span class="eva">ytor</span> ★★★★ → ★★★ Kand. (R43); <span class="eva">ykam</span> ★★★ Kand. (R43); <span class="eva">ykair</span> ★★★ → ★★ (R43 Einzelbeleg); <span class="eva">kchom</span> ★★★ Kand.-Flag (R43)</li>
 						</ul>
 					</td>
 				</tr>
