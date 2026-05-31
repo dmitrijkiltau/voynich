@@ -8,6 +8,16 @@ export const GRAMMAR_PREFIXES = [
   { eva: 't-', heb: 'תָּ', fn: 'Imperfekt 3. Pers. Sg. Fem. / 2. Pers.', ex_eva: 'taiir', ex_heb: 'תָּאִיר', stars: '★★★★', is5: false },
 ];
 
+export const VERB_PARADIGM = [
+  { eva: 'ykchaiin', heb: 'יְ+כְּ+חַיִּין', de: 'er wird wie Leben werden',              folio: 'f9r',     stars: '★★★★',  is5: false, negative: false, candidate: false },
+  { eva: 'ycheor',   heb: 'יְ+כְּ+אוֹר',   de: 'er wird wie Licht heilen',               folio: 'f10r',    stars: '★★★★',  is5: false, negative: false, candidate: false },
+  { eva: 'ykchor',   heb: 'יְ+כְּ+חֹר',    de: 'er heilt die Pupille',                   folio: 'f11r P6', stars: '★★★★★', is5: true,  negative: false, candidate: false },
+  { eva: 'ykchy',    heb: 'יְ+כְּ+הִי',    de: 'er wird Blässe zeigen',                  folio: 'f11v P2', stars: '★★★★',  is5: false, negative: false, candidate: false },
+  { eva: 'ykaiin',   heb: 'יְ+כְּ+עַיִן',  de: 'er heilt das Auge',                      folio: 'f14r P8', stars: '★★★★',  is5: false, negative: false, candidate: false },
+  { eva: 'ykshol',   heb: 'יְ+כְּ+שׁוֹל',  de: 'er wird zu Scheol gehen (negativ)',       folio: 'f15r P12',stars: '★★★★',  is5: false, negative: true,  candidate: false },
+  { eva: 'ykair',    heb: 'יְ+כְּ+אִיר',   de: 'er heilt leuchtend (★★ provisorisch — R43: f16r nur 1×)', folio: 'f16r P1.3', stars: '★★', is5: false, negative: false, candidate: true },
+];
+
 export const GRAMMAR_SUFFIXES = [
   { eva: '-dy', heb: 'דִּי', fn: 'Aramäisch: Genitiv/Relativ „von/dessen"', stars: '★★★★', is5: false },
   { eva: '-dam', heb: 'דָּם', fn: '„Blut" — Zeilenabschluss-Refrain in f57r', stars: '★★★★★', is5: true },

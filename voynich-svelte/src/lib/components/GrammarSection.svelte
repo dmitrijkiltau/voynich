@@ -1,5 +1,5 @@
 ﻿<script>
-	import { GRAMMAR_PREFIXES, GRAMMAR_SUFFIXES } from '$lib/grammar-data.js';
+	import { GRAMMAR_PREFIXES, GRAMMAR_SUFFIXES, VERB_PARADIGM } from '$lib/grammar-data.js';
 </script>
 
 <div class="grammar-systems">
@@ -63,55 +63,15 @@
 				<tr><th>EVA</th><th>Hebräisch</th><th>Bedeutung</th><th>Erstbeleg</th><th>Konf.</th></tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td><span class="eva">ykchaiin</span></td>
-					<td><span class="heb-sm">יְ+כְּ+חַיִּין</span></td>
-					<td class="meaning">er wird wie Leben werden</td>
-					<td>f9r</td>
-					<td><span class="conf">★★★★</span></td>
-				</tr>
-				<tr>
-					<td><span class="eva">ycheor</span></td>
-					<td><span class="heb-sm">יְ+כְּ+אוֹר</span></td>
-					<td class="meaning">er wird wie Licht heilen</td>
-					<td>f10r</td>
-					<td><span class="conf">★★★★</span></td>
-				</tr>
-				<tr>
-					<td><span class="eva">ykchor</span></td>
-					<td><span class="heb-sm">יְ+כְּ+חֹר</span></td>
-					<td class="meaning">er heilt die Pupille</td>
-					<td>f11r P6</td>
-					<td><span class="conf5">★★★★★</span></td>
-				</tr>
-				<tr>
-					<td><span class="eva">ykchy</span></td>
-					<td><span class="heb-sm">יְ+כְּ+הִי</span></td>
-					<td class="meaning">er wird Blässe zeigen</td>
-					<td>f11v P2</td>
-					<td><span class="conf">★★★★</span></td>
-				</tr>
-				<tr>
-					<td><span class="eva">ykaiin</span></td>
-					<td><span class="heb-sm">יְ+כְּ+עַיִן</span></td>
-					<td class="meaning">er heilt das Auge</td>
-					<td>f14r P8</td>
-					<td><span class="conf">★★★★</span></td>
-				</tr>
-				<tr style="color:var(--red)">
-					<td><span class="eva">ykshol</span></td>
-					<td><span class="heb-sm">יְ+כְּ+שׁוֹל</span></td>
-					<td class="meaning">er wird zu Scheol gehen <em>(negativ)</em></td>
-					<td>f15r P12</td>
-					<td><span class="conf">★★★★</span></td>
-				</tr>
-				<tr style="opacity:.55;font-style:italic">
-					<td><span class="eva">ykair</span></td>
-					<td><span class="heb-sm">יְ+כְּ+אִיר</span></td>
-					<td class="meaning">er heilt leuchtend <em style="font-size:.8em;opacity:.8">(★★ provisorisch — R43: f16r nur 1×)</em></td>
-					<td>f16r P1.3</td>
-					<td><span class="conf">★★</span></td>
-				</tr>
+				{#each VERB_PARADIGM as row}
+					<tr style={row.negative ? 'color:var(--red)' : row.candidate ? 'opacity:.55;font-style:italic' : ''}>
+						<td><span class="eva">{row.eva}</span></td>
+						<td><span class="heb-sm">{row.heb}</span></td>
+						<td class="meaning">{row.de}</td>
+						<td>{row.folio}</td>
+						<td><span class={row.is5 ? 'conf5' : 'conf'}>{row.stars}</span></td>
+					</tr>
+				{/each}
 			</tbody>
 		</table>
 	</div>
