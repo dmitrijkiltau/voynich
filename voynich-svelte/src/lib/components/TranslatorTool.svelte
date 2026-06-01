@@ -1,6 +1,6 @@
 <script>
 	import { PREFIXES, LEXICON, FOLIO_PAGES } from '$lib';
-	import { browser, dev } from '$app/environment';
+	import { dev } from '$app/environment';
 
 	let { input = $bindable('') } = $props();
 
@@ -88,31 +88,6 @@
 
 	let hideUnknown = $state(false);
 	const glossResults = $derived(hideUnknown ? results.filter(r => r.lookup) : results);
-
-	// ── Cookie consent ──────────────────────────────────
-
-	const CONSENT_COOKIE = 'voynich_folio_consent';
-
-	function readConsent() {
-		return document.cookie.split('; ').some(c => c === `${CONSENT_COOKIE}=1`);
-	}
-
-	function writeConsent() {
-		const maxAge = 60 * 60 * 24 * 365; // 1 year
-		document.cookie = `${CONSENT_COOKIE}=1; max-age=${maxAge}; path=/; SameSite=Strict`;
-	}
-
-	function revokeConsent() {
-		document.cookie = `${CONSENT_COOKIE}=; max-age=0; path=/; SameSite=Strict`;
-		folioConsent = false;
-	}
-
-	let folioConsent = $state(browser && readConsent());
-
-	function acceptConsent() {
-		writeConsent();
-		folioConsent = true;
-	}
 
 	// ── Folio loader ──────────────────────────────────────
 
@@ -266,17 +241,6 @@
 		<div class="folio-col" aria-label="Folio direkt laden">
 			<header class="col-header">
 				<span class="panel-label" id="lbl-folio">Folio laden</span>
-				{#if folioConsent && folioMsg}
-					<span
-						class="folio-badge"
-						class:ok={folioType === 'ok'}
-						class:error={folioType === 'error'}
-						class:loading={folioType === 'loading'}
-						aria-live="polite"
-					>
-						{folioType === 'loading' ? '…' : folioType === 'ok' ? '✓' : '✕'}
-					</span>
-				{/if}
 			</header>
 
 			<div class="folio-keyboard" role="navigation" aria-labelledby="lbl-folio">
