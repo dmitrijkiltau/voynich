@@ -81,7 +81,7 @@ export function generateMarkdown() {
   line();
   line('**Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.');
   line();
-  line('Version 6.6 wird ausgelöst durch f77r (D2-Phonotaktik-Härtetest, Quire M/XIII). Strukturelle Höhepunkte: R50 — Galiläische Guttural-Abschwächung formalisiert `ee`/`oo` als reine Vokalmarker (Tsere/Holam); D2-Reduktion 42→3 (93 %). 3 Residualkonflikte identifizieren genuine ח-ע-Cluster (`cheol`/`cheeol`). Neuer Lexikonkandidat: `cheol` ★★ (schöpfen/heben, balneologisch).');
+  line('Version 6.7 wird ausgelöst durch f20r + f20v (Bifolio bC4 — innerstes Bifolio von Quire C). Strukturelle Höhepunkte: `cheol` ★★ → ★★★ (R43 erfüllt: f77r balneologisch + f20r botanisch); neue Lexikoneinträge `cheey` (Leben, Tsere-Variante per R50) + `dol·shol` (Schmerz-Scheol, therapeutisches Warnsignal); f20r = chor 6× + doppeltes chor-Schlussparadigma (R15); f20v = kompakteste Prognoseformel im Corpus (P.4, 5 Kernwörter); botanische Reihung f19v (*Succisa*) → f20v (*Centaurea scabiosa*) bestätigt bewusste thematische Sequenzierung. Quire C bC4 vollständig analysiert.');
   line();
   h(3, `Kernbefunde — Version ${STATS.version}`);
   line();
@@ -91,7 +91,7 @@ export function generateMarkdown() {
     ['Analysierte Folios', STATS.foliosAll],
     ['Bestätigte Wörter', `${STATS.lexicon} (★★★ oder höher)`],
     ['Rückwärtstest (Spr. B)', `${STATS.backtestFraction} Vorhersagen bestätigt (${STATS.backtest}); 0 Falsch-Positive`],
-    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC3)`],
+    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4)`],
     ['Grammatikregeln', `${RULES.length} (24 validiert + ${RULES.length - 24} Kandidaten)`],
   ]));
   line();

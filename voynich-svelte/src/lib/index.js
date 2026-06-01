@@ -6,11 +6,11 @@ import { RULES } from './grammar-rules-data.js';
 export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_STATUS, RULES };
 
 export const STATS = {
-  version: '6.6',
+  version: '6.7',
   lexicon: LEXICON.length,
   rules: RULES.length,
   backtest: '88%',
   backtestFraction: '23/26',
-  foliosA: 'f1r, f1v–f19v',
-  foliosAll: 'f1r, f1v–f19v (Quires A–B+C-bC3), f57r, f58r, f103r/v, f114v, f115r/v, f116r/v',
+  foliosA: 'f1r, f1v–f20v',
+  foliosAll: 'f1r, f1v–f20v (Quires A–B+C-bC4), f57r, f58r, f103r/v, f114v, f115r/v, f116r/v',
 };

@@ -264,5 +264,8 @@ export const LEXICON = [
   { eva: 'yees',      heb: 'יְ+אֵשׁ',               de: 'er löscht das Feuer/Fieber (y-Imperfekt + esh-Stamm) — f19v P.12',                                                      stars: '★★★',  cat: 'verb'       },
   { eva: 'ytar',      heb: 'יְ+תַּ+אָר',            de: 'er wird Licht geben (Quire-C-a-Vokal-Variante von ytor) — f19v P.12',                                                  stars: '★★★',  cat: 'verb'       },
   // ── v6.6 (f77r — D2-Phonotaktik-Härtetest, Quire M) ─────────────────────
-  { eva: 'cheol',          heb: 'ח-ע-ל',           de: 'schöpfen / heben (Hypothese; Var. cheeol P.21; genuine ח-ע-Cluster, nicht durch R50 auflösbar; balneologisch: Aquädukt-Ikonographie f77r) — f77r P.21, P.24, P.38', stars: '★★',   cat: 'verb'       },
+  { eva: 'cheol',          heb: 'ח-ע-ל',           de: 'schöpfen / heben (R43 erfüllt: f77r + f20r botanisch bestätigt ★★★; Var. cheeol P.21; genuine ח-ע-Cluster, R50 greift nicht; balneologisch: Aquädukt-Ikonographie f77r, Heilwasser-Therapie f20r) — f77r P.21, P.24, P.38; f20r', stars: '★★★',  cat: 'verb'       },
+  // ── v6.7 (f20r + f20v — Bifolio bC4: Astragalus glycyphyllos + Centaurea scabiosa) ──
+  { eva: 'cheey',          heb: 'חֵיי',             de: 'Leben / lebendig (Tsere-Variante von chey per R50; f20r P.13 Schlusskolophon: chor.chor.cheey.tchey= = Pupille—Pupille—Leben—sie belebt)', stars: '★★★',  cat: 'prognose'   },
+  { eva: 'dol·shol',       heb: 'דָּוֶה+שׁוֹל',    de: 'Schmerz-Scheol (negatives Befundpaar: schwach+Tod; R15-Antonymenpaar; therapeutisches Warnsignal bei Überdosierung) — f20r P.7', stars: '★★★',  cat: 'prognose'   },
 ];

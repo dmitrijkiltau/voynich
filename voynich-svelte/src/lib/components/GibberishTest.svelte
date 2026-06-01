@@ -227,7 +227,7 @@
 	<div class="protocol-section">
 		<div class="protocol-head">
 			<span class="protocol-title no-print">10-Lauf-Protokoll · {wordCount} Wörter/Lauf · {protocolDate}</span>
-			<span class="protocol-title print-only">GibberishTest · 10-Lauf-Protokoll · v6.6 · {wordCount} Wörter/Lauf · {protocolDate}</span>
+			<span class="protocol-title print-only">GibberishTest · 10-Lauf-Protokoll · v6.7 · {wordCount} Wörter/Lauf · {protocolDate}</span>
 		</div>
 
 		<div class="protocol-body">

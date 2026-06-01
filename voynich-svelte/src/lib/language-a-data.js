@@ -1,6 +1,6 @@
 export const COMPARISON = [
   { feature: 'Kernvokabular', langB: 'sheol, daiin, dal, ckhy, dam, sar, or', langA: 'Identisch — alle 10 Ankerwörter je Folio bestätigt (f1r: 10/10 ★★★★★)' },
-  { feature: 'qo-Präfix (R1/R33)', langB: '8+ Belege; Kernmerkmal Spr. B ★★★★★', langA: 'Absent in Quires I–II (0 / ~800 Token); ab Quire III präsent: 13 Belege f17r/f17v (~5%) + 8–10 in f18r/f18v (~4–5%) + ~18 in f19r/f19v (~10% = Quire-H-äquivalent, R33-Erweiterung); R37: qo-Präfix-Dopplung ab f18v; R49: y+t-Verb-Litanei f19v P.12' },
+  { feature: 'qo-Präfix (R1/R33)', langB: '8+ Belege; Kernmerkmal Spr. B ★★★★★', langA: 'Absent in Quires I–II (0 / ~800 Token); ab Quire III präsent: 13 Belege f17r/f17v (~5%) + 8–10 in f18r/f18v (~4–5%) + ~18 in f19r/f19v (~10% = Quire-H-äquivalent, R33-Erweiterung); R37: qo-Präfix-Dopplung ab f18v; R49: y+t-Verb-Litanei f19v P.12; bC4 (f20r/f20v): Vollintegration bestätigt — Quire C f17–f20 konsistent' },
   { feature: 'Dominanter Vokal', langB: 'e / ee (Segol/Ṣere)', langA: 'o (Ḥolam) häufiger; dol statt dal, ckho neben ckhy' },
   { feature: 'Struktur', langB: 'Prosa ohne Bildtrennmarker', langA: '{plant}-Marker in Kräuter-Folios (R14); f1r: Prosa ohne Marker (Haskama-Typ, sui generis)' },
   { feature: 'Kolophon-Inventar', langB: 'cphedom=, daiin·cheeodam', langA: 'kaiim=, dom=, daiin=, chckhan=, Kurztitel (R23)' },
@@ -28,7 +28,7 @@ export const FOLIOS = [
   { folio: 'f10v', plant: 'Convolvulus / Glockenblume', signal: 'daiin 8× (Rekord); shoiin×2; dsho=; chckhan=', stars: '★★★★', is5: false },
   { folio: 'f11r', plant: 'Lungenkraut-Typ II', signal: 'ykchor·dair·ycheor (Pupillenheilung-Tripel); positiver Kolophon', stars: '★★★★', is5: false },
   { folio: 'f11v', plant: 'Kräuter-Komplex', signal: 'chkaiin·ckhy·chor= (Diagnosekolophon, 2. Beleg); odl·chaiin', stars: '★★★★', is5: false },
-  { folio: 'f13r', plant: 'Großer Alant (Inula helenium)', signal: 'torshor (NEU); pchy 4× — Atemweg-Rekord; shol×2; Doppelkolophon', stars: '★★★', is5: false },
+  { folio: 'f13r', plant: 'Großer Alant (Inula helenium)', signal: 'torshor; pchy 4× — Atemweg-Rekord; shol×2; Doppelkolophon', stars: '★★★', is5: false },
   { folio: 'f13v', plant: 'Schachtelhalm-Typ (Equisetum)', signal: '9 × {plant}-Marker (Rekord Quire B); qoky·daiin= (Minikolophon)', stars: '★★★', is5: false },
   { folio: 'f14r', plant: 'Schlangenwurz-Typ (Bistorta officinalis)', signal: 'dain + chor dominant; chckhy= (3. Korpus-Beleg); Doppelkolophon P.7 + P.13; ykaiin (5. y+k-Verb)', stars: '★★★', is5: false },
   { folio: 'f14v', plant: 'Farn-Typ (Dryopteris-Gruppe)', signal: 'dam (Blut-Triade P.8, Erstbeleg Quire B); dchckhy= (Intensiv-Siegel); Dreisegment-Kolophon; dy×3 (R25)', stars: '★★★', is5: false },
@@ -42,4 +42,6 @@ export const FOLIOS = [
   { folio: 'f18v', plant: 'Drachenwurz (Dracunculus vulgaris)', signal: '10 P.; qokchy/chy 5× (Leitterm); Zoomorphe Drachen-Figur (Corpus-Erstbeleg bot. Abschnitt); {plant} am Kolophon-Anfang R38; qokchy·qokchy R37-Erstbeleg P.2; ykam/ytor (Auferstehungsverben) P.8; dom= Schlusskolophon-Finale Spr. A (R39)', stars: '★★★★', is5: false },
   { folio: 'f19r', plant: 'Stephanskraut (Delphinium staphisagria)', signal: '13 P. + Schlusskolophon P.13; pchor-Eröffnung (Pupillen-Direktional, Primärindikation); chor/ykchor 6×; ckhy-Kompositionen 8× (stärkste Blässe-Dichte in Quire C); ~9 qo-Formen (~11 %); daiin.cthor.chol.ykchor.chordy (P.10, f15v-Parallele)', stars: '★★★★', is5: false },
   { folio: 'f19v', plant: 'Teufelsabbiss (Succisa pratensis)', signal: '12 P. + T.13 Siman; 3 =-Kolophone (P.6a Mini + P.12 Haupt + T.13); daiin·daiin R19-Dopplung P.4 (Corpus-Erstbeleg); yees.ykchol.oty.ytor.ytar.ytchor.ytaiin= (P.12, 7-Verb-Litanei — R49, Corpus-Rekord); ytor 3. Folio-Beleg → ★★★★★; darom (Süden, erster Richtungsterm bot. Corpus)', stars: '★★★★', is5: false },
+  { folio: 'f20r', plant: 'Süßes Tragant (Astragalus glycyphyllos)', signal: 'chor 6× (Pupillen-Leitterm); qotchol P.1 (Universal-Zeichen); dol·shol P.7 (Schmerz-Scheol, Erstbeleg therapeutisches Fenster); cheol Corpus-Erstbeleg botanisch → ★★★ (R43 erfüllt); doppeltes chor-Schlussparadigma R15 P.13: chor·chor·cheey·tchey= (Pupille—Pupille—Leben—sie belebt)', stars: '★★★', is5: false },
+  { folio: 'f20v', plant: 'Skabiosen-Flockenblume (Centaurea scabiosa)', signal: 'kompakteste Prognoseformel Corpus P.4 (5 Kernwörter im Kolophon); botanische Reihung mit f19v (Scabiosa-Gruppe, bewusste thematische Sequenzierung); Faserwurzelsystem + blaue Köpfchenblüten mit weißem Hüllkelch; balneologisch (Augenbad, Hildegard von Bingen); Quire C bC4 innerstes Bifolio vollständig', stars: '★★★★', is5: false },
 ];

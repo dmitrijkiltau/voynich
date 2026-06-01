@@ -150,7 +150,6 @@ export const REFS = [
     id: 10,
     folio: 'f18r / f18v',
     title: 'Bifolio bC2 · Quire C',
-    badge: 'Neu v6.1',
     color: 'green',
     sides: [
       {

@@ -7,7 +7,7 @@
 	<div>
 		<p class="dropcap">Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.</p>
 		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.</p>
-		<p>Version 6.6 wird ausgelöst durch f77r (D2-Phonotaktik-Härtetest, Quire M/XIII). Strukturelle Höhepunkte: R50-Galiläische Guttural-Abschwächung formaliert <span class="eva">ee</span>/oo als reine Vokalmarker und reduziert D2-Warnungen auf f77r von 42→3 (93 %); 3 Residualkonflikte identifizieren genuine ח-ע-Cluster (<span class="eva">cheol</span>/<span class="eva">cheeol</span>). Neuer Lexikonkandidat: <span class="eva">cheol</span> ★★.</p>
+		<p>Version 6.7 wird ausgelöst durch f20r + f20v (Bifolio bC4 — innerstes Bifolio von Quire C, vollständig analysiert). Strukturelle Höhepunkte: <span class="eva">cheol</span> ★★ → ★★★ (R43 erfüllt durch botanischen Zweitbeleg f20r); neue Lexikoneinträge <span class="eva">cheey</span> + <span class="eva">dol·shol</span>; f20r = chor 6× + doppeltes chor-Schlussparadigma (R15); f20v = kompakteste Prognoseformel im Corpus (P.4, 5 Kernwörter); botanische Reihung f19v → f20v (*Scabiosa*-Gruppe) bestätigt bewusste thematische Sequenzierung in Quire C.</p>
 	</div>
 
 	<div class="box hl">
@@ -19,16 +19,17 @@
 				<tr><td>Analysierte Folios</td><td>{STATS.foliosAll}</td></tr>
 				<tr><td>Bestätigte Wörter</td><td><strong>{STATS.lexicon}</strong> (★★★ oder höher)</td></tr>
 				<tr><td>Rückwärtstest (Spr. B)</td><td>{STATS.backtestFraction} Vorhersagen bestätigt ({STATS.backtest}); 0 Falsch-Positive</td></tr>
-				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C bC1–bC3)</td></tr>
+				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C bC1–bC4)</td></tr>
 				<tr><td>Grammatikregeln</td><td><strong>{RULES.length}</strong> (24 validiert + {RULES.length - 24} Kandidaten)</td></tr>
 				<tr class="hidden-print">
-					<td>Empirische Erweiterung v6.6</td>
+					<td>Empirische Erweiterung v6.7</td>
 					<td>
 						<ul>
-							<li>R50 — Galiläische Guttural-Abschwächung: <span class="eva">ee</span>/<span class="eva">oo</span> = reine Vokalmarker (Tsere/Holam), nie als ה+ה geparst; D2-Reduktion f77r 42→3 (93 %)</li>
-							<li>3 Residual-D2-Konflikte = genuine ח-ע-Cluster: <span class="eva">cheeol</span> (P.21), <span class="eva">cheol</span> (P.24, P.38 f77r); alle 4 Transkriptoren einheitlich</li>
-							<li>Neuer Lexikonkandidat: <span class="eva">cheol</span> / <span class="eva">cheeol</span> ★★ — ח-ע-ל (schöpfen / heben); balneologisch konsistent (Aquädukt-Ikonographie f77r)</li>
-							<li>Erstanalyse Quire M (f77r): 40 Paragraphen + 10 Label-Tokens; vollständig Sprache B, Hand 2; qo-Präfix-Dichte &gt;8 %</li>
+							<li><span class="eva">cheol</span> ★★ → ★★★: R43 erfüllt (f77r balneologisch + f20r botanisch als Zweitbeleg); genuine ח-ע-Cluster (R50 greift nicht)</li>
+							<li>Neue Lexikoneinträge: <span class="eva">cheey</span> ★★★ (Leben/lebendig, Tsere-Variante von chey per R50; f20r P.13 Schlusskolophon) + <span class="eva">dol·shol</span> ★★★ (Schmerz-Scheol, therapeutisches Warnsignal Überdosierung; f20r P.7)</li>
+							<li>f20r (<em>Astragalus glycyphyllos</em> ★★★): chor 6×, therapeutisches Fenster (dol·shol P.7 vs. chor·chor·cheey·tchey= P.13); R15 doppeltes chor-Schlussparadigma</li>
+							<li>f20v (<em>Centaurea scabiosa</em> ★★★★): kompakteste Prognoseformel Corpus (P.4, 5 Kernwörter); botanische Reihung mit f19v (*Scabiosa*-Gruppe) = bewusste thematische Sequenzierung Quire C</li>
+							<li>Quire C bC4 (innerstes Bifolio) vollständig analysiert — Quire C f17–f20 100 % abgedeckt</li>
 						</ul>
 					</td>
 				</tr>
