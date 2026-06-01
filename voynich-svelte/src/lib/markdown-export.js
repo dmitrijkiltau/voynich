@@ -59,7 +59,7 @@ export function generateMarkdown() {
 
   // ── Title ──────────────────────────────────────────────────────
   h(1, 'Voynich-Manuskript — Formales Mapping-Dokument');
-  line(`**EVA → Hebräisch-Aramäisch · Version ${STATS.version} · Juni 2026**`);
+  line(`**EVA → Hebräisch-Aramäisch · Version ${STATS.version} · ${STATS.date}**`);
   line();
   line(`Sprachen A & B · Folios ${STATS.foliosAll}`);
   line();
@@ -81,7 +81,7 @@ export function generateMarkdown() {
   line();
   line('**Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.');
   line();
-  line('Version 6.9 wird ausgelöst durch f71r + f71v + f72r1 + f72r2 (Bifolio bK1 — Quire K Zodiak-Tetraptychon, vollständig). Strukturelle Höhepunkte: R50 ★★★ → ★★★★ (2. vollständiges Register bestätigt: 4 Zodiak-Folios, 30+ ee-Token, kein Gegenbeispiel); R52a ★★★ Kand. → ★★★★ (Determinans-y in Zodiak-Sternlabeln: 4 Folios · 75 Labels · 47 % · Minimalpaar okal=/okaly=); R17 ★★★★ 5. Register-Bestätigung (shol medial / sheol final in Textringen); R19/R35 erstmals im Zodiak-Register (otam·otam·chotam f72r1 R1); R29 ★★ → ★★★ Kand. (4 Belege gesamt); 9 neue Lexikoneinträge (alef, otalef, sheeolody, sheoltey, sholshdy, shokal, chotam, cheekaiin, okeodaly); Suffixe -aly/-ary formalisiert; Doppel-Stier-Sprachregister-Hypothese (f71v = kalendarisch-prognostisch, f72r1 = astromedizinisch).');
+  line(`Version ${STATS.version} wird ausgelöst durch f22r + f22v (Bifolio bC3 — Quire C Abschluss: Plantago lanceolata + Veratrum album). Strukturelle Höhepunkte: otam ★★★ → ★★★★ (R43 erfüllt: 2. Register, Zodiak + Botanisch); R15 auf Dreistufig-Schema erweitert (Typ B: Verb → Nomen → Direktional, 5. Beleg, f22v P.7 ychor·chor·qokchol·chory); R51 ★★★ gesichert (6 Belege · 3 Folios, R43 erfüllt: ≥3 Folios); R53 neuer Kandidat ★★ (Pflanzen-Titel-Duplikation: daldalol= f22v T.16); neue Kolophon-Formel oraiino= (Licht seines Auges); 15 neue Lexikoneinträge (oraiino ★★★★, ykcheor/okchain ★★★★, 11× ★★★, ytal ★★); Quire-C-Botanik: f22r (Plantago lanceolata) ophthalmologisch-hämatostatisch ★★★★; f22v (Veratrum album) Augen-/Blutmittel mit Toxizitäts-Warnung ★★★.`);
   line();
   h(3, `Kernbefunde — Version ${STATS.version}`);
   line();
@@ -92,7 +92,7 @@ export function generateMarkdown() {
     ['Bestätigte Wörter', `${STATS.lexicon} (★★★ oder höher)`],
     ['Rückwärtstest (Spr. B)', `${STATS.backtestFraction} Vorhersagen bestätigt (${STATS.backtest}); 0 Falsch-Positive`],
     ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4)`],
-    ['Grammatikregeln', `${RULES.length} (24 validiert + ${RULES.length - 24} Kandidaten)`],
+    ['Grammatikregeln', `${RULES.length} (${STATS.validatedRules} validiert + ${RULES.length - STATS.validatedRules} Kandidaten)`],
   ]));
   line();
 
@@ -172,7 +172,7 @@ export function generateMarkdown() {
   // ── VII. Grammatikregeln ───────────────────────────────────────
   h(2, 'VII. Grammatikregeln');
   line();
-  line(`${RULES.length} Regeln gesamt: **24 validiert** (≥ 2 unabhängige Belege) + **${RULES.length - 24} Kandidaten**. R14 und R20 gelten als gesichert (★★★★★).`);
+  line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${RULES.length - STATS.validatedRules} Kandidaten** (darunter v6.2 R40–R42, D1/D2; v6.3 R43–R44; v6.4 R45–R48; v6.5 R33-Erweiterung + R49; v6.6 R50; v6.8 R51 ★★★ gesichert + R52 ★★; v6.9 R52a ★★★★; v7.0 R53 ★★). R14 und R20 gelten als gesichert (★★★★★).`);
   line();
   s.push(tbl(['#', 'Regel', 'Evidenz', 'Konf.'],
     RULES.map(r => [r.id, stripHtml(r.rule), stripHtml(r.evidence), r.stars])));
@@ -181,7 +181,7 @@ export function generateMarkdown() {
   // ── VIII. Rückwärtstest ────────────────────────────────────────
   h(2, 'VIII. Rückwärtstest-Statistik');
   line();
-  line('26 hebräische/aramäische Wörter wurden nach dem EVA-Mapping kodiert und im Korpus (Sprache B) gesucht. Trefferquote: **88,5 % (23/26)**.');
+  line(`${STATS.backtestTotal} hebräische/aramäische Wörter wurden nach dem EVA-Mapping kodiert und im Korpus (Sprache B) gesucht. Trefferquote: **${STATS.backtest} (${STATS.backtestFraction})**. 0 Falsch-Positive.`);
   line();
   s.push(tbl(['Kategorie', 'Ergebnis'], BACKTEST_STATS.map(st => [st.label, st.num])));
   line();
@@ -257,7 +257,7 @@ export function generateMarkdown() {
   // ── Footer ─────────────────────────────────────────────────────
   line('---');
   line();
-  line(`Voynich-Manuskript — Formales Mapping-Dokument · Version ${STATS.version} · Juni 2026`);
+  line(`Voynich-Manuskript — Formales Mapping-Dokument · Version ${STATS.version} · ${STATS.date}`);
   line(`Lexikon: ${STATS.lexicon} Einträge · Grammatikregeln: ${STATS.rules} · Rückwärtstest: ${STATS.backtest} (${STATS.backtestFraction})`);
   line();
   line('_Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._');
