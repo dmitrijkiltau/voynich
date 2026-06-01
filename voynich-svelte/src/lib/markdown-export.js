@@ -59,7 +59,7 @@ export function generateMarkdown() {
 
   // ── Title ──────────────────────────────────────────────────────
   h(1, 'Voynich-Manuskript — Formales Mapping-Dokument');
-  line(`**EVA → Hebräisch-Aramäisch · Version ${STATS.version} · Mai 2026**`);
+  line(`**EVA → Hebräisch-Aramäisch · Version ${STATS.version} · Juni 2026**`);
   line();
   line(`Sprachen A & B · Folios ${STATS.foliosAll}`);
   line();
@@ -81,7 +81,7 @@ export function generateMarkdown() {
   line();
   line('**Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.');
   line();
-  line('Version 6.7 wird ausgelöst durch f20r + f20v (Bifolio bC4 — innerstes Bifolio von Quire C). Strukturelle Höhepunkte: `cheol` ★★ → ★★★ (R43 erfüllt: f77r balneologisch + f20r botanisch); neue Lexikoneinträge `cheey` (Leben, Tsere-Variante per R50) + `dol·shol` (Schmerz-Scheol, therapeutisches Warnsignal); f20r = chor 6× + doppeltes chor-Schlussparadigma (R15); f20v = kompakteste Prognoseformel im Corpus (P.4, 5 Kernwörter); botanische Reihung f19v (*Succisa*) → f20v (*Centaurea scabiosa*) bestätigt bewusste thematische Sequenzierung. Quire C bC4 vollständig analysiert.');
+  line('Version 6.8 wird ausgelöst durch f21r + f21v (Bifolio bC4 — vollständig abgeschlossen, Quire C 10/16 Seiten). Strukturelle Höhepunkte: `cheol` ★★★ → ★★★★ (R43 definitiv erfüllt: 4. Beleg f77r + f20v + f21r P.5 + P.8); neue Lexikoneinträge `tshaiin` ★★★ Kand. + `chotshol` ★★★ Kand. + `ysheol` ★★★ Kand.; f21r = Dreifache Licht-Formel P.7 (R52 ★★ Kand., Corpus-Erstbeleg) + R15 Typ-B 4. Beleg P.12; f21v = kompaktester Kolophon im Corpus (3 Wörter) + daiin·daiin R19-Bestätigung; R51 ★★★ (2-Folio-Kand.: f20v + f21v) + R52 ★★ (Kolophon-Trias, 1 Beleg) neu hinzugefügt.');
   line();
   h(3, `Kernbefunde — Version ${STATS.version}`);
   line();
@@ -257,7 +257,7 @@ export function generateMarkdown() {
   // ── Footer ─────────────────────────────────────────────────────
   line('---');
   line();
-  line(`Voynich-Manuskript — Formales Mapping-Dokument · Version ${STATS.version} · Mai 2026`);
+  line(`Voynich-Manuskript — Formales Mapping-Dokument · Version ${STATS.version} · Juni 2026`);
   line(`Lexikon: ${STATS.lexicon} Einträge · Grammatikregeln: ${STATS.rules} · Rückwärtstest: ${STATS.backtest} (${STATS.backtestFraction})`);
   line();
   line('_Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._');

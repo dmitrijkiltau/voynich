@@ -14,9 +14,11 @@
 		{ label: 'f13r P.1',   text: 'torshor opchy shol dy qopchy shol' },
 		{ label: 'f20r P.13',  text: 'chor chor cheey tchey' },
 		{ label: 'f77r P.21',  text: 'cheeol daiin sheol' },
+		{ label: 'f21r P.7',   text: 'shoeor cheor chokeody cho cthor shy' },
+		{ label: 'f21v P.6',   text: 'sho tsho chotshol chol todaiin daiin' },
 	];
 
-	// Canonical redirects for forms consolidated into primary entries (Redundanzanalyse v6.7)
+	// Canonical redirects for forms consolidated into primary entries (Redundanzanalyse v6.8)
 	const ALIASES = /** @type {Record<string,string>} */ ({
 		daiidy:  'daiindy',
 		kedy:    'chedy',

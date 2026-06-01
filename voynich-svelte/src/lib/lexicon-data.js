@@ -158,7 +158,7 @@ export const LEXICON = [
   { eva: 'ytchy',     heb: 'יְ+תְּ+כְּהִי',      de: 'er/sie wird Blässe zeigen (y+t-Doppelpräfix)', stars: '★★★',  cat: 'verb' },
   { eva: 'pchraiin',  heb: 'פְּ+רְ+עַיִן',       de: 'für/bei das Licht des Auges',                 stars: '★★★',   cat: 'akteur' },
   { eva: 'sholo',     heb: 'שְׁאוֹ+לוֹ',         de: 'Scheol für ihn (Dativ-Form)',                  stars: '★★★',   cat: 'prognose' },
-  { eva: 'otor',      heb: 'אוֹת+אוֹר',          de: 'Zeichen des Lichts / der Heilung',             stars: '★★★',   cat: 'kompositum' },
+  { eva: 'otor',      heb: 'אוֹת+אוֹר',          de: 'Zeichen des Lichts / der Heilung — R43 erfüllt: f16v + f21r P.8 (2 Folios)', stars: '★★★',   cat: 'kompositum' },
   { eva: 'otain',     heb: 'אוֹת+אַיִן',         de: 'Zeichen des Nichts / Endes',                   stars: '★★★',   cat: 'kompositum' },
   { eva: 'okytaiin',  heb: 'עַ+כְּ+תָּ+עַיִן',   de: 'auf die Weise, dass er das Auge heilt',        stars: '★★★',   cat: 'verb' },
   { eva: 'dairin',    heb: 'דְּ+אִיר+יִן',       de: 'von dem Leuchtenden (Genitiv-Form)',           stars: '★★★',   cat: 'prognose' },
@@ -264,8 +264,14 @@ export const LEXICON = [
   { eva: 'yees',      heb: 'יְ+אֵשׁ',               de: 'er löscht das Feuer/Fieber (y-Imperfekt + esh-Stamm) — f19v P.12',                                                      stars: '★★★',  cat: 'verb'       },
   { eva: 'ytar',      heb: 'יְ+תַּ+אָר',            de: 'er wird Licht geben (Quire-C-a-Vokal-Variante von ytor) — f19v P.12',                                                  stars: '★★★',  cat: 'verb'       },
   // ── v6.6 (f77r — D2-Phonotaktik-Härtetest, Quire M) ─────────────────────
-  { eva: 'cheol',          heb: 'ח-ע-ל',           de: 'schöpfen / heben (R43 erfüllt: f77r + f20r botanisch bestätigt ★★★; Var. cheeol P.21; genuine ח-ע-Cluster, R50 greift nicht; balneologisch: Aquädukt-Ikonographie f77r, Heilwasser-Therapie f20r) — f77r P.21, P.24, P.38; f20r', stars: '★★★',  cat: 'verb'       },
+  { eva: 'cheol',          heb: 'ח-ע-ל',           de: 'schöpfen / heben (R43 erfüllt: f77r P.21/P.24/P.38 + f20v P.2 + f21r P.5 + f21r P.8 → 4 Belege, 3 Folios, ★★★★ gesichert; Var. cheeol P.21; genuine ח-ע-Cluster, R50 greift nicht; balneologisch: Augenbad-Marker)', stars: '★★★★', cat: 'verb'       },
   // ── v6.7 (f20r + f20v — Bifolio bC4: Astragalus glycyphyllos + Centaurea scabiosa) ──
   { eva: 'cheey',          heb: 'חֵיי',             de: 'Leben / lebendig (Tsere-Variante von chey per R50; f20r P.13 Schlusskolophon: chor.chor.cheey.tchey= = Pupille—Pupille—Leben—sie belebt)', stars: '★★★',  cat: 'prognose'   },
   { eva: 'dol·shol',       heb: 'דָּוֶה+שׁוֹל',    de: 'Schmerz-Scheol (negatives Befundpaar: schwach+Tod; R15-Antonymenpaar; therapeutisches Warnsignal bei Überdosierung) — f20r P.7', stars: '★★★',  cat: 'prognose'   },
+  // ── v6.8 (f21r + f21v — Bifolio bC4 Abschluss: Thymus serpyllum + Aquilegia vulgaris) ──
+  { eva: 'tshaiin',        heb: 'תּ+שׁ+עַיִן',     de: 'du wirst das Auge [behandeln/waschen] — tav-Imperfekt 2. Sg. + aiin: therapeutischer Direktbefehl an den Arzt — ★★★ Kand. (Erstbeleg f21r P.9, Folgebeleg erforderlich)', stars: '★★★',  cat: 'verb'       },
+  { eva: 'chotshol',       heb: 'כֹּ+תּ+שְׁאוֹל',  de: 'alles-du-wirst-Scheol — intensivstes Negativ-Kompositum im Corpus: kol + tav-Futur + Scheol in einem Wort komprimiert — ★★★ Kand. (Corpus-Erstbeleg f21v P.6)', stars: '★★★',  cat: 'prognose'   },
+  { eva: 'ysheol',         heb: 'יְ+שׁ+אֹל',       de: 'er wird [aus] Scheol [aufsteigen] — positive Verbform: y-Imperfekt + sheol als Aufstiegs-Wendepunkt; eingerahmt von chor-chor in Schlusskolophon — ★★★ Kand. (Erstbeleg f21r P.12)', stars: '★★★',  cat: 'verb'       },
+  { eva: 'dait',           heb: 'דַּ+עִת',          de: 'von/aus der Zeit / im Moment — zeitliche Deiktik (d-Präfix + ʿet = Zeit) — ★★ Kand. (Erstbeleg f21v P.5)', stars: '★★',   cat: 'syntax'     },
+  { eva: 'keeees',         heb: '???',               de: 'Hapax — extreme Tsere-Emphase (vierfaches ee) oder Schreiberfehler; kein Parallelbeleg im Gesamtcorpus — f21v P.3', stars: '★',    cat: 'symptom'    },
 ];

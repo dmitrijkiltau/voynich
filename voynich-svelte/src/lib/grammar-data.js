@@ -17,6 +17,7 @@ export const VERB_PARADIGM = [
   { eva: 'ykaiin',   heb: 'יְ+כְּ+עַיִן',  de: 'er heilt das Auge',                      folio: 'f14r P8', stars: '★★★★',  is5: false, negative: false, candidate: false },
   { eva: 'ykshol',   heb: 'יְ+כְּ+שׁוֹל',  de: 'er wird zu Scheol gehen (negativ)',       folio: 'f15r P12',stars: '★★★★',  is5: false, negative: true,  candidate: false },
   { eva: 'ykair',    heb: 'יְ+כְּ+אִיר',   de: 'er heilt leuchtend (★★ provisorisch — R43: f16r nur 1×)', folio: 'f16r P1.3', stars: '★★', is5: false, negative: false, candidate: true },
+  { eva: 'tshaiin',  heb: 'תּ+שׁ+עַיִן',  de: 'du wirst das Auge [behandeln/waschen] — Direktbefehl (★★★ Kand.)', folio: 'f21r P9', stars: '★★★', is5: false, negative: false, candidate: true },
 ];
 
 export const GRAMMAR_SUFFIXES = [
