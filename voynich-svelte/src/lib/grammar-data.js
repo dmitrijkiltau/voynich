@@ -26,4 +26,6 @@ export const GRAMMAR_SUFFIXES = [
   { eva: '-dal', heb: 'דַּל', fn: '„schwach/dünn" — Diagnose-Refrain', stars: '★★★★', is5: false },
   { eva: '-aiin', heb: 'עַיִן', fn: '„Auge" — diagnostischer Terminus in Suffixposition', stars: '★★★★', is5: false },
   { eva: '-ody', heb: '+דִּי', fn: 'Vokalhelfer + דִּי; Listenregister f57r P.3–P.4', stars: '★★★', is5: false },
+  { eva: '-aly', heb: '+לִי', fn: 'Zodiak-Suffix -aly: Vokalhelfer + lamed + Yod; Sternlabel-Register (R52a)', stars: '★★★★', is5: false },
+  { eva: '-ary', heb: '+רִי', fn: 'Zodiak-Suffix -ary: Vokalhelfer + resch + Yod; Sternlabel-Register (R52a)', stars: '★★★★', is5: false },
 ];

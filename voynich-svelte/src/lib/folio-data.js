@@ -53,6 +53,10 @@ export const FOLIO_STATUS = {
   // ── Lage 3 · Kräuter A — f33r image studied ──────────────────────────────
   f33r:'partial',
 
+  // ── Lage 11 · Biologisch — f71–f72 · Zodiak bK1 vollständig analysiert ───
+  f71r:'done', f71v:'done',
+  f72r1:'done', f72r2:'done',
+
   // ── Lage 8 · Astronomisch — f57r+f58r analysiert ─────────────────────────
   f57r:'done',
   f58r:'done',

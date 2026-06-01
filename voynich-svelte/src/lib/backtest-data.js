@@ -24,11 +24,16 @@ export const TESTED = [
   { pred: 'qotchor (Pupillenzeichen)', heb: 'קוֹ+תְּ+כֹּר', result: '✓ f15r Schlusskolophon ★★★★★', context: 'qotchor·chaiin·chy·kol·daky= — positives Pupillen-Urteil; ophthalmologische Abschlussformel bB2' },
   { pred: 'soloiin', heb: 'שׁוֹ+לְ+עַיִן', result: '✓ f15v P.11 — therapeutisch präzisestes Kompositum', context: '„Arznei für das Auge" — höchste Heilarznei-Präzision im Gesamtkorpus; Gegenstück zu shoiin (f10v)' },
   { pred: 'cthor (vollständige Heilung)', heb: 'כְּ+תֹּר', result: '✓ f15v Schlusskolophon', context: 'daiin·cthor·chol·chor= — cthor+chor = Heilung der Pupillenpathologie; positiver Abschluss Bifolio bB2' },
+  // ── v6.9 · Zodiak-Tetraptychon bK1 (f71r–f72r2) ────────────────────────────
+  { pred: 'otam · otam · chotam (R19/R35)', heb: 'אוֹת+אָם · אוֹת+אָם · כֹּ+אוֹת+אָם', result: '✓ f72r1 R1 — dreistufige Nominal-Intensivierung', context: 'einfach → ×2 → Komparativ ko+X; exaktes R35-Schema; semantisch kohärent: Zeichen der Mutter im Stier-dunkel-Kontext' },
+  { pred: 'shol medial · sheol final (R17 Zodiak)', heb: 'שׁוֹל / שְׁאוֹל', result: '✓ f72r1 R1 (shol 2×) · R2 (sheol vor gap) — 5. Register-Bestätigung', context: 'identische Verteilung wie botanische Folios; shol nie in Ringabschlussposition; sheol unmittelbar vor gap-Marker' },
+  { pred: 'okaly= / okal= Minimalpaar (R52a)', heb: 'עַ+כָּל+יְ / עַ+כָּל', result: '✓ f72r2 S1.3/S1.5/S1.12 (okal) neben S1.4/S1.12 (okaly) — Determinans-y optional', context: 'identischer Stamm okal mit und ohne -y-Suffix auf demselben Ring; beweist R52a: -y ist Status-Emphaticus-Marker, kein festes Wortbildungselement' },
+  { pred: 'alef / otalef — Stier-Exklusivmarker', heb: 'אָלֶף / אוֹת+אָלֶף', result: '✓ f72r1 S1.6 + S1.9 — ausschließlich im Stier-dunkel-Panel', context: 'alef = Ochsenkopf-Piktogramm (Aleph-Ursprung); fehlt in f71r, f71v, f72r2; erste ikonographisch verankerte Buchstabenreferenz im Zodiak-Corpus' },
 ];
 
 export const STATS = [
-  { label: 'Bestätigt Spr. B (★★★★+)', pct: 88, num: '23 / 26', color: 'var(--gold)' },
+  { label: 'Bestätigt Spr. B (★★★★+)', pct: 90, num: '27 / 30', color: 'var(--gold)' },
   { label: 'Bestätigt Spr. A (Anker, f1v–f15v)', pct: 100, num: '260 / 260', color: 'var(--green)' },
-  { label: 'Nicht gefunden', pct: 8, num: '2 / 26', color: 'var(--red)' },
+  { label: 'Nicht gefunden', pct: 7, num: '2 / 30', color: 'var(--red)' },
   { label: 'Falsch-positiv (gesamt)', pct: 0, num: '0', color: 'var(--gold)' },
 ];

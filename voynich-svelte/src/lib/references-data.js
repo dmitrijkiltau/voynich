@@ -167,4 +167,25 @@ export const REFS = [
     stars: '★★★★',
     insert: 'or shaiin cthor okal dar doldaiin ykam ytor dom',
   },
+  {
+    id: 11,
+    folio: 'f72r1',
+    title: 'Stier-dunkel · R19/R35 Intensivierung & R52a Minimalpaar',
+    color: 'blue',
+    sides: [
+      {
+        eva: 'otam · otam · chotam',
+        heb: 'אוֹת+אָם · אוֹת+אָם · כֹּ+אוֹת+אָם',
+        de: '"Zeichen der Mutter — Zeichen der Mutter — wie das Zeichen der Mutter." (R19/R35 dreistufige Nominal-Intensivierung)',
+      },
+      {
+        eva: 'okal= · okaly=',
+        heb: 'עַ+כָּל / עַ+כָּל+יְ',
+        de: '"auf allem" neben "auf allem (det.)" — R52a-Minimalpaar: Determinans-y optional (f72r2 S1)',
+      },
+    ],
+    note: 'Erstes vollständiges Zodiak-Register: R17 ★★★★ (5. Register), R19/R35 ★★★ (Zodiak-Erstbeleg), R50 ★★★★ (2. Register), R52a ★★★★ (4 Folios · 75 Labels · 47%). alef/otalef = erste ikonographische Buchstabenreferenz im Zodiak-Corpus.',
+    stars: '★★★★',
+    insert: 'otam otam chotam daiin sheol',
+  },
 ];

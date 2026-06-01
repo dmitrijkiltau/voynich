@@ -3,7 +3,7 @@
 </script>
 
 <div class="backtest">
-	<p>26 hebräische/aramäische Wörter wurden nach dem EVA-Mapping kodiert und im Korpus (Sprache B) gesucht. Trefferquote: <strong>88,5 % (23/26)</strong>. In Quire A/B wurden je Folio 10 Ankerwörter bestätigt (100 %).</p>
+	<p>30 hebräische/aramäische Wörter wurden nach dem EVA-Mapping kodiert und im Korpus (Sprache B) gesucht. Trefferquote: <strong>90 % (27/30)</strong>. In Quire A/B wurden je Folio 10 Ankerwörter bestätigt (100 %).</p>
 
 	<div class="stat-bars">
 		{#each STATS as s}

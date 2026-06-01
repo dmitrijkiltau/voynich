@@ -7,7 +7,7 @@
 	<div>
 		<p class="dropcap">Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.</p>
 		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.</p>
-		<p>Version 6.8 wird ausgelöst durch f21r + f21v (Bifolio bC4 — vollständig abgeschlossen, Quire C 10/16 Seiten). Strukturelle Höhepunkte: <span class="eva">cheol</span> ★★★ → ★★★★ (4. Beleg, R43 definitiv erfüllt: f77r + f20v + f21r P.5 + P.8); neue Lexikoneinträge <span class="eva">tshaiin</span> ★★★ Kand. + <span class="eva">chotshol</span> ★★★ Kand. + <span class="eva">ysheol</span> ★★★ Kand.; f21r = Dreifache Licht-Formel P.7 (R52 ★★ Kand.) + R15 Typ-B 4. Beleg P.12; f21v = kompaktester Kolophon im Corpus (3 Wörter) + <span class="eva">daiin·daiin</span> R19-Bestätigung; R51 ★★★ (2-Folio-Kand.: f20v + f21v) + R52 ★★ (Kolophon-Trias, 1 Beleg) neu hinzugefügt.</p>
+		<p>Version 6.9 wird ausgelöst durch f71r + f71v + f72r1 + f72r2 (Bifolio bK1 — Quire K Zodiak-Tetraptychon, vollständig). Strukturelle Höhepunkte: R50 ★★★ → ★★★★ (2. Register bestätigt: 4 Zodiak-Folios, 30+ ee-Token); R52a ★★★ Kand. → ★★★★ (Determinans-y in Sternlabeln: 75 Labels · 47 % · Minimalpaar); R17 5. Register-Bestätigung; R19/R35 erstmals Zodiak (<span class="eva">otam·otam·chotam</span>); R29 → ★★★ Kand. (4 Belege); 9 neue Lexikoneinträge; Suffixe <span class="eva">-aly/-ary</span> formalisiert.</p>
 	</div>
 
 	<div class="box hl">
@@ -22,14 +22,14 @@
 				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C bC1–bC4)</td></tr>
 				<tr><td>Grammatikregeln</td><td><strong>{RULES.length}</strong> (24 validiert + {RULES.length - 24} Kandidaten)</td></tr>
 				<tr class="hidden-print">
-					<td>Empirische Erweiterung v6.8</td>
+					<td>Empirische Erweiterung v6.9</td>
 						<td>
 							<ul>
-								<li><span class="eva">cheol</span> ★★★ → ★★★★: R43 definitiv erfüllt (f77r + f20v + f21r P.5 + P.8, 3 Folios); 4. Beleg sichert genuine ח-ע-Cluster endgültig</li>
-								<li>Neue Lexikoneinträge: <span class="eva">tshaiin</span> ★★★ Kand. (du wirst das Auge behandeln; f21r P.9) + <span class="eva">chotshol</span> ★★★ Kand. (intensivstes Negativ-Kompositum; f21v P.6) + <span class="eva">ysheol</span> ★★★ Kand. (Aufstieg aus Scheol; f21r P.12) + <span class="eva">dait</span> ★★ Kand. + <span class="eva">keeees</span> ★ Hapax</li>
-								<li>f21r (<em>Thymus serpyllum</em> ★★★★): Dreifache Licht-Formel P.7 (R52 Kand. Corpus-Erstbeleg); Dreifach-Scheol-Sequenz P.11; R15 Typ-B 4. Beleg P.12; Licht-Dichte 7× (höchste im Corpus)</li>
-								<li>f21v (<em>Aquilegia vulgaris</em> ★★★★): kompaktester Kolophon im Corpus (3 Wörter, P.8); <span class="eva">daiin·daiin</span> 2. Beleg → R19 ★★★ best.; R51 2. Folio-Beleg → R51 ★★★ best.</li>
-								<li>Neue Regeln: R51 ★★★ Kand. (Illustrationszwickel-Einschübe, 2 Folios) + R52 ★★ Kand. (Kolophon-Trias, 1 Beleg) — Bifolio bC4 vollständig, Quire C 10/16 Seiten</li>
+								<li>R50 ★★★ → ★★★★: 2. vollständiges Register (Zodiak Quire K) — 4 Folios · 30+ ee-Token · kein Gegenbeispiel; R43 erfüllt</li>
+								<li>R52a ★★★ Kand. → ★★★★: Determinans-y in Zodiak-Sternlabeln — 4 Folios · 75 Labels · 47 % · Minimalpaar <span class="eva">okal=</span> vs. <span class="eva">okaly=</span> (f72r2 S1)</li>
+								<li>R17 5. Register-Bestätigung (<span class="eva">shol</span> medial / <span class="eva">sheol</span> final in Textringen, f72r1); R19/R35 erstmals Zodiak: <span class="eva">otam·otam·chotam</span> f72r1 R1 (dreistufig) + <span class="eva">otaiin·otain</span> f72r1 S1.8; R29 ★★ → ★★★ Kand. (f71v R2 + f72r1 R2, 4 Belege gesamt)</li>
+								<li>9 neue Lexikoneinträge ★★★: <span class="eva">alef/otalef</span> (Stier-Aleph, ikonographisch); <span class="eva">sheeolody, sheoltey, sholshdy, shokal, chotam, cheekaiin, okeodaly</span>; Suffixe <span class="eva">-aly/-ary</span> formalisiert (R52a)</li>
+								<li>Doppel-Stier-Hypothese: f71v (hell) = kalendarisch-prognostisch · f72r1 (dunkel) = astromedizinisch (Melothesie Nacken/Kehle); <span class="eva">alef</span> exklusiv in f72r1 — erste ikonographische Buchstabenreferenz im Zodiak-Corpus</li>
 							</ul>
 						</td>
 					</tr>
