@@ -1,0 +1,42 @@
+export const OPEN_PROBLEMS = [
+  {
+    id: 'OP1',
+    title: 'Wortlängenverteilung',
+    severity: 'hoch',
+    problem: 'Die Wortlängenverteilung im Voynich-Corpus ist zu schmal für freie semitische Morphologie. Semitische Sprachen erlauben agglutinative Konstrukte mit variablen Wortlängen; das Voynich-Profil zeigt eine auffällig rigide Konzentration auf 4–8 EVA-Zeichen.',
+    hypothesis: 'Mögliche Erklärungen: (a) systematisches Abbreviatursystem, das Konsonanten weglässt; (b) grammatikalisiertes Register-System mit stark reduzierten Formen; (c) feste Slot-Grammatik als bewusste Kodierungsstrategie.',
+    status: 'offen',
+  },
+  {
+    id: 'OP2',
+    title: 'Buchstaben-Slot-Grammatik',
+    severity: 'hoch',
+    problem: 'Bestimmte EVA-Zeichen kommen statistisch nur in bestimmten Wortpositionen vor (Slot-Grammatik nach Tiltman/Stolfi). Diese Eigenschaft passt zu keiner bekannten natürlichen Sprache direkt. Im Mapping-System wird sie durch Präfix-/Suffix-Hierarchien erklärt (R41), aber nicht formal modelliert.',
+    hypothesis: 'Das System kodiert möglicherweise feste grammatische Funktionen pro Slot (Präfix / Wurzel / Suffix-Register) mit phonotaktischen Constraints, die im Mischna-Hebräisch keine direkte Parallele haben.',
+    status: 'offen',
+  },
+  {
+    id: 'OP3',
+    title: 'Entropie-Abweichung',
+    severity: 'hoch',
+    problem: 'Die Buchstaben-Entropie des Voynich-Textes liegt zwischen Englisch und Chinesisch — ungewöhnlich für semitische Konsonantenschriften (die typischerweise niedrigere Entropie aufweisen). Kryptologische Forschung (Landini, Stolfi, Rugg, Tiltman) hat dies konsistent gezeigt.',
+    hypothesis: 'Ursache unklar: Abbreviatursystem? Grammatikalisierung? Kodiertes Register-System mit hoher Vokalmarker-Dichte? Das Mapping erklärt den semantischen Inhalt, aber nicht die Entropiestruktur.',
+    status: 'offen',
+  },
+  {
+    id: 'OP4',
+    title: 'Fehlende unabhängige Blindvalidierung',
+    severity: 'mittel',
+    problem: 'Das System wurde noch nicht durch einen unabhängigen Hebraisten blind getestet — d.h. ein Fachmann, der das Mapping nicht kennt, hat noch nicht versucht, Voynich-Text damit zu lesen. Dies ist die stärkste Form der externen Validierung und fehlt vollständig.',
+    hypothesis: 'Bis zur Blindvalidierung gilt: Das Mapping ist eine starke Lesehypothese mit konsistenter Semantik, aber keine bewiesene Entzifferung. Interne Kohärenz beweist keine externe Gültigkeit.',
+    status: 'ausstehend',
+  },
+  {
+    id: 'OP5',
+    title: 'Regelmoratorium aktiv',
+    severity: 'strukturell',
+    problem: 'Das Verhältnis validierter Regeln zu Kandidaten-Regeln hat sich umgekehrt: v6.2 = 2,25:1 · v6.6 = 1,47:1 · v7.4 = 0,84:1. Das ist ein klassisches Overfitting-Signal: Neue Beobachtungen generieren neue Regeln, anstatt bestehende Kandidaten zu schließen.',
+    hypothesis: 'Ab v7.5: Regelmoratorium (keine R60+) bis Verhältnis ≥ 1,5:1. Ziel: 14 aktuelle Kandidaten (R43-Frist) hochstufen oder widerlegen. Priorisiert: R59, R55, R58, R56, R54, R57.',
+    status: 'moratorium',
+  },
+];

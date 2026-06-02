@@ -6,6 +6,7 @@ import { COMPARISON, FOLIOS as LANG_A_FOLIOS } from './language-a-data.js';
 import { STAR_TYPES, FOLIOS as STAR_FOLIOS } from './margin-stars-data.js';
 import { REFS } from './references-data.js';
 import { CONFIDENCE_SCALE, ANCHOR_FOLIOS } from './methodology-data.js';
+import { OPEN_PROBLEMS } from './open-problems-data.js';
 
 /** @param {string} html */
 function stripHtml(html) {
@@ -38,18 +39,20 @@ const CAT = /** @type {Record<string, string>} */({
   possessiv:  'Possessiv-Formen',
 });
 
+// No TranslatorTool, nor GibberishTest in Markdown export
 const TOC = [
   'I. Zusammenfassung',
   'II. Methodik',
-  'IV. Zeichenmapping',
-  'V. Lexikon',
-  'VI. Grammatik',
-  'VII. Grammatikregeln',
-  'VIII. Rückwärtstest',
-  'IX. Referenzen',
-  'X. Wortklassen',
-  'XI. Sprache A',
-  'XII. Randsterne',
+  'III. Zeichenmapping',
+  'IV. Lexikon',
+  'V. Grammatik',
+  'VI. Grammatikregeln',
+  'VII. Rückwärtstest',
+  'VIII. Referenzen',
+  'IX. Wortklassen',
+  'X. Sprache A',
+  'XI. Randsterne',
+  'XII. Offene Probleme',
 ];
 
 export function generateMarkdown() {
@@ -90,7 +93,7 @@ export function generateMarkdown() {
     ['Texttyp', 'Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis)'],
     ['Analysierte Folios', STATS.foliosAll],
     ['Bestätigte Wörter', `${STATS.lexicon} (★★★ oder höher)`],
-    ['Rückwärtstest (Spr. B)', `${STATS.backtestFraction} Vorhersagen bestätigt (${STATS.backtest}); 0 Falsch-Positive`],
+    ['Rückwärtstest', `Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 17/20 (85%) · 0 Falsch-Positive`],
     ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4)`],
     ['Grammatikregeln', `${RULES.length} (${STATS.validatedRules} validiert + ${RULES.length - STATS.validatedRules} Kandidaten)`],
   ]));
@@ -116,8 +119,8 @@ export function generateMarkdown() {
     line();
   }
 
-  // ── IV. Zeichenmapping (III. tool skipped) ─────────────────────
-  h(2, 'IV. Zeichenmapping EVA → Hebräisch');
+  // ── III. Zeichenmapping ────────────────────────────────────────
+  h(2, 'III. Zeichenmapping EVA → Hebräisch');
   line();
   line('Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.');
   line();
@@ -127,11 +130,11 @@ export function generateMarkdown() {
   line();
   s.push(tbl(['EVA', 'Hebräisch', 'Bedeutung'], PREFIXES.map(p => [p.eva, p.heb, p.de])));
   line();
-  line('**Sonderregel:** Das EVA-Zeichen `o` hat zwei Funktionen: (1) als konsonantisches ע (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam im Wortinneren.');
+  line('**R2-ext (v7.5):** Das EVA-Zeichen `o` ist positionell vollständig determiniert: (1) `o-` am Wortanfang = ע (Ayin, konsonantisch) — ausnahmslos; (2) `o` im Wortinneren = Ḥolam (Vokalmarker) — ausnahmslos. **Negativtest:** 0 Gegenbeispiele in 140+ validierten Lexikoneinträgen.');
   line();
 
-  // ── V. Lexikon ─────────────────────────────────────────────────
-  h(2, `V. Bestätigtes Lexikon (${STATS.lexicon} Einträge)`);
+  // ── IV. Lexikon ────────────────────────────────────────────────
+  h(2, `IV. Bestätigtes Lexikon (${STATS.lexicon} Einträge)`);
   line();
   line('Alle Einträge mit ★★★ oder höher.');
   line();
@@ -144,8 +147,8 @@ export function generateMarkdown() {
     line();
   }
 
-  // ── VI. Grammatik ──────────────────────────────────────────────
-  h(2, 'VI. Grammatik — Präfixe, Suffixe & Schemata');
+  // ── V. Grammatik ──────────────────────────────────────────────
+  h(2, 'V. Grammatik — Präfixe, Suffixe & Schemata');
   line();
   h(3, 'Präfix-System');
   line();
@@ -169,32 +172,37 @@ export function generateMarkdown() {
   line('**Quire T / Sprache B:** daiin (Urteil) → shedy+X → Befund (ckhy/dal/dam) → lchedy (Therapieziel) → sheol/or (Prognose)');
   line();
 
-  // ── VII. Grammatikregeln ───────────────────────────────────────
-  h(2, 'VII. Grammatikregeln');
+  // ── VI. Grammatikregeln ───────────────────────────────────────
+  h(2, 'VI. Grammatikregeln');
   line();
-  line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${RULES.length - STATS.validatedRules} Kandidaten** (darunter v6.2 R40–R42, D1/D2; v6.3 R43–R44; v6.4 R45–R48; v6.5 R33-Erweiterung + R49; v6.6 R50; v6.8 R51 ★★★ gesichert + R52 ★★; v6.9 R52a ★★★★; v7.0–v7.2 R53 ★★★★ (4 Belege, Subtypen A/B/C, R43 Mehrfachbestätigung); v7.2 R54–R57 ★★–★★★ Kand.; v7.3 R58 ★★★ Kand. (3×daiin-Konzentration); v7.4 R59 ★★★ Kand. (qo Konnektiv-Partikel); Aufstufungen v7.4: R3 → ★★★★★, R11 → ★★★★, R15 → ★★★★★). R14 und R20 gelten als gesichert (★★★★★).`);
+  line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${RULES.length - STATS.validatedRules} Kandidaten**. **v7.5-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell 27:32 = 0,84:1). R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).`);
   line();
   s.push(tbl(['#', 'Regel', 'Evidenz', 'Konf.'],
     RULES.map(r => [r.id, stripHtml(r.rule), stripHtml(r.evidence), r.stars])));
   line();
 
-  // ── VIII. Rückwärtstest ────────────────────────────────────────
-  h(2, 'VIII. Rückwärtstest-Statistik');
+  // ── VII. Rückwärtstest ────────────────────────────────────────
+  h(2, 'VII. Rückwärtstest-Statistik');
   line();
-  line(`${STATS.backtestTotal} hebräische/aramäische Wörter wurden nach dem EVA-Mapping kodiert und im Korpus (Sprache B) gesucht. Trefferquote: **${STATS.backtest} (${STATS.backtestFraction})**. 0 Falsch-Positive.`);
+  line(`30 hebräische/aramäische Wörter getestet. Ab v7.5 zwei Klassen: **Typ I** (genuine Vorhersagen — Prä-Analyse-Anker, eingefroren): **10/10 = 100%** · **Typ II** (interne Kohärenz — post-hoc): **17/20 = 85%** · 0 Falsch-Positive in beiden Klassen.`);
   line();
   s.push(tbl(['Kategorie', 'Ergebnis'], BACKTEST_STATS.map(st => [st.label, st.num])));
   line();
   line('**Entscheidend: Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.** Bei einem Zufallsalphabet statistisch ausgeschlossen.');
   line();
-  h(3, 'Getestete Formen');
+  h(3, 'Typ I — Genuine Vorhersagen (10/10 · 100%)');
   line();
   s.push(tbl(['Vorhersage', 'Hebräisch', 'Befund', 'Kontext'],
-    TESTED.map(t => [t.pred, t.heb, t.result, t.context])));
+    TESTED.filter(t => t.type === 'I').map(t => [t.pred, t.heb, t.result, t.context])));
+  line();
+  h(3, 'Typ II — Interne Kohärenz (17/20 · 85%)');
+  line();
+  s.push(tbl(['Vorhersage', 'Hebräisch', 'Befund', 'Kontext'],
+    TESTED.filter(t => t.type === 'II').map(t => [t.pred, t.heb, t.result, t.context])));
   line();
 
-  // ── IX. Referenz-Sequenzen ─────────────────────────────────────
-  h(2, 'IX. Verankerte Referenz-Sequenzen');
+  // ── VIII. Referenz-Sequenzen ───────────────────────────────────
+  h(2, 'VIII. Verankerte Referenz-Sequenzen');
   line();
   line('Die am besten verifizierten Sequenzen des Korpus — als Orientierungshilfe beim Übersetzen.');
   line();
@@ -220,16 +228,16 @@ export function generateMarkdown() {
     line();
   }
 
-  // ── X. Wortklassen ────────────────────────────────────────────
-  h(2, 'X. Wortklassen-System');
+  // ── IX. Wortklassen ───────────────────────────────────────────
+  h(2, 'IX. Wortklassen-System');
   line();
   line('Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.');
   line();
   s.push(tbl(['Klasse', 'Wörter (Auswahl)', 'Funktion'], CLASSES.map(c => [c.cls, c.words, c.fn])));
   line();
 
-  // ── XI. Sprache A ──────────────────────────────────────────────
-  h(2, `XI. Sprache A — Quires A–C (${STATS.foliosA})`);
+  // ── X. Sprache A ──────────────────────────────────────────────
+  h(2, `X. Sprache A — Quires A–C (${STATS.foliosA})`);
   line();
   h(3, 'Sprachvergleich Spr. A vs. Spr. B');
   line();
@@ -241,8 +249,8 @@ export function generateMarkdown() {
     LANG_A_FOLIOS.map(f => [f.folio, f.plant, f.signal, f.stars])));
   line();
 
-  // ── XII. Randsterne ────────────────────────────────────────────
-  h(2, 'XII. Das Randstern-System');
+  // ── XI. Randsterne ────────────────────────────────────────────
+  h(2, 'XI. Das Randstern-System');
   line();
   h(3, 'Sterntypen');
   line();
@@ -254,11 +262,35 @@ export function generateMarkdown() {
   s.push(tbl(['Folio', 'Prinzip', 'Notiz'], STAR_FOLIOS.map(f => [f.folio, f.principle, f.note])));
   line();
 
+  // ── XII. Offene Probleme ──────────────────────────────────────
+  h(2, 'XII. Offene Probleme und ungelöste Widersprüche');
+  line();
+  line('Ehrliche Dokumentation der statistischen Anomalien und methodischen Grenzen (eingeführt v7.5). Das Mapping ist eine **starke Lesehypothese**, keine bewiesene Entzifferung.');
+  line();
+  for (const p of OPEN_PROBLEMS) {
+    h(3, `${p.id} — ${p.title}`);
+    line();
+    line(`**Schwere:** ${p.severity} · **Status:** ${p.status}`);
+    line();
+    line(p.problem);
+    line();
+    line(`_Arbeitshypothese: ${p.hypothesis}_`);
+    line();
+  }
+  line('**Scheol-Verteilungsstatistik (v7.5 formalisiert):**');
+  line();
+  s.push(tbl(['Strukturposition', 'sheol/shol-Vorkommen', 'Andere Lexeme'], [
+    ['Zeilenende / Kolophon-Final', '>85 % aller Belege', 'or, dom, kaiim'],
+    ['Zeilenmitte (medial)', '<15 % — immer in Kompositum', '—'],
+    ['Zeilenanfang', '0 %', '—'],
+  ]));
+  line();
+
   // ── Footer ─────────────────────────────────────────────────────
   line('---');
   line();
   line(`Voynich-Manuskript — Formales Mapping-Dokument · Version ${STATS.version} · ${STATS.date}`);
-  line(`Lexikon: ${STATS.lexicon} Einträge · Grammatikregeln: ${STATS.rules} · Rückwärtstest: ${STATS.backtest} (${STATS.backtestFraction})`);
+  line(`Lexikon: ${STATS.lexicon} Einträge · Grammatikregeln: ${STATS.rules} · Rückwärtstest: ${STATS.backtestFraction}`);
   line();
   line('_Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._');
 

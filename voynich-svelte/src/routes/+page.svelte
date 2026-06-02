@@ -14,6 +14,7 @@
 	import MarginStarsSection from '$lib/components/MarginStarsSection.svelte';
 	import GibberishTest from '$lib/components/GibberishTest.svelte';
 	import FolioProgress from '$lib/components/FolioProgress.svelte';
+	import OpenProblemsSection from '$lib/components/OpenProblemsSection.svelte';
 	let evaInput       = $state('');
 	let activeSection  = $state('tool');
 	let menuOpen       = $state(false);
@@ -43,6 +44,7 @@
 		{ id: 'spracheA',        label: 'XI. Sprache A' },
 		{ id: 'sterne',          label: 'XII. Randsterne' },
 		{ id: 'gibberish',       label: 'XIII. Gibberish-Test' },
+		{ id: 'offeneprobleme',  label: 'XIV. Offene Probleme' },
 	];
 
 	// Scrollspy via IntersectionObserver
@@ -269,13 +271,20 @@
 		<section class="section" id="gibberish">
 			<h2>XIII. Gibberish-Test (v6.4)</h2>
 			<p>Empirisches Falsifikationswerkzeug: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch R40 v2, R41, R44–R46 und D1/D2 geführt. Abbruchschwelle: &gt; 15 % · Warnzone: 11–15 % · Zielkorridor: ≤ 10 % strukturelle Falsch-Positive (★★★).</p>
-			<p><em>v7.4-Prüfung:</em> R3 ★★★★★, R11 ★★★★, R15 ★★★★★ (Aufstufungen durch Härtetests f1r/f1v) und R59 ★★★ Kand. haben keine Auswirkung auf die Testrate — Verbpräfixe, Kolophon-Marker und Paradigma-Wiederholungsreihen betreffen keine regulären Pseudowort-Tokens. Testwert bleibt {STATS.gibberishRate} (Warnzone).</p>
+			<p><em>v7.5-Prüfung:</em> Regelmoratorium — keine neuen Regeln seit v7.4. R2-ext (v7.5) präzisiert nur die Positionsregel für „o" und hat keine Auswirkung auf die Testrate. Testwert bleibt {STATS.gibberishRate} (Warnzone).</p>
 			<GibberishTest />
+		</section>
+
+		<!-- XIV. OFFENE PROBLEME -->
+		<section class="section" id="offeneprobleme">
+			<h2>XIV. Offene Probleme und ungelöste Widersprüche</h2>
+			<p>Ehrliche Dokumentation der statistischen Anomalien und methodischen Grenzen, die das System nicht erklärt. Eingeführt in v7.5.</p>
+			<OpenProblemsSection />
 		</section>
 
 		<footer class="page-footer">
 			<p>Voynich-Manuskript — Formales Mapping-Dokument · Version {STATS.version} · {STATS.date}</p>
-			<p>Lexikon: {STATS.lexicon} Einträge · Grammatikregeln: {STATS.rules} · Rückwärtstest: {STATS.backtest} ({STATS.backtestFraction})</p>
+			<p>Lexikon: {STATS.lexicon} Einträge · Grammatikregeln: {STATS.rules} · Rückwärtstest: {STATS.backtestFraction}</p>
 			<p class="disclaimer">Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein.<br>
 			Konfidenzbewertungen beziehen sich auf Konsistenz im vorliegenden Korpus.</p>
 			<a href="https://kiltau.com/legal-notice" target="_blank" rel="noopener" class="legal-link">Impressum & Datenschutz</a>

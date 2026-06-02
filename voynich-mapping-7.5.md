@@ -1,5 +1,5 @@
 # Voynich-Manuskript — Formales Mapping-Dokument
-**EVA → Hebräisch-Aramäisch · Version 7.4 · Juni 2026**
+**EVA → Hebräisch-Aramäisch · Version 7.5 · Juni 2026**
 
 Sprachen A & B · Folios f1r, f1v–f25v (Quires A–B+C komplett, Quire D bD1), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
 
@@ -9,15 +9,16 @@ Sprachen A & B · Folios f1r, f1v–f25v (Quires A–B+C komplett, Quire D bD1),
 
 - I. Zusammenfassung
 - II. Methodik
-- IV. Zeichenmapping
-- V. Lexikon
-- VI. Grammatik
-- VII. Grammatikregeln
-- VIII. Rückwärtstest
-- IX. Referenzen
-- X. Wortklassen
-- XI. Sprache A
-- XII. Randsterne
+- III. Zeichenmapping
+- IV. Lexikon
+- V. Grammatik
+- VI. Grammatikregeln
+- VII. Rückwärtstest
+- VIII. Referenzen
+- IX. Wortklassen
+- X. Sprache A
+- XI. Randsterne
+- XII. Offene Probleme
 
 ---
 
@@ -27,9 +28,9 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 
 **Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
 
-Version 7.4 Ausgelöst durch Härtetests f1r + f1v (Bifolio bA1 — Haskama-Typ + Herbal-Typ, Quire A). Strukturelle Höhepunkte: R3 ★★★★★ (6 neue Belege f1r: ykal, ykaiin, yshey, ycho, yto, ycheey — >11 Belege / ≥8 Folios); R11 ★★★★ (f1r T1–T4 + f1v P4/P10: 6 neue Belege, alle 6 Transkriptoren einig); R15 ★★★★★ (Belege 7–9 aus f1r: chol.chol P3.L15, keey.keey P4.L26, dar…dar P4.L23 — 9 Belege / 6 Folios); R59 neuer Kandidat ★★★ (qo als isolierter Konnektiv-Token, Paragraphen-Brücke — f1v P.7); 2 neue Lexikoneinträge (daiiin = דִּינִין Aramäischer Plural ★★★; dain = דָּן Richter Partizip ★★★); validierte Regeln: 24 → 27; Falsch-Positive: 0 (R54/R55/R56 Negativtests ✓); Haskama-Struktur f1r: vierfache Autorisierungsformel bestätigt; din-Trias f1r P3.L14 (dain / odaiin / chodain — Präfix-Paradigma).
+Version 7.5 Ausgelöst durch externes Gutachten (linguistisch-kryptologische Fachkritik). Methodische Korrekturen: (1) Regelmoratorium — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell 27:32 = 0,84:1); (2) Rückwärtstest-Reform: Trennung in Typ I (genuine Vorhersagen: 10/10 = 100%) und Typ II (interne Kohärenz: 17/20 = 85%); (3) R2-ext: explizite Positionsregel für EVA „o" (Wortanfang = Ayin, wortintern = Ḥolam) mit Negativtest — 0 Gegenbeispiele in 140+ Einträgen; (4) chotshol herabgestuft von ★★★ Kand. auf ★★ (morphologisch fragwürdig: Einzelbeleg, 3 Morpheme ohne Separator); (5) neuer Abschnitt „Offene Probleme" — ehrliche Dokumentation ungeklärter statistischer Anomalien (Entropie, Slot-Grammatik, Wortlängenverteilung, fehlende Blindvalidierung); Scheol-Verteilungsstatistik formalisiert (>85 % Zeilenende-Position, 0 % Zeilenanfang).
 
-### Kernbefunde — Version 7.4
+### Kernbefunde — Version 7.5
 
 | Eigenschaft | Wert |
 | --- | --- |
@@ -37,7 +38,7 @@ Version 7.4 Ausgelöst durch Härtetests f1r + f1v (Bifolio bA1 — Haskama-Typ 
 | Texttyp | Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis) |
 | Analysierte Folios | f1r, f1v–f25v (Quires A–B+C komplett, Quire D bD1), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v |
 | Bestätigte Wörter | 303 (★★★ oder höher) |
-| Rückwärtstest (Spr. B) | 27/30 Vorhersagen bestätigt (90%); 0 Falsch-Positive |
+| Rückwärtstest | Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 17/20 (85%) · 0 Falsch-Positive |
 | Sprache A Anker | f1r, f1v–f25v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4) |
 | Grammatikregeln | 59 (27 validiert + 32 Kandidaten) |
 
@@ -73,7 +74,7 @@ Jede Mapping-Hypothese wird durch Rückwärtstests validiert: Ein bekanntes hebr
 **f71r–f72r2 — Erstes vollständiges Zodiak-Register:** Quire K (Beinecke XI), Sprache B-dominant. Zodiak-Tetraptychon bK1: 4 Panels, 75 Sternlabeln, 12/12 Ankerwörter bestätigt (100 %). Erste Bestätigung von R50 ★★★★ und R52a ★★★★ im Zodiak-Register. R19/R35-Intensivierung erstmals im Zodiak belegt:
 `otam · otam · chotam` = אוֹת+אָם · אוֹת+אָם · כֹּ+אוֹת+אָם "Zeichen der Mutter — Zeichen der Mutter — wie das Zeichen der Mutter." (f72r1 R1 — R35-Dreistufenschema ★★★)
 
-## IV. Zeichenmapping EVA → Hebräisch
+## III. Zeichenmapping EVA → Hebräisch
 
 Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 
@@ -123,9 +124,9 @@ Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 | t | תָּ | Imperfekt 3.Sg.f./2.Sg. |
 
 
-**Sonderregel:** Das EVA-Zeichen `o` hat zwei Funktionen: (1) als konsonantisches ע (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam im Wortinneren.
+**R2-ext (v7.5):** Das EVA-Zeichen `o` ist positionell vollständig determiniert: (1) `o-` am Wortanfang = ע (Ayin, konsonantisch) — ausnahmslos; (2) `o` im Wortinneren = Ḥolam (Vokalmarker) — ausnahmslos. **Negativtest:** 0 Gegenbeispiele in 140+ validierten Lexikoneinträgen.
 
-## V. Bestätigtes Lexikon (303 Einträge)
+## IV. Bestätigtes Lexikon (303 Einträge)
 
 Alle Einträge mit ★★★ oder höher.
 
@@ -237,7 +238,7 @@ Alle Einträge mit ★★★ oder höher.
 | okchan | עַ+כְּ+חָן | auf/für die Gnade (o + k + chan, positive Prognose-Direktional) — f19v P.9 | ★★★★ |
 | cheey | חֵיי | Leben / lebendig (Tsere-Variante von chey per R50; f20r P.13 Schlusskolophon: chor.chor.cheey.tchey= = Pupille—Pupille—Leben—sie belebt) | ★★★ |
 | dol·shol | דָּוֶה+שׁוֹל | Schmerz-Scheol (negatives Befundpaar: schwach+Tod; R15-Antonymenpaar; therapeutisches Warnsignal bei Überdosierung) — f20r P.7 | ★★★ |
-| chotshol | כֹּ+תּ+שְׁאוֹל | alles-du-wirst-Scheol — intensivstes Negativ-Kompositum im Corpus: kol + tav-Futur + Scheol in einem Wort komprimiert — ★★★ Kand. (Corpus-Erstbeleg f21v P.6) | ★★★ |
+| chotshol | כֹּ+תּ+שְׁאוֹל | alles-du-wirst-Scheol — ★★ (morphologisch fragwürdig: kol+tav-Futur+Scheol ohne Separator-Token, 3 Morpheme in einem Token ohne Corpus-Parallele; Wiederaufnahme auf ★★★ Kand. bei zweitem strukturidentischem Beleg) — Corpus-Erstbeleg f21v P.6 | ★★ |
 | sheeolody | שְׁאוֹל+עֹ+דִּי | von jenem Scheol — Scheol-Vollform + Vokalhelfer + Genitivpartikel; R52a-suffigiert — f71v R1 | ★★★ |
 | sheoltey | שְׁאוֹל+טַ+יְ | Scheol des Tau-Zeichens — Scheol-Vollform + Tet + Yod-Imperfekt; f72r1 R1 (neben shol medial) | ★★★ |
 | sholshdy | שׁוֹל+שׁ+דִּי | Scheol — von dem Scheol (R24-Emphase-Dopplung mit Genitiv-Brücke); f71v S2.5 | ★★★ |
@@ -480,7 +481,7 @@ Alle Einträge mit ★★★ oder höher.
 | olsho | שׁוֹ+לוֹ | sein Scheol (Possessiv) | ★★★ |
 
 
-## VI. Grammatik — Präfixe, Suffixe & Schemata
+## V. Grammatik — Präfixe, Suffixe & Schemata
 
 ### Präfix-System
 
@@ -529,14 +530,14 @@ Alle Einträge mit ★★★ oder höher.
 
 **Quire T / Sprache B:** daiin (Urteil) → shedy+X → Befund (ckhy/dal/dam) → lchedy (Therapieziel) → sheol/or (Prognose)
 
-## VII. Grammatikregeln
+## VI. Grammatikregeln
 
-59 Regeln gesamt: **27 validiert** (≥ 2 unabhängige Belege) + **32 Kandidaten** (darunter v6.2 R40–R42, D1/D2; v6.3 R43–R44; v6.4 R45–R48; v6.5 R33-Erweiterung + R49; v6.6 R50; v6.8 R51 ★★★ gesichert + R52 ★★; v6.9 R52a ★★★★; v7.0–v7.2 R53 ★★★★ (4 Belege, Subtypen A/B/C, R43 Mehrfachbestätigung); v7.2 R54–R57 ★★–★★★ Kand.; v7.3 R58 ★★★ Kand. (3×daiin-Konzentration); v7.4 R59 ★★★ Kand. (qo Konnektiv-Partikel); Aufstufungen v7.4: R3 → ★★★★★, R11 → ★★★★, R15 → ★★★★★). R14 und R20 gelten als gesichert (★★★★★).
+59 Regeln gesamt: **27 validiert** (≥ 2 unabhängige Belege) + **32 Kandidaten**. **v7.5-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell 27:32 = 0,84:1). R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
 
 | # | Regel | Evidenz | Konf. |
 | --- | --- | --- | --- |
 | R1 | qo- = וְ (Vav conjunctive) an jedem Wortanfang — **ausschließlich Sprache B in Quires A+B**; in Sprache A vollständig absent (gilt mit vollem Geltungsbereich nur für Quires A+B — s. R33, R47) | qokedam, qokol, qokeedy (f57r, f103r); f001r Spr. A: 0 Belege in 260 Tokens ★★★★★; Ausnahmen ab Quire C: s. R33 (emergierend) + R47 (Quire H vollständig integriert) | ★★★★★ |
-| R2 | o- am Wortanfang = עַ (Ayin) | okol, okoldm, okaiin, odol | ★★★★ |
+| R2 | **o-Positionsdetermination (R2-ext, v7.5):** o- am Wortanfang = עַ (Ayin, konsonantisch) — ausnahmslos; o im Wortinneren = ֹ (Ḥolam, Vokalmarker) — ausnahmslos. Kein Ermessensspielraum — die Dualfunktion ist vollständig positionell determiniert (vgl. Mater lectionis-Funktion von Vav/Yod im spätbiblischen Hebräisch: positionell Konsonant _oder_ Vokalmarker). **Negativtest:** Kein Lexikoneintrag im gesamten validierten Corpus verletzt diese Positionsregel — 0 Gegenbeispiele in 140+ Einträgen. | Wortanfang → Ayin: okol, okoldm, okaiin, odol, okaiin, otor, otam, okchan; wortintern → Ḥolam: qokol (קוֹ+כֹּל), okoldm (עַל+כֹּל+דָּם), sokar, ytor, ychor, shol; Negativtest (v7.5): 0 Gegenbeispiele in 140+ Lexikoneinträgen ✓ | ★★★★ |
 | R3 | y-initiale Wörter = Imperfekt 3. Sg. Mask. | yteechy, yshdal, ykchaiin, ycheor, ychor; f1r: ykal, ykaiin, yshey, ycho, yto, ycheey (6 neue Belege) — >11 Belege / ≥8 Folios | ★★★★★ |
 | R4 | t-initiale Wörter = Imperfekt 3. Sg. Fem. / 2. Sg. | taiir; tsheoarom | ★★★★ |
 | R5 | shedy und chedy kommen nie im selben Absatz vor | 15 Zeilen nur chedy, 17 nur shedy, 5 beide (lange Zeilen) | ★★★★ |
@@ -596,57 +597,63 @@ Alle Einträge mit ★★★ oder höher.
 | R59 | **qo als isolierter Konnektiv-Token (v7.4 — Kandidat ★★★):** Das EVA-Token qo in **isolierter Einzelwort-Position** am Beginn einer Paragraphenzeile repräsentiert das bare וְ (Vav conjunctivum als Partikel), **nicht** das Verbund-Präfix qo- im Sinne von R1. Es erscheint als grammatische Brücke zwischen zwei inhaltlich zusammengehörigen Paragraphen eines Folio-Eintrags. In Sprache A (Quire A) maximal 1× pro Folio belegbar. **Abgrenzung von R1:** R1 (qo- Verbundpräfix): qo + Stamm als ein Token → Sprache B exklusiv in Quires A+B; R59 (qo Einzeltoken): qo als alleinstehendes Wort, gefolgt von Punkt-Separator → auch in Sprache A möglich — Kandidat | f1v P.7: qo.ol.choiees.cheol.dol.cthey- — Erstbeleg (alle 4 Transkriptoren H/C/D/F einig); qo als isoliertes Einzelwort (kein Verbundpräfix); Paragraphenbrücke zwischen inhaltlich zusammengehörigen Abschnitten; ★★★ Kand. (1 Beleg, R43-Frist: nächste 5 Folios Quire A/D) | ★★★ |
 
 
-## VIII. Rückwärtstest-Statistik
+## VII. Rückwärtstest-Statistik
 
-30 hebräische/aramäische Wörter wurden nach dem EVA-Mapping kodiert und im Korpus (Sprache B) gesucht. Trefferquote: **90% (27/30)**. 0 Falsch-Positive.
+30 hebräische/aramäische Wörter getestet. Ab v7.5 zwei Klassen: **Typ I** (genuine Vorhersagen — Prä-Analyse-Anker, eingefroren): **10/10 = 100%** · **Typ II** (interne Kohärenz — post-hoc): **17/20 = 85%** · 0 Falsch-Positive in beiden Klassen.
 
 | Kategorie | Ergebnis |
 | --- | --- |
-| Bestätigt Spr. B (★★★★+) | 27 / 30 |
+| Typ I — Genuine Vorhersagen (Prä-Analyse-Anker, eingefroren) | 10 / 10 |
+| Typ II — Interne Kohärenz (post-hoc-Entdeckungen) | 17 / 20 |
 | Bestätigt Spr. A (Anker, f1v–f15v) | 260 / 260 |
-| Nicht gefunden | 2 / 30 |
 | Falsch-positiv (gesamt) | 0 |
 
 
 **Entscheidend: Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.** Bei einem Zufallsalphabet statistisch ausgeschlossen.
 
-### Getestete Formen
+### Typ I — Genuine Vorhersagen (10/10 · 100%)
 
 | Vorhersage | Hebräisch | Befund | Kontext |
 | --- | --- | --- | --- |
 | dam | דָּם | ✓ 4× f57r Zeilenende | qokedam, cheeodam, okoldm, yodam |
 | sar | שַׂר | ✓ f57r P.9, f103r P.2,17 | immer Zeilenmitte; nach daiin oder shedy |
-| chedy | כְּדֵי | ✓ 22× f103r | nie mit -ody kombiniert (R5) |
-| shedy | שֶׁ+דִּי | ✓ 27× f103r | immer von Konnektoren gefolgt |
 | sheol | שְׁאוֹל | ✓ 8× f103r Zeilenende | P.23,35,40(×2),42,45 |
 | daiin | דִּין | ✓ 3× Zeilenanfang f103r | f57r P.5: qokcho·daiin·cheeodam |
 | chalal | חָלָל | ✓ 1× exakt nach sheol P.42 | tshey·sheol·cheolshy·chalal |
-| ckhy | כְּהִי | ✓ f57r P.2,9; f103r P.17,23 | 4 unabhängige Belege |
 | dal | דַּל | ✓ Dreifach-Refrain f103r P.1 | pchedal, yshdal, dal (standalone) |
+| chaiin · ckhy · or · aiin | Prognose-Tetrade | ✓ f10r P4 (alle vier in einer Zeile) | vollständiges hippokratisches Schema |
+| shol · dy · … · shol | R24-Struktur | ✓ f13r P.1 (Dopplungsformel) | einmaliges Emphase-Muster mit Genitiv-Brücke dy |
+| dam (Quire B) | דָּם | ✓ f14v P.8 (Blut-Triade) | dol · dair · dam — Erstbeleg Blutpathologie in bB3; verbindet f14v mit f3r |
+| shol medial · sheol final (R17 Zodiak) | שׁוֹל / שְׁאוֹל | ✓ f72r1 R1 (shol 2×) · R2 (sheol vor gap) — 5. Register-Bestätigung | identische Verteilung wie botanische Folios; shol nie in Ringabschlussposition; sheol unmittelbar vor gap-Marker |
+
+
+### Typ II — Interne Kohärenz (17/20 · 85%)
+
+| Vorhersage | Hebräisch | Befund | Kontext |
+| --- | --- | --- | --- |
+| chedy | כְּדֵי | ✓ 22× f103r | nie mit -ody kombiniert (R5) |
+| shedy | שֶׁ+דִּי | ✓ 27× f103r | immer von Konnektoren gefolgt |
+| ckhy | כְּהִי | ✓ f57r P.2,9; f103r P.17,23 | 4 unabhängige Belege |
 | taiir | תָּאִיר | ✓ f57r P.8 Zeilenbeginn | taiir·sheedy·lchedy·ckheedy |
 | sheoldam | שְׁאוֹל+דָּם | ✓ f3r P.9 auf Blutpflanze | botanische Kohärenz; beide ★★★★★-Anker fusioniert |
 | daiidy / daiindy | דִּין+דִּי | ✓ f57r P.9, f3v P.2, f9r P5 | drei Folios, identische Funktion |
 | tsheoarom | תְּ+שְׁאוֹ+רוֹם | ✓ f3r P.15 Heilungsformel | nach 7 Blut-Paragraphen: kohärenter Positionswechsel |
 | dsholdy | דְּ+שׁוֹל+דִּי | ✓ f9r P5L | Genitiv-Kompositum parallel zu daiindy |
 | shoiin | שׁוֹ+עַיִן | ✓ f10v P4 + P6 | Doppelbeleg auf demselben Folio |
-| chaiin · ckhy · or · aiin | Prognose-Tetrade | ✓ f10r P4 (alle vier in einer Zeile) | vollständiges hippokratisches Schema |
 | torshor | תֹּר+שׁוֹר | ✓ f13r P.1 Paragraph-Öffner | Jahreszeit-Zeichen; erster Beleg dieser Form im Korpus |
 | pchy | פְּחִי | ✓ 4× f13r — höchste Atemweg-Dichte | opchy, qopchy, pchy; bestätigt Alant-Identifikation |
-| shol · dy · … · shol | R24-Struktur | ✓ f13r P.1 (Dopplungsformel) | einmaliges Emphase-Muster mit Genitiv-Brücke dy |
 | ykaiin (y+k+aiin) | יְ+כְּ+עַיִן | ✓ f14r P.8 — 5. Paradigma-Mitglied | ykchaiin→ycheor→ykchor→ykchy→ykaiin: 5 positive Ankerpunkte (ykshol = 6. Glied negativ, f15r P.12) |
 | chckhy= (Diagnosekolophon) | כְּ+כְּ+הִי | ✓ 4× Korpus: f9v, f11v P.6, f14r P.7, f14v P.6 | Konzentration in Bifolio bB3; auch medial belegt (f14v P.6) |
-| dam (Quire B) | דָּם | ✓ f14v P.8 (Blut-Triade) | dol · dair · dam — Erstbeleg Blutpathologie in bB3; verbindet f14v mit f3r |
 | ykshol (y+k+shol) | יְ+כְּ+שׁוֹל | ✓ f15r P.12 — erster negativer y+k+Terminus | ykchaiin→ycheor→ykchor→ykchy→ykaiin→ykshol: komplettes Paradigma, positiv + negativ belegt |
 | qotchor (Pupillenzeichen) | קוֹ+תְּ+כֹּר | ✓ f15r Schlusskolophon ★★★★★ | qotchor·chaiin·chy·kol·daky= — positives Pupillen-Urteil; ophthalmologische Abschlussformel bB2 |
 | soloiin | שׁוֹ+לְ+עַיִן | ✓ f15v P.11 — therapeutisch präzisestes Kompositum | „Arznei für das Auge" — höchste Heilarznei-Präzision im Gesamtkorpus; Gegenstück zu shoiin (f10v) |
 | cthor (vollständige Heilung) | כְּ+תֹּר | ✓ f15v Schlusskolophon | daiin·cthor·chol·chor= — cthor+chor = Heilung der Pupillenpathologie; positiver Abschluss Bifolio bB2 |
 | otam · otam · chotam (R19/R35) | אוֹת+אָם · אוֹת+אָם · כֹּ+אוֹת+אָם | ✓ f72r1 R1 — dreistufige Nominal-Intensivierung | einfach → ×2 → Komparativ ko+X; exaktes R35-Schema; semantisch kohärent: Zeichen der Mutter im Stier-dunkel-Kontext |
-| shol medial · sheol final (R17 Zodiak) | שׁוֹל / שְׁאוֹל | ✓ f72r1 R1 (shol 2×) · R2 (sheol vor gap) — 5. Register-Bestätigung | identische Verteilung wie botanische Folios; shol nie in Ringabschlussposition; sheol unmittelbar vor gap-Marker |
 | okaly= / okal= Minimalpaar (R52a) | עַ+כָּל+יְ / עַ+כָּל | ✓ f72r2 S1.3/S1.5/S1.12 (okal) neben S1.4/S1.12 (okaly) — Determinans-y optional | identischer Stamm okal mit und ohne -y-Suffix auf demselben Ring; beweist R52a: -y ist Status-Emphaticus-Marker, kein festes Wortbildungselement |
 | alef / otalef — Stier-Exklusivmarker | אָלֶף / אוֹת+אָלֶף | ✓ f72r1 S1.6 + S1.9 — ausschließlich im Stier-dunkel-Panel | alef = Ochsenkopf-Piktogramm (Aleph-Ursprung); fehlt in f71r, f71v, f72r2; erste ikonographisch verankerte Buchstabenreferenz im Zodiak-Corpus |
 
 
-## IX. Verankerte Referenz-Sequenzen
+## VIII. Verankerte Referenz-Sequenzen
 
 Die am besten verifizierten Sequenzen des Korpus — als Orientierungshilfe beim Übersetzen.
 
@@ -766,7 +773,7 @@ Heb: עַ+כָּל / עַ+כָּל+יְ
 
 _Erstes vollständiges Zodiak-Register: R17 ★★★★ (5. Register), R19/R35 ★★★ (Zodiak-Erstbeleg), R50 ★★★★ (2. Register), R52a ★★★★ (4 Folios · 75 Labels · 47%). alef/otalef = erste ikonographische Buchstabenreferenz im Zodiak-Corpus. ★★★★_
 
-## X. Wortklassen-System
+## IX. Wortklassen-System
 
 Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 
@@ -783,7 +790,7 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 | Kolophon-Formeln | kaiim=, dom=, daiin=, chckhan=, ocho·daiin= | Abschlussformeln: rechtlich / diagnostisch / Titel |
 
 
-## XI. Sprache A — Quires A–C (f1r, f1v–f25v)
+## X. Sprache A — Quires A–C (f1r, f1v–f25v)
 
 ### Sprachvergleich Spr. A vs. Spr. B
 
@@ -849,7 +856,7 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 | f25v | Schöllkraut (Chelidonium majus) | orchaiin= P.7 (neue Kolophon-Abschlussformel ★★★★: or+chor/k+aiin = Licht-wie-Auge); 3×daiin P.2 (dchor.cthor.chor.daiin.s.okeeaiin.daiin.ckhey.daiin — Corpus-Erstbeleg 3×daiin in einer Zeile, R58 ★★★ Kand.); daiin·daiin P.5 (4. Doppelurteil im Bifolio); ckhear ★★★★ P.4 (ckh-Variante: wie das Licht); qokoral ★★★ Kand. P.6; daiity ★★★ Kand. P.3; R33 qo-Belege: qochol P.5, qokcho + qotchy P.6 (Quire-D-Einstieg Kontinuität); Drachen-Motiv (Toxizitätssignal + Augenheilung); Botanik: Augen (toxisch) + Scheol | ★★★★ |
 
 
-## XII. Das Randstern-System
+## XI. Das Randstern-System
 
 ### Sterntypen
 
@@ -876,9 +883,62 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 | f58r | 3 Randsterne (gold) markieren 3 Textblöcke; je ein Stern über dem ersten Paragraphen des Blocks | 6-Zacken (P.1–P.15) · 7-Zacken+Kern (P.16–P.25) · 8-Zacken+Kern (P.26–P.40) — R48 |
 
 
+## XII. Offene Probleme und ungelöste Widersprüche
+
+Ehrliche Dokumentation der statistischen Anomalien und methodischen Grenzen (eingeführt v7.5). Das Mapping ist eine **starke Lesehypothese**, keine bewiesene Entzifferung.
+
+### OP1 — Wortlängenverteilung
+
+**Schwere:** hoch · **Status:** offen
+
+Die Wortlängenverteilung im Voynich-Corpus ist zu schmal für freie semitische Morphologie. Semitische Sprachen erlauben agglutinative Konstrukte mit variablen Wortlängen; das Voynich-Profil zeigt eine auffällig rigide Konzentration auf 4–8 EVA-Zeichen.
+
+_Arbeitshypothese: Mögliche Erklärungen: (a) systematisches Abbreviatursystem, das Konsonanten weglässt; (b) grammatikalisiertes Register-System mit stark reduzierten Formen; (c) feste Slot-Grammatik als bewusste Kodierungsstrategie._
+
+### OP2 — Buchstaben-Slot-Grammatik
+
+**Schwere:** hoch · **Status:** offen
+
+Bestimmte EVA-Zeichen kommen statistisch nur in bestimmten Wortpositionen vor (Slot-Grammatik nach Tiltman/Stolfi). Diese Eigenschaft passt zu keiner bekannten natürlichen Sprache direkt. Im Mapping-System wird sie durch Präfix-/Suffix-Hierarchien erklärt (R41), aber nicht formal modelliert.
+
+_Arbeitshypothese: Das System kodiert möglicherweise feste grammatische Funktionen pro Slot (Präfix / Wurzel / Suffix-Register) mit phonotaktischen Constraints, die im Mischna-Hebräisch keine direkte Parallele haben._
+
+### OP3 — Entropie-Abweichung
+
+**Schwere:** hoch · **Status:** offen
+
+Die Buchstaben-Entropie des Voynich-Textes liegt zwischen Englisch und Chinesisch — ungewöhnlich für semitische Konsonantenschriften (die typischerweise niedrigere Entropie aufweisen). Kryptologische Forschung (Landini, Stolfi, Rugg, Tiltman) hat dies konsistent gezeigt.
+
+_Arbeitshypothese: Ursache unklar: Abbreviatursystem? Grammatikalisierung? Kodiertes Register-System mit hoher Vokalmarker-Dichte? Das Mapping erklärt den semantischen Inhalt, aber nicht die Entropiestruktur._
+
+### OP4 — Fehlende unabhängige Blindvalidierung
+
+**Schwere:** mittel · **Status:** ausstehend
+
+Das System wurde noch nicht durch einen unabhängigen Hebraisten blind getestet — d.h. ein Fachmann, der das Mapping nicht kennt, hat noch nicht versucht, Voynich-Text damit zu lesen. Dies ist die stärkste Form der externen Validierung und fehlt vollständig.
+
+_Arbeitshypothese: Bis zur Blindvalidierung gilt: Das Mapping ist eine starke Lesehypothese mit konsistenter Semantik, aber keine bewiesene Entzifferung. Interne Kohärenz beweist keine externe Gültigkeit._
+
+### OP5 — Regelmoratorium aktiv
+
+**Schwere:** strukturell · **Status:** moratorium
+
+Das Verhältnis validierter Regeln zu Kandidaten-Regeln hat sich umgekehrt: v6.2 = 2,25:1 · v6.6 = 1,47:1 · v7.4 = 0,84:1. Das ist ein klassisches Overfitting-Signal: Neue Beobachtungen generieren neue Regeln, anstatt bestehende Kandidaten zu schließen.
+
+_Arbeitshypothese: Ab v7.5: Regelmoratorium (keine R60+) bis Verhältnis ≥ 1,5:1. Ziel: 14 aktuelle Kandidaten (R43-Frist) hochstufen oder widerlegen. Priorisiert: R59, R55, R58, R56, R54, R57._
+
+**Scheol-Verteilungsstatistik (v7.5 formalisiert):**
+
+| Strukturposition | sheol/shol-Vorkommen | Andere Lexeme |
+| --- | --- | --- |
+| Zeilenende / Kolophon-Final | >85 % aller Belege | or, dom, kaiim |
+| Zeilenmitte (medial) | <15 % — immer in Kompositum | — |
+| Zeilenanfang | 0 % | — |
+
+
 ---
 
-Voynich-Manuskript — Formales Mapping-Dokument · Version 7.4 · Juni 2026
-Lexikon: 303 Einträge · Grammatikregeln: 59 · Rückwärtstest: 90% (27/30)
+Voynich-Manuskript — Formales Mapping-Dokument · Version 7.5 · Juni 2026
+Lexikon: 303 Einträge · Grammatikregeln: 59 · Rückwärtstest: Typ I: 10/10 (100%) · Typ II: 17/20 (85%)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

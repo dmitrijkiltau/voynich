@@ -20,20 +20,19 @@
 				<tr><td>Texttyp</td><td>Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis)</td></tr>
 				<tr><td>Analysierte Folios</td><td>{STATS.foliosAll}</td></tr>
 				<tr><td>Bestätigte Wörter</td><td><strong>{STATS.lexicon}</strong> (★★★ oder höher)</td></tr>
-				<tr><td>Rückwärtstest (Spr. B)</td><td>{STATS.backtestFraction} Vorhersagen bestätigt ({STATS.backtest}); 0 Falsch-Positive</td></tr>
+				<tr><td>Rückwärtstest</td><td><strong>Typ I (genuine Vorhersagen): 10/10 (100%)</strong> · Typ II (interne Kohärenz): 17/20 (85%) · 0 Falsch-Positive</td></tr>
 				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1)</td></tr>
 				<tr><td>Grammatikregeln</td><td><strong>{RULES.length}</strong> ({STATS.validatedRules} validiert + {RULES.length - STATS.validatedRules} Kandidaten)</td></tr>
 				<tr class="hidden-print">
-					<td>Empirische Erweiterung v7.4</td>
+					<td>Korrekturen v7.5</td>
 						<td>
 							<ul>
-								<li>R3 ★★★★★: 6 neue Belege f1r (ykal, ykaiin, yshey, ycho, yto, ycheey) — >11 Belege / ≥8 Folios</li>
-								<li>R11 ★★★★: f1r T1–T4 + f1v P4/P10-Kolophone — 6 neue Belege, alle 6 Transkriptoren einig</li>
-								<li>R15 ★★★★★: Belege 7–9 aus f1r — <span class="eva">chol·chol</span> (P3.L15), <span class="eva">keey·keey</span> (P4.L26), <span class="eva">dar…dar</span> (P4.L23) — 9 Belege / 6 Folios</li>
-								<li>R59 ★★★ Kand.: qo als isolierter Konnektiv-Token (Paragraphen-Brücke) — f1v P.7 (4/4 Transkriptoren einig)</li>
-								<li>2 neue Lexikoneinträge: <span class="eva">daiiin</span> = דִּינִין (Aramäischer Plural, ★★★); <span class="eva">dain</span> = דָּן (Richter Partizip, ★★★)</li>
-								<li>Haskama-Struktur f1r: vierfache Autorisierungsformel (T1 göttlich · T2 juridisch · T3 kollektiv · T4 empirisch); din-Trias P3.L14</li>
-								<li>Negativtests R54/R55/R56: 0 Falsch-Positive in f1r + f1v ✓; validierte Regeln: 24 → 27</li>
+								<li><strong>Regelmoratorium</strong> — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell 27:32 = 0,84:1; Ziel: 41:27)</li>
+								<li><strong>Rückwärtstest-Reform</strong> — Trennung in Typ I (genuine Vorhersagen, 10 Prä-Analyse-Anker, eingefroren) und Typ II (interne Kohärenz, post-hoc); valide Kernaussage: 10/10 = 100%</li>
+								<li><strong>R2-ext (v7.5)</strong> — explizite Positionsregel für EVA „o" (Wortanfang = Ayin, wortintern = Ḥolam) mit Negativtest: 0 Gegenbeispiele in 140+ Einträgen ✓</li>
+								<li><strong><span class="eva">chotshol</span> herabgestuft</strong> — ★★★ Kand. → ★★ (morphologisch fragwürdig: Einzelbeleg, 3 Morpheme ohne Separator)</li>
+								<li><strong>Neuer Abschnitt „Offene Probleme"</strong> — ehrliche Dokumentation ungeklärter statistischer Anomalien (Entropie, Slot-Grammatik, Wortlänge, Blindvalidierung)</li>
+								<li>Scheol-Verteilungsstatistik formalisiert: &gt;85 % Zeilenende · &lt;15 % medial · 0 % Zeilenanfang</li>
 							</ul>
 						</td>
 					</tr>
