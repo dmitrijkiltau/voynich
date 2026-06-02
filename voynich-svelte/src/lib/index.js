@@ -6,7 +6,7 @@ import { RULES } from './grammar-rules-data.js';
 export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_STATUS, RULES };
 
 export const STATS = {
-  version: '7.2',
+  version: '7.3',
   date: 'Juni 2026',
   lexicon: LEXICON.length,
   rules: RULES.length,
@@ -15,7 +15,7 @@ export const STATS = {
   backtestFraction: '27/30',
   backtestTotal: '30',
   gibberishRate: '10,4 %',
-  foliosA: 'f1r, f1v–f24v',
-  foliosAll: 'f1r, f1v–f24v (Quires A–B+C bC1–bC4 komplett), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v',
-  changelog: 'Ausgelöst durch f24r + f24v (Bifolio bC1 Abschluss — Silene vulgaris + Pulsatilla vulgaris). Strukturelle Höhepunkte: Quire C vollständig (16/16 Seiten = 100 %); R53 ★★★ (3. T-Klassen-Beleg: sam.chorly= f24r T.20 — R43 erfüllt); sar ★★★ → ★★★★ (3. Folio-Beleg: f23v + f24r×2); ot-Kompositum-Dreikette f24v P.2 (otol+otaiir+otchos, R50-Beobachtung); neue Kandidaten R54 (dal·dam·dal-Triplette ★★), R55 (or-Reduplikation oro= ★★★ Kand.), R56 (sho.sho-Emphase ★★), R57 (odaiim=-Abschluss-Marker ★★); Quire-Zeichen „39" auf f24v (= III = Quire C); 12 neue Lexikoneinträge (olom, otaiir, cheekdam ★★★★; oro, qodom, sam.chorly, sshey, odaiim, ydals, doiir ★★★; daid, otaiphy ★★); Quire-C-Gesamtstruktur: konzentrische Toxizitätssteigerung von innen (bC4: sanft) nach außen (bC1: maximal toxisch).',
+  foliosA: 'f1r, f1v–f25v',
+  foliosAll: 'f1r, f1v–f25v (Quires A–B+C komplett, Quire D bD1), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v',
+  changelog: 'Ausgelöst durch f25r + f25v (Bifolio bD1 Eröffnung — Urtica dioica + Chelidonium majus). Strukturelle Höhepunkte: Quire-D-Einstieg bestätigt (Kontinuität zu Quire C, keine Parameteränderung); R53 ★★★★ (4. T-Klassen-Beleg: dair.otaiir.otosy= f25r T.7 — Subtyp C deskriptiv/identifikatorisch etabliert); R58 neuer Kandidat ★★★ (3×daiin in einer Zeile — f25v P.2, Corpus-Erstbeleg); otaiir → ★★★★★ Kand. (Zweitbeleg f25r T.7, R43 erfüllt); orchaiin= neue Kolophon-Formel ★★★★ (Licht-wie-Auge, f25v P.7); daiin-Dichte bD1 Corpus-Rekord (4 Doppelurteile + 3×daiin-Zeile); 7 neue Lexikoneinträge (orchaiin, ckhear ★★★★; otosy, daiity, cheesees, qokoral, soshy ★★★ Kand.); Lexikonstand >300-Meilenstein; Botanik: Urtica dioica ★★★★ + Chelidonium majus ★★★★ (Drachen-Motiv); Quire D: 2/16 Seiten.',
 };

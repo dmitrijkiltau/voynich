@@ -21,21 +21,19 @@
 				<tr><td>Analysierte Folios</td><td>{STATS.foliosAll}</td></tr>
 				<tr><td>Bestätigte Wörter</td><td><strong>{STATS.lexicon}</strong> (★★★ oder höher)</td></tr>
 				<tr><td>Rückwärtstest (Spr. B)</td><td>{STATS.backtestFraction} Vorhersagen bestätigt ({STATS.backtest}); 0 Falsch-Positive</td></tr>
-				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C bC1–bC4)</td></tr>
+				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1)</td></tr>
 				<tr><td>Grammatikregeln</td><td><strong>{RULES.length}</strong> ({STATS.validatedRules} validiert + {RULES.length - STATS.validatedRules} Kandidaten)</td></tr>
 				<tr class="hidden-print">
-					<td>Empirische Erweiterung v7.2</td>
+					<td>Empirische Erweiterung v7.3</td>
 						<td>
 							<ul>
-								<li>R53 ★★★ bestätigt: dritter T-Klassen-Beleg <span class="eva">sam.chorly=</span> f24r T.20 — R43 erfüllt (3 Folios, 3 Subtypen)</li>
-								<li><code>sar</code> ★★★ → ★★★★: 3. Folio-Beleg (f23v + f24r×2); Arzt-Supervision-Marker strukturell gesichert</li>
-								<li>ot-Kompositum-Dreikette f24v P.2: <span class="eva">otol+otaiir+otchos</span> — drei ot-Komposita in Folge (R50-Beobachtung)</li>
-								<li>R54 ★★ Kand.: <span class="eva">dal·dam·dal</span>-Triplette f24r P.16 — Blutbefund durch doppelte Schwäche-Setzung eingerahmt; strukturell neu</li>
-								<li>R55 ★★★ Kand.: <span class="eva">oro=</span> f24v P.5 — or-Palindrom-Reduplikation in Kolophon-Finalposition; positivster Heilungsabschluss</li>
-								<li>R56 ★★ Kand.: <span class="eva">sho.sho</span>-Emphase f24v P.14 — Token-Wortwiederholung (≠ Kompositum chotshol f21v)</li>
-								<li>R57 ★★ Kand.: <span class="eva">odaiim=</span> f24v P.16 — m-Suffix-Abschluss-Marker; letzter Kolophon Quire C</li>
-								<li>Quire C vollständig (16/16 Seiten): konzentrische Toxizitätssteigerung innen→außen (bC4 sanft → bC1 maximal toxisch)</li>
-								<li>12 neue Lexikoneinträge ★★–★★★★: <span class="eva">olom, otaiir, cheekdam</span> (★★★★), <span class="eva">oro, qodom, sam.chorly, sshey, odaiim, ydals, doiir</span> (★★★), <span class="eva">daid, otaiphy</span> (★★)</li>
+								<li>R53 ★★★★: 4. T-Klassen-Beleg <span class="eva">dair.otaiir.otosy=</span> f25r T.7 — Subtyp C (deskriptiv/identifikatorisch) etabliert; R43 Mehrfachbestätigung (4 Folios)</li>
+								<li>R58 ★★★ Kand.: 3×daiin in einer Zeile — f25v P.2 (Corpus-Erstbeleg: <span class="eva">dchor.cthor.chor.daiin.s.okeeaiin.daiin.ckhey.daiin</span>)</li>
+								<li><span class="eva">otaiir</span> → ★★★★★ Kand.: Zweitbeleg f25r T.7 bestätigt R43-Pflicht; stärkster ot-Kompositum-Kandidat im Corpus</li>
+								<li><span class="eva">orchaiin=</span> neue Kolophon-Abschlussformel ★★★★ (f25v P.7): or+chor/k+aiin = Licht-wie-Auge; strukturell reichste Kolophon-Formel bisher</li>
+								<li>daiin-Dichte bD1: Corpus-Rekord — 4 Doppelurteile + 3×daiin in einer Zeile (f25v P.2); bD1 = daiin-reichstes Bifolio des gesamten Corpus</li>
+								<li>7 neue Lexikoneinträge: <span class="eva">orchaiin, ckhear</span> (★★★★); <span class="eva">otosy, daiity, cheesees, qokoral, soshy</span> (★★★ Kand.)</li>
+								<li>Lexikonstand >300-Meilenstein; Botanik: Urtica dioica ★★★★ (f25r) + Chelidonium majus ★★★★ (f25v, Drachen-Motiv); Quire D: 2/16 Seiten</li>
 							</ul>
 						</td>
 					</tr>
