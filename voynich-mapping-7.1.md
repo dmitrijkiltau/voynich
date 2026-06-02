@@ -1,7 +1,7 @@
 # Voynich-Manuskript — Formales Mapping-Dokument
-**EVA → Hebräisch-Aramäisch · Version 7.0 · Juni 2026**
+**EVA → Hebräisch-Aramäisch · Version 7.1 · Juni 2026**
 
-Sprachen A & B · Folios f1r, f1v–f22v (Quires A–B+C bC1–bC4), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
+Sprachen A & B · Folios f1r, f1v–f23v (Quires A–B+C bC1–bC4), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
 
 ---
 
@@ -27,18 +27,18 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 
 **Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
 
-Version 7.0 wird ausgelöst durch f22r + f22v (Bifolio bC3 — Quire C Abschluss: Plantago lanceolata + Veratrum album). Strukturelle Höhepunkte: otam ★★★ → ★★★★ (R43 erfüllt: 2. Register, Zodiak + Botanisch); R15 auf Dreistufig-Schema erweitert (Typ B: Verb → Nomen → Direktional, 5. Beleg, f22v P.7 ychor·chor·qokchol·chory); R51 ★★★ gesichert (6 Belege · 3 Folios, R43 erfüllt: ≥3 Folios); R53 neuer Kandidat ★★ (Pflanzen-Titel-Duplikation: daldalol= f22v T.16); neue Kolophon-Formel oraiino= (Licht seines Auges); 15 neue Lexikoneinträge (oraiino ★★★★, ykcheor/okchain ★★★★, 11× ★★★, ytal ★★); Quire-C-Botanik: f22r (Plantago lanceolata) ophthalmologisch-hämatostatisch ★★★★; f22v (Veratrum album) Augen-/Blutmittel mit Toxizitäts-Warnung ★★★.
+Version 7.1 wird ausgelöst durch f23r + f23v (Bifolio bC2 Abschluss — Geranium pratense + Borago officinalis). Strukturelle Höhepunkte: R53 ★★ → ★★★ Kand. (zweiter T-Klassen-Titel: eeeoly= f23v P.12, Subtyp-Differenzierung A/B); bilaterales dam·dam f23v P.8 (Corpus-Erstbeleg Quire C); tshol als P.6-Strukturtoken auf beiden Seiten desselben Folios; neues Kompositum daiidal (Urteil der Schwäche); f23r mit drei Kolophonen (P.3 + P.5 + P.11) — Parallele zu f17r; R15 6. Beleg (Typ B nominal: qokchol·dar·qokchol); Bifolio bC2 vollständig — Bogen Quire C geschlossen; 9 neue Lexikoneinträge (tshol, daiidal, dalory, ytom, qokor, otshor, olsar, aiior ★★★; sholol ★★); Quire-C-Botanik: f23r (Geranium pratense) Blässe/Atemweg/Pupille ★★★★; f23v (Borago officinalis) Blut/Auge/Fieber ★★★★.
 
-### Kernbefunde — Version 7.0
+### Kernbefunde — Version 7.1
 
 | Eigenschaft | Wert |
 | --- | --- |
 | Identifizierte Sprache | Mischna-Hebräisch / Jüdisch-Aramäisch |
 | Texttyp | Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis) |
-| Analysierte Folios | f1r, f1v–f22v (Quires A–B+C bC1–bC4), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v |
-| Bestätigte Wörter | 273 (★★★ oder höher) |
+| Analysierte Folios | f1r, f1v–f23v (Quires A–B+C bC1–bC4), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v |
+| Bestätigte Wörter | 282 (★★★ oder höher) |
 | Rückwärtstest (Spr. B) | 27/30 Vorhersagen bestätigt (90%); 0 Falsch-Positive |
-| Sprache A Anker | f1r, f1v–f22v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4) |
+| Sprache A Anker | f1r, f1v–f23v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4) |
 | Grammatikregeln | 53 (24 validiert + 29 Kandidaten) |
 
 
@@ -125,7 +125,7 @@ Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 
 **Sonderregel:** Das EVA-Zeichen `o` hat zwei Funktionen: (1) als konsonantisches ע (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam im Wortinneren.
 
-## V. Bestätigtes Lexikon (273 Einträge)
+## V. Bestätigtes Lexikon (282 Einträge)
 
 Alle Einträge mit ★★★ oder höher.
 
@@ -244,6 +244,8 @@ Alle Einträge mit ★★★ oder höher.
 | dsheor | דְּ+שֶׁ+אוֹר | von dem, was Licht ist — d-Relativpräfix + she + or (R45-Aramaismus); Erstbeleg f22r P.7 | ★★★ |
 | olshly | עַל+שׁ+לְ+יְ | auf Scheol hin — direktionale Scheol-Form (ol + sh + lamed + yod); Erstbeleg f22v P.14 | ★★★ |
 | shotoly | שׁוֹ+תּ+עוֹל+יְ | Scheol-Last hin — sho-Präfix (R30) + Joch-Direktional; Erstbeleg f22v P.13 | ★★★ |
+| tshol | תְּ+שׁוֹל | sie entfernt von Scheol — Vollform von tsho; strukturelles P.6-Eröffnungstoken auf beiden Seiten desselben Folios; Erstbeleg f23r P.6 + f23v P.6 | ★★★ |
+| sholol | שׁוֹל+עַל | Scheol über [etwas] (Präpositionalkomplex); Erstbeleg f23v P.4 | ★★ |
 
 
 ### Kolophon-Formeln
@@ -264,6 +266,7 @@ Alle Einträge mit ★★★ oder höher.
 | octhor | עַ+כְּ+תֹּר | auf vollständige Heilung (o-Direktional + cthor, Schlusskolophon-Term) — f19r P.13 | ★★★★ |
 | oraiino | אוֹר+עַיִן+וֹ | Licht seines Auges — Kolophon-Formel (or + aiin + Possessivsuffix 3. Sg. mask.); Erstbeleg f22r P.9 | ★★★★ |
 | ctheen | כְּ+תֵּן | wie Gewähren/Geben — Kolophon-Kurzformel — ★★★ Kand. (Erstbeleg f22r P.6) | ★★★ |
+| dalory | דַּל+אוֹר+יְ | Schwäche zum Licht (Kolophon-Formel, R6-Kompositum) — ★★★ Kand. (Erstbeleg f23r P.11) | ★★★ |
 
 
 ### Syntaktische Konnektoren
@@ -361,6 +364,7 @@ Alle Einträge mit ★★★ oder höher.
 | ykcheor | יְ+כְּ+כְּ+אוֹר | er wird sein wie Licht — dreifach intensives Heilungsverb (y + k + k + or); R43 erfüllt: f22v P.5 + Zodiak-Register → ★★★★ | ★★★★ |
 | ytal | יְ+תַּל | er wird suspendieren/aufhängen (y-Imperfekt von תלל) — ★★ Kand. (Erstbeleg f22v P.10) | ★★ |
 | cthoiin | כְּ+תּ+עַיִן | wie vollständige Augen-Heilung — cthor-Variante mit aiin-Suffix; Erstbeleg f22r P.10 | ★★★ |
+| ytom | יְ+תָּ+מ | er wird vollständig/komplett (y-Imperfekt v. תמם; Var.: ytam) — ★★★ Kand. (Erstbeleg f23r P.5) | ★★★ |
 
 
 ### Akteure, Anatomie & Botanik
@@ -396,6 +400,8 @@ Alle Einträge mit ★★★ oder höher.
 | pochaiin | פֹּ+כְּ+עַיִן | beim/am Auge (Pe-Direktional + kaiin-Basis) — f19v P.1 | ★★★ |
 | cheekaiin | כֵּ+כְּ+עַיִן | wie das Auge (B-Register Zodiak) — doppelter k-Komparativ mit Tsere (R50); f71v R3 | ★★★ |
 | kchorl | כְּ+חֹר+לְ | wie die Pupille hin — direktionaler Komplex (k + chor + lamed) — ★★★ Kand. (Erstbeleg f22v P.3) | ★★★ |
+| olsar | עַל+שַׂר | über den Arzt / ärztliche Aufsicht (ol + sar); Erstbeleg f23v P.6 rechts von {plant} — Arzt-Supervision-Marker im Therapie-Teil | ★★★ |
+| aiior | עַ+יִ+אוֹר | Auge des Lichts (ayin+yod+or); Erstbeleg f23v P.12 | ★★★ |
 
 
 ### Bestätigte Komposita
@@ -441,6 +447,9 @@ Alle Einträge mit ★★★ oder höher.
 | pysaiinor | פִּי+שׂ+עַיִן+אוֹר | Mund gleich dem Auge des Lichts (pi + sin + ayin + or) — ★★★ Kand. (Erstbeleg f22v P.1) | ★★★ |
 | okchain | עַ+כְּ+חַיִּין | hin zu Leben / auf Leben hin — o-Direktional + k + chayyim; R43 erfüllt: f22v P.13 + Parallelbelege → ★★★★ | ★★★★ |
 | daldalol | דַּל+דַּל+עוֹל | doppelte Schwäche des Joches — R35-Duplikation in Titelposition (T-Klasse); R53-Kandidat-Beleg; Erstbeleg f22v T.16 — ★★★ Kand. | ★★★ |
+| daiidal | דִּין+דַּל | Urteil der Schwäche (daiin+dal-Kompositum); Erstbeleg f23r P.6 | ★★★ |
+| qokor | וְ+כֹּ+אָר | und alles Licht (qo+kol+ar); Erstbeleg f23v P.8 | ★★★ |
+| otshor | אוֹת+שׁ+אוֹר | das Zeichen des Lichts (ot+shor-Kompositum); Erstbeleg f23v P.6 | ★★★ |
 
 
 ### Possessiv-Formen
@@ -501,7 +510,7 @@ Alle Einträge mit ★★★ oder höher.
 
 ## VII. Grammatikregeln
 
-53 Regeln gesamt: **24 validiert** (≥ 2 unabhängige Belege) + **29 Kandidaten** (darunter v6.2 R40–R42, D1/D2; v6.3 R43–R44; v6.4 R45–R48; v6.5 R33-Erweiterung + R49; v6.6 R50; v6.8 R51 ★★★ gesichert + R52 ★★; v6.9 R52a ★★★★; v7.0 R53 ★★). R14 und R20 gelten als gesichert (★★★★★).
+53 Regeln gesamt: **24 validiert** (≥ 2 unabhängige Belege) + **29 Kandidaten** (darunter v6.2 R40–R42, D1/D2; v6.3 R43–R44; v6.4 R45–R48; v6.5 R33-Erweiterung + R49; v6.6 R50; v6.8 R51 ★★★ gesichert + R52 ★★; v6.9 R52a ★★★★; v7.0 R53 ★★ → v7.1 R53 ★★★ Kand. (2 Belege, Subtyp A+B)). R14 und R20 gelten als gesichert (★★★★★).
 
 | # | Regel | Evidenz | Konf. |
 | --- | --- | --- | --- |
@@ -519,7 +528,7 @@ Alle Einträge mit ★★★ oder höher.
 | R12 | Trägersatz-Muster: P.1 (Relativsatz) → P.2 (Hauptsatz mit sar) | f57r P.9; f103r P.1→P.2 | ★★★ |
 | R13 | Paragraphen ohne Randstern = positives Prognose-Vokabular (or, lor·aiin) | f103r P.3,17,20; f103v: 5/5 or-Paragraphen sternlos | ★★★★ |
 | R14 | {plant}-Marker = Trennlinie Indikation \| Prognose in Herbal-Folios | f1v–f10v: 100% konsistent; links = Symptom, rechts = Heilung/Scheol | ★★★★★ |
-| R15 | Paradigma-Wiederholungsreihen (×2–×5): Adjektiv/Verb mit Vokal- oder Präfixvariation — **Typ A** (direkt nebeneinander: chor·chor); **Typ B** (mit Zwischentext: chor…chor); **Typ B-Dreistufig** (Verb → Nomen → Direktional mit Zwischentext: ychor·chor·[ZT]·chory) | f1v P.3 (ckhy·ckho·ckhy); f10r P8 (chor·chor·cholor); f20r P.13 (chor·chor — Typ A); f21r P.12 (ykeea·**chor**·sheey·ysheol·**chor**·chol·daiin·chkaiin= — Typ B, 4. Beleg); f22v P.7 (ychor·chor·qokchol·chory — Dreistufig-Schema: Verb → Nomen → Direktional mit Zwischentext, Typ B, 5. Beleg) — R15 auf Dreistufig-Schema erweitert ★★★★ bestätigt | ★★★★ |
+| R15 | Paradigma-Wiederholungsreihen (×2–×5): Adjektiv/Verb mit Vokal- oder Präfixvariation — **Typ A** (direkt nebeneinander: chor·chor); **Typ B** (mit Zwischentext: chor…chor); **Typ B-Dreistufig** (Verb → Nomen → Direktional mit Zwischentext: ychor·chor·[ZT]·chory) | f1v P.3 (ckhy·ckho·ckhy); f10r P8 (chor·chor·cholor); f20r P.13 (chor·chor — Typ A); f21r P.12 (ykeea·**chor**·sheey·ysheol·**chor**·chol·daiin·chkaiin= — Typ B, 4. Beleg); f22v P.7 (ychor·chor·qokchol·chory — Dreistufig-Schema: Verb → Nomen → Direktional mit Zwischentext, Typ B, 5. Beleg); f23r P.7 (qokchol·dar·qokchol — nominale Rahmendopplung mit dar (Leuchtender) als Zwischentext, Typ B nominal, 6. Beleg) — R15 ★★★★ bestätigt | ★★★★ |
 | R16 | Mehrspaltige Paragraphen (3–4 {plant}-Segmente) folgen der Bildgeometrie | f2r P.2–P.6: Kornblume mit drei Stielen → drei Segmente | ★★★★ |
 | R17 | Spr. A: shol (apokor.) medial; Spr. B: sheol (Vollform) am Zeilenende | f4r–f10v: shol medial (20+×); f103r: sheol final (8×); Zodiak-Register bestätigt ★★★★: f72r1 R1 shol (2× medial) / f72r1 R2 sheol (direkt vor gap = 5. Register-Bestätigung) | ★★★★ |
 | R18 | Diagnosepaar shol · chaiin = abwägende Prognose; nie einzeln in abwägenden Kontexten | f4r P.2, f4v P.3, f6v P.2, f8v P3, f9r P2 | ★★★★ |
@@ -556,7 +565,7 @@ Alle Einträge mit ★★★ oder höher.
 | R50 | **Galiläische Guttural-Abschwächung — Sprache-B-Vokalklärung (v6.6):** Im Sprache-B-Register gilt für EVA-Sequenzen ee und oo: **(a)** ee repräsentiert **ausschließlich** den Tsere-Vokal (ֵ) als Vokalmarker — **nicht** als ה+ה (zwei konsonantische Laryngale). **(b)** oo repräsentiert **ausschließlich** Vav-Holam (וֹ) als Vokalmarker — **nicht** als ו+ו oder ע+ע. **(c)** D2-Warnungen, die ausschließlich durch Interpretation B (ee→ה+ה) ausgelöst werden, werden **automatisch suspendiert**, sofern das Token morphologisch einer validierten Sprache-B-Form entspricht. **Historische Grundlage:** Doppelschreibung des schwachen Laryngals zur Vokaldehnung ist in galiläischem Westaramäisch, palästinensischen Targum-Handschriften und Geniza-Texten gesichert. **Ausnahme:** Tokens der Struktur ch+[Vokal]+ol (ח-ע-ל) werden von R50 nicht erfasst — genuine ח-ע-Benachbarung im Konsonantenskelett (s. Residualfälle) | Quire M (f77r): D2-Warnungen 42→3 (93 % Reduktion); häufigste Tokens: qokeedy, qoteedy, cheedy, sheedy, qokeey, cheey, sheeol; Residualfälle: cheeol (P.21), cheol (P.24, P.38). Zodiak-Register (Quire K, 4 Folios, v6.9): 30+ ee-Tokens in f71r/f71v/f72r1/f72r2, kein D2-Gegenbeispiel — **R43 erfüllt: 2. vollständiges Register, ★★★ → ★★★★** | ★★★★ |
 | R51 | **Illustrationszwickel-Einschübe — Platzmangel-Querverweise (v6.8):** Wenn ein Voynich-Paragraph durch mehrere aufeinanderfolgende {plant}-Marker gerahmt ist und nur 1–3 Zeichen zwischen zwei Markern oder am Paragraphenende trägt — insbesondere wenn (a) diese Fragmente keine vollständigen Sätze bilden, (b) die Zeichenqualität sich gegenüber dem Haupttext verschlechtert (!!!-Notation), und (c) mehrere solcher Fragmentparagraphen aufeinanderfolgen — dann handelt es sich möglicherweise um nachträgliche **Kreuzreferenz-Einschübe** des Schreibers in freie Zwickel der Pflanzenillustration. Inhaltlich: kurze Abkürzungspartikel oder Wortfragmente, die auf verwandte Rezepte oder therapeutische Kategorien verweisen. Erste Regel, die **paratextuelle Schreiber-Praktiken** im Voynich-System formalisiert — Kandidat | f20v P.7 (s vor {plant}), P.8 (d.s vor {plant}), P.9 (d.s!!!!!! vor {plant}) — drei Belege auf einem Folio, qualitative Eskalation; f21v P.7 (s vor sheaiin + {plant}) — zweiter Folio-Beleg → Aufstufung auf ★★★ (2 Folios); f22v P.4 (saiin als Vollwort zwischen 2×{plant} — strukturell stärkstes Beispiel: שׂ+עַיִן = „gleich dem Auge") + P.10 (s vor {plant}) — 6 Belege über 3 Folios (R43 erfüllt: ≥3 Folios) → ★★★ gesichert | ★★★ |
 | R52 | **Kolophon-Trias (v6.8):** Wenn ein Kolophon-Paragraph (=-Abschluss) drei funktional synonyme oder kohärent koh-hyponymische Terme enthält, markiert dies den **stärksten positiven Heilungsausgang** des zugehörigen Textblocks. Vergleichbar: Dreifach-qo-Konjunktion (f20r P.9) als positiver Umschwung-Marker, aber auf Lexem- statt Morphem-Ebene. Unterschied zu R46 (Wurzelketten): R52 ist auf Kolophon-Position beschränkt — Kandidat | f21r P.7: shoeor·cheor·cthor = drei Licht/Heilungs-Terme in einem Kolophon-Paragraphen (Corpus-Erstbeleg) — bisher ein Beleg; Konfidenz ★★ (Validierung innerhalb der nächsten 5 Folios erforderlich) | ★★ |
-| R53 | **Pflanzen-Titel-Duplikation (v7.0 — Kandidat ★★):** Wenn ein Voynich-Folio einen T-Klassen-Titel (am Folioende, nicht P-Klasse) aufweist und dieser Titel eine R35-Duplikation enthält, bildet die Duplikation den **semantischen Kern der Pflanzenidentifikation** — nicht den Therapiebegriff, sondern den **pathologischen Zustand**, gegen den die Pflanze eingesetzt wird. Format: [Duplikation+Direktional=]. Unterschied zu R35 (Vollheilungs-Emphase): R53 ist auf T-Klassen-Titelposition am Folioende beschränkt und bezeichnet den pathologischen Zustand, nicht die Heilungsreaktion — Kandidat | f22v T.16: daldalol= (dal·dal+ol) — R35-Duplikation in Titelposition; Corpus-Erstbeleg T-Klassen-Titel mit Duplikationsstruktur; semantisch: doppelte Schwäche des Joches; Validierung durch zweites T-Klassen-Folio erforderlich | ★★ |
+| R53 | **Pflanzen-Titel-Duplikation (v7.1 — Kandidat ★★★):** Wenn ein Voynich-Folio einen T-Klassen-Titel (am Folioende, nicht P-Klasse) aufweist, bildet das Titeltoken den **semantischen Kern der Pflanzenidentifikation**. R53 differenziert zwei Subtypen: **Subtyp A** (R35-Duplikation = Zustandsbeschreibung des pathologischen Zustands, gegen den die Pflanze eingesetzt wird; Format: [Duplikation+Direktional=]); **Subtyp B** (Emphase-Direktional = therapeutischer Heilungsbefehl; Format: [ee-Emphase+Direktional=]). Unterschied zu R35 (Vollheilungs-Emphase): R53 ist auf T-Klassen-Titelposition am Folioende beschränkt. R43 ausstehend: drittes T-Klassen-Folio erforderlich — Kandidat | **Beleg 1** f22v T.16: daldalol= (dal·dal+ol) — Subtyp A: R35-Duplikation; semantisch: doppelte Schwäche des Joches; **Beleg 2** f23v P.12: eeeoly= ({plant}-Titel) — Subtyp B: Dreifach-ee-Emphase + Direktional; semantisch: therapeutischer Auftrag zum Licht; divergente interne Struktur der Subtypen bestätigt Differenzierung — R43 ausstehend (drittes Folio) | ★★★ |
 | R52a | **Determinans-y im Zodiak-Sternlabel-Register (v6.9):** Sternlabeln in Zodiak-Diagrammen enden in ≈ 47 % der Fälle auf -y, -dy oder -ody. Diese Suffixe fungieren als **aramäischer Status Emphaticus** (bestimmter Artikel in Suffixposition, entsprechend -א/-ā in östlichem Aramäisch). Das Suffix ist optional — der nackte Kernstamm existiert parallel (okal= neben okaly=). Nach Suffix-Abzug sind alle resultierenden Kernstämme morphologisch intakt und semantisch kohärent. Streuung: 40–53 % über alle vier Panels konsistent. Zusätzliche Suffix-Varianten im Zodiak-Register: -ary, -aly. | f71r (53 %: 8/15), f71v (47 %: 7/15), f72r1 (40 %: 6/15), f72r2 (47 %: 14/30) — 4 Folios · 75 Labels · 35 Belege; Minimalpaar-Kontrolle: okal= (3×: S1.3, S1.5, S1.12) vs. okaly= (2×: S1.4, S1.12) in f72r2 — Suffix als optionaler Determinant belegt, nicht als Wortbildungselement; keine R40-Konflikte nach Suffix-Abzug | ★★★★ |
 
 
@@ -747,7 +756,7 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 | Kolophon-Formeln | kaiim=, dom=, daiin=, chckhan=, ocho·daiin= | Abschlussformeln: rechtlich / diagnostisch / Titel |
 
 
-## XI. Sprache A — Quires A–C (f1r, f1v–f22v)
+## XI. Sprache A — Quires A–C (f1r, f1v–f23v)
 
 ### Sprachvergleich Spr. A vs. Spr. B
 
@@ -834,7 +843,7 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 
 ---
 
-Voynich-Manuskript — Formales Mapping-Dokument · Version 7.0 · Juni 2026
-Lexikon: 273 Einträge · Grammatikregeln: 53 · Rückwärtstest: 90% (27/30)
+Voynich-Manuskript — Formales Mapping-Dokument · Version 7.1 · Juni 2026
+Lexikon: 282 Einträge · Grammatikregeln: 53 · Rückwärtstest: 90% (27/30)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

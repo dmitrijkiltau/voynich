@@ -81,7 +81,7 @@ export function generateMarkdown() {
   line();
   line('**Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.');
   line();
-  line(`Version ${STATS.version} wird ausgelöst durch f22r + f22v (Bifolio bC3 — Quire C Abschluss: Plantago lanceolata + Veratrum album). Strukturelle Höhepunkte: otam ★★★ → ★★★★ (R43 erfüllt: 2. Register, Zodiak + Botanisch); R15 auf Dreistufig-Schema erweitert (Typ B: Verb → Nomen → Direktional, 5. Beleg, f22v P.7 ychor·chor·qokchol·chory); R51 ★★★ gesichert (6 Belege · 3 Folios, R43 erfüllt: ≥3 Folios); R53 neuer Kandidat ★★ (Pflanzen-Titel-Duplikation: daldalol= f22v T.16); neue Kolophon-Formel oraiino= (Licht seines Auges); 15 neue Lexikoneinträge (oraiino ★★★★, ykcheor/okchain ★★★★, 11× ★★★, ytal ★★); Quire-C-Botanik: f22r (Plantago lanceolata) ophthalmologisch-hämatostatisch ★★★★; f22v (Veratrum album) Augen-/Blutmittel mit Toxizitäts-Warnung ★★★.`);
+  line(`Version ${STATS.version} wird ausgelöst durch f23r + f23v (Bifolio bC2 Abschluss — Geranium pratense + Borago officinalis). Strukturelle Höhepunkte: R53 ★★ → ★★★ Kand. (zweiter T-Klassen-Titel: eeeoly= f23v P.12, Subtyp-Differenzierung A/B); bilaterales dam·dam f23v P.8 (Corpus-Erstbeleg Quire C); tshol als P.6-Strukturtoken auf beiden Seiten desselben Folios; neues Kompositum daiidal (Urteil der Schwäche); f23r mit drei Kolophonen (P.3 + P.5 + P.11) — Parallele zu f17r; R15 6. Beleg (Typ B nominal: qokchol·dar·qokchol); Bifolio bC2 vollständig — Bogen Quire C geschlossen; 9 neue Lexikoneinträge (tshol, daiidal, dalory, ytom, qokor, otshor, olsar, aiior ★★★; sholol ★★); Quire-C-Botanik: f23r (Geranium pratense) Blässe/Atemweg/Pupille ★★★★; f23v (Borago officinalis) Blut/Auge/Fieber ★★★★.`);
   line();
   h(3, `Kernbefunde — Version ${STATS.version}`);
   line();
@@ -172,7 +172,7 @@ export function generateMarkdown() {
   // ── VII. Grammatikregeln ───────────────────────────────────────
   h(2, 'VII. Grammatikregeln');
   line();
-  line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${RULES.length - STATS.validatedRules} Kandidaten** (darunter v6.2 R40–R42, D1/D2; v6.3 R43–R44; v6.4 R45–R48; v6.5 R33-Erweiterung + R49; v6.6 R50; v6.8 R51 ★★★ gesichert + R52 ★★; v6.9 R52a ★★★★; v7.0 R53 ★★). R14 und R20 gelten als gesichert (★★★★★).`);
+  line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${RULES.length - STATS.validatedRules} Kandidaten** (darunter v6.2 R40–R42, D1/D2; v6.3 R43–R44; v6.4 R45–R48; v6.5 R33-Erweiterung + R49; v6.6 R50; v6.8 R51 ★★★ gesichert + R52 ★★; v6.9 R52a ★★★★; v7.0 R53 ★★ → v7.1 R53 ★★★ Kand. (2 Belege, Subtyp A+B)). R14 und R20 gelten als gesichert (★★★★★).`);
   line();
   s.push(tbl(['#', 'Regel', 'Evidenz', 'Konf.'],
     RULES.map(r => [r.id, stripHtml(r.rule), stripHtml(r.evidence), r.stars])));

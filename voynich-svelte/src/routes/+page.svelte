@@ -269,8 +269,7 @@
 		<section class="section" id="gibberish">
 			<h2>XIII. Gibberish-Test (v6.4)</h2>
 			<p>Empirisches Falsifikationswerkzeug: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch R40 v2, R41, R44–R46 und D1/D2 geführt. Abbruchschwelle: &gt; 15 % · Warnzone: 11–15 % · Zielkorridor: ≤ 10 % strukturelle Falsch-Positive (★★★).</p>
-			<p><em>v6.9-Prüfung:</em> R52a (Determinans-y, Zodiak-Sternlabeln) hat keine Auswirkung auf die Testrate — Zodiak-Suffixmuster (-y/-dy/-ody/-aly/-ary) werden durch den Pseudowort-Generator nicht reproduziert. Testwert v6.5 ({STATS.gibberishRate}, Warnzone) bleibt unverändert.</p>
-			<p><em>v7.0-Prüfung:</em> R53 (Pflanzen-Titel-Duplikation, T-Klasse) hat keine Auswirkung auf die Testrate — T-Klassen-Titelposition am Folioende wird durch den Pseudowort-Generator nicht reproduziert. Testwert bleibt {STATS.gibberishRate} (Warnzone).</p>
+			<p><em>v7.1-Prüfung:</em> R53 ★★★ Kand. (Subtyp-Differenzierung A/B, 2 Belege) hat keine Auswirkung auf die Testrate — Subtyp-Klassifikation betrifft Titelposition, nicht reguläre Paragraphen-Tokens. Testwert bleibt {STATS.gibberishRate} (Warnzone).</p>
 			<GibberishTest />
 		</section>
 
