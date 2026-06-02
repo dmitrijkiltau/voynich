@@ -6,16 +6,16 @@ import { RULES } from './grammar-rules-data.js';
 export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_STATUS, RULES };
 
 export const STATS = {
-  version: '7.5',
+  version: '7.6',
   date: 'Juni 2026',
   lexicon: LEXICON.length,
   rules: RULES.length,
-  validatedRules: 27,
+  validatedRules: 29,
   backtest: '100%',
   backtestFraction: 'Typ I: 10/10 (100%) · Typ II: 17/20 (85%)',
   backtestTotal: '30',
   gibberishRate: '10,4 %',
   foliosA: 'f1r, f1v–f25v',
-  foliosAll: 'f1r, f1v–f25v (Quires A–B+C komplett, Quire D bD1), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v',
-  changelog: 'Ausgelöst durch externes Gutachten (linguistisch-kryptologische Fachkritik). Methodische Korrekturen: (1) Regelmoratorium — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell 27:32 = 0,84:1); (2) Rückwärtstest-Reform: Trennung in Typ I (genuine Vorhersagen: 10/10 = 100%) und Typ II (interne Kohärenz: 17/20 = 85%); (3) R2-ext: explizite Positionsregel für EVA „o" (Wortanfang = Ayin, wortintern = Ḥolam) mit Negativtest — 0 Gegenbeispiele in 140+ Einträgen; (4) chotshol herabgestuft von ★★★ Kand. auf ★★ (morphologisch fragwürdig: Einzelbeleg, 3 Morpheme ohne Separator); (5) neuer Abschnitt „Offene Probleme" — ehrliche Dokumentation ungeklärter statistischer Anomalien (Entropie, Slot-Grammatik, Wortlängenverteilung, fehlende Blindvalidierung); Scheol-Verteilungsstatistik formalisiert (>85 % Zeilenende-Position, 0 % Zeilenanfang).',
+  foliosAll: 'f1r, f1v–f26v (Quires A–B+C komplett, Quire D bD1+bD2), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v',
+  changelog: 'f26r + f26v (Bifolio bD2, Quire D) analysiert — erster Sprache-B-Block in Quire D (Hand 2). Regelaufstufungen: R36 dar·dar Typ B ★★★→★★★★ (R43 erfüllt: f18r + f26v = 2 Folios); R37 qo-Präfix-Dopplung ★★★→★★★★ (R43 erfüllt: f18v + f26v = 2 Folios). Lexikon: 6 neue ★★★ Kandidaten (saraiir, ykeechy, qoteedar, cheeol, ory, eedy); oraiin ★★★★ R43 bestätigt (f22r + f26v). Botanik: f26r = Solanum nigrum (Schwarzer Nachtschatten) · f26v = Centaurea cyanus (Kornblume). Stärkste Sequenz: f26v P.4 Kolophon or·cheos·oraiin·okeo·chekaiin= (★★★★). Regelmoratorium aktiv: 29:32 = 0,91:1.',
 };

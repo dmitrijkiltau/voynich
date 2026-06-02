@@ -160,7 +160,7 @@ export function generateMarkdown() {
   s.push(tbl(['EVA-Suffix', 'Hebräisch', 'Funktion', 'Konf.'],
     GRAMMAR_SUFFIXES.map(r => [r.eva, r.heb, r.fn, r.stars])));
   line();
-  h(3, 'Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 1 Kandidat');
+  h(3, 'Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 3 Kandidaten');
   line();
   s.push(tbl(['EVA', 'Hebräisch', 'Bedeutung', 'Erstbeleg', 'Konf.'],
     VERB_PARADIGM.map(r => [r.eva, r.heb, r.de, r.folio, r.stars])));
@@ -175,7 +175,7 @@ export function generateMarkdown() {
   // ── VI. Grammatikregeln ───────────────────────────────────────
   h(2, 'VI. Grammatikregeln');
   line();
-  line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${RULES.length - STATS.validatedRules} Kandidaten**. **v7.5-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell 27:32 = 0,84:1). R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).`);
+  line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${RULES.length - STATS.validatedRules} Kandidaten**. **v7.6-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell ${STATS.validatedRules}:${RULES.length - STATS.validatedRules} = 0,91:1). R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).`);
   line();
   s.push(tbl(['#', 'Regel', 'Evidenz', 'Konf.'],
     RULES.map(r => [r.id, stripHtml(r.rule), stripHtml(r.evidence), r.stars])));

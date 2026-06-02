@@ -1,7 +1,7 @@
 # Voynich-Manuskript — Formales Mapping-Dokument
-**EVA → Hebräisch-Aramäisch · Version 7.5 · Juni 2026**
+**EVA → Hebräisch-Aramäisch · Version 7.6 · Juni 2026**
 
-Sprachen A & B · Folios f1r, f1v–f25v (Quires A–B+C komplett, Quire D bD1), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
+Sprachen A & B · Folios f1r, f1v–f26v (Quires A–B+C komplett, Quire D bD1+bD2), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
 
 ---
 
@@ -28,19 +28,19 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 
 **Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
 
-Version 7.5 Ausgelöst durch externes Gutachten (linguistisch-kryptologische Fachkritik). Methodische Korrekturen: (1) Regelmoratorium — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell 27:32 = 0,84:1); (2) Rückwärtstest-Reform: Trennung in Typ I (genuine Vorhersagen: 10/10 = 100%) und Typ II (interne Kohärenz: 17/20 = 85%); (3) R2-ext: explizite Positionsregel für EVA „o" (Wortanfang = Ayin, wortintern = Ḥolam) mit Negativtest — 0 Gegenbeispiele in 140+ Einträgen; (4) chotshol herabgestuft von ★★★ Kand. auf ★★ (morphologisch fragwürdig: Einzelbeleg, 3 Morpheme ohne Separator); (5) neuer Abschnitt „Offene Probleme" — ehrliche Dokumentation ungeklärter statistischer Anomalien (Entropie, Slot-Grammatik, Wortlängenverteilung, fehlende Blindvalidierung); Scheol-Verteilungsstatistik formalisiert (>85 % Zeilenende-Position, 0 % Zeilenanfang).
+Version 7.6 f26r + f26v (Bifolio bD2, Quire D) analysiert — erster Sprache-B-Block in Quire D (Hand 2). Regelaufstufungen: R36 dar·dar Typ B ★★★→★★★★ (R43 erfüllt: f18r + f26v = 2 Folios); R37 qo-Präfix-Dopplung ★★★→★★★★ (R43 erfüllt: f18v + f26v = 2 Folios). Lexikon: 6 neue ★★★ Kandidaten (saraiir, ykeechy, qoteedar, cheeol, ory, eedy); oraiin ★★★★ R43 bestätigt (f22r + f26v). Botanik: f26r = Solanum nigrum (Schwarzer Nachtschatten) · f26v = Centaurea cyanus (Kornblume). Stärkste Sequenz: f26v P.4 Kolophon or·cheos·oraiin·okeo·chekaiin= (★★★★). Regelmoratorium aktiv: 29:32 = 0,91:1.
 
-### Kernbefunde — Version 7.5
+### Kernbefunde — Version 7.6
 
 | Eigenschaft | Wert |
 | --- | --- |
 | Identifizierte Sprache | Mischna-Hebräisch / Jüdisch-Aramäisch |
 | Texttyp | Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis) |
-| Analysierte Folios | f1r, f1v–f25v (Quires A–B+C komplett, Quire D bD1), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v |
-| Bestätigte Wörter | 303 (★★★ oder höher) |
+| Analysierte Folios | f1r, f1v–f26v (Quires A–B+C komplett, Quire D bD1+bD2), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v |
+| Bestätigte Wörter | 309 (★★★ oder höher) |
 | Rückwärtstest | Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 17/20 (85%) · 0 Falsch-Positive |
 | Sprache A Anker | f1r, f1v–f25v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4) |
-| Grammatikregeln | 59 (27 validiert + 32 Kandidaten) |
+| Grammatikregeln | 59 (29 validiert + 30 Kandidaten) |
 
 
 ## II. Methodik
@@ -126,7 +126,7 @@ Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 
 **R2-ext (v7.5):** Das EVA-Zeichen `o` ist positionell vollständig determiniert: (1) `o-` am Wortanfang = ע (Ayin, konsonantisch) — ausnahmslos; (2) `o` im Wortinneren = Ḥolam (Vokalmarker) — ausnahmslos. **Negativtest:** 0 Gegenbeispiele in 140+ validierten Lexikoneinträgen.
 
-## IV. Bestätigtes Lexikon (303 Einträge)
+## IV. Bestätigtes Lexikon (309 Einträge)
 
 Alle Einträge mit ★★★ oder höher.
 
@@ -144,7 +144,7 @@ Alle Einträge mit ★★★ oder höher.
 | ram | רָם | erhöht / Fieber | ★★★ |
 | chor | חֹר | Pupille / Höhle | ★★★★ |
 | otchor | אוֹת+חֹר | das Zeichen der Pupille | ★★★★ |
-| oraiin | אוֹר+עַיִן | Licht des Auges / Augenheilung | ★★★★ |
+| oraiin | אוֹר+עַיִן | Licht des Auges / Augenheilung — R43 erfüllt: f22r + f26v P.4 (reichste Augenlicht-Kolophonformel im Corpus: or·cheos·oraiin·okeo·chekaiin=) | ★★★★ |
 | sheoldam | שְׁאוֹל+דָּם | tödlicher Blutverlust | ★★★★★ |
 | damo | דָּמוֹ | sein Blut (Possessiv) | ★★★★ |
 | cham | חַם | Wärme / Entzündung | ★★★ |
@@ -187,6 +187,7 @@ Alle Einträge mit ★★★ oder höher.
 | schor | שׂ+חֹר | gleich der Pupille (Sin-Präfix + chor) — ★★★ Kand. (Erstbeleg f22r P.4) | ★★★ |
 | qodom | קֶדֶם | Osten / Vorzeit / Vergangenheit — f24v P.11; ★★★ Kand. (Folgebeleg erforderlich) | ★★★ |
 | sshey | שׁ+שׁ+הֵי | Doppel-Shin-Blässe (sho.sho-Emphase + sheey, R56) — f24r P.17; ★★★ Kand. (Folgebeleg erforderlich) | ★★★ |
+| cheeol | כְּ+אֵ+עַל | wie kein Joch / wie Ende des Joches — f26v P.3 — ★★★ Kand. (R43-Frist: 5 Folios) | ★★★ |
 
 
 ### Prognose-Termini
@@ -253,6 +254,8 @@ Alle Einträge mit ★★★ oder höher.
 | doiir | דֹּ+יִ+ר | sehr schwache Erweckung (dol + yod + or) — f24v P.14; ★★★ Kand. (Folgebeleg erforderlich) | ★★★ |
 | ckhear | כְּ+כְּ+אֵ+ר | wie das Licht (ckh-Variante von cheor) — f25v P.4; Minimalpaar ckhear vs. chkear = Reihenfolgevarianz (Orthographienotiz); ★★★★ | ★★★★ |
 | soshy | שׂ+אֹ+שׁ+יְ | gleich Scheol-er (Doppel-Shin: sin + alef + shin + yod) — f25r P.1; ★★★ Kand. (Erstbeleg, Folgebeleg erforderlich) | ★★★ |
+| ory | אוֹר+יְ | sein Licht / er erleuchtet — f26v P.8 — ★★★ Kand. (R43-Frist: 5 Folios) | ★★★ |
+| eedy | אֵ+דִּי | kein Licht — von (Negativ-Licht-Genitiv) — f26r P.5 — ★★★ Kand. (R43-Frist: 5 Folios) | ★★★ |
 
 
 ### Kolophon-Formeln
@@ -311,7 +314,7 @@ Alle Einträge mit ★★★ oder höher.
 | odaiim | עַ+דִּינִים | auf den (kollektiven) Urteilen (o-Direktional + dayin-Plural-m) — f24v P.16; Abschluss-Kolophon-Marker (R57); ★★★ Kand. | ★★★ |
 | daid | דַּ+אִי+דַּ | ? / תָּמִיד = dauerhaft — f24v P.7; ★★ Kand. (Semantik noch offen) | ★★ |
 | daiity | דִּין+תּ | Urteils-tav / juristische Abschlussform (daiin + tav) — f25v P.3; ★★★ Kand. (Erstbeleg, Folgebeleg erforderlich) | ★★★ |
-| daiiin | דִּינִין | Urteile (Aramäischer Emphase-Plural von דִּין) — f1r T3 `otol.daiiin=`; 6/6 Transkriptoren einig (H/C/F/N/X/U); Corpus-Hapax; R40-Ausnahme b+c; ★★★ Kand. | ★★★ |
+| daiiin | דִּינִין | Urteile (Aramäischer Emphase-Plural von דִּין; Aram. Plural-iin, 3× Yod) — f1r T3 `otol.daiiin=`; 6/6 Transkriptoren einig (H/C/F/N/X/U); R40-Ausnahme b+c; f26v P.1 + P.7 (2. Folio-Beleg) — ★★★ Kand. | ★★★ |
 
 
 ### Verbformen
@@ -380,6 +383,8 @@ Alle Einträge mit ★★★ oder höher.
 | cthoiin | כְּ+תּ+עַיִן | wie vollständige Augen-Heilung — cthor-Variante mit aiin-Suffix; Erstbeleg f22r P.10 | ★★★ |
 | ytom | יְ+תָּ+מ | er wird vollständig/komplett (y-Imperfekt v. תמם; Var.: ytam) — ★★★ Kand. (Erstbeleg f23r P.5) | ★★★ |
 | ydals | יְ+דַּ+לְ+שׁ | er wird Schwäche läutern (y-Imperfekt + dal + shin) — f24v P.2; ★★★ Kand. (Folgebeleg erforderlich) | ★★★ |
+| ykeechy | יְ+כְּ+אֵ+כְּ+הֵי | er heilt wie Blässe-Licht (8. y+k-Verb) — f26r P.9 — ★★★ Kand. (R43-Frist: 5 Folios) | ★★★ |
+| qoteedar | וְ+תֵּ+דַּר | und er/du wirst leuchten (qo + Tsere + dar) — f26r P.8 — ★★★ Kand. (R43-Frist: 5 Folios) | ★★★ |
 
 
 ### Akteure, Anatomie & Botanik
@@ -418,6 +423,7 @@ Alle Einträge mit ★★★ oder höher.
 | olsar | עַל+שַׂר | über den Arzt / ärztliche Aufsicht (ol + sar); Erstbeleg f23v P.6 rechts von {plant} — Arzt-Supervision-Marker im Therapie-Teil | ★★★ |
 | aiior | עַ+יִ+אוֹר | Auge des Lichts (ayin+yod+or); Erstbeleg f23v P.12 | ★★★ |
 | dain | דָּן | Richter (Partizip QAL von דין) — f1r T2 `dain.os.teody=` + P3.L14 (3 Belege); morphologische Distinktion zu daiin (Substantiv) und daiiin (Plural); ★★★ Kand. | ★★★ |
+| saraiir | שַׂר+אִיר | Arzt des Leuchtenden (sar + aiir Komposit) — f26v P.2 — ★★★ Kand. (R43-Frist: 5 Folios) | ★★★ |
 
 
 ### Bestätigte Komposita
@@ -510,7 +516,7 @@ Alle Einträge mit ★★★ oder höher.
 | -ary | +רִי | Zodiak-Suffix -ary: Vokalhelfer + resch + Yod; Sternlabel-Register (R52a) | ★★★★ |
 
 
-### Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 1 Kandidat
+### Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 3 Kandidaten
 
 | EVA | Hebräisch | Bedeutung | Erstbeleg | Konf. |
 | --- | --- | --- | --- | --- |
@@ -522,6 +528,7 @@ Alle Einträge mit ★★★ oder höher.
 | ykshol | יְ+כְּ+שׁוֹל | er wird zu Scheol gehen (negativ) | f15r P12 | ★★★★ |
 | ykair | יְ+כְּ+אִיר | er heilt leuchtend (★★ provisorisch — R43: f16r nur 1×) | f16r P1.3 | ★★ |
 | tshaiin | תּ+שׁ+עַיִן | du wirst das Auge [behandeln/waschen] — Direktbefehl (★★★ Kand.) | f21r P9 | ★★★ |
+| ykeechy | יְ+כְּ+אֵ+כְּ+הֵי | er heilt wie Blässe-Licht (8. y+k-Verb; ★★★ Kand. R43-Frist: 5 Folios) | f26r P9 | ★★★ |
 
 
 ### Prognose-Schemata
@@ -532,7 +539,7 @@ Alle Einträge mit ★★★ oder höher.
 
 ## VI. Grammatikregeln
 
-59 Regeln gesamt: **27 validiert** (≥ 2 unabhängige Belege) + **32 Kandidaten**. **v7.5-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell 27:32 = 0,84:1). R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
+59 Regeln gesamt: **29 validiert** (≥ 2 unabhängige Belege) + **30 Kandidaten**. **v7.6-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell 29:30 = 0,91:1). R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
 
 | # | Regel | Evidenz | Konf. |
 | --- | --- | --- | --- |
@@ -569,8 +576,8 @@ Alle Einträge mit ★★★ oder höher.
 | R33 | qo--Präfix tritt ab Quire C (Beinecke Quire III) auch in **Sprache-A-Texten** auf — Quire C ist eine dialektale Übergangszone mit folio-intern ansteigender qo-Integration: bC1 (f17) ~5 %, bC2 (f18) ~4–5 %, bC3 (f19) ~10 % (= Quire-H-äquivalent). R1 (qo- = B-exklusiv) gilt mit vollem Geltungsbereich nur für Quires I–II. Ab Bifolio bC3 ist vollständige qo-Integration zu erwarten. Vollständige Integration in Quire H: s. R47 — Kandidat | f17r: 7 qo-Formen (Spr. A); f17v: 6 qo-Formen (Spr. A) — 13 Belege in ~250 Token (~5,2 %); f18r/v (bC2): 8–10 qo-Formen in ~200 Token (~4–5 %); f19r/v (bC3): ~18 qo-Formen in ~175 Token (~10 %) — überschreitet Quire-H-Dichte; 0 Belege in Quires A+B Spr. A (~800 Token); f58r (Quire H, Spr. A): 28+ qo-Formen in ~350 Token (~8 %) — Vollintegration, s. R47 | ★★★ |
 | R34 | sheol (Vollform שְׁאוֹל) erscheint ab Quire C auch in Sprache-A-Texten am Paragraphenende — shol (apokor.) bleibt dominant; R17 gilt uneingeschränkt nur für Quires I–II — Kandidat | f17v P.13: ykeor·chol·chol·cthol·chkor·sheol-{plant} — Erstbeleg Spr. A sheol am Paragraphenende; 0 Belege in Quires A+B Spr. A | ★★★ |
 | R35 | Dopplung chol·chol (כֹּל·כֹּל = alles-alles) = Vollheilungs-Emphase vor nachfolgender Todesformel — erweitert R19-Intensivierungsschema auf Nominalstämme — Kandidat | f17v P.13: chol·chol·cthol·chkor·sheol — Erstbeleg; Parallele zu chol·chol·chol auf f8v (R19) | ★★★ |
-| R36 | Dopplung dar·dar (דַּר·דַּר) = Bilateral-/Intensiv-Dopplung für dar (leuchtend/Licht-davon) in ophthalmologischem Kontext — mögliche Bedeutung: bilaterale Augenbeteiligung oder maximale Lichtintensivierung als diagnostische Emphase — Kandidat | f18r P.6: dar.dar — Corpus-Erstbeleg; R19-Strukturkonformität identisch zu daly·dal, chol·chol, or·or-Palindrom | ★★★ |
-| R37 | R19-Intensivierungsschema gilt ab Quire C auch für qo--Präfix-Wortgruppen: qoky·qoky (und weil · und weil), qokchy·qokchy (und wie Blässe · und wie Blässe) — Dopplung verstärkt kausale Verbindung oder diagnostischen Befund — Kandidat | f18v P.2: qokchy·qokchy (Corpus-Erstbeleg qo-Dopplung); f18v P.3: qoky·qoky (2. Beleg, verschiedene Lemmata) | ★★★ |
+| R36 | Dopplung dar·dar (דַּר·דַּר) = Bilateral-/Intensiv-Dopplung für dar (leuchtend/Licht-davon) in ophthalmologischem Kontext — mögliche Bedeutung: bilaterale Augenbeteiligung oder maximale Lichtintensivierung als diagnostische Emphase | f18r P.6: dar.dar — Corpus-Erstbeleg; f26v P.6: dar…dar — 2. Beleg (Typ B mit Zwischentext); R43 erfüllt: f18r + f26v = 2 Folios; R19-Strukturkonformität identisch zu daly·dal, chol·chol, or·or-Palindrom | ★★★★ |
+| R37 | R19-Intensivierungsschema gilt ab Quire C auch für qo--Präfix-Wortgruppen: qoky·qoky (und weil · und weil), qokchy·qokchy (und wie Blässe · und wie Blässe) — Dopplung verstärkt kausale Verbindung oder diagnostischen Befund | f18v P.2: qokchy·qokchy (Corpus-Erstbeleg qo-Dopplung); f18v P.3: qoky·qoky (2. Beleg, verschiedene Lemmata); f26v P.5: qotedy·qotedy (3. Beleg, neues Lemma); R43 erfüllt: f18v + f26v = 2 Folios | ★★★★ |
 | R38 | {plant}-Marker am Paragraphenanfang = Pflanzenillustration rahmt den nachfolgenden Kolophon-Text strukturell — neue Strukturvariante in Quire C; in Quires A+B steht {plant} nie am Paragraphenanfang — Kandidat | f18v P.10: {plant}yko.dshy.dair.ykol.dom= — Corpus-Erstbeleg der Anfangspositionierung; 0 Belege in Quires A+B | ★★★ |
 | R39 | dom= (דּוֹם = Stille/Ende) als Schlusskolophon-Finale in Sprache A — positiv-neutrale Prognose-Semantik (Stille/Ruhe, kein shol/sheol); bisher nur in Sprache B (f57r) belegt — Kandidat | f18v P.10: dom= — Erstbeleg Spr. A; Parallelbeleg Spr. B: f57r Kolophon-Kontext; dom = neutral/positiv (Stille) vs. shol = negativ (Tod) | ★★★ |
 | R40 | **Kurzwurzel-Konfidenzdeckel v2 (verschärft, v6.3):** Ein EVA-Wort, dessen Basiswurzel nach Abtrennung aller validen Präfixe und Suffixe **≤ 3 Konsonanten** enthält, erhält **maximal ★★** (niemals ★★★ oder höher), es sei denn mindestens **zwei** der folgenden Ausnahmebedingungen sind gleichzeitig erfüllt: (a) Funktionswort ≤ 3 EVA-Zeichen gesamt (Konjunktion, Präposition, Artikel, Partikel — keine Ableitungen), (b) Rückwärtstest-Anker (positiver Rückwärtstest, derzeit 23 Anker), (c) Korpusfrequenz ≥ 15× in ≥ 3 verschiedenen Folios mit semantisch konsistentem Kontext. Ist keine oder nur eine Ausnahme erfüllt: HARD CAP ★★ ohne Ausnahme — Kandidat | or → ★★★★ bleibt (b ✓ + c ✓: 52×, 5 Folios); chor → ★★★★ bleibt (b ✓ + c ✓: 47×, 5 Folios); daiin → ★★★★ bleibt (b ✓ + c ✓: 38×, 5 Folios); shol → ★★★ bleibt (b ✓ + c ✓: 19×, 5 Folios); ky → ★★★ bleibt (a ✓ + b ✓); dy → ★★ (a nur 1/2 — zu lang für Grenzfall) | ★★★ |
@@ -938,7 +945,7 @@ _Arbeitshypothese: Ab v7.5: Regelmoratorium (keine R60+) bis Verhältnis ≥ 1,5
 
 ---
 
-Voynich-Manuskript — Formales Mapping-Dokument · Version 7.5 · Juni 2026
-Lexikon: 303 Einträge · Grammatikregeln: 59 · Rückwärtstest: Typ I: 10/10 (100%) · Typ II: 17/20 (85%)
+Voynich-Manuskript — Formales Mapping-Dokument · Version 7.6 · Juni 2026
+Lexikon: 309 Einträge · Grammatikregeln: 59 · Rückwärtstest: Typ I: 10/10 (100%) · Typ II: 17/20 (85%)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

@@ -11,7 +11,7 @@ export const LEXICON = [
   { eva: 'ram',       heb: 'רָם',        de: 'erhöht / Fieber',                             stars: '★★★',   cat: 'symptom' },
   { eva: 'chor',      heb: 'חֹר',        de: 'Pupille / Höhle',                             stars: '★★★★',  cat: 'symptom' },
   { eva: 'otchor',    heb: 'אוֹת+חֹר',    de: 'das Zeichen der Pupille',                     stars: '★★★★',  cat: 'symptom' },
-  { eva: 'oraiin',    heb: 'אוֹר+עַיִן',   de: 'Licht des Auges / Augenheilung',              stars: '★★★★',  cat: 'symptom' },
+  { eva: 'oraiin',    heb: 'אוֹר+עַיִן',   de: 'Licht des Auges / Augenheilung — R43 erfüllt: f22r + f26v P.4 (reichste Augenlicht-Kolophonformel im Corpus: or·cheos·oraiin·okeo·chekaiin=)',  stars: '★★★★',  cat: 'symptom' },
   { eva: 'sheoldam',  heb: 'שְׁאוֹל+דָּם',   de: 'tödlicher Blutverlust',                       stars: '★★★★★', cat: 'symptom' },
   { eva: 'damo',      heb: 'דָּמוֹ',       de: 'sein Blut (Possessiv)',                       stars: '★★★★',  cat: 'symptom' },
   { eva: 'cham',      heb: 'חַם',        de: 'Wärme / Entzündung',                          stars: '★★★',   cat: 'symptom' },
@@ -332,6 +332,13 @@ export const LEXICON = [
   { eva: 'qokoral',   heb: 'וְ+כְּ+אֹ+ר+עַ+לְ',        de: 'und wie Licht-auf (qo + k + or + al-Direktional) — f25v P.6; ★★★ Kand. (Erstbeleg, Folgebeleg erforderlich)',                                                   stars: '★★★',  cat: 'kompositum' },
   { eva: 'soshy',     heb: 'שׂ+אֹ+שׁ+יְ',               de: 'gleich Scheol-er (Doppel-Shin: sin + alef + shin + yod) — f25r P.1; ★★★ Kand. (Erstbeleg, Folgebeleg erforderlich)',                                            stars: '★★★',  cat: 'prognose'   },
   // ── v7.4 (Härtetests f1r + f1v — Quire A, bA1: Haskama-Analyse) ──
-  { eva: 'daiiin',    heb: 'דִּינִין',                  de: 'Urteile (Aramäischer Emphase-Plural von דִּין) — f1r T3 `otol.daiiin=`; 6/6 Transkriptoren einig (H/C/F/N/X/U); Corpus-Hapax; R40-Ausnahme b+c; ★★★ Kand.',            stars: '★★★',  cat: 'syntax'     },
+  { eva: 'daiiin',    heb: 'דִּינִין',                  de: 'Urteile (Aramäischer Emphase-Plural von דִּין; Aram. Plural-iin, 3× Yod) — f1r T3 `otol.daiiin=`; 6/6 Transkriptoren einig (H/C/F/N/X/U); R40-Ausnahme b+c; f26v P.1 + P.7 (2. Folio-Beleg) — ★★★ Kand.',            stars: '★★★',  cat: 'syntax'     },
   { eva: 'dain',      heb: 'דָּן',                      de: 'Richter (Partizip QAL von דין) — f1r T2 `dain.os.teody=` + P3.L14 (3 Belege); morphologische Distinktion zu daiin (Substantiv) und daiiin (Plural); ★★★ Kand.',           stars: '★★★',  cat: 'akteur'     },
+  // ── v7.6 (f26r + f26v — Bifolio bD2: Solanum nigrum + Centaurea cyanus) ──
+  { eva: 'saraiir',   heb: 'שַׂר+אִיר',              de: 'Arzt des Leuchtenden (sar + aiir Komposit) — f26v P.2 — ★★★ Kand. (R43-Frist: 5 Folios)',                                       stars: '★★★',  cat: 'akteur'  },
+  { eva: 'ykeechy',   heb: 'יְ+כְּ+אֵ+כְּ+הֵי',       de: 'er heilt wie Blässe-Licht (8. y+k-Verb) — f26r P.9 — ★★★ Kand. (R43-Frist: 5 Folios)',                                         stars: '★★★',  cat: 'verb'    },
+  { eva: 'qoteedar',  heb: 'וְ+תֵּ+דַּר',             de: 'und er/du wirst leuchten (qo + Tsere + dar) — f26r P.8 — ★★★ Kand. (R43-Frist: 5 Folios)',                                      stars: '★★★',  cat: 'verb'    },
+  { eva: 'cheeol',    heb: 'כְּ+אֵ+עַל',             de: 'wie kein Joch / wie Ende des Joches — f26v P.3 — ★★★ Kand. (R43-Frist: 5 Folios)',                                              stars: '★★★',  cat: 'symptom' },
+  { eva: 'ory',       heb: 'אוֹר+יְ',                de: 'sein Licht / er erleuchtet — f26v P.8 — ★★★ Kand. (R43-Frist: 5 Folios)',                                                        stars: '★★★',  cat: 'prognose' },
+  { eva: 'eedy',      heb: 'אֵ+דִּי',                de: 'kein Licht — von (Negativ-Licht-Genitiv) — f26r P.5 — ★★★ Kand. (R43-Frist: 5 Folios)',                                          stars: '★★★',  cat: 'prognose' },
 ];
