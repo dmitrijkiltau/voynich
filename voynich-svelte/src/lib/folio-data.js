@@ -53,8 +53,10 @@ export const FOLIO_STATUS = {
   f23r:'done', f23v:'done',
   f24r:'done', f24v:'done',
 
-  // ── Lage 4 · Kräuter A (f25–f32) — Quire D (bD1) ────────────────────────
+  // ── Lage 4 · Kräuter A (f25–f32) — Quire D (bD1+bD2+bD3) ─────────────────
   f25r:'done', f25v:'done',
+  f26r:'done', f26v:'done',
+  f27r:'done', f27v:'done',
 
   // ── Lage 3 · Kräuter A — f33r image studied ──────────────────────────────
   f33r:'partial',

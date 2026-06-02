@@ -94,7 +94,7 @@ export function generateMarkdown() {
     ['Analysierte Folios', STATS.foliosAll],
     ['Bestätigte Wörter', `${STATS.lexicon} (★★★ oder höher)`],
     ['Rückwärtstest', `Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 17/20 (85%) · 0 Falsch-Positive`],
-    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4)`],
+    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD3)`],
     ['Grammatikregeln', `${RULES.length} (${STATS.validatedRules} validiert + ${RULES.length - STATS.validatedRules} Kandidaten)`],
   ]));
   line();
@@ -175,7 +175,8 @@ export function generateMarkdown() {
   // ── VI. Grammatikregeln ───────────────────────────────────────
   h(2, 'VI. Grammatikregeln');
   line();
-  line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${RULES.length - STATS.validatedRules} Kandidaten**. **v7.6-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell ${STATS.validatedRules}:${RULES.length - STATS.validatedRules} = 0,91:1). R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).`);
+  const moratoriumRatio = (STATS.validatedRules / (RULES.length - STATS.validatedRules)).toFixed(2).replace('.', ',');
+  line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${RULES.length - STATS.validatedRules} Kandidaten**. **v${STATS.version}-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell ${STATS.validatedRules}:${RULES.length - STATS.validatedRules} = ${moratoriumRatio}:1). R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).`);
   line();
   s.push(tbl(['#', 'Regel', 'Evidenz', 'Konf.'],
     RULES.map(r => [r.id, stripHtml(r.rule), stripHtml(r.evidence), r.stars])));
@@ -237,7 +238,7 @@ export function generateMarkdown() {
   line();
 
   // ── X. Sprache A ──────────────────────────────────────────────
-  h(2, `X. Sprache A — Quires A–C (${STATS.foliosA})`);
+  h(2, `X. Sprache A — Quires A–D (${STATS.foliosA})`);
   line();
   h(3, 'Sprachvergleich Spr. A vs. Spr. B');
   line();

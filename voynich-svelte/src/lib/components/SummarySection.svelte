@@ -21,18 +21,17 @@
 				<tr><td>Analysierte Folios</td><td>{STATS.foliosAll}</td></tr>
 				<tr><td>Bestätigte Wörter</td><td><strong>{STATS.lexicon}</strong> (★★★ oder höher)</td></tr>
 				<tr><td>Rückwärtstest</td><td><strong>Typ I (genuine Vorhersagen): 10/10 (100%)</strong> · Typ II (interne Kohärenz): 17/20 (85%) · 0 Falsch-Positive</td></tr>
-				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1)</td></tr>
+				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD3)</td></tr>
 				<tr><td>Grammatikregeln</td><td><strong>{RULES.length}</strong> ({STATS.validatedRules} validiert + {RULES.length - STATS.validatedRules} Kandidaten)</td></tr>
 				<tr class="hidden-print">
-					<td>Korrekturen v7.6</td>
+					<td>Korrekturen v7.7</td>
 						<td>
 							<ul>
-								<li><strong>Bifolio bD2 (f26r + f26v) analysiert</strong> — erster Sprache-B-Block in Quire D (Hand 2): f26r = <em>Solanum nigrum</em> · f26v = <em>Centaurea cyanus</em></li>
-								<li><strong>R36 dar·dar Typ B</strong> ★★★→★★★★ — R43 erfüllt: f18r P.6 + f26v P.6 = 2 Folios (bilaterale Licht-Intensivierung, ophthalmologischer Kontext)</li>
-								<li><strong>R37 qo-Präfix-Dopplung</strong> ★★★→★★★★ — R43 erfüllt: f18v P.2+P.3 + f26v P.5 (qotedy·qotedy = 3. Beleg, 2 Folios)</li>
-								<li><strong><span class="eva">oraiin</span> R43 bestätigt</strong> — ★★★★ gesichert: f22r + f26v P.4 (reichste Augenlicht-Kolophonformel im Corpus)</li>
-								<li><strong>6 neue ★★★ Kandidaten</strong> — <span class="eva">saraiir, ykeechy, qoteedar, cheeol, ory, eedy</span> (alle R43-Frist: 5 Folios)</li>
-								<li><strong>Regelmoratorium</strong> weiterhin aktiv — kein R60+; aktuell 29:32 = 0,91:1 (Ziel: ≥ 1,5:1)</li>
+								<li><strong>Bifolio bD3 (f27r + f27v) analysiert</strong> — Rückkehr zu Sprache A nach Sprache-B-Einschub bD2: f27r = <em>Symphytum officinale</em> (Beinwell) · f27v = <em>Leucanthemum vulgare</em> (Wiesen-Margerite)</li>
+								<li><strong><span class="eva">daiiin</span></strong> ★★★→★★★★ — R43 dreifach erfüllt: f1r T3 + f26v P.1/P.7 + f27r P.12 = 3 Folios</li>
+								<li><strong>R56 sho·sho-Emphase</strong> ★★★ Kand.→★★★ validiert — R43 erfüllt: f24v P.14 + f27v P.7 = 2 Folios</li>
+								<li><strong>7 neue ★★★ Kandidaten</strong> — <span class="eva">ksor, shod, keeod, cphary, dor</span> (R43 bestätigt), <span class="eva">fochof/chof, kshy</span> (alle R43-Frist: 5 Folios)</li>
+								<li><strong>Regelmoratorium</strong> erstmals > 1,0 — 30 validiert : 29 Kandidaten = 1,03:1 (Ziel: ≥ 1,5:1)</li>
 							</ul>
 						</td>
 					</tr>

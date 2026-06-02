@@ -178,7 +178,7 @@ export const LEXICON = [
   { eva: 'fshody',    heb: 'פְּ+שׁוֹ+דִּי',     de: 'von Scheol — dessen (Pe-Genitiv-Scheol-Konstrukt)',              stars: '★★★',  cat: 'prognose'   },
   { eva: 'oldckhy',   heb: 'עַל+דְּ+כְּ+הִי',  de: 'über die Blässe davon (dreifach-präpositionaler Terminus)',      stars: '★★★',  cat: 'symptom'    },
   { eva: 'qokcheor',  heb: 'וְ+כְּ+כְּ+אֵוֹר', de: 'und wie das Licht (doppelter k-Komparativ + Vav)',               stars: '★★★',  cat: 'kompositum' },
-  { eva: 'dor',       heb: 'דֹּר',              de: 'Generation / Zeitraum der Erkrankung',                          stars: '★★★',  cat: 'symptom'    },
+  { eva: 'dor',       heb: 'דֹּר',              de: 'Generation / Wachstumszyklus / Zeitraum der Erkrankung — R43 bestätigt: f17r + f27r P.5 = 2 Folios',                          stars: '★★★',  cat: 'symptom'    },
   { eva: 'otchol',    heb: 'אוֹת+כֹּל',         de: 'Zeichen von allem / Universalzeichen',                          stars: '★★★',  cat: 'kompositum' },
   { eva: 'cphor',     heb: 'כְּ+פְּ+אֹר',       de: 'wie der Mund des Lichts',                                       stars: '★★',   cat: 'kompositum' },
   { eva: 'ychody',    heb: 'יְ+כֹּ+דִּי',       de: 'er wird urteilen (Variante von ytchody)',                       stars: '★★★',  cat: 'verb'       },
@@ -332,7 +332,7 @@ export const LEXICON = [
   { eva: 'qokoral',   heb: 'וְ+כְּ+אֹ+ר+עַ+לְ',        de: 'und wie Licht-auf (qo + k + or + al-Direktional) — f25v P.6; ★★★ Kand. (Erstbeleg, Folgebeleg erforderlich)',                                                   stars: '★★★',  cat: 'kompositum' },
   { eva: 'soshy',     heb: 'שׂ+אֹ+שׁ+יְ',               de: 'gleich Scheol-er (Doppel-Shin: sin + alef + shin + yod) — f25r P.1; ★★★ Kand. (Erstbeleg, Folgebeleg erforderlich)',                                            stars: '★★★',  cat: 'prognose'   },
   // ── v7.4 (Härtetests f1r + f1v — Quire A, bA1: Haskama-Analyse) ──
-  { eva: 'daiiin',    heb: 'דִּינִין',                  de: 'Urteile (Aramäischer Emphase-Plural von דִּין; Aram. Plural-iin, 3× Yod) — f1r T3 `otol.daiiin=`; 6/6 Transkriptoren einig (H/C/F/N/X/U); R40-Ausnahme b+c; f26v P.1 + P.7 (2. Folio-Beleg) — ★★★ Kand.',            stars: '★★★',  cat: 'syntax'     },
+  { eva: 'daiiin',    heb: 'דִּינִין',                  de: 'Urteile (Aramäischer Emphase-Plural von דִּין; Aram. Plural-iin, 3× Yod) — f1r T3 `otol.daiiin=`; 6/6 Transkriptoren einig (H/C/F/N/X/U); R40-Ausnahme b+c; f26v P.1 + P.7 (2. Folio-Beleg); f27r P.12 (3. Folio-Beleg) = R43 dreifach erfüllt → ★★★★',            stars: '★★★★',  cat: 'syntax'     },
   { eva: 'dain',      heb: 'דָּן',                      de: 'Richter (Partizip QAL von דין) — f1r T2 `dain.os.teody=` + P3.L14 (3 Belege); morphologische Distinktion zu daiin (Substantiv) und daiiin (Plural); ★★★ Kand.',           stars: '★★★',  cat: 'akteur'     },
   // ── v7.6 (f26r + f26v — Bifolio bD2: Solanum nigrum + Centaurea cyanus) ──
   { eva: 'saraiir',   heb: 'שַׂר+אִיר',              de: 'Arzt des Leuchtenden (sar + aiir Komposit) — f26v P.2 — ★★★ Kand. (R43-Frist: 5 Folios)',                                       stars: '★★★',  cat: 'akteur'  },
@@ -341,4 +341,11 @@ export const LEXICON = [
   { eva: 'cheeol',    heb: 'כְּ+אֵ+עַל',             de: 'wie kein Joch / wie Ende des Joches — f26v P.3 — ★★★ Kand. (R43-Frist: 5 Folios)',                                              stars: '★★★',  cat: 'symptom' },
   { eva: 'ory',       heb: 'אוֹר+יְ',                de: 'sein Licht / er erleuchtet — f26v P.8 — ★★★ Kand. (R43-Frist: 5 Folios)',                                                        stars: '★★★',  cat: 'prognose' },
   { eva: 'eedy',      heb: 'אֵ+דִּי',                de: 'kein Licht — von (Negativ-Licht-Genitiv) — f26r P.5 — ★★★ Kand. (R43-Frist: 5 Folios)',                                          stars: '★★★',  cat: 'prognose' },
+  // ── v7.7 (f27r + f27v — Bifolio bD3: Symphytum officinale + Leucanthemum vulgare) ──
+  { eva: 'ksor',      heb: 'כֵּ+שָׁר',               de: 'denn/wie passend/gesund (כָּשֵׁר = angemessen) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27r P.1)',                            stars: '★★★',  cat: 'syntax'     },
+  { eva: 'shod',      heb: 'שׁוֹד',                  de: 'Verheerung / Verwüstung (שׁוֹד = devastation) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27r P.1)',                             stars: '★★★',  cat: 'symptom'    },
+  { eva: 'keeod',     heb: 'כֵּ+עוֹד',               de: 'denn noch / immer noch (temporaler Adverb) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27r P.9)',                               stars: '★★★',  cat: 'syntax'     },
+  { eva: 'cphary',    heb: 'כְּ+פַּר+יְ',             de: 'wie sein Sühnopfer / wie seine Expiation — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27r P.5)',                                 stars: '★★★',  cat: 'kompositum' },
+  { eva: 'fochof',    heb: 'פֹ+כֹ+פְ',               de: 'Mund/Kehle-alles / Kehlenbereich (Var.: chof = כֹ+פְ) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27v P.1)',                    stars: '★★★',  cat: 'akteur'     },
+  { eva: 'kshy',      heb: 'כְּ+שֵׁי',               de: 'wie die Gabe (k-Präfix + sheey) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27v P.8)',                                          stars: '★★★',  cat: 'kompositum' },
 ];
