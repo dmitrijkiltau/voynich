@@ -1,5 +1,5 @@
 # Voynich-Manuskript — Formales Mapping-Dokument
-**EVA → Hebräisch-Aramäisch · Version 7.3 · Juni 2026**
+**EVA → Hebräisch-Aramäisch · Version 7.4 · Juni 2026**
 
 Sprachen A & B · Folios f1r, f1v–f25v (Quires A–B+C komplett, Quire D bD1), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
 
@@ -27,19 +27,19 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 
 **Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
 
-Version 7.3 Ausgelöst durch f25r + f25v (Bifolio bD1 Eröffnung — Urtica dioica + Chelidonium majus). Strukturelle Höhepunkte: Quire-D-Einstieg bestätigt (Kontinuität zu Quire C, keine Parameteränderung); R53 ★★★★ (4. T-Klassen-Beleg: dair.otaiir.otosy= f25r T.7 — Subtyp C deskriptiv/identifikatorisch etabliert); R58 neuer Kandidat ★★★ (3×daiin in einer Zeile — f25v P.2, Corpus-Erstbeleg); otaiir → ★★★★★ Kand. (Zweitbeleg f25r T.7, R43 erfüllt); orchaiin= neue Kolophon-Formel ★★★★ (Licht-wie-Auge, f25v P.7); daiin-Dichte bD1 Corpus-Rekord (4 Doppelurteile + 3×daiin-Zeile); 7 neue Lexikoneinträge (orchaiin, ckhear ★★★★; otosy, daiity, cheesees, qokoral, soshy ★★★ Kand.); Lexikonstand >300-Meilenstein; Botanik: Urtica dioica ★★★★ + Chelidonium majus ★★★★ (Drachen-Motiv); Quire D: 2/16 Seiten.
+Version 7.4 Ausgelöst durch Härtetests f1r + f1v (Bifolio bA1 — Haskama-Typ + Herbal-Typ, Quire A). Strukturelle Höhepunkte: R3 ★★★★★ (6 neue Belege f1r: ykal, ykaiin, yshey, ycho, yto, ycheey — >11 Belege / ≥8 Folios); R11 ★★★★ (f1r T1–T4 + f1v P4/P10: 6 neue Belege, alle 6 Transkriptoren einig); R15 ★★★★★ (Belege 7–9 aus f1r: chol.chol P3.L15, keey.keey P4.L26, dar…dar P4.L23 — 9 Belege / 6 Folios); R59 neuer Kandidat ★★★ (qo als isolierter Konnektiv-Token, Paragraphen-Brücke — f1v P.7); 2 neue Lexikoneinträge (daiiin = דִּינִין Aramäischer Plural ★★★; dain = דָּן Richter Partizip ★★★); validierte Regeln: 24 → 27; Falsch-Positive: 0 (R54/R55/R56 Negativtests ✓); Haskama-Struktur f1r: vierfache Autorisierungsformel bestätigt; din-Trias f1r P3.L14 (dain / odaiin / chodain — Präfix-Paradigma).
 
-### Kernbefunde — Version 7.3
+### Kernbefunde — Version 7.4
 
 | Eigenschaft | Wert |
 | --- | --- |
 | Identifizierte Sprache | Mischna-Hebräisch / Jüdisch-Aramäisch |
 | Texttyp | Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis) |
 | Analysierte Folios | f1r, f1v–f25v (Quires A–B+C komplett, Quire D bD1), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v |
-| Bestätigte Wörter | 301 (★★★ oder höher) |
+| Bestätigte Wörter | 303 (★★★ oder höher) |
 | Rückwärtstest (Spr. B) | 27/30 Vorhersagen bestätigt (90%); 0 Falsch-Positive |
 | Sprache A Anker | f1r, f1v–f25v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4) |
-| Grammatikregeln | 58 (24 validiert + 34 Kandidaten) |
+| Grammatikregeln | 59 (27 validiert + 32 Kandidaten) |
 
 
 ## II. Methodik
@@ -125,7 +125,7 @@ Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 
 **Sonderregel:** Das EVA-Zeichen `o` hat zwei Funktionen: (1) als konsonantisches ע (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam im Wortinneren.
 
-## V. Bestätigtes Lexikon (301 Einträge)
+## V. Bestätigtes Lexikon (303 Einträge)
 
 Alle Einträge mit ★★★ oder höher.
 
@@ -310,6 +310,7 @@ Alle Einträge mit ★★★ oder höher.
 | odaiim | עַ+דִּינִים | auf den (kollektiven) Urteilen (o-Direktional + dayin-Plural-m) — f24v P.16; Abschluss-Kolophon-Marker (R57); ★★★ Kand. | ★★★ |
 | daid | דַּ+אִי+דַּ | ? / תָּמִיד = dauerhaft — f24v P.7; ★★ Kand. (Semantik noch offen) | ★★ |
 | daiity | דִּין+תּ | Urteils-tav / juristische Abschlussform (daiin + tav) — f25v P.3; ★★★ Kand. (Erstbeleg, Folgebeleg erforderlich) | ★★★ |
+| daiiin | דִּינִין | Urteile (Aramäischer Emphase-Plural von דִּין) — f1r T3 `otol.daiiin=`; 6/6 Transkriptoren einig (H/C/F/N/X/U); Corpus-Hapax; R40-Ausnahme b+c; ★★★ Kand. | ★★★ |
 
 
 ### Verbformen
@@ -415,6 +416,7 @@ Alle Einträge mit ★★★ oder höher.
 | kchorl | כְּ+חֹר+לְ | wie die Pupille hin — direktionaler Komplex (k + chor + lamed) — ★★★ Kand. (Erstbeleg f22v P.3) | ★★★ |
 | olsar | עַל+שַׂר | über den Arzt / ärztliche Aufsicht (ol + sar); Erstbeleg f23v P.6 rechts von {plant} — Arzt-Supervision-Marker im Therapie-Teil | ★★★ |
 | aiior | עַ+יִ+אוֹר | Auge des Lichts (ayin+yod+or); Erstbeleg f23v P.12 | ★★★ |
+| dain | דָּן | Richter (Partizip QAL von דין) — f1r T2 `dain.os.teody=` + P3.L14 (3 Belege); morphologische Distinktion zu daiin (Substantiv) und daiiin (Plural); ★★★ Kand. | ★★★ |
 
 
 ### Bestätigte Komposita
@@ -529,13 +531,13 @@ Alle Einträge mit ★★★ oder höher.
 
 ## VII. Grammatikregeln
 
-58 Regeln gesamt: **24 validiert** (≥ 2 unabhängige Belege) + **34 Kandidaten** (darunter v6.2 R40–R42, D1/D2; v6.3 R43–R44; v6.4 R45–R48; v6.5 R33-Erweiterung + R49; v6.6 R50; v6.8 R51 ★★★ gesichert + R52 ★★; v6.9 R52a ★★★★; v7.0–v7.2 R53 ★★★★ (4 Belege, Subtypen A/B/C, R43 Mehrfachbestätigung); v7.2 R54–R57 ★★–★★★ Kand.; v7.3 R58 3×daiin-Konzentration ★★★ Kand.). R14 und R20 gelten als gesichert (★★★★★).
+59 Regeln gesamt: **27 validiert** (≥ 2 unabhängige Belege) + **32 Kandidaten** (darunter v6.2 R40–R42, D1/D2; v6.3 R43–R44; v6.4 R45–R48; v6.5 R33-Erweiterung + R49; v6.6 R50; v6.8 R51 ★★★ gesichert + R52 ★★; v6.9 R52a ★★★★; v7.0–v7.2 R53 ★★★★ (4 Belege, Subtypen A/B/C, R43 Mehrfachbestätigung); v7.2 R54–R57 ★★–★★★ Kand.; v7.3 R58 ★★★ Kand. (3×daiin-Konzentration); v7.4 R59 ★★★ Kand. (qo Konnektiv-Partikel); Aufstufungen v7.4: R3 → ★★★★★, R11 → ★★★★, R15 → ★★★★★). R14 und R20 gelten als gesichert (★★★★★).
 
 | # | Regel | Evidenz | Konf. |
 | --- | --- | --- | --- |
 | R1 | qo- = וְ (Vav conjunctive) an jedem Wortanfang — **ausschließlich Sprache B in Quires A+B**; in Sprache A vollständig absent (gilt mit vollem Geltungsbereich nur für Quires A+B — s. R33, R47) | qokedam, qokol, qokeedy (f57r, f103r); f001r Spr. A: 0 Belege in 260 Tokens ★★★★★; Ausnahmen ab Quire C: s. R33 (emergierend) + R47 (Quire H vollständig integriert) | ★★★★★ |
 | R2 | o- am Wortanfang = עַ (Ayin) | okol, okoldm, okaiin, odol | ★★★★ |
-| R3 | y-initiale Wörter = Imperfekt 3. Sg. Mask. | yteechy, yshdal, ykchaiin, ycheor, ychor | ★★★★ |
+| R3 | y-initiale Wörter = Imperfekt 3. Sg. Mask. | yteechy, yshdal, ykchaiin, ycheor, ychor; f1r: ykal, ykaiin, yshey, ycho, yto, ycheey (6 neue Belege) — >11 Belege / ≥8 Folios | ★★★★★ |
 | R4 | t-initiale Wörter = Imperfekt 3. Sg. Fem. / 2. Sg. | taiir; tsheoarom | ★★★★ |
 | R5 | shedy und chedy kommen nie im selben Absatz vor | 15 Zeilen nur chedy, 17 nur shedy, 5 beide (lange Zeilen) | ★★★★ |
 | R6 | Zeilenabschluss sheol/shol = Tod-Prognose; or = Heilungsprognose | f103r: 8× sheol am Zeilenende; P.17 endet or·aiin | ★★★★ |
@@ -543,11 +545,11 @@ Alle Einträge mit ★★★ oder höher.
 | R8 | -aiin als Suffix = עַיִן (Auge) diagnostisch | okaiin, qokaiin je 10–11× | ★★★★ |
 | R9 | Refrain-Wörter erscheinen 3–5× pro Folio in Anker-Position | dam in f57r (4×), dal in f103r P.1 (3×), daiin in f10v (8×) | ★★★★ |
 | R10 | -ody-Paragraphen = eigenständiges Listenregister; nie mit chedy/shedy kombiniert | f57r P.3–P.4: strikte Exklusion | ★★★ |
-| R11 | Paragraphen-Ende mit = = Abschlussformel | kaiim=, dom=, daiin=, chckhan=, chal=; f57r cphedom= | ★★★ |
+| R11 | Paragraphen-Ende mit = = Abschlussformel | kaiim=, dom=, daiin=, chckhan=, chal=; f57r cphedom=; f1r T1–T4 (alle 6 Transkriptoren einig); f1v P4-Kolophon chokody=, P10-Kolophon chodar= — 6 neue Belege | ★★★★ |
 | R12 | Trägersatz-Muster: P.1 (Relativsatz) → P.2 (Hauptsatz mit sar) | f57r P.9; f103r P.1→P.2 | ★★★ |
 | R13 | Paragraphen ohne Randstern = positives Prognose-Vokabular (or, lor·aiin) | f103r P.3,17,20; f103v: 5/5 or-Paragraphen sternlos | ★★★★ |
 | R14 | {plant}-Marker = Trennlinie Indikation \| Prognose in Herbal-Folios | f1v–f10v: 100% konsistent; links = Symptom, rechts = Heilung/Scheol | ★★★★★ |
-| R15 | Paradigma-Wiederholungsreihen (×2–×5): Adjektiv/Verb mit Vokal- oder Präfixvariation — **Typ A** (direkt nebeneinander: chor·chor); **Typ B** (mit Zwischentext: chor…chor); **Typ B-Dreistufig** (Verb → Nomen → Direktional mit Zwischentext: ychor·chor·[ZT]·chory) | f1v P.3 (ckhy·ckho·ckhy); f10r P8 (chor·chor·cholor); f20r P.13 (chor·chor — Typ A); f21r P.12 (ykeea·**chor**·sheey·ysheol·**chor**·chol·daiin·chkaiin= — Typ B, 4. Beleg); f22v P.7 (ychor·chor·qokchol·chory — Dreistufig-Schema: Verb → Nomen → Direktional mit Zwischentext, Typ B, 5. Beleg); f23r P.7 (qokchol·dar·qokchol — nominale Rahmendopplung mit dar (Leuchtender) als Zwischentext, Typ B nominal, 6. Beleg) — R15 ★★★★ bestätigt | ★★★★ |
+| R15 | Paradigma-Wiederholungsreihen (×2–×5): Adjektiv/Verb mit Vokal- oder Präfixvariation — **Typ A** (direkt nebeneinander: chor·chor); **Typ B** (mit Zwischentext: chor…chor); **Typ B-Dreistufig** (Verb → Nomen → Direktional mit Zwischentext: ychor·chor·[ZT]·chory) | f1v P.3 (ckhy·ckho·ckhy); f10r P8 (chor·chor·cholor); f20r P.13 (chor·chor — Typ A); f21r P.12 (ykeea·**chor**·sheey·ysheol·**chor**·chol·daiin·chkaiin= — Typ B, 4. Beleg); f22v P.7 (ychor·chor·qokchol·chory — Dreistufig-Schema: Verb → Nomen → Direktional mit Zwischentext, Typ B, 5. Beleg); f23r P.7 (qokchol·dar·qokchol — nominale Rahmendopplung mit dar (Leuchtender) als Zwischentext, Typ B nominal, 6. Beleg); f1r P3.L15 (chol·chol — Typ A, 7. Beleg, 4/4 Transkriptoren); f1r P4.L26 (keey·keey — Typ A, 8. Beleg, 3/4 Transkriptoren); f1r P4.L23 (dar…dar — Typ B mit Zwischentext, 9. Beleg, 4/4) — 9 Belege / 6 Folios → ★★★★★ | ★★★★★ |
 | R16 | Mehrspaltige Paragraphen (3–4 {plant}-Segmente) folgen der Bildgeometrie | f2r P.2–P.6: Kornblume mit drei Stielen → drei Segmente | ★★★★ |
 | R17 | Spr. A: shol (apokor.) medial; Spr. B: sheol (Vollform) am Zeilenende | f4r–f10v: shol medial (20+×); f103r: sheol final (8×); Zodiak-Register bestätigt ★★★★: f72r1 R1 shol (2× medial) / f72r1 R2 sheol (direkt vor gap = 5. Register-Bestätigung) | ★★★★ |
 | R18 | Diagnosepaar shol · chaiin = abwägende Prognose; nie einzeln in abwägenden Kontexten | f4r P.2, f4v P.3, f6v P.2, f8v P3, f9r P2 | ★★★★ |
@@ -591,6 +593,7 @@ Alle Einträge mit ★★★ oder höher.
 | R56 | **sho.sho-Emphase (v7.2 — Kandidat ★★):** Die direkte Wortwiederholung sho.sho ohne Genitivbrücke bildet eine eigenständige Emphase-Kategorie. Unterschied zu R24 (shol·dy·…·shol = Emphase-Dopplung mit Genitiv-Brücke): R56 verwendet keine Brückenpartikel. Unterschied zu chotshol (f21v): dort ist sho als Präfix in ein Kompositum eingebettet; R56 beschreibt Wortwiederholung auf Token-Ebene — Kandidat | f24v P.14: sho.sho — Corpus-Erstbeleg (1 Beleg); Wortwiederholung ≠ Kompositum (vgl. f21v chotshol); Konfidenz ★★ (Folgebeleg erforderlich) | ★★ |
 | R57 | **odaiim=-Abschluss-Marker (v7.2 — Kandidat ★★):** Das Token odaiim= (עַ+דִּינִים, auf den kollektiven Urteilen) in unmittelbarer =-Finalposition eines letzten Kolophon-Paragraphen markiert den Abschluss eines ganzen Textabschnitts (nicht nur eines Paragraphen). Das -m-Suffix (Plural-Intensiv) in Finalkolophon-Position ist bisher ohne Parallele im Corpus. Semantisch: alle Urteile zusammengefasst = Abschluss-Epitom des gesamten Quire-Abschnitts — Kandidat | f24v P.16: odaiim= — Corpus-Erstbeleg (1 Beleg); m-Suffix in Final-Kolophon-Position; letzter Paragraph des letzten Folios von Quire C; Konfidenz ★★ (Folgebeleg erforderlich) | ★★ |
 | R58 | **3×daiin-Konzentration in einer Zeile (v7.3 — Kandidat ★★★):** Wenn drei daiin-Tokens in einer einzigen Paragraph-Zeile auftreten, bildet dies eine **maximale Urteils-Konzentration**, die über das bekannte Doppelurteil (R19 daiin·daiin = Emphase-Dopplung) hinausgeht. Semantisch: dreifaches Urteil in einer Zeile = absolutes diagnostisches Vollurteil. Unterschied zu R19 (Intensivierungsrhetorik): R19 beschreibt Wiederholungsreihen allgemein; R58 ist spezifisch auf drei daiin-Vorkommen in einer einzigen Paragraph-Zeile beschränkt. Unterschied zu R9 (Refrain-Wörter 3–5× pro Folio): R9 zählt folio-weite Häufigkeit, R58 beschreibt Zeilendichte — Kandidat | f25v P.2: dchor.cthor.chor.daiin.s.okeeaiin.daiin.ckhey.daiin — Corpus-Erstbeleg 3×daiin in einer Zeile (alle H/C/F einig); bisher höchste daiin-Zeilendichte im gesamten Corpus; Bifolio bD1 insgesamt daiin-reichstes Bifolio (4 Doppelurteile + 1 Dreifachkonzentration); ★★★ Kand. (1 Beleg, Folgebeleg erforderlich) | ★★★ |
+| R59 | **qo als isolierter Konnektiv-Token (v7.4 — Kandidat ★★★):** Das EVA-Token qo in **isolierter Einzelwort-Position** am Beginn einer Paragraphenzeile repräsentiert das bare וְ (Vav conjunctivum als Partikel), **nicht** das Verbund-Präfix qo- im Sinne von R1. Es erscheint als grammatische Brücke zwischen zwei inhaltlich zusammengehörigen Paragraphen eines Folio-Eintrags. In Sprache A (Quire A) maximal 1× pro Folio belegbar. **Abgrenzung von R1:** R1 (qo- Verbundpräfix): qo + Stamm als ein Token → Sprache B exklusiv in Quires A+B; R59 (qo Einzeltoken): qo als alleinstehendes Wort, gefolgt von Punkt-Separator → auch in Sprache A möglich — Kandidat | f1v P.7: qo.ol.choiees.cheol.dol.cthey- — Erstbeleg (alle 4 Transkriptoren H/C/D/F einig); qo als isoliertes Einzelwort (kein Verbundpräfix); Paragraphenbrücke zwischen inhaltlich zusammengehörigen Abschnitten; ★★★ Kand. (1 Beleg, R43-Frist: nächste 5 Folios Quire A/D) | ★★★ |
 
 
 ## VIII. Rückwärtstest-Statistik
@@ -875,7 +878,7 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 
 ---
 
-Voynich-Manuskript — Formales Mapping-Dokument · Version 7.3 · Juni 2026
-Lexikon: 301 Einträge · Grammatikregeln: 58 · Rückwärtstest: 90% (27/30)
+Voynich-Manuskript — Formales Mapping-Dokument · Version 7.4 · Juni 2026
+Lexikon: 303 Einträge · Grammatikregeln: 59 · Rückwärtstest: 90% (27/30)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

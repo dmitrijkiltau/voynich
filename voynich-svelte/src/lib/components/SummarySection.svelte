@@ -24,16 +24,16 @@
 				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1)</td></tr>
 				<tr><td>Grammatikregeln</td><td><strong>{RULES.length}</strong> ({STATS.validatedRules} validiert + {RULES.length - STATS.validatedRules} Kandidaten)</td></tr>
 				<tr class="hidden-print">
-					<td>Empirische Erweiterung v7.3</td>
+					<td>Empirische Erweiterung v7.4</td>
 						<td>
 							<ul>
-								<li>R53 ★★★★: 4. T-Klassen-Beleg <span class="eva">dair.otaiir.otosy=</span> f25r T.7 — Subtyp C (deskriptiv/identifikatorisch) etabliert; R43 Mehrfachbestätigung (4 Folios)</li>
-								<li>R58 ★★★ Kand.: 3×daiin in einer Zeile — f25v P.2 (Corpus-Erstbeleg: <span class="eva">dchor.cthor.chor.daiin.s.okeeaiin.daiin.ckhey.daiin</span>)</li>
-								<li><span class="eva">otaiir</span> → ★★★★★ Kand.: Zweitbeleg f25r T.7 bestätigt R43-Pflicht; stärkster ot-Kompositum-Kandidat im Corpus</li>
-								<li><span class="eva">orchaiin=</span> neue Kolophon-Abschlussformel ★★★★ (f25v P.7): or+chor/k+aiin = Licht-wie-Auge; strukturell reichste Kolophon-Formel bisher</li>
-								<li>daiin-Dichte bD1: Corpus-Rekord — 4 Doppelurteile + 3×daiin in einer Zeile (f25v P.2); bD1 = daiin-reichstes Bifolio des gesamten Corpus</li>
-								<li>7 neue Lexikoneinträge: <span class="eva">orchaiin, ckhear</span> (★★★★); <span class="eva">otosy, daiity, cheesees, qokoral, soshy</span> (★★★ Kand.)</li>
-								<li>Lexikonstand >300-Meilenstein; Botanik: Urtica dioica ★★★★ (f25r) + Chelidonium majus ★★★★ (f25v, Drachen-Motiv); Quire D: 2/16 Seiten</li>
+								<li>R3 ★★★★★: 6 neue Belege f1r (ykal, ykaiin, yshey, ycho, yto, ycheey) — >11 Belege / ≥8 Folios</li>
+								<li>R11 ★★★★: f1r T1–T4 + f1v P4/P10-Kolophone — 6 neue Belege, alle 6 Transkriptoren einig</li>
+								<li>R15 ★★★★★: Belege 7–9 aus f1r — <span class="eva">chol·chol</span> (P3.L15), <span class="eva">keey·keey</span> (P4.L26), <span class="eva">dar…dar</span> (P4.L23) — 9 Belege / 6 Folios</li>
+								<li>R59 ★★★ Kand.: qo als isolierter Konnektiv-Token (Paragraphen-Brücke) — f1v P.7 (4/4 Transkriptoren einig)</li>
+								<li>2 neue Lexikoneinträge: <span class="eva">daiiin</span> = דִּינִין (Aramäischer Plural, ★★★); <span class="eva">dain</span> = דָּן (Richter Partizip, ★★★)</li>
+								<li>Haskama-Struktur f1r: vierfache Autorisierungsformel (T1 göttlich · T2 juridisch · T3 kollektiv · T4 empirisch); din-Trias P3.L14</li>
+								<li>Negativtests R54/R55/R56: 0 Falsch-Positive in f1r + f1v ✓; validierte Regeln: 24 → 27</li>
 							</ul>
 						</td>
 					</tr>

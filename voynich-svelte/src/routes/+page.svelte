@@ -269,7 +269,7 @@
 		<section class="section" id="gibberish">
 			<h2>XIII. Gibberish-Test (v6.4)</h2>
 			<p>Empirisches Falsifikationswerkzeug: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch R40 v2, R41, R44–R46 und D1/D2 geführt. Abbruchschwelle: &gt; 15 % · Warnzone: 11–15 % · Zielkorridor: ≤ 10 % strukturelle Falsch-Positive (★★★).</p>
-			<p><em>v7.3-Prüfung:</em> R53 ★★★★ (4 Belege, Subtypen A/B/C) und R58 ★★★ Kand. (3×daiin-Konzentration) haben keine Auswirkung auf die Testrate — Titelposition und Zeilendichte-Regeln betreffen keine regulären Paragraphen-Tokens. Testwert bleibt {STATS.gibberishRate} (Warnzone).</p>
+			<p><em>v7.4-Prüfung:</em> R3 ★★★★★, R11 ★★★★, R15 ★★★★★ (Aufstufungen durch Härtetests f1r/f1v) und R59 ★★★ Kand. haben keine Auswirkung auf die Testrate — Verbpräfixe, Kolophon-Marker und Paradigma-Wiederholungsreihen betreffen keine regulären Pseudowort-Tokens. Testwert bleibt {STATS.gibberishRate} (Warnzone).</p>
 			<GibberishTest />
 		</section>
 

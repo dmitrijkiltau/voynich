@@ -331,4 +331,7 @@ export const LEXICON = [
   { eva: 'ckhear',    heb: 'כְּ+כְּ+אֵ+ר',              de: 'wie das Licht (ckh-Variante von cheor) — f25v P.4; Minimalpaar ckhear vs. chkear = Reihenfolgevarianz (Orthographienotiz); ★★★★',                               stars: '★★★★', cat: 'prognose'   },
   { eva: 'qokoral',   heb: 'וְ+כְּ+אֹ+ר+עַ+לְ',        de: 'und wie Licht-auf (qo + k + or + al-Direktional) — f25v P.6; ★★★ Kand. (Erstbeleg, Folgebeleg erforderlich)',                                                   stars: '★★★',  cat: 'kompositum' },
   { eva: 'soshy',     heb: 'שׂ+אֹ+שׁ+יְ',               de: 'gleich Scheol-er (Doppel-Shin: sin + alef + shin + yod) — f25r P.1; ★★★ Kand. (Erstbeleg, Folgebeleg erforderlich)',                                            stars: '★★★',  cat: 'prognose'   },
+  // ── v7.4 (Härtetests f1r + f1v — Quire A, bA1: Haskama-Analyse) ──
+  { eva: 'daiiin',    heb: 'דִּינִין',                  de: 'Urteile (Aramäischer Emphase-Plural von דִּין) — f1r T3 `otol.daiiin=`; 6/6 Transkriptoren einig (H/C/F/N/X/U); Corpus-Hapax; R40-Ausnahme b+c; ★★★ Kand.',            stars: '★★★',  cat: 'syntax'     },
+  { eva: 'dain',      heb: 'דָּן',                      de: 'Richter (Partizip QAL von דין) — f1r T2 `dain.os.teody=` + P3.L14 (3 Belege); morphologische Distinktion zu daiin (Substantiv) und daiiin (Plural); ★★★ Kand.',           stars: '★★★',  cat: 'akteur'     },
 ];
