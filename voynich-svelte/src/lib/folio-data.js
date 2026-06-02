@@ -51,6 +51,7 @@ export const FOLIO_STATUS = {
   f21r:'done', f21v:'done',
   f22r:'done', f22v:'done',
   f23r:'done', f23v:'done',
+  f24r:'done', f24v:'done',
 
   // ── Lage 3 · Kräuter A — f33r image studied ──────────────────────────────
   f33r:'partial',
