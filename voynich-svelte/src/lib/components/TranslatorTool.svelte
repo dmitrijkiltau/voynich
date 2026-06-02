@@ -82,7 +82,7 @@
 
 	const deOutput = $derived(
 		results.length
-			? results.map(r => r.lookup ? r.lookup.de : '???').join(' | ')
+			? results.map(r => r.lookup ? r.lookup.de.replace(/\s—\s.*/g, '') : '???').join(' | ')
 			: null
 	);
 
@@ -321,7 +321,7 @@
 								<tr class:row-unknown={!r.lookup}>
 									<td class="g-eva">{r.word}</td>
 									<td class="g-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '—'}</td>
-									<td class="g-de">{r.lookup ? r.lookup.de : 'unbekannt'}</td>
+									<td class="g-de">{r.lookup ? r.lookup.de.replace(/\s—\s.*/g, '') : 'unbekannt'}</td>
 									<td class="g-st" class:g5={r.lookup && r.lookup.stars.length >= 9}>{r.lookup ? r.lookup.stars : '—'}</td>
 									<td class="g-cat">{r.lookup ? r.lookup.cat : '—'}</td>
 								</tr>
