@@ -291,12 +291,10 @@ table.dt {
 /* ── Sections ───────────────────────────────────────── */
 
 .section {
-	margin-bottom: 3rem;
-	padding-top: .5rem;
 	scroll-margin-top: 2rem;
   
 	& + section {
-		margin-bottom: 6rem;
+		margin-top: 6rem;
 	}
 }
 

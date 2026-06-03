@@ -173,11 +173,7 @@
 
 		<SummarySection />
 
-		<!-- II. METHODIK -->
-		<section class="section" id="methodik">
-			<h2>II. Methodik</h2>
-			<MethodologySection />
-		</section>
+		<MethodologySection />
 
 		<!-- III. ÜBERSETZER -->
 		<section class="section" id="tool">
