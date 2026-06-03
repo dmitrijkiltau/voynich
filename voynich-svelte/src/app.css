@@ -334,4 +334,5 @@ table.dt {
   table.dt tr[data-clickable]:hover td { background: none; }
 
   .hidden-print { display: none; }
+  .section { break-inside: avoid; }
 }

@@ -7,7 +7,9 @@
       title: "Rückwärtstest-Prinzip",
       description:
         "Jede Mapping-Hypothese wird durch Rückwärtstests validiert: Ein bekanntes hebräisches oder aramäisches Wort wird nach dem vorgeschlagenen Mapping in EVA kodiert und im Voynich-Korpus gesucht. Bestätigung erfordert: (a) Vorkommen im Korpus, (b) semantisch plausible Position, (c) kontextuell passende Nachbarwörter.",
-      confidenceTitle: "Konfidenzskala",
+		},
+		confidence: {
+			title: "Konfidenzskala",
       stars: "Sterne",
       label: "Bedeutung",
       criteria: "Kriterien",
@@ -26,14 +28,16 @@
       <div class="backward-test">
         <h3>{content.backwardsTest.title}</h3>
         <p>{content.backwardsTest.description}</p>
+			</div>
 
-        <h3>{content.backwardsTest.confidenceTitle}</h3>
+			<div class="confidence">
+        <h3>{content.confidence.title}</h3>
         <table class="dt">
           <thead>
             <tr>
-              <th>{content.backwardsTest.stars}</th>
-              <th>{content.backwardsTest.label}</th>
-              <th>{content.backwardsTest.criteria}</th>
+              <th>{content.confidence.stars}</th>
+              <th>{content.confidence.label}</th>
+              <th>{content.confidence.criteria}</th>
             </tr>
           </thead>
           <tbody>
@@ -51,7 +55,7 @@
         </table>
       </div>
 
-      <div>
+      <div class="anchor-folios">
         <h3>{content.anchorFolios.title}</h3>
         {#each ANCHOR_FOLIOS as anchor}
           <div class="box blue anchor-card">
@@ -75,18 +79,50 @@
 
     & .methodology-grid {
       display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto auto auto;
+			grid-template-areas: "backward"
+													 "confidence"
+													 "anchors";
       justify-content: space-between;
       align-items: start;
       gap: 0 2rem;
 
-      @container (min-width: 640px) {
-        grid-template-columns: minmax(240px, 568px) minmax(196px, 640px);
+			& .backward-test { grid-area: backward; }
+			& .confidence { grid-area: confidence; }
+			& .anchor-folios { grid-area: anchors; }
+
+      @container (min-width: 960px) {
+        grid-template-columns: minmax(240px, 480px) minmax(240px, 568px);
+				grid-template-rows: auto 1fr;
+				grid-template-areas:
+					"backward confidence"
+					"anchors anchors";
+      }
+
+      @container (min-width: 1280px) {
+        grid-template-columns: minmax(240px, 568px) 1fr;
+				grid-template-areas:
+					"backward anchors"
+					"confidence anchors";
       }
     }
 
-    & .anchor-card {
-      margin-bottom: 0.8rem;
+		& .anchor-folios {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+			gap: 1rem;
 
+			& h3 {
+				grid-column: 1 / -1;
+				margin-bottom: -0.8rem;
+			}
+      @container (min-width: 960px) {
+				grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+			}
+		}
+
+    & .anchor-card {
       & p {
         margin-bottom: 0.5rem;
         font-size: 0.9rem;

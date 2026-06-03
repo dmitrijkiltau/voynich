@@ -83,8 +83,8 @@
       align-items: start;
       gap: 0 2rem;
 
-      @container (min-width: 640px) {
-        grid-template-columns: minmax(240px, 568px) minmax(196px, 640px);
+      @container (min-width: 768px) {
+        grid-template-columns: minmax(320px, 568px) minmax(320px, 640px);
       }
 
       & .abstract-changelog {
