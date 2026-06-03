@@ -190,12 +190,16 @@
 	.tested-wrap {
 		overflow-x: auto;
 		margin-bottom: 2rem;
+
+		& td:first-child {
+			max-width: 360px;
+			white-space: wrap;
+		}
 	}
 
 	.result-cell {
 		color: var(--green);
 		font-size: .82rem;
-		white-space: nowrap;
 	}
 
 	.note-cell {

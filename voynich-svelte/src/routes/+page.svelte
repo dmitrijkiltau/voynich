@@ -31,20 +31,20 @@
 	});
 
 	const NAV_ITEMS = [
-		{ id: 'abstract',        label: 'I. Zusammenfassung' },
-		{ id: 'methodik',        label: 'II. Methodik' },
-		{ id: 'tool',            label: 'III. Übersetzer' },
-		{ id: 'mapping',         label: 'IV. Zeichenmapping' },
-		{ id: 'lexikon',         label: 'V. Lexikon' },
-		{ id: 'grammar',         label: 'VI. Grammatik' },
-		{ id: 'grammatikregeln', label: 'VII. Grammatikregeln' },
-		{ id: 'rueckwaerts',     label: 'VIII. Rückwärtstest' },
-		{ id: 'referenz',        label: 'IX. Referenzen' },
-		{ id: 'wortklassen',     label: 'X. Wortklassen' },
-		{ id: 'spracheA',        label: 'XI. Sprache A' },
-		{ id: 'sterne',          label: 'XII. Randsterne' },
-		{ id: 'gibberish',       label: 'XIII. Gibberish-Test' },
-		{ id: 'offeneprobleme',  label: 'XIV. Offene Probleme' },
+		{ id: 'abstract',      		label: 'I. Zusammenfassung' },
+		{ id: 'methodology',   		label: 'II. Methodik' },
+		{ id: 'translator-tool',	label: 'III. Übersetzer' },
+		{ id: 'mapping',       		label: 'IV. Zeichenmapping' },
+		{ id: 'lexicon',       		label: 'V. Lexikon' },
+		{ id: 'grammar',       		label: 'VI. Grammatik' },
+		{ id: 'grammar-rules', 		label: 'VII. Grammatikregeln' },
+		{ id: 'backwards-test',		label: 'VIII. Rückwärtstest' },
+		{ id: 'references',    		label: 'IX. Referenzen' },
+		{ id: 'word-classes',  		label: 'X. Wortklassen' },
+		{ id: 'language-a',    		label: 'XI. Sprache A' },
+		{ id: 'margin-stars',  		label: 'XII. Randsterne' },
+		{ id: 'gibberish',     		label: 'XIII. Gibberish-Test' },
+		{ id: 'open-problems', 		label: 'XIV. Offene Probleme' },
 	];
 
 	// Scrollspy via IntersectionObserver
@@ -176,7 +176,7 @@
 		<MethodologySection />
 
 		<!-- III. ÜBERSETZER -->
-		<section class="section" id="tool">
+		<section class="section" id="translator-tool">
 			<h2>III. Übersetzungstool</h2>
 			<div class="tool">
 				<div class="tool-intro">
@@ -206,7 +206,7 @@
 		</section>
 
 		<!-- V. LEXIKON -->
-		<section class="section" id="lexikon">
+		<section class="section" id="lexicon">
 			<h2>V. Bestätigtes Lexikon ({STATS.lexicon} Einträge)</h2>
 			<p>Alle Einträge mit ★★★ oder höher. Klick auf eine Zeile fügt das EVA-Wort in die Eingabe ein.</p>
 			<LexiconSection {LEXICON} onInsert={insertEva} />
@@ -220,39 +220,39 @@
 		</section>
 
 		<!-- VII. GRAMMATIKREGELN -->
-		<section class="section" id="grammatikregeln">
+		<section class="section" id="grammar-rules">
 			<h2>VII. Grammatikregeln</h2>
 			<GrammarRulesSection />
 		</section>
 
 		<!-- VIII. RÜCKWÄRTSTEST -->
-		<section class="section" id="rueckwaerts">
+		<section class="section" id="backwards-test">
 			<h2>VIII. Rückwärtstest-Statistik</h2>
 			<BacktestSection />
 		</section>
 
 		<!-- IX. REFERENZEN -->
-		<section class="section" id="referenz">
+		<section class="section" id="references">
 			<h2>IX. Verankerte Referenz-Sequenzen</h2>
 			<p>Die am besten verifizierten Sequenzen des Korpus — als Orientierungshilfe beim Übersetzen.</p>
 			<ReferencesSection onInsert={insertEva} />
 		</section>
 
 		<!-- X. WORTKLASSEN -->
-		<section class="section" id="wortklassen">
+		<section class="section" id="word-classes">
 			<h2>X. Wortklassen-System</h2>
 			<p>Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.</p>
 			<WordClassesSection />
 		</section>
 
 		<!-- XI. SPRACHE A -->
-		<section class="section" id="spracheA">
+		<section class="section" id="language-a">
 			<h2>XI. Sprache A — Quires A–D ({STATS.foliosA})</h2>
 			<LanguageASection />
 		</section>
 
 		<!-- XII. RANDSTERNE -->
-		<section class="section" id="sterne">
+		<section class="section" id="margin-stars">
 			<h2>XII. Das Randstern-System</h2>
 			<MarginStarsSection />
 		</section>
@@ -266,7 +266,7 @@
 		</section>
 
 		<!-- XIV. OFFENE PROBLEME -->
-		<section class="section" id="offeneprobleme">
+		<section class="section" id="open-problems">
 			<h2>XIV. Offene Probleme und ungelöste Widersprüche</h2>
 			<p>Ehrliche Dokumentation der statistischen Anomalien und methodischen Grenzen, die das System nicht erklärt. Eingeführt in v7.5.</p>
 			<OpenProblemsSection />

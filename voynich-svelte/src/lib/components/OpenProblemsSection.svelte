@@ -40,17 +40,19 @@
 
 	<div class="box blue scheol-stat">
 		<div class="box-title">Scheol-Verteilungsstatistik (v7.5 formalisiert)</div>
-		<table class="dt">
-			<thead>
-				<tr><th>Strukturposition</th><th>sheol/shol-Vorkommen</th><th>Andere Lexeme</th></tr>
-			</thead>
-			<tbody>
-				<tr><td>Zeilenende / Kolophon-Final</td><td><strong>&gt;85 % aller Belege</strong></td><td>or, dom, kaiim</td></tr>
-				<tr><td>Zeilenmitte (medial)</td><td>&lt;15 % — immer in Kompositum</td><td>—</td></tr>
-				<tr><td>Zeilenanfang</td><td><strong>0 %</strong></td><td>—</td></tr>
-			</tbody>
-		</table>
-		<p style="margin:.6rem 0 0;font-size:.85rem;color:var(--ink-f)">Diese Verteilung ist nicht die eines zufällig platzierten Begriffs. Sie folgt präzise R6 (Zeilenabschluss sheol = Tod-Prognose) und R17 (shol apokor. medial / sheol Vollform final).</p>
+		<div class="table-wrap">
+			<table class="dt">
+				<thead>
+					<tr><th>Strukturposition</th><th>sheol/shol-Vorkommen</th><th>Andere Lexeme</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>Zeilenende / Kolophon-Final</td><td><strong>&gt;85 % aller Belege</strong></td><td>or, dom, kaiim</td></tr>
+					<tr><td>Zeilenmitte (medial)</td><td>&lt;15 % — immer in Kompositum</td><td>—</td></tr>
+					<tr><td>Zeilenanfang</td><td><strong>0 %</strong></td><td>—</td></tr>
+				</tbody>
+			</table>
+			<p style="margin:.6rem 0 0;font-size:.85rem;color:var(--ink-f)">Diese Verteilung ist nicht die eines zufällig platzierten Begriffs. Sie folgt präzise R6 (Zeilenabschluss sheol = Tod-Prognose) und R17 (shol apokor. medial / sheol Vollform final).</p>
+		</div>
 	</div>
 </div>
 
