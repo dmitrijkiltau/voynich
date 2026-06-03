@@ -140,6 +140,10 @@
 </div>
 
 <style>
+  * + .box {
+    margin-top: 1rem;
+  }
+
   .grammar-systems {
     display: flex;
     flex-wrap: wrap;

@@ -84,7 +84,9 @@ export function generateMarkdown() {
   line();
   line('**Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.');
   line();
-  line(`Version ${STATS.version} ${STATS.changelog}`);
+  line(`**Korrekturen in v${STATS.version}:**`);
+  line();
+  for (const change of STATS.changelog) line(`- ${change}`);
   line();
   h(3, `Kernbefunde — Version ${STATS.version}`);
   line();

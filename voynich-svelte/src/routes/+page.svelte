@@ -151,13 +151,11 @@
 	<!-- Main content -->
 	<main class="main-content">
 		<header class="page-header">
-			<div class="kicker">Formales Mapping-Dokument · Version {STATS.version}</div>
+			<div class="kicker">Formales Mapping-Dokument · Version {STATS.version} · {STATS.date}</div>
 			<h1>Voynich-Manuskript</h1>
 			<div class="subtitle">EVA → Hebräisch-Aramäisch · Zeichenmapping, Lexikon und Grammatikregeln</div>
 			<div class="meta-line">
 				<span>Sprachen A &amp; B · Folios {STATS.foliosAll}</span>
-				<span>·</span>
-				<span>{STATS.date}</span>
 			</div>
 		</header>
 
@@ -173,11 +171,7 @@
 			</ol>
 		</nav>
 
-		<!-- I. ZUSAMMENFASSUNG -->
-		<section class="section" id="abstract">
-			<h2>I. Zusammenfassung</h2>
-			<SummarySection />
-		</section>
+		<SummarySection />
 
 		<!-- II. METHODIK -->
 		<section class="section" id="methodik">
@@ -572,7 +566,7 @@
 
 	.page-header {
 		text-align: center;
-		padding: 3rem 0 2.6rem;
+		padding: 6rem 0;
 		margin-bottom: 2.8rem;
 		border-bottom: 1.5px solid var(--border);
 		position: relative;
@@ -626,18 +620,6 @@
 			letter-spacing: .04em;
 
 			& span { margin: 0 .4rem; }
-		}
-	}
-
-	/* ── Sections ───────────────────────────────────────── */
-
-	.section {
-		margin-bottom: 3rem;
-		padding-top: .5rem;
-		scroll-margin-top: 2rem;
-
-		& + section {
-			margin-bottom: 6rem;
 		}
 	}
 

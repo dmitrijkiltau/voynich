@@ -1,62 +1,133 @@
 <script>
-	import { RULES } from '$lib/grammar-rules-data.js';
-	import { STATS } from '$lib';
+  import { RULES } from "$lib/grammar-rules-data.js";
+  import { STATS } from "$lib";
 
-	const plant = '{plant}';
+  // Keep for whenever it is accidentally placed
+  const plant = "{plant}";
+
+  const content = {
+    title: "I. Zusammenfassung",
+    summary: `Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.`,
+    hypothesis: `Die Grundhypothese: Das Voynich-Manuskript ist in Mischna-Hebräisch mit aramäischen Lehnpartikeln verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines hippokratisch-mittelalterlichen Medizintraktats: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.`,
+    version: `Version ${STATS.version}`,
+    findings: [
+      {
+        label: "Identifizierte Sprache",
+        value: "Mischna-Hebräisch / Jüdisch-Aramäisch",
+      },
+      {
+        label: "Texttyp",
+        value: "Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis)",
+      },
+      { label: "Analysierte Folios", value: STATS.foliosAll },
+      {
+        label: "Bestätigte Wörter",
+        value: `${STATS.lexicon} (★★★ oder höher)`,
+      },
+      {
+        label: "Rückwärtstest",
+        value: "Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 17/20 (85%) · 0 Falsch-Positive",
+      },
+      {
+        label: "Sprache A Anker",
+        value: `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD3)`,
+      },
+      {
+        label: "Grammatikregeln",
+        value: `${RULES.length} (${STATS.validatedRules} validiert + ${RULES.length - STATS.validatedRules} Kandidaten)`,
+      },
+    ],
+		correctionsTitle: `Korrekturen in v${STATS.version}`,
+  };
 </script>
 
-<div class="summary">
-	<div>
-		<p class="dropcap">Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.</p>
-		<p>Die Grundhypothese: Das Voynich-Manuskript ist in <strong>Mischna-Hebräisch mit aramäischen Lehnpartikeln</strong> verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines <em>hippokratisch-mittelalterlichen Medizintraktats</em>: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.</p>
-		<p>Version {STATS.version} {STATS.changelog}</p>
-	</div>
+<section class="section" id="abstract">
+  <h2>{content.title}</h2>
+  <div class="abstract-grid">
+    <div id="abstract-text">
+      <p class="dropcap">{content.summary}</p>
+      <p>{content.hypothesis}</p>
+    </div>
 
-	<div class="box hl">
-		<div class="box-title">Kernbefunde — Version {STATS.version}</div>
-		<table class="dt findings-table">
-			<tbody>
-				<tr><td>Identifizierte Sprache</td><td>Mischna-Hebräisch / Jüdisch-Aramäisch</td></tr>
-				<tr><td>Texttyp</td><td>Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis)</td></tr>
-				<tr><td>Analysierte Folios</td><td>{STATS.foliosAll}</td></tr>
-				<tr><td>Bestätigte Wörter</td><td><strong>{STATS.lexicon}</strong> (★★★ oder höher)</td></tr>
-				<tr><td>Rückwärtstest</td><td><strong>Typ I (genuine Vorhersagen): 10/10 (100%)</strong> · Typ II (interne Kohärenz): 17/20 (85%) · 0 Falsch-Positive</td></tr>
-				<tr><td>Sprache A Anker</td><td>{STATS.foliosA}: 10/10 Ankerwörter je Folio — <strong>100 %</strong> (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD3)</td></tr>
-				<tr><td>Grammatikregeln</td><td><strong>{RULES.length}</strong> ({STATS.validatedRules} validiert + {RULES.length - STATS.validatedRules} Kandidaten)</td></tr>
-				<tr class="hidden-print">
-					<td>Korrekturen v7.7</td>
-						<td>
-							<ul>
-								<li><strong>Bifolio bD3 (f27r + f27v) analysiert</strong> — Rückkehr zu Sprache A nach Sprache-B-Einschub bD2: f27r = <em>Symphytum officinale</em> (Beinwell) · f27v = <em>Leucanthemum vulgare</em> (Wiesen-Margerite)</li>
-								<li><strong><span class="eva">daiiin</span></strong> ★★★→★★★★ — R43 dreifach erfüllt: f1r T3 + f26v P.1/P.7 + f27r P.12 = 3 Folios</li>
-								<li><strong>R56 sho·sho-Emphase</strong> ★★★ Kand.→★★★ validiert — R43 erfüllt: f24v P.14 + f27v P.7 = 2 Folios</li>
-								<li><strong>7 neue ★★★ Kandidaten</strong> — <span class="eva">ksor, shod, keeod, cphary, dor</span> (R43 bestätigt), <span class="eva">fochof/chof, kshy</span> (alle R43-Frist: 5 Folios)</li>
-								<li><strong>Regelmoratorium</strong> erstmals > 1,0 — 30 validiert : 29 Kandidaten = 1,03:1 (Ziel: ≥ 1,5:1)</li>
-							</ul>
-						</td>
-					</tr>
-			</tbody>
-		</table>
-	</div>
-</div>
+    <div class="abstract-findings box hl">
+      <table class="dt findings-table">
+        <tbody>
+          {#each content.findings as finding}
+            <tr>
+              <td>{finding.label}</td>
+              <td>{finding.value}</td>
+            </tr>
+          {/each}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="abstract-changelog box hl hidden-print">
+      <div class="box-title">{content.correctionsTitle}</div>
+      <ul>
+        {#each STATS.changelog as change}
+          <li>{change}</li>
+        {/each}
+      </ul>
+    </div>
+  </div>
+</section>
 
 <style>
-  .summary {
-    display: flex;
-		justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 0 2rem;
+  #abstract {
+    container-type: inline-size;
 
-    & > div {
-      flex: 0 1 680px;
+    & .abstract-grid {
+      display: grid;
+      justify-content: space-between;
+      align-items: start;
+      gap: 0 2rem;
+
+      @container (min-width: 640px) {
+        grid-template-columns: minmax(240px, 568px) minmax(196px, 640px);
+      }
+
+      & .abstract-changelog {
+        grid-column: 1 / -1;
+      }
+
+      & .box {
+        container-type: inline-size;
+
+        & .findings-table {
+          & td {
+            padding: 0.3rem 0;
+
+            &:first-child {
+              color: var(--ink-f);
+              font-size: 0.85rem;
+              white-space: nowrap;
+              width: 1%;
+              padding-right: 1.2rem;
+            }
+          }
+
+          @container (max-width: 360px) {
+            & tr {
+              display: flex;
+              flex-direction: column;
+
+              & td:first-child {
+                border: 0;
+                padding: 0.6rem 0 0 0;
+              }
+
+              & td:last-child {
+                padding-bottom: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+
+      & .abstract-changelog {
+        margin-top: 2rem;
+      }
     }
   }
-
-	.findings-table td:first-child {
-		color: var(--ink-f);
-		font-size: .85rem;
-		white-space: nowrap;
-		width: 1%;
-		padding-right: 1.2rem;
-	}
 </style>

@@ -120,7 +120,26 @@ h4 {
   margin: 1rem 0 .4rem;
 }
 
-p { margin-bottom: .9rem; }
+p {
+  text-wrap: pretty;
+  margin-bottom: .9rem;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 1.2rem;
+  margin-bottom: .4rem;
+  position: relative;
+
+  &::before {
+    content: '▹';
+    position: absolute;
+    left: -1.05rem;
+    top: 0.15rem;
+    color: var(--gold);
+    font-size: .8rem;
+  }
+}
 
 .dropcap::first-letter {
   float: left;
@@ -148,7 +167,6 @@ hr.rule {
   border: 1px solid var(--border);
   border-radius: 2px;
   padding: 1.1rem 1.5rem;
-  margin: 1.2rem 0;
   font-size: .95rem;
 
   &.hl  { border-left: 3px solid var(--gold); background: linear-gradient(to right, rgba(232, 216, 174, .6), var(--parch-d)); }
@@ -268,6 +286,18 @@ table.dt {
   font-size: 1rem;
   border-left: 2px solid var(--gold);
   padding-left: .8rem;
+}
+
+/* ── Sections ───────────────────────────────────────── */
+
+.section {
+	margin-bottom: 3rem;
+	padding-top: .5rem;
+	scroll-margin-top: 2rem;
+  
+	& + section {
+		margin-bottom: 6rem;
+	}
 }
 
 /* ── PRINT ───────────────────────────────────────────── */
