@@ -265,7 +265,7 @@
 		<section class="section" id="gibberish">
 			<h2>XIII. Gibberish-Test (v6.4)</h2>
 			<p>Empirisches Falsifikationswerkzeug: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch R40 v2, R41, R44–R46 und D1/D2 geführt. Abbruchschwelle: &gt; 15 % · Warnzone: 11–15 % · Zielkorridor: ≤ 10 % strukturelle Falsch-Positive (★★★).</p>
-			<p><em>v7.6-Prüfung:</em> Regelmoratorium aktiv — keine neuen Regeln seit v7.4; R36+R37 hochgestuft (★★★→★★★★), keine Auswirkung auf Testrate. Testwert bleibt {STATS.gibberishRate} (Warnzone).</p>
+			<p><em>v8.0-Prüfung:</em> Regelmoratorium aktiv — keine neuen Regeln (R60+) bis Verhältnis ≥ 1,5:1 (aktuell 33:28 = 1,18:1); R36 ★★★ validiert (f69r), R37 ★★★★. Testwert bleibt {STATS.gibberishRate} (Warnzone).</p>
 			<GibberishTest />
 		</section>
 

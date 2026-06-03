@@ -60,6 +60,9 @@ export const FOLIO_STATUS = {
   f28r:'done', f28v:'done',
   f29r:'done', f29v:'done',
 
+  // ── Lage 10 · Kosmologisch — f69r Rad-Diagramm vollständig analysiert ──────
+  f69r:'done',
+
   // ── Lage 3 · Kräuter A — f33r image studied ──────────────────────────────
   f33r:'partial',
 

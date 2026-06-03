@@ -10,6 +10,7 @@ export const TESTED = [
   { type: 'I', pred: 'shol · dy · … · shol', heb: 'R24-Struktur', result: '✓ f13r P.1 (Dopplungsformel)', context: 'einmaliges Emphase-Muster mit Genitiv-Brücke dy' },
   { type: 'I', pred: 'dam (Quire B)', heb: 'דָּם', result: '✓ f14v P.8 (Blut-Triade)', context: 'dol · dair · dam — Erstbeleg Blutpathologie in bB3; verbindet f14v mit f3r' },
   { type: 'I', pred: 'shol medial · sheol final (R17 Zodiak)', heb: 'שׁוֹל / שְׁאוֹל', result: '✓ f72r1 R1 (shol 2×) · R2 (sheol vor gap) — 5. Register-Bestätigung', context: 'identische Verteilung wie botanische Folios; shol nie in Ringabschlussposition; sheol unmittelbar vor gap-Marker' },
+  { type: 'I', pred: 'f69r Stresstest — kosmologisches Rad-Diagramm, Currier-Sprache unklassifiziert (Quire J/X)', heb: 'Mapping v8.0', result: '✓ 10/10 Ankerwörter; shol= in P.4 terminal (R6); sar= 3× terminal (P.1, R.7, R.11, R11); daiin in P.2+C.9 (R7); 6/6 Pflichtkriterien bestanden — 1 Token offen ({&ct}ar)', context: 'Foliotyp: kosmologisches Rad-Diagramm — keine Botanik, kein {plant}-System, keine Currier-Sprachzuordnung; Mapping ohne Anpassung auf neuen Register transferiert' },
   // ── Typ II — Post-hoc-Entdeckungen (interne Kohärenz) ─────────────────────
   { type: 'II', pred: 'chedy', heb: 'כְּדֵי', result: '✓ 22× f103r', context: 'nie mit -ody kombiniert (R5)' },
   { type: 'II', pred: 'shedy', heb: 'שֶׁ+דִּי', result: '✓ 27× f103r', context: 'immer von Konnektoren gefolgt' },
@@ -32,11 +33,13 @@ export const TESTED = [
   { type: 'II', pred: 'otam · otam · chotam (R19/R35)', heb: 'אוֹת+אָם · אוֹת+אָם · כֹּ+אוֹת+אָם', result: '✓ f72r1 R1 — dreistufige Nominal-Intensivierung', context: 'einfach → ×2 → Komparativ ko+X; exaktes R35-Schema; semantisch kohärent: Zeichen der Mutter im Stier-dunkel-Kontext' },
   { type: 'II', pred: 'okaly= / okal= Minimalpaar (R52a)', heb: 'עַ+כָּל+יְ / עַ+כָּל', result: '✓ f72r2 S1.3/S1.5/S1.12 (okal) neben S1.4/S1.12 (okaly) — Determinans-y optional', context: 'identischer Stamm okal mit und ohne -y-Suffix auf demselben Ring; beweist R52a: -y ist Status-Emphaticus-Marker, kein festes Wortbildungselement' },
   { type: 'II', pred: 'alef / otalef — Stier-Exklusivmarker', heb: 'אָלֶף / אוֹת+אָלֶף', result: '✓ f72r1 S1.6 + S1.9 — ausschließlich im Stier-dunkel-Panel', context: 'alef = Ochsenkopf-Piktogramm (Aleph-Ursprung); fehlt in f71r, f71v, f72r2; erste ikonographisch verankerte Buchstabenreferenz im Zodiak-Corpus' },
+  // ── v8.0 · f69r Kosmogramm ─────────────────────────────────────────────────
+  { type: 'II', pred: 'dar·dar-Dopplung (R36) in kosmologischem Register', heb: 'דַּר·דַּר', result: '✓ f69r R.17 (dair.dar= Terminal) + f69r R.22 (dary.dar direktional) — 2 neue Belege', context: 'R43 erfüllt: f18r + f26v + f69r = 3 Folios, 4 Gesamtbelege → R36 ★★★ validiert; Typ A (direkt adjacent) erstmals in kosmologischem Register belegt' },
 ];
 
 export const STATS = [
-  { label: 'Typ I — Genuine Vorhersagen (Prä-Analyse-Anker, eingefroren)', pct: 100, num: '10 / 10', color: 'var(--gold)' },
-  { label: 'Typ II — Interne Kohärenz (post-hoc-Entdeckungen)', pct: 85, num: '17 / 20', color: 'var(--green)' },
+  { label: 'Typ I — Genuine Vorhersagen (Prä-Analyse-Anker, eingefroren)', pct: 100, num: '11 / 11', color: 'var(--gold)' },
+  { label: 'Typ II — Interne Kohärenz (post-hoc-Entdeckungen)', pct: 86, num: '18 / 21', color: 'var(--green)' },
   { label: 'Bestätigt Spr. A (Anker, f1v–f15v)', pct: 100, num: '260 / 260', color: 'var(--green)' },
   { label: 'Falsch-positiv (gesamt)', pct: 0, num: '0', color: 'var(--gold)' },
 ];

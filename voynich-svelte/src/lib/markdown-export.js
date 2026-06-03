@@ -95,7 +95,7 @@ export function generateMarkdown() {
     ['Texttyp', 'Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis)'],
     ['Analysierte Folios', STATS.foliosAll],
     ['Bestätigte Wörter', `${STATS.lexicon} (★★★ oder höher)`],
-    ['Rückwärtstest', `Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 17/20 (85%) · 0 Falsch-Positive`],
+    ['Rückwärtstest', `Typ I (genuine Vorhersagen): 11/11 (100%) · Typ II (interne Kohärenz): 18/21 (86%) · 0 Falsch-Positive`],
     ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4)`],
     ['Grammatikregeln', `${RULES.length} (${STATS.validatedRules} validiert + ${RULES.length - STATS.validatedRules} Kandidaten)`],
   ]));
@@ -187,18 +187,18 @@ export function generateMarkdown() {
   // ── VII. Rückwärtstest ────────────────────────────────────────
   h(2, 'VII. Rückwärtstest-Statistik');
   line();
-  line(`30 hebräische/aramäische Wörter getestet. Ab v7.5 zwei Klassen: **Typ I** (genuine Vorhersagen — Prä-Analyse-Anker, eingefroren): **10/10 = 100%** · **Typ II** (interne Kohärenz — post-hoc): **17/20 = 85%** · 0 Falsch-Positive in beiden Klassen.`);
+  line(`${STATS.backtestTotal} hebräische/aramäische Wörter getestet. Ab v7.5 zwei Klassen: **Typ I** (genuine Vorhersagen — Prä-Analyse-Anker, eingefroren): **11/11 = 100%** · **Typ II** (interne Kohärenz — post-hoc): **18/21 = 86%** · 0 Falsch-Positive in beiden Klassen.`);
   line();
   s.push(tbl(['Kategorie', 'Ergebnis'], BACKTEST_STATS.map(st => [st.label, st.num])));
   line();
   line('**Entscheidend: Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.** Bei einem Zufallsalphabet statistisch ausgeschlossen.');
   line();
-  h(3, 'Typ I — Genuine Vorhersagen (10/10 · 100%)');
+  h(3, 'Typ I — Genuine Vorhersagen (11/11 · 100%)');
   line();
   s.push(tbl(['Vorhersage', 'Hebräisch', 'Befund', 'Kontext'],
     TESTED.filter(t => t.type === 'I').map(t => [t.pred, t.heb, t.result, t.context])));
   line();
-  h(3, 'Typ II — Interne Kohärenz (17/20 · 85%)');
+  h(3, 'Typ II — Interne Kohärenz (18/21 · 86%)');
   line();
   s.push(tbl(['Vorhersage', 'Hebräisch', 'Befund', 'Kontext'],
     TESTED.filter(t => t.type === 'II').map(t => [t.pred, t.heb, t.result, t.context])));

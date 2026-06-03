@@ -372,4 +372,11 @@ export const LEXICON = [
   { eva: 'shot',      heb: 'שׁוֹ+תְּ',                de: 'vollständiges Scheol (sho-Präfix + tav-Intensiv) — ★★★ Kand. (Erstbeleg f29v P.4)',                                                   stars: '★★★',  cat: 'prognose'   },
   { eva: 'chain',     heb: 'חַ+עַיִן',                de: 'lebendiges Auge / Auge des Lebens (cham-Stamm + ayin) — ★★★ Kand. (Erstbeleg f29v P.5)',                                              stars: '★★★',  cat: 'akteur'     },
   { eva: 'chykar',    heb: 'כְּ+הֵי+כַּ+ר',            de: 'Blässe-Kraft (Zutaten-Variante? k + hey + kar) — ★★ Kand. (Erstbeleg f29v P.10)',                                                     stars: '★★',   cat: 'symptom'    },
+  // ── v8.0 (f69r — Quire J/X: Kosmologisches Rad-Diagramm bJ1) ──
+  { eva: 'cholam',   heb: 'כֹּ+עוֹלָם',               de: 'wie die Welt / wie Ewigkeit (ko-Komparativ + olam; kosmologisch kohärent) — ★★★★ Kand. (Erstbeleg f69r C.3)',                            stars: '★★★★', cat: 'prognose'   },
+  { eva: 'otolam',   heb: 'אוֹת+עַל+אָם',             de: 'Zeichen über alle / Zeichen der Ewigkeit (ot + ol + am) — ★★★★ Kand. (Erstbeleg f69r C.9)',                                               stars: '★★★★', cat: 'akteur'     },
+  { eva: 'dairam',   heb: 'דְּ+אִיר+אָם',              de: 'von dem Leuchtenden aller (d-Genitiv + air + am; Radial-Kolophon-Form) — ★★★ Kand. (Erstbeleg f69r R.3)',                                  stars: '★★★',  cat: 'akteur'     },
+  { eva: 'tam',      heb: 'תָּם',                      de: 'vollständig / rein — Radial-Kolophon-Typ, Unterform von cthom (tam= als Abschlussmarker in f69r R.5) — ★★★★ Kand. (Erstbeleg f69r R.5)', stars: '★★★★', cat: 'kolophon'   },
+  { eva: 'ykar',     heb: 'יְ+כַּ+ר',                  de: 'er wird leuchten (y-Imperfekt von כַּר) — ★★★ Kand. (Erstbeleg f69r P.3)',                                                                  stars: '★★★',  cat: 'verb'       },
+  { eva: 'cham',     heb: 'חַם',                       de: 'Wärme / Hitze (Befund-Term, hippokratisch; f69r P.2) — ★★★ Kand. (Erstbeleg f69r P.2)',                                                    stars: '★★★',  cat: 'symptom'    },
 ];

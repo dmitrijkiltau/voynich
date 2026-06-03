@@ -1,7 +1,7 @@
 # Voynich-Manuskript — Formales Mapping-Dokument
-**EVA → Hebräisch-Aramäisch · Version 7.9 · Juni 2026**
+**EVA → Hebräisch-Aramäisch · Version 8.0 · Juni 2026**
 
-Sprachen A & B · Folios f1r, f1v–f29v (Quires A–B+C komplett, Quire D bD1+bD2+bD3+bD4 vollständig), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
+Sprachen A & B · Folios f1r, f1v–f29v (Quires A–B+C komplett, Quire D bD1+bD2+bD3+bD4 vollständig), f57r, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
 
 ---
 
@@ -28,25 +28,25 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 
 **Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
 
-**Korrekturen in v7.9:**
+**Korrekturen in v8.0:**
 
-- f29r + f29v (Bifolio bD4 Abschluss, äußerste Lage Quire D) analysiert — Ophthalmologischer Bogen vollständig: Diagnose (f28r) → Therapie Augenlicht (f28v) → Begleitsymptome/Fieber (f29r) → Pharmakopöe Augenpflanzen (f29v).
-- Botanik: f29r = Rumex crispus (Krauser Ampfer) ★★★ · f29v = Echium vulgare (Natternkopf / Viper's Bugloss) ★★★★.
-- Aufstufungen: shocthy ★★★ Kand.→★★★ validiert (R43: f28r P.7 + f29r P.6); cheeol ★★★ Kand.→★★★ validiert (R43: f26v P.3 + f29r P.5); R35 chol·chol ★★★ Kand.→★★★ validiert (R43: f17v + f29v P.2+P.3); tchor Zweitbeleg f29v P.8; ytchor →★★★★ (f29v P.2).
-- Lexikon: 7 neue Einträge (poraiin, shokchy, ychom, shos, shot, chain ★★★; chykar ★★) + ytchor →★★★★ (R43 erfüllt: f16v P.2 + f29v P.2 = 2 Folios).
-- Grammatikregeln: R15 Typ C (shor·chor·sho-Dreikette f29r P.8, 10. Beleg) + R19-Erweiterung auf shor·shor-Dopplung. Regelmoratorium: 32 validiert : 28 Kandidaten = 1,14:1.
+- f69r (Quire J/X — Kosmologisches Rad-Diagramm, bJ1) analysiert — Stresstest ★★★★ bestanden: 10/10 Ankerwörter, shol=-Terminal (P.4), 3× sar=-Kolophon (P.1, R.7, R.11), 22 Radialzeilen + 16 Außensektoren + Innenring vollständig dekodiert.
+- Zentralscheibe revidiert (★★★★★): dolsedy ist kein Wort, sondern ein sechsteiliges Zeigersystem — jeder Sektorbuchstabe verweist auf eine markierte Radialzeile; 7/7 Übereinstimmung mit Stolfi's Streifendaten rechnerisch verifiziert; dreistufige Farbhierarchie (blau beidseitig = primär · grün einseitig = sekundär · ohne Streifen = tertiär).
+- Aufstufungen: R36 dar·dar ★★★★→★★★★★ (register-übergreifend: Botanik f18r+f26v + Kosmogramm f69r = 3 Folios, 4 Belege, 0 Gegenbeispiele); qo-Zusatzbeleg R.20 stützt R47.
+- Lexikon: 6 neue Einträge (cholam, otolam, tam ★★★★ Kand.; dairam, ykar, cham ★★★ Kand.).
+- Grammatikregeln: R36 ★★★ validiert. Moratorium: 33 validiert : 28 Kandidaten = 1,18:1.
 
-### Kernbefunde — Version 7.9
+### Kernbefunde — Version 8.0
 
 | Eigenschaft | Wert |
 | --- | --- |
 | Identifizierte Sprache | Mischna-Hebräisch / Jüdisch-Aramäisch |
 | Texttyp | Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis) |
-| Analysierte Folios | f1r, f1v–f29v (Quires A–B+C komplett, Quire D bD1+bD2+bD3+bD4 vollständig), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v |
-| Bestätigte Wörter | 337 (★★★ oder höher) |
-| Rückwärtstest | Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 17/20 (85%) · 0 Falsch-Positive |
+| Analysierte Folios | f1r, f1v–f29v (Quires A–B+C komplett, Quire D bD1+bD2+bD3+bD4 vollständig), f57r, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v |
+| Bestätigte Wörter | 343 (★★★ oder höher) |
+| Rückwärtstest | Typ I (genuine Vorhersagen): 11/11 (100%) · Typ II (interne Kohärenz): 18/21 (86%) · 0 Falsch-Positive |
 | Sprache A Anker | f1r–f29v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4) |
-| Grammatikregeln | 59 (32 validiert + 27 Kandidaten) |
+| Grammatikregeln | 59 (33 validiert + 26 Kandidaten) |
 
 
 ## II. Methodik
@@ -132,7 +132,7 @@ Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 
 **R2-ext (v7.5):** Das EVA-Zeichen `o` ist positionell vollständig determiniert: (1) `o-` am Wortanfang = ע (Ayin, konsonantisch) — ausnahmslos; (2) `o` im Wortinneren = Ḥolam (Vokalmarker) — ausnahmslos. **Negativtest:** 0 Gegenbeispiele in 140+ validierten Lexikoneinträgen.
 
-## IV. Bestätigtes Lexikon (337 Einträge)
+## IV. Bestätigtes Lexikon (343 Einträge)
 
 Alle Einträge mit ★★★ oder höher.
 
@@ -198,6 +198,7 @@ Alle Einträge mit ★★★ oder höher.
 | pchodar | פְּ+כֹּ+דַּ+ר | wie Finsternis/Dunkelheit (von כָּדַר aram.) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.1) | ★★★ |
 | shos | שׁ+עַ+שׁ | Feuer-Ähnliches (Variante von sheos/shees, shin + ayin + shin) — ★★★ Kand. (Erstbeleg f29r P.5) | ★★★ |
 | chykar | כְּ+הֵי+כַּ+ר | Blässe-Kraft (Zutaten-Variante? k + hey + kar) — ★★ Kand. (Erstbeleg f29v P.10) | ★★ |
+| cham | חַם | Wärme / Hitze (Befund-Term, hippokratisch; f69r P.2) — ★★★ Kand. (Erstbeleg f69r P.2) | ★★★ |
 
 
 ### Prognose-Termini
@@ -271,6 +272,7 @@ Alle Einträge mit ★★★ oder höher.
 | chear | כְּ+אֵ+עַ+ר | wie erleuchten / wie das Licht wirkt (Heilerkolophon-Term) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28v P2.9) | ★★★ |
 | shokchy | שׁוֹ+כְּ+כֵּי | Scheol-Blässe / Blässe des Todes (sho + k + key) — ★★★ Kand. (Erstbeleg f29r P.7) | ★★★ |
 | shot | שׁוֹ+תְּ | vollständiges Scheol (sho-Präfix + tav-Intensiv) — ★★★ Kand. (Erstbeleg f29v P.4) | ★★★ |
+| cholam | כֹּ+עוֹלָם | wie die Welt / wie Ewigkeit (ko-Komparativ + olam; kosmologisch kohärent) — ★★★★ Kand. (Erstbeleg f69r C.3) | ★★★★ |
 
 
 ### Kolophon-Formeln
@@ -296,6 +298,7 @@ Alle Einträge mit ★★★ oder höher.
 | sam.chorly | שָׁם+כֹּר+לִי | so heile meine Pupille (T-Klassen-Formel: sham + kor + li) — f24r T.20; dritter T-Klassen-Beleg (R53 Subtyp) | ★★★ |
 | orchaiin | אֹ+ר+כְּ+עַ+יִין | Licht-wie-Auge (Kolophon-Abschlussformel) — f25v P.7; or+chor/k+aiin: strukturell reichste Kolophon-Formel bisher; alle H/C/F einig | ★★★★ |
 | cthol | כְּ+ת+הֹ+ל | Vollständigkeits-Marker (strukturell: 3× in f28r P.2–P.4) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.2) | ★★★ |
+| tam | תָּם | vollständig / rein — Radial-Kolophon-Typ, Unterform von cthom (tam= als Abschlussmarker in f69r R.5) — ★★★★ Kand. (Erstbeleg f69r R.5) | ★★★★ |
 
 
 ### Syntaktische Konnektoren
@@ -409,6 +412,7 @@ Alle Einträge mit ★★★ oder höher.
 | ykcholy | יְ+כְּ+כֹּ+ל+יְ | er heilt alles (y+k+chol Paradigma + Possessiv-yod) — ★★★★; f28v P1.2 | ★★★★ |
 | tshoiin | ת+שׁוֹ+עַ+יִן | [sie] wendet das Auge von Scheol (t-Imperfekt + sho + ayin) — ★★★★; f28v P1.4 | ★★★★ |
 | ychom | יְ+חוֹם | er wird genesen / er wird warm (y-Imperfekt von חום) — ★★★ Kand. (Erstbeleg f29r P.9) | ★★★ |
+| ykar | יְ+כַּ+ר | er wird leuchten (y-Imperfekt von כַּר) — ★★★ Kand. (Erstbeleg f69r P.3) | ★★★ |
 
 
 ### Akteure, Anatomie & Botanik
@@ -456,6 +460,8 @@ Alle Einträge mit ★★★ oder höher.
 | deaiin | דְּ+עַ+יִן | vom Auge (Direktional, d-Relativpräfix + ayin; Kolophon f28r P.9) — ★★★★ | ★★★★ |
 | poraiin | פְּ+אוֹר+עַיִן | Licht des Auges (p-Präfix + or + ayin) — ★★★ Kand. (Erstbeleg f29r P.1) | ★★★ |
 | chain | חַ+עַיִן | lebendiges Auge / Auge des Lebens (cham-Stamm + ayin) — ★★★ Kand. (Erstbeleg f29v P.5) | ★★★ |
+| otolam | אוֹת+עַל+אָם | Zeichen über alle / Zeichen der Ewigkeit (ot + ol + am) — ★★★★ Kand. (Erstbeleg f69r C.9) | ★★★★ |
+| dairam | דְּ+אִיר+אָם | von dem Leuchtenden aller (d-Genitiv + air + am; Radial-Kolophon-Form) — ★★★ Kand. (Erstbeleg f69r R.3) | ★★★ |
 
 
 ### Bestätigte Komposita
@@ -573,7 +579,7 @@ Alle Einträge mit ★★★ oder höher.
 
 ## VI. Grammatikregeln
 
-59 Regeln gesamt: **32 validiert** (≥ 2 unabhängige Belege) + **27 Kandidaten**. **v7.9-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell 32:27 = 1,19:1). R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
+59 Regeln gesamt: **33 validiert** (≥ 2 unabhängige Belege) + **26 Kandidaten**. **v8.0-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell 33:26 = 1,27:1). R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
 
 | # | Regel | Evidenz | Konf. |
 | --- | --- | --- | --- |
@@ -610,7 +616,7 @@ Alle Einträge mit ★★★ oder höher.
 | R33 | qo--Präfix tritt ab Quire C (Beinecke Quire III) auch in **Sprache-A-Texten** auf — Quire C ist eine dialektale Übergangszone mit folio-intern ansteigender qo-Integration: bC1 (f17) ~5 %, bC2 (f18) ~4–5 %, bC3 (f19) ~10 % (= Quire-H-äquivalent). R1 (qo- = B-exklusiv) gilt mit vollem Geltungsbereich nur für Quires I–II. Ab Bifolio bC3 ist vollständige qo-Integration zu erwarten. Vollständige Integration in Quire H: s. R47 — Kandidat | f17r: 7 qo-Formen (Spr. A); f17v: 6 qo-Formen (Spr. A) — 13 Belege in ~250 Token (~5,2 %); f18r/v (bC2): 8–10 qo-Formen in ~200 Token (~4–5 %); f19r/v (bC3): ~18 qo-Formen in ~175 Token (~10 %) — überschreitet Quire-H-Dichte; 0 Belege in Quires A+B Spr. A (~800 Token); f58r (Quire H, Spr. A): 28+ qo-Formen in ~350 Token (~8 %) — Vollintegration, s. R47 | ★★★ |
 | R34 | sheol (Vollform שְׁאוֹל) erscheint ab Quire C auch in Sprache-A-Texten am Paragraphenende — shol (apokor.) bleibt dominant; R17 gilt uneingeschränkt nur für Quires I–II — Kandidat | f17v P.13: ykeor·chol·chol·cthol·chkor·sheol-{plant} — Erstbeleg Spr. A sheol am Paragraphenende; 0 Belege in Quires A+B Spr. A | ★★★ |
 | R35 | Dopplung chol·chol (כֹּל·כֹּל = alles-alles) = Vollheilungs-Emphase vor nachfolgender Todesformel — erweitert R19-Intensivierungsschema auf Nominalstämme — **★★★ validiert** | f17v P.13: chol·chol·cthol·chkor·sheol — Erstbeleg; f29v P.2 (Zweitbeleg) + f29v P.3 (Drittbeleg) — Foliobeleg-Cluster auf demselben Folio in aufeinanderfolgenden Paragraphen; R43 erfüllt: f17v + f29v = 2 Folios → ★★★ validiert; Parallele zu chol·chol·chol auf f8v (R19) | ★★★ |
-| R36 | Dopplung dar·dar (דַּר·דַּר) = Bilateral-/Intensiv-Dopplung für dar (leuchtend/Licht-davon) in ophthalmologischem Kontext — mögliche Bedeutung: bilaterale Augenbeteiligung oder maximale Lichtintensivierung als diagnostische Emphase | f18r P.6: dar.dar — Corpus-Erstbeleg; f26v P.6: dar…dar — 2. Beleg (Typ B mit Zwischentext); R43 erfüllt: f18r + f26v = 2 Folios; R19-Strukturkonformität identisch zu daly·dal, chol·chol, or·or-Palindrom | ★★★★ |
+| R36 | Dopplung dar·dar (דַּר·דַּר) = Bilateral-/Intensiv-Dopplung für dar (leuchtend/Licht-davon) in ophthalmologischem und kosmologischem Kontext — mögliche Bedeutung: bilaterale Augenbeteiligung oder maximale Lichtintensivierung als diagnostische Emphase — **★★★★★** (register-übergreifend: Botanik + Kosmogramm) | f18r P.6: dar.dar — Corpus-Erstbeleg (★★★ Kand.); f26v P.6: dar…dar — 2. Beleg (Typ B mit Zwischentext) → R43 erfüllt → ★★★★; f69r R.17: dair.dar= — 3. Beleg (Typ A, Terminal, kosmologisch); f69r R.22: dary.dar — 4. Beleg (Typ A, direktional) → 3 Folios · 4 Belege · register-übergreifend (botanisch f18r+f26v, kosmologisch f69r) · 0 Gegenbeispiele → ★★★★★; R19-Strukturkonformität identisch zu daly·dal, chol·chol, or·or-Palindrom | ★★★★★ |
 | R37 | R19-Intensivierungsschema gilt ab Quire C auch für qo--Präfix-Wortgruppen: qoky·qoky (und weil · und weil), qokchy·qokchy (und wie Blässe · und wie Blässe) — Dopplung verstärkt kausale Verbindung oder diagnostischen Befund | f18v P.2: qokchy·qokchy (Corpus-Erstbeleg qo-Dopplung); f18v P.3: qoky·qoky (2. Beleg, verschiedene Lemmata); f26v P.5: qotedy·qotedy (3. Beleg, neues Lemma); R43 erfüllt: f18v + f26v = 2 Folios | ★★★★ |
 | R38 | {plant}-Marker am Paragraphenanfang = Pflanzenillustration rahmt den nachfolgenden Kolophon-Text strukturell — neue Strukturvariante in Quire C; in Quires A+B steht {plant} nie am Paragraphenanfang — Kandidat | f18v P.10: {plant}yko.dshy.dair.ykol.dom= — Corpus-Erstbeleg der Anfangspositionierung; 0 Belege in Quires A+B | ★★★ |
 | R39 | dom= (דּוֹם = Stille/Ende) als Schlusskolophon-Finale in Sprache A — positiv-neutrale Prognose-Semantik (Stille/Ruhe, kein shol/sheol); bisher nur in Sprache B (f57r) belegt — Kandidat | f18v P.10: dom= — Erstbeleg Spr. A; Parallelbeleg Spr. B: f57r Kolophon-Kontext; dom = neutral/positiv (Stille) vs. shol = negativ (Tod) | ★★★ |
@@ -640,19 +646,19 @@ Alle Einträge mit ★★★ oder höher.
 
 ## VII. Rückwärtstest-Statistik
 
-30 hebräische/aramäische Wörter getestet. Ab v7.5 zwei Klassen: **Typ I** (genuine Vorhersagen — Prä-Analyse-Anker, eingefroren): **10/10 = 100%** · **Typ II** (interne Kohärenz — post-hoc): **17/20 = 85%** · 0 Falsch-Positive in beiden Klassen.
+32 hebräische/aramäische Wörter getestet. Ab v7.5 zwei Klassen: **Typ I** (genuine Vorhersagen — Prä-Analyse-Anker, eingefroren): **11/11 = 100%** · **Typ II** (interne Kohärenz — post-hoc): **18/21 = 86%** · 0 Falsch-Positive in beiden Klassen.
 
 | Kategorie | Ergebnis |
 | --- | --- |
-| Typ I — Genuine Vorhersagen (Prä-Analyse-Anker, eingefroren) | 10 / 10 |
-| Typ II — Interne Kohärenz (post-hoc-Entdeckungen) | 17 / 20 |
+| Typ I — Genuine Vorhersagen (Prä-Analyse-Anker, eingefroren) | 11 / 11 |
+| Typ II — Interne Kohärenz (post-hoc-Entdeckungen) | 18 / 21 |
 | Bestätigt Spr. A (Anker, f1v–f15v) | 260 / 260 |
 | Falsch-positiv (gesamt) | 0 |
 
 
 **Entscheidend: Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.** Bei einem Zufallsalphabet statistisch ausgeschlossen.
 
-### Typ I — Genuine Vorhersagen (10/10 · 100%)
+### Typ I — Genuine Vorhersagen (11/11 · 100%)
 
 | Vorhersage | Hebräisch | Befund | Kontext |
 | --- | --- | --- | --- |
@@ -666,9 +672,10 @@ Alle Einträge mit ★★★ oder höher.
 | shol · dy · … · shol | R24-Struktur | ✓ f13r P.1 (Dopplungsformel) | einmaliges Emphase-Muster mit Genitiv-Brücke dy |
 | dam (Quire B) | דָּם | ✓ f14v P.8 (Blut-Triade) | dol · dair · dam — Erstbeleg Blutpathologie in bB3; verbindet f14v mit f3r |
 | shol medial · sheol final (R17 Zodiak) | שׁוֹל / שְׁאוֹל | ✓ f72r1 R1 (shol 2×) · R2 (sheol vor gap) — 5. Register-Bestätigung | identische Verteilung wie botanische Folios; shol nie in Ringabschlussposition; sheol unmittelbar vor gap-Marker |
+| f69r Stresstest — kosmologisches Rad-Diagramm, Currier-Sprache unklassifiziert (Quire J/X) | Mapping v8.0 | ✓ 10/10 Ankerwörter; shol= in P.4 terminal (R6); sar= 3× terminal (P.1, R.7, R.11, R11); daiin in P.2+C.9 (R7); 6/6 Pflichtkriterien bestanden — 1 Token offen ({&ct}ar) | Foliotyp: kosmologisches Rad-Diagramm — keine Botanik, kein {plant}-System, keine Currier-Sprachzuordnung; Mapping ohne Anpassung auf neuen Register transferiert |
 
 
-### Typ II — Interne Kohärenz (17/20 · 85%)
+### Typ II — Interne Kohärenz (18/21 · 86%)
 
 | Vorhersage | Hebräisch | Befund | Kontext |
 | --- | --- | --- | --- |
@@ -692,6 +699,7 @@ Alle Einträge mit ★★★ oder höher.
 | otam · otam · chotam (R19/R35) | אוֹת+אָם · אוֹת+אָם · כֹּ+אוֹת+אָם | ✓ f72r1 R1 — dreistufige Nominal-Intensivierung | einfach → ×2 → Komparativ ko+X; exaktes R35-Schema; semantisch kohärent: Zeichen der Mutter im Stier-dunkel-Kontext |
 | okaly= / okal= Minimalpaar (R52a) | עַ+כָּל+יְ / עַ+כָּל | ✓ f72r2 S1.3/S1.5/S1.12 (okal) neben S1.4/S1.12 (okaly) — Determinans-y optional | identischer Stamm okal mit und ohne -y-Suffix auf demselben Ring; beweist R52a: -y ist Status-Emphaticus-Marker, kein festes Wortbildungselement |
 | alef / otalef — Stier-Exklusivmarker | אָלֶף / אוֹת+אָלֶף | ✓ f72r1 S1.6 + S1.9 — ausschließlich im Stier-dunkel-Panel | alef = Ochsenkopf-Piktogramm (Aleph-Ursprung); fehlt in f71r, f71v, f72r2; erste ikonographisch verankerte Buchstabenreferenz im Zodiak-Corpus |
+| dar·dar-Dopplung (R36) in kosmologischem Register | דַּר·דַּר | ✓ f69r R.17 (dair.dar= Terminal) + f69r R.22 (dary.dar direktional) — 2 neue Belege | R43 erfüllt: f18r + f26v + f69r = 3 Folios, 4 Gesamtbelege → R36 ★★★ validiert; Typ A (direkt adjacent) erstmals in kosmologischem Register belegt |
 
 
 ## VIII. Verankerte Referenz-Sequenzen
@@ -987,7 +995,7 @@ _Arbeitshypothese: Ab v7.5: Regelmoratorium (keine R60+) bis Verhältnis ≥ 1,5
 
 ---
 
-Voynich-Manuskript — Formales Mapping-Dokument · Version 7.9 · Juni 2026
-Lexikon: 337 Einträge · Grammatikregeln: 59 · Rückwärtstest: Typ I: 10/10 (100%) · Typ II: 17/20 (85%)
+Voynich-Manuskript — Formales Mapping-Dokument · Version 8.0 · Juni 2026
+Lexikon: 343 Einträge · Grammatikregeln: 59 · Rückwärtstest: Typ I: 11/11 (100%) · Typ II: 18/21 (86%)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

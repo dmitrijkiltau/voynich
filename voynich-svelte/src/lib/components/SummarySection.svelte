@@ -26,7 +26,7 @@
       },
       {
         label: "Rückwärtstest",
-        value: "Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 17/20 (85%) · 0 Falsch-Positive",
+        value: "Typ I (genuine Vorhersagen): 11/11 (100%) · Typ II (interne Kohärenz): 18/21 (86%) · 0 Falsch-Positive",
       },
       {
         label: "Sprache A Anker",

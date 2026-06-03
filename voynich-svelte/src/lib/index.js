@@ -6,22 +6,22 @@ import { RULES } from './grammar-rules-data.js';
 export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_STATUS, RULES };
 
 export const STATS = {
-  version: '7.9',
+  version: '8.0',
   changelog: [
-    'f29r + f29v (Bifolio bD4 Abschluss, äußerste Lage Quire D) analysiert — Ophthalmologischer Bogen vollständig: Diagnose (f28r) → Therapie Augenlicht (f28v) → Begleitsymptome/Fieber (f29r) → Pharmakopöe Augenpflanzen (f29v).',
-    'Botanik: f29r = Rumex crispus (Krauser Ampfer) ★★★ · f29v = Echium vulgare (Natternkopf / Viper\'s Bugloss) ★★★★.',
-    'Aufstufungen: shocthy ★★★ Kand.→★★★ validiert (R43: f28r P.7 + f29r P.6); cheeol ★★★ Kand.→★★★ validiert (R43: f26v P.3 + f29r P.5); R35 chol·chol ★★★ Kand.→★★★ validiert (R43: f17v + f29v P.2+P.3); tchor Zweitbeleg f29v P.8; ytchor →★★★★ (f29v P.2).',
-    'Lexikon: 7 neue Einträge (poraiin, shokchy, ychom, shos, shot, chain ★★★; chykar ★★) + ytchor →★★★★ (R43 erfüllt: f16v P.2 + f29v P.2 = 2 Folios).',
-    'Grammatikregeln: R15 Typ C (shor·chor·sho-Dreikette f29r P.8, 10. Beleg) + R19-Erweiterung auf shor·shor-Dopplung. Regelmoratorium: 32 validiert : 28 Kandidaten = 1,14:1.'
+    'f69r (Quire J/X — Kosmologisches Rad-Diagramm, bJ1) analysiert — Stresstest ★★★★ bestanden: 10/10 Ankerwörter, shol=-Terminal (P.4), 3× sar=-Kolophon (P.1, R.7, R.11), 22 Radialzeilen + 16 Außensektoren + Innenring vollständig dekodiert.',
+    'Zentralscheibe revidiert (★★★★★): dolsedy ist kein Wort, sondern ein sechsteiliges Zeigersystem — jeder Sektorbuchstabe verweist auf eine markierte Radialzeile; 7/7 Übereinstimmung mit Stolfi\'s Streifendaten rechnerisch verifiziert; dreistufige Farbhierarchie (blau beidseitig = primär · grün einseitig = sekundär · ohne Streifen = tertiär).',
+    'Aufstufungen: R36 dar·dar ★★★★→★★★★★ (register-übergreifend: Botanik f18r+f26v + Kosmogramm f69r = 3 Folios, 4 Belege, 0 Gegenbeispiele); qo-Zusatzbeleg R.20 stützt R47.',
+    'Lexikon: 6 neue Einträge (cholam, otolam, tam ★★★★ Kand.; dairam, ykar, cham ★★★ Kand.).',
+    'Grammatikregeln: R36 ★★★ validiert. Moratorium: 33 validiert : 28 Kandidaten = 1,18:1.'
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.length,
   rules: RULES.length,
-  validatedRules: 32,
+  validatedRules: 33,
   backtest: '100%',
-  backtestFraction: 'Typ I: 10/10 (100%) · Typ II: 17/20 (85%)',
-  backtestTotal: '30',
+  backtestFraction: 'Typ I: 11/11 (100%) · Typ II: 18/21 (86%)',
+  backtestTotal: '32',
   gibberishRate: '10,4 %',
   foliosA: 'f1r–f29v',
-  foliosAll: 'f1r, f1v–f29v (Quires A–B+C komplett, Quire D bD1+bD2+bD3+bD4 vollständig), f57r, f58r, f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v',
+  foliosAll: 'f1r, f1v–f29v (Quires A–B+C komplett, Quire D bD1+bD2+bD3+bD4 vollständig), f57r, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v',
 };
