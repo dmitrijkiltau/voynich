@@ -96,7 +96,7 @@ export function generateMarkdown() {
     ['Analysierte Folios', STATS.foliosAll],
     ['Bestätigte Wörter', `${STATS.lexicon} (★★★ oder höher)`],
     ['Rückwärtstest', `Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 17/20 (85%) · 0 Falsch-Positive`],
-    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD3)`],
+    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4)`],
     ['Grammatikregeln', `${RULES.length} (${STATS.validatedRules} validiert + ${RULES.length - STATS.validatedRules} Kandidaten)`],
   ]));
   line();

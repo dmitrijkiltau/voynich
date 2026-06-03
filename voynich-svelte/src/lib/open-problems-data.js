@@ -35,8 +35,8 @@ export const OPEN_PROBLEMS = [
     id: 'OP5',
     title: 'Regelmoratorium aktiv',
     severity: 'strukturell',
-    problem: 'Das Verhältnis validierter Regeln zu Kandidaten-Regeln hat sich umgekehrt: v6.2 = 2,25:1 · v6.6 = 1,47:1 · v7.4 = 0,84:1. Das ist ein klassisches Overfitting-Signal: Neue Beobachtungen generieren neue Regeln, anstatt bestehende Kandidaten zu schließen.',
-    hypothesis: 'Ab v7.5: Regelmoratorium (keine R60+) bis Verhältnis ≥ 1,5:1. Ziel: 14 aktuelle Kandidaten (R43-Frist) hochstufen oder widerlegen. Priorisiert: R59, R55, R58, R56, R54, R57.',
+    problem: 'Das Verhältnis validierter Regeln zu Kandidaten-Regeln hat sich umgekehrt: v6.2 = 2,25:1 · v6.6 = 1,47:1 · v7.4 = 0,84:1 · v7.7 = 1,03:1 · v7.8 = 1,11:1. Das ist ein klassisches Overfitting-Signal: Neue Beobachtungen generieren neue Regeln, anstatt bestehende Kandidaten zu schließen.',
+    hypothesis: 'Ab v7.5: Regelmoratorium (keine R60+) bis Verhältnis ≥ 1,5:1. Zielwert noch nicht erreicht. Priorisiert: R55, R58, R54, R57, R28 (Folgebelege f28r P.9 laufend). R56 ★★★ validiert (v7.7) · R59 ★★★ validiert (v7.8).',
     status: 'moratorium',
   },
 ];

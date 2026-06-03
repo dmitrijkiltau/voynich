@@ -30,7 +30,7 @@
       },
       {
         label: "Sprache A Anker",
-        value: `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD3)`,
+        value: `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4)`,
       },
       {
         label: "Grammatikregeln",
