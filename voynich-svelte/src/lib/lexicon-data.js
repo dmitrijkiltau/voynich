@@ -143,7 +143,7 @@ export const LEXICON = [
   { eva: 'dshy',      heb: 'דְּ+שֵׁי',          de: 'von der Gabe (d-Genitivkonstrukt)',            stars: '★★★',   cat: 'kompositum' },
   // ── v5.8 (f16r + f16v) ────────────────
   // f16r
-  { eva: 'tchor',     heb: 'תְּ+חֹר',           de: 'sie heilt die Pupille (fem. Imperfekt)',        stars: '★★★★',  cat: 'verb' },
+  { eva: 'tchor',     heb: 'תְּ+חֹר',           de: 'sie heilt die Pupille (fem. Imperfekt) — Zweitbeleg f29v P.8 → ★★★★ bestätigt',        stars: '★★★★',  cat: 'verb' },
   { eva: 'ykair',     heb: 'יְ+כְּ+אִיר',        de: 'er heilt leuchtend (Kandidat 7. y+k+Terminus) — R43 provisorisch ★★: nur f16r (1×), unter Mindestgrenze 8×', stars: '★★',    cat: 'verb' },
   { eva: 'pocheody',  heb: 'פְּ+חֹ+דִּי',        de: 'des Atemwegs (Genitiv von pcho)',              stars: '★★★',   cat: 'akteur' },
   { eva: 'toror',     heb: 'תְּ+אוֹר+אוֹר',      de: 'sie heilt — Licht — Licht (Doppel-Licht-Heilung)', stars: '★★★', cat: 'verb' },
@@ -154,7 +154,7 @@ export const LEXICON = [
   { eva: 'otly',      heb: 'אוֹת+לֵ',            de: 'Zeichen zu/für (oto-Direktional)',             stars: '★★★',   cat: 'kompositum' },
   { eva: 'opchy',     heb: 'עַ+פְּ+הִי',         de: 'auf den Atemweg (o+pchy-Direktional)',         stars: '★★★',   cat: 'akteur' },
   // f16v
-  { eva: 'ytchor',    heb: 'יְ+תְּ+חֹר',         de: 'er/sie wird die Pupille heilen (y+t-Doppelpräfix)', stars: '★★★', cat: 'verb' },
+  { eva: 'ytchor',    heb: 'יְ+תְּ+חֹר',         de: 'er/sie wird die Pupille heilen (y+t-Doppelpräfix) — R43 erfüllt: f16v P.2 + f29v P.2 = 2 Folios → ★★★★', stars: '★★★★', cat: 'verb' },
   { eva: 'ytchy',     heb: 'יְ+תְּ+כְּהִי',      de: 'er/sie wird Blässe zeigen (y+t-Doppelpräfix)', stars: '★★★',  cat: 'verb' },
   { eva: 'pchraiin',  heb: 'פְּ+רְ+עַיִן',       de: 'für/bei das Licht des Auges',                 stars: '★★★',   cat: 'akteur' },
   { eva: 'sholo',     heb: 'שְׁאוֹ+לוֹ',         de: 'Scheol für ihn (Dativ-Form)',                  stars: '★★★',   cat: 'prognose' },
@@ -338,7 +338,7 @@ export const LEXICON = [
   { eva: 'saraiir',   heb: 'שַׂר+אִיר',              de: 'Arzt des Leuchtenden (sar + aiir Komposit) — f26v P.2 — ★★★ Kand. (R43-Frist: 5 Folios)',                                       stars: '★★★',  cat: 'akteur'  },
   { eva: 'ykeechy',   heb: 'יְ+כְּ+אֵ+כְּ+הֵי',       de: 'er heilt wie Blässe-Licht (8. y+k-Verb) — f26r P.9 — ★★★ Kand. (R43-Frist: 5 Folios)',                                         stars: '★★★',  cat: 'verb'    },
   { eva: 'qoteedar',  heb: 'וְ+תֵּ+דַּר',             de: 'und er/du wirst leuchten (qo + Tsere + dar) — f26r P.8 — ★★★ Kand. (R43-Frist: 5 Folios)',                                      stars: '★★★',  cat: 'verb'    },
-  { eva: 'cheeol',    heb: 'כְּ+אֵ+עַל',             de: 'wie kein Joch / wie Ende des Joches — f26v P.3 — ★★★ Kand. (R43-Frist: 5 Folios)',                                              stars: '★★★',  cat: 'symptom' },
+  { eva: 'cheeol',    heb: 'כְּ+אֵ+עַל',             de: 'wie kein Joch / wie Ende des Joches — ★★★ validiert (R43 erfüllt: f26v P.3 + f29r P.5 = 2 Folios)',                           stars: '★★★',  cat: 'symptom' },
   { eva: 'ory',       heb: 'אוֹר+יְ',                de: 'sein Licht / er erleuchtet — f26v P.8 — ★★★ Kand. (R43-Frist: 5 Folios)',                                                        stars: '★★★',  cat: 'prognose' },
   { eva: 'eedy',      heb: 'אֵ+דִּי',                de: 'kein Licht — von (Negativ-Licht-Genitiv) — f26r P.5 — ★★★ Kand. (R43-Frist: 5 Folios)',                                          stars: '★★★',  cat: 'prognose' },
   // ── v7.7 (f27r + f27v — Bifolio bD3: Symphytum officinale + Leucanthemum vulgare) ──
@@ -356,7 +356,7 @@ export const LEXICON = [
   { eva: 'chakod',    heb: 'כְּ+עַ+כֹּ+ד',           de: 'wie zusammen/versammelt (k-Komparativ + akod) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.2)',                                   stars: '★★★',  cat: 'syntax'     },
   { eva: 'cthol',     heb: 'כְּ+ת+הֹ+ל',             de: 'Vollständigkeits-Marker (strukturell: 3× in f28r P.2–P.4) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.2)',                      stars: '★★★',  cat: 'kolophon'   },
   { eva: 'okam',      heb: 'עַ+כַּ+ם',               de: 'für das Volk / für alle (universale Therapieangabe) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.6)',                             stars: '★★★',  cat: 'akteur'     },
-  { eva: 'shocthy',   heb: 'שׁוֹ+כְּ+ת+יְ',           de: 'vollständiges Scheol (Intensivform: sho + Vollständigkeits-tav + yod) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.7)',          stars: '★★★',  cat: 'prognose'   },
+  { eva: 'shocthy',   heb: 'שׁוֹ+כְּ+ת+יְ',           de: 'vollständiges Scheol (Intensivform: sho + Vollständigkeits-tav + yod) — ★★★ validiert (R43 erfüllt: f28r P.7 + f29r P.6 = 2 Folios)',  stars: '★★★',  cat: 'prognose'   },
   { eva: 'ytchol',    heb: 'יְ+ת+כֹּ+ל',             de: 'er wird alles vollenden (y+t Doppelpräfix + kol; Kolophon f28r P.9) — ★★★★',                                                            stars: '★★★★', cat: 'verb'       },
   { eva: 'yteol',     heb: 'יְ+ת+אֵ+עֹ+ל',           de: 'er wird handeln/vollbringen (y+t Doppelpräfix; Kolophon f28r P.9 neben ytchol) — ★★★★',                                                 stars: '★★★★', cat: 'verb'       },
   { eva: 'deaiin',    heb: 'דְּ+עַ+יִן',              de: 'vom Auge (Direktional, d-Relativpräfix + ayin; Kolophon f28r P.9) — ★★★★',                                                             stars: '★★★★', cat: 'akteur'     },
@@ -364,4 +364,12 @@ export const LEXICON = [
   { eva: 'ykcholy',   heb: 'יְ+כְּ+כֹּ+ל+יְ',         de: 'er heilt alles (y+k+chol Paradigma + Possessiv-yod) — ★★★★; f28v P1.2',                                                               stars: '★★★★', cat: 'verb'       },
   { eva: 'tshoiin',   heb: 'ת+שׁוֹ+עַ+יִן',            de: '[sie] wendet das Auge von Scheol (t-Imperfekt + sho + ayin) — ★★★★; f28v P1.4',                                                       stars: '★★★★', cat: 'verb'       },
   { eva: 'chear',     heb: 'כְּ+אֵ+עַ+ר',             de: 'wie erleuchten / wie das Licht wirkt (Heilerkolophon-Term) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28v P2.9)',                    stars: '★★★',  cat: 'prognose'   },
+  // ── v7.9 (f29r + f29v — Bifolio bD4 Abschluss: Rumex crispus + Echium vulgare) ──
+  { eva: 'poraiin',   heb: 'פְּ+אוֹר+עַיִן',          de: 'Licht des Auges (p-Präfix + or + ayin) — ★★★ Kand. (Erstbeleg f29r P.1)',                                                             stars: '★★★',  cat: 'akteur'     },
+  { eva: 'shos',      heb: 'שׁ+עַ+שׁ',                de: 'Feuer-Ähnliches (Variante von sheos/shees, shin + ayin + shin) — ★★★ Kand. (Erstbeleg f29r P.5)',                                     stars: '★★★',  cat: 'symptom'    },
+  { eva: 'shokchy',   heb: 'שׁוֹ+כְּ+כֵּי',            de: 'Scheol-Blässe / Blässe des Todes (sho + k + key) — ★★★ Kand. (Erstbeleg f29r P.7)',                                                   stars: '★★★',  cat: 'prognose'   },
+  { eva: 'ychom',     heb: 'יְ+חוֹם',                 de: 'er wird genesen / er wird warm (y-Imperfekt von חום) — ★★★ Kand. (Erstbeleg f29r P.9)',                                               stars: '★★★',  cat: 'verb'       },
+  { eva: 'shot',      heb: 'שׁוֹ+תְּ',                de: 'vollständiges Scheol (sho-Präfix + tav-Intensiv) — ★★★ Kand. (Erstbeleg f29v P.4)',                                                   stars: '★★★',  cat: 'prognose'   },
+  { eva: 'chain',     heb: 'חַ+עַיִן',                de: 'lebendiges Auge / Auge des Lebens (cham-Stamm + ayin) — ★★★ Kand. (Erstbeleg f29v P.5)',                                              stars: '★★★',  cat: 'akteur'     },
+  { eva: 'chykar',    heb: 'כְּ+הֵי+כַּ+ר',            de: 'Blässe-Kraft (Zutaten-Variante? k + hey + kar) — ★★ Kand. (Erstbeleg f29v P.10)',                                                     stars: '★★',   cat: 'symptom'    },
 ];
