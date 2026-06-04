@@ -6,18 +6,18 @@
 </script>
 
 <div class="backtest">
-	<p>30 hebräische/aramäische Wörter wurden nach dem EVA-Mapping kodiert und im Korpus (Sprache B) gesucht. Ab v7.5 werden zwei Klassen unterschieden: <strong>Typ I</strong> (genuine Vorhersagen — Prä-Analyse-Anker, eingefroren vor jeder Folioanalyse) und <strong>Typ II</strong> (interne Kohärenz — post-hoc-Entdeckungen, belegen Systemkonsistenz, keine externe Vorhersagekraft).</p>
+	<p>{typeI.length + typeII.length} hebräische/aramäische Wörter wurden nach dem EVA-Mapping kodiert und im Korpus (Sprache B) gesucht. Ab v7.5 werden zwei Klassen unterschieden: <strong>Typ I</strong> (genuine Vorhersagen — Prä-Analyse-Anker, eingefroren vor jeder Folioanalyse) und <strong>Typ II</strong> (interne Kohärenz — post-hoc-Entdeckungen, belegen Systemkonsistenz, keine externe Vorhersagekraft).</p>
 
 	<div class="headline-stats">
 		<div class="hs-card gold">
-			<div class="hs-num">10/10</div>
+			<div class="hs-num">11/11</div>
 			<div class="hs-label">Typ I — Genuine Vorhersagen</div>
 			<div class="hs-sub">100 % · 0 Falsch-Positive</div>
 		</div>
 		<div class="hs-card green">
-			<div class="hs-num">17/20</div>
+			<div class="hs-num">18/21</div>
 			<div class="hs-label">Typ II — Interne Kohärenz</div>
-			<div class="hs-sub">85 % · 0 Falsch-Positive</div>
+			<div class="hs-sub">86 % · 0 Falsch-Positive</div>
 		</div>
 	</div>
 
@@ -37,8 +37,8 @@
 		<p style="margin:0;font-size:.92rem">Entscheidend: <strong>Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.</strong> Kein kodiertes Wort taucht in einem semantisch inkohärenten Kontext auf — in beiden Klassen, bei einem Zufallsalphabet statistisch ausgeschlossen.</p>
 	</div>
 
-	<h3>Typ I — Genuine Vorhersagen <span class="type-badge type-i">10/10 · 100%</span></h3>
-	<p class="type-note">Diese 10 Wörter wurden als semantische Priors <em>vor</em> jeder Folioanalyse definiert. Sie sind eingefroren und können nicht rückwirkend erweitert werden. Ihre Bestätigung ist die valide Kernaussage der Rückwärtsteststärke.</p>
+	<h3>Typ I — Genuine Vorhersagen <span class="type-badge type-i">11/11 · 100%</span></h3>
+	<p class="type-note">Diese {typeI.length} Wörter wurden als semantische Priors <em>vor</em> jeder Folioanalyse definiert. Sie sind eingefroren und können nicht rückwirkend erweitert werden. Ihre Bestätigung ist die valide Kernaussage der Rückwärtsteststärke.</p>
 	<div class="tested-wrap">
 		<table class="dt">
 			<thead>
@@ -57,8 +57,8 @@
 		</table>
 	</div>
 
-	<h3>Typ II — Interne Kohärenz <span class="type-badge type-ii">17/20 · 85%</span></h3>
-	<p class="type-note">Diese 20 Wörter wurden <em>während</em> der Folioanalyse erstmals identifiziert. Sie belegen interne Systemkonsistenz, aber keine externe Vorhersagekraft. Die 3 nicht gefundenen Einträge bleiben als offene Validierungspunkte.</p>
+	<h3>Typ II — Interne Kohärenz <span class="type-badge type-ii">18/21 · 86%</span></h3>
+	<p class="type-note">Diese {typeII.length} Wörter wurden <em>während</em> der Folioanalyse erstmals identifiziert. Sie belegen interne Systemkonsistenz, aber keine externe Vorhersagekraft. Die 3 nicht gefundenen Einträge bleiben als offene Validierungspunkte.</p>
 	<div class="tested-wrap">
 		<table class="dt">
 			<thead>

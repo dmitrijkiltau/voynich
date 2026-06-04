@@ -2,15 +2,17 @@
 	import { OPEN_PROBLEMS } from '$lib/open-problems-data.js';
 
 	const severityLabel = {
-		hoch:        'Schwere: hoch',
-		mittel:      'Schwere: mittel',
-		strukturell: 'Strukturell',
+		hoch:           'Schwere: hoch',
+		mittel:         'Schwere: mittel',
+		strukturell:    'Strukturell',
+		'niedrig-mittel': 'Schwere: niedrig–mittel',
 	};
 
 	const statusLabel = {
 		offen:       'offen',
 		ausstehend:  'ausstehend',
 		moratorium:  'Moratorium aktiv',
+		'gelöst':    'gelöst',
 	};
 </script>
 
@@ -114,13 +116,15 @@
 		border-radius: 2px;
 	}
 
-	.severity-hoch        { background: color-mix(in srgb, var(--red) 12%, transparent); color: var(--red); }
-	.severity-mittel      { background: color-mix(in srgb, var(--gold) 18%, transparent); color: color-mix(in srgb, var(--gold) 80%, var(--ink)); }
-	.severity-strukturell { background: color-mix(in srgb, var(--ink-f) 12%, transparent); color: var(--ink-f); }
+	.severity-hoch            { background: color-mix(in srgb, var(--red) 12%, transparent); color: var(--red); }
+	.severity-mittel          { background: color-mix(in srgb, var(--gold) 18%, transparent); color: color-mix(in srgb, var(--gold) 80%, var(--ink)); }
+	.severity-strukturell     { background: color-mix(in srgb, var(--ink-f) 12%, transparent); color: var(--ink-f); }
+	.severity-niedrig-mittel  { background: color-mix(in srgb, var(--gold) 10%, transparent); color: color-mix(in srgb, var(--gold) 70%, var(--ink)); }
 
 	.status-offen      { background: color-mix(in srgb, var(--red) 10%, transparent); color: var(--red); }
 	.status-ausstehend { background: color-mix(in srgb, var(--gold) 12%, transparent); color: color-mix(in srgb, var(--gold) 80%, var(--ink)); }
 	.status-moratorium { background: color-mix(in srgb, var(--gold) 18%, transparent); color: color-mix(in srgb, var(--gold) 80%, var(--ink)); }
+	.status-gelöst     { background: color-mix(in srgb, var(--green) 12%, transparent); color: color-mix(in srgb, var(--green) 80%, var(--ink)); }
 
 	.problem-body {
 		font-size: .88rem;

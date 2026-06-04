@@ -177,8 +177,12 @@ export function generateMarkdown() {
   // ── VI. Grammatikregeln ───────────────────────────────────────
   h(2, 'VI. Grammatikregeln');
   line();
-  const moratoriumRatio = (STATS.validatedRules / (RULES.length - STATS.validatedRules)).toFixed(2).replace('.', ',');
-  line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${RULES.length - STATS.validatedRules} Kandidaten**. **v${STATS.version}-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis validiert:Kandidaten ≥ 1,5:1 (aktuell ${STATS.validatedRules}:${RULES.length - STATS.validatedRules} = ${moratoriumRatio}:1). R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).`);
+  const candidates = RULES.length - STATS.validatedRules;
+  const moratoriumRatio = (STATS.validatedRules / candidates).toFixed(2).replace('.', ',');
+  const moratoriumStatus = (STATS.validatedRules / candidates) >= 1.5
+    ? `**Regelmoratorium beendet (v${STATS.version})** — Verhältnis ${STATS.validatedRules}:${candidates} = ${moratoriumRatio}:1 ≥ 1,5:1. R60+ freigegeben.`
+    : `**v${STATS.version}-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis ≥ 1,5:1 (aktuell ${STATS.validatedRules}:${candidates} = ${moratoriumRatio}:1).`;
+  line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${candidates} Kandidaten**. ${moratoriumStatus} R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).`);
   line();
   s.push(tbl(['#', 'Regel', 'Evidenz', 'Konf.'],
     RULES.map(r => [r.id, stripHtml(r.rule), stripHtml(r.evidence), r.stars])));
