@@ -1,4 +1,4 @@
-﻿<script>
+<script>
 	import { COMPARISON, FOLIOS } from '$lib/language-a-data.js';
 	import { STATS } from '$lib';
 
@@ -46,8 +46,62 @@
 	</div>
 
 	<div class="box green conclusion">
-		<div class="box-title">Schlussfolgerung: Sprache A = Sprache B, dialektale Variante — Quire C vollständig (16/16) · Quire D bD1+bD2+bD3+bD4 vollständig (f25r–f29v)</div>
-		<p style="margin:0;font-size:.92rem">Die Sprachen A und B sind dialektale Varianten desselben Mischna-Hebräisch/Aramäisch-Systems: A hat höhere o-Vokalfrequenz (Ḥolam), B mehr e-Vokale (Segol/Ṣere). Textgenre, Prognose-Schema, Präfix-System und Kolophon-Konventionen sind identisch. Die Quire-Grenze A→B (f8v→f9r) ist textlich unsichtbar. <strong>Quire C (f17–f20)</strong> zeigt B-Merkmale in Sprache-A-Texten mit folio-intern ansteigender Dichte: das <span class="eva">qo-</span>-Präfix tritt auf (bC1 ~5 %, bC2 ~4–5 %, bC3 ~10 % = Quire-H-äquivalent, R33-Erweiterung ★★★); <span class="eva">sheol</span> (Vollform) am Paragraphenende (R34 ★★★); qo-Dopplung <span class="eva">qokchy·qokchy</span> ab f18v (R37 ★★★); <span class="eva">dom=</span> als Kolophon-Finale Spr. A (R39 ★★★). Neu in bC3 (f19v): erste daiin·daiin-Dopplung, erste 7-gliedrige y+t-Verb-Litanei (R49 ★★★), <span class="eva">ytor</span> → ★★★★★. <strong>bC4 (f20r–f21v):</strong> therapeutisches Fenster (<span class="eva">dol·shol</span> + chor-Schlussparadigma R15), <span class="eva">cheol</span> ★★★→★★★★ (R43 definitiv erfüllt, 4. Beleg), Dreifache Licht-Formel f21r P.7 (R52 ★★ Kand.), kompaktester Kolophon Corpus f21v P.8, R51 ★★★ (2-Folio-Kand. f20v+f21v) — Bifolio bC4 vollständig abgeschlossen. <strong>Quire K (f71r–f72r2):</strong> B-Register dominiert (ee/oo per R50 ★★★★, qo-Muster) — Zodiak-Tetraptychon bK1 vollständig; R52a ★★★★ (Determinans-y in Sternlabeln); Doppel-Stier-Hypothese (f71v kalendarisch / f72r1 astromedizinisch). Das Werk ist als Einheit konzipiert. <strong>Quire D Einstieg (f25r–f25v, Bifolio bD1):</strong> Keine statistisch signifikante Änderung der Kernvokabular-Parameter — identische Ankerwort-Trefferquote, daiin-Urteil-Struktur und t-Verb-Paradigma wie Quire C. Bifolio bD1 ist das daiin-reichste im gesamten Corpus: 4 Doppelurteile + 3×daiin in einer Zeile (f25v P.2, Corpus-Erstbeleg). <span class="eva">orchaiin=</span> neue Kolophon-Formel ★★★★ (f25v P.7). Botanik: <em>Urtica dioica</em> (Brennnessel, f25r ★★★★) → <em>Chelidonium majus</em> (Schöllkraut, f25v ★★★★, Drachen-Motiv). <strong>Bifolio bD3 (f27r+f27v):</strong> Rückkehr zu Sprache A nach Sprache-B-Einschub bD2 — <em>Symphytum officinale</em> (Beinwell) + <em>Leucanthemum vulgare</em> (Margerite); <span class="eva">sho·sho</span>-Emphase P.7 → R56 ★★★ validiert (R43 erfüllt). <strong>Bifolio bD4 vollständig (f28r–f29v, äußerste Lage Quire D):</strong> ophthalmologischer Bogen: f28r = Diagnose Sehverlust/Scheol (<em>Plantago major</em> ★★★★, <span class="eva">ytchol·yteol·deaiin=</span> y+t-Doppelverb-Kolophon, Corpus-Erstbeleg); f28v = Therapie Augenlicht (<em>Agrimonia eupatoria</em> ★★★, <span class="eva">sor·dar=</span> Heilerkolophon); f29r = Begleittherapie Blässe/Fieber (<em>Rumex crispus</em> ★★★, R15 Typ C Erstbeleg <span class="eva">shor·chor·sho</span>, R19-shor-Erweiterung, shocthy+cheeol ★★★ validiert); f29v = Pharmakopöe Augenpflanzen (<em>Echium vulgare</em> ★★★★, R35 chol·chol ★★★ validiert, ytchor →★★★★). R59 <span class="eva">qo</span>-Solitär → ★★★ validiert. Quire D: 10/16 Seiten analysiert (62,5 %).</p>
+		<div class="box-title">Schlussfolgerung: Sprache A = Sprache B — dialektale Variante</div>
+		<p class="conclusion-intro">
+			Die Sprachen A und B sind dialektale Varianten desselben Mischna-Hebräisch/Aramäisch-Systems:
+			A hat höhere o-Vokalfrequenz (Ḥolam), B mehr e-Vokale (Segol/Ṣere).
+			Textgenre, Prognose-Schema, Präfix-System und Kolophon-Konventionen sind identisch —
+			die Quire-Grenze A→B (f8v→f9r) ist textlich unsichtbar. Das Werk ist als Einheit konzipiert.
+		</p>
+		<ul>
+			<li>
+				<strong>Quire C vollständig (f17r–f21v, bC1–bC4, 16/16):</strong>
+				<span class="eva">qo-</span>-Präfix emergierend (R33 ★★★: bC1 ~5 %, bC2 ~4–5 %, bC3 ~10 %);
+				<span class="eva">sheol</span> Vollform Spr. A (R34); qo-Dopplung (R37);
+				<span class="eva">dom=</span> Kolophon-Finale (R39).
+				bC3: erste daiin·daiin-Dopplung, 7-gliedrige y+t-Litanei (R49), <span class="eva">ytor</span> → ★★★★★.
+				bC4: <span class="eva">cheol</span> ★★★★ (4. Beleg), R51 ★★★ (Illustrationszwickel), kompaktester Kolophon Corpus (f21v P.8).
+			</li>
+			<li>
+				<strong>Quire K bK1 vollständig (f71r–f72r2):</strong>
+				B-Register; R50 ★★★★ (ee/oo-Vokalklärung) + R52a ★★★★ (Determinans-y in Sternlabeln);
+				75 Sternlabeln, 12/12 Ankerwörter (100 %); Doppel-Stier-Hypothese (f71v kalendarisch / f72r1 astromedizinisch).
+			</li>
+			<li>
+				<strong>Bifolio bD1 (f25r–f25v):</strong>
+				daiin-reichstes Bifolio Corpus — 4 Doppelurteile + 3×daiin in einer Zeile (f25v P.2, R58 ★★★ Kand.);
+				<span class="eva">orchaiin=</span> ★★★★ (neue Kolophon-Formel);
+				<em>Urtica dioica</em> (f25r) + <em>Chelidonium majus</em> mit Drachen-Motiv (f25v).
+			</li>
+			<li>
+				<strong>Bifolio bD2 (f26r–f26v, Sprache B):</strong>
+				Spr.-B-Einschub; oraiin ★★★★ + dar·dar R36 ★★★★ + qotedy·qotedy R37 ★★★★ je R43 erfüllt;
+				stärkste Sequenz f26v P.4: <span class="eva">or·cheos·oraiin·okeo·chekaiin=</span> (Augenlicht-Kolophon ★★★★).
+			</li>
+			<li>
+				<strong>Bifolio bD3 vollständig (f27r+f27v+f30r+f30v):</strong>
+				f27r/v (v7.7): <em>Symphytum officinale</em> + <em>Leucanthemum vulgare</em>;
+				R56 ★★★ validiert (<span class="eva">sho·sho</span>-Emphase).
+				f30r (v8.1): <em>Polygonatum multiflorum</em>;
+				R19 Typ E Corpus-Erstbeleg (<span class="eva">cheor·chey·cheor·chey</span>), chain + opchol ★★★ validiert.
+				f30v (v8.1): <em>Urtica dioica</em>;
+				dain ★★★ validiert, R28→<span class="eva">ytor</span> Kand.,
+				<span class="eva">chokcheey</span> ★★★★ Kand. (Lebensvorschrift).
+			</li>
+			<li>
+				<strong>Bifolio bD4 vollständig (f28r–f29v):</strong>
+				ophthalmologischer Bogen —
+				f28r: Diagnose Sehverlust (<em>Plantago major</em>, <span class="eva">ytchol·yteol·deaiin=</span>);
+				f28v: Therapie Augenlicht (<em>Agrimonia eupatoria</em>, <span class="eva">sor·dar=</span> Heilerkolophon);
+				f29r: Begleittherapie Blässe/Fieber (<em>Rumex crispus</em>, R15 Typ C Erstbeleg <span class="eva">shor·chor·sho</span>, shocthy+cheeol ★★★ validiert);
+				f29v: Pharmakopöe Augenpflanzen (<em>Echium vulgare</em>, R35+ytchor ★★★★ + R59 ★★★ validiert).
+			</li>
+			<li>
+				<strong>Quire D gesamt:</strong>
+				Innenbifolios bD3+bD4 vollständig ✓ · bD1 (f25 ✓, f32 ausstehend) · bD2 (f26 ✓, f31 ausstehend)
+				— <strong>12/16 Seiten analysiert (75 %)</strong>.
+			</li>
+		</ul>
 	</div>
 </div>
 
@@ -76,5 +130,23 @@
 
 	.conclusion {
 		margin-top: 1.2rem;
+
+		& .conclusion-intro {
+			margin: 0 0 .6rem;
+			font-size: .92rem;
+		}
+
+		& ul {
+			margin: 0;
+			padding-left: 1.2rem;
+			display: flex;
+			flex-direction: column;
+			gap: .35rem;
+		}
+
+		& li {
+			font-size: .88rem;
+			line-height: 1.55;
+		}
 	}
 </style>

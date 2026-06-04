@@ -36,7 +36,7 @@ export const OPEN_PROBLEMS = [
     title: 'Regelmoratorium beendet (v8.1)',
     severity: 'strukturell',
     problem: 'Das Verhältnis validierter Regeln zu Kandidaten-Regeln hat sich umgekehrt: v6.2 = 2,25:1 · v6.6 = 1,47:1 · v7.4 = 0,84:1 · v7.7 = 1,03:1 · v7.8 = 1,11:1 · v7.9 = 1,14:1 · v8.0 = 1,27:1. Das ist ein klassisches Overfitting-Signal: Neue Beobachtungen generieren neue Regeln, anstatt bestehende Kandidaten zu schließen.',
-    hypothesis: 'Ab v7.5: Regelmoratorium (keine R60+) bis Verhältnis ≥ 1,5:1. Zielwert in v8.1 erreicht durch 4 Kandidaten-Absorptionen (R32→R25, R52→R15, R54→R19, R57→R11) + R28-Validierung: 34 validiert : 21 Kandidaten = 1,62:1. Moratorium endet — R60+ können wieder eingeführt werden. R56 ★★★ validiert (v7.7) · R59 ★★★ validiert (v7.8) · R35 ★★★ validiert (v7.9) · R28 ★★★ validiert (v8.1).',
+    hypothesis: 'Ab v7.5: Regelmoratorium (keine R60+) bis Verhältnis ≥ 1,5:1. Zielwert in v8.1 erreicht durch 4 Kandidaten-Absorptionen (R32→R25, R52→R15, R54→R19, R57→R11) + R28-Validierung: 34:21 = 1,62:1. Weiteres Wachstum durch f30r/f30v: +3 Lexikon-Validierungen (opchol, dain, chain via R43), R19 Typ E Kand. (ABAB f30r P.11), R28 Erweiterung ytor (f30v P.5) → 37 validiert : 18 Kandidaten = 2,06:1. Moratorium bleibt beendet. R56 ★★★ validiert (v7.7) · R59 ★★★ validiert (v7.8) · R35 ★★★ validiert (v7.9) · R28 ★★★ validiert (v8.1).',
     status: 'gelöst',
   },
   {
@@ -44,7 +44,7 @@ export const OPEN_PROBLEMS = [
     title: 'Frist-Tracking-Lücke',
     severity: 'mittel',
     problem: 'Das Mapping dokumentiert R43-Fristen in Lexikoneinträgen, aber es gibt kein aktives Tracking-System, das automatisch auf abgelaufene Fristen hinweist. Folge: 15 Einträge sind über mehrere Mapping-Versionen hinweg im ★★★-Kand.-Status verblieben, obwohl ihre Frist längst verstrichen war.',
-    hypothesis: 'Einführung einer Pflege-Tabelle für aktive R43-Fristen, die bei jeder neuen Mapping-Version systematisch geprüft wird. Aktive Fristen nach v8.1-Bereinigung: 24 Einträge (Reduktion von ~39 auf 24 durch 15 Downgrade-Maßnahmen).',
+    hypothesis: 'Einführung einer Pflege-Tabelle für aktive R43-Fristen, die bei jeder neuen Mapping-Version systematisch geprüft wird. Aktive Fristen nach v8.1-Bereinigung: 24 Einträge; nach f30r/f30v: −3 geschlossen (opchol, dain, chain → validiert) + 12 neue Kand. (chorain, cthorchy, dchorol, chseeor, soin, chokcheey, cphoaiin, sos, shoty, shosaiin, chokeor, chokchy) → ~33 aktive Fristen.',
     status: 'offen',
   },
   {

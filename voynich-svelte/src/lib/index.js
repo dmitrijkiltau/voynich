@@ -6,22 +6,21 @@ import { RULES } from './grammar-rules-data.js';
 export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_STATUS, RULES };
 
 export const STATS = {
-  version: '8.1',
+  version: '8.2',
   changelog: [
-    'Bereinigung + Addendum v8.0: 22 Lexikoneinträge ohne R43-Folgebeleg auf ★★ herabgestuft (15 aus Bereinigung + 8 aus Addendum-Fristkorrektur; Direktsuche in EVA-Transkriptionen H/C/F/U verifiziert). oro gerettet: Vorbeleg f23v P.12 nachgewiesen → R43 erfüllt → ★★★ regulär (nicht mehr Kandidat).',
-    'Lexikon-Duplikate bereinigt: ykar (Quire-C-Form ★★★★ + f69r P.3 register-übergreifend) und cham (Wärme/Entzündung + f69r hippokratischer Befund-Term) jeweils zu einem konsolidierten Eintrag zusammengeführt; Netto −1 Eintrag.',
-    'Regelabsorptionen (4): R32 → R25 (dydyd-Fusionstoken als Fußnote); R52 → R15 Typ D (Kolophon-Trias, Frist abgelaufen); R54 → R19 (dal·dam·dal Rahmungsvariante); R57 → R11 (odaiim= Sektionsabschluss-Variante).',
-    'R28 y+t+[Terminus] validiert (★★★): R43 erfüllt — f16v + f28r = 2 Folios, 4 unabhängige Instanzen; f29v P.2 Zweitbeleg ytchor bestätigt. R55 oro-Palindrom ★★ Kand. (nur 1 striktes oro= in f24v P.5; Frist abgelaufen).',
-    'Moratorium beendet: 34 validiert : 21 Kandidaten = 1,62:1 (Ziel ≥ 1,50:1 erreicht). R60+ wieder freigegeben. 16 aktive R43-Fristen (nach Addendum-Korrektur). OP5 geschlossen; OP6 (Frist-Tracking) + OP7 (Moratorium-Drift) neu.',
+    'f30r/f30v (Bifolio bD3 Abschluss): 13 neue Lexikoneinträge (+11 Neuzugänge, +2 Aufstufungen chokchy ★★★★, dain ★★★ validiert)',
+    'R43 erfüllt für opchol (f28r+f30r), dain (f1r+f30v), chain (f29v+f30r) → 37 validiert : 18 Kandidaten = 2,06:1. R19 Typ E (ABAB-Verflechtung cheor·chey·cheor·chey, Corpus-Erstbeleg f30r P.11)',
+    'R28 Erweiterung ytor = y+t+or (f30v P.5). Neue Kolophon-Formen: qor·chain·cthorchy= (f30r P.7) + shol·chokcheey·daiin·kchydy= (f30v P.11). Bifolio bD3 vollständig',
+    'Quire-D-Innenbifolios bD3+bD4 abgeschlossen. Ankerwort-Quote: 100 % (62 Seiten).',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.length,
   rules: RULES.length,
-  validatedRules: 34,
+  validatedRules: 37,
   backtest: '100%',
   backtestFraction: 'Typ I: 11/11 (100%) · Typ II: 18/21 (86%)',
   backtestTotal: '32',
   gibberishRate: '10,4 %',
-  foliosA: 'f1r–f29v',
-  foliosAll: 'f1r, f1v–f29v (Quires A–B+C komplett, Quire D bD1+bD2+bD3+bD4 vollständig), f57r, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v',
+  foliosA: 'f1r–f30v',
+  foliosAll: 'f1r, f1v–f30v (Quires A–B+C komplett, Quire D Innenbifolios bD3+bD4 vollständig · bD1 f25 teilw. · bD2 f26 teilw.), f57r, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v',
 };

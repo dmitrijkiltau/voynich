@@ -208,7 +208,7 @@ export const LEXICON = [
   { eva: 'doldy',     heb: 'דּוֹל+דִּי',          de: 'von der Krankheit davon (dol + Genitivpartikel)',             stars: '★★★',  cat: 'syntax'     },
   { eva: 'dary',      heb: 'דַּרִי',              de: 'mein Leuchtendes / mein Licht (Possessiv von dar)',           stars: '★★★',  cat: 'prognose'   },
   { eva: 'sotchaiin', heb: 'שׁ+אוֹת+כְּ+עַיִן',  de: 'das Zeichen dem Auge gleich (sho+otchor+aiin-Kompositum)',   stars: '★★★',  cat: 'kompositum' },
-  { eva: 'chokchy',   heb: 'חֹק+כְּ+הִי',         de: 'Vorschrift der Blässe (chok + ckhy-Kompositum)',             stars: '★★★',  cat: 'symptom'    },
+  { eva: 'chokchy',   heb: 'חֹק+כְּ+הִי',         de: 'Vorschrift der Blässe (chok + ckhy-Kompositum) — ★★★★ Kand. (Erstbeleg f30v P.7, H/C/F vollständig einig)',  stars: '★★★★', cat: 'symptom'    },
   { eva: 'chekhol',   heb: 'כְּ+כָּ+חֹל',         de: 'wie das Augenpigment (doppelter Komparativ)',                 stars: '★★★',  cat: 'akteur'     },
   { eva: 'ychair',    heb: 'יְ+חַ+אִיר',          de: 'er wird durch Wärme leuchten (Heilungsverb mit char-Stamm)',  stars: '★★★',  cat: 'verb'       },
   { eva: 'ychekchy',  heb: 'יְ+כְּ+כְּ+הִי',      de: 'er heilt wie totale Blässe (doppelter k-Komparativ)',         stars: '★★★',  cat: 'verb'       },
@@ -333,7 +333,7 @@ export const LEXICON = [
   { eva: 'soshy',     heb: 'שׂ+אֹ+שׁ+יְ',               de: 'gleich Scheol-er (Doppel-Shin: sin + alef + shin + yod) — f25r P.1; ★★★ Kand. (Erstbeleg, Folgebeleg erforderlich)',                                            stars: '★★★',  cat: 'prognose'   },
   // ── v7.4 (Härtetests f1r + f1v — Quire A, bA1: Haskama-Analyse) ──
   { eva: 'daiiin',    heb: 'דִּינִין',                  de: 'Urteile (Aramäischer Emphase-Plural von דִּין; Aram. Plural-iin, 3× Yod) — f1r T3 `otol.daiiin=`; 6/6 Transkriptoren einig (H/C/F/N/X/U); R40-Ausnahme b+c; f26v P.1 + P.7 (2. Folio-Beleg); f27r P.12 (3. Folio-Beleg) = R43 dreifach erfüllt → ★★★★',            stars: '★★★★',  cat: 'syntax'     },
-  { eva: 'dain',      heb: 'דָּן',                      de: 'Richter (Partizip QAL von דין) — f1r T2 `dain.os.teody=` + P3.L14 (3 Belege); morphologische Distinktion zu daiin (Substantiv) und daiiin (Plural); ★★★ Kand.',           stars: '★★★',  cat: 'akteur'     },
+  { eva: 'dain',      heb: 'דָּן',                      de: 'Richter (Partizip QAL von דין) — f1r T2 `dain.os.teody=` + P3.L14; morphologische Distinktion zu daiin (Substantiv) und daiiin (Plural) — R43 erfüllt: f1r T2/P3 + f30v P.5 = 2 Folios → ★★★ validiert',  stars: '★★★',  cat: 'akteur'     },
   // ── v7.6 (f26r + f26v — Bifolio bD2: Solanum nigrum + Centaurea cyanus) ──
   { eva: 'saraiir',   heb: 'שַׂר+אִיר',              de: 'Arzt des Leuchtenden (sar + aiir Komposit) — f26v P.2 — ★★ (R43-Frist abgelaufen, Direktsuche f27r–f29r negativ)',                stars: '★★',   cat: 'akteur'  },
   { eva: 'ykeechy',   heb: 'יְ+כְּ+אֵ+כְּ+הֵי',       de: 'er heilt wie Blässe-Licht (8. y+k-Verb) — f26r P.9 — ★★ (R43-Frist abgelaufen, Direktsuche f26v–f28v negativ)',          stars: '★★',   cat: 'verb'    },
@@ -351,7 +351,7 @@ export const LEXICON = [
   // ── v7.8 (f28r + f28v — Bifolio bD4: Plantago major + Agrimonia eupatoria) ──
   { eva: 'sor',       heb: 'שׂ+אֹר',                de: 'Arzt des Lichts (Sprache-A-Vokalalternanz von sar, a↔o R33-konform) — ★★★★; f28v P2.9 Kolophon (Heilerkolophon sor·dar=)',               stars: '★★★★', cat: 'akteur'     },
   { eva: 'pchodar',   heb: 'פְּ+כֹּ+דַּ+ר',          de: 'wie Finsternis/Dunkelheit (von כָּדַר aram.) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.1)',                                      stars: '★★★',  cat: 'symptom'    },
-  { eva: 'opchol',    heb: 'עַ+פְּ+כֹּ+ל',           de: 'auf allem wirkend (Pe-Präfix + chol) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.1)',                                             stars: '★★★',  cat: 'akteur'     },
+  { eva: 'opchol',    heb: 'עַ+פְּ+כֹּ+ל',           de: 'auf allem wirkend (Pe-Präfix + chol) — R43 erfüllt: f28r P.1 + f30r P.8 = 2 Folios → ★★★ validiert',                                    stars: '★★★',  cat: 'akteur'     },
   { eva: 'dchar',     heb: 'דְּ+כַּ+ר',              de: 'vom Widder/männlich (Zutaten-Term, d-Genitiv + kar) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.2)',                              stars: '★★★',  cat: 'akteur'     },
   { eva: 'chakod',    heb: 'כְּ+עַ+כֹּ+ד',           de: 'wie zusammen/versammelt (k-Komparativ + akod) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.2)',                                   stars: '★★★',  cat: 'syntax'     },
   { eva: 'cthol',     heb: 'כְּ+ת+הֹ+ל',             de: 'Vollständigkeits-Marker (strukturell: 3× in f28r P.2–P.4) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.2)',                      stars: '★★★',  cat: 'kolophon'   },
@@ -370,11 +370,23 @@ export const LEXICON = [
   { eva: 'shokchy',   heb: 'שׁוֹ+כְּ+כֵּי',            de: 'Scheol-Blässe / Blässe des Todes (sho + k + key) — ★★★ Kand. (Erstbeleg f29r P.7)',                                                   stars: '★★★',  cat: 'prognose'   },
   { eva: 'ychom',     heb: 'יְ+חוֹם',                 de: 'er wird genesen / er wird warm (y-Imperfekt von חום) — ★★★ Kand. (Erstbeleg f29r P.9)',                                               stars: '★★★',  cat: 'verb'       },
   { eva: 'shot',      heb: 'שׁוֹ+תְּ',                de: 'vollständiges Scheol (sho-Präfix + tav-Intensiv) — ★★★ Kand. (Erstbeleg f29v P.4)',                                                   stars: '★★★',  cat: 'prognose'   },
-  { eva: 'chain',     heb: 'חַ+עַיִן',                de: 'lebendiges Auge / Auge des Lebens (cham-Stamm + ayin) — ★★★ Kand. (Erstbeleg f29v P.5)',                                              stars: '★★★',  cat: 'akteur'     },
+  { eva: 'chain',     heb: 'חַ+עַיִן',                de: 'lebendiges Auge / Auge des Lebens (cham-Stamm + ayin) — R43 erfüllt: f29v P.5 + f30r P.7 = 2 Folios → ★★★ validiert',               stars: '★★★',  cat: 'akteur'     },
   { eva: 'chykar',    heb: 'כְּ+הֵי+כַּ+ר',            de: 'Blässe-Kraft (Zutaten-Variante? k + hey + kar) — ★★ Kand. (Erstbeleg f29v P.10)',                                                     stars: '★★',   cat: 'symptom'    },
   // ── v8.0 (f69r — Quire J/X: Kosmologisches Rad-Diagramm bJ1) ──
   { eva: 'cholam',   heb: 'כֹּ+עוֹלָם',               de: 'wie die Welt / wie Ewigkeit (ko-Komparativ + olam; kosmologisch kohärent) — ★★★★ Kand. (Erstbeleg f69r C.3)',                            stars: '★★★★', cat: 'prognose'   },
   { eva: 'otolam',   heb: 'אוֹת+עַל+אָם',             de: 'Zeichen über alle / Zeichen der Ewigkeit (ot + ol + am) — ★★★★ Kand. (Erstbeleg f69r C.9)',                                               stars: '★★★★', cat: 'akteur'     },
   { eva: 'dairam',   heb: 'דְּ+אִיר+אָם',              de: 'von dem Leuchtenden aller (d-Genitiv + air + am; Radial-Kolophon-Form) — ★★★ Kand. (Erstbeleg f69r R.3)',                                  stars: '★★★',  cat: 'akteur'     },
   { eva: 'tam',      heb: 'תָּם',                      de: 'vollständig / rein — Radial-Kolophon-Typ, Unterform von cthom (tam= als Abschlussmarker in f69r R.5) — ★★★★ Kand. (Erstbeleg f69r R.5)', stars: '★★★★', cat: 'kolophon'   },
+  // ── v8.1 (f30r + f30v — Bifolio bD3 Abschluss: Polygonatum multiflorum + Urtica dioica) ──
+  { eva: 'chorain',   heb: 'כְּ+אוֹר+עַיִן',          de: 'wie das Licht des Auges (k-Komparativ + or + ayin; Strukturanalog zu poraiin, aber komparativ statt direktional) — ★★★ Kand. (Erstbeleg f30r P.3)',              stars: '★★★',  cat: 'akteur'     },
+  { eva: 'cthorchy',  heb: 'כְּ+תְּ+אוֹר+כְּ+הִי',   de: 'vollständige Heilung der Blässe (cthor + chy) — positives Therapie-Kompositum im Kolophon; Kolophon-Abschluss P.7 oberer Textblock — ★★★ Kand. (Erstbeleg f30r P.7)',  stars: '★★★',  cat: 'kolophon'   },
+  { eva: 'dchorol',   heb: 'דְּ+כְּ+אוֹר+עֹ+לְ',     de: 'von der Pupille hin (d-Relativpräfix R45 + chor + ol-Direktional) — gibt der Scheol-Licht-Dichotomie einen direktionalen Rahmen — ★★★ Kand. (Erstbeleg f30r P.6)', stars: '★★★',  cat: 'prognose'   },
+  { eva: 'chseeor',   heb: 'כְּ+שֵׁ+אוֹר',            de: 'wie die Gabe des Lichts (k-Komparativ + shee + or; Dreifach-Kompositum) — positiver Heilungsabschluss — ★★★ Kand. (Erstbeleg f30r P.6)',                             stars: '★★★',  cat: 'prognose'   },
+  { eva: 'soin',      heb: 'שׂ+עַ+יִן',               de: 'Feuer des Auges / Augenentzündung (sin + ayin + yod; Diagnose-Term für akute Augenentzündung) — ★★★ Kand. (Erstbeleg f30r P.4)',                                    stars: '★★★',  cat: 'symptom'    },
+  { eva: 'chokcheey', heb: 'חֹק+חֵיי',                de: 'Lebensvorschrift (chok + cheey; Rezept-Substantiv: Therapieanweisung + Lebensprinzip) — stärkstes therapeutisches Kompositum in bD3; Kolophon-Abschluss f30v P.11 — ★★★★ Kand. (Erstbeleg f30v P.11, 3/3 Transkriptoren)',  stars: '★★★★', cat: 'kolophon'   },
+  { eva: 'cphoaiin',  heb: 'כְּ+פְּ+עַ+יִן',          de: 'wie der Atemweg des Auges (k-Komparativ + pho + ayin; anatomisch-funktionale Verbindung Atem–Sehorgan) — ★★★ Kand. (Erstbeleg f30v P.8, 3/3 Transkriptoren)',         stars: '★★★',  cat: 'symptom'    },
+  { eva: 'sos',       heb: 'שׁ+עַ+שׁ',                de: 'Feuer auf Feuer / Fieber-Intensivierung (Doppel-Shin: shin + ayin + shin) — 2× auf f30v (P.7 + P.9) — ★★★ Kand. (Erstbeleg f30v P.7)',                              stars: '★★★',  cat: 'symptom'    },
+  { eva: 'shoty',     heb: 'שׁוֹ+תְּ+יְ',             de: 'vollständiges Scheol von ihm (sho-Apokope + t-Intensivator + y-Possessiv; Distinktion zu shot f29v) — ★★★ Kand. (Erstbeleg f30v P.5)',                              stars: '★★★',  cat: 'prognose'   },
+  { eva: 'shosaiin',  heb: 'שׁוֹ+שַׂ+עַיִן',           de: 'Scheol des Augenarztes (sho-Apokope + saiin; diagnostisches Maximalsignal: Augenarzt vor lebensbedrohlichem Befund) — ★★★★ Kand. (Erstbeleg f30v P.1)',              stars: '★★★★', cat: 'prognose'   },
+  { eva: 'chokeor',   heb: 'חֹק+אֵ+אוֹר',             de: 'Vorschrift des Lichts (chok + eor; therapeutisches Kompositum: Lichtbehandlungsanweisung) — ★★★ Kand. (Erstbeleg f30v P.3)',                                        stars: '★★★',  cat: 'symptom'    },
 ];

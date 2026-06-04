@@ -59,6 +59,7 @@ export const FOLIO_STATUS = {
   f27r:'done', f27v:'done',
   f28r:'done', f28v:'done',
   f29r:'done', f29v:'done',
+  f30r:'done', f30v:'done',
 
   // ── Lage 10 · Kosmologisch — f69r Rad-Diagramm vollständig analysiert ──────
   f69r:'done',

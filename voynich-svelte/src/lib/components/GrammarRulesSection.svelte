@@ -3,7 +3,29 @@
 	import { STATS } from '$lib';
 </script>
 
-<p>{RULES.length} Regeln gesamt: <strong>{STATS.validatedRules} validiert</strong> (≥ 2 unabhängige Belege) + <strong>{RULES.length - STATS.validatedRules} Kandidaten</strong> (darunter v6.2 R40–R42, D1/D2; v6.3 R43–R44; v6.4 R45–R48; v6.5 R33-Erweiterung + R49; v6.6 R50; v6.8 R51 ★★★ gesichert (Illustrationszwickel-Einschübe, 3 Folios, R43 erfüllt); v6.9 R52a ★★★★; v7.0–v7.2 R53 ★★★★ (Pflanzen-Titel-Duplikation, 4 Belege, Subtypen A/B/C); v7.3 R58 ★★★ Kand. (3×daiin-Konzentration, Corpus-Erstbeleg f25v P.2); v7.4 R59 → ★★★ validiert v7.8 (R43 erfüllt: f1v P.7 + f28r P.1); Aufstufungen v7.7: R56 ★★★ validiert; v7.9: R35 ★★★ validiert; v8.1: R28 ★★★ validiert (y+t+[Terminus], R43 erfüllt f16v + f28r); v8.1 absorbiert: R32 → R25, R52 → R15 Typ D, R54 → R19, R57 → R11). R14 und R20 gelten als gesichert (★★★★★). Regeln mit ⚠ im Titel sind Warnsignale ohne automatische Konfidenzreduktion. <strong>Regelmoratorium beendet (v8.1):</strong> Verhältnis {STATS.validatedRules}:{RULES.length - STATS.validatedRules} = {(STATS.validatedRules / (RULES.length - STATS.validatedRules)).toFixed(2).replace('.', ',')}:1 — Ziel ≥ 1,5:1 erreicht. R60+ wieder freigegeben.</p>
+<p>
+	{RULES.length} Regeln gesamt: <strong>{STATS.validatedRules} validiert</strong> (≥ 2 unabhängige Belege)
+	+ <strong>{RULES.length - STATS.validatedRules} Kandidaten</strong>.
+	R14 und R20 gesichert (★★★★★). Regeln mit ⚠ im Titel sind Warnsignale ohne automatische Konfidenzreduktion.
+	<strong>Regelmoratorium beendet (v8.1):</strong> Verhältnis
+	{STATS.validatedRules}:{RULES.length - STATS.validatedRules}
+	= {(STATS.validatedRules / (RULES.length - STATS.validatedRules)).toFixed(2).replace('.', ',')}:1
+	— Ziel ≥ 1,5:1 erreicht. R60+ freigegeben.
+</p>
+
+<div class="box hl updates-box">
+	<div class="box-title">Aufstufungen &amp; Absorptionen — Versionshistorie</div>
+	<ul>
+		<li><strong>v6.2:</strong> R40–R42, D1/D2 (Härtungsmaßnahmen)</li>
+		<li><strong>v6.3:</strong> R43–R44 · <strong>v6.4:</strong> R45–R48 · <strong>v6.5:</strong> R33-Erweiterung + R49 · <strong>v6.6:</strong> R50</li>
+		<li><strong>v6.8:</strong> R51 ★★★ (Illustrationszwickel-Einschübe, 3 Folios, R43 erfüllt) · <strong>v6.9:</strong> R52a ★★★★</li>
+		<li><strong>v7.0–v7.2:</strong> R53 ★★★★ (Pflanzen-Titel-Duplikation, 4 Belege, Subtypen A/B/C)</li>
+		<li><strong>v7.3:</strong> R58 ★★★ Kand. (3×daiin-Konzentration, Erstbeleg f25v P.2) · <strong>v7.4 → v7.8:</strong> R59 ★★★ validiert (R43: f1v + f28r)</li>
+		<li><strong>v7.7:</strong> R56 ★★★ validiert (sho·sho-Emphase, R43: f24v + f27v) · <strong>v7.9:</strong> R35 ★★★ validiert (chol·chol, R43: f17v + f29v)</li>
+		<li><strong>v8.1:</strong> R28 ★★★ validiert (y+t+[Terminus], R43: f16v + f28r) · Absorbiert: R32 → R25, R52 → R15 Typ D, R54 → R19, R57 → R11</li>
+		<li><strong>v8.1 f30r/f30v:</strong> R19 Typ E ★★★ Kand. (ABAB-Verflechtung <span class="eva">cheor·chey·cheor·chey</span>, Erstbeleg f30r P.11) · R28 Erweiterung: <span class="eva">ytor</span> = y+t+or ★★★ Kand. (f30v P.5)</li>
+	</ul>
+</div>
 
 <div class="rules-wrap">
 	<table class="dt">
@@ -24,6 +46,23 @@
 </div>
 
 <style>
+	.updates-box {
+		margin-bottom: 1.4rem;
+
+		& ul {
+			margin: .4rem 0 0;
+			padding-left: 1.2rem;
+			display: flex;
+			flex-direction: column;
+			gap: .3rem;
+		}
+
+		& li {
+			font-size: .88rem;
+			line-height: 1.5;
+		}
+	}
+
 	.rules-wrap {
 		overflow-x: auto;
 	}
