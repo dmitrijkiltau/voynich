@@ -171,10 +171,13 @@
 			</ol>
 		</nav>
 
+		<!-- I. ZUSAMMENFASSUNG -->
 		<SummarySection />
 
+		<!-- II. METHODOLOGIE -->
 		<MethodologySection />
 
+		<!-- III. ÜBERSETZER-TOOL -->
 		<TranslatorTool bind:input={evaInput} />
 
 		<!-- IV. ZEICHENMAPPING -->
@@ -203,10 +206,7 @@
 		</section>
 
 		<!-- VII. GRAMMATIKREGELN -->
-		<section class="section" id="grammar-rules">
-			<h2>VII. Grammatikregeln</h2>
-			<GrammarRulesSection />
-		</section>
+		<GrammarRulesSection />
 
 		<!-- VIII. RÜCKWÄRTSTEST -->
 		<section class="section" id="backwards-test">
