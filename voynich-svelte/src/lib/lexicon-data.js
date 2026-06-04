@@ -21,7 +21,7 @@ export const LEXICON = [
   { eva: 'char',      heb: 'חַר',        de: 'heiß / Fieber',                               stars: '★★★★',  cat: 'symptom' },
   { eva: 'chary',     heb: 'חַרִי',       de: 'sein Fieber (Possessiv)',                     stars: '★★★',   cat: 'symptom' },
   { eva: 'ckhal',     heb: 'כְּהַל',       de: 'Nachlassen des Fiebers',                      stars: '★★★',   cat: 'symptom' },
-  { eva: 'dol',       heb: 'דָּוֶה',       de: 'Schmerz / Krankheit',                         stars: '★★★',   cat: 'symptom' },
+  { eva: 'dol',       heb: 'דָּוֶה',       de: 'Schmerz / Krankheit',                         stars: '★★★',   cat: 'symptom',  part: 'FOLIUM' },
   { eva: 'odol',      heb: 'עַ+דָּוֶה',     de: 'auf die Krankheit (o+dol)',                   stars: '★★★★',  cat: 'symptom' },
   { eva: 'dolar',     heb: 'דָּוֶה+לְאוֹר',  de: 'Krankheit zur Heilung',                       stars: '★★★',   cat: 'symptom' },
   { eva: 'shees',     heb: 'אֵשׁ',         de: 'Feuer / Fieberbrand',                         stars: '★★★',   cat: 'symptom' },
@@ -41,7 +41,7 @@ export const LEXICON = [
   { eva: 'lor',       heb: 'לְאוֹר',       de: 'zum Licht / zur Heilung',                     stars: '★★★★★', cat: 'prognose' },
   { eva: 'lshol',     heb: 'לְשׁוֹל',       de: 'zum Tod / zu Scheol',                         stars: '★★★★★', cat: 'prognose' },
   { eva: 'chaiin',    heb: 'חַיִּין',       de: 'Leben (Chayyim)',                             stars: '★★★★',  cat: 'prognose' },
-  { eva: 'sheey',     heb: 'שֵׁי',         de: 'Gabe / Wohlbefinden',                         stars: '★★★★',  cat: 'prognose' },
+  { eva: 'sheey',     heb: 'שֵׁי',         de: 'Gabe / Wohlbefinden',                         stars: '★★★★',  cat: 'prognose', part: 'FLOS' },
   { eva: 'cheor',     heb: 'כְּאוֹר',       de: 'wie Licht (Heilungszeichen)',                 stars: '★★★★',  cat: 'prognose' },
   { eva: 'otshol',    heb: 'אוֹתשׁוֹל',     de: 'das Zeichen des Todes',                       stars: '★★★★★', cat: 'prognose' },
   { eva: 'chan',      heb: 'חָן',         de: 'Gnade / günstige Prognose',                   stars: '★★★★',  cat: 'prognose' },
@@ -93,7 +93,7 @@ export const LEXICON = [
   // ── Akteure, Anatomie & Botanik ─────────────────────
   { eva: 'sar',       heb: 'שַׂר',              de: 'Arzt / Meister / Vorsteher',                  stars: '★★★★',  cat: 'akteur' },
   { eva: 'sary',      heb: 'שַׂרִי',            de: 'mein Arzt (Possessiv)',                       stars: '★★★',   cat: 'akteur' },
-  { eva: 'pchy',      heb: 'פְּחִי',            de: 'mein Atem / mein Mund',                       stars: '★★★',   cat: 'akteur' },
+  { eva: 'pchy',      heb: 'פְּחִי',            de: 'mein Atem / mein Mund',                       stars: '★★★',   cat: 'akteur',  part: 'FLOS/FRUCTUS' },
   { eva: 'opchor',    heb: 'עַ+פְּ+חֹר',        de: 'auf die Pupille (Atemweg-Befund)',             stars: '★★★',   cat: 'akteur' },
   { eva: 'al',        heb: 'עַל',               de: 'auf / über / betreffend (Var.: ol)',           stars: '★★★★',  cat: 'akteur' },
   { eva: 'saiin',     heb: 'שַׂעַיִן',          de: 'Augenarzt',                                   stars: '★★★★',  cat: 'akteur' },
@@ -103,7 +103,7 @@ export const LEXICON = [
   { eva: 'kchol',     heb: 'כְּ+חֹל',           de: 'wie Augensalbe / Kohl-Pigment (Blaupigment)', stars: '★★★',   cat: 'akteur' },
   { eva: 'sam',       heb: 'שַׂם',              de: 'Arznei / er gibt',                            stars: '★★★',   cat: 'akteur' },
   { eva: 'shty',      heb: 'שְׁתִי',            de: 'Getränk / Trank',                             stars: '★★★',   cat: 'akteur' },
-  { eva: 'pol',       heb: 'פֹּל',              de: 'Bohne / Beere',                               stars: '★★★',   cat: 'akteur' },
+  { eva: 'pol',       heb: 'פֹּל',              de: 'Bohne / Beere / Frucht',                      stars: '★★★',   cat: 'akteur',  part: 'FRUCTUS' },
   { eva: 'otoaiin',   heb: 'עַתוֹעַיִן',        de: 'auf seine Augen',                             stars: '★★★',   cat: 'akteur' },
   { eva: 'chokeos',   heb: 'כֹּכֵּאוֹס',        de: 'wie ein Kelch (Botanik)',                     stars: '★★★',   cat: 'akteur' },
   // ── Bestätigte Komposita ────────────────────────────
@@ -129,7 +129,7 @@ export const LEXICON = [
   { eva: 'otcho',     heb: 'אוֹת+כֹּ',          de: 'das Zeichen des [Atems] (Kolophon-Kurzform)',  stars: '★★★',   cat: 'kolophon' },
   { eva: 'otchy',     heb: 'אוֹת+כְּ+הִי',      de: 'das Zeichen der Blässe',                       stars: '★★★★',  cat: 'symptom' },
   { eva: 'dchckhy',   heb: 'דְּ+כְּ+כְּ+הִי',  de: 'von tiefer Blässe (Intensiv-Diagnosesiegel)',  stars: '★★★★',  cat: 'kolophon' },
-  { eva: 'chey',      heb: 'חֵי',               de: 'lebendig / am Leben (Adj.)',                   stars: '★★★',   cat: 'prognose' },
+  { eva: 'chey',      heb: 'חֵי',               de: 'lebendig / am Leben (Adj.)',                   stars: '★★★',   cat: 'prognose', part: 'FLOS/CAULIS' },
   { eva: 'oeeen',     heb: 'עַ+אֵין',           de: 'auf das Fehlen / Nichts (emphatic null)',       stars: '★★★',   cat: 'prognose' },
   { eva: 'oir',       heb: 'עַ+אוֹר',           de: 'auf das Licht / Direktional-Heilung',          stars: '★★★',   cat: 'prognose' },
   { eva: 'choor',     heb: 'כְּ+אוּר',          de: 'wie das Licht (lang-vokalisierte Variante)',   stars: '★★★',   cat: 'prognose' },
@@ -152,7 +152,7 @@ export const LEXICON = [
   { eva: 'dainod',    heb: 'דַּ+אִין+עֹד',       de: 'er behandelt das Auge weiter',                 stars: '★★★',   cat: 'verb' },
   { eva: 'shody',     heb: 'שְׁאוֹ+דִּי',        de: 'von Scheol — dessen (Genitiv)',                stars: '★★★',   cat: 'prognose' },
   { eva: 'otly',      heb: 'אוֹת+לֵ',            de: 'Zeichen zu/für (oto-Direktional)',             stars: '★★★',   cat: 'kompositum' },
-  { eva: 'opchy',     heb: 'עַ+פְּ+הִי',         de: 'auf den Atemweg (o+pchy-Direktional)',         stars: '★★★',   cat: 'akteur' },
+  { eva: 'opchy',     heb: 'עַ+פְּ+הִי',         de: 'auf den Atemweg (o+pchy-Direktional)',         stars: '★★★',   cat: 'akteur',  part: 'FLOS/FRUCTUS' },
   // f16v
   { eva: 'ytchor',    heb: 'יְ+תְּ+חֹר',         de: 'er/sie wird die Pupille heilen (y+t-Doppelpräfix) — R43 erfüllt: f16v P.2 + f29v P.2 = 2 Folios → ★★★★', stars: '★★★★', cat: 'verb' },
   { eva: 'ytchy',     heb: 'יְ+תְּ+כְּהִי',      de: 'er/sie wird Blässe zeigen (y+t-Doppelpräfix)', stars: '★★★',  cat: 'verb' },
@@ -266,7 +266,7 @@ export const LEXICON = [
   // ── v6.6 (f77r — D2-Phonotaktik-Härtetest, Quire M) ─────────────────────
   { eva: 'cheol',          heb: 'ח-ע-ל',           de: 'schöpfen / heben (R43 erfüllt: f77r P.21/P.24/P.38 + f20v P.2 + f21r P.5 + f21r P.8 → 4 Belege, 3 Folios, ★★★★ gesichert; Var. cheeol P.21; genuine ח-ע-Cluster, R50 greift nicht; balneologisch: Augenbad-Marker)', stars: '★★★★', cat: 'verb'       },
   // ── v6.7 (f20r + f20v — Bifolio bC4: Astragalus glycyphyllos + Centaurea scabiosa) ──
-  { eva: 'cheey',          heb: 'חֵיי',             de: 'Leben / lebendig (Tsere-Variante von chey per R50; f20r P.13 Schlusskolophon: chor.chor.cheey.tchey= = Pupille—Pupille—Leben—sie belebt)', stars: '★★★',  cat: 'prognose'   },
+  { eva: 'cheey',          heb: 'חֵיי',             de: 'Leben / lebendig (Tsere-Variante von chey per R50; f20r P.13 Schlusskolophon: chor.chor.cheey.tchey= = Pupille—Pupille—Leben—sie belebt)', stars: '★★★',  cat: 'prognose', part: 'FLOS/CAULIS' },
   { eva: 'dol·shol',       heb: 'דָּוֶה+שׁוֹל',    de: 'Schmerz-Scheol (negatives Befundpaar: schwach+Tod; R15-Antonymenpaar; therapeutisches Warnsignal bei Überdosierung) — f20r P.7', stars: '★★★',  cat: 'prognose'   },
   // ── v6.8 (f21r + f21v — Bifolio bC4 Abschluss: Thymus serpyllum + Aquilegia vulgaris) ──
   { eva: 'tshaiin',        heb: 'תּ+שׁ+עַיִן',     de: 'du wirst das Auge [behandeln/waschen] — tav-Imperfekt 2. Sg. + aiin: therapeutischer Direktbefehl an den Arzt — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg)', stars: '★★',   cat: 'verb'       },

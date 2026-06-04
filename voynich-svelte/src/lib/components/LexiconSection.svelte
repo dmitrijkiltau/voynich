@@ -16,8 +16,19 @@
 		{ key: 'eva',   label: 'EVA' },
 		{ key: 'heb',   label: 'Hebräisch' },
 		{ key: 'de',    label: 'Bedeutung' },
+		{ key: 'part',  label: 'Pflanzenteil' },
 		{ key: 'stars', label: 'Konf.' },
 	];
+
+	/** @param {string} catId */
+	function hasPart(catId) {
+		return LEXICON.some(e => e.cat === catId && e.part);
+	}
+
+	/** @param {string} catId */
+	function colsFor(catId) {
+		return hasPart(catId) ? COLS : COLS.filter(c => c.key !== 'part');
+	}
 
 	/** @type {Record<string, { col: string, dir: 1|-1 }>} */
 	let sortStates = $state(
@@ -63,7 +74,7 @@
           <table class="dt">
             <thead>
               <tr>
-                {#each COLS as col}
+                {#each colsFor(cat.id) as col}
                   {@const s = sortStates[cat.id]}
                   <th
                     data-sortable
@@ -97,6 +108,9 @@
                   <td><span class="eva">{entry.eva}</span></td>
                   <td><span class="heb-sm">{entry.heb}</span></td>
                   <td class="meaning">{entry.de}</td>
+                  {#if hasPart(cat.id)}
+                    <td class="part-cell">{entry.part ?? '—'}</td>
+                  {/if}
                   <td><span class={is5 ? 'conf5' : 'conf'}>{entry.stars}</span></td>
                 </tr>
               {/each}
@@ -139,6 +153,13 @@
       max-height: none;
       overflow: visible;
     }
+  }
+
+  .part-cell {
+    font-size: 0.78rem;
+    color: var(--ink-f);
+    white-space: nowrap;
+    font-family: var(--font-mono);
   }
 
   th[data-sortable] {

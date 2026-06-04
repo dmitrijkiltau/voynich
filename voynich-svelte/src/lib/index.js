@@ -6,17 +6,17 @@ import { RULES } from './grammar-rules-data.js';
 export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_STATUS, RULES };
 
 export const STATS = {
-  version: '8.2',
+  version: '8.3',
   changelog: [
-    'f30r/f30v (Bifolio bD3 Abschluss): 13 neue Lexikoneinträge (+11 Neuzugänge, +2 Aufstufungen chokchy ★★★★, dain ★★★ validiert)',
-    'R43 erfüllt für opchol (f28r+f30r), dain (f1r+f30v), chain (f29v+f30r) → 37 validiert : 18 Kandidaten = 2,06:1. R19 Typ E (ABAB-Verflechtung cheor·chey·cheor·chey, Corpus-Erstbeleg f30r P.11)',
-    'R28 Erweiterung ytor = y+t+or (f30v P.5). Neue Kolophon-Formen: qor·chain·cthorchy= (f30r P.7) + shol·chokcheey·daiin·kchydy= (f30v P.11). Bifolio bD3 vollständig',
-    'Quire-D-Innenbifolios bD3+bD4 abgeschlossen. Ankerwort-Quote: 100 % (62 Seiten).',
+    '{plant}-Positionskodierung (v8.3): Vertikale Position des {plant}-Markers kodiert Pflanzenteil-Zuordnung (FLOS/FRUCTUS/CAULIS/FOLIUM/RADIX). R14 Neufassung: Doppelkodierung horizontal + vertikal. R60 neu (★★★★). Layout-Typen A/B/C/D klassifiziert. 11/11 analysierten Folios zeigen selektive Pflanzenteil-Annotation.',
+    'Farbcode-System dreistufig bestätigt (★★★★★): Ebene 1 — alle Wurzeln kein Text (8 Belege, 0 Gegenbeispiele); Ebene 2 — dunkelrot = kein Text auf beliebigem Pflanzenteil — f25r Bohnen an Stengelknoten = Erstbeleg Nicht-Wurzel-Rot (Reeds: Colors: green,dark-red bestätigt); Ebene 3 — grün = prescribiert.',
+    'pol (Frucht-Term) an Frucht-Position f22r P.1 = stärkster semantischer Einzelbeweis ★★★★★. Stolfi f16r: „interrupted by the plant\'s flower" — Blüten-Annotation explizit dokumentiert. Lexikon: neue PFLANZENTEIL-Dimension (pol → FRUCTUS, opchy/pchy → FLOS/FRUCTUS, sheey → FLOS, chey/cheey → FLOS/CAULIS).',
+    'R16 (v8.3): Typ 2 Vertikal-Zweiteilverschreibung (NEU) — {plant}-Marker auf verschiedenen Höhen = separate Teilverschreibungen. Pflanzenteil-Positionskarte als Analyse-Pflicht ab v8.3.',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.length,
   rules: RULES.length,
-  validatedRules: 37,
+  validatedRules: 38,
   backtest: '100%',
   backtestFraction: 'Typ I: 11/11 (100%) · Typ II: 18/21 (86%)',
   backtestTotal: '32',

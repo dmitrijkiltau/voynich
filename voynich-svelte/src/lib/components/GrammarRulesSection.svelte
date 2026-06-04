@@ -24,6 +24,7 @@
 		<li><strong>v7.7:</strong> R56 ★★★ validiert (sho·sho-Emphase, R43: f24v + f27v) · <strong>v7.9:</strong> R35 ★★★ validiert (chol·chol, R43: f17v + f29v)</li>
 		<li><strong>v8.1:</strong> R28 ★★★ validiert (y+t+[Terminus], R43: f16v + f28r) · Absorbiert: R32 → R25, R52 → R15 Typ D, R54 → R19, R57 → R11</li>
 		<li><strong>v8.1 f30r/f30v:</strong> R19 Typ E ★★★ Kand. (ABAB-Verflechtung <span class="eva">cheor·chey·cheor·chey</span>, Erstbeleg f30r P.11) · R28 Erweiterung: <span class="eva">ytor</span> = y+t+or ★★★ Kand. (f30v P.5)</li>
+		<li><strong>v8.3:</strong> R14 Neufassung (Doppelkodierung horizontal + vertikal: Pflanzenteil-Position, Farbcode dreistufig ★★★★★) · R16 Erweiterung Typ 2 (Vertikal-Zweiteilverschreibung) · R60 ★★★★ neu (Pharmakologische Pflanzenteil-Annotation, Layout-Typen A/B/C/D, 11 Folios, Muster I–VI)</li>
 	</ul>
 </div>
 
