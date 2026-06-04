@@ -1,5 +1,5 @@
 <script>
-	let { LEXICON, onInsert } = $props();
+	let { STATS, LEXICON, onInsert } = $props();
 
 	const CATEGORIES = [
 		{ id: 'symptom',    label: 'A. Medizinische Nomina — Symptome & Befunde' },
@@ -51,57 +51,62 @@
 	}
 </script>
 
-<div class="lexicon">
-  {#each CATEGORIES as cat}
-    <div>
-      <h3>{cat.label}</h3>
-      <div class="table-wrap">
-        <table class="dt">
-          <thead>
-            <tr>
-              {#each COLS as col}
-                {@const s = sortStates[cat.id]}
-                <th
-                  data-sortable
-                  aria-sort={s.col === col.key ? (s.dir === 1 ? 'ascending' : 'descending') : 'none'}
-                  onclick={() => toggleSort(cat.id, col.key)}
-                  onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleSort(cat.id, col.key)}
+<section class="section" id="lexicon">
+	<h2>V. Bestätigtes Lexikon ({STATS.lexicon} Einträge)</h2>
+	<p>Alle Einträge mit ★★★ oder höher. Klick auf eine Zeile fügt das EVA-Wort in die Eingabe ein.</p>
+
+  <div class="lexicon">
+    {#each CATEGORIES as cat}
+      <div>
+        <h3>{cat.label}</h3>
+        <div class="table-wrap">
+          <table class="dt">
+            <thead>
+              <tr>
+                {#each COLS as col}
+                  {@const s = sortStates[cat.id]}
+                  <th
+                    data-sortable
+                    aria-sort={s.col === col.key ? (s.dir === 1 ? 'ascending' : 'descending') : 'none'}
+                    onclick={() => toggleSort(cat.id, col.key)}
+                    onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleSort(cat.id, col.key)}
+                    tabindex="0"
+                  >
+                    {col.label}
+                    <span class="sort-icon" aria-hidden="true">
+                      {#if s.col === col.key}
+                        {s.dir === 1 ? '▲' : '▼'}
+                      {:else}
+                        ⇅
+                      {/if}
+                    </span>
+                  </th>
+                {/each}
+              </tr>
+            </thead>
+            <tbody>
+              {#each entriesByCat(cat.id) as entry}
+                {@const is5 = entry.stars.length >= 9}
+                <tr
+                  data-clickable
+                  title="In Eingabe einfügen: {entry.eva}"
+                  onclick={() => onInsert(entry.eva)}
+                  onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onInsert(entry.eva)}
                   tabindex="0"
                 >
-                  {col.label}
-                  <span class="sort-icon" aria-hidden="true">
-                    {#if s.col === col.key}
-                      {s.dir === 1 ? '▲' : '▼'}
-                    {:else}
-                      ⇅
-                    {/if}
-                  </span>
-                </th>
+                  <td><span class="eva">{entry.eva}</span></td>
+                  <td><span class="heb-sm">{entry.heb}</span></td>
+                  <td class="meaning">{entry.de}</td>
+                  <td><span class={is5 ? 'conf5' : 'conf'}>{entry.stars}</span></td>
+                </tr>
               {/each}
-            </tr>
-          </thead>
-          <tbody>
-            {#each entriesByCat(cat.id) as entry}
-              {@const is5 = entry.stars.length >= 9}
-              <tr
-                data-clickable
-                title="In Eingabe einfügen: {entry.eva}"
-                onclick={() => onInsert(entry.eva)}
-                onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onInsert(entry.eva)}
-                tabindex="0"
-              >
-                <td><span class="eva">{entry.eva}</span></td>
-                <td><span class="heb-sm">{entry.heb}</span></td>
-                <td class="meaning">{entry.de}</td>
-                <td><span class={is5 ? 'conf5' : 'conf'}>{entry.stars}</span></td>
-              </tr>
-            {/each}
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
-  {/each}
-</div>
+    {/each}
+  </div>
+</section>
 
 <style>
   .lexicon {

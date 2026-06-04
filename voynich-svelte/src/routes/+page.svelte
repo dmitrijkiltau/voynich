@@ -175,20 +175,7 @@
 
 		<MethodologySection />
 
-		<!-- III. ÜBERSETZER -->
-		<section class="section" id="translator-tool">
-			<h2>III. Übersetzungstool</h2>
-			<div class="tool">
-				<div class="tool-intro">
-					<p class="dropcap">EVA-Text in das Eingabefeld eingeben (Wörter durch Leerzeichen oder · getrennt). Das Tool durchsucht das bestätigte <a href="#lexikon">Lexikon</a>, erkennt Präfixe und zeigt Hebräisch, Wort-für-Wort-Analyse und deutsche Bedeutung an. Unbekannte Wörter werden als solche markiert.</p>
-					<div class="box red method-note">
-						<div class="box-title">Hinweis zur Methodik</div>
-						<p>Das Tool arbeitet auf dem bestätigten <a href="#lexikon">Lexikon</a> ({STATS.lexicon} Einträge, ★★★ oder höher). Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
-					</div>
-				</div>
-				<TranslatorTool bind:input={evaInput} />
-			</div>
-		</section>
+		<TranslatorTool bind:input={evaInput} />
 
 		<!-- IV. ZEICHENMAPPING -->
 		<section class="section" id="mapping">
@@ -206,11 +193,7 @@
 		</section>
 
 		<!-- V. LEXIKON -->
-		<section class="section" id="lexicon">
-			<h2>V. Bestätigtes Lexikon ({STATS.lexicon} Einträge)</h2>
-			<p>Alle Einträge mit ★★★ oder höher. Klick auf eine Zeile fügt das EVA-Wort in die Eingabe ein.</p>
-			<LexiconSection {LEXICON} onInsert={insertEva} />
-		</section>
+		<LexiconSection {STATS} {LEXICON} onInsert={insertEva} />
 
 		<!-- VI. GRAMMATIK -->
 		<section class="section" id="grammar">
@@ -677,8 +660,7 @@
 		.sidebar,
 		.mobile-header,
 		.menu-overlay,
-		.print-btn,
-		#tool {
+		.print-btn {
 			display: none !important;
 		}
 
@@ -703,23 +685,6 @@
 			break-after: page;
 		}
 	}
-
-  .tool {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 2rem;
-
-    & > .tool-intro {
-      flex: 0 1 480px;
-
-      & .method-note {
-        margin-top: .9rem;
-        font-size: .88rem;
-
-        & p { margin: 0; }
-      }
-    }
-  }
 
 	.mapping {
     display: flex;

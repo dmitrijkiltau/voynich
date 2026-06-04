@@ -1,5 +1,5 @@
 <script>
-	import { PREFIXES, LEXICON, FOLIO_PAGES } from '$lib';
+	import { STATS, PREFIXES, LEXICON, FOLIO_PAGES } from '$lib';
 	import { dev } from '$app/environment';
 
 	let { input = $bindable('') } = $props();
@@ -183,158 +183,189 @@
 	}
 </script>
 
-<div class="tool-area" aria-label="EVA-Übersetzer">
-	<!-- ── Top grid: Input | Output | Folio ── -->
-	<div class="top-grid">
+<section class="section" id="translator-tool">
+	<h2>III. Übersetzungstool</h2>
 
-		<!-- Col 1: Input -->
-		<div class="input-col">
-			<header class="col-header">
-				<span class="panel-label" id="lbl-input">EVA-Eingabe</span>
-				{#if totalCount > 0}
-					<span class="coverage-badge" aria-label="{knownCount} von {totalCount} Tokens erkannt">
-						{knownCount}/{totalCount}
-					</span>
-				{/if}
-			</header>
-			<div class="textarea-wrap">
-				<textarea
-					class="eva-input"
-					bind:value={input}
-					placeholder="z.B.  daiin · shedy · sar · al · dam"
-					rows="5"
-					aria-labelledby="lbl-input"
-				></textarea>
-				{#if input}
-					<button class="clear-btn" onclick={() => input = ''} aria-label="Eingabe löschen">✕</button>
-				{/if}
-			</div>
-			<div class="example-btns" role="group" aria-label="Beispielsequenzen">
-				{#each EXAMPLES as ex}
-					<button class="ex-btn" onclick={() => input = ex.text} title={ex.text}>{ex.label}</button>
-				{/each}
+	<div class="tool">
+		<div class="tool-intro">
+			<p class="dropcap">EVA-Text in das Eingabefeld eingeben (Wörter durch Leerzeichen oder · getrennt). Das Tool durchsucht das bestätigte <a href="#lexikon">Lexikon</a>, erkennt Präfixe und zeigt Hebräisch, Wort-für-Wort-Analyse und deutsche Bedeutung an. Unbekannte Wörter werden als solche markiert.</p>
+			<div class="box red method-note">
+				<div class="box-title">Hinweis zur Methodik</div>
+				<p>Das Tool arbeitet auf dem bestätigten <a href="#lexikon">Lexikon</a> ({STATS.lexicon} Einträge, ★★★ oder höher). Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
 			</div>
 		</div>
 
-		<!-- Col 2: Output -->
-		<div class="output-col">
-			<header class="col-header">
-				<span class="panel-label" id="lbl-heb">Hebräisch (RTL)</span>
-			</header>
-			<div
-				class="result-heb"
-				class:empty={!hebOutput}
-				aria-labelledby="lbl-heb"
-				aria-live="polite"
-				lang="he"
-				dir="rtl"
-			>
-				{#if hebOutput}{hebOutput}{:else}— Rekonstruktion erscheint hier —{/if}
+		<div class="tool-area" aria-label="EVA-Übersetzer">
+			<!-- ── Top grid: Input | Output | Folio ── -->
+			<div class="top-grid">
+
+				<!-- Col 1: Input -->
+				<div class="input-col">
+					<header class="col-header">
+						<span class="panel-label" id="lbl-input">EVA-Eingabe</span>
+						{#if totalCount > 0}
+							<span class="coverage-badge" aria-label="{knownCount} von {totalCount} Tokens erkannt">
+								{knownCount}/{totalCount}
+							</span>
+						{/if}
+					</header>
+					<div class="textarea-wrap">
+						<textarea
+							class="eva-input"
+							bind:value={input}
+							placeholder="z.B.  daiin · shedy · sar · al · dam"
+							rows="5"
+							aria-labelledby="lbl-input"
+						></textarea>
+						{#if input}
+							<button class="clear-btn" onclick={() => input = ''} aria-label="Eingabe löschen">✕</button>
+						{/if}
+					</div>
+					<div class="example-btns" role="group" aria-label="Beispielsequenzen">
+						{#each EXAMPLES as ex}
+							<button class="ex-btn" onclick={() => input = ex.text} title={ex.text}>{ex.label}</button>
+						{/each}
+					</div>
+				</div>
+
+				<!-- Col 2: Output -->
+				<div class="output-col">
+					<header class="col-header">
+						<span class="panel-label" id="lbl-heb">Hebräisch (RTL)</span>
+					</header>
+					<div
+						class="result-heb"
+						class:empty={!hebOutput}
+						aria-labelledby="lbl-heb"
+						aria-live="polite"
+						lang="he"
+						dir="rtl"
+					>
+						{#if hebOutput}{hebOutput}{:else}— Rekonstruktion erscheint hier —{/if}
+					</div>
+
+					<span class="panel-label" id="lbl-de" style="margin-top:.75rem;display:block">Bedeutung (Deutsch)</span>
+					<div
+						class="result-de"
+						aria-labelledby="lbl-de"
+						aria-live="polite"
+					>{deOutput ?? '—'}</div>
+				</div>
+
+				<!-- Col 3: Folio loader -->
+				<div class="folio-col" aria-label="Folio direkt laden">
+					<header class="col-header">
+						<span class="panel-label" id="lbl-folio">Folio laden</span>
+					</header>
+
+					<div class="folio-keyboard" role="navigation" aria-labelledby="lbl-folio">
+						{#each FOLIO_PAGES as group}
+							<details class="folio-group">
+								<summary class="folio-group-label">{group.label}</summary>
+								<div class="folio-btns">
+									{#each group.pages as page}
+										<button
+											class="folio-btn"
+											onclick={() => dev ? fetchFolio(group.q, page) : window.open(folioUrl(group.q, page), '_blank')}
+											aria-label="Folio {page} laden"
+										>{page}</button>
+									{/each}
+								</div>
+							</details>
+						{/each}
+					</div>
+
+					{#if folioMsg}
+						<p class="folio-status" class:ok={folioType === 'ok'} class:error={folioType === 'error'}>
+							{folioMsg}
+						</p>
+					{/if}
+				</div>
+
 			</div>
 
-			<span class="panel-label" id="lbl-de" style="margin-top:.75rem;display:block">Bedeutung (Deutsch)</span>
-			<div
-				class="result-de"
-				aria-labelledby="lbl-de"
-				aria-live="polite"
-			>{deOutput ?? '—'}</div>
-		</div>
-
-		<!-- Col 3: Folio loader -->
-		<div class="folio-col" aria-label="Folio direkt laden">
-			<header class="col-header">
-				<span class="panel-label" id="lbl-folio">Folio laden</span>
-			</header>
-
-			<div class="folio-keyboard" role="navigation" aria-labelledby="lbl-folio">
-				{#each FOLIO_PAGES as group}
-					<details class="folio-group">
-						<summary class="folio-group-label">{group.label}</summary>
-						<div class="folio-btns">
-							{#each group.pages as page}
-								<button
-									class="folio-btn"
-									onclick={() => dev ? fetchFolio(group.q, page) : window.open(folioUrl(group.q, page), '_blank')}
-									aria-label="Folio {page} laden"
-								>{page}</button>
+			<div class="token-gloss">
+				<!-- ── Token row ── -->
+				{#if results.length > 0}
+					<div class="token-section">
+						<span class="panel-label">Token-Analyse</span>
+						<div class="token-row" role="list" aria-label="Erkannte Tokens">
+							{#each results as r}
+								<span
+									class="tok"
+									class:found={r.lookup?.matchType === 'found'}
+									class:prefix={r.lookup?.matchType === 'prefix'}
+									class:unknown={!r.lookup}
+									role="listitem"
+									title={r.lookup ? r.lookup.de : 'unbekannt'}
+								>
+									<span class="tok-eva">{r.word}</span>
+									<span class="tok-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '?'}</span>
+								</span>
 							{/each}
 						</div>
-					</details>
-				{/each}
-			</div>
+					</div>
+				{/if}
 
-			{#if folioMsg}
-				<p class="folio-status" class:ok={folioType === 'ok'} class:error={folioType === 'error'}>
-					{folioMsg}
-				</p>
-			{/if}
+				<!-- ── Gloss table ── -->
+				{#if results.length > 0}
+					<div class="gloss-wrap">
+						<div class="gloss-header">
+							<span class="panel-label">Wort-für-Wort-Analyse</span>
+							<label class="hide-unknown-toggle">
+								<input type="checkbox" bind:checked={hideUnknown} />
+								<span>Unbekannte ausblenden</span>
+							</label>
+						</div>
+						<div class="gloss-scroll">
+							<table class="gloss-table" aria-label="Wort-für-Wort-Analyse">
+								<thead>
+									<tr>
+										<th scope="col">EVA</th>
+										<th scope="col">Hebräisch</th>
+										<th scope="col">Bedeutung</th>
+										<th scope="col">Konf.</th>
+										<th scope="col">Kat.</th>
+									</tr>
+								</thead>
+								<tbody>
+									{#each glossResults as r}
+										<tr class:row-unknown={!r.lookup}>
+											<td class="g-eva">{r.word}</td>
+											<td class="g-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '—'}</td>
+											<td class="g-de">{r.lookup ? r.lookup.de.replace(/\s—\s.*/g, '') : 'unbekannt'}</td>
+											<td class="g-st" class:g5={r.lookup && r.lookup.stars.length >= 9}>{r.lookup ? r.lookup.stars : '—'}</td>
+											<td class="g-cat">{r.lookup ? r.lookup.cat : '—'}</td>
+										</tr>
+									{/each}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				{/if}
+			</div>
 		</div>
-
 	</div>
-
-	<div class="token-gloss">
-		<!-- ── Token row ── -->
-		{#if results.length > 0}
-			<div class="token-section">
-				<span class="panel-label">Token-Analyse</span>
-				<div class="token-row" role="list" aria-label="Erkannte Tokens">
-					{#each results as r}
-						<span
-							class="tok"
-							class:found={r.lookup?.matchType === 'found'}
-							class:prefix={r.lookup?.matchType === 'prefix'}
-							class:unknown={!r.lookup}
-							role="listitem"
-							title={r.lookup ? r.lookup.de : 'unbekannt'}
-						>
-							<span class="tok-eva">{r.word}</span>
-							<span class="tok-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '?'}</span>
-						</span>
-					{/each}
-				</div>
-			</div>
-		{/if}
-
-		<!-- ── Gloss table ── -->
-		{#if results.length > 0}
-			<div class="gloss-wrap">
-				<div class="gloss-header">
-					<span class="panel-label">Wort-für-Wort-Analyse</span>
-					<label class="hide-unknown-toggle">
-						<input type="checkbox" bind:checked={hideUnknown} />
-						<span>Unbekannte ausblenden</span>
-					</label>
-				</div>
-				<div class="gloss-scroll">
-					<table class="gloss-table" aria-label="Wort-für-Wort-Analyse">
-						<thead>
-							<tr>
-								<th scope="col">EVA</th>
-								<th scope="col">Hebräisch</th>
-								<th scope="col">Bedeutung</th>
-								<th scope="col">Konf.</th>
-								<th scope="col">Kat.</th>
-							</tr>
-						</thead>
-						<tbody>
-							{#each glossResults as r}
-								<tr class:row-unknown={!r.lookup}>
-									<td class="g-eva">{r.word}</td>
-									<td class="g-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '—'}</td>
-									<td class="g-de">{r.lookup ? r.lookup.de.replace(/\s—\s.*/g, '') : 'unbekannt'}</td>
-									<td class="g-st" class:g5={r.lookup && r.lookup.stars.length >= 9}>{r.lookup ? r.lookup.stars : '—'}</td>
-									<td class="g-cat">{r.lookup ? r.lookup.cat : '—'}</td>
-								</tr>
-							{/each}
-						</tbody>
-					</table>
-				</div>
-			</div>
-		{/if}
-	</div>
-</div>
+</section>
 
 <style>
+  .tool {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+
+    & > .tool-intro {
+      flex: 0 1 480px;
+
+      & .method-note {
+        margin-top: .9rem;
+        font-size: .88rem;
+
+        & p { margin: 0; }
+      }
+    }
+  }
+
 	/* ── Shell ─────────────────────────────────────────── */
 
 	.tool-area {
@@ -805,6 +836,12 @@
 			text-transform: uppercase;
 			color: var(--ink-f);
 			white-space: nowrap;
+		}
+	}
+
+	@media print {
+		#translator-tool {
+			display: none;
 		}
 	}
 </style>
