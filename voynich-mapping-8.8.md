@@ -1,5 +1,5 @@
 # Voynich-Manuskript — Formales Mapping-Dokument
-**EVA → Hebräisch-Aramäisch · Version 8.7 · Juni 2026**
+**EVA → Hebräisch-Aramäisch · Version 8.8 · Juni 2026**
 
 Sprachen A & B · Folios f1r, f1v–f10r (Quire A komplett, Positionskarten f1v–f10r), f11r–f32v (Quires B–D komplett), f33r–f34v (Quire E Eröffnung, 5/16), f57r/v, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
 
@@ -28,11 +28,12 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 
 **Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
 
-**Korrekturen in v8.7:**
+**Korrekturen in v8.8:**
 
-- Quire-D-Abschluss + Quire-E-Eröffnung (v8.7): f31r–f34v analysiert (7 neue Seiten). Quire D vollständig (16/16). Quire E: 5/16 Seiten. R28 ★★★→★★★★ (ytsho f32r P.4 = 3. Beleg). R58 ★★★→★★★★ validiert (f32v P.9 = 3. Beleg). R61 ★★★ Kand. neu (ol+[Ankerwort] = Intensivierungsformel, 6 Belege). R60 Korollar 3 ★★★★→★★★★★ (25 Folios). oraiin ★★★★→★★★★★ (4-Folio-Formel). chorain ★★★→★★★★ validiert. 14 neue Lexikoneinträge.
+- Lexikon — chorain (Erstbeleg f004r, Phantombelege f33v P.7 + f34v P.8 entfernt), olaiin (Erstbeleg f017r statt f33v), oraiin (Folioliste ≥9 statt 4, Phantombeleg f33v P.7 entfernt).
+- Rückwärtstest — Typ-I-Liste auf 10 eingefroren (v7.4-Anker); choraiin-Phantomeintrag entfernt; post-v7.4-Einträge (Prognose-Tetrade, Quire-B-dam, Zodiak R17, f69r) nach Typ II. Alle Zahlen kanonisiert (10/10 · 29/32).
 
-### Kernbefunde — Version 8.7
+### Kernbefunde — Version 8.8
 
 | Eigenschaft | Wert |
 | --- | --- |
@@ -40,7 +41,7 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 | Texttyp | Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis) |
 | Analysierte Folios | f1r, f1v–f10r (Quire A komplett, Positionskarten f1v–f10r), f11r–f32v (Quires B–D komplett), f33r–f34v (Quire E Eröffnung, 5/16), f57r/v, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v |
 | Bestätigte Wörter | 371 (★★★ oder höher) |
-| Rückwärtstest | Typ I (genuine Vorhersagen): 11/11 (100%) · Typ II (interne Kohärenz): 18/21 (86%) · 0 Falsch-Positive |
+| Rückwärtstest | Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 29/32 (91%) · 0 Falsch-Positive |
 | Sprache A Anker | f1r–f32v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4) |
 | Grammatikregeln | 57 (40 validiert + 17 Kandidaten) |
 
@@ -146,7 +147,7 @@ Alle Einträge mit ★★★ oder höher.
 | ram | רָם | erhöht / Fieber |  | ★★★ |
 | chor | חֹר | Pupille / Höhle |  | ★★★★ |
 | otchor | אוֹת+חֹר | das Zeichen der Pupille |  | ★★★★ |
-| oraiin | אוֹר+עַיִן | Licht des Auges / Augenheilung | R43 erfüllt: f22r + f26v P.4 + f31v P.11 + f33v P.7; oraiin-Formel über 4 Folios als quire-übergreifendes ophthalmologisches Leitmotiv (★★★★★, v8.7) | ★★★★★ |
+| oraiin | אוֹר+עַיִן | Licht des Auges / Augenheilung | R43 weit übererfüllt: ≥9 Folios (f004r, f009r, f020r, f022r, f023v, f024v, f026v, f031v, f099r), Erstbeleg Quire A (f004r/f009r); quire-übergreifendes ophthalmologisches Leitmotiv. | ★★★★★ |
 | sheoldam | שְׁאוֹל+דָּם | tödlicher Blutverlust |  | ★★★★★ |
 | damo | דָּמוֹ | sein Blut (Possessiv) |  | ★★★★ |
 | cham | חַם | Wärme / Entzündung / hippokratischer Befund-Term | f69r P.2 als kosmologischer Register-Beleg: Fieber-Diagnose im Rad-Diagramm | ★★★ |
@@ -482,10 +483,10 @@ Alle Einträge mit ★★★ oder höher.
 | chain | חַ+עַיִן | lebendiges Auge / Auge des Lebens (cham-Stamm + ayin) | R43 erfüllt: f29v P.5 + f30r P.7 = 2 Folios → ★★★ validiert | ★★★ |
 | otolam | אוֹת+עַל+אָם | Zeichen über alle / Zeichen der Ewigkeit (ot + ol + am) | ★★★★ Kand. (Erstbeleg f69r C.9) | ★★★★ |
 | dairam | דְּ+אִיר+אָם | von dem Leuchtenden aller (d-Genitiv + air + am; Radial-Kolophon-Form) | ★★★ Kand. (Erstbeleg f69r R.3) | ★★★ |
-| chorain | כֹּ+אַר+עַיִן | Heilung des Auges / wie das Licht des Auges (k-Komparativ + ar + ayin) | R43 erfüllt: f30r P.3 (Erstbeleg) + f33v P.7 (2. Beleg) + f34v P.8 (3. Beleg: choraiin) → ★★★★ validiert (v8.7) | ★★★★ |
+| chorain | כֹּ+אַר+עַיִן | Heilung des Auges / wie das Licht des Auges (k-Komparativ + ar + ayin) | R43 erfüllt: f004r (3×, Quire A, Erstbeleg choraiin) + f030r P.3 (Quire D, chorain) = 2 Folios, 2 Register → ★★★★. | ★★★★ |
 | fol | פּוּל/פֹּל | Röhrenschaft / Stiel-Hülse (CAULIS-Eröffner bei Equisetum | Erstbeleg f13v P.6 als Öffnungsterm des gesamten CAULIS-Blocks; Etymologie: pūlāʾ aram. = Hohlstängel) | ★★★ |
 | sheaiin | שֶׁ+עַיִן | welche das Auge | Relativpartikel she + Auge; Erstbeleg f32v P.7; ★★★★ | ★★★★ |
-| olaiin | עַל+עַיִן | über das Auge | ol+Ankerwort R61; erste Attestation des ol+aiin-Kompositums; Erstbeleg f33v P.6; ★★★★★ (!!) | ★★★★★ |
+| olaiin | עַל+עַיִן | über das Auge | ol+Ankerwort R61. Erstbeleg f017r P.4 (Quire C, H/C/F/U einig). Korpusweit belegt: f017r, f058r (7×), f072r2, f099r, f033v — breite Mehrfachattestation über ≥4 Register. | ★★★★★ |
 
 
 ### Bestätigte Komposita
@@ -603,7 +604,7 @@ Alle Einträge mit ★★★ oder höher.
 
 ## VI. Grammatikregeln
 
-57 Regeln gesamt: **40 validiert** (≥ 2 unabhängige Belege) + **17 Kandidaten**. **Regelmoratorium beendet (v8.7)** — Verhältnis 40:17 = 2,35:1 ≥ 1,5:1. R60+ freigegeben. R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
+57 Regeln gesamt: **40 validiert** (≥ 2 unabhängige Belege) + **17 Kandidaten**. **Regelmoratorium beendet (v8.8)** — Verhältnis 40:17 = 2,35:1 ≥ 1,5:1. R60+ freigegeben. R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
 
 | # | Regel | Evidenz | Konf. |
 | --- | --- | --- | --- |
@@ -668,19 +669,19 @@ Alle Einträge mit ★★★ oder höher.
 
 ## VII. Rückwärtstest-Statistik
 
-37 hebräische/aramäische Wörter getestet. Ab v7.5 zwei Klassen: **Typ I** (genuine Vorhersagen — Prä-Analyse-Anker, eingefroren): **11/11 = 100%** · **Typ II** (interne Kohärenz — post-hoc): **18/21 = 86%** · 0 Falsch-Positive in beiden Klassen.
+39 hebräische/aramäische Wörter getestet. Ab v7.5 zwei Klassen: **Typ I** (genuine Vorhersagen — Prä-Analyse-Anker, eingefroren): **10/10 = 100%** · **Typ II** (interne Kohärenz — post-hoc): **29/32 = 91%** · 0 Falsch-Positive in beiden Klassen.
 
 | Kategorie | Ergebnis |
 | --- | --- |
-| Typ I — Genuine Vorhersagen (Prä-Analyse-Anker, eingefroren) | 13 / 13 |
-| Typ II — Interne Kohärenz (post-hoc-Entdeckungen) | 21 / 24 |
+| Typ I — Genuine Vorhersagen (Prä-Analyse-Anker, eingefroren) | 10 / 10 |
+| Typ II — Interne Kohärenz (post-hoc-Entdeckungen) | 29 / 32 |
 | Bestätigt Spr. A (Anker, f1v–f15v) | 260 / 260 |
 | Falsch-positiv (gesamt) | 0 |
 
 
 **Entscheidend: Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.** Bei einem Zufallsalphabet statistisch ausgeschlossen.
 
-### Typ I — Genuine Vorhersagen (11/11 · 100%)
+### Typ I — Genuine Vorhersagen (10/10 · 100%)
 
 | Vorhersage | Hebräisch | Befund | Kontext |
 | --- | --- | --- | --- |
@@ -690,16 +691,13 @@ Alle Einträge mit ★★★ oder höher.
 | daiin | דִּין | ✓ 3× Zeilenanfang f103r | f57r P.5: qokcho·daiin·cheeodam |
 | chalal | חָלָל | ✓ 1× exakt nach sheol P.42 | tshey·sheol·cheolshy·chalal |
 | dal | דַּל | ✓ Dreifach-Refrain f103r P.1 | pchedal, yshdal, dal (standalone) |
-| chaiin · ckhy · or · aiin | Prognose-Tetrade | ✓ f10r P4 (alle vier in einer Zeile) | vollständiges hippokratisches Schema |
 | shol · dy · … · shol | R24-Struktur | ✓ f13r P.1 (Dopplungsformel) | einmaliges Emphase-Muster mit Genitiv-Brücke dy |
-| dam (Quire B) | דָּם | ✓ f14v P.8 (Blut-Triade) | dol · dair · dam — Erstbeleg Blutpathologie in bB3; verbindet f14v mit f3r |
-| shol medial · sheol final (R17 Zodiak) | שׁוֹל / שְׁאוֹל | ✓ f72r1 R1 (shol 2×) · R2 (sheol vor gap) — 5. Register-Bestätigung | identische Verteilung wie botanische Folios; shol nie in Ringabschlussposition; sheol unmittelbar vor gap-Marker |
-| f69r Stresstest — kosmologisches Rad-Diagramm, Currier-Sprache unklassifiziert (Quire J/X) | Mapping v8.0 | ✓ 10/10 Ankerwörter; shol= in P.4 terminal (R6); sar= 3× terminal (P.1, R.7, R.11, R11); daiin in P.2+C.9 (R7); 6/6 Pflichtkriterien bestanden — 1 Token offen ({&ct}ar) | Foliotyp: kosmologisches Rad-Diagramm — keine Botanik, kein {plant}-System, keine Currier-Sprachzuordnung; Mapping ohne Anpassung auf neuen Register transferiert |
-| oldam (f34r P.7) → sofortiger Folgebeleg auf f34v P.2 | עַל+דָּם | ✓ f34v P.2 (Abstand: 1 Folio) | ol+dam Erstbeleg f34r P.7 → unmittelbarer Folgebeleg auf dem Verso desselben Bifolios; R43-Frist binnen einer Sitzung erfüllt |
-| choraiin (f34v P.8) = 3. Attestation (R43 aus f30r P.3 + f33v P.7) | כֹּ+אַר+עַיִן | ✓ f34v P.8 — Drittbeleg bestätigt | chorain Erstbeleg f30r P.3 (★★★ Kand.) → f33v P.7 (2. Beleg) → f34v P.8 (3. Beleg): R43-Frist erfüllt → ★★★★ validiert |
+| or | אוֹר | ✓ f103r P.17 or·aiin (Heilungszeichen); f6v, f8r, f57r — Prognose-Abschluss | Anker: or = Licht/Heilung; f103r P.17 endet or·aiin; vgl. lor ★★★★★; R6 bestätigt (v7.4-Anker) |
+| chaiin | חַיִּין | ✓ f4r, f4v, f6r, f8v — R18-Diagnosepaar shol·chaiin, Quire A | Anker: chaiin = Leben; R18 Diagnosepaar shol·chaiin (abwägende Prognose); ★★★★ |
+| kaiim | קַיָּם | ✓ f6r, f8r kaiim= (Kolophon-Abschlussformel); 10+ Belege | Anker: kaiim = gültig/beständig; R11-Schlussformel ★★★★★; f57r cphedom= (Parallelform) |
 
 
-### Typ II — Interne Kohärenz (18/21 · 86%)
+### Typ II — Interne Kohärenz (29/32 · 91%)
 
 | Vorhersage | Hebräisch | Befund | Kontext |
 | --- | --- | --- | --- |
@@ -720,10 +718,15 @@ Alle Einträge mit ★★★ oder höher.
 | qotchor (Pupillenzeichen) | קוֹ+תְּ+כֹּר | ✓ f15r Schlusskolophon ★★★★★ | qotchor·chaiin·chy·kol·daky= — positives Pupillen-Urteil; ophthalmologische Abschlussformel bB2 |
 | soloiin | שׁוֹ+לְ+עַיִן | ✓ f15v P.11 — therapeutisch präzisestes Kompositum | „Arznei für das Auge" — höchste Heilarznei-Präzision im Gesamtkorpus; Gegenstück zu shoiin (f10v) |
 | cthor (vollständige Heilung) | כְּ+תֹּר | ✓ f15v Schlusskolophon | daiin·cthor·chol·chor= — cthor+chor = Heilung der Pupillenpathologie; positiver Abschluss Bifolio bB2 |
+| chaiin · ckhy · or · aiin (Prognose-Tetrade) | Prognose-Tetrade | ✓ f10r P4 (alle vier in einer Zeile) | vollständiges hippokratisches Schema; kombinierter Test post-v7.4 → Typ II (v8.8), Einzelanker or/chaiin bleiben Typ I |
+| dam (Quire B) | דָּם | ✓ f14v P.8 (Blut-Triade) | dol · dair · dam — Erstbeleg Blutpathologie in bB3; verbindet f14v mit f3r; post-v7.4 → Typ II (v8.8) |
+| shol medial · sheol final (R17 Zodiak) | שׁוֹל / שְׁאוֹל | ✓ f72r1 R1 (shol 2×) · R2 (sheol vor gap) — 5. Register-Bestätigung | identische Verteilung wie botanische Folios; Zodiak-Register post-v7.4 → Typ II (v8.8) |
+| f69r Stresstest — kosmologisches Rad-Diagramm, Currier-Sprache unklassifiziert (Quire J/X) | Mapping v8.0 | ✓ 10/10 Ankerwörter; shol= in P.4 terminal (R6); sar= 3× terminal (P.1, R.7, R.11, R11); daiin in P.2+C.9 (R7); 6/6 Pflichtkriterien bestanden — 1 Token offen ({&ct}ar) | Foliotyp: kosmologisches Rad-Diagramm — keine Botanik, kein {plant}-System, keine Currier-Sprachzuordnung; Mapping ohne Anpassung; f69r post-v7.4 → Typ II (v8.8) |
 | otam · otam · chotam (R19/R35) | אוֹת+אָם · אוֹת+אָם · כֹּ+אוֹת+אָם | ✓ f72r1 R1 — dreistufige Nominal-Intensivierung | einfach → ×2 → Komparativ ko+X; exaktes R35-Schema; semantisch kohärent: Zeichen der Mutter im Stier-dunkel-Kontext |
 | okaly= / okal= Minimalpaar (R52a) | עַ+כָּל+יְ / עַ+כָּל | ✓ f72r2 S1.3/S1.5/S1.12 (okal) neben S1.4/S1.12 (okaly) — Determinans-y optional | identischer Stamm okal mit und ohne -y-Suffix auf demselben Ring; beweist R52a: -y ist Status-Emphaticus-Marker, kein festes Wortbildungselement |
 | alef / otalef — Stier-Exklusivmarker | אָלֶף / אוֹת+אָלֶף | ✓ f72r1 S1.6 + S1.9 — ausschließlich im Stier-dunkel-Panel | alef = Ochsenkopf-Piktogramm (Aleph-Ursprung); fehlt in f71r, f71v, f72r2; erste ikonographisch verankerte Buchstabenreferenz im Zodiak-Corpus |
 | dar·dar-Dopplung (R36) in kosmologischem Register | דַּר·דַּר | ✓ f69r R.17 (dair.dar= Terminal) + f69r R.22 (dary.dar direktional) — 2 neue Belege | R43 erfüllt: f18r + f26v + f69r = 3 Folios, 4 Gesamtbelege → R36 ★★★ validiert; Typ A (direkt adjacent) erstmals in kosmologischem Register belegt |
+| oldam (f34r P.7) → sofortiger Folgebeleg auf f34v P.2 | עַל+דָּם | ✓ f34v P.2 (Abstand: 1 Folio) | ol+dam Erstbeleg f34r P.7 → unmittelbarer Folgebeleg auf dem Verso desselben Bifolios; R43-Frist binnen einer Sitzung erfüllt; post-v7.4 → Typ II (v8.8) |
 | Tanacetum f31r: dam im Schlusskolophon — Tanacetum = Blutfluss-Kraut (Macer floridus) | דָּם | ✓ f31r P.15 okedam= — Blutterm im Abschlusskolophon | Tanacetum parthenium ist im mittelalterlichen Kräuterbuch (Macer floridus) als Mittel gegen Menstruationsblutungen gelistet; botanische und textuelle Ebene konvergieren |
 | Gentiana f32v endet ol.sho.chy= — Gentiana als bitteres Diagnostikum (Scheol-Blässe-Formel) | עַל+שׁוֹ+כְּהִי | ✓ f32v P.11 ol.sho.chy= — reine Scheol-Diagnose ohne Heilungsformel | Enzian (Gentiana) gilt in der mittelalterlichen Pharmakologie als schweres Diagnostikum für lebensbedrohliche Zustände; Schlusskolophon spiegelt negative Prognose |
 | Bryonia f34v: Tier-Wurzel + oldar.qoldar = intensivierte Wurzelformeln (dreistufiges Präfix) | עַל+דְּ+אַר / וְ+עַל+דְּ+אַר | ✓ f34v P.4 oldar.qoldar — tiefste Präfix-Schachtelung im Corpus | Bryonia-Wurzeln wurden zu Tierfiguren geschnitzt und als Mandragora-Ersatz verkauft; zoomorphe Wurzel-Ikonographie korrespondiert mit maximaler Wurzel-Textintensivierung (qoldar = dreistufig) |
@@ -1088,7 +1091,7 @@ _Arbeitshypothese: Theoretische Reflexion: Wenn FOLIUM-Textfreiheit ein Artefakt
 
 ---
 
-Voynich-Manuskript — Formales Mapping-Dokument · Version 8.7 · Juni 2026
-Lexikon: 371 Einträge · Grammatikregeln: 57 · Rückwärtstest: Typ I: 13/13 (100%) · Typ II: 21/24 (87,5%)
+Voynich-Manuskript — Formales Mapping-Dokument · Version 8.8 · Juni 2026
+Lexikon: 371 Einträge · Grammatikregeln: 57 · Rückwärtstest: Typ I: 10/10 (100%) · Typ II: 29/32 (91%)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

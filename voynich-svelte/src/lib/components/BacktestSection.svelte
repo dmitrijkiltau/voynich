@@ -3,6 +3,13 @@
 
 	const typeI  = TESTED.filter(t => t.type === 'I');
 	const typeII = TESTED.filter(t => t.type === 'II');
+
+	const statI  = STATS.find(s => s.label.startsWith('Typ I'));
+	const statII = STATS.find(s => s.label.startsWith('Typ II'));
+	const numI   = statI?.num.replace(/ /g, '') ?? '?';
+	const pctI   = Math.round(statI?.pct ?? 0);
+	const numII  = statII?.num.replace(/ /g, '') ?? '?';
+	const pctII  = Math.round(statII?.pct ?? 0);
 </script>
 
 <div class="backtest">
@@ -10,14 +17,14 @@
 
 	<div class="headline-stats">
 		<div class="hs-card gold">
-			<div class="hs-num">11/11</div>
+			<div class="hs-num">{numI}</div>
 			<div class="hs-label">Typ I — Genuine Vorhersagen</div>
-			<div class="hs-sub">100 % · 0 Falsch-Positive</div>
+			<div class="hs-sub">{pctI} % · 0 Falsch-Positive</div>
 		</div>
 		<div class="hs-card green">
-			<div class="hs-num">18/21</div>
+			<div class="hs-num">{numII}</div>
 			<div class="hs-label">Typ II — Interne Kohärenz</div>
-			<div class="hs-sub">86 % · 0 Falsch-Positive</div>
+			<div class="hs-sub">{pctII} % · 0 Falsch-Positive</div>
 		</div>
 	</div>
 
@@ -37,8 +44,8 @@
 		<p style="margin:0;font-size:.92rem">Entscheidend: <strong>Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.</strong> Kein kodiertes Wort taucht in einem semantisch inkohärenten Kontext auf — in beiden Klassen, bei einem Zufallsalphabet statistisch ausgeschlossen.</p>
 	</div>
 
-	<h3>Typ I — Genuine Vorhersagen <span class="type-badge type-i">11/11 · 100%</span></h3>
-	<p class="type-note">Diese {typeI.length} Wörter wurden als semantische Priors <em>vor</em> jeder Folioanalyse definiert. Sie sind eingefroren und können nicht rückwirkend erweitert werden. Ihre Bestätigung ist die valide Kernaussage der Rückwärtsteststärke.</p>
+	<h3>Typ I — Genuine Vorhersagen <span class="type-badge type-i">{numI} · {pctI}%</span></h3>
+	<p class="type-note">Diese {typeI.length} Wörter wurden als semantische Priors <em>vor</em> jeder Folioanalyse definiert (eingefroren v7.4: dam, or, daiin, sheol, shol, dal, sar, chaiin, kaiim, chalal). Sie können nicht rückwirkend erweitert werden. Ihre Bestätigung ist die valide Kernaussage der Rückwärtsteststärke.</p>
 	<div class="tested-wrap">
 		<table class="dt">
 			<thead>
@@ -57,8 +64,8 @@
 		</table>
 	</div>
 
-	<h3>Typ II — Interne Kohärenz <span class="type-badge type-ii">18/21 · 86%</span></h3>
-	<p class="type-note">Diese {typeII.length} Wörter wurden <em>während</em> der Folioanalyse erstmals identifiziert. Sie belegen interne Systemkonsistenz, aber keine externe Vorhersagekraft. Die 3 nicht gefundenen Einträge bleiben als offene Validierungspunkte.</p>
+	<h3>Typ II — Interne Kohärenz <span class="type-badge type-ii">{numII} · {pctII}%</span></h3>
+	<p class="type-note">Diese {typeII.length} Wörter wurden <em>während</em> der Folioanalyse erstmals identifiziert. Sie belegen interne Systemkonsistenz, aber keine externe Vorhersagekraft. 29 bestätigt, 3 historische Fehlschläge (nicht im Datensatz).</p>
 	<div class="tested-wrap">
 		<table class="dt">
 			<thead>
