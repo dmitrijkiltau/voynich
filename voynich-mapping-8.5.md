@@ -1,7 +1,7 @@
 # Voynich-Manuskript — Formales Mapping-Dokument
-**EVA → Hebräisch-Aramäisch · Version 8.4 · Juni 2026**
+**EVA → Hebräisch-Aramäisch · Version 8.5 · Juni 2026**
 
-Sprachen A & B · Folios f1r, f1v–f30v (Quires A–B+C komplett, Quire D Innenbifolios bD3+bD4 vollständig · bD1 f25 teilw. · bD2 f26 teilw.), f57r, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
+Sprachen A & B · Folios f1r, f1v–f10r (Quire A komplett, Positionskarten f1v–f10r), f11r–f30v (Quires B–D komplett), f33r (Quire E, Spr. B), f57r/v, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
 
 ---
 
@@ -28,21 +28,23 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 
 **Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
 
-**Korrekturen in v8.4:**
+**Korrekturen in v8.5:**
 
-- Retroanalyse f1v + f13r + f13v + f57r + f33r (v8.4): 3 neue Positionskarten. `dam` als CAULIS-Marker widerlegt (zone-invariant). Neue CAULIS-Kandidaten `fol` ★★★ Kand. (Röhrenschaft, Equisetum-Eröffner) und `tal` ★★★ Kand. (Tau/Pflanzensaft, 3× in CAULIS-Paragraphen). R14-Farbcode Ebene 1: 10. Beleg (f13r Inula helenium orange-rote Wurzel ohne Text). R60 Quire-B-Extension: ★★★ (f57r + f33r — beide Sprachregister bestätigt). Mandrake-Dual-Kodierung: ikonographische Toxizitätswarnung (f33r Menschenkopf an Wurzel). opchy/pchy: FLOS ★★★ → ★★★★. chey/cheey: FLOS-Tag (CAULIS nachrangig).
-- {plant}-Positionskodierung (v8.3): Vertikale Position des {plant}-Markers kodiert Pflanzenteil-Zuordnung (FLOS/FRUCTUS/CAULIS/FOLIUM/RADIX). R14 Neufassung: Doppelkodierung horizontal + vertikal. R60 neu (★★★★). Layout-Typen A/B/C/D klassifiziert. 11/11 analysierten Folios zeigen selektive Pflanzenteil-Annotation.
-- Farbcode-System dreistufig bestätigt (★★★★★): Ebene 1 — alle Wurzeln kein Text (10 Belege, 0 Gegenbeispiele); Ebene 2 — dunkelrot = kein Text auf beliebigem Pflanzenteil — f25r Bohnen an Stengelknoten = Erstbeleg Nicht-Wurzel-Rot (Reeds: Colors: green,dark-red bestätigt); Ebene 3 — grün = prescribiert.
-- pol (Frucht-Term) an Frucht-Position f22r P.1 = stärkster semantischer Einzelbeweis ★★★★★. Stolfi f16r: „interrupted by the plant's flower" — Blüten-Annotation explizit dokumentiert. Lexikon: neue PFLANZENTEIL-Dimension (pol → FRUCTUS positional + Therapiemittel allgemein, opchy/pchy → FLOS ★★★★, sheey → FLOS, chey/cheey → FLOS).
+- Quire-A-Retroanalyse f2r–f10r + f33r (v8.5): 9 neue Pflanzenteil-Positionskarten (Quire A komplett).
+- Farbcode Beleg 11 (f002r) + Beleg 12 (f007r): neue rote Wurzeln ohne Text → 12 Belege Ebene 1. f010r rote Oval-Strukturen (Nicht-Wurzel) ohne Text → Ebene 2 ★★★★★ (3 Nicht-Wurzel-Belege).
+- Drei-Kategorien-Verfeinerung: Illustration-Rot ≠ pharmakologisches Dunkelrot ≠ FLOS-therapeutisches Rot (f009r Punkt-Ähre MIT Text). FOLIUM-Textfreiheit (R60 Korollar 3 NEU): 21/21 Folios, 0 Gegenbeispiele ★★★★.
+- sary ★★★ → ★★★★★ (Cross-Register: FLOS-Eröffner f009r + f57r + f103r + f77r).
+- sheey: FLOS-spezifisch → THERAPEUTISCH-ALLGEMEIN ★★★ (FLOS f013r + CAULIS f002r).
+- Neue Spr.-B-Lexikoneinträge: tshdar, yteey, okeeey (f33r). f57v = Zodiak-Diagramm (kein Herbal-Folio).
 
-### Kernbefunde — Version 8.4
+### Kernbefunde — Version 8.5
 
 | Eigenschaft | Wert |
 | --- | --- |
 | Identifizierte Sprache | Mischna-Hebräisch / Jüdisch-Aramäisch |
 | Texttyp | Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis) |
-| Analysierte Folios | f1r, f1v–f30v (Quires A–B+C komplett, Quire D Innenbifolios bD3+bD4 vollständig · bD1 f25 teilw. · bD2 f26 teilw.), f57r, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v |
-| Bestätigte Wörter | 354 (★★★ oder höher) |
+| Analysierte Folios | f1r, f1v–f10r (Quire A komplett, Positionskarten f1v–f10r), f11r–f30v (Quires B–D komplett), f33r (Quire E, Spr. B), f57r/v, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v |
+| Bestätigte Wörter | 357 (★★★ oder höher) |
 | Rückwärtstest | Typ I (genuine Vorhersagen): 11/11 (100%) · Typ II (interne Kohärenz): 18/21 (86%) · 0 Falsch-Positive |
 | Sprache A Anker | f1r–f30v: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4) |
 | Grammatikregeln | 56 (38 validiert + 18 Kandidaten) |
@@ -131,7 +133,7 @@ Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 
 **R2-ext (v7.5):** Das EVA-Zeichen `o` ist positionell vollständig determiniert: (1) `o-` am Wortanfang = ע (Ayin, konsonantisch) — ausnahmslos; (2) `o` im Wortinneren = Ḥolam (Vokalmarker) — ausnahmslos. **Negativtest:** 0 Gegenbeispiele in 140+ validierten Lexikoneinträgen.
 
-## IV. Bestätigtes Lexikon (354 Einträge)
+## IV. Bestätigtes Lexikon (357 Einträge)
 
 Alle Einträge mit ★★★ oder höher.
 
@@ -202,6 +204,7 @@ Alle Einträge mit ★★★ oder höher.
 | sos | שׁ+עַ+שׁ | Feuer auf Feuer / Fieber-Intensivierung (Doppel-Shin: shin + ayin + shin) — 2× auf f30v (P.7 + P.9) — ★★★ Kand. (Erstbeleg f30v P.7) | ★★★ |
 | chokeor | חֹק+אֵ+אוֹר | Vorschrift des Lichts (chok + eor; therapeutisches Kompositum: Lichtbehandlungsanweisung) — ★★★ Kand. (Erstbeleg f30v P.3) | ★★★ |
 | tal | טַל | Tau / Pflanzensaft / Feuchtigkeit (CAULIS-Term: Stiel als Saft-/Nährstoffleiter; 3× in einem CAULIS-Paragraphen: otal · ytal · tal — R15-Emphase-Triplung) — ★★★ Kand. (Erstbeleg f13v P.9) | ★★★ |
+| tshdar | תְּ+שׁ+דָּ+אַר | Jahreszeit-Zeichen (Sprache-B-Variante von torshor; Erstbeleg f33r P.1) — ★★★ Kand. | ★★★ |
 
 
 ### Prognose-Termini
@@ -220,7 +223,7 @@ Alle Einträge mit ★★★ oder höher.
 | lor | לְאוֹר | zum Licht / zur Heilung | ★★★★★ |
 | lshol | לְשׁוֹל | zum Tod / zu Scheol | ★★★★★ |
 | chaiin | חַיִּין | Leben (Chayyim) | ★★★★ |
-| sheey | שֵׁי | Gabe / Wohlbefinden | ★★★★ |
+| sheey | שֵׁי | Gabe / Wohlbefinden — THERAPEUTISCH-ALLGEMEIN (v8.4): erscheint sowohl in FLOS (f013r) als auch CAULIS (f002r P.8–P.9); kein reiner FLOS-Term | ★★★ |
 | cheor | כְּאוֹר | wie Licht (Heilungszeichen) | ★★★★ |
 | otshol | אוֹתשׁוֹל | das Zeichen des Todes | ★★★★★ |
 | chan | חָן | Gnade / günstige Prognose | ★★★★ |
@@ -308,6 +311,7 @@ Alle Einträge mit ★★★ oder höher.
 | tam | תָּם | vollständig / rein — Radial-Kolophon-Typ, Unterform von cthom (tam= als Abschlussmarker in f69r R.5) — ★★★★ Kand. (Erstbeleg f69r R.5) | ★★★★ |
 | cthorchy | כְּ+תְּ+אוֹר+כְּ+הִי | vollständige Heilung der Blässe (cthor + chy) — positives Therapie-Kompositum im Kolophon; Kolophon-Abschluss P.7 oberer Textblock — ★★★ Kand. (Erstbeleg f30r P.7) | ★★★ |
 | chokcheey | חֹק+חֵיי | Lebensvorschrift (chok + cheey; Rezept-Substantiv: Therapieanweisung + Lebensprinzip) — stärkstes therapeutisches Kompositum in bD3; Kolophon-Abschluss f30v P.11 — ★★★★ Kand. (Erstbeleg f30v P.11, 3/3 Transkriptoren) | ★★★★ |
+| okeeey | עַ+כְּ+אֵ+אֵ+אֵ | auf das dreifache Licht (emphatischer Schlusskolophon, Sprache B; Erstbeleg f33r P.7) — ★★★ Kand. | ★★★ |
 
 
 ### Syntaktische Konnektoren
@@ -421,6 +425,7 @@ Alle Einträge mit ★★★ oder höher.
 | ykcholy | יְ+כְּ+כֹּ+ל+יְ | er heilt alles (y+k+chol Paradigma + Possessiv-yod) — ★★★★; f28v P1.2 | ★★★★ |
 | tshoiin | ת+שׁוֹ+עַ+יִן | [sie] wendet das Auge von Scheol (t-Imperfekt + sho + ayin) — ★★★★; f28v P1.4 | ★★★★ |
 | ychom | יְ+חוֹם | er wird genesen / er wird warm (y-Imperfekt von חום) — ★★★ Kand. (Erstbeleg f29r P.9) | ★★★ |
+| yteey | יְ+תֵּ+אֵי | er wird [es] bringen / heilen (Sprache-B-Form; Erstbeleg f33r P.6) — ★★★ Kand. | ★★★ |
 
 
 ### Akteure, Anatomie & Botanik
@@ -428,7 +433,7 @@ Alle Einträge mit ★★★ oder höher.
 | EVA | Hebräisch | Deutsch | Konf. |
 | --- | --- | --- | --- |
 | sar | שַׂר | Arzt / Meister / Vorsteher | ★★★★ |
-| sary | שַׂרִי | mein Arzt (Possessiv) | ★★★ |
+| sary | שַׂרִי | mein Arzt / Apotheker (Possessiv) — Cross-Register ★★★★★: FLOS-Eröffner f009r P.1 (Bistorta-Ähre) + f57r + f103r + f77r; Arzt verschreibt den FLOS-Teil | ★★★★★ |
 | pchy | פְּחִי | mein Atem / mein Mund | ★★★★ |
 | opchor | עַ+פְּ+חֹר | auf die Pupille (Atemweg-Befund) | ★★★ |
 | al | עַל | auf / über / betreffend (Var.: ol) | ★★★★ |
@@ -589,7 +594,7 @@ Alle Einträge mit ★★★ oder höher.
 
 ## VI. Grammatikregeln
 
-56 Regeln gesamt: **38 validiert** (≥ 2 unabhängige Belege) + **18 Kandidaten**. **Regelmoratorium beendet (v8.4)** — Verhältnis 38:18 = 2,11:1 ≥ 1,5:1. R60+ freigegeben. R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
+56 Regeln gesamt: **38 validiert** (≥ 2 unabhängige Belege) + **18 Kandidaten**. **Regelmoratorium beendet (v8.5)** — Verhältnis 38:18 = 2,11:1 ≥ 1,5:1. R60+ freigegeben. R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
 
 | # | Regel | Evidenz | Konf. |
 | --- | --- | --- | --- |
@@ -606,7 +611,7 @@ Alle Einträge mit ★★★ oder höher.
 | R11 | Paragraphen-Ende mit = = Abschlussformel | kaiim=, dom=, daiin=, chckhan=, chal=; f57r cphedom=; f1r T1–T4 (alle 6 Transkriptoren einig); f1v P4-Kolophon chokody=, P10-Kolophon chodar= — 6 neue Belege. _Sektionsabschluss-Variante (1 Beleg, f24v P.16): odaiim= (עַ+דִּינִים) in Final-Kolophon des letzten Quire-C-Paragraphen — Plural-Intensiv als Super-Abschluss. Eigenständige Regel bei 2+ Sektionsabschlüssen zu erheben. (ex R57, v8.1)_ | ★★★★ |
 | R12 | Trägersatz-Muster: P.1 (Relativsatz) → P.2 (Hauptsatz mit sar) | f57r P.9; f103r P.1→P.2 | ★★★ |
 | R13 | Paragraphen ohne Randstern = positives Prognose-Vokabular (or, lor·aiin) | f103r P.3,17,20; f103v: 5/5 or-Paragraphen sternlos | ★★★★ |
-| R14 | **R14 (v8.3) — {plant}-Marker: Strukturelle und pharmakologische Doppelfunktion****Ebene 1 (horizontal):** Text links von {plant} = Diagnose/Indikation; Text rechts = Therapie/Prognose (unverändert).**Ebene 2 (vertikal, NEU):** Die vertikale Position von {plant} im Seitenlayout entspricht dem Pflanzenteil auf der Illustration, der im angrenzenden Textsegment verschrieben wird. Zonen von oben nach unten:**FLOS/FRUCTUS** (Blüte/Frucht)**CAULIS** (Stiel/Ähre)**FOLIUM** (Blatt)**RADIX** (Wurzel/Rhizom)._Korollar: Text ohne {plant}-Marker oder über der gesamten Pflanze = Ganzpflanzen-Präparat ohne Teilunterscheidung._**Farbcode-Korollar (dreistufig, ★★★★★): Ebene 1** — alle Wurzeln unabhängig von Farbe = kein Verschreibungstext (10 Belege, 0 Gegenbeispiele; v8.4: +f13r Inula helenium orange-rote Hauptwurzel).**Ebene 2** — alle dunkelrot/rot gefärbten Pflanzenteile (Wurzeln UND sonstige) = kein Text (9 Belege inkl. f25r Stängelknoten-Bohnen — Erstbeleg Nicht-Wurzel-Rot).**Ebene 3** — grün = prescribiert (Text vorhanden); f25r: grüne Blätter (Text) neben dunkelroten Bohnen (kein Text) auf demselben Folio — direkter interner Kontrast. Reeds-Dokumentation Colors: green,dark-red auf f25r bestätigt Farbzuordnung unabhängig. | f1v–f10v: 100 % konsistent (Ebene 1); Stolfi f16r: „interrupted by the plant's flower" — Blüten-Position explizit dokumentiert ★★★★★; pol (Frucht-Term) an Frucht-Position f22r P.1 ★★★★★; f19r: gesamter Text auf Blüten-Höhe, saiin+chor semantisch kohärent mit Kornblumen-Pharmakologie (Augenwasser, Konjunktivitis) ★★★★★; f14r/f15r/f22r/f28r/f30v: rote Wurzeln ohne Text — 5 Belege ★★★★; f13r (v8.4): Inula helenium orange-rote Hauptwurzel ohne Text — 10. Beleg ★★★★★; f25r: dunkelrote Bohnen an Stengelknoten ohne Text — Erstbeleg Nicht-Wurzel-Rot-Muster ★★★★★; 12/12 analysierten Folios zeigen selektive Pflanzenteil-Annotation (Muster I) | ★★★★★ |
+| R14 | **R14 (v8.4) — {plant}-Marker: Strukturelle und pharmakologische Doppelfunktion****Ebene 1 (horizontal):** Text links von {plant} = Diagnose/Indikation; Text rechts = Therapie/Prognose (unverändert).**Ebene 2 (vertikal, NEU):** Die vertikale Position von {plant} im Seitenlayout entspricht dem Pflanzenteil auf der Illustration, der im angrenzenden Textsegment verschrieben wird. Zonen von oben nach unten:**FLOS/FRUCTUS** (Blüte/Frucht)**CAULIS** (Stiel/Ähre)**FOLIUM** (Blatt)**RADIX** (Wurzel/Rhizom)._Korollar: Text ohne {plant}-Marker oder über der gesamten Pflanze = Ganzpflanzen-Präparat ohne Teilunterscheidung._**Farbcode-Korollar (dreistufig, ★★★★★): Ebene 1** — alle Wurzeln unabhängig von Farbe = kein Verschreibungstext (12 Belege, 0 Gegenbeispiele; v8.4: +f002r Beleg 11 dunkel übermale Wurzel, +f007r Beleg 12 orange-rote Rhizomwurzel).**Ebene 2** — homogene Terracotta/Dunkelrot-Flächenfüllung (opak, gleichmäßig) an beliebigem Pflanzenteil = kein Text (★★★★★; f010r Oval-Strukturen = Erstbeleg Nicht-Wurzel-Rot nach Quire-A-Retroanalyse; f25r Stängelknoten-Bohnen; insgesamt 3 Nicht-Wurzel-Belege)._Drei-Kategorien-Verfeinerung (v8.4): Illustrationslinien-Rot (Strich/Linienzüge) ≠ pharmakologisches Dunkelrot (Fläche). FLOS-therapeutisches Rot (Punkte/Textur für Früchte, z.B. f009r Ähre) ist prescribiert — Text vorhanden. Die Unterscheidung folgt der Maltechnik: **Fläche** = pharmakologisch stumm; **Linie/Textur** = illustrativ/botanisch; **FLOS-Dotted** = prescribierter Fruchtbereich._**Ebene 3** — grün = prescribiert (Text vorhanden); f25r: grüne Blätter (Text) neben dunkelroten Bohnen (kein Text) auf demselben Folio — direkter interner Kontrast. Reeds-Dokumentation Colors: green,dark-red auf f25r bestätigt Farbzuordnung unabhängig. | f1v–f10v: 100 % konsistent (Ebene 1); Stolfi f16r: „interrupted by the plant's flower" — Blüten-Position explizit dokumentiert ★★★★★; pol (Frucht-Term) an Frucht-Position f22r P.1 ★★★★★; f19r: gesamter Text auf Blüten-Höhe, saiin+chor semantisch kohärent mit Kornblumen-Pharmakologie (Augenwasser, Konjunktivitis) ★★★★★; f14r/f15r/f22r/f28r/f30v: rote Wurzeln ohne Text — 5 Belege ★★★★; f13r (v8.4): Inula helenium orange-rote Hauptwurzel ohne Text — 10. Beleg ★★★★★; f002r (v8.4): dunkel übermale Centaurea-Wurzel ohne Text — Beleg 11 ★★★★★; f007r (v8.4): orange-rote Sternblumen-Rhizomwurzel ohne Text — Beleg 12 ★★★★★; f25r: dunkelrote Bohnen an Stengelknoten ohne Text — Erstbeleg Nicht-Wurzel-Rot-Muster; f010r (v8.4): rote Oval-Strukturen (Nicht-Wurzel!) ohne Text — 3. Nicht-Wurzel-Beleg → Ebene 2 ★★★★★; f009r: rote Punkt-Ähre MIT Text = FLOS-therapeutisches Rot (dotted) ≠ homogenes Terracotta — Drei-Kategorien-Verfeinerung bestätigt; 21/21 analysierten Folios zeigen selektive Pflanzenteil-Annotation (Muster I) | ★★★★★ |
 | R15 | Paradigma-Wiederholungsreihen (×2–×5): Adjektiv/Verb mit Vokal- oder Präfixvariation —**Typ A** (direkt nebeneinander: chor·chor);**Typ B** (mit Zwischentext: chor…chor);**Typ B-Dreistufig** (Verb → Nomen → Direktional mit Zwischentext: ychor·chor·[ZT]·chory);**Typ C** (drei phonologisch verwandte sh/chor-Stämme in direkter Folge: shor·chor·sho — semantisches Spannungsfeld: Licht-Zeichen → Pupille/Heilungskern → Scheol/Tod);_**Typ D** (Kand., 1 Beleg): Drei semantisch synonyme Heilungsterme in Kolophon-Finalposition (f21r P.7: shoeor·cheor·cthor). Validierungsfrist abgelaufen — strukturelle Verwandtschaft zu Typ B gesichert, Eigenständigkeit nicht. (ex R52, v8.1)_ | f1v P.3 (ckhy·ckho·ckhy); f10r P8 (chor·chor·cholor); f20r P.13 (chor·chor — Typ A); f21r P.12 (ykeea·**chor**·sheey·ysheol·**chor**·chol·daiin·chkaiin= — Typ B, 4. Beleg); f22v P.7 (ychor·chor·qokchol·chory — Dreistufig-Schema: Verb → Nomen → Direktional mit Zwischentext, Typ B, 5. Beleg); f23r P.7 (qokchol·dar·qokchol — nominale Rahmendopplung mit dar (Leuchtender) als Zwischentext, Typ B nominal, 6. Beleg); f1r P3.L15 (chol·chol — Typ A, 7. Beleg, 4/4 Transkriptoren); f1r P4.L26 (keey·keey — Typ A, 8. Beleg, 3/4 Transkriptoren); f1r P4.L23 (dar…dar — Typ B mit Zwischentext, 9. Beleg, 4/4); f29r P.8 (shor·chor·sho — Typ C, 10. Beleg, max. Diagnosebreite: Licht-Zeichen → Pupille → Scheol, 1 Beleg semantisch kohärent) — 10 Belege / 7 Folios → ★★★★★ | ★★★★★ |
 | R16 | **R16 (v8.3) — Mehrfach-{plant}: Zwei Ebenen****Typ 1 (Horizontal-Dreisegment, unverändert):** Alle {plant}-Marker auf _derselben_ vertikalen Höhe — [Diagnose] {plant} [Brückenterm] {plant} [Prognose] — ein einziger Pflanzenteil.**Typ 2 (Vertikal-Zweiteilverschreibung, NEU):** {plant}-Marker auf _verschiedenen_ vertikalen Höhen — jeder Marker kennzeichnet einen anderen Pflanzenteil; Textsegmente zwischen Markern = separate Verschreibungen für separate Teile. f15r (alle Paragraphen mit Doppel-{plant}) = Typ 2 (zwei Blütenknospen, je eigene Textspalte). | Typ 1: f2r P.2–P.6: Kornblume mit drei Stielen → drei Segmente auf gleicher Höhe; Typ 2: f15r bilateral-Blüte (zwei Knospen, je eigene Textspalte auf Blüten-Höhe) ★★★★; f30r P.11+P.12: zwei {plant}-Marker auf Blatt-/Rhizom-Höhe → Typ 2 zu prüfen; Abgrenzungskriterium: bei Typ 1 gleiche Bildzeile, bei Typ 2 mindestens eine Bildzone Abstand | ★★★★ |
 | R17 | Spr. A: shol (apokor.) medial; Spr. B: sheol (Vollform) am Zeilenende | f4r–f10v: shol medial (20+×); f103r: sheol final (8×); Zodiak-Register bestätigt ★★★★: f72r1 R1 shol (2× medial) / f72r1 R2 sheol (direkt vor gap = 5. Register-Bestätigung) | ★★★★ |
@@ -648,7 +653,7 @@ Alle Einträge mit ★★★ oder höher.
 | R56 | **sho.sho-Emphase (v7.2 → ★★★ validiert v7.7):**Die direkte Wortwiederholung sho.sho ohne Genitivbrücke bildet eine eigenständige Emphase-Kategorie. Unterschied zu R24 (shol·dy·…·shol = Emphase-Dopplung mit Genitiv-Brücke): R56 verwendet keine Brückenpartikel. Unterschied zu chotshol (f21v): dort ist sho als Präfix in ein Kompositum eingebettet; R56 beschreibt Wortwiederholung auf Token-Ebene | f24v P.14: sho.sho — Corpus-Erstbeleg; f27v P.7: sho·sho — Folgebeleg (R43 erfüllt: 2 Folios) → ★★★ validiert | ★★★ |
 | R58 | **3×daiin-Konzentration in einer Zeile (v7.3 — Kandidat ★★★):**Wenn drei daiin-Tokens in einer einzigen Paragraph-Zeile auftreten, bildet dies eine **maximale Urteils-Konzentration**, die über das bekannte Doppelurteil (R19 daiin·daiin = Emphase-Dopplung) hinausgeht. Semantisch: dreifaches Urteil in einer Zeile = absolutes diagnostisches Vollurteil. Unterschied zu R19 (Intensivierungsrhetorik): R19 beschreibt Wiederholungsreihen allgemein; R58 ist spezifisch auf drei daiin-Vorkommen in einer einzigen Paragraph-Zeile beschränkt. Unterschied zu R9 (Refrain-Wörter 3–5× pro Folio): R9 zählt folio-weite Häufigkeit, R58 beschreibt Zeilendichte — Kandidat | f25v P.2: dchor.cthor.chor.daiin.s.okeeaiin.daiin.ckhey.daiin — Corpus-Erstbeleg 3×daiin in einer Zeile (alle H/C/F einig); bisher höchste daiin-Zeilendichte im gesamten Corpus; Bifolio bD1 insgesamt daiin-reichstes Bifolio (4 Doppelurteile + 1 Dreifachkonzentration); ★★★ Kand. (1 Beleg, Folgebeleg erforderlich) | ★★★ |
 | R59 | **qo als isolierter Konnektiv-Token (v7.4 → ★★★ validiert v7.8):**Das EVA-Token qo in **isolierter Einzelwort-Position** am Beginn einer Paragraphenzeile repräsentiert das bare וְ (Vav conjunctivum als Partikel), **nicht** das Verbund-Präfix qo- im Sinne von R1. Es erscheint als grammatische Brücke zwischen zwei inhaltlich zusammengehörigen Paragraphen eines Folio-Eintrags. In Sprache A (Quire A) maximal 1× pro Folio belegbar.**Abgrenzung von R1:** R1 (qo- Verbundpräfix): qo + Stamm als ein Token → Sprache B exklusiv in Quires A+B; R59 (qo Einzeltoken): qo als alleinstehendes Wort, gefolgt von Punkt-Separator → auch in Sprache A möglich | f1v P.7: qo.ol.choiees.cheol.dol.cthey- — Erstbeleg (alle 4 Transkriptoren H/C/D/F einig); f28r P.1: Folgebeleg (2. Folio) → R43 erfüllt (f1v + f28r = 2 Folios) → ★★★ validiert | ★★★ |
-| R60 | **R60 — Pharmakologische Pflanzenteil-Annotation (★★★★, Corpus-übergreifend)**Das Voynich-Kräuterkorpus encodiert den Pflanzenteil, aus dem ein Präparat gewonnen wird, durch die **vertikale Position** des Texts relativ zur Pflanzenillustration. Strukturelles Designprinzip des Manuskripts, kein ästhetisches Layout-Element. Das Layout selbst ist ein Informationsträger: es vermittelt ohne explizite Beschriftung, _mit welchem_ Pflanzenteil ein Rezept zubereitet wird.**Layout-Typen:****Typ A** (Apex-Text: gesamter Text über Pflanze = Blüten/Früchte/Triebspitzen als Einheit, f20r, f21r, f57r, f33r)**Typ B** (Bilateral-Blüte: Indikation links + Therapie rechts auf gleicher Blüten-Höhe, f15r, f28r, f1v)**Typ C** (Vertikale Zonentrennung: oberer Block = FLOS/FRUCTUS, unterer Block = FOLIUM/CAULIS, f14r, f16r, f30r, f13v)**Typ D** (Interweaved: jede Textzeile neben anderem Pflanzenteil, hochdifferenziert, f30r P.3–P.12)._Fehlende {plant}-Marker (Typ f21r) = Ganzpflanzen-Präparat ohne Teilunterscheidung — medizinhistorisch korrekt für Thymian/Kräuter (TOTUS). A contrario-Beweis für das Kodierungsprinzip._**Korollar (v8.4): Sprachregister-Unabhängigkeit ★★★** — Das Pflanzenteil-Kodierungsprinzip gilt für **beide Sprachregister** (Sprache A UND Sprache B). Belege: f57r (Typ A, Quire H, Spr. B), f33r (Typ A, Quire E, Spr. B). 2 Belege, 0 Gegenbeispiele.**Korollar (v8.4): Ikonographische Toxizitäts-Warnung ★★★ Kand.** — Das Mandrake-Menschenkopf-Motiv (f33r) bildet eine ikonographische Entsprechung zum textuellen Farbcode-Korollar: Wo der Text schweigt (keine Verschreibung), spricht das Bild (Menschenkopf = Gefahr). Textuelle und bildliche Kodierungsebene kommunizieren dieselbe pharmakologische Information. | 12/12 analysierten Folios: Muster I — selektive Annotation (kein Text neben nicht-verschriebenen Teilen) — 0 Gegenbeispiele; Stolfi f16r: „interrupted by the plant's flower" ★★★★★; pol (Frucht-Term) an Frucht-Position f22r P.1 — stärkster semantischer Einzelbeweis ★★★★★; f19r: Blüten-Semantik (saiin+chor) stimmt mit Kornblumen-Pharmakologie (Augenwasser, Konjunktivitis) überein ★★★★★; f21r: keine {plant}-Marker → Thymian-Ganzpflanzen-Präparat ★★★; f14r/f22r/f28r/f30v: rote Wurzeln ohne Text — 4 Belege ★★★★; f25r: Reeds Colors: green,dark-red bestätigt Farbcode unabhängig; f57r + f33r (v8.4): Quire-B-Extension — beide Sprachregister bestätigt ★★★ | ★★★★ |
+| R60 | **R60 — Pharmakologische Pflanzenteil-Annotation (★★★★, Corpus-übergreifend)**Das Voynich-Kräuterkorpus encodiert den Pflanzenteil, aus dem ein Präparat gewonnen wird, durch die **vertikale Position** des Texts relativ zur Pflanzenillustration. Strukturelles Designprinzip des Manuskripts, kein ästhetisches Layout-Element. Das Layout selbst ist ein Informationsträger: es vermittelt ohne explizite Beschriftung, _mit welchem_ Pflanzenteil ein Rezept zubereitet wird.**Layout-Typen:****Typ A** (Apex-Text: gesamter Text über Pflanze = Blüten/Früchte/Triebspitzen als Einheit, f20r, f21r, f57r, f33r, f005r, f006r, f009r, f010r)**Typ B** (Bilateral-Blüte: Indikation links + Therapie rechts auf gleicher Blüten-Höhe, f15r, f28r, f1v)**Typ C** (Vertikale Zonentrennung: oberer Block = FLOS/FRUCTUS, unterer Block = FOLIUM/CAULIS, f14r, f16r, f30r, f13v, f002r, f002v, f003v, f004r, f007r)**Typ D** (Interweaved: jede Textzeile neben anderem Pflanzenteil, hochdifferenziert, f30r P.3–P.12, f003r, f008r)._Fehlende {plant}-Marker (Typ f21r) = Ganzpflanzen-Präparat ohne Teilunterscheidung — medizinhistorisch korrekt für Thymian/Kräuter (TOTUS). A contrario-Beweis für das Kodierungsprinzip._**Korollar 1 (v8.3): Sprachregister-Unabhängigkeit ★★★** — Das Pflanzenteil-Kodierungsprinzip gilt für **beide Sprachregister** (Sprache A UND Sprache B). Belege: f57r (Typ A, Quire H, Spr. B), f33r (Typ A, Quire E, Spr. B). 2 Belege, 0 Gegenbeispiele.**Korollar 2 (v8.3): Ikonographische Toxizitäts-Warnung ★★★** — Das Mandrake-Menschenkopf-Motiv (f33r) bildet eine ikonographische Entsprechung zum textuellen Farbcode-Korollar: Wo der Text schweigt (keine Verschreibung), spricht das Bild (Menschenkopf = Gefahr). Textuelle und bildliche Kodierungsebene kommunizieren dieselbe pharmakologische Information.**Korollar 3 (v8.4 NEU): FOLIUM-Textfreiheit ★★★★** — Die FOLIUM-Zone (Blätter) hat systematisch keinen Text, _unabhängig von der Blattfarbe_. Gilt für grüne Blätter (f002v, f005r), dunkel übermale Blätter (f002r), rot-geschattete Blätter (f003r, f004r) und gezähnte Blätter (f010r). Der Stängel (CAULIS) hat Text; die Blätter (FOLIUM) haben keinen Text. Interpretation: Blätter sind im Voynich-System keine primären Heilmittel-Einheiten — die pharmakologischen Einheiten sind FLOS/FRUCTUS und CAULIS.**Korollar 4 (v8.4 NEU): Drei-Kategorien-Farbcode ★★★★★** — Rot im Kräuterkorpus ist nicht uniform. Drei distinkte Kategorien: (1) Pharmakologisches Dunkelrot = homogene Terracotta-Füllfläche → kein Text (12 Wurzel-Belege + 3 Nicht-Wurzel-Belege, 0 Gegenbeispiele); (2) Illustrationslinien-Rot = Linienzüge/Strichel → kein pharmakologisches Signal; (3) FLOS-therapeutisches Rot = Punkte/Textur für Früchte/Beeren → Text vorhanden (f009r, f006r). Die Maltechnik ist entscheidend: Fläche ≠ Linie ≠ Textur. | 21/21 analysierten Folios (Quire A f1v–f10r + f13r/v + f14r + f15r + f16r + f22r + f28r + f30r/v + f33r + f57r): Muster I — selektive Annotation (kein Text neben nicht-verschriebenen Teilen) — 0 Gegenbeispiele ★★★★; Stolfi f16r: „interrupted by the plant's flower" ★★★★★; pol (Frucht-Term) an Frucht-Position f22r P.1 — stärkster semantischer Einzelbeweis ★★★★★; f19r: Blüten-Semantik (saiin+chor) stimmt mit Kornblumen-Pharmakologie (Augenwasser, Konjunktivitis) überein ★★★★★; f21r: keine {plant}-Marker → Thymian-Ganzpflanzen-Präparat ★★★; f14r/f22r/f28r/f30v: rote Wurzeln ohne Text — 4 Belege ★★★★; f25r: Reeds Colors: green,dark-red bestätigt Farbcode unabhängig; f57r + f33r: beide Sprachregister bestätigt ★★★; FOLIUM-Textfreiheit: alle 21 Folios (100 %), 0 Gegenbeispiele — grüne, dunkle, rot-geschattete Blätter alle textfrei ★★★★; f009r rote Punkt-Ähre MIT Text = FLOS-therapeutisch (Drei-Kategorien-Bestätigung); f010r rote Ovale OHNE Text = Ebene-2-Nicht-Wurzel-Beleg ★★★★★ | ★★★★ |
 
 
 ## VII. Rückwärtstest-Statistik
@@ -1009,6 +1014,46 @@ Das Regelmoratorium hemmt nur die Einführung R60+, aber nicht die Akkumulation 
 
 _Arbeitshypothese: Strenger Vorbehalt: Neue Kandidaten-Regeln aus zukünftigen Folio-Analysen erhöhen den Nenner und können die Konsolidierungseffekte konterkarieren. Das Moratorium sollte bei zukünftigen Überschreitungen erneut aktiviert werden._
 
+### OP8 — CAULIS-Kandidaten fol/tal in f2r–f10v
+
+**Schwere:** hoch · **Status:** offen
+
+Die in v8.4 identifizierten CAULIS-Kandidaten `fol` (Röhrenschaft) und `tal` (Pflanzensaft) wurden bisher nur in f13v belegt. Ihre Vorkommen in den neu analysierten Quire-A-Folios f2r–f10v sind noch nicht systematisch geprüft.
+
+_Arbeitshypothese: Grep auf den Transkriptionen f002r–f010v nach `fol` und `tal` in CAULIS-Paragraphen. Wenn ≥1 Beleg in Quire A → R43 erfüllt, Aufstufung zu ★★★★._
+
+### OP9 — f009r Vollübersetzung P.1–P.9
+
+**Schwere:** hoch · **Status:** ausstehend
+
+Folio f009r (Bistorta officinalis) ist als neues Anker-Folio mit vollständigen Transkriptionen verfügbar, aber nur P.1 links wurde in v8.4 übersetzt. Die restlichen Paragraphen P.2–P.9 einschließlich der bilateralen FLOS-Struktur sind noch unübersetzt.
+
+_Arbeitshypothese: Vollübersetzung mit Ankerwort-Test: sary, shor, cthy, tydlo gegen bekannte Bedeutungen testen. Cross-Register-Bestätigung für FLOS-Eröffner-Muster._
+
+### OP10 — Verso-Folios f2v–f10v Positionskarten
+
+**Schwere:** mittel · **Status:** offen
+
+Die Retroanalyse v8.4 deckte nur die Recto-Seiten f2r–f10r ab. Die entsprechenden Verso-Folios f2v–f10v (außer f2v und f3v, die bereits teilw. analysiert wurden) haben noch keine Pflanzenteil-Positionskarten.
+
+_Arbeitshypothese: Bilder verfügbar. Muster der Recto-Seiten (Typ A/C/D dominierend) vermutlich auf Verso übertragbar, aber morphologische Unterschiede möglich (z.B. Typ B auf Verso-Seiten)._
+
+### OP11 — f033v Analyse (Verso von f33r)
+
+**Schwere:** mittel · **Status:** offen
+
+Das Bifolio bE1 (f33r + f40) wurde auf der Recto-Seite f33r vollständig analysiert (v8.4). Das Verso f33v ist noch nicht analysiert. Bild noch nicht in der Datenbank.
+
+_Arbeitshypothese: Sprache B zu erwarten (Quire E). Layout-Typ A oder C wie f33r wahrscheinlich. Botanische Identifikation kann von f33r abweichen (verschiedene Pflanzen auf Recto/Verso)._
+
+### OP12 — FOLIUM-Textfreiheit: Regel oder Layout-Artefakt?
+
+**Schwere:** niedrig-mittel · **Status:** offen
+
+21/21 Folios zeigen FOLIUM-Textfreiheit (R60 Korollar 3). Aber: Ist dies eine bewusste pharmakologische Kodierung (Blätter werden nicht prescribiert) oder ein rein layoutbedingtes Phänomen (Blätter nehmen die Seitenmitte ein, wo der Schreiber keinen Text platziert hat)?
+
+_Arbeitshypothese: Theoretische Reflexion: Wenn FOLIUM-Textfreiheit ein Artefakt wäre, müssten Blätter in Apex-Position (oben) Text haben. Aber f002v und f005r (riesen Rundblätter dominant) haben trotz Blatt-Dominanz KEINEN Text. Das spricht für semantische Intention. Formale Regel R61 als Kandidat nach 5 weiteren Bestätigungen._
+
 **Scheol-Verteilungsstatistik (v7.5 formalisiert):**
 
 | Strukturposition | sheol/shol-Vorkommen | Andere Lexeme |
@@ -1020,7 +1065,7 @@ _Arbeitshypothese: Strenger Vorbehalt: Neue Kandidaten-Regeln aus zukünftigen F
 
 ---
 
-Voynich-Manuskript — Formales Mapping-Dokument · Version 8.4 · Juni 2026
-Lexikon: 354 Einträge · Grammatikregeln: 56 · Rückwärtstest: Typ I: 11/11 (100%) · Typ II: 18/21 (86%)
+Voynich-Manuskript — Formales Mapping-Dokument · Version 8.5 · Juni 2026
+Lexikon: 357 Einträge · Grammatikregeln: 56 · Rückwärtstest: Typ I: 11/11 (100%) · Typ II: 18/21 (86%)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

@@ -41,7 +41,7 @@ export const LEXICON = [
   { eva: 'lor',       heb: 'לְאוֹר',       de: 'zum Licht / zur Heilung',                     stars: '★★★★★', cat: 'prognose' },
   { eva: 'lshol',     heb: 'לְשׁוֹל',       de: 'zum Tod / zu Scheol',                         stars: '★★★★★', cat: 'prognose' },
   { eva: 'chaiin',    heb: 'חַיִּין',       de: 'Leben (Chayyim)',                             stars: '★★★★',  cat: 'prognose' },
-  { eva: 'sheey',     heb: 'שֵׁי',         de: 'Gabe / Wohlbefinden',                         stars: '★★★★',  cat: 'prognose', part: 'FLOS' },
+  { eva: 'sheey',     heb: 'שֵׁי',         de: 'Gabe / Wohlbefinden — THERAPEUTISCH-ALLGEMEIN (v8.4): erscheint sowohl in FLOS (f013r) als auch CAULIS (f002r P.8–P.9); kein reiner FLOS-Term',  stars: '★★★',   cat: 'prognose' },
   { eva: 'cheor',     heb: 'כְּאוֹר',       de: 'wie Licht (Heilungszeichen)',                 stars: '★★★★',  cat: 'prognose' },
   { eva: 'otshol',    heb: 'אוֹתשׁוֹל',     de: 'das Zeichen des Todes',                       stars: '★★★★★', cat: 'prognose' },
   { eva: 'chan',      heb: 'חָן',         de: 'Gnade / günstige Prognose',                   stars: '★★★★',  cat: 'prognose' },
@@ -92,7 +92,7 @@ export const LEXICON = [
   { eva: 'ykoiin',    heb: 'יְכוֹיִן',          de: 'er wird sich erholen',                        stars: '★★★',   cat: 'verb' },
   // ── Akteure, Anatomie & Botanik ─────────────────────
   { eva: 'sar',       heb: 'שַׂר',              de: 'Arzt / Meister / Vorsteher',                  stars: '★★★★',  cat: 'akteur' },
-  { eva: 'sary',      heb: 'שַׂרִי',            de: 'mein Arzt (Possessiv)',                       stars: '★★★',   cat: 'akteur' },
+  { eva: 'sary',      heb: 'שַׂרִי',            de: 'mein Arzt / Apotheker (Possessiv) — Cross-Register ★★★★★: FLOS-Eröffner f009r P.1 (Bistorta-Ähre) + f57r + f103r + f77r; Arzt verschreibt den FLOS-Teil',  stars: '★★★★★', cat: 'akteur' },
   { eva: 'pchy',      heb: 'פְּחִי',            de: 'mein Atem / mein Mund',                       stars: '★★★★',  cat: 'akteur',  part: 'FLOS/FRUCTUS' },
   { eva: 'opchor',    heb: 'עַ+פְּ+חֹר',        de: 'auf die Pupille (Atemweg-Befund)',             stars: '★★★',   cat: 'akteur' },
   { eva: 'al',        heb: 'עַל',               de: 'auf / über / betreffend (Var.: ol)',           stars: '★★★★',  cat: 'akteur' },
@@ -392,4 +392,8 @@ export const LEXICON = [
   // ── v8.4 (Retroanalyse f1v + f13r + f13v + f57r + f33r — Pflanzenteil-Positionskarten) ──
   { eva: 'fol',       heb: 'פּוּל/פֹּל',              de: 'Röhrenschaft / Stiel-Hülse (CAULIS-Eröffner bei Equisetum — Erstbeleg f13v P.6 als Öffnungsterm des gesamten CAULIS-Blocks; Etymologie: pūlāʾ aram. = Hohlstängel)',                           stars: '★★★',  cat: 'akteur',  part: 'CAULIS'    },
   { eva: 'tal',       heb: 'טַל',                    de: 'Tau / Pflanzensaft / Feuchtigkeit (CAULIS-Term: Stiel als Saft-/Nährstoffleiter; 3× in einem CAULIS-Paragraphen: otal · ytal · tal — R15-Emphase-Triplung) — ★★★ Kand. (Erstbeleg f13v P.9)', stars: '★★★',  cat: 'symptom', part: 'CAULIS'    },
+  // ── v8.4 Quire-A-Retroanalyse + f33r (Sprache B) ─────────────────────────
+  { eva: 'tshdar',    heb: 'תְּ+שׁ+דָּ+אַר',          de: 'Jahreszeit-Zeichen (Sprache-B-Variante von torshor; Erstbeleg f33r P.1) — ★★★ Kand.', stars: '★★★',  cat: 'symptom' },
+  { eva: 'yteey',     heb: 'יְ+תֵּ+אֵי',              de: 'er wird [es] bringen / heilen (Sprache-B-Form; Erstbeleg f33r P.6) — ★★★ Kand.',      stars: '★★★',  cat: 'verb'    },
+  { eva: 'okeeey',    heb: 'עַ+כְּ+אֵ+אֵ+אֵ',         de: 'auf das dreifache Licht (emphatischer Schlusskolophon, Sprache B; Erstbeleg f33r P.7) — ★★★ Kand.', stars: '★★★',  cat: 'kolophon' },
 ];

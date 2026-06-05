@@ -29,10 +29,10 @@ export const FOLIO_PAGES = [
 export const FOLIO_STATUS = {
   // ── Lage 1 · Kräuter A (f1–f8) — Language-A lexicon range ────────────────
   f1r:'done',
-  f1v:'partial', f2r:'partial', f2v:'partial',
-  f3r:'done',    f3v:'done',    f4r:'partial', f4v:'partial',
-  f5r:'partial', f5v:'partial', f6r:'partial', f6v:'partial',
-  f7r:'partial', f7v:'partial', f8r:'partial', f8v:'partial',
+  f1v:'partial', f2r:'done',    f2v:'partial',
+  f3r:'done',    f3v:'done',    f4r:'done',    f4v:'partial',
+  f5r:'done',    f5v:'partial', f6r:'done',    f6v:'partial',
+  f7r:'done',    f7v:'partial', f8r:'done',    f8v:'partial',
 
   // ── Lage 2 · Kräuter A (f9–f15) — translation HTMLs + txt transcriptions ──
   f9r:'done',  f9v:'done',
@@ -64,15 +64,16 @@ export const FOLIO_STATUS = {
   // ── Lage 10 · Kosmologisch — f69r Rad-Diagramm vollständig analysiert ──────
   f69r:'done',
 
-  // ── Lage 3 · Kräuter A — f33r image studied ──────────────────────────────
-  f33r:'partial',
+  // ── Lage 5 · Kräuter B — f33r vollständig analysiert (v8.4, Sprache B) ────
+  f33r:'done',
 
   // ── Lage 11 · Biologisch — f71–f72 · Zodiak bK1 vollständig analysiert ───
   f71r:'done', f71v:'done',
   f72r1:'done', f72r2:'done',
 
-  // ── Lage 8 · Astronomisch — f57r+f58r analysiert ─────────────────────────
+  // ── Lage 8 · Astronomisch — f57r+f58r analysiert; f57v = Zodiak-Diagramm ──
   f57r:'done',
+  f57v:'partial',
   f58r:'done',
 
   // ── Lage 14 · Kosmologisch — f85v+f86r txt+jpg asset ────────────────────
