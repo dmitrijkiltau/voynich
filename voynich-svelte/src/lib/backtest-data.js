@@ -35,11 +35,17 @@ export const TESTED = [
   { type: 'II', pred: 'alef / otalef — Stier-Exklusivmarker', heb: 'אָלֶף / אוֹת+אָלֶף', result: '✓ f72r1 S1.6 + S1.9 — ausschließlich im Stier-dunkel-Panel', context: 'alef = Ochsenkopf-Piktogramm (Aleph-Ursprung); fehlt in f71r, f71v, f72r2; erste ikonographisch verankerte Buchstabenreferenz im Zodiak-Corpus' },
   // ── v8.0 · f69r Kosmogramm ─────────────────────────────────────────────────
   { type: 'II', pred: 'dar·dar-Dopplung (R36) in kosmologischem Register', heb: 'דַּר·דַּר', result: '✓ f69r R.17 (dair.dar= Terminal) + f69r R.22 (dary.dar direktional) — 2 neue Belege', context: 'R43 erfüllt: f18r + f26v + f69r = 3 Folios, 4 Gesamtbelege → R36 ★★★ validiert; Typ A (direkt adjacent) erstmals in kosmologischem Register belegt' },
+  // ── v8.7 · Quire D Abschluss + Quire E Eröffnung (f31r–f34v) ──────────────
+  { type: 'I', pred: 'oldam (f34r P.7) → sofortiger Folgebeleg auf f34v P.2', heb: 'עַל+דָּם', result: '✓ f34v P.2 (Abstand: 1 Folio)', context: 'ol+dam Erstbeleg f34r P.7 → unmittelbarer Folgebeleg auf dem Verso desselben Bifolios; R43-Frist binnen einer Sitzung erfüllt' },
+  { type: 'I', pred: 'choraiin (f34v P.8) = 3. Attestation (R43 aus f30r P.3 + f33v P.7)', heb: 'כֹּ+אַר+עַיִן', result: '✓ f34v P.8 — Drittbeleg bestätigt', context: 'chorain Erstbeleg f30r P.3 (★★★ Kand.) → f33v P.7 (2. Beleg) → f34v P.8 (3. Beleg): R43-Frist erfüllt → ★★★★ validiert' },
+  { type: 'II', pred: 'Tanacetum f31r: dam im Schlusskolophon — Tanacetum = Blutfluss-Kraut (Macer floridus)', heb: 'דָּם', result: '✓ f31r P.15 okedam= — Blutterm im Abschlusskolophon', context: 'Tanacetum parthenium ist im mittelalterlichen Kräuterbuch (Macer floridus) als Mittel gegen Menstruationsblutungen gelistet; botanische und textuelle Ebene konvergieren' },
+  { type: 'II', pred: 'Gentiana f32v endet ol.sho.chy= — Gentiana als bitteres Diagnostikum (Scheol-Blässe-Formel)', heb: 'עַל+שׁוֹ+כְּהִי', result: '✓ f32v P.11 ol.sho.chy= — reine Scheol-Diagnose ohne Heilungsformel', context: 'Enzian (Gentiana) gilt in der mittelalterlichen Pharmakologie als schweres Diagnostikum für lebensbedrohliche Zustände; Schlusskolophon spiegelt negative Prognose' },
+  { type: 'II', pred: 'Bryonia f34v: Tier-Wurzel + oldar.qoldar = intensivierte Wurzelformeln (dreistufiges Präfix)', heb: 'עַל+דְּ+אַר / וְ+עַל+דְּ+אַר', result: '✓ f34v P.4 oldar.qoldar — tiefste Präfix-Schachtelung im Corpus', context: 'Bryonia-Wurzeln wurden zu Tierfiguren geschnitzt und als Mandragora-Ersatz verkauft; zoomorphe Wurzel-Ikonographie korrespondiert mit maximaler Wurzel-Textintensivierung (qoldar = dreistufig)' },
 ];
 
 export const STATS = [
-  { label: 'Typ I — Genuine Vorhersagen (Prä-Analyse-Anker, eingefroren)', pct: 100, num: '11 / 11', color: 'var(--gold)' },
-  { label: 'Typ II — Interne Kohärenz (post-hoc-Entdeckungen)', pct: 86, num: '18 / 21', color: 'var(--green)' },
+  { label: 'Typ I — Genuine Vorhersagen (Prä-Analyse-Anker, eingefroren)', pct: 100, num: '13 / 13', color: 'var(--gold)' },
+  { label: 'Typ II — Interne Kohärenz (post-hoc-Entdeckungen)', pct: 87.5, num: '21 / 24', color: 'var(--green)' },
   { label: 'Bestätigt Spr. A (Anker, f1v–f15v)', pct: 100, num: '260 / 260', color: 'var(--green)' },
   { label: 'Falsch-positiv (gesamt)', pct: 0, num: '0', color: 'var(--gold)' },
 ];

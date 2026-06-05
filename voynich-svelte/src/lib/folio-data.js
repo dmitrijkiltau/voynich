@@ -53,19 +53,22 @@ export const FOLIO_STATUS = {
   f23r:'done', f23v:'done',
   f24r:'done', f24v:'done',
 
-  // ── Lage 4 · Kräuter A (f25–f32) — Quire D (bD1+bD2+bD3+bD4) ────────────
+  // ── Lage 4 · Kräuter A (f25–f32) — Quire D (bD1+bD2+bD3+bD4) vollständig ──
   f25r:'done', f25v:'done',
   f26r:'done', f26v:'done',
   f27r:'done', f27v:'done',
   f28r:'done', f28v:'done',
   f29r:'done', f29v:'done',
   f30r:'done', f30v:'done',
+  f31r:'done', f31v:'done',
+  f32r:'done', f32v:'done',
 
   // ── Lage 10 · Kosmologisch — f69r Rad-Diagramm vollständig analysiert ──────
   f69r:'done',
 
-  // ── Lage 5 · Kräuter B — f33r vollständig analysiert (v8.4, Sprache B) ────
-  f33r:'done',
+  // ── Lage 5 · Kräuter B — f33r/v + f34r/v analysiert (v8.7, Sprache B) ─────
+  f33r:'done', f33v:'done',
+  f34r:'done', f34v:'done',
 
   // ── Lage 11 · Biologisch — f71–f72 · Zodiak bK1 vollständig analysiert ───
   f71r:'done', f71v:'done',

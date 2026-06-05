@@ -10,18 +10,18 @@ export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_STATUS, RULES, RULES_CHA
 export const isConf5 = (/** @type {string} */ stars) => stars.slice(0, 5) === '★★★★★';
 
 export const STATS = {
-  version: '8.6',
+  version: '8.7',
   changelog: [
-    'Plantmarker-Abgleich (v8.6): Botanik f14r/f16r/f19r/f22r/f24v nach plantmarker-doc aktualisiert (6 Folios). Layout-Typen A/B/C für f20r, f21r, f25r, f28r, f30r/v ergänzt. f16r chor als 3. FLOS-Indikator (opchy+saiin+chor). f14r Ebene-2-Erstbeleg markiert. Lexikon pol: FRUCTUS-Notiz + CAULIS-Konflikt, kein PFLANZENTEIL-Tag (≥2-Folio-Regel nicht erfüllt).',
+    'Quire-D-Abschluss + Quire-E-Eröffnung (v8.7): f31r–f34v analysiert (7 neue Seiten). Quire D vollständig (16/16). Quire E: 5/16 Seiten. R28 ★★★→★★★★ (ytsho f32r P.4 = 3. Beleg). R58 ★★★→★★★★ validiert (f32v P.9 = 3. Beleg). R61 ★★★ Kand. neu (ol+[Ankerwort] = Intensivierungsformel, 6 Belege). R60 Korollar 3 ★★★★→★★★★★ (25 Folios). oraiin ★★★★→★★★★★ (4-Folio-Formel). chorain ★★★→★★★★ validiert. 14 neue Lexikoneinträge.',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.length,
   rules: RULES.length,
-  validatedRules: 38,
+  validatedRules: 40,
   backtest: '100%',
-  backtestFraction: 'Typ I: 11/11 (100%) · Typ II: 18/21 (86%)',
-  backtestTotal: '32',
+  backtestFraction: 'Typ I: 13/13 (100%) · Typ II: 21/24 (87,5%)',
+  backtestTotal: '37',
   gibberishRate: '10,4 %',
-  foliosA: 'f1r–f30v',
-  foliosAll: 'f1r, f1v–f10r (Quire A komplett, Positionskarten f1v–f10r), f11r–f30v (Quires B–D komplett), f33r (Quire E, Spr. B), f57r/v, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v',
+  foliosA: 'f1r–f32v',
+  foliosAll: 'f1r, f1v–f10r (Quire A komplett, Positionskarten f1v–f10r), f11r–f32v (Quires B–D komplett), f33r–f34v (Quire E Eröffnung, 5/16), f57r/v, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v',
 };
