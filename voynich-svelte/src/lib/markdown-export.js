@@ -144,8 +144,8 @@ export function generateMarkdown() {
   for (const cat of cats) {
     h(3, CAT[cat] || cat);
     line();
-    s.push(tbl(['EVA', 'Hebräisch', 'Deutsch', 'Konf.'],
-      LEXICON.filter(e => e.cat === cat).map(e => [e.eva, e.heb, e.de, e.stars])));
+    s.push(tbl(['EVA', 'Hebräisch', 'Deutsch', 'Notizen', 'Konf.'],
+      LEXICON.filter(e => e.cat === cat).map(e => [e.eva, e.heb, e.de, e.notes, e.stars])));
     line();
   }
 

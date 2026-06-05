@@ -134,421 +134,421 @@ Alle Einträge mit ★★★ oder höher.
 
 ### Medizinische Nomina & Symptome
 
-| EVA | Hebräisch | Deutsch | Konf. |
-| --- | --- | --- | --- |
-| dam | דָּם | Blut | ★★★★★ |
-| dal | דַּל | schwach / abgemagert | ★★★★ |
-| daly | דַּלִּי | seine/meine Schwäche (Possessiv) | ★★★★ |
-| ckhy | כְּהִי | Blässe / Trübheit | ★★★★ |
-| okaiin | עַכְּעַיִן | auf das Auge | ★★★★ |
-| qokaiin | וְכְּעַיִן | und gemäß dem Auge | ★★★★ |
-| qotal | וְטַל | Tau / Schweißzeichen | ★★★ |
-| ram | רָם | erhöht / Fieber | ★★★ |
-| chor | חֹר | Pupille / Höhle | ★★★★ |
-| otchor | אוֹת+חֹר | das Zeichen der Pupille | ★★★★ |
-| oraiin | אוֹר+עַיִן | Licht des Auges / Augenheilung — R43 erfüllt: f22r + f26v P.4 + f31v P.11 + f33v P.7; oraiin-Formel über 4 Folios als quire-übergreifendes ophthalmologisches Leitmotiv (★★★★★, v8.7) | ★★★★★ |
-| sheoldam | שְׁאוֹל+דָּם | tödlicher Blutverlust | ★★★★★ |
-| damo | דָּמוֹ | sein Blut (Possessiv) | ★★★★ |
-| cham | חַם | Wärme / Entzündung / hippokratischer Befund-Term (f69r P.2 als kosmologischer Register-Beleg: Fieber-Diagnose im Rad-Diagramm) | ★★★ |
-| torshor | תֹּר+שׁוֹר | Jahreszeit-Zeichen / saisonaler Eintrag | ★★★ |
-| dchm | דְּ+חָם | von der Entzündung | ★★★ |
-| dalor | דַּלאוֹר | schwaches Augenlicht | ★★★ |
-| char | חַר | heiß / Fieber | ★★★★ |
-| chary | חַרִי | sein Fieber (Possessiv) | ★★★ |
-| ckhal | כְּהַל | Nachlassen des Fiebers | ★★★ |
-| dol | דָּוֶה | Schmerz / Krankheit | ★★★ |
-| odol | עַ+דָּוֶה | auf die Krankheit (o+dol) | ★★★★ |
-| dolar | דָּוֶה+לְאוֹר | Krankheit zur Heilung | ★★★ |
-| shees | אֵשׁ | Feuer / Fieberbrand | ★★★ |
-| shorodo | שׁוֹר+עוֹדוֹ | das Zeichen besteht fort | ★★★ |
-| oeees | עַ+אֵשׁ | auf dem Feuer/Fieber | ★★★ |
-| octhos | עַ+כְּ+תֹ+שׁ | auf wie Feuer/Fieber | ★★★ |
-| chok | חֹק | Vorschrift / ärztliche Anordnung / Rezept | ★★★ |
-| choky | חֹקֵּי | die Vorschriften des [Falls] (Konstr.-Plural) | ★★★ |
-| otchy | אוֹת+כְּ+הִי | das Zeichen der Blässe | ★★★★ |
-| dala | דַּלָּ | Schwäche (fem., Femininum von dal) | ★★★ |
-| daly·dal | דַּלִּי+דַּל | seine Schwäche — schwach (R19 Dopplung ×2) | ★★★★ |
-| dalchy | דַּל+כְּהִי | die Schwäche der Blässe | ★★★★ |
-| kchom | כְּ+חֹם | wie Hitze / wie Fieber (Temperatur-Komparativ) — R43 Kand.-Flag: f001r (2×, 1 Folio), nächste 5 Folios prüfen | ★★★ |
-| chom | חֹם | Wärme / Hitze (eigenständige Form, Schwesterform von cham) | ★★★ |
-| oldckhy | עַל+דְּ+כְּ+הִי | über die Blässe davon (dreifach-präpositionaler Terminus) | ★★★ |
-| dor | דֹּר | Generation / Wachstumszyklus / Zeitraum der Erkrankung — R43 bestätigt: f17r + f27r P.5 = 2 Folios | ★★★ |
-| pchodol | פְּחֹ+דֹּל | Atemweg der Krankheit / Mundschmerz (pcho + dol) | ★★★ |
-| oekor | עַ+אֵ+קֹר | auf die Kälte / das Uprooting (direktional) | ★★ |
-| chckhy | חֶ+כָּ+הִי | Blässe-Hitze-Zeichen (Kompositum: char+ckhy) | ★★★ |
-| chokchy | חֹק+כְּ+הִי | Vorschrift der Blässe (chok + ckhy-Kompositum) — ★★★★ Kand. (Erstbeleg f30v P.7, H/C/F vollständig einig) | ★★★★ |
-| dchy | דְּ+כָּ+הִי | von der Blässe davon (d-Genitiv + ckhy) | ★★★ |
-| chod | חֹד | Schärfe / Akutheit (medizinischer Terminus) | ★★★ |
-| tolol | תֹּלֹל | geschwächt / hängend (med. Zustand, Adj.) | ★★★ |
-| qoeees | וְ+עַ+אֵשׁ | und auf dem Feuer / Fieber (qo + oeees) | ★★★★ |
-| qokeees | וְ+כְּ+עֵשׁ | und wie Feuer / Fieber (qo + k + esh) | ★★★★ |
-| cthar | כְּ+תַּ+חַר | wie vollständiges Fieber (Quire-C-a-Vokal-Variante von cthor) — f19r P.7 | ★★★ |
-| darom | דָּרוֹם | Süden (erster Richtungsterm im botanischen Corpus) — f19v P.2 | ★★★ |
-| ddor | דְּ+דֹּר | von Generation/Zeitraum [intensiv] (d-Relativpräfix + dor) — f19v P.8 | ★★★ |
-| keeees | ??? | Hapax — extreme Tsere-Emphase (vierfaches ee) oder Schreiberfehler; kein Parallelbeleg im Gesamtcorpus — f21v P.3 | ★ |
-| schor | שׂ+חֹר | gleich der Pupille (Sin-Präfix + chor) — ★★★ Kand. (Erstbeleg f22r P.4) | ★★★ |
-| qodom | קֶדֶם | Osten / Vorzeit / Vergangenheit — f24v P.11 — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| sshey | שׁ+שׁ+הֵי | Doppel-Shin-Blässe (sho.sho-Emphase + sheey, R56) — f24r P.17 — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| cheeol | כְּ+אֵ+עַל | wie kein Joch / wie Ende des Joches — ★★★ validiert (R43 erfüllt: f26v P.3 + f29r P.5 = 2 Folios) | ★★★ |
-| shod | שׁוֹד | Verheerung / Verwüstung (שׁוֹד = devastation) — ★★★ validiert (R43 erfüllt: f27r P.1 + f28r P.1 = 2 Folios) | ★★★ |
-| pchodar | פְּ+כֹּ+דַּ+ר | wie Finsternis/Dunkelheit (von כָּדַר aram.) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.1) | ★★★ |
-| shos | שׁ+עַ+שׁ | Feuer-Ähnliches (Variante von sheos/shees, shin + ayin + shin) — ★★★ Kand. (Erstbeleg f29r P.5) | ★★★ |
-| chykar | כְּ+הֵי+כַּ+ר | Blässe-Kraft (Zutaten-Variante? k + hey + kar) — ★★ Kand. (Erstbeleg f29v P.10) | ★★ |
-| soin | שׂ+עַ+יִן | Feuer des Auges / Augenentzündung (sin + ayin + yod; Diagnose-Term für akute Augenentzündung) — ★★★ Kand. (Erstbeleg f30r P.4) | ★★★ |
-| cphoaiin | כְּ+פְּ+עַ+יִן | wie der Atemweg des Auges (k-Komparativ + pho + ayin; anatomisch-funktionale Verbindung Atem–Sehorgan) — ★★★ Kand. (Erstbeleg f30v P.8, 3/3 Transkriptoren) | ★★★ |
-| sos | שׁ+עַ+שׁ | Feuer auf Feuer / Fieber-Intensivierung (Doppel-Shin: shin + ayin + shin) — 2× auf f30v (P.7 + P.9) — ★★★ Kand. (Erstbeleg f30v P.7) | ★★★ |
-| chokeor | חֹק+אֵ+אוֹר | Vorschrift des Lichts (chok + eor; therapeutisches Kompositum: Lichtbehandlungsanweisung) — ★★★ Kand. (Erstbeleg f30v P.3) | ★★★ |
-| tal | טַל | Tau / Pflanzensaft / Feuchtigkeit (CAULIS-Term: Stiel als Saft-/Nährstoffleiter; 3× in einem CAULIS-Paragraphen: otal · ytal · tal — R15-Emphase-Triplung) — ★★★ Kand. (Erstbeleg f13v P.9) | ★★★ |
-| tshdar | תְּ+שׁ+דָּ+אַר | Jahreszeit-Zeichen (Sprache-B-Variante von torshor; Erstbeleg f33r P.1) — ★★★ Kand. | ★★★ |
-| tshokeody | תְּ+שׁ+כֵּ+הִי | Tav-Scheol-Blässe (dreistufiges Präfix: t-Imperfekt + sho + key; Erstbeleg f31r P.6) — ★★★ Kand. | ★★★ |
-| olteedam | עַל+תֵּ+דָּם | über das Blut der Zeit (ol-Intensivierungsformel R61 vor tee+dam-Kompositum; semantisch stärkster Neufund f31v; Erstbeleg f31v P.7) — ★★★★ | ★★★★ |
-| oldam | עַל+דָּם | über das Blut (ol+Ankerwort R61; R43 erfüllt: f34r P.7 (Erstbeleg) + f34v P.2 (Zweitbeleg) — ★★★ validiert) | ★★★ |
-| olchdaiin | עַל+כְּ+הֵ+דִּין | über Blässe-Urteil (ol+Ankerwort R61 + Blässe-Urteil-Kompositum; Erstbeleg f34v P.7) — ★★★★ Kand. | ★★★★ |
+| EVA | Hebräisch | Deutsch | Notizen | Konf. |
+| --- | --- | --- | --- | --- |
+| dam | דָּם | Blut |  | ★★★★★ |
+| dal | דַּל | schwach / abgemagert |  | ★★★★ |
+| daly | דַּלִּי | seine/meine Schwäche (Possessiv) |  | ★★★★ |
+| ckhy | כְּהִי | Blässe / Trübheit |  | ★★★★ |
+| okaiin | עַכְּעַיִן | auf das Auge |  | ★★★★ |
+| qokaiin | וְכְּעַיִן | und gemäß dem Auge |  | ★★★★ |
+| qotal | וְטַל | Tau / Schweißzeichen |  | ★★★ |
+| ram | רָם | erhöht / Fieber |  | ★★★ |
+| chor | חֹר | Pupille / Höhle |  | ★★★★ |
+| otchor | אוֹת+חֹר | das Zeichen der Pupille |  | ★★★★ |
+| oraiin | אוֹר+עַיִן | Licht des Auges / Augenheilung | R43 erfüllt: f22r + f26v P.4 + f31v P.11 + f33v P.7; oraiin-Formel über 4 Folios als quire-übergreifendes ophthalmologisches Leitmotiv (★★★★★, v8.7) | ★★★★★ |
+| sheoldam | שְׁאוֹל+דָּם | tödlicher Blutverlust |  | ★★★★★ |
+| damo | דָּמוֹ | sein Blut (Possessiv) |  | ★★★★ |
+| cham | חַם | Wärme / Entzündung / hippokratischer Befund-Term | f69r P.2 als kosmologischer Register-Beleg: Fieber-Diagnose im Rad-Diagramm | ★★★ |
+| torshor | תֹּר+שׁוֹר | Jahreszeit-Zeichen / saisonaler Eintrag |  | ★★★ |
+| dchm | דְּ+חָם | von der Entzündung |  | ★★★ |
+| dalor | דַּלאוֹר | schwaches Augenlicht |  | ★★★ |
+| char | חַר | heiß / Fieber |  | ★★★★ |
+| chary | חַרִי | sein Fieber (Possessiv) |  | ★★★ |
+| ckhal | כְּהַל | Nachlassen des Fiebers |  | ★★★ |
+| dol | דָּוֶה | Schmerz / Krankheit |  | ★★★ |
+| odol | עַ+דָּוֶה | auf die Krankheit (o+dol) |  | ★★★★ |
+| dolar | דָּוֶה+לְאוֹר | Krankheit zur Heilung |  | ★★★ |
+| shees | אֵשׁ | Feuer / Fieberbrand |  | ★★★ |
+| shorodo | שׁוֹר+עוֹדוֹ | das Zeichen besteht fort |  | ★★★ |
+| oeees | עַ+אֵשׁ | auf dem Feuer/Fieber |  | ★★★ |
+| octhos | עַ+כְּ+תֹ+שׁ | auf wie Feuer/Fieber |  | ★★★ |
+| chok | חֹק | Vorschrift / ärztliche Anordnung / Rezept |  | ★★★ |
+| choky | חֹקֵּי | die Vorschriften des [Falls] (Konstr.-Plural) |  | ★★★ |
+| otchy | אוֹת+כְּ+הִי | das Zeichen der Blässe |  | ★★★★ |
+| dala | דַּלָּ | Schwäche (fem., Femininum von dal) |  | ★★★ |
+| daly·dal | דַּלִּי+דַּל | seine Schwäche | schwach (R19 Dopplung ×2) | ★★★★ |
+| dalchy | דַּל+כְּהִי | die Schwäche der Blässe |  | ★★★★ |
+| kchom | כְּ+חֹם | wie Hitze / wie Fieber (Temperatur-Komparativ) | R43 Kand.-Flag: f001r (2×, 1 Folio), nächste 5 Folios prüfen | ★★★ |
+| chom | חֹם | Wärme / Hitze (eigenständige Form, Schwesterform von cham) |  | ★★★ |
+| oldckhy | עַל+דְּ+כְּ+הִי | über die Blässe davon (dreifach-präpositionaler Terminus) |  | ★★★ |
+| dor | דֹּר | Generation / Wachstumszyklus / Zeitraum der Erkrankung | R43 bestätigt: f17r + f27r P.5 = 2 Folios | ★★★ |
+| pchodol | פְּחֹ+דֹּל | Atemweg der Krankheit / Mundschmerz (pcho + dol) |  | ★★★ |
+| oekor | עַ+אֵ+קֹר | auf die Kälte / das Uprooting (direktional) |  | ★★ |
+| chckhy | חֶ+כָּ+הִי | Blässe-Hitze-Zeichen (Kompositum: char+ckhy) |  | ★★★ |
+| chokchy | חֹק+כְּ+הִי | Vorschrift der Blässe (chok + ckhy-Kompositum) | ★★★★ Kand. (Erstbeleg f30v P.7, H/C/F vollständig einig) | ★★★★ |
+| dchy | דְּ+כָּ+הִי | von der Blässe davon (d-Genitiv + ckhy) |  | ★★★ |
+| chod | חֹד | Schärfe / Akutheit (medizinischer Terminus) |  | ★★★ |
+| tolol | תֹּלֹל | geschwächt / hängend (med. Zustand, Adj.) |  | ★★★ |
+| qoeees | וְ+עַ+אֵשׁ | und auf dem Feuer / Fieber (qo + oeees) |  | ★★★★ |
+| qokeees | וְ+כְּ+עֵשׁ | und wie Feuer / Fieber (qo + k + esh) |  | ★★★★ |
+| cthar | כְּ+תַּ+חַר | wie vollständiges Fieber (Quire-C-a-Vokal-Variante von cthor) | f19r P.7 | ★★★ |
+| darom | דָּרוֹם | Süden | erster Richtungsterm im botanischen Corpus; f19v P.2 | ★★★ |
+| ddor | דְּ+דֹּר | von Generation/Zeitraum [intensiv] (d-Relativpräfix + dor) | f19v P.8 | ★★★ |
+| keeees | ??? | Hapax | extreme Tsere-Emphase (vierfaches ee) oder Schreiberfehler; kein Parallelbeleg im Gesamtcorpus — f21v P.3 | ★ |
+| schor | שׂ+חֹר | gleich der Pupille (Sin-Präfix + chor) | ★★★ Kand. (Erstbeleg f22r P.4) | ★★★ |
+| qodom | קֶדֶם | Osten / Vorzeit / Vergangenheit | f24v P.11 — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| sshey | שׁ+שׁ+הֵי | Doppel-Shin-Blässe | sho.sho-Emphase + sheey, R56; f24r P.17; ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| cheeol | כְּ+אֵ+עַל | wie kein Joch / wie Ende des Joches | ★★★ validiert (R43 erfüllt: f26v P.3 + f29r P.5 = 2 Folios) | ★★★ |
+| shod | שׁוֹד | Verheerung / Verwüstung (שׁוֹד = devastation) | ★★★ validiert (R43 erfüllt: f27r P.1 + f28r P.1 = 2 Folios) | ★★★ |
+| pchodar | פְּ+כֹּ+דַּ+ר | wie Finsternis/Dunkelheit (von כָּדַר aram.) | ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.1) | ★★★ |
+| shos | שׁ+עַ+שׁ | Feuer-Ähnliches (Variante von sheos/shees, shin + ayin + shin) | ★★★ Kand. (Erstbeleg f29r P.5) | ★★★ |
+| chykar | כְּ+הֵי+כַּ+ר | Blässe-Kraft (Zutaten-Variante? k + hey + kar) | ★★ Kand. (Erstbeleg f29v P.10) | ★★ |
+| soin | שׂ+עַ+יִן | Feuer des Auges / Augenentzündung (sin + ayin + yod; Diagnose-Term für akute Augenentzündung) | ★★★ Kand. (Erstbeleg f30r P.4) | ★★★ |
+| cphoaiin | כְּ+פְּ+עַ+יִן | wie der Atemweg des Auges (k-Komparativ + pho + ayin; anatomisch-funktionale Verbindung Atem–Sehorgan) | ★★★ Kand. (Erstbeleg f30v P.8, 3/3 Transkriptoren) | ★★★ |
+| sos | שׁ+עַ+שׁ | Feuer auf Feuer / Fieber-Intensivierung (Doppel-Shin: shin + ayin + shin) | 2× auf f30v (P.7 + P.9) — ★★★ Kand. (Erstbeleg f30v P.7) | ★★★ |
+| chokeor | חֹק+אֵ+אוֹר | Vorschrift des Lichts (chok + eor; therapeutisches Kompositum: Lichtbehandlungsanweisung) | ★★★ Kand. (Erstbeleg f30v P.3) | ★★★ |
+| tal | טַל | Tau / Pflanzensaft / Feuchtigkeit (CAULIS-Term: Stiel als Saft-/Nährstoffleiter; 3× in einem CAULIS-Paragraphen: otal · ytal · tal | R15-Emphase-Triplung) — ★★★ Kand. (Erstbeleg f13v P.9) | ★★★ |
+| tshdar | תְּ+שׁ+דָּ+אַר | Jahreszeit-Zeichen | Sprache-B-Variante von torshor; Erstbeleg f33r P.1; ★★★ Kand. | ★★★ |
+| tshokeody | תְּ+שׁ+כֵּ+הִי | Tav-Scheol-Blässe | dreistufiges Präfix: t-Imperfekt + sho + key; Erstbeleg f31r P.6; ★★★ Kand. | ★★★ |
+| olteedam | עַל+תֵּ+דָּם | über das Blut der Zeit | ol-Intensivierungsformel R61 vor tee+dam-Kompositum; semantisch stärkster Neufund f31v; Erstbeleg f31v P.7; ★★★★ | ★★★★ |
+| oldam | עַל+דָּם | über das Blut | ol+Ankerwort R61; R43 erfüllt: f34r P.7 (Erstbeleg) + f34v P.2 (Zweitbeleg); ★★★ validiert | ★★★ |
+| olchdaiin | עַל+כְּ+הֵ+דִּין | über Blässe-Urteil | ol+Ankerwort R61 + Blässe-Urteil-Kompositum; Erstbeleg f34v P.7; ★★★★ Kand. | ★★★★ |
 
 
 ### Prognose-Termini
 
-| EVA | Hebräisch | Deutsch | Konf. |
-| --- | --- | --- | --- |
-| or | אוֹר | Licht / Heilung | ★★★★ |
-| sheol | שְׁאוֹל | Scheol / Tod | ★★★★ |
-| shol | שׁוֹל | Tod (apokor. Spr. A) | ★★★★★ |
-| daiin | דִּין | Urteil / Prognose | ★★★★ |
-| chalal | חָלָל | Sterbender | ★★★★ |
-| chodl | חֹדֵל | der Aufhörende / der Sterbende | ★★★ |
-| dair | דְּ+אִיר | der Leuchtende / Licht davon | ★★★ |
-| aiin | אַיִן | nichts / nicht vorhanden | ★★★ |
-| eeor | אֵאוֹר | kein Licht | ★★★ |
-| lor | לְאוֹר | zum Licht / zur Heilung | ★★★★★ |
-| lshol | לְשׁוֹל | zum Tod / zu Scheol | ★★★★★ |
-| chaiin | חַיִּין | Leben (Chayyim) | ★★★★ |
-| sheey | שֵׁי | Gabe / Wohlbefinden — THERAPEUTISCH-ALLGEMEIN (v8.4): erscheint sowohl in FLOS (f013r) als auch CAULIS (f002r P.8–P.9); kein reiner FLOS-Term | ★★★ |
-| cheor | כְּאוֹר | wie Licht (Heilungszeichen) | ★★★★ |
-| otshol | אוֹתשׁוֹל | das Zeichen des Todes | ★★★★★ |
-| chan | חָן | Gnade / günstige Prognose | ★★★★ |
-| dom | דּוֹם | Stille / Ende | ★★★★ |
-| dsholdy | דְּ+שׁוֹל+דִּי | von Scheol — dessen (Genitiv) | ★★★★★ |
-| dsho | דְּ+שׁוֹ | von Scheol (Kurzform) | ★★★★ |
-| shoiin | שׁוֹ+עַיִן | Scheol des Auges | ★★★★ |
-| shoin | שׁוֹ+יִן | Scheol des Auges (Var. von shoiin; abw. Transkription) | ★★ |
-| darchor | דַּרְכּוֹר | sein Krankheitsverlauf | ★★★ |
-| otan | עֹתָן | Zeit / Jahreszeit der Erkrankung | ★★★ |
-| chey | חֵי | lebendig / am Leben (Adj.) | ★★★ |
-| oeeen | עַ+אֵין | auf das Fehlen / Nichts (emphatic null) | ★★★ |
-| oir | עַ+אוֹר | auf das Licht / Direktional-Heilung | ★★★ |
-| choor | כְּ+אוּר | wie das Licht (lang-vokalisierte Variante) | ★★★ |
-| ksho | כְּ+שׁוֹ | wie Scheol/Tod (Komparativform) | ★★★ |
-| shody | שְׁאוֹ+דִּי | von Scheol — dessen (Genitiv) | ★★★ |
-| sholo | שְׁאוֹ+לוֹ | Scheol für ihn (Dativ-Form) | ★★★ |
-| dairin | דְּ+אִיר+יִן | von dem Leuchtenden (Genitiv-Form) | ★★★ |
-| koshet | כֹּ+שֵׁ+תְּ | Scheol-Vollständigkeit (temporaler Abschlussterm) | ★★ |
-| shoaiin | שְׁאוֹל+עַיִן | Scheol des Auges (Todesurteil für das Sehorgan) | ★★★★ |
-| oksho | עַ+כְּ+שׁוֹ | auf/gegen Scheol (erste präpositionale Scheol-Form Spr. A) | ★★★★ |
-| fshody | פְּ+שׁוֹ+דִּי | von Scheol — dessen (Pe-Genitiv-Scheol-Konstrukt) | ★★★ |
-| sholor | שׁוֹל+אֹר | Scheol-Licht (Todes-Licht-Kompositum, Kandidat) | ★★ |
-| okeor | עַ+כְּ+אֵוֹר | auf/zu dem Licht hin (direktionale Variante) | ★★★ |
-| dary | דַּרִי | mein Leuchtendes / mein Licht (Possessiv von dar) | ★★★ |
-| daiir | דַּ+אִיר | der Leuchtende (verlängerte Form von dair) — Spr. B-Var. f31r P.9: Urteil des Leuchtenden (דִּי+אִיר, di+ir-Zerlegung möglich) | ★★★ |
-| shalom | שָׁלוֹם | Friede / günstige Konstellation — Corpus-Erstbeleg; R43-Kand.: f58r P.4 (beide Transkriptoren identisch) | ★★★ |
-| dshor | דְּ+שׁוֹר / דְּ+אֹר | von/des Lichts (Aramaismus: d-Relativpräfix R45, kein D1-Flag) — f58r P.4 | ★★★ |
-| oscheor | עַ+שֶׁ+אוֹר | auf dem was Licht ist (o + she + cheor-Kompositum) — f19r P.3 | ★★★ |
-| okchan | עַ+כְּ+חָן | auf/für die Gnade (o + k + chan, positive Prognose-Direktional) — f19v P.9 | ★★★★ |
-| cheey | חֵיי | Leben / lebendig (Tsere-Variante von chey per R50; f20r P.13 Schlusskolophon: chor.chor.cheey.tchey= = Pupille—Pupille—Leben—sie belebt) | ★★★ |
-| dol·shol | דָּוֶה+שׁוֹל | Schmerz-Scheol (negatives Befundpaar: schwach+Tod; R15-Antonymenpaar; therapeutisches Warnsignal bei Überdosierung) — f20r P.7 | ★★★ |
-| chotshol | כֹּ+תּ+שְׁאוֹל | alles-du-wirst-Scheol — ★★ (morphologisch fragwürdig: kol+tav-Futur+Scheol ohne Separator-Token, 3 Morpheme in einem Token ohne Corpus-Parallele; Wiederaufnahme auf ★★★ Kand. bei zweitem strukturidentischem Beleg) — Corpus-Erstbeleg f21v P.6 | ★★ |
-| sheeolody | שְׁאוֹל+עֹ+דִּי | von jenem Scheol — Scheol-Vollform + Vokalhelfer + Genitivpartikel; R52a-suffigiert — f71v R1 | ★★★ |
-| sheoltey | שְׁאוֹל+טַ+יְ | Scheol des Tau-Zeichens — Scheol-Vollform + Tet + Yod-Imperfekt; f72r1 R1 (neben shol medial) | ★★★ |
-| sholshdy | שׁוֹל+שׁ+דִּי | Scheol — von dem Scheol (R24-Emphase-Dopplung mit Genitiv-Brücke); f71v S2.5 | ★★★ |
-| shokal | שׁוֹ+כָּל | Scheol von allem — sho-Präfix (R30) + kol; f72r2 R2 (neues R30-Kompositum im Zodiak) | ★★★ |
-| ctheor | כְּ+תֶּ+אוֹר | wie Licht-Gewähren / wie Erleuchtung (k + ten + or) — ★★★ Kand. (Erstbeleg f22r P.9) | ★★★ |
-| dsheor | דְּ+שֶׁ+אוֹר | von dem, was Licht ist — d-Relativpräfix + she + or (R45-Aramaismus); Erstbeleg f22r P.7 | ★★★ |
-| olshly | עַל+שׁ+לְ+יְ | auf Scheol hin — direktionale Scheol-Form (ol + sh + lamed + yod); Erstbeleg f22v P.14 | ★★★ |
-| shotoly | שׁוֹ+תּ+עוֹל+יְ | Scheol-Last hin — sho-Präfix (R30) + Joch-Direktional; Erstbeleg f22v P.13 | ★★★ |
-| tshol | תְּ+שׁוֹל | sie entfernt von Scheol — Vollform von tsho; strukturelles P.6-Eröffnungstoken auf beiden Seiten desselben Folios; Erstbeleg f23r P.6 + f23v P.6 | ★★★ |
-| sholol | שׁוֹל+עַל | Scheol über [etwas] (Präpositionalkomplex); Erstbeleg f23v P.4 | ★★ |
-| olom | עוֹלָם | Ewigkeit / Welt — Erstbeleg f24v P.7; Kontext: Pulsatilla / Toxizität / Scheol; semantisch kohärent | ★★★★ |
-| doiir | דֹּ+יִ+ר | sehr schwache Erweckung (dol + yod + or) — f24v P.14; ★★★ Kand. (Folgebeleg erforderlich) | ★★★ |
-| ckhear | כְּ+כְּ+אֵ+ר | wie das Licht (ckh-Variante von cheor) — f25v P.4; Minimalpaar ckhear vs. chkear = Reihenfolgevarianz (Orthographienotiz); ★★★★ | ★★★★ |
-| soshy | שׂ+אֹ+שׁ+יְ | gleich Scheol-er (Doppel-Shin: sin + alef + shin + yod) — f25r P.1; ★★★ Kand. (Erstbeleg, Folgebeleg erforderlich) | ★★★ |
-| ory | אוֹר+יְ | sein Licht / er erleuchtet — f26v P.8 — ★★★ Kand. (R43-Frist: 5 Folios) | ★★★ |
-| eedy | אֵ+דִּי | kein Licht — von (Negativ-Licht-Genitiv) — f26r P.5 — ★★★ Kand. (R43-Frist: 5 Folios) | ★★★ |
-| shocthy | שׁוֹ+כְּ+ת+יְ | vollständiges Scheol (Intensivform: sho + Vollständigkeits-tav + yod) — ★★★ validiert (R43 erfüllt: f28r P.7 + f29r P.6 = 2 Folios) | ★★★ |
-| kshol | כְּ+שׁוֹל | wie Scheol (Komparativ, k-Präfix + shol) — ★★★★; f28v P1.1 | ★★★★ |
-| chear | כְּ+אֵ+עַ+ר | wie erleuchten / wie das Licht wirkt (Heilerkolophon-Term) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28v P2.9) | ★★★ |
-| shokchy | שׁוֹ+כְּ+כֵּי | Scheol-Blässe / Blässe des Todes (sho + k + key) — ★★★ Kand. (Erstbeleg f29r P.7) | ★★★ |
-| shot | שׁוֹ+תְּ | vollständiges Scheol (sho-Präfix + tav-Intensiv) — ★★★ Kand. (Erstbeleg f29v P.4) | ★★★ |
-| cholam | כֹּ+עוֹלָם | wie die Welt / wie Ewigkeit (ko-Komparativ + olam; kosmologisch kohärent) — ★★★★ Kand. (Erstbeleg f69r C.3) | ★★★★ |
-| dchorol | דְּ+כְּ+אוֹר+עֹ+לְ | von der Pupille hin (d-Relativpräfix R45 + chor + ol-Direktional) — gibt der Scheol-Licht-Dichotomie einen direktionalen Rahmen — ★★★ Kand. (Erstbeleg f30r P.6) | ★★★ |
-| chseeor | כְּ+שֵׁ+אוֹר | wie die Gabe des Lichts (k-Komparativ + shee + or; Dreifach-Kompositum) — positiver Heilungsabschluss — ★★★ Kand. (Erstbeleg f30r P.6) | ★★★ |
-| shoty | שׁוֹ+תְּ+יְ | vollständiges Scheol von ihm (sho-Apokope + t-Intensivator + y-Possessiv; Distinktion zu shot f29v) — ★★★ Kand. (Erstbeleg f30v P.5) | ★★★ |
-| shosaiin | שׁוֹ+שַׂ+עַיִן | Scheol des Augenarztes (sho-Apokope + saiin; diagnostisches Maximalsignal: Augenarzt vor lebensbedrohlichem Befund) — ★★★★ Kand. (Erstbeleg f30v P.1) | ★★★★ |
-| shor | שׁ+אוֹר | Scheol-Licht (Scheol-Präfix + or; semantisches Spannungsfeld Tod–Licht) — R43 erfüllt: f30r P.6 + f32v P.3 = 2 Folios → ★★★ validiert | ★★★ |
-| olsheol | עַל+שְׁאוֹל | über Scheol (ol+Ankerwort R61; Intensivierungsformel für Konfrontation mit Scheol; Erstbeleg f31r P.11) — ★★★ Kand. | ★★★ |
-| olsheor | עַל+שׁ+אוֹר | über Scheol-Licht (ol+Ankerwort R61 + shor-Kompositum; Erstbeleg f31r P.13) — ★★★ Kand. | ★★★ |
-| oldar | עַל+דְּ+אַר | über den Leuchtenden (ol+Ankerwort R61; Erstbeleg f34v P.4) — ★★★★★ (!!) | ★★★★★ |
-| qoldar | וְ+עַל+דְּ+אַר | und über den Leuchtenden (dreistufiges Präfix: qo+ol+Ankerwort = maximale Intensivierung; tiefste Präfix-Schachtelung im Corpus; Erstbeleg f34v P.4) — ★★★ Kand. | ★★★ |
-| orair | אוֹר+עַיִן+אַר | Licht-Auge-Licht (Ringstruktur; drei Anker-Radikale verknüpft: or + ayin + ar; komplexestes Licht-Auge-Kompositum im Corpus; Erstbeleg f34v P.5) — ★★★★ Kand. | ★★★★ |
-| lshaiir | לְ+שׂ+עַיִן+אִיר | für Augenlicht-Glanz (lamed-Direktional + sin + ayin + ir; Erstbeleg f34v P.5) — ★★★★ Kand. | ★★★★ |
+| EVA | Hebräisch | Deutsch | Notizen | Konf. |
+| --- | --- | --- | --- | --- |
+| or | אוֹר | Licht / Heilung |  | ★★★★ |
+| sheol | שְׁאוֹל | Scheol / Tod |  | ★★★★ |
+| shol | שׁוֹל | Tod | apokor. Spr. A | ★★★★★ |
+| daiin | דִּין | Urteil / Prognose |  | ★★★★ |
+| chalal | חָלָל | Sterbender |  | ★★★★ |
+| chodl | חֹדֵל | der Aufhörende / der Sterbende |  | ★★★ |
+| dair | דְּ+אִיר | der Leuchtende / Licht davon |  | ★★★ |
+| aiin | אַיִן | nichts / nicht vorhanden |  | ★★★ |
+| eeor | אֵאוֹר | kein Licht |  | ★★★ |
+| lor | לְאוֹר | zum Licht / zur Heilung |  | ★★★★★ |
+| lshol | לְשׁוֹל | zum Tod / zu Scheol |  | ★★★★★ |
+| chaiin | חַיִּין | Leben (Chayyim) |  | ★★★★ |
+| sheey | שֵׁי | Gabe / Wohlbefinden | THERAPEUTISCH-ALLGEMEIN (v8.4): erscheint sowohl in FLOS (f013r) als auch CAULIS (f002r P.8–P.9); kein reiner FLOS-Term | ★★★ |
+| cheor | כְּאוֹר | wie Licht (Heilungszeichen) |  | ★★★★ |
+| otshol | אוֹתשׁוֹל | das Zeichen des Todes |  | ★★★★★ |
+| chan | חָן | Gnade / günstige Prognose |  | ★★★★ |
+| dom | דּוֹם | Stille / Ende |  | ★★★★ |
+| dsholdy | דְּ+שׁוֹל+דִּי | von Scheol | dessen (Genitiv) | ★★★★★ |
+| dsho | דְּ+שׁוֹ | von Scheol (Kurzform) |  | ★★★★ |
+| shoiin | שׁוֹ+עַיִן | Scheol des Auges |  | ★★★★ |
+| shoin | שׁוֹ+יִן | Scheol des Auges (Var. von shoiin; abw. Transkription) |  | ★★ |
+| darchor | דַּרְכּוֹר | sein Krankheitsverlauf |  | ★★★ |
+| otan | עֹתָן | Zeit / Jahreszeit der Erkrankung |  | ★★★ |
+| chey | חֵי | lebendig / am Leben (Adj.) |  | ★★★ |
+| oeeen | עַ+אֵין | auf das Fehlen / Nichts (emphatic null) |  | ★★★ |
+| oir | עַ+אוֹר | auf das Licht / Direktional-Heilung |  | ★★★ |
+| choor | כְּ+אוּר | wie das Licht (lang-vokalisierte Variante) |  | ★★★ |
+| ksho | כְּ+שׁוֹ | wie Scheol/Tod (Komparativform) |  | ★★★ |
+| shody | שְׁאוֹ+דִּי | von Scheol | dessen (Genitiv) | ★★★ |
+| sholo | שְׁאוֹ+לוֹ | Scheol für ihn (Dativ-Form) |  | ★★★ |
+| dairin | דְּ+אִיר+יִן | von dem Leuchtenden (Genitiv-Form) |  | ★★★ |
+| koshet | כֹּ+שֵׁ+תְּ | Scheol-Vollständigkeit (temporaler Abschlussterm) |  | ★★ |
+| shoaiin | שְׁאוֹל+עַיִן | Scheol des Auges (Todesurteil für das Sehorgan) |  | ★★★★ |
+| oksho | עַ+כְּ+שׁוֹ | auf/gegen Scheol | erste präpositionale Scheol-Form Spr. A | ★★★★ |
+| fshody | פְּ+שׁוֹ+דִּי | von Scheol | dessen (Pe-Genitiv-Scheol-Konstrukt) | ★★★ |
+| sholor | שׁוֹל+אֹר | Scheol-Licht (Todes-Licht-Kompositum, Kandidat) |  | ★★ |
+| okeor | עַ+כְּ+אֵוֹר | auf/zu dem Licht hin (direktionale Variante) |  | ★★★ |
+| dary | דַּרִי | mein Leuchtendes / mein Licht (Possessiv von dar) |  | ★★★ |
+| daiir | דַּ+אִיר | der Leuchtende (verlängerte Form von dair) | Spr. B-Var. f31r P.9: Urteil des Leuchtenden (דִּי+אִיר, di+ir-Zerlegung möglich) | ★★★ |
+| shalom | שָׁלוֹם | Friede / günstige Konstellation | Corpus-Erstbeleg; R43-Kand.: f58r P.4 (beide Transkriptoren identisch) | ★★★ |
+| dshor | דְּ+שׁוֹר / דְּ+אֹר | von/des Lichts | Aramaismus: d-Relativpräfix R45, kein D1-Flag; f58r P.4 | ★★★ |
+| oscheor | עַ+שֶׁ+אוֹר | auf dem was Licht ist (o + she + cheor-Kompositum) | f19r P.3 | ★★★ |
+| okchan | עַ+כְּ+חָן | auf/für die Gnade (o + k + chan, positive Prognose-Direktional) | f19v P.9 | ★★★★ |
+| cheey | חֵיי | Leben / lebendig | Tsere-Variante von chey per R50; f20r P.13 Schlusskolophon: chor.chor.cheey.tchey= = Pupille—Pupille—Leben—sie belebt | ★★★ |
+| dol·shol | דָּוֶה+שׁוֹל | Schmerz-Scheol | negatives Befundpaar: schwach+Tod; R15-Antonymenpaar; therapeutisches Warnsignal bei Überdosierung; f20r P.7 | ★★★ |
+| chotshol | כֹּ+תּ+שְׁאוֹל | alles-du-wirst-Scheol | ★★ (morphologisch fragwürdig: kol+tav-Futur+Scheol ohne Separator-Token, 3 Morpheme in einem Token ohne Corpus-Parallele; Wiederaufnahme auf ★★★ Kand. bei zweitem strukturidentischem Beleg) — Corpus-Erstbeleg f21v P.6 | ★★ |
+| sheeolody | שְׁאוֹל+עֹ+דִּי | von jenem Scheol | Scheol-Vollform + Vokalhelfer + Genitivpartikel; R52a-suffigiert — f71v R1 | ★★★ |
+| sheoltey | שְׁאוֹל+טַ+יְ | Scheol des Tau-Zeichens | Scheol-Vollform + Tet + Yod-Imperfekt; f72r1 R1 (neben shol medial) | ★★★ |
+| sholshdy | שׁוֹל+שׁ+דִּי | Scheol | von dem Scheol (R24-Emphase-Dopplung mit Genitiv-Brücke); f71v S2.5 | ★★★ |
+| shokal | שׁוֹ+כָּל | Scheol von allem | sho-Präfix (R30) + kol; f72r2 R2 (neues R30-Kompositum im Zodiak) | ★★★ |
+| ctheor | כְּ+תֶּ+אוֹר | wie Licht-Gewähren / wie Erleuchtung (k + ten + or) | ★★★ Kand. (Erstbeleg f22r P.9) | ★★★ |
+| dsheor | דְּ+שֶׁ+אוֹר | von dem, was Licht ist | d-Relativpräfix + she + or (R45-Aramaismus); Erstbeleg f22r P.7 | ★★★ |
+| olshly | עַל+שׁ+לְ+יְ | auf Scheol hin | direktionale Scheol-Form (ol + sh + lamed + yod); Erstbeleg f22v P.14 | ★★★ |
+| shotoly | שׁוֹ+תּ+עוֹל+יְ | Scheol-Last hin | sho-Präfix (R30) + Joch-Direktional; Erstbeleg f22v P.13 | ★★★ |
+| tshol | תְּ+שׁוֹל | sie entfernt von Scheol | Vollform von tsho; strukturelles P.6-Eröffnungstoken auf beiden Seiten desselben Folios; Erstbeleg f23r P.6 + f23v P.6 | ★★★ |
+| sholol | שׁוֹל+עַל | Scheol über [etwas] | Präpositionalkomplex; Erstbeleg f23v P.4 | ★★ |
+| olom | עוֹלָם | Ewigkeit / Welt | Erstbeleg f24v P.7; Kontext: Pulsatilla / Toxizität / Scheol; semantisch kohärent | ★★★★ |
+| doiir | דֹּ+יִ+ר | sehr schwache Erweckung (dol + yod + or) | f24v P.14; ★★★ Kand. (Folgebeleg erforderlich) | ★★★ |
+| ckhear | כְּ+כְּ+אֵ+ר | wie das Licht (ckh-Variante von cheor) | f25v P.4; Minimalpaar ckhear vs. chkear = Reihenfolgevarianz (Orthographienotiz); ★★★★ | ★★★★ |
+| soshy | שׂ+אֹ+שׁ+יְ | gleich Scheol-er (Doppel-Shin: sin + alef + shin + yod) | f25r P.1; ★★★ Kand. (Erstbeleg, Folgebeleg erforderlich) | ★★★ |
+| ory | אוֹר+יְ | sein Licht / er erleuchtet | f26v P.8 — ★★★ Kand. (R43-Frist: 5 Folios) | ★★★ |
+| eedy | אֵ+דִּי | kein Licht | von (Negativ-Licht-Genitiv) — f26r P.5 — ★★★ Kand. (R43-Frist: 5 Folios) | ★★★ |
+| shocthy | שׁוֹ+כְּ+ת+יְ | vollständiges Scheol (Intensivform: sho + Vollständigkeits-tav + yod) | ★★★ validiert (R43 erfüllt: f28r P.7 + f29r P.6 = 2 Folios) | ★★★ |
+| kshol | כְּ+שׁוֹל | wie Scheol (Komparativ, k-Präfix + shol) | ★★★★; f28v P1.1 | ★★★★ |
+| chear | כְּ+אֵ+עַ+ר | wie erleuchten / wie das Licht wirkt (Heilerkolophon-Term) | ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28v P2.9) | ★★★ |
+| shokchy | שׁוֹ+כְּ+כֵּי | Scheol-Blässe / Blässe des Todes (sho + k + key) | ★★★ Kand. (Erstbeleg f29r P.7) | ★★★ |
+| shot | שׁוֹ+תְּ | vollständiges Scheol (sho-Präfix + tav-Intensiv) | ★★★ Kand. (Erstbeleg f29v P.4) | ★★★ |
+| cholam | כֹּ+עוֹלָם | wie die Welt / wie Ewigkeit (ko-Komparativ + olam; kosmologisch kohärent) | ★★★★ Kand. (Erstbeleg f69r C.3) | ★★★★ |
+| dchorol | דְּ+כְּ+אוֹר+עֹ+לְ | von der Pupille hin | d-Relativpräfix R45 + chor + ol-Direktional; gibt der Scheol-Licht-Dichotomie einen direktionalen Rahmen; ★★★ Kand. (Erstbeleg f30r P.6) | ★★★ |
+| chseeor | כְּ+שֵׁ+אוֹר | wie die Gabe des Lichts (k-Komparativ + shee + or; Dreifach-Kompositum) | positiver Heilungsabschluss — ★★★ Kand. (Erstbeleg f30r P.6) | ★★★ |
+| shoty | שׁוֹ+תְּ+יְ | vollständiges Scheol von ihm (sho-Apokope + t-Intensivator + y-Possessiv; Distinktion zu shot f29v) | ★★★ Kand. (Erstbeleg f30v P.5) | ★★★ |
+| shosaiin | שׁוֹ+שַׂ+עַיִן | Scheol des Augenarztes (sho-Apokope + saiin; diagnostisches Maximalsignal: Augenarzt vor lebensbedrohlichem Befund) | ★★★★ Kand. (Erstbeleg f30v P.1) | ★★★★ |
+| shor | שׁ+אוֹר | Scheol-Licht (Scheol-Präfix + or; semantisches Spannungsfeld Tod–Licht) | R43 erfüllt: f30r P.6 + f32v P.3 = 2 Folios → ★★★ validiert | ★★★ |
+| olsheol | עַל+שְׁאוֹל | über Scheol | ol+Ankerwort R61; Intensivierungsformel für Konfrontation mit Scheol; Erstbeleg f31r P.11; ★★★ Kand. | ★★★ |
+| olsheor | עַל+שׁ+אוֹר | über Scheol-Licht | ol+Ankerwort R61 + shor-Kompositum; Erstbeleg f31r P.13; ★★★ Kand. | ★★★ |
+| oldar | עַל+דְּ+אַר | über den Leuchtenden | ol+Ankerwort R61; Erstbeleg f34v P.4; ★★★★★ (!!) | ★★★★★ |
+| qoldar | וְ+עַל+דְּ+אַר | und über den Leuchtenden | dreistufiges Präfix: qo+ol+Ankerwort = maximale Intensivierung; tiefste Präfix-Schachtelung im Corpus; Erstbeleg f34v P.4; ★★★ Kand. | ★★★ |
+| orair | אוֹר+עַיִן+אַר | Licht-Auge-Licht | Ringstruktur; drei Anker-Radikale verknüpft: or + ayin + ar; komplexestes Licht-Auge-Kompositum im Corpus; Erstbeleg f34v P.5; ★★★★ Kand. | ★★★★ |
+| lshaiir | לְ+שׂ+עַיִן+אִיר | für Augenlicht-Glanz | lamed-Direktional + sin + ayin + ir; Erstbeleg f34v P.5; ★★★★ Kand. | ★★★★ |
 
 
 ### Kolophon-Formeln
 
-| EVA | Hebräisch | Deutsch | Konf. |
-| --- | --- | --- | --- |
-| kaiim | קַיָּם | gültig / beständig (Schlussformel) | ★★★★★ |
-| okorory | עַכְּאוֹראוֹרִי | auf das Licht — mein Licht / zum Licht | ★★★ |
-| cphar | כְּ+פַּר | Sühne / Bedeckung (Kolophon-Formel) | ★★★ |
-| cthom | כְּ+תֹם | wie Vollständigkeit (Kolophon; Vokalvar.: chetom) | ★★★ |
-| otcho | אוֹת+כֹּ | das Zeichen des [Atems] (Kolophon-Kurzform) | ★★★ |
-| dchckhy | דְּ+כְּ+כְּ+הִי | von tiefer Blässe (Intensiv-Diagnosesiegel) | ★★★★ |
-| sokar | שׂ+אוֹ+כְּ+אָר | Heilungs-Arzt des Lichts (Quire-B-Kolophon) | ★★★ |
-| oaorar | עַ+אַ+אוֹר+אָר | auf das Licht der Heilung (Doppel-Licht-Formel) | ★★★★ |
-| chkeey | כְּ+כְּ+אֵ+יִ | wie wie Lebendigkeit (doppelter Lebens-Komparativ) | ★★★ |
-| okeom | עַ+כְּ+אֵוֹם | auf die Vollendung hin (Kolophon-Direktional) | ★★★ |
-| cthal | כְּ+תַּ+חַל | wie vollständig (Kolophon-Variante von cthor) | ★★★ |
-| octhor | עַ+כְּ+תֹּר | auf vollständige Heilung (o-Direktional + cthor, Schlusskolophon-Term) — f19r P.13 | ★★★★ |
-| oraiino | אוֹר+עַיִן+וֹ | Licht seines Auges — Kolophon-Formel (or + aiin + Possessivsuffix 3. Sg. mask.); Erstbeleg f22r P.9 | ★★★★ |
-| ctheen | כְּ+תֵּן | wie Gewähren/Geben — Kolophon-Kurzformel — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| dalory | דַּל+אוֹר+יְ | Schwäche zum Licht (Kolophon-Formel, R6-Kompositum) — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| oro | אֹ+ר+אֹ | Licht-Palindrom / maximale Heilungs-Affirmation — Erstbeleg f23v P.12 (ol.oro.eeeoly=, 3/4 Transkriptoren); Zweitbeleg f24v P.5 (oro=, 4/4) — R43 erfüllt: 2 Folios → ★★★ regulär (kein Kandidaten-Status mehr; s. R55) | ★★★ |
-| sam.chorly | שָׁם+כֹּר+לִי | so heile meine Pupille (T-Klassen-Formel: sham + kor + li) — f24r T.20; dritter T-Klassen-Beleg (R53 Subtyp) | ★★★ |
-| orchaiin | אֹ+ר+כְּ+עַ+יִין | Licht-wie-Auge (Kolophon-Abschlussformel) — f25v P.7; or+chor/k+aiin: strukturell reichste Kolophon-Formel bisher; alle H/C/F einig | ★★★★ |
-| cthol | כְּ+ת+הֹ+ל | Vollständigkeits-Marker (strukturell: 3× in f28r P.2–P.4) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.2) | ★★★ |
-| tam | תָּם | vollständig / rein — Radial-Kolophon-Typ, Unterform von cthom (tam= als Abschlussmarker in f69r R.5) — ★★★★ Kand. (Erstbeleg f69r R.5) | ★★★★ |
-| cthorchy | כְּ+תְּ+אוֹר+כְּ+הִי | vollständige Heilung der Blässe (cthor + chy) — positives Therapie-Kompositum im Kolophon; Kolophon-Abschluss P.7 oberer Textblock — ★★★ Kand. (Erstbeleg f30r P.7) | ★★★ |
-| chokcheey | חֹק+חֵיי | Lebensvorschrift (chok + cheey; Rezept-Substantiv: Therapieanweisung + Lebensprinzip) — stärkstes therapeutisches Kompositum in bD3; Kolophon-Abschluss f30v P.11 — ★★★★ Kand. (Erstbeleg f30v P.11, 3/3 Transkriptoren) | ★★★★ |
-| okeeey | עַ+כְּ+אֵ+אֵ+אֵ | auf das dreifache Licht (emphatischer Schlusskolophon, Sprache B; Erstbeleg f33r P.7) — ★★★ Kand. | ★★★ |
+| EVA | Hebräisch | Deutsch | Notizen | Konf. |
+| --- | --- | --- | --- | --- |
+| kaiim | קַיָּם | gültig / beständig (Schlussformel) |  | ★★★★★ |
+| okorory | עַכְּאוֹראוֹרִי | auf das Licht | mein Licht / zum Licht | ★★★ |
+| cphar | כְּ+פַּר | Sühne / Bedeckung (Kolophon-Formel) |  | ★★★ |
+| cthom | כְּ+תֹם | wie Vollständigkeit (Kolophon; Vokalvar.: chetom) |  | ★★★ |
+| otcho | אוֹת+כֹּ | das Zeichen des [Atems] (Kolophon-Kurzform) |  | ★★★ |
+| dchckhy | דְּ+כְּ+כְּ+הִי | von tiefer Blässe (Intensiv-Diagnosesiegel) |  | ★★★★ |
+| sokar | שׂ+אוֹ+כְּ+אָר | Heilungs-Arzt des Lichts (Quire-B-Kolophon) |  | ★★★ |
+| oaorar | עַ+אַ+אוֹר+אָר | auf das Licht der Heilung (Doppel-Licht-Formel) |  | ★★★★ |
+| chkeey | כְּ+כְּ+אֵ+יִ | wie wie Lebendigkeit (doppelter Lebens-Komparativ) |  | ★★★ |
+| okeom | עַ+כְּ+אֵוֹם | auf die Vollendung hin (Kolophon-Direktional) |  | ★★★ |
+| cthal | כְּ+תַּ+חַל | wie vollständig (Kolophon-Variante von cthor) |  | ★★★ |
+| octhor | עַ+כְּ+תֹּר | auf vollständige Heilung (o-Direktional + cthor, Schlusskolophon-Term) | f19r P.13 | ★★★★ |
+| oraiino | אוֹר+עַיִן+וֹ | Licht seines Auges | Kolophon-Formel (or + aiin + Possessivsuffix 3. Sg. mask.); Erstbeleg f22r P.9 | ★★★★ |
+| ctheen | כְּ+תֵּן | wie Gewähren/Geben | Kolophon-Kurzformel — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| dalory | דַּל+אוֹר+יְ | Schwäche zum Licht (Kolophon-Formel, R6-Kompositum) | ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| oro | אֹ+ר+אֹ | Licht-Palindrom / maximale Heilungs-Affirmation | Erstbeleg f23v P.12 (ol.oro.eeeoly=, 3/4 Transkriptoren); Zweitbeleg f24v P.5 (oro=, 4/4) — R43 erfüllt: 2 Folios → ★★★ regulär (kein Kandidaten-Status mehr; s. R55) | ★★★ |
+| sam.chorly | שָׁם+כֹּר+לִי | so heile meine Pupille (T-Klassen-Formel: sham + kor + li) | f24r T.20; dritter T-Klassen-Beleg (R53 Subtyp) | ★★★ |
+| orchaiin | אֹ+ר+כְּ+עַ+יִין | Licht-wie-Auge (Kolophon-Abschlussformel) | f25v P.7; or+chor/k+aiin: strukturell reichste Kolophon-Formel bisher; alle H/C/F einig | ★★★★ |
+| cthol | כְּ+ת+הֹ+ל | Vollständigkeits-Marker (strukturell: 3× in f28r P.2–P.4) | ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.2) | ★★★ |
+| tam | תָּם | vollständig / rein | Radial-Kolophon-Typ, Unterform von cthom (tam= als Abschlussmarker in f69r R.5) — ★★★★ Kand. (Erstbeleg f69r R.5) | ★★★★ |
+| cthorchy | כְּ+תְּ+אוֹר+כְּ+הִי | vollständige Heilung der Blässe (cthor + chy) | positives Therapie-Kompositum im Kolophon; Kolophon-Abschluss P.7 oberer Textblock — ★★★ Kand. (Erstbeleg f30r P.7) | ★★★ |
+| chokcheey | חֹק+חֵיי | Lebensvorschrift (chok + cheey; Rezept-Substantiv: Therapieanweisung + Lebensprinzip) | stärkstes therapeutisches Kompositum in bD3; Kolophon-Abschluss f30v P.11 — ★★★★ Kand. (Erstbeleg f30v P.11, 3/3 Transkriptoren) | ★★★★ |
+| okeeey | עַ+כְּ+אֵ+אֵ+אֵ | auf das dreifache Licht | emphatischer Schlusskolophon, Sprache B; Erstbeleg f33r P.7; ★★★ Kand. | ★★★ |
 
 
 ### Syntaktische Konnektoren
 
-| EVA | Hebräisch | Deutsch | Konf. |
-| --- | --- | --- | --- |
-| chedy | כְּדֵי | damit / um zu (Var.: kedy) | ★★★★ |
-| shedy | שֶׁדִּי | das/welches von | ★★★★ |
-| shdy | שֶׁדִּי | das/welches von (Kurz) | ★★★★ |
-| dy | דִּי | von / dessen (Aram.) | ★★ |
-| lchedy | לְכְּדֵי | um zu / bis zur Grenze | ★★★★ |
-| chal | חָל | gilt für / betrifft | ★★★ |
-| shodaiin | שׁוֹדִּין | Todesurteil | ★★★★ |
-| sheodaiin | שְׁאוֹדִּין | Todesurteil (Vollform) | ★★★★★ |
-| daiindy | דִּין+דִּי | das Urteil dessen (Var.: daiidy) | ★★★★★ |
-| qodaiin | וְדִּין | und Urteil | ★★★★ |
-| daiim | דִּין+ם | Urteile (Plural) | ★★★ |
-| keey | כֵּי | denn / weil (Kausalpartikel) | ★★★★ |
-| qoky | וְ+כִּי | und denn / weil | ★★★★★ |
-| dydyd | דִּי+דִּי+דִּי | dreifacher Relativpartikel — extremer Betonungsmodus | ★★★ |
-| chol·chol | כֹּל·כֹּל | alles-alles (R19 Intensivierungsdopplung, Nominalstamm) | ★★★ |
-| sheor | שֶׁ+אֹר | das/welches Licht ist (Relativpartikel + Licht) | ★★★ |
-| doldaiin | דּוֹל+דִּין | Krankheits-Urteil (analog zu shodaiin = Todesurteil) | ★★★ |
-| doldy | דּוֹל+דִּי | von der Krankheit davon (dol + Genitivpartikel) | ★★★ |
-| dchal | דְּ+חַל | von dem was gilt / von dem Sterbenden (d-Genitiv + chal) | ★★★ |
-| qokay | וְ+כְּ+חַי | und wie lebendig (qo + k + chay) | ★★★ |
-| qol | וְ+עַל | und auf/über (qo-Präfix + ol-Direktional) | ★★★ |
-| doky | דּוֹ+כִּי | sein denn / weil (Genitiv-Kausalpartikel) | ★★★ |
-| daiinol | דִּין+עַל | Urteil über [etwas] (daiin + ol-Direktional) — f19r P.12 | ★★★ |
-| dait | דַּ+עִת | von/aus der Zeit / im Moment — zeitliche Deiktik (d-Präfix + ʿet = Zeit) — ★★ Kand. (Erstbeleg f21v P.5) | ★★ |
-| cphal | כְּ+פָּלַל | wie Gebet/Urteil (פָּלַל = urteilen/beten) — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| odaiim | עַ+דִּינִים | auf den (kollektiven) Urteilen (o-Direktional + dayin-Plural-m) — f24v P.16; Abschluss-Kolophon-Marker (R57); ★★★ Kand. | ★★★ |
-| daid | דַּ+אִי+דַּ | ? / תָּמִיד = dauerhaft — f24v P.7; ★★ Kand. (Semantik noch offen) | ★★ |
-| daiity | דִּין+תּ | Urteils-tav / juristische Abschlussform (daiin + tav) — f25v P.3 — ★★ (R43-Frist abgelaufen, Direktsuche f26r–f28r negativ) | ★★ |
-| daiiin | דִּינִין | Urteile (Aramäischer Emphase-Plural von דִּין; Aram. Plural-iin, 3× Yod) — f1r T3 `otol.daiiin=`; 6/6 Transkriptoren einig (H/C/F/N/X/U); R40-Ausnahme b+c; f26v P.1 + P.7 (2. Folio-Beleg); f27r P.12 (3. Folio-Beleg) = R43 dreifach erfüllt → ★★★★ | ★★★★ |
-| ksor | כֵּ+שָׁר | denn/wie passend/gesund (כָּשֵׁר = angemessen) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27r P.1) | ★★★ |
-| keeod | כֵּ+עוֹד | denn noch / immer noch (temporaler Adverb) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27r P.9) | ★★★ |
-| chakod | כְּ+עַ+כֹּ+ד | wie zusammen/versammelt (k-Komparativ + akod) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.2) | ★★★ |
+| EVA | Hebräisch | Deutsch | Notizen | Konf. |
+| --- | --- | --- | --- | --- |
+| chedy | כְּדֵי | damit / um zu | Var.: kedy | ★★★★ |
+| shedy | שֶׁדִּי | das/welches von |  | ★★★★ |
+| shdy | שֶׁדִּי | das/welches von (Kurz) |  | ★★★★ |
+| dy | דִּי | von / dessen (Aram.) |  | ★★ |
+| lchedy | לְכְּדֵי | um zu / bis zur Grenze |  | ★★★★ |
+| chal | חָל | gilt für / betrifft |  | ★★★ |
+| shodaiin | שׁוֹדִּין | Todesurteil |  | ★★★★ |
+| sheodaiin | שְׁאוֹדִּין | Todesurteil (Vollform) |  | ★★★★★ |
+| daiindy | דִּין+דִּי | das Urteil dessen | Var.: daiidy | ★★★★★ |
+| qodaiin | וְדִּין | und Urteil |  | ★★★★ |
+| daiim | דִּין+ם | Urteile (Plural) |  | ★★★ |
+| keey | כֵּי | denn / weil (Kausalpartikel) |  | ★★★★ |
+| qoky | וְ+כִּי | und denn / weil |  | ★★★★★ |
+| dydyd | דִּי+דִּי+דִּי | dreifacher Relativpartikel | extremer Betonungsmodus | ★★★ |
+| chol·chol | כֹּל·כֹּל | alles-alles | R19 Intensivierungsdopplung, Nominalstamm | ★★★ |
+| sheor | שֶׁ+אֹר | das/welches Licht ist (Relativpartikel + Licht) |  | ★★★ |
+| doldaiin | דּוֹל+דִּין | Krankheits-Urteil (analog zu shodaiin = Todesurteil) |  | ★★★ |
+| doldy | דּוֹל+דִּי | von der Krankheit davon (dol + Genitivpartikel) |  | ★★★ |
+| dchal | דְּ+חַל | von dem was gilt / von dem Sterbenden (d-Genitiv + chal) |  | ★★★ |
+| qokay | וְ+כְּ+חַי | und wie lebendig (qo + k + chay) |  | ★★★ |
+| qol | וְ+עַל | und auf/über (qo-Präfix + ol-Direktional) |  | ★★★ |
+| doky | דּוֹ+כִּי | sein denn / weil (Genitiv-Kausalpartikel) |  | ★★★ |
+| daiinol | דִּין+עַל | Urteil über [etwas] (daiin + ol-Direktional) | f19r P.12 | ★★★ |
+| dait | דַּ+עִת | von/aus der Zeit / im Moment | zeitliche Deiktik (d-Präfix + ʿet = Zeit) — ★★ Kand. (Erstbeleg f21v P.5) | ★★ |
+| cphal | כְּ+פָּלַל | wie Gebet/Urteil (פָּלַל = urteilen/beten) | ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| odaiim | עַ+דִּינִים | auf den (kollektiven) Urteilen (o-Direktional + dayin-Plural-m) | f24v P.16; Abschluss-Kolophon-Marker (R57); ★★★ Kand. | ★★★ |
+| daid | דַּ+אִי+דַּ | ? / תָּמִיד = dauerhaft | f24v P.7; ★★ Kand. (Semantik noch offen) | ★★ |
+| daiity | דִּין+תּ | Urteils-tav / juristische Abschlussform (daiin + tav) | f25v P.3 — ★★ (R43-Frist abgelaufen, Direktsuche f26r–f28r negativ) | ★★ |
+| daiiin | דִּינִין | Urteile (Aramäischer Emphase-Plural von דִּין; Aram. Plural-iin, 3× Yod) | f1r T3 `otol.daiiin=`; 6/6 Transkriptoren einig (H/C/F/N/X/U); R40-Ausnahme b+c; f26v P.1 + P.7 (2. Folio-Beleg); f27r P.12 (3. Folio-Beleg) = R43 dreifach erfüllt → ★★★★ | ★★★★ |
+| ksor | כֵּ+שָׁר | denn/wie passend/gesund (כָּשֵׁר = angemessen) | ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27r P.1) | ★★★ |
+| keeod | כֵּ+עוֹד | denn noch / immer noch (temporaler Adverb) | ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27r P.9) | ★★★ |
+| chakod | כְּ+עַ+כֹּ+ד | wie zusammen/versammelt (k-Komparativ + akod) | ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.2) | ★★★ |
 
 
 ### Verbformen
 
-| EVA | Hebräisch | Deutsch | Konf. |
-| --- | --- | --- | --- |
-| taiir | תָּאִיר | es wird leuchten / heilen | ★★★★ |
-| yteechy | יִחְיֶה | er wird gesund | ★★★ |
-| yshdal | יְשַׁדַּל | er wird schwächen | ★★★ |
-| ykeedy | יְכֵּדֵי | er wird anordnen | ★★★ |
-| ykchy | יְ+כְּ+הִי | er wird Blässe zeigen | ★★★★ |
-| tsheoarom | תְּשְׁאוֹרוֹם | du wirst von Scheol aufsteigen | ★★★★ |
-| chkar | חֲקַר | er untersucht | ★★★ |
-| ydaiin | יְדִּין | er urteilt | ★★★★ |
-| ysho | יְשׁוֹ | es führt zum Tod | ★★★★ |
-| ykeor | יְכְּאוֹר | er heilt / wie Licht | ★★★★ |
-| ykchaiin | יְ+כְּ+חַיִּין | er wird wie Leben werden | ★★★★ |
-| ykchor | יְ+כְּ+חֹר | er heilt die Pupille | ★★★★★ |
-| ycheor | יְ+כְּ+אוֹר | er wird wie Licht werden | ★★★★ |
-| tchey | תְּחִי | möge es/sie leben! (Jussiv) | ★★★★ |
-| ychor | יְ+חֹר | er wird die Pupille weiten | ★★★★ |
-| yodaiin | יוֹדִּין | er weiß das Urteil | ★★★★ |
-| ytchody | יְ+תְּ+כֹּ+דִּי | er wird urteilen (Doppelpräfix) | ★★★ |
-| ytaiin | יְ+תָּ+עַיִן | er wird das Auge heilen | ★★★★ |
-| ykoiin | יְכוֹיִן | er wird sich erholen | ★★★ |
-| ykaiin | יְ+כְּ+עַיִן | er heilt das Auge (5. y+k+Terminus-Verb) | ★★★★ |
-| yfodain | יְ+פָּדָה+יִן | er wird das Auge erlösen/befreien | ★★★★ |
-| ydain | יְ+דַ+יִן | er wird das Auge behandeln | ★★★★ |
-| ypchor | יְ+פְּ+חֹר | er heilt die Pupille [durch Atem] | ★★★ |
-| teor | תְּ+אוֹר | sie wird heilen (fem. Imperfekt von or) | ★★★★ |
-| cthor | כְּ+תֹּר | vollständige Heilung | ★★★ |
-| tchor | תְּ+חֹר | sie heilt die Pupille (fem. Imperfekt) — Zweitbeleg f29v P.8 → ★★★★ bestätigt | ★★★★ |
-| ykair | יְ+כְּ+אִיר | er heilt leuchtend (Kandidat 7. y+k+Terminus) — R43 provisorisch ★★: nur f16r (1×), unter Mindestgrenze 8× | ★★ |
-| toror | תְּ+אוֹר+אוֹר | sie heilt — Licht — Licht (Doppel-Licht-Heilung) | ★★★ |
-| dainod | דַּ+אִין+עֹד | er behandelt das Auge weiter | ★★★ |
-| ytchor | יְ+תְּ+חֹר | er/sie wird die Pupille heilen (y+t-Doppelpräfix) — R43 erfüllt: f16v P.2 + f29v P.2 = 2 Folios → ★★★★ | ★★★★ |
-| ytchy | יְ+תְּ+כְּהִי | er/sie wird Blässe zeigen (y+t-Doppelpräfix) | ★★★ |
-| okytaiin | עַ+כְּ+תָּ+עַיִן | auf die Weise, dass er das Auge heilt | ★★★ |
-| dan | דָּן | er hat geurteilt (Qal Perfekt) / Richter (Nomen) — als Kolophon-Abschlussform dan= (f32r P.19): stärkste Perfekt-Schlussformel im Corpus ★★★ Kand. | ★★★ |
-| ychody | יְ+כֹּ+דִּי | er wird urteilen (Variante von ytchody) | ★★★ |
-| tsho | תְּ+שׁוֹ | sie entfernt sich von Scheol (fem. Impf. + Scheol-Kurzform) | ★★★ |
-| ycheol | יְ+כְּ+אֵוֹל | er wird wie Scheol-Licht sein (ambivalente Verbform) | ★★ |
-| ytchar | יְ+תְּ+חַר | er/sie wird Fieber zeigen (y+t-Doppelpräfix + char) | ★★★ |
-| ykchol | יְ+כֹּל / יְ+כָּ+חֹל | er heilt alles / er heilt Augenpigment | ★★★ |
-| cthaiin | כְּ+תַּ+עַיִן | vollständige Augen-Heilung (cthor-Variante + Auge-Suffix) | ★★★ |
-| ychair | יְ+חַ+אִיר | er wird durch Wärme leuchten (Heilungsverb mit char-Stamm) | ★★★ |
-| ychekchy | יְ+כְּ+כְּ+הִי | er heilt wie totale Blässe (doppelter k-Komparativ) | ★★★ |
-| yoar | יְ+אַ+אָר | er wird zum Licht hin [heilen] (y-Imperfekt + ar-Licht) | ★★ |
-| told | תּוֹלֵד | es erzeugt/bringt hervor (Imperfekt Qal von ילד) | ★★★ |
-| ytchm | יְ+תְּ+חֵם | er/sie wird Wärme bringen (y+t-Doppelpräfix + cham) | ★★★ |
-| ydl | יִדַּל | er wird schwach werden (Imperfekt Qal von דלל) | ★★★ |
-| ychoees | יְ+כֹּ+עֵשׁ | er löscht das Feuer / heilt das Fieber (y + kol + esh) | ★★★ |
-| ychol | יְ+כֹּל | er heilt alles (Verbform, y-Imperfekt + kol; Var.: ykol f18v P.10) | ★★★★ |
-| ytor | יְ+תֹּ+אוֹר | er/sie wird zum Licht werden / erleuchten (Auferstehungs-/Illuminations-Verb; Langform: yteor) — R43 dreifach bestätigt: f18v (3×) + f58r P.30 + f19v P.12 → ★★★★★ Kand. | ★★★★★ |
-| ykam | יְ+קָם | er wird aufstehen / sich erheben (y-Imperfekt von קום qum) — R43 Kand.: nur f18v (4×), zweiter Folio-Beleg ausstehend | ★★★ |
-| ykar | יְ+כְּ+אָר | er heilt leuchtend / er wird leuchten (Variante von ykair; Quire-C-Form + f69r P.3 — register-übergreifend: Botanik + Kosmogramm) — R43 register-übergreifend erfüllt | ★★★★ |
-| ytalar | יְ+תַּ+אֹר | er wird [Licht] geben/erleuchten (or-Ketten-Verb, f58r P.5) | ★★★ |
-| ytol | יְ+תֹּלֹל | er wird geschwächt (y-Imperfekt von tolol) — f19v P.3 | ★★★ |
-| yees | יְ+אֵשׁ | er löscht das Feuer/Fieber (y-Imperfekt + esh-Stamm) — f19v P.12 | ★★★ |
-| ytar | יְ+תַּ+אָר | er wird Licht geben (Quire-C-a-Vokal-Variante von ytor) — f19v P.12 | ★★★ |
-| cheol | ח-ע-ל | schöpfen / heben (R43 erfüllt: f77r P.21/P.24/P.38 + f20v P.2 + f21r P.5 + f21r P.8 → 4 Belege, 3 Folios, ★★★★ gesichert; Var. cheeol P.21; genuine ח-ע-Cluster, R50 greift nicht; balneologisch: Augenbad-Marker) | ★★★★ |
-| tshaiin | תּ+שׁ+עַיִן | du wirst das Auge [behandeln/waschen] — tav-Imperfekt 2. Sg. + aiin: therapeutischer Direktbefehl an den Arzt — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| ysheol | יְ+שׁ+אֹל | er wird [aus] Scheol [aufsteigen] — positive Verbform: y-Imperfekt + sheol als Aufstiegs-Wendepunkt; eingerahmt von chor-chor in Schlusskolophon — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| ykcheor | יְ+כְּ+כְּ+אוֹר | er wird sein wie Licht — dreifach intensives Heilungsverb (y + k + k + or); R43 erfüllt: f22v P.5 + Zodiak-Register → ★★★★ | ★★★★ |
-| ytal | יְ+תַּל | er wird suspendieren/aufhängen (y-Imperfekt von תלל) — ★★ Kand. (Erstbeleg f22v P.10) | ★★ |
-| cthoiin | כְּ+תּ+עַיִן | wie vollständige Augen-Heilung — cthor-Variante mit aiin-Suffix; Erstbeleg f22r P.10 | ★★★ |
-| ytom | יְ+תָּ+מ | er wird vollständig/komplett (y-Imperfekt v. תמם; Var.: ytam) — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| ydals | יְ+דַּ+לְ+שׁ | er wird Schwäche läutern (y-Imperfekt + dal + shin) — f24v P.2 — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| ykeechy | יְ+כְּ+אֵ+כְּ+הֵי | er heilt wie Blässe-Licht (8. y+k-Verb) — f26r P.9 — ★★ (R43-Frist abgelaufen, Direktsuche f26v–f28v negativ) | ★★ |
-| qoteedar | וְ+תֵּ+דַּר | und er/du wirst leuchten (qo + Tsere + dar) — f26r P.8 — ★★ (R43-Frist abgelaufen, Direktsuche f26v–f28v negativ) | ★★ |
-| ytchol | יְ+ת+כֹּ+ל | er wird alles vollenden (y+t Doppelpräfix + kol; Kolophon f28r P.9) — ★★★★ | ★★★★ |
-| yteol | יְ+ת+אֵ+עֹ+ל | er wird handeln/vollbringen (y+t Doppelpräfix; Kolophon f28r P.9 neben ytchol) — ★★★★ | ★★★★ |
-| ykcholy | יְ+כְּ+כֹּ+ל+יְ | er heilt alles (y+k+chol Paradigma + Possessiv-yod) — ★★★★; f28v P1.2 | ★★★★ |
-| tshoiin | ת+שׁוֹ+עַ+יִן | [sie] wendet das Auge von Scheol (t-Imperfekt + sho + ayin) — ★★★★; f28v P1.4 | ★★★★ |
-| ychom | יְ+חוֹם | er wird genesen / er wird warm (y-Imperfekt von חום) — ★★★ Kand. (Erstbeleg f29r P.9) | ★★★ |
-| yteey | יְ+תֵּ+אֵי | er wird [es] bringen / heilen (Sprache-B-Form; Erstbeleg f33r P.6) — ★★★ Kand. | ★★★ |
-| ytsho | יְ+תְּ+שׁ | er wird Scheol zeigen (R28-Typ: y-Imperfekt + t-Kausalitätspräfix + sho; Scheol als Terminus; Erstbeleg f32r P.4) — ★★★ Kand. | ★★★ |
+| EVA | Hebräisch | Deutsch | Notizen | Konf. |
+| --- | --- | --- | --- | --- |
+| taiir | תָּאִיר | es wird leuchten / heilen |  | ★★★★ |
+| yteechy | יִחְיֶה | er wird gesund |  | ★★★ |
+| yshdal | יְשַׁדַּל | er wird schwächen |  | ★★★ |
+| ykeedy | יְכֵּדֵי | er wird anordnen |  | ★★★ |
+| ykchy | יְ+כְּ+הִי | er wird Blässe zeigen |  | ★★★★ |
+| tsheoarom | תְּשְׁאוֹרוֹם | du wirst von Scheol aufsteigen |  | ★★★★ |
+| chkar | חֲקַר | er untersucht |  | ★★★ |
+| ydaiin | יְדִּין | er urteilt |  | ★★★★ |
+| ysho | יְשׁוֹ | es führt zum Tod |  | ★★★★ |
+| ykeor | יְכְּאוֹר | er heilt / wie Licht |  | ★★★★ |
+| ykchaiin | יְ+כְּ+חַיִּין | er wird wie Leben werden |  | ★★★★ |
+| ykchor | יְ+כְּ+חֹר | er heilt die Pupille |  | ★★★★★ |
+| ycheor | יְ+כְּ+אוֹר | er wird wie Licht werden |  | ★★★★ |
+| tchey | תְּחִי | möge es/sie leben! (Jussiv) |  | ★★★★ |
+| ychor | יְ+חֹר | er wird die Pupille weiten |  | ★★★★ |
+| yodaiin | יוֹדִּין | er weiß das Urteil |  | ★★★★ |
+| ytchody | יְ+תְּ+כֹּ+דִּי | er wird urteilen (Doppelpräfix) |  | ★★★ |
+| ytaiin | יְ+תָּ+עַיִן | er wird das Auge heilen |  | ★★★★ |
+| ykoiin | יְכוֹיִן | er wird sich erholen |  | ★★★ |
+| ykaiin | יְ+כְּ+עַיִן | er heilt das Auge (5. y+k+Terminus-Verb) |  | ★★★★ |
+| yfodain | יְ+פָּדָה+יִן | er wird das Auge erlösen/befreien |  | ★★★★ |
+| ydain | יְ+דַ+יִן | er wird das Auge behandeln |  | ★★★★ |
+| ypchor | יְ+פְּ+חֹר | er heilt die Pupille [durch Atem] |  | ★★★ |
+| teor | תְּ+אוֹר | sie wird heilen (fem. Imperfekt von or) |  | ★★★★ |
+| cthor | כְּ+תֹּר | vollständige Heilung |  | ★★★ |
+| tchor | תְּ+חֹר | sie heilt die Pupille (fem. Imperfekt) | Zweitbeleg f29v P.8 → ★★★★ bestätigt | ★★★★ |
+| ykair | יְ+כְּ+אִיר | er heilt leuchtend (Kandidat 7. y+k+Terminus) | R43 provisorisch ★★: nur f16r (1×), unter Mindestgrenze 8× | ★★ |
+| toror | תְּ+אוֹר+אוֹר | sie heilt | Licht — Licht (Doppel-Licht-Heilung) | ★★★ |
+| dainod | דַּ+אִין+עֹד | er behandelt das Auge weiter |  | ★★★ |
+| ytchor | יְ+תְּ+חֹר | er/sie wird die Pupille heilen (y+t-Doppelpräfix) | R43 erfüllt: f16v P.2 + f29v P.2 = 2 Folios → ★★★★ | ★★★★ |
+| ytchy | יְ+תְּ+כְּהִי | er/sie wird Blässe zeigen (y+t-Doppelpräfix) |  | ★★★ |
+| okytaiin | עַ+כְּ+תָּ+עַיִן | auf die Weise, dass er das Auge heilt |  | ★★★ |
+| dan | דָּן | er hat geurteilt (Qal Perfekt) / Richter (Nomen) | als Kolophon-Abschlussform dan= (f32r P.19): stärkste Perfekt-Schlussformel im Corpus ★★★ Kand. | ★★★ |
+| ychody | יְ+כֹּ+דִּי | er wird urteilen (Variante von ytchody) |  | ★★★ |
+| tsho | תְּ+שׁוֹ | sie entfernt sich von Scheol (fem. Impf. + Scheol-Kurzform) |  | ★★★ |
+| ycheol | יְ+כְּ+אֵוֹל | er wird wie Scheol-Licht sein (ambivalente Verbform) |  | ★★ |
+| ytchar | יְ+תְּ+חַר | er/sie wird Fieber zeigen (y+t-Doppelpräfix + char) |  | ★★★ |
+| ykchol | יְ+כֹּל / יְ+כָּ+חֹל | er heilt alles / er heilt Augenpigment |  | ★★★ |
+| cthaiin | כְּ+תַּ+עַיִן | vollständige Augen-Heilung (cthor-Variante + Auge-Suffix) |  | ★★★ |
+| ychair | יְ+חַ+אִיר | er wird durch Wärme leuchten (Heilungsverb mit char-Stamm) |  | ★★★ |
+| ychekchy | יְ+כְּ+כְּ+הִי | er heilt wie totale Blässe (doppelter k-Komparativ) |  | ★★★ |
+| yoar | יְ+אַ+אָר | er wird zum Licht hin [heilen] (y-Imperfekt + ar-Licht) |  | ★★ |
+| told | תּוֹלֵד | es erzeugt/bringt hervor (Imperfekt Qal von ילד) |  | ★★★ |
+| ytchm | יְ+תְּ+חֵם | er/sie wird Wärme bringen (y+t-Doppelpräfix + cham) |  | ★★★ |
+| ydl | יִדַּל | er wird schwach werden (Imperfekt Qal von דלל) |  | ★★★ |
+| ychoees | יְ+כֹּ+עֵשׁ | er löscht das Feuer / heilt das Fieber (y + kol + esh) |  | ★★★ |
+| ychol | יְ+כֹּל | er heilt alles | Verbform, y-Imperfekt + kol; Var.: ykol f18v P.10 | ★★★★ |
+| ytor | יְ+תֹּ+אוֹר | er/sie wird zum Licht werden / erleuchten (Auferstehungs-/Illuminations-Verb; Langform: yteor) | R43 dreifach bestätigt: f18v (3×) + f58r P.30 + f19v P.12 → ★★★★★ Kand. | ★★★★★ |
+| ykam | יְ+קָם | er wird aufstehen / sich erheben (y-Imperfekt von קום qum) | R43 Kand.: nur f18v (4×), zweiter Folio-Beleg ausstehend | ★★★ |
+| ykar | יְ+כְּ+אָר | er heilt leuchtend / er wird leuchten (Variante von ykair; Quire-C-Form + f69r P.3 | register-übergreifend: Botanik + Kosmogramm) — R43 register-übergreifend erfüllt | ★★★★ |
+| ytalar | יְ+תַּ+אֹר | er wird [Licht] geben/erleuchten (or-Ketten-Verb, f58r P.5) |  | ★★★ |
+| ytol | יְ+תֹּלֹל | er wird geschwächt (y-Imperfekt von tolol) | f19v P.3 | ★★★ |
+| yees | יְ+אֵשׁ | er löscht das Feuer/Fieber (y-Imperfekt + esh-Stamm) | f19v P.12 | ★★★ |
+| ytar | יְ+תַּ+אָר | er wird Licht geben (Quire-C-a-Vokal-Variante von ytor) | f19v P.12 | ★★★ |
+| cheol | ח-ע-ל | schöpfen / heben | R43 erfüllt: f77r P.21/P.24/P.38 + f20v P.2 + f21r P.5 + f21r P.8 → 4 Belege, 3 Folios, ★★★★ gesichert; Var. cheeol P.21; genuine ח-ע-Cluster, R50 greift nicht; balneologisch: Augenbad-Marker | ★★★★ |
+| tshaiin | תּ+שׁ+עַיִן | du wirst das Auge [behandeln/waschen] | tav-Imperfekt 2. Sg. + aiin: therapeutischer Direktbefehl an den Arzt — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| ysheol | יְ+שׁ+אֹל | er wird [aus] Scheol [aufsteigen] | positive Verbform: y-Imperfekt + sheol als Aufstiegs-Wendepunkt; eingerahmt von chor-chor in Schlusskolophon — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| ykcheor | יְ+כְּ+כְּ+אוֹר | er wird sein wie Licht | dreifach intensives Heilungsverb (y + k + k + or); R43 erfüllt: f22v P.5 + Zodiak-Register → ★★★★ | ★★★★ |
+| ytal | יְ+תַּל | er wird suspendieren/aufhängen (y-Imperfekt von תלל) | ★★ Kand. (Erstbeleg f22v P.10) | ★★ |
+| cthoiin | כְּ+תּ+עַיִן | wie vollständige Augen-Heilung | cthor-Variante mit aiin-Suffix; Erstbeleg f22r P.10 | ★★★ |
+| ytom | יְ+תָּ+מ | er wird vollständig/komplett | y-Imperfekt v. תמם; Var.: ytam; ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| ydals | יְ+דַּ+לְ+שׁ | er wird Schwäche läutern (y-Imperfekt + dal + shin) | f24v P.2 — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| ykeechy | יְ+כְּ+אֵ+כְּ+הֵי | er heilt wie Blässe-Licht (8. y+k-Verb) | f26r P.9 — ★★ (R43-Frist abgelaufen, Direktsuche f26v–f28v negativ) | ★★ |
+| qoteedar | וְ+תֵּ+דַּר | und er/du wirst leuchten (qo + Tsere + dar) | f26r P.8 — ★★ (R43-Frist abgelaufen, Direktsuche f26v–f28v negativ) | ★★ |
+| ytchol | יְ+ת+כֹּ+ל | er wird alles vollenden (y+t Doppelpräfix + kol; Kolophon f28r P.9) | ★★★★ | ★★★★ |
+| yteol | יְ+ת+אֵ+עֹ+ל | er wird handeln/vollbringen (y+t Doppelpräfix; Kolophon f28r P.9 neben ytchol) | ★★★★ | ★★★★ |
+| ykcholy | יְ+כְּ+כֹּ+ל+יְ | er heilt alles (y+k+chol Paradigma + Possessiv-yod) | ★★★★; f28v P1.2 | ★★★★ |
+| tshoiin | ת+שׁוֹ+עַ+יִן | [sie] wendet das Auge von Scheol (t-Imperfekt + sho + ayin) | ★★★★; f28v P1.4 | ★★★★ |
+| ychom | יְ+חוֹם | er wird genesen / er wird warm (y-Imperfekt von חום) | ★★★ Kand. (Erstbeleg f29r P.9) | ★★★ |
+| yteey | יְ+תֵּ+אֵי | er wird [es] bringen / heilen | Sprache-B-Form; Erstbeleg f33r P.6; ★★★ Kand. | ★★★ |
+| ytsho | יְ+תְּ+שׁ | er wird Scheol zeigen | R28-Typ: y-Imperfekt + t-Kausalitätspräfix + sho; Erstbeleg f32r P.4; ★★★ Kand. | ★★★ |
 
 
 ### Akteure, Anatomie & Botanik
 
-| EVA | Hebräisch | Deutsch | Konf. |
-| --- | --- | --- | --- |
-| sar | שַׂר | Arzt / Meister / Vorsteher | ★★★★ |
-| sary | שַׂרִי | mein Arzt / Apotheker (Possessiv) — Cross-Register ★★★★★: FLOS-Eröffner f009r P.1 (Bistorta-Ähre) + f57r + f103r + f77r; Arzt verschreibt den FLOS-Teil | ★★★★★ |
-| pchy | פְּחִי | mein Atem / mein Mund | ★★★★ |
-| opchor | עַ+פְּ+חֹר | auf die Pupille (Atemweg-Befund) | ★★★ |
-| al | עַל | auf / über / betreffend (Var.: ol) | ★★★★ |
-| saiin | שַׂעַיִן | Augenarzt | ★★★★ |
-| dain | דַּ+עַיִן | das Auge (Kurzform) | ★★★ |
-| oiin | עַ+יִן | das Auge (direkte Form) | ★★★★ |
-| doaiin | דְּ+עַיִן | vom Auge (Var.: doiin) | ★★★★ |
-| kchol | כְּ+חֹל | wie Augensalbe / Kohl-Pigment (Blaupigment) | ★★★ |
-| sam | שַׂם | Arznei / er gibt | ★★★ |
-| shty | שְׁתִי | Getränk / Trank | ★★★ |
-| pol | פֹּל | Bohne / Beere / Frucht — FRUCTUS-Erstbeleg: f22r P.1 an Samenkapseln-Position ★★★★★ (stärkster R60-Einzelnachweis); Positionskonflikt: f1v P.10 auf CAULIS-Niveau → Pflanzenteil-Zuordnung offen, kein PFLANZENTEIL-Tag vergeben | ★★★ |
-| otoaiin | עַתוֹעַיִן | auf seine Augen | ★★★ |
-| chokeos | כֹּכֵּאוֹס | wie ein Kelch (Botanik) | ★★★ |
-| pcho | פְּחֹ | Atem/Mund (Spr.-A-Variante von pchy) | ★★★ |
-| schol | שׂ+כֹּל | Arznei für alles / Universalheilmittel | ★★★ |
-| koiin | כֹּ+עַיִן | wie das Auge (komparativ, kol-Stamm) | ★★★ |
-| kaiin | כְּ+עַיִן | wie das Auge (komparativ, k-Präfix; Var.: keaiin) | ★★★ |
-| okshy | עַ+כְּ+שֵׁי | auf/für die Gabe (therapeutischer Direktional) | ★★★ |
-| pocheody | פְּ+חֹ+דִּי | des Atemwegs (Genitiv von pcho) | ★★★ |
-| opchy | עַ+פְּ+הִי | auf den Atemweg (o+pchy-Direktional) | ★★★★ |
-| pchraiin | פְּ+רְ+עַיִן | für/bei das Licht des Auges | ★★★ |
-| okain | עַ+כְּ+עַיִן | auf das Auge (Kurzform von okaiin) | ★★★ |
-| chekhol | כְּ+כָּ+חֹל | wie das Augenpigment (doppelter Komparativ) | ★★★ |
-| cphoy | כְּ+פְּ+הוֹ | wie sein Atemweg / wie sein Mund (Komparativ) | ★★★ |
-| pochaiin | פֹּ+כְּ+עַיִן | beim/am Auge (Pe-Direktional + kaiin-Basis) — f19v P.1 | ★★★ |
-| cheekaiin | כֵּ+כְּ+עַיִן | wie das Auge (B-Register Zodiak) — doppelter k-Komparativ mit Tsere (R50); f71v R3 | ★★★ |
-| kchorl | כְּ+חֹר+לְ | wie die Pupille hin — direktionaler Komplex (k + chor + lamed) — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| olsar | עַל+שַׂר | über den Arzt / ärztliche Aufsicht (ol + sar); Erstbeleg f23v P.6 rechts von {plant} — Arzt-Supervision-Marker im Therapie-Teil — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| aiior | עַ+יִ+אוֹר | Auge des Lichts (ayin+yod+or); Erstbeleg f23v P.12 — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| dain | דָּן | Richter (Partizip QAL von דין) — f1r T2 `dain.os.teody=` + P3.L14; morphologische Distinktion zu daiin (Substantiv) und daiiin (Plural) — R43 erfüllt: f1r T2/P3 + f30v P.5 = 2 Folios → ★★★ validiert | ★★★ |
-| saraiir | שַׂר+אִיר | Arzt des Leuchtenden (sar + aiir Komposit) — f26v P.2 — ★★ (R43-Frist abgelaufen, Direktsuche f27r–f29r negativ) | ★★ |
-| fochof | פֹ+כֹ+פְ | Mund/Kehle-alles / Kehlenbereich (Var.: chof = כֹ+פְ) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27v P.1) | ★★★ |
-| sor | שׂ+אֹר | Arzt des Lichts (Sprache-A-Vokalalternanz von sar, a↔o R33-konform) — ★★★★; f28v P2.9 Kolophon (Heilerkolophon sor·dar=) | ★★★★ |
-| opchol | עַ+פְּ+כֹּ+ל | auf allem wirkend (Pe-Präfix + chol) — R43 erfüllt: f28r P.1 + f30r P.8 = 2 Folios → ★★★ validiert | ★★★ |
-| dchar | דְּ+כַּ+ר | vom Widder/männlich (Zutaten-Term, d-Genitiv + kar) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.2) | ★★★ |
-| okam | עַ+כַּ+ם | für das Volk / für alle (universale Therapieangabe) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.6) | ★★★ |
-| deaiin | דְּ+עַ+יִן | vom Auge (Direktional, d-Relativpräfix + ayin; Kolophon f28r P.9) — ★★★★ | ★★★★ |
-| poraiin | פְּ+אוֹר+עַיִן | Licht des Auges (p-Präfix + or + ayin) — ★★★ Kand. (Erstbeleg f29r P.1) | ★★★ |
-| chain | חַ+עַיִן | lebendiges Auge / Auge des Lebens (cham-Stamm + ayin) — R43 erfüllt: f29v P.5 + f30r P.7 = 2 Folios → ★★★ validiert | ★★★ |
-| otolam | אוֹת+עַל+אָם | Zeichen über alle / Zeichen der Ewigkeit (ot + ol + am) — ★★★★ Kand. (Erstbeleg f69r C.9) | ★★★★ |
-| dairam | דְּ+אִיר+אָם | von dem Leuchtenden aller (d-Genitiv + air + am; Radial-Kolophon-Form) — ★★★ Kand. (Erstbeleg f69r R.3) | ★★★ |
-| chorain | כֹּ+אַר+עַיִן | Heilung des Auges / wie das Licht des Auges (k-Komparativ + ar + ayin) — R43 erfüllt: f30r P.3 (Erstbeleg) + f33v P.7 (2. Beleg) + f34v P.8 (3. Beleg: choraiin) → ★★★★ validiert (v8.7) | ★★★★ |
-| fol | פּוּל/פֹּל | Röhrenschaft / Stiel-Hülse (CAULIS-Eröffner bei Equisetum — Erstbeleg f13v P.6 als Öffnungsterm des gesamten CAULIS-Blocks; Etymologie: pūlāʾ aram. = Hohlstängel) | ★★★ |
-| sheaiin | שֶׁ+עַיִן | welche das Auge (Relativpartikel she + Auge; Erstbeleg f32v P.7) — ★★★★ | ★★★★ |
-| olaiin | עַל+עַיִן | über das Auge (ol+Ankerwort R61; erste Attestation des ol+aiin-Kompositums; Erstbeleg f33v P.6) — ★★★★★ (!!) | ★★★★★ |
+| EVA | Hebräisch | Deutsch | Notizen | Konf. |
+| --- | --- | --- | --- | --- |
+| sar | שַׂר | Arzt / Meister / Vorsteher |  | ★★★★ |
+| sary | שַׂרִי | mein Arzt / Apotheker (Possessiv) | Cross-Register ★★★★★: FLOS-Eröffner f009r P.1 (Bistorta-Ähre) + f57r + f103r + f77r; Arzt verschreibt den FLOS-Teil | ★★★★★ |
+| pchy | פְּחִי | mein Atem / mein Mund |  | ★★★★ |
+| opchor | עַ+פְּ+חֹר | auf die Pupille (Atemweg-Befund) |  | ★★★ |
+| al | עַל | auf / über / betreffend | Var.: ol | ★★★★ |
+| saiin | שַׂעַיִן | Augenarzt |  | ★★★★ |
+| dain | דַּ+עַיִן | das Auge (Kurzform) |  | ★★★ |
+| oiin | עַ+יִן | das Auge (direkte Form) |  | ★★★★ |
+| doaiin | דְּ+עַיִן | vom Auge | Var.: doiin | ★★★★ |
+| kchol | כְּ+חֹל | wie Augensalbe / Kohl-Pigment (Blaupigment) |  | ★★★ |
+| sam | שַׂם | Arznei / er gibt |  | ★★★ |
+| shty | שְׁתִי | Getränk / Trank |  | ★★★ |
+| pol | פֹּל | Bohne / Beere / Frucht | FRUCTUS-Erstbeleg: f22r P.1 an Samenkapseln-Position ★★★★★ (stärkster R60-Einzelnachweis); Positionskonflikt: f1v P.10 auf CAULIS-Niveau → Pflanzenteil-Zuordnung offen, kein PFLANZENTEIL-Tag vergeben | ★★★ |
+| otoaiin | עַתוֹעַיִן | auf seine Augen |  | ★★★ |
+| chokeos | כֹּכֵּאוֹס | wie ein Kelch (Botanik) |  | ★★★ |
+| pcho | פְּחֹ | Atem/Mund | Spr.-A-Variante von pchy | ★★★ |
+| schol | שׂ+כֹּל | Arznei für alles / Universalheilmittel |  | ★★★ |
+| koiin | כֹּ+עַיִן | wie das Auge (komparativ, kol-Stamm) |  | ★★★ |
+| kaiin | כְּ+עַיִן | wie das Auge | komparativ, k-Präfix; Var.: keaiin | ★★★ |
+| okshy | עַ+כְּ+שֵׁי | auf/für die Gabe (therapeutischer Direktional) |  | ★★★ |
+| pocheody | פְּ+חֹ+דִּי | des Atemwegs (Genitiv von pcho) |  | ★★★ |
+| opchy | עַ+פְּ+הִי | auf den Atemweg (o+pchy-Direktional) |  | ★★★★ |
+| pchraiin | פְּ+רְ+עַיִן | für/bei das Licht des Auges |  | ★★★ |
+| okain | עַ+כְּ+עַיִן | auf das Auge (Kurzform von okaiin) |  | ★★★ |
+| chekhol | כְּ+כָּ+חֹל | wie das Augenpigment (doppelter Komparativ) |  | ★★★ |
+| cphoy | כְּ+פְּ+הוֹ | wie sein Atemweg / wie sein Mund (Komparativ) |  | ★★★ |
+| pochaiin | פֹּ+כְּ+עַיִן | beim/am Auge (Pe-Direktional + kaiin-Basis) | f19v P.1 | ★★★ |
+| cheekaiin | כֵּ+כְּ+עַיִן | wie das Auge | B-Register Zodiak; doppelter k-Komparativ mit Tsere (R50); f71v R3 | ★★★ |
+| kchorl | כְּ+חֹר+לְ | wie die Pupille hin | direktionaler Komplex (k + chor + lamed) — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| olsar | עַל+שַׂר | über den Arzt / ärztliche Aufsicht | ol + sar; Erstbeleg f23v P.6 rechts von {plant}; Arzt-Supervision-Marker im Therapie-Teil; ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| aiior | עַ+יִ+אוֹר | Auge des Lichts | ayin+yod+or; Erstbeleg f23v P.12; ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| dain | דָּן | Richter (Partizip QAL von דין) | f1r T2 `dain.os.teody=` + P3.L14; morphologische Distinktion zu daiin (Substantiv) und daiiin (Plural) — R43 erfüllt: f1r T2/P3 + f30v P.5 = 2 Folios → ★★★ validiert | ★★★ |
+| saraiir | שַׂר+אִיר | Arzt des Leuchtenden (sar + aiir Komposit) | f26v P.2 — ★★ (R43-Frist abgelaufen, Direktsuche f27r–f29r negativ) | ★★ |
+| fochof | פֹ+כֹ+פְ | Mund/Kehle-alles / Kehlenbereich | Var.: chof = כֹ+פְ; ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27v P.1) | ★★★ |
+| sor | שׂ+אֹר | Arzt des Lichts | Sprache-A-Vokalalternanz von sar, a↔o R33-konform; ★★★★; f28v P2.9 Kolophon (Heilerkolophon sor·dar=) | ★★★★ |
+| opchol | עַ+פְּ+כֹּ+ל | auf allem wirkend (Pe-Präfix + chol) | R43 erfüllt: f28r P.1 + f30r P.8 = 2 Folios → ★★★ validiert | ★★★ |
+| dchar | דְּ+כַּ+ר | vom Widder/männlich (Zutaten-Term, d-Genitiv + kar) | ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.2) | ★★★ |
+| okam | עַ+כַּ+ם | für das Volk / für alle (universale Therapieangabe) | ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f28r P.6) | ★★★ |
+| deaiin | דְּ+עַ+יִן | vom Auge (Direktional, d-Relativpräfix + ayin; Kolophon f28r P.9) | ★★★★ | ★★★★ |
+| poraiin | פְּ+אוֹר+עַיִן | Licht des Auges (p-Präfix + or + ayin) | ★★★ Kand. (Erstbeleg f29r P.1) | ★★★ |
+| chain | חַ+עַיִן | lebendiges Auge / Auge des Lebens (cham-Stamm + ayin) | R43 erfüllt: f29v P.5 + f30r P.7 = 2 Folios → ★★★ validiert | ★★★ |
+| otolam | אוֹת+עַל+אָם | Zeichen über alle / Zeichen der Ewigkeit (ot + ol + am) | ★★★★ Kand. (Erstbeleg f69r C.9) | ★★★★ |
+| dairam | דְּ+אִיר+אָם | von dem Leuchtenden aller (d-Genitiv + air + am; Radial-Kolophon-Form) | ★★★ Kand. (Erstbeleg f69r R.3) | ★★★ |
+| chorain | כֹּ+אַר+עַיִן | Heilung des Auges / wie das Licht des Auges (k-Komparativ + ar + ayin) | R43 erfüllt: f30r P.3 (Erstbeleg) + f33v P.7 (2. Beleg) + f34v P.8 (3. Beleg: choraiin) → ★★★★ validiert (v8.7) | ★★★★ |
+| fol | פּוּל/פֹּל | Röhrenschaft / Stiel-Hülse (CAULIS-Eröffner bei Equisetum | Erstbeleg f13v P.6 als Öffnungsterm des gesamten CAULIS-Blocks; Etymologie: pūlāʾ aram. = Hohlstängel) | ★★★ |
+| sheaiin | שֶׁ+עַיִן | welche das Auge | Relativpartikel she + Auge; Erstbeleg f32v P.7; ★★★★ | ★★★★ |
+| olaiin | עַל+עַיִן | über das Auge | ol+Ankerwort R61; erste Attestation des ol+aiin-Kompositums; Erstbeleg f33v P.6; ★★★★★ (!!) | ★★★★★ |
 
 
 ### Bestätigte Komposita
 
-| EVA | Hebräisch | Deutsch | Konf. |
-| --- | --- | --- | --- |
-| qokedam | וְ+כְּ+דָּם | und wie das Blut | ★★★★ |
-| okoldm | עַל+כֹּל+דָּם | über alles Blut | ★★★★ |
-| pchedal | פְּ+כֶּ+דַּל | bei dem Schwachen | ★★★ |
-| cholar | כֹּ+לוֹ+ר | alles sein Licht | ★★★ |
-| qokchor | וְ+עַ+כְּ+חֹר | und für die Pupille | ★★★★★ |
-| shydal | שֵׁי+דַּל | die Gabe der Schwäche | ★★★ |
-| chokshor | כְּ+חֹק+שׁוֹר | wie die Vorschrift des Zeichens | ★★★★ |
-| qotchor | קוֹ+תְּ+כֹּר | Pupillen-Zeichen / Urteil der Pupille (Schlusskolophon f15r) | ★★★★★ |
-| dshy | דְּ+שֵׁי | von der Gabe (d-Genitivkonstrukt) | ★★★ |
-| otly | אוֹת+לֵ | Zeichen zu/für (oto-Direktional) | ★★★ |
-| otor | אוֹת+אוֹר | Zeichen des Lichts / der Heilung — R43 erfüllt: f16v + f21r P.8 (2 Folios) | ★★★ |
-| otain | אוֹת+אַיִן | Zeichen des Nichts / Endes | ★★★ |
-| shodain | שׁוֹד+דַּ+עַיִן | Zerstörung des Auges (schärfste negative Augenprognose) | ★★★★ |
-| qokcheor | וְ+כְּ+כְּ+אֵוֹר | und wie das Licht (doppelter k-Komparativ + Vav) | ★★★ |
-| otchol | אוֹת+כֹּל | Zeichen von allem / Universalzeichen | ★★★ |
-| cphor | כְּ+פְּ+אֹר | wie der Mund des Lichts | ★★ |
-| opydaiin | עַ+פִּי+דִּין | bei/beim Urteil des Mundes (Atemweg-Urteil-Verbund) | ★★★ |
-| qopchaiin | וְ+פְּ+כְּ+עַיִן | und Atemweg des Auges (Atemweg-Auge-Verbund) | ★★★ |
-| odaldy | עַ+דַּל+דִּי | über die Schwäche dessen (o-Direktional + dal + Genitiv) | ★★★ |
-| sotchaiin | שׁ+אוֹת+כְּ+עַיִן | das Zeichen dem Auge gleich (sho+otchor+aiin-Kompositum) | ★★★ |
-| kchaiin | כְּ+חַ+עַיִן | wie die Wärme des Auges (Siman-Formel) | ★★★ |
-| okal | עַ+כָּל | auf/über alles (o-Direktional + kol) | ★★★ |
-| otchdal | אוֹת+כְּ+דַּל | Zeichen der Schwäche (oto + Direktional + dal) | ★★★★ |
-| qotchy | וְ+אוֹת+כְּ+הִי | und das Zeichen der Blässe (qo + otchy) | ★★★★ |
-| qotchol | וְ+אוֹת+כֹּל | und das Universal-Zeichen (qo + otchol) | ★★★ |
-| qokshy | וְ+כְּ+שֵׁי | und wie die Gabe (qo-Präfix + okshy) | ★★★ |
-| qor | וְ+אֹר | und Licht (qo-Konjunktion + or-Anker, astronomisch) — f58r P.5 | ★★★★ |
-| opsheolaiin | עַ+פֶּ+שְׁאוֹל+עַיִן | am Nadir-Punkt des Sternauges (op-Koordinatenmarker, R41-Erweiterung) — f58r P.26 | ★★★ |
-| qokorar | וְ+כֹּ+אוֹר+אָר | und alles Licht der Heilung (qo + kol + or + ar) — f19r P.4 | ★★★ |
-| otytchy | אוֹת+יְ+תְּ+כְּ+הִי | das Zeichen er-wird-Blässe-zeigen (ot + ytchy-Kompositum) — f19r P.6 | ★★★ |
-| otam | אוֹת+תָּם / אוֹת+אָם | Zeichen der Vollständigkeit (ot+tam, f19v P.10); im Zodiak-Register: Zeichen der Mutter/des Weiblichen (ot+am, f72r1 R1 3×, semantisch Taurus-kongruent); im botanischen Register: Prognosezeichen der Mutter (f22v P.3 rechts von {plant}) — R43 erfüllt: 2 Register (Zodiak + Botanisch) → ★★★★ | ★★★★ |
-| okchod | עַ+כְּ+חֹד | auf die Schärfe/Akutheit (o + k + chod, therapeutischer Direktional) — f19v P.11 | ★★★★ |
-| alef | אָלֶף | Aleph (Ochse) — erste ikonographische Buchstabenreferenz im Zodiak; exklusiv im Stier-dunkel-Panel (f72r1), semantisch direkt: Aleph = Piktogramm Ochsenkopf | ★★★ |
-| otalef | אוֹת+אָלֶף | Zeichen des Aleph / Zeichen des Ochsen — ot-Präfix + alef; nur f72r1 S1.9 (otalef.as.ainam=) | ★★★ |
-| chotam | כֹּ+אוֹת+אָם | wie das Zeichen der Mutter — Komparativ-Dritte-Stufe der R19/R35-Intensivierungsreihe otam·otam·chotam (f72r1 R1) | ★★★ |
-| okeodaly | עַ+כֵּ+עֹ+דַּל | auf dem Weg des Schwachen — o-Direktional + kee + ol + dal; f71v R1 + f72r1 R1 (R43 erfüllt: 2 Folios) | ★★★ |
-| pysaiinor | פִּי+שׂ+עַיִן+אוֹר | Mund gleich dem Auge des Lichts (pi + sin + ayin + or) — ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
-| okchain | עַ+כְּ+חַיִּין | hin zu Leben / auf Leben hin — o-Direktional + k + chayyim; R43 erfüllt: f22v P.13 + Parallelbelege → ★★★★ | ★★★★ |
-| daldalol | דַּל+דַּל+עוֹל | doppelte Schwäche des Joches — R35-Duplikation in Titelposition (T-Klasse); R53-Strukturbeleg (R53 ★★★★ gesichert) — ★★ (R43-Frist abgelaufen, eigenständige Kandidaten-Stellung endet; bleibt als R53-Strukturbeleg dokumentiert) | ★★ |
-| daiidal | דִּין+דַּל | Urteil der Schwäche (daiin+dal-Kompositum); Erstbeleg f23r P.6 | ★★★ |
-| qokor | וְ+כֹּ+אָר | und alles Licht (qo+kol+ar); Erstbeleg f23v P.8 | ★★★ |
-| otshor | אוֹת+שׁ+אוֹר | das Zeichen des Lichts (ot+shor-Kompositum); Erstbeleg f23v P.6 | ★★★ |
-| otaiir | אֹת+עַ+יִ+ר | Zeichen des Augenlichts (ot-Präfix + ayin + yod + or) — Erstbeleg f24v P.2 (ot-Kompositum-Dreikette); Zweitbeleg f25r T.7 (T-Klassen-Titel Subtyp C); R43 erfüllt → ★★★★★ Kand. | ★★★★★ |
-| cheekdam | כְּ+אֵ+כְּ+דָּ+מ | wie das Zeichen des Blutes (Komparativ-Dopplung + dam) — Erstbeleg f24v P.14 | ★★★★ |
-| otaiphy | אֹת+אַ+יְ+פֶּ+הֵי | Hapax: Zeichen-Blässe-Mund (ot + ay + peh + hey) — f24r P.19; Einzelbeleg; ★★ Kand. | ★★ |
-| otosy | אֹת+אֹ+שׂ+יְ | Zeichen-Scheol-gleich-er (ot + sin + yod) — f25r T.7; Teil des T-Klassen-Titels Subtyp C (dair.otaiir.otosy=) — ★★ (R43-Frist abgelaufen, Direktsuche f25v–f27v negativ) | ★★ |
-| cheesees | כְּ+אֵ+שׂ+אֵ+שׁ | Dreifach-Licht-Zeichen (k + esh + sin + esh) — f25r P.3; dreifaches Licht-Feuer-Kompositum — ★★ (R43-Frist abgelaufen, Direktsuche f25v–f27v negativ) | ★★ |
-| qokoral | וְ+כְּ+אֹ+ר+עַ+לְ | und wie Licht-auf (qo + k + or + al-Direktional) — f25v P.6 — ★★ (R43-Frist abgelaufen, Direktsuche f26r–f28r negativ) | ★★ |
-| cphary | כְּ+פַּר+יְ | wie sein Sühnopfer / wie seine Expiation — f27r P.5 — ★★ (R43-Frist abgelaufen, Direktsuche f27v–f29v negativ) | ★★ |
-| kshy | כְּ+שֵׁי | wie die Gabe (k-Präfix + sheey) — ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27v P.8) | ★★★ |
+| EVA | Hebräisch | Deutsch | Notizen | Konf. |
+| --- | --- | --- | --- | --- |
+| qokedam | וְ+כְּ+דָּם | und wie das Blut |  | ★★★★ |
+| okoldm | עַל+כֹּל+דָּם | über alles Blut |  | ★★★★ |
+| pchedal | פְּ+כֶּ+דַּל | bei dem Schwachen |  | ★★★ |
+| cholar | כֹּ+לוֹ+ר | alles sein Licht |  | ★★★ |
+| qokchor | וְ+עַ+כְּ+חֹר | und für die Pupille |  | ★★★★★ |
+| shydal | שֵׁי+דַּל | die Gabe der Schwäche |  | ★★★ |
+| chokshor | כְּ+חֹק+שׁוֹר | wie die Vorschrift des Zeichens |  | ★★★★ |
+| qotchor | קוֹ+תְּ+כֹּר | Pupillen-Zeichen / Urteil der Pupille (Schlusskolophon f15r) |  | ★★★★★ |
+| dshy | דְּ+שֵׁי | von der Gabe (d-Genitivkonstrukt) |  | ★★★ |
+| otly | אוֹת+לֵ | Zeichen zu/für (oto-Direktional) |  | ★★★ |
+| otor | אוֹת+אוֹר | Zeichen des Lichts / der Heilung | R43 erfüllt: f16v + f21r P.8 (2 Folios) | ★★★ |
+| otain | אוֹת+אַיִן | Zeichen des Nichts / Endes |  | ★★★ |
+| shodain | שׁוֹד+דַּ+עַיִן | Zerstörung des Auges (schärfste negative Augenprognose) |  | ★★★★ |
+| qokcheor | וְ+כְּ+כְּ+אֵוֹר | und wie das Licht (doppelter k-Komparativ + Vav) |  | ★★★ |
+| otchol | אוֹת+כֹּל | Zeichen von allem / Universalzeichen |  | ★★★ |
+| cphor | כְּ+פְּ+אֹר | wie der Mund des Lichts |  | ★★ |
+| opydaiin | עַ+פִּי+דִּין | bei/beim Urteil des Mundes (Atemweg-Urteil-Verbund) |  | ★★★ |
+| qopchaiin | וְ+פְּ+כְּ+עַיִן | und Atemweg des Auges (Atemweg-Auge-Verbund) |  | ★★★ |
+| odaldy | עַ+דַּל+דִּי | über die Schwäche dessen (o-Direktional + dal + Genitiv) |  | ★★★ |
+| sotchaiin | שׁ+אוֹת+כְּ+עַיִן | das Zeichen dem Auge gleich (sho+otchor+aiin-Kompositum) |  | ★★★ |
+| kchaiin | כְּ+חַ+עַיִן | wie die Wärme des Auges (Siman-Formel) |  | ★★★ |
+| okal | עַ+כָּל | auf/über alles (o-Direktional + kol) |  | ★★★ |
+| otchdal | אוֹת+כְּ+דַּל | Zeichen der Schwäche (oto + Direktional + dal) |  | ★★★★ |
+| qotchy | וְ+אוֹת+כְּ+הִי | und das Zeichen der Blässe (qo + otchy) |  | ★★★★ |
+| qotchol | וְ+אוֹת+כֹּל | und das Universal-Zeichen (qo + otchol) |  | ★★★ |
+| qokshy | וְ+כְּ+שֵׁי | und wie die Gabe (qo-Präfix + okshy) |  | ★★★ |
+| qor | וְ+אֹר | und Licht (qo-Konjunktion + or-Anker, astronomisch) | f58r P.5 | ★★★★ |
+| opsheolaiin | עַ+פֶּ+שְׁאוֹל+עַיִן | am Nadir-Punkt des Sternauges | op-Koordinatenmarker, R41-Erweiterung; f58r P.26 | ★★★ |
+| qokorar | וְ+כֹּ+אוֹר+אָר | und alles Licht der Heilung (qo + kol + or + ar) | f19r P.4 | ★★★ |
+| otytchy | אוֹת+יְ+תְּ+כְּ+הִי | das Zeichen er-wird-Blässe-zeigen (ot + ytchy-Kompositum) | f19r P.6 | ★★★ |
+| otam | אוֹת+תָּם / אוֹת+אָם | Zeichen der Vollständigkeit / Zeichen der Mutter/des Weiblichen | ot+tam f19v P.10; Zodiak-Register: ot+am f72r1 R1 3×, Taurus-kongruent; botanisch: f22v P.3; R43 erfüllt: 2 Register (Zodiak + Botanisch) → ★★★★ | ★★★★ |
+| okchod | עַ+כְּ+חֹד | auf die Schärfe/Akutheit (o + k + chod, therapeutischer Direktional) | f19v P.11 | ★★★★ |
+| alef | אָלֶף | Aleph (Ochse) | erste ikonographische Buchstabenreferenz im Zodiak; exklusiv im Stier-dunkel-Panel (f72r1), semantisch direkt: Aleph = Piktogramm Ochsenkopf | ★★★ |
+| otalef | אוֹת+אָלֶף | Zeichen des Aleph / Zeichen des Ochsen | ot-Präfix + alef; nur f72r1 S1.9 (otalef.as.ainam=) | ★★★ |
+| chotam | כֹּ+אוֹת+אָם | wie das Zeichen der Mutter | Komparativ-Dritte-Stufe der R19/R35-Intensivierungsreihe otam·otam·chotam (f72r1 R1) | ★★★ |
+| okeodaly | עַ+כֵּ+עֹ+דַּל | auf dem Weg des Schwachen | o-Direktional + kee + ol + dal; f71v R1 + f72r1 R1 (R43 erfüllt: 2 Folios) | ★★★ |
+| pysaiinor | פִּי+שׂ+עַיִן+אוֹר | Mund gleich dem Auge des Lichts (pi + sin + ayin + or) | ★★ (R43-Frist abgelaufen f29v, kein Folgebeleg) | ★★ |
+| okchain | עַ+כְּ+חַיִּין | hin zu Leben / auf Leben hin | o-Direktional + k + chayyim; R43 erfüllt: f22v P.13 + Parallelbelege → ★★★★ | ★★★★ |
+| daldalol | דַּל+דַּל+עוֹל | doppelte Schwäche des Joches | R35-Duplikation in Titelposition (T-Klasse); R53-Strukturbeleg (R53 ★★★★ gesichert) — ★★ (R43-Frist abgelaufen, eigenständige Kandidaten-Stellung endet; bleibt als R53-Strukturbeleg dokumentiert) | ★★ |
+| daiidal | דִּין+דַּל | Urteil der Schwäche | daiin+dal-Kompositum; Erstbeleg f23r P.6 | ★★★ |
+| qokor | וְ+כֹּ+אָר | und alles Licht | qo+kol+ar; Erstbeleg f23v P.8 | ★★★ |
+| otshor | אוֹת+שׁ+אוֹר | das Zeichen des Lichts | ot+shor-Kompositum; Erstbeleg f23v P.6 | ★★★ |
+| otaiir | אֹת+עַ+יִ+ר | Zeichen des Augenlichts (ot-Präfix + ayin + yod + or) | Erstbeleg f24v P.2 (ot-Kompositum-Dreikette); Zweitbeleg f25r T.7 (T-Klassen-Titel Subtyp C); R43 erfüllt → ★★★★★ Kand. | ★★★★★ |
+| cheekdam | כְּ+אֵ+כְּ+דָּ+מ | wie das Zeichen des Blutes (Komparativ-Dopplung + dam) | Erstbeleg f24v P.14 | ★★★★ |
+| otaiphy | אֹת+אַ+יְ+פֶּ+הֵי | Hapax: Zeichen-Blässe-Mund (ot + ay + peh + hey) | f24r P.19; Einzelbeleg; ★★ Kand. | ★★ |
+| otosy | אֹת+אֹ+שׂ+יְ | Zeichen-Scheol-gleich-er (ot + sin + yod) | f25r T.7; Teil des T-Klassen-Titels Subtyp C (dair.otaiir.otosy=) — ★★ (R43-Frist abgelaufen, Direktsuche f25v–f27v negativ) | ★★ |
+| cheesees | כְּ+אֵ+שׂ+אֵ+שׁ | Dreifach-Licht-Zeichen (k + esh + sin + esh) | f25r P.3; dreifaches Licht-Feuer-Kompositum — ★★ (R43-Frist abgelaufen, Direktsuche f25v–f27v negativ) | ★★ |
+| qokoral | וְ+כְּ+אֹ+ר+עַ+לְ | und wie Licht-auf (qo + k + or + al-Direktional) | f25v P.6 — ★★ (R43-Frist abgelaufen, Direktsuche f26r–f28r negativ) | ★★ |
+| cphary | כְּ+פַּר+יְ | wie sein Sühnopfer / wie seine Expiation | f27r P.5 — ★★ (R43-Frist abgelaufen, Direktsuche f27v–f29v negativ) | ★★ |
+| kshy | כְּ+שֵׁי | wie die Gabe (k-Präfix + sheey) | ★★★ Kand. (R43-Frist: 5 Folios; Erstbeleg f27v P.8) | ★★★ |
 
 
 ### Possessiv-Formen
 
-| EVA | Hebräisch | Deutsch | Konf. |
-| --- | --- | --- | --- |
-| olsho | שׁוֹ+לוֹ | sein Scheol (Possessiv) | ★★★ |
+| EVA | Hebräisch | Deutsch | Notizen | Konf. |
+| --- | --- | --- | --- | --- |
+| olsho | שׁוֹ+לוֹ | sein Scheol (Possessiv) |  | ★★★ |
 
 
 ## V. Grammatik — Präfixe, Suffixe & Schemata

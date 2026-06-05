@@ -18,6 +18,7 @@
 		{ key: 'eva',   label: 'EVA' },
 		{ key: 'heb',   label: 'Hebräisch' },
 		{ key: 'de',    label: 'Bedeutung' },
+		{ key: 'notes', label: 'Notizen' },
 		{ key: 'part',  label: 'Pflanzenteil' },
 		{ key: 'stars', label: 'Konf.' },
 	];
@@ -28,8 +29,17 @@
 	}
 
 	/** @param {string} catId */
+	function hasNotes(catId) {
+		return LEXICON.some(e => e.cat === catId && e.notes);
+	}
+
+	/** @param {string} catId */
 	function colsFor(catId) {
-		return hasPart(catId) ? COLS : COLS.filter(c => c.key !== 'part');
+		return COLS.filter(c => {
+			if (c.key === 'part')  return hasPart(catId);
+			if (c.key === 'notes') return hasNotes(catId);
+			return true;
+		});
 	}
 
 	/** @type {Record<string, { col: string, dir: 1|-1 }>} */
@@ -57,8 +67,8 @@
 		const { col, dir } = sortStates[catId];
 		if (!col) return entries;
 		return [...entries].sort((a, b) => {
-			const av = col === 'stars' ? a[col].length : a[col];
-			const bv = col === 'stars' ? b[col].length : b[col];
+			const av = col === 'stars' ? a.stars.length : (a[col] ?? '');
+			const bv = col === 'stars' ? b.stars.length : (b[col] ?? '');
 			return av < bv ? -dir : av > bv ? dir : 0;
 		});
 	}
@@ -84,6 +94,7 @@
                     onclick={() => toggleSort(cat.id, col.key)}
                     onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleSort(cat.id, col.key)}
                     tabindex="0"
+                    class={col.key === 'notes' ? ' notes-cell' : ''}
                   >
                     {col.label}
                     <span class="sort-icon" aria-hidden="true">
@@ -109,6 +120,9 @@
                   <td><span class="eva">{entry.eva}</span></td>
                   <td><span class="heb-sm">{entry.heb}</span></td>
                   <td class="meaning">{entry.de}</td>
+                  {#if hasNotes(cat.id)}
+                    <td class="notes-cell">{entry.notes ?? '—'}</td>
+                  {/if}
                   {#if hasPart(cat.id)}
                     <td class="part-cell">{entry.part ?? '—'}</td>
                   {/if}
@@ -149,11 +163,11 @@
     }
   }
 
-  @media print {
-    .table-wrap {
-      max-height: none;
-      overflow: visible;
-    }
+  td.notes-cell {
+    font-size: 0.78rem;
+    color: var(--ink-f);
+    font-style: italic;
+    max-width: 320px;
   }
 
   .part-cell {
@@ -181,6 +195,17 @@
     &[aria-sort='ascending'] .sort-icon,
     &[aria-sort='descending'] .sort-icon {
       opacity: 1;
+    }
+  }
+
+  @media print {
+    .table-wrap {
+      max-height: none;
+      overflow: visible;
+    }
+
+    .notes-cell {
+      display: none;
     }
   }
 </style>
