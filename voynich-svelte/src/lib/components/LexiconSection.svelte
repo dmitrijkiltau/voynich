@@ -1,4 +1,6 @@
 <script>
+	import { isConf5 } from '$lib';
+
 	let { STATS, LEXICON, onInsert } = $props();
 
 	const CATEGORIES = [
@@ -97,7 +99,6 @@
             </thead>
             <tbody>
               {#each entriesByCat(cat.id) as entry}
-                {@const is5 = entry.stars.length >= 9}
                 <tr
                   data-clickable
                   title="In Eingabe einfügen: {entry.eva}"
@@ -111,7 +112,7 @@
                   {#if hasPart(cat.id)}
                     <td class="part-cell">{entry.part ?? '—'}</td>
                   {/if}
-                  <td><span class={is5 ? 'conf5' : 'conf'}>{entry.stars}</span></td>
+                  <td><span class={isConf5(entry.stars) ? 'conf5' : 'conf'}>{entry.stars}</span></td>
                 </tr>
               {/each}
             </tbody>

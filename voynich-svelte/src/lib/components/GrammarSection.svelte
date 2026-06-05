@@ -1,5 +1,6 @@
 ﻿<script>
 	import { GRAMMAR_PREFIXES, GRAMMAR_SUFFIXES, VERB_PARADIGM } from '$lib/grammar-data.js';
+	import { isConf5 } from '$lib';
 </script>
 
 <div class="grammar-systems">
@@ -22,7 +23,7 @@
             <td><span class="heb-sm">{row.heb}</span></td>
             <td>{row.fn}</td>
             <td><span class="eva">{row.ex_eva}</span> = <span class="heb-sm">{row.ex_heb}</span></td>
-            <td><span class={row.is5 ? 'conf5' : 'conf'}>{row.stars}</span></td>
+            <td><span class={isConf5(row.stars) ? 'conf5' : 'conf'}>{row.stars}</span></td>
           </tr>
         {/each}
       </tbody>
@@ -46,7 +47,7 @@
             <td><span class="eva">{row.eva}</span></td>
             <td><span class="heb-sm">{row.heb}</span></td>
             <td>{row.fn}</td>
-            <td><span class={row.is5 ? 'conf5' : 'conf'}>{row.stars}</span></td>
+            <td><span class={isConf5(row.stars) ? 'conf5' : 'conf'}>{row.stars}</span></td>
           </tr>
         {/each}
       </tbody>
@@ -69,7 +70,7 @@
 						<td><span class="heb-sm">{row.heb}</span></td>
 						<td class="meaning">{row.de}</td>
 						<td>{row.folio}</td>
-						<td><span class={row.is5 ? 'conf5' : 'conf'}>{row.stars}</span></td>
+						<td><span class={isConf5(row.stars) ? 'conf5' : 'conf'}>{row.stars}</span></td>
 					</tr>
 				{/each}
 			</tbody>

@@ -1,5 +1,6 @@
 <script>
   import { CONFIDENCE_SCALE, ANCHOR_FOLIOS } from "$lib/methodology-data.js";
+  import { isConf5 } from "$lib";
 
   const content = {
     title: "II. Methodik",
@@ -44,7 +45,7 @@
             {#each CONFIDENCE_SCALE as row}
               <tr>
                 <td
-                  ><span class={row.is5 ? "conf5" : "conf"}>{row.stars}</span
+                  ><span class={isConf5(row.stars) ? "conf5" : "conf"}>{row.stars}</span
                   ></td
                 >
                 <td>{row.label}</td>

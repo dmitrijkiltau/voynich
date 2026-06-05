@@ -1,10 +1,10 @@
 export const CONFIDENCE_SCALE = [
-  { stars: '★★★★★', label: 'Gesichert',        criteria: 'Rückwärtstest ✓, ≥ 3 Folios, 0 Gegenbeispiele, R42-Kongruenz ✓, R43 erfüllt', is5: true },
-  { stars: '★★★★',  label: 'Sehr stark',        criteria: 'Rückwärtstest ✓, ≥ 2 Folios, konsistente Kontextverteilung, R42-Kongruenz ✓, R43 erfüllt', is5: false },
-  { stars: '★★★',   label: 'Stark',             criteria: 'Semantisch kohärent, morphologisch konsistent, Basiswurzel ≥ 4 Konsonanten (R40 v2), R43 erfüllt', is5: false },
-  { stars: '★★★ Kand.', label: 'Stark-Kandidat', criteria: '★★★-Kriterien erfüllt, R43 ausstehend (Einzel-Folio ≥ 8×, Bestätigung binnen 5 Folios)', is5: false },
-  { stars: '★★',    label: 'Möglich',           criteria: 'Passt in Kontext, mehrere Alternativlesarten oder Basiswurzel ≤ 3 Konsonanten ohne 2 Ausnahmen (R40 v2)', is5: false },
-  { stars: '★',     label: 'Spekulativ',        criteria: 'Erste Hypothese, noch nicht getestet', is5: false },
+  { stars: '★★★★★', label: 'Gesichert',        criteria: 'Rückwärtstest ✓, ≥ 3 Folios, 0 Gegenbeispiele, R42-Kongruenz ✓, R43 erfüllt' },
+  { stars: '★★★★',  label: 'Sehr stark',        criteria: 'Rückwärtstest ✓, ≥ 2 Folios, konsistente Kontextverteilung, R42-Kongruenz ✓, R43 erfüllt' },
+  { stars: '★★★',   label: 'Stark',             criteria: 'Semantisch kohärent, morphologisch konsistent, Basiswurzel ≥ 4 Konsonanten (R40 v2), R43 erfüllt' },
+  { stars: '★★★ Kand.', label: 'Stark-Kandidat', criteria: '★★★-Kriterien erfüllt, R43 ausstehend (Einzel-Folio ≥ 8×, Bestätigung binnen 5 Folios)' },
+  { stars: '★★',    label: 'Möglich',           criteria: 'Passt in Kontext, mehrere Alternativlesarten oder Basiswurzel ≤ 3 Konsonanten ohne 2 Ausnahmen (R40 v2)' },
+  { stars: '★',     label: 'Spekulativ',        criteria: 'Erste Hypothese, noch nicht getestet' },
 ];
 
 export const ANCHOR_FOLIOS = [

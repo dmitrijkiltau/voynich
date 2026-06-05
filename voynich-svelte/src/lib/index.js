@@ -5,6 +5,9 @@ import { RULES } from './grammar-rules-data.js';
 
 export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_STATUS, RULES };
 
+/** Returns true when a stars string represents 5-star confidence (★★★★★). */
+export const isConf5 = (/** @type {string} */ stars) => stars.length >= 5;
+
 export const STATS = {
   version: '8.4',
   changelog: [

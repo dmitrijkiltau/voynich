@@ -1,6 +1,6 @@
 ﻿<script>
 	import { RULES } from '$lib/grammar-rules-data.js';
-	import { STATS } from '$lib';
+	import { STATS, isConf5 } from '$lib';
 </script>
 
 <section class="section" id="grammar-rules">
@@ -48,7 +48,7 @@
 						<td class="rule-id">{r.id}</td>
 						<td class="rule-text">{@html r.rule}</td>
 						<td class="rule-evidence">{@html r.evidence}</td>
-						<td class="rule-conf"><span class={r.is5 ? 'conf5' : 'conf'}>{r.stars}</span></td>
+						<td class="rule-conf"><span class={isConf5(r.stars) ? 'conf5' : 'conf'}>{r.stars}</span></td>
 					</tr>
 				{/each}
 			</tbody>

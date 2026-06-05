@@ -1,6 +1,6 @@
 <script>
 	import { COMPARISON, FOLIOS } from '$lib/language-a-data.js';
-	import { STATS } from '$lib';
+	import { STATS, isConf5 } from '$lib';
 
 	const plant = "{plant}";
 </script>
@@ -38,7 +38,7 @@
 						<td class="folio-cell">{f.folio}</td>
 						<td>{f.plant}</td>
 						<td class="note-cell">{f.signal}</td>
-						<td><span class={f.is5 ? 'conf5' : 'conf'}>{f.stars}</span></td>
+						<td><span class={isConf5(f.stars) ? 'conf5' : 'conf'}>{f.stars}</span></td>
 					</tr>
 				{/each}
 			</tbody>
