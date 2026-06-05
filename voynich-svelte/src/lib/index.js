@@ -10,14 +10,9 @@ export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_STATUS, RULES, RULES_CHA
 export const isConf5 = (/** @type {string} */ stars) => stars.slice(0, 5) === '★★★★★';
 
 export const STATS = {
-  version: '8.5',
+  version: '8.6',
   changelog: [
-    'Quire-A-Retroanalyse f2r–f10r + f33r (v8.5): 9 neue Pflanzenteil-Positionskarten (Quire A komplett).',
-    'Farbcode Beleg 11 (f002r) + Beleg 12 (f007r): neue rote Wurzeln ohne Text → 12 Belege Ebene 1. f010r rote Oval-Strukturen (Nicht-Wurzel) ohne Text → Ebene 2 ★★★★★ (3 Nicht-Wurzel-Belege).',
-    'Drei-Kategorien-Verfeinerung: Illustration-Rot ≠ pharmakologisches Dunkelrot ≠ FLOS-therapeutisches Rot (f009r Punkt-Ähre MIT Text). FOLIUM-Textfreiheit (R60 Korollar 3 NEU): 21/21 Folios, 0 Gegenbeispiele ★★★★.',
-    'sary ★★★ → ★★★★★ (Cross-Register: FLOS-Eröffner f009r + f57r + f103r + f77r).',
-    'sheey: FLOS-spezifisch → THERAPEUTISCH-ALLGEMEIN ★★★ (FLOS f013r + CAULIS f002r).',
-    'Neue Spr.-B-Lexikoneinträge: tshdar, yteey, okeeey (f33r). f57v = Zodiak-Diagramm (kein Herbal-Folio).',
+    'Plantmarker-Abgleich (v8.6): Botanik f14r/f16r/f19r/f22r/f24v nach plantmarker-doc aktualisiert (6 Folios). Layout-Typen A/B/C für f20r, f21r, f25r, f28r, f30r/v ergänzt. f16r chor als 3. FLOS-Indikator (opchy+saiin+chor). f14r Ebene-2-Erstbeleg markiert. Lexikon pol: FRUCTUS-Notiz + CAULIS-Konflikt, kein PFLANZENTEIL-Tag (≥2-Folio-Regel nicht erfüllt).',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.length,

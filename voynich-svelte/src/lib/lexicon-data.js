@@ -2,7 +2,7 @@
 export const LEXICON = [
   // ── Medizinische Nomina & Symptome ──────────────────
   { eva: 'dam',       heb: 'דָּם',        de: 'Blut',                                        stars: '★★★★★', cat: 'symptom' },
-  { eva: 'dal',       heb: 'דַּל',        de: 'schwach / abgemagert',                        stars: '★★★★',  cat: 'symptom' },
+  { eva: 'dal',       heb: 'דַּל',        de: 'schwach / abgemagert',                        stars: '★★★★',  cat: 'symptom',  part: 'FOLIUM' },
   { eva: 'daly',      heb: 'דַּלִּי',       de: 'seine/meine Schwäche (Possessiv)',             stars: '★★★★',  cat: 'symptom' },
   { eva: 'ckhy',      heb: 'כְּהִי',       de: 'Blässe / Trübheit',                           stars: '★★★★',  cat: 'symptom' },
   { eva: 'okaiin',    heb: 'עַכְּעַיִן',     de: 'auf das Auge',                                stars: '★★★★',  cat: 'symptom' },
@@ -103,7 +103,7 @@ export const LEXICON = [
   { eva: 'kchol',     heb: 'כְּ+חֹל',           de: 'wie Augensalbe / Kohl-Pigment (Blaupigment)', stars: '★★★',   cat: 'akteur' },
   { eva: 'sam',       heb: 'שַׂם',              de: 'Arznei / er gibt',                            stars: '★★★',   cat: 'akteur' },
   { eva: 'shty',      heb: 'שְׁתִי',            de: 'Getränk / Trank',                             stars: '★★★',   cat: 'akteur' },
-  { eva: 'pol',       heb: 'פֹּל',              de: 'Bohne / Beere / Frucht',                      stars: '★★★',   cat: 'akteur',  part: 'FRUCTUS' },
+  { eva: 'pol',       heb: 'פֹּל',              de: 'Bohne / Beere / Frucht — FRUCTUS-Erstbeleg: f22r P.1 an Samenkapseln-Position ★★★★★ (stärkster R60-Einzelnachweis); Positionskonflikt: f1v P.10 auf CAULIS-Niveau → Pflanzenteil-Zuordnung offen, kein PFLANZENTEIL-Tag vergeben', stars: '★★★',   cat: 'akteur' },
   { eva: 'otoaiin',   heb: 'עַתוֹעַיִן',        de: 'auf seine Augen',                             stars: '★★★',   cat: 'akteur' },
   { eva: 'chokeos',   heb: 'כֹּכֵּאוֹס',        de: 'wie ein Kelch (Botanik)',                     stars: '★★★',   cat: 'akteur' },
   // ── Bestätigte Komposita ────────────────────────────
