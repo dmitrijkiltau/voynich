@@ -8,6 +8,10 @@
 
 <svelte:head>
 	<title>Voynich Mapping {STATS.version} · {STATS.date}</title>
+	<meta
+		name="description"
+		content="Hypothese: Das Voynich-Manuskript ist ein konsistentes EVA-zu-Hebräisch-Aramäisch-Mapping mit festem Zeichenmapping, Lexikon und Grammatikregeln."
+	/>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
