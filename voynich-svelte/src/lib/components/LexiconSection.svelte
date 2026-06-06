@@ -57,7 +57,7 @@
 			case 'anchorFolio':
 				return entry[key] || '—';
 			case 'isAnchor':
-				return entry.isAnchor ? 'ja' : '—';
+				return entry.isAnchor ? 'I' : '—';
 			case 'rules': {
 				const rules = getLexiconRules(entry);
 				return rules.length ? rules.join(', ') : '—';
@@ -301,23 +301,25 @@
 		& .lexicon-table {
 			overflow: hidden;
 
-			& th:first-child, & td:first-child {
-				position: sticky;
-				left: 0;
-			}
+			@media screen {
+				& th:first-child, & td:first-child {
+					position: sticky;
+					left: 0;
+				}
 
-			& thead th:first-child {
-				z-index: 1;
-				background: var(--parch-d);
-			}
+				& thead th:first-child {
+					z-index: 1;
+					background: var(--parch-d);
+				}
 
-			& tbody tr {
-				background: var(--parch);
-				
-				& td:first-child {
-					z-index: 0;
+				& tbody tr {
 					background: var(--parch);
-					border-bottom: 1px solid var(--border);
+					
+					& td:first-child {
+						z-index: 0;
+						background: var(--parch);
+						border-bottom: 1px solid var(--border);
+					}
 				}
 			}
 		}

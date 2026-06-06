@@ -42,39 +42,8 @@ export const FOLIO_PAGES = [
 /** @type {Record<string, FolioEntry>} */
 export const FOLIO_DATA = {
   // ── Lage 1 · Kräuter A (f1–f8) — Language-A lexicon range ────────────────
-  f1r: {
-    status: 'confirmed',
-    registerType: 'Prosa / Haskama-Typ (sui generis) — kein {plant}-System',
-    languageClass: 'Sprache A (Currier)',
-    writerHand: 1,
-    transcribers: [
-      { siglen: ['H', 'C', 'F', 'N', 'U'], label: 'P-Zeilen, n=5' },
-      { siglen: ['X'],                     label: 'Titel-/Kurzzeilen' },
-      { siglen: ['D'],                     label: 'nur P1.4' },
-      { siglen: ['J'],                     label: 'Erased-Key, nicht textrelevant' },
-    ],
-    consensusDenominators: [
-      'P-Zeilen n=5 (H C F N U)',
-      'Titel/Kurzzeilen n=6 (+X)',
-      'P1.4 n=6 (+D)',
-    ],
-    scanUrl: 'https://collections.library.yale.edu/iiif/2/1006076/full/full/0/default.jpg',
-  },
-  f1v: {
-    status: 'confirmed',
-    registerType: 'Herbal (Standard Kräuterbild) — {plant}-System aktiv',
-    languageClass: 'Sprache A (Currier)',
-    writerHand: 1,
-    transcribers: [
-      { siglen: ['H', 'C', 'F'], label: 'P.1–P.10, n=3 Standard' },
-      { siglen: ['D'],           label: 'P.7–P.8 zusätzlich, n=4' },
-    ],
-    consensusDenominators: [
-      'P.1–P.6 + P.9–P.10: n=3 (H/C/F)',
-      'P.7–P.8: n=4 (H/C/D/F)',
-    ],
-    scanUrl: 'https://collections.library.yale.edu/iiif/2/1006077/full/2804,/0/default.jpg',
-  },
+  f1r: { status: 'confirmed' },  // detail → folios/f001r.json
+  f1v: { status: 'confirmed' },  // detail → folios/f001v.json
   f2r: { status: 'confirmed' },    f2v: { status: 'partial' },
   f3r: { status: 'confirmed' },    f3v: { status: 'confirmed' },    f4r: { status: 'confirmed' },    f4v: { status: 'partial' },
   f5r: { status: 'confirmed' },    f5v: { status: 'partial' },      f6r: { status: 'confirmed' },    f6v: { status: 'partial' },

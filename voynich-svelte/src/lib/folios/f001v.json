@@ -1,0 +1,34 @@
+{
+  "folio": "f1v",
+  "status": "confirmed",
+  "registerType": "Herbal (Standard Kräuterbild) — {plant}-System aktiv",
+  "languageClass": "Sprache A (Currier)",
+  "writerHand": 1,
+  "transcribers": [
+    { "siglen": ["H", "C", "F"], "label": "P.1–P.10, n=3 Standard" },
+    { "siglen": ["D"],           "label": "P.7–P.8 zusätzlich, n=4" }
+  ],
+  "consensusDenominators": [
+    "P.1–P.6 + P.9–P.10: n=3 (H/C/F)",
+    "P.7–P.8: n=4 (H/C/D/F)"
+  ],
+  "scanUrl": "https://collections.library.yale.edu/iiif/2/1006077/full/2804,/0/default.jpg",
+  "iconographic": {
+    "rules": ["R14", "R16", "R38", "R60"],
+    "illustrationType": "Eine zentrierte Pflanze, ganzseitig, ohne Hintergrundornamentik.",
+    "plantMorphology": {
+      "radix": "Flacher, schildförmig-knolliger Wurzelstock mit krallenhaften Fortsätzen rundum — sehr charakteristisch (»Pfannkuchen mit Klauen«, Stolfi). Textfrei im unteren Seitenbereich. ✓ R14-konform (Wurzelzone textfrei).",
+      "caulis": "Dicker, gut gezeichneter Hauptstamm, vertikal durch Seitenmitte — teilt den Textblock.",
+      "folia": "Breite Lanzettblätter in wechselnder Grün/Beige-Färbung, zwei kurze Schwanzansätze je Blatt, kurzgestielt.",
+      "flosFructus": "Oben: eine Blüte (kelchförmig, Petalen hell, Kern dunkel — könnte Beerenfrucht sein). Mittelstamm: ein kleines grünes Objekt (frühe Beere?).",
+      "coloring": "Grün und Tan/Beige (Reeds-Beschreibung bestätigt), kein Rot. Kein RADIX-Dunkelrot → R60-Korollar nicht auslösbar."
+    },
+    "botanicalIdentification": [
+      "Petersen: *Solanum Solatrium / Belladonna* (Fuchs p. 398).",
+      "Voynich.nu-Metadaten: »Petersen's belladonna«.",
+      "Wahrscheinlichste Kandidaten: *Atropa belladonna*, *Hyoscyamus niger*, *Solanum nigrum*, *Solanum dulcamara* (Solanaceae-Komplex). Alle hochtoxisch; psychoaktive Alkaloide (Atropin, Scopolamin, Hyoscyamin), Anwendung in mittelalterlicher Medizin als Sedativum, Antispasmodikum, Schmerzmittel."
+    ],
+    "layoutStructure": "10 Paragraphen (P.1–P.10), jeder durch {plant} in linke und rechte Hälfte geteilt. Kein T-Klassen-Titel, kein Kolophon-=-Abschluss außer P.4 (chokody=) und P.10 (chodar=). P.4 und P.10 schließen mit = → Absatz-Abschlusssignale (R11-Typ). Zwei Großblöcke visuell erkennbar: oberer Block (P.1–P.4, kleinere Schrift, ~4 Zeilen/Seite), unterer Block (P.5–P.10, ~6 Zeilen/Seite). Kein {plant}-freier Abschnitt → keine RADIX-Textzone → R38 nicht auslösbar.",
+    "r60Status": "Kein Dunkelrot-RADIX. Vorhersage-Protokoll nicht auslösbar. Status: nicht anwendbar."
+  }
+}

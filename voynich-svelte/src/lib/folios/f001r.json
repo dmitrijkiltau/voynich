@@ -1,0 +1,19 @@
+{
+  "folio": "f1r",
+  "status": "confirmed",
+  "registerType": "Prosa / Haskama-Typ (sui generis) — kein {plant}-System",
+  "languageClass": "Sprache A (Currier)",
+  "writerHand": 1,
+  "transcribers": [
+    { "siglen": ["H", "C", "F", "N", "U"], "label": "P-Zeilen, n=5" },
+    { "siglen": ["X"],                     "label": "Titel-/Kurzzeilen" },
+    { "siglen": ["D"],                     "label": "nur P1.4" },
+    { "siglen": ["J"],                     "label": "Erased-Key, nicht textrelevant" }
+  ],
+  "consensusDenominators": [
+    "P-Zeilen n=5 (H C F N U)",
+    "Titel/Kurzzeilen n=6 (+X)",
+    "P1.4 n=6 (+D)"
+  ],
+  "scanUrl": "https://collections.library.yale.edu/iiif/2/1006076/full/full/0/default.jpg"
+}

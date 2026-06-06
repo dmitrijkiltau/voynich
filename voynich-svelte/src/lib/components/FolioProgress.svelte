@@ -64,16 +64,52 @@
 
 	// ── Accordion detail ─────────────────────────────────────────────────────
 
+	const folioModules = import.meta.glob('../folios/*.json');
+
+	const MORPH_LABELS = /** @type {Record<string,string>} */ ({
+		radix:       'RADIX',
+		caulis:      'CAULIS',
+		folia:       'FOLIA',
+		flosFructus: 'FLOS/FRUCTUS',
+		coloring:    'Färbung',
+	});
+
 	/**
 	 * @typedef {{ pageId: string, quireIdx: number, data: import('../folio-data.js').FolioEntry | null }} ActiveChip
 	 */
 	/** @type {ActiveChip | null} */
 	let activeChip = $state(null);
 
+	/** @type {any} */
+	let folioDetail = $state(null);
+	let folioLoading = $state(false);
+
+	/** @param {string} pageId @returns {Promise<any>} */
+	async function loadFolioDetail(pageId) {
+		const m = pageId.match(/^f(\d+)(.*)$/);
+		if (!m) return null;
+		const slug = `f${m[1].padStart(3, '0')}${m[2]}`;
+		const loader = folioModules[`../folios/${slug}.json`];
+		if (!loader) return null;
+		const mod = await loader();
+		return /** @type {any} */ (mod).default ?? mod;
+	}
+
 	/** @param {string} pageId @param {number} quireIdx @param {import('../folio-data.js').FolioEntry | null} data */
-	function toggleChip(pageId, quireIdx, data) {
-		if (activeChip?.pageId === pageId) { activeChip = null; }
-		else { activeChip = { pageId, quireIdx, data }; }
+	async function toggleChip(pageId, quireIdx, data) {
+		if (activeChip?.pageId === pageId) {
+			activeChip = null;
+			folioDetail = null;
+			return;
+		}
+		activeChip = { pageId, quireIdx, data };
+		folioDetail = null;
+		folioLoading = true;
+		const detail = await loadFolioDetail(pageId);
+		if (activeChip?.pageId === pageId) {
+			folioDetail = detail;
+			folioLoading = false;
+		}
 	}
 
 	/** @param {string} pageId @param {string} quire @returns {string | null} */
@@ -81,6 +117,12 @@
 		const m = pageId.match(/^f(\d+)(.*)$/);
 		if (!m) return null;
 		return `https://voynich.nu/${quire}/f${m[1].padStart(3, '0')}${m[2]}_tr.txt`;
+	}
+
+	/** @param {string} pageId @returns {string} */
+	function folioSlug(pageId) {
+		const m = pageId.match(/^f(\d+)(.*)$/);
+		return m ? `f${m[1].padStart(3, '0')}${m[2]}` : pageId;
 	}
 
 	const ST_LABEL = /** @type {Record<string,string>} */ ({
@@ -137,7 +179,6 @@
                 <span class="fp-section">{q.short}</span>
                 <span class="fp-fraction">{q.done + q.confirmed + q.partial}/{q.total}</span>
               </div>
-              <!-- Mini quire bar -->
               <div class="fp-qbar">
                 <div class="fp-qb-done"      style="width:{q.pctDone}%"     ></div>
                 <div class="fp-qb-confirmed" style="width:{q.pctConfirmed}%"></div>
@@ -165,38 +206,55 @@
           {#if activeChip?.quireIdx === qi}
             {@const d = activeChip.data}
             {@const tr = trUrl(activeChip.pageId, q.q)}
+            {@const ico = folioDetail?.iconographic ?? null}
+            {@const slug = folioSlug(activeChip.pageId)}
+            {@const m = { ...folioDetail, ...d }}
             <div class="fp-detail fp-detail--{q.hue}" transition:slide={{ duration: 180 }}>
+
+              <!-- Header: id · badge · actions · close -->
               <div class="fp-detail-header">
                 <span class="fp-detail-id">{activeChip.pageId}</span>
-                <span class="fp-detail-badge fp-detail-badge--{d?.status ?? 'none'}">{ST_LABEL[d?.status ?? 'none']}</span>
-                <button class="fp-detail-close" onclick={() => activeChip = null} aria-label="Schließen">×</button>
+                <span class="fp-detail-badge fp-detail-badge--{m?.status ?? 'none'}">{ST_LABEL[m?.status ?? 'none']}</span>
+                <div class="fp-detail-header-actions">
+                  {#if m?.scanUrl}
+                    <a class="fp-detail-btn" href={m.scanUrl} target="_blank" rel="noopener noreferrer">Scan ↗</a>
+                  {/if}
+                  {#if tr}
+                    <a class="fp-detail-btn fp-detail-btn--tr" href={tr} target="_blank" rel="noopener noreferrer">Transkription ↗</a>
+                  {/if}
+                  <a class="fp-detail-btn fp-detail-btn--md" href="/folio/{slug}" target="_blank" rel="noopener noreferrer">Markdown ↗</a>
+                  <button class="fp-detail-close" onclick={() => { activeChip = null; folioDetail = null; }} aria-label="Schließen">×</button>
+                </div>
               </div>
 
-              {#if d}
-                <div class="fp-detail-fields">
-                  {#if d.registerType}
+              <!-- 2-column body -->
+              <div class="fp-detail-body">
+
+                <!-- Left: metadata fields -->
+                <div class="fp-detail-fields" class:fp-detail-fields--narrow={ico || folioLoading}>
+                  {#if m?.registerType}
                     <div class="fp-detail-field">
                       <span class="fp-detail-key">Register-Typ</span>
-                      <span class="fp-detail-val">{d.registerType}</span>
+                      <span class="fp-detail-val">{m.registerType}</span>
                     </div>
                   {/if}
-                  {#if d.languageClass}
+                  {#if m?.languageClass}
                     <div class="fp-detail-field">
                       <span class="fp-detail-key">Sprach-Klasse</span>
-                      <span class="fp-detail-val">{d.languageClass}</span>
+                      <span class="fp-detail-val">{m.languageClass}</span>
                     </div>
                   {/if}
-                  {#if d.writerHand !== undefined}
+                  {#if m?.writerHand !== undefined}
                     <div class="fp-detail-field">
                       <span class="fp-detail-key">Schreiber-Hand</span>
-                      <span class="fp-detail-val">{d.writerHand}</span>
+                      <span class="fp-detail-val">{m.writerHand}</span>
                     </div>
                   {/if}
-                  {#if d.transcribers?.length}
+                  {#if m?.transcribers?.length}
                     <div class="fp-detail-field">
                       <span class="fp-detail-key">Transkriptoren</span>
                       <span class="fp-detail-val">
-                        {#each d.transcribers as t}
+                        {#each m.transcribers as t}
                           <span class="fp-detail-trow">
                             <span class="fp-detail-siglen">{t.siglen.join(' · ')}</span>
                             <span class="fp-detail-tlabel">{t.label}</span>
@@ -205,27 +263,75 @@
                       </span>
                     </div>
                   {/if}
-                  {#if d.consensusDenominators?.length}
+                  {#if m?.consensusDenominators?.length}
                     <div class="fp-detail-field">
                       <span class="fp-detail-key">Konsens-Nenner</span>
                       <span class="fp-detail-val">
-                        {#each d.consensusDenominators as k}
+                        {#each m.consensusDenominators as k}
                           <span class="fp-detail-krow">· {k}</span>
                         {/each}
                       </span>
                     </div>
                   {/if}
                 </div>
-              {/if}
 
-              <div class="fp-detail-actions">
-                {#if d?.scanUrl}
-                  <a class="fp-detail-btn" href={d.scanUrl} target="_blank" rel="noopener noreferrer">Scan ↗</a>
+                <!-- Right: iconographic analysis -->
+                {#if folioLoading}
+                  <div class="fp-detail-ico fp-detail-ico--loading">…</div>
+                {:else if ico}
+                  <div class="fp-detail-ico">
+                    <!-- Rule pills -->
+                    {#if ico.rules?.length}
+                      <div class="fp-detail-rules">
+                        {#each ico.rules as r}
+													<a class="fp-detail-rule" href="#rule-{r}" onclick={(e) => e.stopPropagation()}>{r}</a>
+                        {/each}
+                        <span class="fp-detail-ico-section-label">Ikonographischer Abgleich</span>
+                      </div>
+                    {/if}
+
+                    {#if ico.illustrationType}
+                      <div class="fp-detail-ico-field">
+                        <span class="fp-detail-ico-key">Illustrationstyp</span>
+                        <span class="fp-detail-ico-val">{ico.illustrationType}</span>
+                      </div>
+                    {/if}
+
+                    {#if ico.plantMorphology}
+                      <div class="fp-detail-ico-field">
+                        <span class="fp-detail-ico-key">Pflanzenmorphologie</span>
+                        <div class="fp-detail-morph">
+                          {#each Object.entries(ico.plantMorphology) as [key, val]}
+                            <div class="fp-detail-morph-row">
+                              <span class="fp-detail-morph-key">{MORPH_LABELS[key] ?? key.toUpperCase()}</span>
+                              <span class="fp-detail-morph-val">{val}</span>
+                            </div>
+                          {/each}
+                        </div>
+                      </div>
+                    {/if}
+
+                    {#if ico.botanicalIdentification?.length}
+                      <div class="fp-detail-ico-field">
+                        <span class="fp-detail-ico-key">Botanik (extern)</span>
+                        <div class="fp-detail-ico-bullets">
+                          {#each ico.botanicalIdentification as item}
+                            <span class="fp-detail-ico-bullet">· {item}</span>
+                          {/each}
+                        </div>
+                      </div>
+                    {/if}
+
+                    {#if ico.r60Status}
+                      <div class="fp-detail-r60">
+                        <span class="fp-detail-r60-label">R60</span>
+                        <span class="fp-detail-r60-val">{ico.r60Status}</span>
+                      </div>
+                    {/if}
+                  </div>
                 {/if}
-                {#if tr}
-                  <a class="fp-detail-btn fp-detail-btn--tr" href={tr} target="_blank" rel="noopener noreferrer">Transkription ↗</a>
-                {/if}
-              </div>
+
+              </div><!-- end fp-detail-body -->
             </div>
           {/if}
         {/each}
@@ -233,23 +339,11 @@
 
       <!-- ── LEGEND ──────────────────────────────────── -->
       <div class="fp-legend" style="border-top:none">
-        <span class="fpl-item">
-          <span class="fpl-swatch done"></span>
-          Vollübersetzung
-        </span>
-        <span class="fpl-item">
-          <span class="fpl-swatch confirmed"></span>
-          analysiert
-        </span>
-        <span class="fpl-item">
-          <span class="fpl-swatch partial"></span>
-          Anker / Teilanalyse
-        </span>
-        <span class="fpl-item">
-          <span class="fpl-swatch none"></span>
-          nicht analysiert
-        </span>
-      </div><!-- end fp-legend -->
+        <span class="fpl-item"><span class="fpl-swatch done"></span>Vollübersetzung</span>
+        <span class="fpl-item"><span class="fpl-swatch confirmed"></span>analysiert</span>
+        <span class="fpl-item"><span class="fpl-swatch partial"></span>Anker / Teilanalyse</span>
+        <span class="fpl-item"><span class="fpl-swatch none"></span>nicht analysiert</span>
+      </div>
     </div><!-- end fp-body-inner -->
 	</div><!-- end fp-body -->
 </div>
@@ -435,14 +529,11 @@
 
 		&:hover { background: rgba(255,255,255,.25); }
 
-		/* Section accent colours */
 		&.fp-row--green  { border-left-color: color-mix(in srgb, var(--green) 45%, transparent); }
 		&.fp-row--blue   { border-left-color: color-mix(in srgb, var(--blue)  45%, transparent); }
 		&.fp-row--gold   { border-left-color: color-mix(in srgb, var(--gold)  45%, transparent); }
 		&.fp-row--red    { border-left-color: color-mix(in srgb, var(--red)   45%, transparent); }
 	}
-
-	/* Label column */
 
 	.fp-label {
 		flex: 0 0 148px;
@@ -482,8 +573,6 @@
 		flex-shrink: 0;
 		white-space: nowrap;
 	}
-
-	/* Mini quire bar */
 
 	.fp-qbar {
 		height: 3px;
@@ -604,23 +693,10 @@
 		border-radius: 1px;
 		flex-shrink: 0;
 
-		&.done    {
-			background: color-mix(in srgb, var(--gold) 50%, var(--parch));
-			border: 1px solid color-mix(in srgb, var(--gold) 80%, transparent);
-		}
-		&.confirmed {
-			background: color-mix(in srgb, var(--gold) 28%, var(--parch));
-			border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
-		}
-		&.partial {
-			background: color-mix(in srgb, var(--gold) 10%, var(--parch-d));
-			border: 1px dashed var(--parch-dk);
-		}
-		&.none    {
-			background: var(--parch-d);
-			border: 1px solid color-mix(in srgb, var(--parch-dk) 50%, transparent);
-			opacity: .45;
-		}
+		&.done    { background: color-mix(in srgb, var(--gold) 50%, var(--parch)); border: 1px solid color-mix(in srgb, var(--gold) 80%, transparent); }
+		&.confirmed { background: color-mix(in srgb, var(--gold) 28%, var(--parch)); border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent); }
+		&.partial { background: color-mix(in srgb, var(--gold) 10%, var(--parch-d)); border: 1px dashed var(--parch-dk); }
+		&.none    { background: var(--parch-d); border: 1px solid color-mix(in srgb, var(--parch-dk) 50%, transparent); opacity: .45; }
 	}
 
 	/* ── Folio detail row ────────────────────────────── */
@@ -628,10 +704,10 @@
 	@media print { .fp-detail { display: none !important; } }
 
 	.fp-detail {
-		padding: .5rem .7rem .55rem calc(.55rem + 2px);
 		border-bottom: 1px solid color-mix(in srgb, var(--parch-dk) 60%, transparent);
 		border-left: 2px solid transparent;
 		background: color-mix(in srgb, var(--parch-d) 55%, transparent);
+		padding: .5rem .7rem .6rem calc(.55rem + 2px);
 
 		&.fp-detail--green { border-left-color: color-mix(in srgb, var(--green) 65%, transparent); }
 		&.fp-detail--blue  { border-left-color: color-mix(in srgb, var(--blue)  65%, transparent); }
@@ -639,11 +715,13 @@
 		&.fp-detail--red   { border-left-color: color-mix(in srgb, var(--red)   65%, transparent); }
 	}
 
+	/* Detail header */
+
 	.fp-detail-header {
 		display: flex;
 		align-items: center;
 		gap: .45rem;
-		margin-bottom: .35rem;
+		margin-bottom: .4rem;
 		padding-bottom: .3rem;
 		border-bottom: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
 	}
@@ -662,35 +740,55 @@
 		border-radius: 1px;
 		flex-shrink: 0;
 
-		&.fp-detail-badge--done {
-			background: color-mix(in srgb, var(--gold) 40%, var(--parch));
-			border: 1px solid color-mix(in srgb, var(--gold) 70%, transparent);
-			color: var(--ink);
-			font-weight: 600;
+		&.fp-detail-badge--done      { background: color-mix(in srgb, var(--gold) 40%, var(--parch)); border: 1px solid color-mix(in srgb, var(--gold) 70%, transparent); color: var(--ink); font-weight: 600; }
+		&.fp-detail-badge--confirmed { background: color-mix(in srgb, var(--gold) 22%, var(--parch)); border: 1px solid color-mix(in srgb, var(--gold) 50%, transparent); color: var(--ink); }
+		&.fp-detail-badge--partial   { background: color-mix(in srgb, var(--gold) 8%, var(--parch-d)); border: 1px dashed var(--parch-dk); color: var(--ink-l); }
+		&.fp-detail-badge--none      { background: var(--parch-d); border: 1px solid var(--parch-dk); color: var(--ink-f); }
+	}
+
+	.fp-detail-header-actions {
+		display: flex;
+		align-items: center;
+		gap: .3rem;
+		margin-left: auto;
+		flex-shrink: 0;
+	}
+
+	.fp-detail-btn {
+		font-family: var(--font-mono);
+		font-size: .5rem;
+		padding: 1px 7px;
+		border-radius: 1px;
+		text-decoration: none;
+		transition: background .1s, color .1s;
+		border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
+		background: color-mix(in srgb, var(--gold) 14%, var(--parch));
+		color: var(--ink-l);
+
+		&:hover { background: color-mix(in srgb, var(--gold) 28%, var(--parch)); color: var(--ink); }
+
+		&.fp-detail-btn--tr {
+			border-color: color-mix(in srgb, var(--border) 80%, transparent);
+			background: color-mix(in srgb, var(--parch-d) 80%, var(--parch));
+
+			&:hover { background: var(--parch-d); color: var(--ink); }
 		}
-		&.fp-detail-badge--confirmed {
-			background: color-mix(in srgb, var(--gold) 22%, var(--parch));
-			border: 1px solid color-mix(in srgb, var(--gold) 50%, transparent);
-			color: var(--ink);
-		}
-		&.fp-detail-badge--partial {
-			background: color-mix(in srgb, var(--gold) 8%, var(--parch-d));
-			border: 1px dashed var(--parch-dk);
-			color: var(--ink-l);
-		}
-		&.fp-detail-badge--none {
-			background: var(--parch-d);
-			border: 1px solid var(--parch-dk);
+
+		&.fp-detail-btn--md {
+			border-color: color-mix(in srgb, var(--ink-f) 30%, transparent);
+			background: transparent;
 			color: var(--ink-f);
+			font-style: italic;
+
+			&:hover { background: color-mix(in srgb, var(--ink-f) 8%, transparent); color: var(--ink); }
 		}
 	}
 
 	.fp-detail-close {
-		margin-left: auto;
-		font-size: .8rem;
+		font-size: .78rem;
 		color: var(--ink-f);
 		line-height: 1;
-		padding: 0 .25rem;
+		padding: 0 .2rem;
 		border-radius: 1px;
 		cursor: pointer;
 		background: none;
@@ -701,11 +799,26 @@
 		&:hover { color: var(--ink); }
 	}
 
+	/* Detail 2-column body */
+
+	.fp-detail-body {
+		display: flex;
+		gap: 1.1rem;
+		align-items: flex-start;
+	}
+
+	/* Left: metadata fields */
+
 	.fp-detail-fields {
+		flex: 1;
 		display: flex;
 		flex-direction: column;
-		gap: .22rem;
-		margin-bottom: .4rem;
+		gap: .5rem;
+
+		&.fp-detail-fields--narrow {
+			flex: 0 0 min(420px, 100%);
+			max-width: 420px;
+		}
 	}
 
 	.fp-detail-field {
@@ -716,7 +829,7 @@
 
 	.fp-detail-key {
 		font-family: var(--font-smallcaps);
-		font-size: .5rem;
+		font-size: .64rem;
 		letter-spacing: .1em;
 		text-transform: uppercase;
 		color: var(--ink-f);
@@ -726,8 +839,8 @@
 	}
 
 	.fp-detail-val {
-		font-family: var(--font-smallcaps);
-		font-size: .58rem;
+		font-family: var(--font-mono);
+		font-size: .76rem;
 		color: var(--ink-l);
 		line-height: 1.45;
 		display: flex;
@@ -743,7 +856,7 @@
 
 	.fp-detail-siglen {
 		font-family: var(--font-mono);
-		font-size: .58rem;
+		font-size: .72rem;
 		color: var(--ink);
 		font-weight: 600;
 		flex-shrink: 0;
@@ -751,52 +864,157 @@
 	}
 
 	.fp-detail-tlabel {
-		font-family: var(--font-smallcaps);
-		font-size: .54rem;
+		font-family: var(--font-mono);
+		font-size: .72rem;
 		color: var(--ink-f);
 		line-height: 1.35;
 	}
 
 	.fp-detail-krow {
 		font-family: var(--font-mono);
-		font-size: .52rem;
+		font-size: .72rem;
 		color: var(--ink-l);
 		line-height: 1.6;
 	}
 
-	.fp-detail-actions {
+	/* Right: iconographic section */
+
+	.fp-detail-ico {
+		flex: 1;
+		min-width: 0;
+		display: flex;
+		flex-direction: column;
+		gap: .5rem;
+		padding-left: 1rem;
+		border-left: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+
+		&.fp-detail-ico--loading {
+			align-items: center;
+			justify-content: center;
+			color: var(--ink-f);
+			font-family: var(--font-mono);
+			font-size: .64rem;
+			opacity: .4;
+			min-height: 2rem;
+		}
+	}
+
+	.fp-detail-rules {
 		display: flex;
 		flex-wrap: wrap;
-		gap: .35rem;
-		padding-top: .32rem;
+		align-items: center;
+		gap: .2rem .3rem;
+		margin-bottom: .05rem;
+	}
+
+	.fp-detail-rule {
+		font-family: var(--font-mono);
+		font-size: .64rem;
+		padding: 0 4px;
+		line-height: 1.6;
+		border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
+		border-radius: 1px;
+		color: var(--gold);
+		background: color-mix(in srgb, var(--gold) 7%, var(--parch));
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	.fp-detail-ico-section-label {
+		font-family: var(--font-smallcaps);
+		font-size: .72rem;
+		letter-spacing: .08em;
+		color: var(--ink-f);
+		margin-left: .15rem;
+	}
+
+	.fp-detail-ico-field {
+		display: flex;
+		flex-direction: column;
+		gap: .1rem;
+
+		& .fp-detail-ico-key {
+			font-family: var(--font-mono);
+			font-size: .64rem;
+			letter-spacing: .1em;
+			text-transform: uppercase;
+			color: var(--ink-f);
+		}
+
+		& .fp-detail-ico-val {
+			font-family: var(--font-mono);
+			font-size: .72rem;
+			color: var(--ink-l);
+			line-height: 1.4;
+		}
+
+		& .fp-detail-ico-bullets {
+			display: flex;
+			flex-direction: column;
+			gap: .08rem;
+
+			& .fp-detail-ico-bullet {
+				font-family: var(--font-mono);
+				font-size: .72rem;
+				color: var(--ink-l);
+				line-height: 1.5;
+			}
+		}
+
+		& .fp-detail-morph {
+			display: flex;
+			flex-direction: column;
+			gap: .5rem;
+
+			& .fp-detail-morph-row {
+				display: flex;
+				gap: .5rem;
+				align-items: flex-start;
+
+				& .fp-detail-morph-key {
+					font-family: var(--font-mono);
+					font-size: .72rem;
+					color: var(--ink);
+					font-weight: 700;
+					letter-spacing: .04em;
+					flex: 0 0 6rem;
+					flex-shrink: 0;
+					padding-top: .04rem;
+				}
+
+				& .fp-detail-morph-val {
+					font-family: var(--font-mono);
+					font-size: .72rem;
+					color: var(--ink-l);
+					line-height: 1.4;
+				}
+			}
+		}
+	}
+
+	.fp-detail-r60 {
+		display: flex;
+		align-items: baseline;
+		gap: .4rem;
+		margin-top: .05rem;
+		padding-top: .22rem;
 		border-top: 1px solid color-mix(in srgb, var(--border) 40%, transparent);
 	}
 
-	.fp-detail-btn {
+	.fp-detail-r60-label {
 		font-family: var(--font-mono);
-		font-size: .52rem;
-		padding: 2px 8px;
-		border-radius: 1px;
-		text-decoration: none;
-		transition: background .1s, color .1s;
-		border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
-		background: color-mix(in srgb, var(--gold) 14%, var(--parch));
-		color: var(--ink-l);
+		font-size: .72rem;
+		color: var(--gold);
+		font-weight: 700;
+		letter-spacing: .06em;
+		flex-shrink: 0;
+	}
 
-		&:hover {
-			background: color-mix(in srgb, var(--gold) 28%, var(--parch));
-			color: var(--ink);
-		}
-
-		&.fp-detail-btn--tr {
-			border-color: color-mix(in srgb, var(--border) 80%, transparent);
-			background: color-mix(in srgb, var(--parch-d) 80%, var(--parch));
-
-			&:hover {
-				background: var(--parch-d);
-				color: var(--ink);
-			}
-		}
+	.fp-detail-r60-val {
+		font-family: var(--font-smallcaps);
+		font-size: .64rem;
+		color: var(--ink-f);
+		line-height: 1.4;
 	}
 
 	/* ── Mobile ─────────────────────────────────────── */
@@ -809,8 +1027,24 @@
 
 		.fp-section { display: none; }
 
-		.fp-detail-key {
-			flex: 0 0 5.5rem;
+		.fp-detail-body {
+			flex-direction: column;
+			gap: .6rem;
 		}
+
+		.fp-detail-fields,
+		.fp-detail-fields.fp-detail-fields--narrow {
+			flex: none;
+			max-width: 100%;
+		}
+
+		.fp-detail-ico {
+			padding-left: 0;
+			border-left: none;
+			border-top: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+			padding-top: .5rem;
+		}
+
+		.fp-detail-key { flex: 0 0 5.5rem; }
 	}
 </style>
