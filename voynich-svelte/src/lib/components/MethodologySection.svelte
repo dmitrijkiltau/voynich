@@ -33,27 +33,29 @@
 
 			<div class="confidence">
         <h3>{content.confidence.title}</h3>
-        <table class="dt">
-          <thead>
-            <tr>
-              <th>{content.confidence.stars}</th>
-              <th>{content.confidence.label}</th>
-              <th>{content.confidence.criteria}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {#each CONFIDENCE_SCALE as row}
+        <div class="table-wrap">
+          <table class="dt">
+            <thead>
               <tr>
-                <td
-                  ><span class={isConf5(row.stars) ? "conf5" : "conf"}>{row.stars}</span
-                  ></td
-                >
-                <td>{row.label}</td>
-                <td>{row.criteria}</td>
+                <th>{content.confidence.stars}</th>
+                <th>{content.confidence.label}</th>
+                <th>{content.confidence.criteria}</th>
               </tr>
-            {/each}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {#each CONFIDENCE_SCALE as row}
+                <tr>
+                  <td
+                    ><span class={isConf5(row.stars) ? "conf5" : "conf"}>{row.stars}</span
+                    ></td
+                  >
+                  <td>{row.label}</td>
+                  <td>{row.criteria}</td>
+                </tr>
+              {/each}
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <div class="anchor-folios">
@@ -88,6 +90,7 @@
       justify-content: space-between;
       align-items: start;
       gap: 0 2rem;
+      overflow: hidden;
 
 			& .backward-test { grid-area: backward; }
 			& .confidence { grid-area: confidence; }

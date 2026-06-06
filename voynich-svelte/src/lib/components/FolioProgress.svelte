@@ -1,10 +1,12 @@
 <script>
-	import { FOLIO_PAGES, FOLIO_STATUS } from '$lib';
+	import { FOLIO_PAGES, FOLIO_DATA } from '$lib';
 
 	let open = $state(false);
 
 	/** @param {string} p */
-	function st(p) { return /** @type {Record<string,string>} */ (FOLIO_STATUS)[p] ?? 'none'; }
+	function entry(p) { return FOLIO_DATA[p] ?? null; }
+	/** @param {string} p */
+	function st(p) { return entry(p)?.status ?? 'none'; }
 
 	const SECTION_ABBR = /** @type {Record<string,string>} */ ({
 		q01:'Kräuter A',  q02:'Kräuter A',  q03:'Kräuter A',  q04:'Kräuter A',
@@ -17,7 +19,6 @@
 		q20:'Rezepte / Sterne',
 	});
 
-	// Section accent colours (left-border visual cue)
 	const SECTION_HUE = /** @type {Record<string,string>} */ ({
 		q01:'green', q02:'green', q03:'green', q04:'green', q05:'green',
 		q06:'green', q07:'green',
@@ -32,30 +33,75 @@
 	               'XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX'];
 
 	const quires = FOLIO_PAGES.map((q, i) => {
-		const pages   = q.pages.map(p => ({ id: p, label: p.slice(1), st: st(p) }));
-		const done    = pages.filter(p => p.st === 'done').length;
-		const partial = pages.filter(p => p.st === 'partial').length;
-		const total   = pages.length;
+		const pages     = q.pages.map(p => ({ id: p, label: p.slice(1), st: st(p), data: entry(p) }));
+		const done      = pages.filter(p => p.st === 'done').length;
+		const confirmed = pages.filter(p => p.st === 'confirmed').length;
+		const partial   = pages.filter(p => p.st === 'partial').length;
+		const total     = pages.length;
 		return {
 			...q,
 			short: SECTION_ABBR[q.q] ?? '',
 			hue:   SECTION_HUE[q.q]  ?? 'none',
 			roman: ROMAN[i],
-			pages, done, partial, total,
-			pctDone:    (done    / total) * 100,
-			pctPartial: (partial / total) * 100,
+			pages, done, confirmed, partial, total,
+			pctDone:      (done      / total) * 100,
+			pctConfirmed: (confirmed / total) * 100,
+			pctPartial:   (partial   / total) * 100,
 		};
 	});
 
-	const totalPages   = quires.reduce((s, q) => s + q.total,   0);
-	const totalDone    = quires.reduce((s, q) => s + q.done,    0);
-	const totalPartial = quires.reduce((s, q) => s + q.partial, 0);
-	const totalNone    = totalPages - totalDone - totalPartial;
+	const totalPages     = quires.reduce((s, q) => s + q.total,     0);
+	const totalDone      = quires.reduce((s, q) => s + q.done,      0);
+	const totalConfirmed = quires.reduce((s, q) => s + q.confirmed, 0);
+	const totalPartial   = quires.reduce((s, q) => s + q.partial,   0);
+	const totalNone      = totalPages - totalDone - totalConfirmed - totalPartial;
 
-	const pctDone     = (totalDone    / totalPages) * 100;
-	const pctPartial  = (totalPartial / totalPages) * 100;
-	const pctAnalyzed = ((totalDone + totalPartial) / totalPages) * 100;
+	const pctDone      = (totalDone      / totalPages) * 100;
+	const pctConfirmed = (totalConfirmed / totalPages) * 100;
+	const pctPartial   = (totalPartial   / totalPages) * 100;
+	const pctAnalyzed  = ((totalDone + totalConfirmed + totalPartial) / totalPages) * 100;
+
+	// ── Popover ────────────────────────────────────────────────────────────────
+
+	/**
+	 * @typedef {{ id: string, x: number, y: number, above: boolean,
+	 *             data: import('../folio-data.js').FolioEntry | null }} PopState
+	 */
+	/** @type {PopState | null} */
+	let pop = $state(null);
+
+	let _hideTimer = /** @type {ReturnType<typeof setTimeout> | null} */ (null);
+	function _cancelHide() { if (_hideTimer) { clearTimeout(_hideTimer); _hideTimer = null; } }
+	function _scheduleHide() { _hideTimer = setTimeout(() => { pop = null; }, 120); }
+
+	const POP_W = 244;
+
+	/** @param {MouseEvent} e @param {{ id: string, data: import('../folio-data.js').FolioEntry | null }} p */
+	function showPop(e, p) {
+		_cancelHide();
+		const rect = /** @type {Element} */ (e.currentTarget).getBoundingClientRect();
+		const x    = Math.max(8, Math.min(rect.left, window.innerWidth - POP_W - 8));
+		const spaceBelow = window.innerHeight - rect.bottom;
+		const above = spaceBelow < 200;
+		pop = { id: p.id, x, y: above ? rect.top : rect.bottom + 4, above, data: p.data };
+	}
+
+	/** @param {MouseEvent} e @param {{ id: string, data: import('../folio-data.js').FolioEntry | null }} p */
+	function togglePop(e, p) {
+		e.stopPropagation();
+		if (pop?.id === p.id) { pop = null; _cancelHide(); }
+		else showPop(e, p);
+	}
+
+	const ST_LABEL = /** @type {Record<string,string>} */ ({
+		done: 'Vollübersetzung', confirmed: 'analysiert', partial: 'Anker / Teilanalyse', none: 'nicht analysiert',
+	});
 </script>
+
+<svelte:window onclick={(e) => {
+	const t = /** @type {Element} */ (e.target);
+	if (!t.closest('[data-fcp-pop]') && !t.closest('[data-fcp-chip]')) { pop = null; _cancelHide(); }
+}} />
 
 <div class="fp">
 	<!-- ── HEADER (toggle) ─────────────────────────── -->
@@ -68,7 +114,9 @@
 			</div>
 		</div>
 		<div class="fp-counts">
-			<span class="fpc done">{totalDone}&nbsp;<em>analysiert</em></span>
+			<span class="fpc done">{totalDone}&nbsp;<em>übersetzt</em></span>
+			<span class="fpc-sep">·</span>
+			<span class="fpc confirmed">{totalConfirmed}&nbsp;<em>analysiert</em></span>
 			<span class="fpc-sep">·</span>
 			<span class="fpc partial">{totalPartial}&nbsp;<em>Anker</em></span>
 			<span class="fpc-sep">·</span>
@@ -79,13 +127,14 @@
 
 		<!-- Segmented global progress bar -->
 		<div class="fp-global-bar" title="Gesamt: {pctAnalyzed.toFixed(1)} % analysiert">
-			<div class="fpgb-done"    style="width:{pctDone}%"   ></div>
-			<div class="fpgb-partial" style="width:{pctPartial}%"></div>
-			<div class="fpgb-tick" style="left:{pctDone}%"       ></div>
+			<div class="fpgb-done"      style="width:{pctDone}%"     ></div>
+			<div class="fpgb-confirmed" style="width:{pctConfirmed}%"></div>
+			<div class="fpgb-partial"   style="width:{pctPartial}%"  ></div>
+			<div class="fpgb-tick" style="left:{pctDone + pctConfirmed}%"></div>
 		</div>
 		<div class="fp-bar-labels">
 			<span>0 %</span>
-			<span class="fp-bar-done-mark" style="left:{pctDone}%">{pctDone.toFixed(0)} %</span>
+			<span class="fp-bar-done-mark" style="left:{pctDone + pctConfirmed}%">{(pctDone + pctConfirmed).toFixed(0)} %</span>
 			<span>100 %</span>
 		</div>
 	</button>
@@ -101,12 +150,13 @@
               <div class="fp-label-top">
                 <span class="fp-roman">{q.roman}</span>
                 <span class="fp-section">{q.short}</span>
-                <span class="fp-fraction">{q.done + q.partial}/{q.total}</span>
+                <span class="fp-fraction">{q.done + q.confirmed + q.partial}/{q.total}</span>
               </div>
               <!-- Mini quire bar -->
               <div class="fp-qbar">
-                <div class="fp-qb-done"    style="width:{q.pctDone}%"   ></div>
-                <div class="fp-qb-partial" style="width:{q.pctPartial}%"></div>
+                <div class="fp-qb-done"      style="width:{q.pctDone}%"     ></div>
+                <div class="fp-qb-confirmed" style="width:{q.pctConfirmed}%"></div>
+                <div class="fp-qb-partial"   style="width:{q.pctPartial}%"  ></div>
               </div>
             </div>
 
@@ -115,7 +165,15 @@
               {#each q.pages as p}
                 <span
                   class="fpc-chip fpc-chip--{p.st}"
-                  title="{p.id} · {p.st === 'done' ? 'analysiert' : p.st === 'partial' ? 'Teilanalyse / Anker bekannt' : 'nicht analysiert'}"
+                  class:fpc-chip--active={pop?.id === p.id}
+                  title="{p.id} · {ST_LABEL[p.st]}"
+                  role="button"
+                  tabindex="0"
+                  data-fcp-chip
+                  onmouseenter={(e) => showPop(e, p)}
+                  onmouseleave={_scheduleHide}
+                  onclick={(e) => togglePop(e, p)}
+                  onkeydown={(e) => { if (e.key === 'Enter' || e.key === ' ') togglePop(/** @type {any} */ (e), p); }}
                 >{p.label}</span>
               {/each}
             </div>
@@ -127,6 +185,10 @@
       <div class="fp-legend" style="border-top:none">
         <span class="fpl-item">
           <span class="fpl-swatch done"></span>
+          Vollübersetzung
+        </span>
+        <span class="fpl-item">
+          <span class="fpl-swatch confirmed"></span>
           analysiert
         </span>
         <span class="fpl-item">
@@ -140,6 +202,68 @@
       </div><!-- end fp-legend -->
     </div><!-- end fp-body-inner -->
 	</div><!-- end fp-body -->
+
+	<!-- ── FOLIO POPOVER (position:fixed, escapes overflow:hidden) ── -->
+	{#if pop}
+		{@const d = pop.data}
+		<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+		<div
+			class="fcp-pop"
+			class:fcp-pop--above={pop.above}
+			style="left:{pop.x}px; {pop.above ? `bottom:${window.innerHeight - pop.y}px` : `top:${pop.y}px`}"
+			data-fcp-pop
+			onmouseenter={_cancelHide}
+			onmouseleave={_scheduleHide}
+			role="tooltip"
+		>
+			<div class="fcp-pop-header">
+				<span class="fcp-pop-id">{pop.id}</span>
+				<span class="fcp-pop-badge fcp-pop-badge--{d?.status ?? 'none'}">{ST_LABEL[d?.status ?? 'none']}</span>
+			</div>
+
+			{#if d?.registerType}
+				<div class="fcp-pop-field">
+					<div class="fcp-pop-key">Register-Typ</div>
+					<div class="fcp-pop-val">{d.registerType}</div>
+				</div>
+			{/if}
+
+			{#if d?.languageClass}
+				<div class="fcp-pop-field">
+					<div class="fcp-pop-key">Sprach-Klasse</div>
+					<div class="fcp-pop-val">{d.languageClass}</div>
+				</div>
+			{/if}
+
+			{#if d?.writerHand !== undefined}
+				<div class="fcp-pop-field">
+					<div class="fcp-pop-key">Schreiber-Hand</div>
+					<div class="fcp-pop-val">{d.writerHand}</div>
+				</div>
+			{/if}
+
+			{#if d?.transcribers?.length}
+				<div class="fcp-pop-field">
+					<div class="fcp-pop-key">Transkriptoren</div>
+					{#each d.transcribers as t}
+						<div class="fcp-pop-trow">
+							<span class="fcp-pop-siglen">{t.siglen.join(' · ')}</span>
+							<span class="fcp-pop-tlabel">{t.label}</span>
+						</div>
+					{/each}
+				</div>
+			{/if}
+
+			{#if d?.consensusDenominators?.length}
+				<div class="fcp-pop-field">
+					<div class="fcp-pop-key">Konsens-Nenner</div>
+					{#each d.consensusDenominators as k}
+						<div class="fcp-pop-krow">· {k}</div>
+					{/each}
+				</div>
+			{/if}
+		</div>
+	{/if}
 </div>
 
 <style>
@@ -223,10 +347,11 @@
 				letter-spacing: .04em;
 			}
 
-			&.done    { color: var(--gold); font-weight: 600; }
-			&.partial { color: color-mix(in srgb, var(--gold) 70%, var(--ink-f)); }
-			&.none    { color: var(--ink-f); }
-			&.total   { color: var(--ink-l); }
+			&.done      { color: var(--gold); font-weight: 700; }
+			&.confirmed { color: color-mix(in srgb, var(--gold) 85%, var(--ink-f)); font-weight: 600; }
+			&.partial   { color: color-mix(in srgb, var(--gold) 60%, var(--ink-f)); }
+			&.none      { color: var(--ink-f); }
+			&.total     { color: var(--ink-l); }
 		}
 	}
 
@@ -243,7 +368,14 @@
 
 		& .fpgb-done {
 			height: 100%;
-			background: linear-gradient(90deg, var(--gold), color-mix(in srgb, var(--gold) 75%, var(--red)));
+			background: linear-gradient(90deg, var(--gold), color-mix(in srgb, var(--gold) 85%, #fff));
+			transition: width .4s ease;
+			flex-shrink: 0;
+		}
+
+		& .fpgb-confirmed {
+			height: 100%;
+			background: linear-gradient(90deg, color-mix(in srgb, var(--gold) 75%, var(--red)), color-mix(in srgb, var(--gold) 60%, var(--parch-d)));
 			transition: width .4s ease;
 			flex-shrink: 0;
 		}
@@ -379,6 +511,12 @@
 			flex-shrink: 0;
 		}
 
+		& .fp-qb-confirmed {
+			height: 100%;
+			background: color-mix(in srgb, var(--gold) 65%, var(--parch-d));
+			flex-shrink: 0;
+		}
+
 		& .fp-qb-partial {
 			height: 100%;
 			background: color-mix(in srgb, var(--gold) 38%, var(--parch-d));
@@ -408,15 +546,26 @@
 		white-space: nowrap;
 		border: 1px solid transparent;
 
-		&:hover { transform: translateY(-1px); z-index: 1; }
+		&:hover, &.fpc-chip--active { transform: translateY(-1px); z-index: 1; }
 
 		&.fpc-chip--done {
+			background: color-mix(in srgb, var(--gold) 50%, var(--parch));
+			border-color: color-mix(in srgb, var(--gold) 80%, transparent);
+			color: var(--ink);
+			font-weight: 700;
+
+			&:hover, &.fpc-chip--active {
+				box-shadow: 0 2px 8px color-mix(in srgb, var(--gold) 45%, transparent);
+			}
+		}
+
+		&.fpc-chip--confirmed {
 			background: color-mix(in srgb, var(--gold) 28%, var(--parch));
 			border-color: color-mix(in srgb, var(--gold) 55%, transparent);
 			color: var(--ink);
 			font-weight: 600;
 
-			&:hover {
+			&:hover, &.fpc-chip--active {
 				box-shadow: 0 2px 6px color-mix(in srgb, var(--gold) 30%, transparent);
 			}
 		}
@@ -427,7 +576,7 @@
 			border-style: dashed;
 			color: var(--ink-l);
 
-			&:hover {
+			&:hover, &.fpc-chip--active {
 				box-shadow: 0 1px 4px rgba(0,0,0,.08);
 			}
 		}
@@ -468,6 +617,10 @@
 		flex-shrink: 0;
 
 		&.done    {
+			background: color-mix(in srgb, var(--gold) 50%, var(--parch));
+			border: 1px solid color-mix(in srgb, var(--gold) 80%, transparent);
+		}
+		&.confirmed {
 			background: color-mix(in srgb, var(--gold) 28%, var(--parch));
 			border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
 		}
@@ -480,6 +633,143 @@
 			border: 1px solid color-mix(in srgb, var(--parch-dk) 50%, transparent);
 			opacity: .45;
 		}
+	}
+
+	/* ── Folio popover ──────────────────────────────── */
+
+	@media print { .fcp-pop { display: none !important; } }
+
+	.fcp-pop {
+		position: fixed;
+		z-index: 200;
+		width: 244px;
+		background: color-mix(in srgb, var(--parch) 97%, transparent);
+		border: 1px solid var(--border);
+		border-radius: 2px;
+		box-shadow: 0 4px 18px rgba(0,0,0,.14), 0 1px 4px rgba(0,0,0,.08);
+		padding: .5rem .65rem .55rem;
+		pointer-events: auto;
+
+		/* arrow cue — downward by default, flipped when above */
+		&::before {
+			content: '';
+			position: absolute;
+			left: 10px;
+			top: -5px;
+			width: 8px;
+			height: 8px;
+			background: color-mix(in srgb, var(--parch) 97%, transparent);
+			border-left: 1px solid var(--border);
+			border-top: 1px solid var(--border);
+			transform: rotate(45deg);
+		}
+
+		&.fcp-pop--above::before {
+			top: auto;
+			bottom: -5px;
+			transform: rotate(225deg);
+		}
+	}
+
+	.fcp-pop-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: .5rem;
+		margin-bottom: .4rem;
+		padding-bottom: .32rem;
+		border-bottom: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+	}
+
+	.fcp-pop-id {
+		font-family: var(--font-display);
+		font-size: .82rem;
+		color: var(--ink);
+		letter-spacing: .04em;
+	}
+
+	.fcp-pop-badge {
+		font-family: var(--font-mono);
+		font-size: .5rem;
+		padding: 1px 5px;
+		border-radius: 1px;
+		flex-shrink: 0;
+
+		&.fcp-pop-badge--done {
+			background: color-mix(in srgb, var(--gold) 40%, var(--parch));
+			border: 1px solid color-mix(in srgb, var(--gold) 70%, transparent);
+			color: var(--ink);
+			font-weight: 600;
+		}
+		&.fcp-pop-badge--confirmed {
+			background: color-mix(in srgb, var(--gold) 22%, var(--parch));
+			border: 1px solid color-mix(in srgb, var(--gold) 50%, transparent);
+			color: var(--ink);
+		}
+		&.fcp-pop-badge--partial {
+			background: color-mix(in srgb, var(--gold) 8%, var(--parch-d));
+			border: 1px dashed var(--parch-dk);
+			color: var(--ink-l);
+		}
+		&.fcp-pop-badge--none {
+			background: var(--parch-d);
+			border: 1px solid var(--parch-dk);
+			color: var(--ink-f);
+		}
+	}
+
+	.fcp-pop-field {
+		margin-bottom: .32rem;
+
+		&:last-child { margin-bottom: 0; }
+	}
+
+	.fcp-pop-key {
+		font-family: var(--font-smallcaps);
+		font-size: .5rem;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		color: var(--ink-f);
+		margin-bottom: .12rem;
+	}
+
+	.fcp-pop-val {
+		font-family: var(--font-smallcaps);
+		font-size: .6rem;
+		color: var(--ink-l);
+		line-height: 1.45;
+	}
+
+	.fcp-pop-trow {
+		display: flex;
+		gap: .45rem;
+		align-items: baseline;
+		margin-bottom: .1rem;
+
+		&:last-child { margin-bottom: 0; }
+	}
+
+	.fcp-pop-siglen {
+		font-family: var(--font-mono);
+		font-size: .6rem;
+		color: var(--ink);
+		font-weight: 600;
+		flex-shrink: 0;
+		min-width: 5.5ch;
+	}
+
+	.fcp-pop-tlabel {
+		font-family: var(--font-smallcaps);
+		font-size: .55rem;
+		color: var(--ink-f);
+		line-height: 1.35;
+	}
+
+	.fcp-pop-krow {
+		font-family: var(--font-mono);
+		font-size: .55rem;
+		color: var(--ink-l);
+		line-height: 1.6;
 	}
 
 	/* ── Mobile ─────────────────────────────────────── */

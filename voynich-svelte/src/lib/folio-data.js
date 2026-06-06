@@ -22,70 +22,99 @@ export const FOLIO_PAGES = [
   { q: 'q20', label: 'Lage 20 — Rezepte/Sterne · f103–f116',pages: ['f103r','f103v','f104r','f104v','f105r','f105v','f106r','f106v','f107r','f107v','f108r','f108v','f111r','f111v','f112r','f112v','f113r','f113v','f114r','f114v','f115r','f115v','f116r','f116v'] },
 ];
 
-// Decryption/analysis status per folio page
-// 'done'    — full translation file or heavily confirmed (★★★★+) in backtest
-// 'partial' — image studied, lexicon anchors known, or Language-A range without full txt
-// 'none'    — not yet analyzed (default)
-export const FOLIO_STATUS = {
-  // ── Lage 1 · Kräuter A (f1–f8) — Language-A lexicon range ────────────────
-  f1r:'done',
-  f1v:'partial', f2r:'done',    f2v:'partial',
-  f3r:'done',    f3v:'done',    f4r:'done',    f4v:'partial',
-  f5r:'done',    f5v:'partial', f6r:'done',    f6v:'partial',
-  f7r:'done',    f7v:'partial', f8r:'done',    f8v:'partial',
+/**
+ * @typedef {{
+ *   status: 'done' | 'confirmed' | 'partial';
+ *   registerType?: string;
+ *   languageClass?: string;
+ *   writerHand?: number;
+ *   transcribers?: { siglen: string[]; label: string }[];
+ *   consensusDenominators?: string[];
+ * }} FolioEntry
+ */
 
-  // ── Lage 2 · Kräuter A (f9–f15) — translation HTMLs + txt transcriptions ──
-  f9r:'done',  f9v:'done',
-  f10r:'done', f10v:'done',
-  f11r:'done', f11v:'done',
-  f13r:'done', f13v:'done',
-  f14r:'done', f14v:'done',
-  f15r:'done', f15v:'done',
-  f16r:'done', f16v:'done',
+// Per-folio decryption status and metadata.
+// status: 'done' — full translation
+//         'confirmed' — heavily confirmed (★★★★+) in backtest
+//         'partial' — image studied, lexicon anchors known, or Language-A range without full txt
+//         absent — not yet analyzed (default 'none')
+/** @type {Record<string, FolioEntry>} */
+export const FOLIO_DATA = {
+  // ── Lage 1 · Kräuter A (f1–f8) — Language-A lexicon range ────────────────
+  f1r: {
+    status: 'confirmed',
+    registerType: 'Prosa / Haskama-Typ (sui generis) — kein {plant}-System',
+    languageClass: 'Sprache A (Currier)',
+    writerHand: 1,
+    transcribers: [
+      { siglen: ['H', 'C', 'F', 'N', 'U'], label: 'P-Zeilen, n=5' },
+      { siglen: ['X'],                     label: 'Titel-/Kurzzeilen' },
+      { siglen: ['D'],                     label: 'nur P1.4' },
+      { siglen: ['J'],                     label: 'Erased-Key, nicht textrelevant' },
+    ],
+    consensusDenominators: [
+      'P-Zeilen n=5 (H C F N U)',
+      'Titel/Kurzzeilen n=6 (+X)',
+      'P1.4 n=6 (+D)',
+    ],
+  },
+  f1v: { status: 'partial' },      f2r: { status: 'confirmed' },    f2v: { status: 'partial' },
+  f3r: { status: 'confirmed' },    f3v: { status: 'confirmed' },    f4r: { status: 'confirmed' },    f4v: { status: 'partial' },
+  f5r: { status: 'confirmed' },    f5v: { status: 'partial' },      f6r: { status: 'confirmed' },    f6v: { status: 'partial' },
+  f7r: { status: 'confirmed' },    f7v: { status: 'partial' },      f8r: { status: 'confirmed' },    f8v: { status: 'partial' },
+
+  // ── Lage 2 · Kräuter A (f9–f16) — translation HTMLs + txt transcriptions ──
+  f9r:  { status: 'confirmed' },  f9v:  { status: 'confirmed' },
+  f10r: { status: 'confirmed' },  f10v: { status: 'confirmed' },
+  f11r: { status: 'confirmed' },  f11v: { status: 'confirmed' },
+  f13r: { status: 'confirmed' },  f13v: { status: 'confirmed' },
+  f14r: { status: 'confirmed' },  f14v: { status: 'confirmed' },
+  f15r: { status: 'confirmed' },  f15v: { status: 'confirmed' },
+  f16r: { status: 'confirmed' },  f16v: { status: 'confirmed' },
 
   // ── Lage 3 · Kräuter A (f17–f24) — Quire C (bC1–bC4) ───────────────────
-  f17r:'done', f17v:'done',
-  f18r:'done', f18v:'done',
-  f19r:'done', f19v:'done',
-  f20r:'done', f20v:'done',
-  f21r:'done', f21v:'done',
-  f22r:'done', f22v:'done',
-  f23r:'done', f23v:'done',
-  f24r:'done', f24v:'done',
+  f17r: { status: 'confirmed' },  f17v: { status: 'confirmed' },
+  f18r: { status: 'confirmed' },  f18v: { status: 'confirmed' },
+  f19r: { status: 'confirmed' },  f19v: { status: 'confirmed' },
+  f20r: { status: 'confirmed' },  f20v: { status: 'confirmed' },
+  f21r: { status: 'confirmed' },  f21v: { status: 'confirmed' },
+  f22r: { status: 'confirmed' },  f22v: { status: 'confirmed' },
+  f23r: { status: 'confirmed' },  f23v: { status: 'confirmed' },
+  f24r: { status: 'confirmed' },  f24v: { status: 'confirmed' },
 
-  // ── Lage 4 · Kräuter A (f25–f32) — Quire D (bD1+bD2+bD3+bD4) vollständig ──
-  f25r:'done', f25v:'done',
-  f26r:'done', f26v:'done',
-  f27r:'done', f27v:'done',
-  f28r:'done', f28v:'done',
-  f29r:'done', f29v:'done',
-  f30r:'done', f30v:'done',
-  f31r:'done', f31v:'done',
-  f32r:'done', f32v:'done',
+  // ── Lage 4 · Kräuter A (f25–f32) — Quire D vollständig ──────────────────
+  f25r: { status: 'confirmed' },  f25v: { status: 'confirmed' },
+  f26r: { status: 'confirmed' },  f26v: { status: 'confirmed' },
+  f27r: { status: 'confirmed' },  f27v: { status: 'confirmed' },
+  f28r: { status: 'confirmed' },  f28v: { status: 'confirmed' },
+  f29r: { status: 'confirmed' },  f29v: { status: 'confirmed' },
+  f30r: { status: 'confirmed' },  f30v: { status: 'confirmed' },
+  f31r: { status: 'confirmed' },  f31v: { status: 'confirmed' },
+  f32r: { status: 'confirmed' },  f32v: { status: 'confirmed' },
 
   // ── Lage 10 · Kosmologisch — f69r Rad-Diagramm vollständig analysiert ──────
-  f69r:'done',
+  f69r: { status: 'confirmed' },
 
   // ── Lage 5 · Kräuter B — f33r/v + f34r/v analysiert (v8.7, Sprache B) ─────
-  f33r:'done', f33v:'done',
-  f34r:'done', f34v:'done',
+  f33r: { status: 'confirmed' },  f33v: { status: 'confirmed' },
+  f34r: { status: 'confirmed' },  f34v: { status: 'confirmed' },
 
   // ── Lage 11 · Biologisch — f71–f72 · Zodiak bK1 vollständig analysiert ───
-  f71r:'done', f71v:'done',
-  f72r1:'done', f72r2:'done',
+  f71r:  { status: 'confirmed' }, f71v:  { status: 'confirmed' },
+  f72r1: { status: 'confirmed' }, f72r2: { status: 'confirmed' },
 
   // ── Lage 8 · Astronomisch — f57r+f58r analysiert; f57v = Zodiak-Diagramm ──
-  f57r:'done',
-  f57v:'partial',
-  f58r:'done',
+  f57r: { status: 'confirmed' },
+  f57v: { status: 'partial' },
+  f58r: { status: 'confirmed' },
 
   // ── Lage 14 · Kosmologisch — f85v+f86r txt+jpg asset ────────────────────
-  f85r1:'partial', f85r2:'partial', fRos:'partial',
-  f86v4:'partial', f86v6:'partial', f86v5:'partial', f86v3:'partial',
+  f85r1: { status: 'partial' }, f85r2: { status: 'partial' }, fRos:  { status: 'partial' },
+  f86v4: { status: 'partial' }, f86v6: { status: 'partial' }, f86v5: { status: 'partial' }, f86v3: { status: 'partial' },
 
   // ── Lage 20 · Rezepte / Randsterne ───────────────────────────────────────
-  f103r:'done', f103v:'done',
-  f114v:'done',
-  f115r:'done', f115v:'done',
-  f116r:'done', f116v:'done',
+  f103r: { status: 'confirmed' }, f103v: { status: 'confirmed' },
+  f114v: { status: 'confirmed' },
+  f115r: { status: 'confirmed' }, f115v: { status: 'confirmed' },
+  f116r: { status: 'confirmed' }, f116v: { status: 'confirmed' },
 };

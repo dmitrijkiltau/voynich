@@ -1,11 +1,11 @@
 import { MAPPING, PREFIXES } from './mapping-data.js';
 import { LEXICON } from './lexicon-data.js';
-import { FOLIO_PAGES, FOLIO_STATUS } from './folio-data.js';
+import { FOLIO_PAGES, FOLIO_DATA } from './folio-data.js';
 import { RULES, RULES_CHANGELOG } from './grammar-rules-data.js';
 import { COMPARISON, FOLIOS, CONCLUSION } from './language-a-data.js';
 import { TESTED, STATS as BACKTEST_STATS } from './backtest-data.js';
 
-export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_STATUS, RULES, RULES_CHANGELOG, COMPARISON, FOLIOS, CONCLUSION };
+export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_DATA, RULES, RULES_CHANGELOG, COMPARISON, FOLIOS, CONCLUSION };
 
 /** Returns true when a stars string represents 5-star confidence (★★★★★). */
 export const isConf5 = (/** @type {string} */ stars) => stars.slice(0, 5) === '★★★★★';
