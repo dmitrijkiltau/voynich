@@ -16,7 +16,7 @@ import { MAPPING, STATS } from '$lib';
 	import FolioProgress from '$lib/components/FolioProgress.svelte';
 	import OpenProblemsSection from '$lib/components/OpenProblemsSection.svelte';
 	let evaInput        = $state('');
-	let activeSection   = $state('tool');
+	let activeSection   = $state('abstract');
 	let menuOpen        = $state(false);
 	let scrollProgress  = $state(0);
 	let lexiconFilter   = $state('');
@@ -48,28 +48,79 @@ import { MAPPING, STATS } from '$lib';
 		{ id: 'open-problems', 		label: 'XIV. Offene Probleme' },
 	];
 
+	const SECTION_SELECTOR = 'main .section[id]';
+
+	/** @param {string} id */
+	function setActiveSection(id, updateHash = false) {
+		if (!id || activeSection === id) return;
+		activeSection = id;
+		if (updateHash && typeof history !== 'undefined' && location.hash !== `#${id}`) {
+			history.replaceState(null, '', `#${id}`);
+		}
+	}
+
 	// Scrollspy via IntersectionObserver
 	$effect(() => {
-		const observer = new IntersectionObserver(
-			(entries) => {
-				for (const entry of entries) {
-					if (entry.isIntersecting) activeSection = entry.target.id;
-				}
-			},
-			{ threshold: 0.15, rootMargin: '-5% 0px -75% 0px' }
-		);
+		const sections = [...document.querySelectorAll(SECTION_SELECTOR)];
+		const initialHash = window.location.hash.slice(1);
+		const syncFromHash = () => {
+			const hashId = window.location.hash.slice(1);
+			if (hashId && sections.some((section) => section.id === hashId)) {
+				activeSection = hashId;
+			}
+		};
 
-		for (const { id } of NAV_ITEMS) {
-			const el = document.getElementById(id);
-			if (el) observer.observe(el);
+		if (initialHash && sections.some((section) => section.id === initialHash)) {
+			activeSection = initialHash;
+		} else {
+			const current = sections.find((section) => {
+				const rect = section.getBoundingClientRect();
+				return rect.top <= 180 && rect.bottom > 180;
+			});
+			if (current) activeSection = current.id;
 		}
 
-		return () => observer.disconnect();
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const visible = entries.filter((entry) => entry.isIntersecting);
+				if (!visible.length) return;
+
+				const current = visible.reduce((best, entry) => {
+					if (!best) return entry;
+					return Math.abs(entry.boundingClientRect.top) < Math.abs(best.boundingClientRect.top)
+						? entry
+						: best;
+				}, null);
+
+				if (current) setActiveSection(current.target.id, true);
+			},
+			{
+				threshold: [0, 0.15, 0.35, 0.6],
+				rootMargin: '-18% 0px -62% 0px',
+			}
+		);
+
+		for (const section of sections) {
+			observer.observe(section);
+		}
+
+		window.addEventListener('popstate', syncFromHash);
+		window.addEventListener('hashchange', syncFromHash);
+
+		return () => {
+			observer.disconnect();
+			window.removeEventListener('popstate', syncFromHash);
+			window.removeEventListener('hashchange', syncFromHash);
+		};
 	});
 
 	/** @param {string} id */
 	function scrollTo(id) {
 		document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		setActiveSection(id, true);
+		if (typeof history !== 'undefined' && location.hash !== `#${id}`) {
+			history.pushState(null, '', `#${id}`);
+		}
 		menuOpen = false;
 	}
 
@@ -77,7 +128,7 @@ import { MAPPING, STATS } from '$lib';
 	function insertEva(text) {
 		const cur = evaInput;
 		evaInput = cur + (cur && !cur.endsWith(' ') ? ' ' : '') + text + ' ';
-		scrollTo('tool');
+		scrollTo('translator-tool');
 	}
 
 	function exportMarkdown() {
@@ -310,6 +361,7 @@ import { MAPPING, STATS } from '$lib';
 			left: 0;
 			height: 100%;
 			transform: translateX(-100%);
+			padding: 4.8rem 0 2rem;
 			box-shadow: 2px 0 16px rgba(0, 0, 0, .15);
 
 			&.open { transform: translateX(0); }
@@ -679,11 +731,12 @@ import { MAPPING, STATS } from '$lib';
 			padding: 0;
 		}
 
-		.section {
-			break-inside: avoid;
+	.section {
+		scroll-margin-top: calc(var(--nav-h) + 1.5rem);
+		break-inside: avoid;
 
-			& + section {
-				margin-bottom: 3rem;
+		& + section {
+			margin-bottom: 3rem;
 			}
 		}
 
