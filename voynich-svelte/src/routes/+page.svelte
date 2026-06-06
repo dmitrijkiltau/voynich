@@ -1,5 +1,5 @@
 ﻿<script>
-	import { MAPPING, LEXICON, STATS } from '$lib';
+import { MAPPING, STATS } from '$lib';
 	import TranslatorTool from '$lib/components/TranslatorTool.svelte';
 	import MappingGrid from '$lib/components/MappingGrid.svelte';
 	import LexiconSection from '$lib/components/LexiconSection.svelte';
@@ -15,10 +15,11 @@
 	import GibberishTest from '$lib/components/GibberishTest.svelte';
 	import FolioProgress from '$lib/components/FolioProgress.svelte';
 	import OpenProblemsSection from '$lib/components/OpenProblemsSection.svelte';
-	let evaInput       = $state('');
-	let activeSection  = $state('tool');
-	let menuOpen       = $state(false);
-	let scrollProgress = $state(0);
+	let evaInput        = $state('');
+	let activeSection   = $state('tool');
+	let menuOpen        = $state(false);
+	let scrollProgress  = $state(0);
+	let lexiconFilter   = $state('');
 
 	$effect(() => {
 		function updateProgress() {
@@ -81,6 +82,12 @@
 
 	function exportMarkdown() {
 		window.open(`/voynich-mapping-${STATS.version}.md`, '_blank');
+	}
+
+	/** @param {string} eva */
+	function linkLexiconFilter(eva) {
+		lexiconFilter = lexiconFilter === eva ? '' : eva;
+		scrollTo('derived');
 	}
 </script>
 
@@ -196,13 +203,13 @@
 		</section>
 
 		<!-- V. LEXIKON -->
-		<LexiconSection {STATS} {LEXICON} onInsert={insertEva} />
+		<LexiconSection {STATS} onInsert={insertEva} bind:filter={lexiconFilter} />
 
 		<!-- VI. GRAMMATIK -->
 		<section class="section" id="grammar">
 			<h2>VI. Grammatik — Präfixe, Suffixe &amp; Schemata</h2>
 			<p>Die wichtigsten morphologischen Regeln für das Lesen von EVA-Sequenzen.</p>
-			<GrammarSection />
+			<GrammarSection onLinkFilter={linkLexiconFilter} />
 		</section>
 
 		<!-- VII. GRAMMATIKREGELN -->

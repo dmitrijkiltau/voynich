@@ -1,11 +1,16 @@
-﻿<script>
+<script>
 	import { GRAMMAR_PREFIXES, GRAMMAR_SUFFIXES, VERB_PARADIGM } from '$lib/grammar-data.js';
 	import { isConf5 } from '$lib';
+
+	let { onLinkFilter = /** @type {((eva: string) => void) | undefined} */ (undefined) } = $props();
 </script>
 
 <div class="grammar-systems">
   <div>
-    <h3>Präfix-System</h3>
+    <h3>
+      Präfix-System
+      {#if onLinkFilter}<span class="filter-hint">— Zeile anklicken filtert Lexikon</span>{/if}
+    </h3>
     <table class="dt">
       <thead>
         <tr>
@@ -18,7 +23,13 @@
       </thead>
       <tbody>
         {#each GRAMMAR_PREFIXES as row}
-          <tr>
+          <tr
+            class:row-filterable={!!onLinkFilter}
+            title={onLinkFilter ? `Im Lexikon nach „${row.eva}" filtern` : undefined}
+            onclick={() => onLinkFilter?.(row.eva)}
+            onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onLinkFilter?.(row.eva)}
+            tabindex={onLinkFilter ? 0 : undefined}
+          >
             <td><span class="eva">{row.eva}</span></td>
             <td><span class="heb-sm">{row.heb}</span></td>
             <td>{row.fn}</td>
@@ -31,7 +42,10 @@
   </div>
 
   <div>
-    <h3>Suffix-System</h3>
+    <h3>
+      Suffix-System
+      {#if onLinkFilter}<span class="filter-hint">— Zeile anklicken filtert Lexikon</span>{/if}
+    </h3>
     <table class="dt">
       <thead>
         <tr>
@@ -43,7 +57,13 @@
       </thead>
       <tbody>
         {#each GRAMMAR_SUFFIXES as row}
-          <tr>
+          <tr
+            class:row-filterable={!!onLinkFilter}
+            title={onLinkFilter ? `Im Lexikon nach „${row.eva}" filtern` : undefined}
+            onclick={() => onLinkFilter?.(row.eva)}
+            onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onLinkFilter?.(row.eva)}
+            tabindex={onLinkFilter ? 0 : undefined}
+          >
             <td><span class="eva">{row.eva}</span></td>
             <td><span class="heb-sm">{row.heb}</span></td>
             <td>{row.fn}</td>
@@ -158,6 +178,31 @@
 
   .table-scroll {
     overflow-x: auto;
+  }
+
+  /* ── Filterable rows ────────────────────────────────── */
+
+  tr.row-filterable {
+    cursor: pointer;
+    transition: background-color .12s;
+
+    &:hover {
+      background-color: color-mix(in srgb, var(--red) 7%, transparent);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--red);
+      outline-offset: -2px;
+    }
+  }
+
+  .filter-hint {
+    font-family: var(--font-smallcaps);
+    font-size: .6rem;
+    letter-spacing: .08em;
+    font-weight: normal;
+    color: var(--ink-f);
+    opacity: .7;
   }
 
   /* ── Schema diagram ─────────────────────────────────── */

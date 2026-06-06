@@ -16,11 +16,10 @@ const _compact = (/** @type {string} */ n) => n.replace(/ /g, '');
 const _pct     = (/** @type {number} */ p) => `${Math.round(p)}%`;
 
 export const STATS = {
-  version: '8.8',
+  version: '8.8.1',
   // Separate each change on a new line
   changelog: [
-    'Lexikon — chorain (Erstbeleg f004r, Phantombelege f33v P.7 + f34v P.8 entfernt), olaiin (Erstbeleg f017r statt f33v), oraiin (Folioliste ≥9 statt 4, Phantombeleg f33v P.7 entfernt).',
-    'Rückwärtstest — Typ-I-Liste auf 10 eingefroren (v7.4-Anker); choraiin-Phantomeintrag entfernt; post-v7.4-Einträge (Prognose-Tetrade, Quire-B-dam, Zodiak R17, f69r) nach Typ II. Alle Zahlen kanonisiert (10/10 · 29/32).',
+    'Bereinigung des Lexikons, sowie der Übersichtlichkeit.',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.length,

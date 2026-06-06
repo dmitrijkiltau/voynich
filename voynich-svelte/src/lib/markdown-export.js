@@ -1,4 +1,4 @@
-import { STATS, MAPPING, PREFIXES, LEXICON, RULES } from './index.js';
+import { STATS, MAPPING, PREFIXES, RULES } from './index.js';
 import { GRAMMAR_PREFIXES, GRAMMAR_SUFFIXES, VERB_PARADIGM } from './grammar-data.js';
 import { TESTED, STATS as BACKTEST_STATS } from './backtest-data.js';
 import { CLASSES } from './word-classes-data.js';
@@ -7,6 +7,7 @@ import { STAR_TYPES, FOLIOS as STAR_FOLIOS } from './margin-stars-data.js';
 import { REFS } from './references-data.js';
 import { CONFIDENCE_SCALE, ANCHOR_FOLIOS } from './methodology-data.js';
 import { OPEN_PROBLEMS } from './open-problems-data.js';
+import { STEM_WORDS, LEXICON_DERIVED, getLexiconConfidence, getLexiconRules } from './lexicon-data.js';
 
 const _bsI   = BACKTEST_STATS.find(s => s.label.startsWith('Typ I'));
 const _bsII  = BACKTEST_STATS.find(s => s.label.startsWith('Typ II'));
@@ -34,17 +35,6 @@ function tbl(headers, rows) {
     ...rows.map((/** @type {any[]} */ r) => `| ${r.map(esc).join(' | ')} |`),
   ].join('\n') + '\n';
 }
-
-const CAT = /** @type {Record<string, string>} */({
-  symptom:    'Medizinische Nomina & Symptome',
-  prognose:   'Prognose-Termini',
-  syntax:     'Syntaktische Konnektoren',
-  verb:       'Verbformen',
-  akteur:     'Akteure, Anatomie & Botanik',
-  kolophon:   'Kolophon-Formeln',
-  kompositum: 'Bestätigte Komposita',
-  possessiv:  'Possessiv-Formen',
-});
 
 // No TranslatorTool, nor GibberishTest in Markdown export
 const TOC = [
@@ -145,16 +135,41 @@ export function generateMarkdown() {
   // ── IV. Lexikon ────────────────────────────────────────────────
   h(2, `IV. Bestätigtes Lexikon (${STATS.lexicon} Einträge)`);
   line();
-  line('Alle Einträge mit ★★★ oder höher.');
+  line('Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgeleiteten Formen.');
   line();
-  const cats = [...new Set(LEXICON.map(e => e.cat))];
-  for (const cat of cats) {
-    h(3, CAT[cat] || cat);
-    line();
-    s.push(tbl(['EVA', 'Hebräisch', 'Deutsch', 'Notizen', 'Konf.'],
-      LEXICON.filter(e => e.cat === cat).map(e => [e.eva, e.heb, e.de, e.notes, e.stars])));
-    line();
-  }
+
+  h(3, `A. Stammwörter (${STEM_WORDS.length})`);
+  line();
+  s.push(tbl(
+    ['EVA', 'Hebräisch', 'Deutsch', 'Schicht', 'Anker', 'Folio', 'Regeln', 'Konf.'],
+    STEM_WORDS.map(e => [
+      e.eva,
+      e.heb,
+      e.de,
+      e.layer || '—',
+      e.isAnchor ? 'ja' : '—',
+      e.anchorFolio || '—',
+      getLexiconRules(e).join(', ') || '—',
+      getLexiconConfidence(e.confidenceStars),
+    ])
+  ));
+  line();
+
+  h(3, `B. Abgeleitete Lexikon-Einträge (${LEXICON_DERIVED.length})`);
+  line();
+  s.push(tbl(
+    ['EVA', 'Morph.', 'Hebräisch', 'Deutsch', 'Evidenz', 'Regeln', 'Konf.'],
+    LEXICON_DERIVED.map((/** @type {any} */ e) => [
+      e.eva,
+      e.morph || '—',
+      e.heb,
+      e.de,
+      e.evidence || '—',
+      getLexiconRules(e).join(', ') || '—',
+      getLexiconConfidence(e.confidenceStars),
+    ])
+  ));
+  line();
 
   // ── V. Grammatik ──────────────────────────────────────────────
   h(2, 'V. Grammatik — Präfixe, Suffixe & Schemata');
@@ -221,7 +236,7 @@ export function generateMarkdown() {
   line('Die am besten verifizierten Sequenzen des Korpus — als Orientierungshilfe beim Übersetzen.');
   line();
   for (const ref of REFS) {
-    const badge = ref.badge ? ` (${ref.badge})` : '';
+    const badge = ('badge' in ref && ref.badge) ? ` (${ref.badge})` : '';
     h(3, `${ref.id} · ${ref.folio} — ${ref.title}${badge}`);
     line();
     if (ref.sides) {
