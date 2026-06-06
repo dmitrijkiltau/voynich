@@ -16,10 +16,11 @@ const _compact = (/** @type {string} */ n) => n.replace(/ /g, '');
 const _pct     = (/** @type {number} */ p) => `${Math.round(p)}%`;
 
 export const STATS = {
-  version: '8.8.1',
+  version: '8.8.2',
   // Separate each change on a new line
   changelog: [
-    'Bereinigung des Lexikons, sowie der Übersichtlichkeit.',
+    'Regeln übersichtlicher gestaltet',
+    'Darstellungsfehler behoben',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.length,
