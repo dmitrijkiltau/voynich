@@ -258,6 +258,16 @@
 												{:else}
 													—
 												{/if}
+											{:else if col.key === 'eva'}
+												<span class="eva">{cellValue(entry, col.key)}</span>
+											{:else if col.key === 'morph'}
+												{@const cellValueArr = cellValue(entry, col.key).split(' + ')}
+												{#each cellValueArr as part, i}
+													<span class="eva part-cell">{part}</span>
+													{#if i < cellValueArr.length - 1}
+														<span class="rules-sep">+&nbsp;</span>
+													{/if}
+												{/each}
 											{:else}
 												{cellValue(entry, col.key)}
 											{/if}
@@ -287,6 +297,30 @@
     & > div {
       flex: 1 1 560px;
     }
+
+		& .lexicon-table {
+			overflow: hidden;
+
+			& th:first-child, & td:first-child {
+				position: sticky;
+				left: 0;
+			}
+
+			& thead th:first-child {
+				z-index: 1;
+				background: var(--parch-d);
+			}
+
+			& tbody tr {
+				background: var(--parch);
+				
+				& td:first-child {
+					z-index: 0;
+					background: var(--parch);
+					border-bottom: 1px solid var(--border);
+				}
+			}
+		}
   }
 
   /* ── Filter bar ─────────────────────────────────────── */

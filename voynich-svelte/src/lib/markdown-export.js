@@ -207,7 +207,7 @@ export function generateMarkdown() {
   line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${candidates} Kandidaten**. ${moratoriumStatus} R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).`);
   line();
   s.push(tbl(['#', 'Regel', 'Evidenz', 'Konf.'],
-    RULES.map(r => [r.id, stripHtml(r.rule), stripHtml(r.evidence), r.stars])));
+    RULES.map(r => [r.id, stripHtml(r.focus) + ' — ' + stripHtml(r.syntax), stripHtml(r.evidence), getLexiconConfidence(r.confidenceStars)])));
   line();
 
   // ── VII. Rückwärtstest ────────────────────────────────────────
