@@ -36,7 +36,7 @@
 			</thead>
 			<tbody>
 				{#each RULES as r}
-					<tr>
+					<tr id="rule-{r.id}">
 						<td class="rule-id">{r.id}</td>
 						<td class="rule-text">{@html r.rule}</td>
 						<td class="rule-evidence">{@html r.evidence}</td>

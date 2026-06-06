@@ -14,7 +14,7 @@ export const CONCLUSION = {
 };
 
 export const COMPARISON = [
-  { feature: 'Kernvokabular', langB: 'sheol, daiin, dal, ckhy, dam, sar, or', langA: 'Identisch — alle 10 Ankerwörter je Folio bestätigt (f1r: 10/10 ★★★★★)' },
+  { feature: 'Kernvokabular', langB: 'sheol, daiin, dal, ckhy, dam, sar, or', langA: 'Identisch — alle 10 Sprache-A-Ankerwörter je Folio bestätigt (f1r: 10/10 ★★★★★)' },
   { feature: 'qo-Präfix (R1/R33)', langB: '8+ Belege; Kernmerkmal Spr. B ★★★★★', langA: 'Absent in Quires I–II (0 / ~800 Token); ab Quire III präsent: 13 Belege f17r/f17v (~5%) + 8–10 in f18r/f18v (~4–5%) + ~18 in f19r/f19v (~10% = Quire-H-äquivalent, R33-Erweiterung); R37: qo-Präfix-Dopplung ab f18v; R49: y+t-Verb-Litanei f19v P.12; bC4 (f20–f21): Vollintegration bestätigt; bC3 (f22–f23) + bC1 (f24): konsistent — Quire C f17–f24 vollständig' },
   { feature: 'Dominanter Vokal', langB: 'e / ee (Segol/Ṣere)', langA: 'o (Ḥolam) häufiger; dol statt dal, ckho neben ckhy' },
   { feature: 'Struktur', langB: 'Prosa ohne Bildtrennmarker', langA: '{plant}-Marker in Kräuter-Folios (R14); f1r: Prosa ohne Marker (Haskama-Typ, sui generis)' },
@@ -24,7 +24,7 @@ export const COMPARISON = [
 ];
 
 export const FOLIOS = [
-  { folio: 'f1r', plant: 'Kein Botanical — Haskama (deklarativer Prosatext)', signal: 'qo-: 0 Belege; 10/10 Ankerwörter; 4 Absätze + T1–T4; &252/&253 Aries-Großinitialen; Erased Key (Jim Reeds 1994)', stars: '★★★★' },
+  { folio: 'f1r', plant: 'Kein Botanical — deklarativer Prosatext', signal: 'qo-: 0 Belege; 10/10 Sprache-A-Anker; 4 Absätze + T1–T4; rote Großinitialen (Funktion offen); Erased Key (Jim Reeds 1994); ★★★★ auf Strukturbefunden (R2-ext 260 Token, Ankerverteilung, Absatzstruktur)', stars: '★★★★' },
   { folio: 'f1v', plant: 'Belladonna', signal: 'shol 5×, pol (Beere), otoaiin (Pupille)', stars: '★★★★★' },
   { folio: 'f2r', plant: 'Kornblume (Augenwasser)', signal: 'ytoain=, saiin, aiin 8+ Komposita', stars: '★★★★★' },
   { folio: 'f2v', plant: 'Seerose', signal: 'shty (Trank), chokeos (Kelch)', stars: '★★★★' },

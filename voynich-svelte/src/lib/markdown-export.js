@@ -93,7 +93,7 @@ export function generateMarkdown() {
     ['Analysierte Folios', STATS.foliosAll],
     ['Bestätigte Wörter', `${STATS.lexicon} (★★★ oder höher)`],
     ['Rückwärtstest', `Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 29/32 (91%) · 0 Falsch-Positive`],
-    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4)`],
+    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Sprache-A-Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4)`],
     ['Grammatikregeln', `${RULES.length} (${STATS.validatedRules} validiert + ${RULES.length - STATS.validatedRules} Kandidaten)`],
   ]));
   line();
@@ -129,7 +129,7 @@ export function generateMarkdown() {
   line();
   s.push(tbl(['EVA', 'Hebräisch', 'Bedeutung'], PREFIXES.map(p => [p.eva, p.heb, p.de])));
   line();
-  line('**R2-ext (v7.5):** Das EVA-Zeichen `o` ist positionell vollständig determiniert: (1) `o-` am Wortanfang = ע (Ayin, konsonantisch) — ausnahmslos; (2) `o` im Wortinneren = Ḥolam (Vokalmarker) — ausnahmslos. **Negativtest:** 0 Gegenbeispiele in 140+ validierten Lexikoneinträgen.');
+  line('**R2-ext (v7.5):** Das EVA-Zeichen `o` ist positionell vollständig determiniert: (1) `o-` am Wortanfang = ע (Ayin, konsonantisch) — ausnahmslos; (2) `o` im Wortinneren = Ḥolam (Vokalmarker) — ausnahmslos. **Negativtest:** 0 Gegenbeispiele in 140+ validierten Lexikoneinträgen. **f1r Nulltest (positiver Strukturbeleg):** 260 Token analysiert — alle initialen `o` = Ayin, alle internen `o` = Ḥolam, 0 Ausnahmen.');
   line();
 
   // ── IV. Lexikon ────────────────────────────────────────────────

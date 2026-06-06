@@ -246,9 +246,18 @@
 									tabindex="0"
 								>
 									{#each table.columns as col}
-										<td class={col.key === 'evidence' ? 'notes-cell' : col.key === 'anchorFolio' ? 'part-cell' : ''}>
+										<td class={col.key === 'evidence' ? 'notes-cell' : col.key === 'anchorFolio' ? 'part-cell' : col.key === 'rules' ? 'rules-cell' : ''}>
 											{#if col.key === 'confidenceStars'}
 												<span class={entry.confidenceStars === 5 ? 'conf5' : 'conf'}>{cellValue(entry, col.key)}</span>
+											{:else if col.key === 'rules'}
+												{@const rules = getLexiconRules(entry)}
+												{#if rules.length}
+													{#each rules as rule, i}
+														{#if i > 0}<span class="rules-sep">, </span>{/if}<a class="rule-link" href="#rule-{rule}" onclick={(e) => e.stopPropagation()}>{rule}</a>
+													{/each}
+												{:else}
+													—
+												{/if}
 											{:else}
 												{cellValue(entry, col.key)}
 											{/if}
@@ -472,6 +481,28 @@
     &[aria-sort='descending'] .sort-icon {
       opacity: 1;
     }
+  }
+
+  /* ── Rule links ─────────────────────────────────────── */
+
+  .rules-cell {
+    white-space: nowrap;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+  }
+
+  .rule-link {
+    color: var(--red);
+    text-decoration: none;
+    border-bottom: 1px dotted color-mix(in srgb, var(--red) 50%, transparent);
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+  }
+
+  .rules-sep {
+    color: var(--ink-f);
   }
 
   @media print {
