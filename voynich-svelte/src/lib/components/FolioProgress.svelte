@@ -1,5 +1,6 @@
 <script>
 	import { FOLIO_PAGES, FOLIO_DATA } from '$lib';
+	import { slide } from 'svelte/transition';
 
 	let open = $state(false);
 
@@ -61,47 +62,31 @@
 	const pctPartial   = (totalPartial   / totalPages) * 100;
 	const pctAnalyzed  = ((totalDone + totalConfirmed + totalPartial) / totalPages) * 100;
 
-	// ── Popover ────────────────────────────────────────────────────────────────
+	// ── Accordion detail ─────────────────────────────────────────────────────
 
 	/**
-	 * @typedef {{ id: string, x: number, y: number, above: boolean,
-	 *             data: import('../folio-data.js').FolioEntry | null }} PopState
+	 * @typedef {{ pageId: string, quireIdx: number, data: import('../folio-data.js').FolioEntry | null }} ActiveChip
 	 */
-	/** @type {PopState | null} */
-	let pop = $state(null);
+	/** @type {ActiveChip | null} */
+	let activeChip = $state(null);
 
-	let _hideTimer = /** @type {ReturnType<typeof setTimeout> | null} */ (null);
-	function _cancelHide() { if (_hideTimer) { clearTimeout(_hideTimer); _hideTimer = null; } }
-	function _scheduleHide() { _hideTimer = setTimeout(() => { pop = null; }, 120); }
-
-	const POP_W = 244;
-
-	/** @param {MouseEvent} e @param {{ id: string, data: import('../folio-data.js').FolioEntry | null }} p */
-	function showPop(e, p) {
-		_cancelHide();
-		const rect = /** @type {Element} */ (e.currentTarget).getBoundingClientRect();
-		const x    = Math.max(8, Math.min(rect.left, window.innerWidth - POP_W - 8));
-		const spaceBelow = window.innerHeight - rect.bottom;
-		const above = spaceBelow < 200;
-		pop = { id: p.id, x, y: above ? rect.top : rect.bottom + 4, above, data: p.data };
+	/** @param {string} pageId @param {number} quireIdx @param {import('../folio-data.js').FolioEntry | null} data */
+	function toggleChip(pageId, quireIdx, data) {
+		if (activeChip?.pageId === pageId) { activeChip = null; }
+		else { activeChip = { pageId, quireIdx, data }; }
 	}
 
-	/** @param {MouseEvent} e @param {{ id: string, data: import('../folio-data.js').FolioEntry | null }} p */
-	function togglePop(e, p) {
-		e.stopPropagation();
-		if (pop?.id === p.id) { pop = null; _cancelHide(); }
-		else showPop(e, p);
+	/** @param {string} pageId @param {string} quire @returns {string | null} */
+	function trUrl(pageId, quire) {
+		const m = pageId.match(/^f(\d+)(.*)$/);
+		if (!m) return null;
+		return `https://voynich.nu/${quire}/f${m[1].padStart(3, '0')}${m[2]}_tr.txt`;
 	}
 
 	const ST_LABEL = /** @type {Record<string,string>} */ ({
 		done: 'Vollübersetzung', confirmed: 'analysiert', partial: 'Anker / Teilanalyse', none: 'nicht analysiert',
 	});
 </script>
-
-<svelte:window onclick={(e) => {
-	const t = /** @type {Element} */ (e.target);
-	if (!t.closest('[data-fcp-pop]') && !t.closest('[data-fcp-chip]')) { pop = null; _cancelHide(); }
-}} />
 
 <div class="fp">
 	<!-- ── HEADER (toggle) ─────────────────────────── -->
@@ -143,7 +128,7 @@
 	<div id="fp-body" class="fp-body" class:open>
     <div class="fp-body-inner">
       <div class="fp-quires">
-        {#each quires as q}
+        {#each quires as q, qi}
           <div class="fp-row fp-row--{q.hue}">
             <!-- Label column -->
             <div class="fp-label">
@@ -165,19 +150,84 @@
               {#each q.pages as p}
                 <span
                   class="fpc-chip fpc-chip--{p.st}"
-                  class:fpc-chip--active={pop?.id === p.id}
+                  class:fpc-chip--active={activeChip?.pageId === p.id}
                   title="{p.id} · {ST_LABEL[p.st]}"
                   role="button"
                   tabindex="0"
-                  data-fcp-chip
-                  onmouseenter={(e) => showPop(e, p)}
-                  onmouseleave={_scheduleHide}
-                  onclick={(e) => togglePop(e, p)}
-                  onkeydown={(e) => { if (e.key === 'Enter' || e.key === ' ') togglePop(/** @type {any} */ (e), p); }}
+                  onclick={() => toggleChip(p.id, qi, p.data)}
+                  onkeydown={(e) => { if (e.key === 'Enter' || e.key === ' ') toggleChip(p.id, qi, p.data); }}
                 >{p.label}</span>
               {/each}
             </div>
           </div>
+
+          <!-- ── Accordion detail row ───────────────── -->
+          {#if activeChip?.quireIdx === qi}
+            {@const d = activeChip.data}
+            {@const tr = trUrl(activeChip.pageId, q.q)}
+            <div class="fp-detail fp-detail--{q.hue}" transition:slide={{ duration: 180 }}>
+              <div class="fp-detail-header">
+                <span class="fp-detail-id">{activeChip.pageId}</span>
+                <span class="fp-detail-badge fp-detail-badge--{d?.status ?? 'none'}">{ST_LABEL[d?.status ?? 'none']}</span>
+                <button class="fp-detail-close" onclick={() => activeChip = null} aria-label="Schließen">×</button>
+              </div>
+
+              {#if d}
+                <div class="fp-detail-fields">
+                  {#if d.registerType}
+                    <div class="fp-detail-field">
+                      <span class="fp-detail-key">Register-Typ</span>
+                      <span class="fp-detail-val">{d.registerType}</span>
+                    </div>
+                  {/if}
+                  {#if d.languageClass}
+                    <div class="fp-detail-field">
+                      <span class="fp-detail-key">Sprach-Klasse</span>
+                      <span class="fp-detail-val">{d.languageClass}</span>
+                    </div>
+                  {/if}
+                  {#if d.writerHand !== undefined}
+                    <div class="fp-detail-field">
+                      <span class="fp-detail-key">Schreiber-Hand</span>
+                      <span class="fp-detail-val">{d.writerHand}</span>
+                    </div>
+                  {/if}
+                  {#if d.transcribers?.length}
+                    <div class="fp-detail-field">
+                      <span class="fp-detail-key">Transkriptoren</span>
+                      <span class="fp-detail-val">
+                        {#each d.transcribers as t}
+                          <span class="fp-detail-trow">
+                            <span class="fp-detail-siglen">{t.siglen.join(' · ')}</span>
+                            <span class="fp-detail-tlabel">{t.label}</span>
+                          </span>
+                        {/each}
+                      </span>
+                    </div>
+                  {/if}
+                  {#if d.consensusDenominators?.length}
+                    <div class="fp-detail-field">
+                      <span class="fp-detail-key">Konsens-Nenner</span>
+                      <span class="fp-detail-val">
+                        {#each d.consensusDenominators as k}
+                          <span class="fp-detail-krow">· {k}</span>
+                        {/each}
+                      </span>
+                    </div>
+                  {/if}
+                </div>
+              {/if}
+
+              <div class="fp-detail-actions">
+                {#if d?.scanUrl}
+                  <a class="fp-detail-btn" href={d.scanUrl} target="_blank" rel="noopener noreferrer">Scan ↗</a>
+                {/if}
+                {#if tr}
+                  <a class="fp-detail-btn fp-detail-btn--tr" href={tr} target="_blank" rel="noopener noreferrer">Transkription ↗</a>
+                {/if}
+              </div>
+            </div>
+          {/if}
         {/each}
       </div>
 
@@ -202,68 +252,6 @@
       </div><!-- end fp-legend -->
     </div><!-- end fp-body-inner -->
 	</div><!-- end fp-body -->
-
-	<!-- ── FOLIO POPOVER (position:fixed, escapes overflow:hidden) ── -->
-	{#if pop}
-		{@const d = pop.data}
-		<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
-		<div
-			class="fcp-pop"
-			class:fcp-pop--above={pop.above}
-			style="left:{pop.x}px; {pop.above ? `bottom:${window.innerHeight - pop.y}px` : `top:${pop.y}px`}"
-			data-fcp-pop
-			onmouseenter={_cancelHide}
-			onmouseleave={_scheduleHide}
-			role="tooltip"
-		>
-			<div class="fcp-pop-header">
-				<span class="fcp-pop-id">{pop.id}</span>
-				<span class="fcp-pop-badge fcp-pop-badge--{d?.status ?? 'none'}">{ST_LABEL[d?.status ?? 'none']}</span>
-			</div>
-
-			{#if d?.registerType}
-				<div class="fcp-pop-field">
-					<div class="fcp-pop-key">Register-Typ</div>
-					<div class="fcp-pop-val">{d.registerType}</div>
-				</div>
-			{/if}
-
-			{#if d?.languageClass}
-				<div class="fcp-pop-field">
-					<div class="fcp-pop-key">Sprach-Klasse</div>
-					<div class="fcp-pop-val">{d.languageClass}</div>
-				</div>
-			{/if}
-
-			{#if d?.writerHand !== undefined}
-				<div class="fcp-pop-field">
-					<div class="fcp-pop-key">Schreiber-Hand</div>
-					<div class="fcp-pop-val">{d.writerHand}</div>
-				</div>
-			{/if}
-
-			{#if d?.transcribers?.length}
-				<div class="fcp-pop-field">
-					<div class="fcp-pop-key">Transkriptoren</div>
-					{#each d.transcribers as t}
-						<div class="fcp-pop-trow">
-							<span class="fcp-pop-siglen">{t.siglen.join(' · ')}</span>
-							<span class="fcp-pop-tlabel">{t.label}</span>
-						</div>
-					{/each}
-				</div>
-			{/if}
-
-			{#if d?.consensusDenominators?.length}
-				<div class="fcp-pop-field">
-					<div class="fcp-pop-key">Konsens-Nenner</div>
-					{#each d.consensusDenominators as k}
-						<div class="fcp-pop-krow">· {k}</div>
-					{/each}
-				</div>
-			{/if}
-		</div>
-	{/if}
 </div>
 
 <style>
@@ -541,7 +529,7 @@
 		font-size: .5rem;
 		line-height: 1.6;
 		border-radius: 1px;
-		cursor: default;
+		cursor: pointer;
 		transition: transform .1s, box-shadow .1s;
 		white-space: nowrap;
 		border: 1px solid transparent;
@@ -635,141 +623,180 @@
 		}
 	}
 
-	/* ── Folio popover ──────────────────────────────── */
+	/* ── Folio detail row ────────────────────────────── */
 
-	@media print { .fcp-pop { display: none !important; } }
+	@media print { .fp-detail { display: none !important; } }
 
-	.fcp-pop {
-		position: fixed;
-		z-index: 200;
-		width: 244px;
-		background: color-mix(in srgb, var(--parch) 97%, transparent);
-		border: 1px solid var(--border);
-		border-radius: 2px;
-		box-shadow: 0 4px 18px rgba(0,0,0,.14), 0 1px 4px rgba(0,0,0,.08);
-		padding: .5rem .65rem .55rem;
-		pointer-events: auto;
+	.fp-detail {
+		padding: .5rem .7rem .55rem calc(.55rem + 2px);
+		border-bottom: 1px solid color-mix(in srgb, var(--parch-dk) 60%, transparent);
+		border-left: 2px solid transparent;
+		background: color-mix(in srgb, var(--parch-d) 55%, transparent);
 
-		/* arrow cue — downward by default, flipped when above */
-		&::before {
-			content: '';
-			position: absolute;
-			left: 10px;
-			top: -5px;
-			width: 8px;
-			height: 8px;
-			background: color-mix(in srgb, var(--parch) 97%, transparent);
-			border-left: 1px solid var(--border);
-			border-top: 1px solid var(--border);
-			transform: rotate(45deg);
-		}
-
-		&.fcp-pop--above::before {
-			top: auto;
-			bottom: -5px;
-			transform: rotate(225deg);
-		}
+		&.fp-detail--green { border-left-color: color-mix(in srgb, var(--green) 65%, transparent); }
+		&.fp-detail--blue  { border-left-color: color-mix(in srgb, var(--blue)  65%, transparent); }
+		&.fp-detail--gold  { border-left-color: color-mix(in srgb, var(--gold)  65%, transparent); }
+		&.fp-detail--red   { border-left-color: color-mix(in srgb, var(--red)   65%, transparent); }
 	}
 
-	.fcp-pop-header {
+	.fp-detail-header {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
-		gap: .5rem;
-		margin-bottom: .4rem;
-		padding-bottom: .32rem;
-		border-bottom: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+		gap: .45rem;
+		margin-bottom: .35rem;
+		padding-bottom: .3rem;
+		border-bottom: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
 	}
 
-	.fcp-pop-id {
+	.fp-detail-id {
 		font-family: var(--font-display);
 		font-size: .82rem;
 		color: var(--ink);
 		letter-spacing: .04em;
 	}
 
-	.fcp-pop-badge {
+	.fp-detail-badge {
 		font-family: var(--font-mono);
 		font-size: .5rem;
 		padding: 1px 5px;
 		border-radius: 1px;
 		flex-shrink: 0;
 
-		&.fcp-pop-badge--done {
+		&.fp-detail-badge--done {
 			background: color-mix(in srgb, var(--gold) 40%, var(--parch));
 			border: 1px solid color-mix(in srgb, var(--gold) 70%, transparent);
 			color: var(--ink);
 			font-weight: 600;
 		}
-		&.fcp-pop-badge--confirmed {
+		&.fp-detail-badge--confirmed {
 			background: color-mix(in srgb, var(--gold) 22%, var(--parch));
 			border: 1px solid color-mix(in srgb, var(--gold) 50%, transparent);
 			color: var(--ink);
 		}
-		&.fcp-pop-badge--partial {
+		&.fp-detail-badge--partial {
 			background: color-mix(in srgb, var(--gold) 8%, var(--parch-d));
 			border: 1px dashed var(--parch-dk);
 			color: var(--ink-l);
 		}
-		&.fcp-pop-badge--none {
+		&.fp-detail-badge--none {
 			background: var(--parch-d);
 			border: 1px solid var(--parch-dk);
 			color: var(--ink-f);
 		}
 	}
 
-	.fcp-pop-field {
-		margin-bottom: .32rem;
+	.fp-detail-close {
+		margin-left: auto;
+		font-size: .8rem;
+		color: var(--ink-f);
+		line-height: 1;
+		padding: 0 .25rem;
+		border-radius: 1px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		transition: color .1s;
+		flex-shrink: 0;
 
-		&:last-child { margin-bottom: 0; }
+		&:hover { color: var(--ink); }
 	}
 
-	.fcp-pop-key {
+	.fp-detail-fields {
+		display: flex;
+		flex-direction: column;
+		gap: .22rem;
+		margin-bottom: .4rem;
+	}
+
+	.fp-detail-field {
+		display: flex;
+		gap: .55rem;
+		align-items: flex-start;
+	}
+
+	.fp-detail-key {
 		font-family: var(--font-smallcaps);
 		font-size: .5rem;
 		letter-spacing: .1em;
 		text-transform: uppercase;
 		color: var(--ink-f);
-		margin-bottom: .12rem;
+		flex: 0 0 7.5rem;
+		padding-top: .08rem;
+		white-space: nowrap;
 	}
 
-	.fcp-pop-val {
+	.fp-detail-val {
 		font-family: var(--font-smallcaps);
-		font-size: .6rem;
+		font-size: .58rem;
 		color: var(--ink-l);
 		line-height: 1.45;
+		display: flex;
+		flex-direction: column;
+		gap: .1rem;
 	}
 
-	.fcp-pop-trow {
+	.fp-detail-trow {
 		display: flex;
 		gap: .45rem;
 		align-items: baseline;
-		margin-bottom: .1rem;
-
-		&:last-child { margin-bottom: 0; }
 	}
 
-	.fcp-pop-siglen {
+	.fp-detail-siglen {
 		font-family: var(--font-mono);
-		font-size: .6rem;
+		font-size: .58rem;
 		color: var(--ink);
 		font-weight: 600;
 		flex-shrink: 0;
-		min-width: 5.5ch;
+		min-width: 5ch;
 	}
 
-	.fcp-pop-tlabel {
+	.fp-detail-tlabel {
 		font-family: var(--font-smallcaps);
-		font-size: .55rem;
+		font-size: .54rem;
 		color: var(--ink-f);
 		line-height: 1.35;
 	}
 
-	.fcp-pop-krow {
+	.fp-detail-krow {
 		font-family: var(--font-mono);
-		font-size: .55rem;
+		font-size: .52rem;
 		color: var(--ink-l);
 		line-height: 1.6;
+	}
+
+	.fp-detail-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: .35rem;
+		padding-top: .32rem;
+		border-top: 1px solid color-mix(in srgb, var(--border) 40%, transparent);
+	}
+
+	.fp-detail-btn {
+		font-family: var(--font-mono);
+		font-size: .52rem;
+		padding: 2px 8px;
+		border-radius: 1px;
+		text-decoration: none;
+		transition: background .1s, color .1s;
+		border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
+		background: color-mix(in srgb, var(--gold) 14%, var(--parch));
+		color: var(--ink-l);
+
+		&:hover {
+			background: color-mix(in srgb, var(--gold) 28%, var(--parch));
+			color: var(--ink);
+		}
+
+		&.fp-detail-btn--tr {
+			border-color: color-mix(in srgb, var(--border) 80%, transparent);
+			background: color-mix(in srgb, var(--parch-d) 80%, var(--parch));
+
+			&:hover {
+				background: var(--parch-d);
+				color: var(--ink);
+			}
+		}
 	}
 
 	/* ── Mobile ─────────────────────────────────────── */
@@ -781,5 +808,9 @@
 		}
 
 		.fp-section { display: none; }
+
+		.fp-detail-key {
+			flex: 0 0 5.5rem;
+		}
 	}
 </style>

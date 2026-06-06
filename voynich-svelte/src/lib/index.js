@@ -16,11 +16,11 @@ const _compact = (/** @type {string} */ n) => n.replace(/ /g, '');
 const _pct     = (/** @type {number} */ p) => `${Math.round(p)}%`;
 
 export const STATS = {
-  version: '8.8.2',
+  version: '8.8.3',
   // Separate each change on a new line
   changelog: [
-    'Regeln übersichtlicher gestaltet',
-    'Darstellungsfehler behoben',
+    'f1v-Audit: Erstbelege korrigiert (shor, cheol, or, pol, ychol)',
+    'f1v-Audit: Leere layer/anchorFolio/evidence-Felder gefüllt (char, ckhy, dol, dair, okal, otoaiin, choky, otcho)',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.length,
