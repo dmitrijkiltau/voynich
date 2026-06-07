@@ -8,7 +8,7 @@ export const TESTED = [
   { type: 'I', pred: 'dal', heb: 'דַּל', result: '✓ Dreifach-Refrain f103r P.1', context: 'pchedal, yshdal, dal (standalone)' },
   { type: 'I', pred: 'shol · dy · … · shol', heb: 'R24-Struktur', result: '✓ f13r P.1 (Dopplungsformel)', context: 'einmaliges Emphase-Muster mit Genitiv-Brücke dy' },
   { type: 'I', pred: 'or', heb: 'אוֹר', result: '✓ f103r P.17 or·aiin (Heilungszeichen); f6v, f8r, f57r — Prognose-Abschluss', context: 'Anker: or = Licht/Heilung; f103r P.17 endet or·aiin; vgl. lor ★★★★★; R6 bestätigt (v7.4-Anker)' },
-  { type: 'I', pred: 'chaiin', heb: 'חַיִּין', result: '✓ f4r, f4v, f6r, f8v — R18-Diagnosepaar shol·chaiin, Quire A', context: 'Anker: chaiin = Leben; R18 Diagnosepaar shol·chaiin (abwägende Prognose); ★★★★' },
+  { type: 'I', pred: 'chaiin', heb: 'חַיִּין', result: '✓ f2r P.3 (Erstbeleg, H/C/F 3/3), f4r, f4v, f6r, f8v — R18-Diagnosepaar shol·chaiin, Quire A', context: 'Anker: chaiin = Leben; R18 Diagnosepaar shol·chaiin (abwägende Prognose); R43 erfüllt (f2r + f4r ≥2 Folios); ★★★★' },
   { type: 'I', pred: 'kaiim', heb: 'קַיָּם', result: '✓ f6r, f8r kaiim= (Kolophon-Abschlussformel); 10+ Belege', context: 'Anker: kaiim = gültig/beständig; R11-Schlussformel ★★★★★; f57r cphedom= (Parallelform)' },
   // ── Typ II — Post-hoc-Entdeckungen (interne Kohärenz) ─────────────────────
   { type: 'II', pred: 'chedy', heb: 'כְּדֵי', result: '✓ 22× f103r', context: 'nie mit -ody kombiniert (R5)' },

@@ -32,7 +32,26 @@
 
 | EVA | Bedeutung | Erstbeleg | Grund ★★★ | Frist | Konf. → bei Bestätigung | Status |
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-| daiidy | Kurzform/Variante zu daiindy (ohne Nun) | f3v P.2 (4/5) | Kand. (1 Folio) | bis f6r | ★★★ → ★★★★ | laufend |
+| koaiin    | wie das Auge (Var. zu kaiin/koiin) | f3v P.1 (5/5) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| ykoaiin   | er heilt wie das Auge | f3v P.1 (5/5) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| ckhol     | vollständig wie alles (Intensiv) | f3v P.1 (5/5) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| otchal    | Zeichen des Geltens / Befund-Zeichen | f3v P.5 (5/5) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| otcham    | Zeichen der Entzündung (Parallelform zu otchom) | f3v P.7 (5/5) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| qokshol   | und wie Scheol/Tod | f3v P.10 (5/5) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| okor      | auf das Licht hin (Var. zu okeor) | f3v P.2 (5/5) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| olytol    | über dem er geschwächt wird | f3v P.2 (5/5) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| shockho   | Scheol wie er / wie das Scheol davon | f3v P.11 (4/4) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| chodaly   | wie noch darüber / wie weiter heilend | f3v P.6 (4/4) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| cthodoaly | wie noch weiter darüber (Intensiv zu chodaly) | f3v P.9 (4/4) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| chodair   | wie weiteres Leuchten / wie noch Licht | f3v P.12 (4/4) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| cheeykam  | wie das Leben des Volkes | f3v P.3 (4/4) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| kcham     | wie Wärme/Entzündung (Var. zu kchom) | f3v P.12 (4/4) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| daiidy    | Kurzform/Variante zu daiindy (ohne Nun) | f3v P.2 (4/5) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| okchor    | auf die Pupille (o+k+chor-Komplex) | f3v P.2 (4/5) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| ytcheear  | er wird sein wie Heilung durch Licht (R28) | f3v P.9 (3/4) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| qokchy    | und wie Blässe | f3v P.13 (3/4) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| sheam     | welche das Volk / Gabe der Mutter | f3v P.14 (4/4) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
+| yteam     | er wird das Volk behandeln (R28) | f3v P.14 (3/4) | Kand. | bis f6r | ★★★ → ★★★★ | laufend |
 
 ## Abgelaufene Fristen
 

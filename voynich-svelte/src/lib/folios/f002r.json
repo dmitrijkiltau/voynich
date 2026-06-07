@@ -4,14 +4,6 @@
   "registerType": "Herbal (Standard-Kräuterbild, Augenwasser-Register) — {plant}-System aktiv",
   "languageClass": "Sprache A (Currier)",
   "writerHand": 1,
-  "transcribers": [
-    { "siglen": ["H", "C", "F"], "label": "P.1–P.13, n=3 Standard" },
-    { "siglen": ["U"],           "label": "L.1 (Pflanzenlabel), n=1 Stolfi-Lesung" }
-  ],
-  "consensusDenominators": [
-    "P.1–P.13: n=3 (H/C/F)",
-    "L.1: n=1 (U)"
-  ],
   "scanUrl": "https://collections.library.yale.edu/iiif/2/1006078/full/full/0/default.jpg",
   "iconographic": {
     "rules": ["R14", "R16", "R38", "R60"],
@@ -45,5 +37,81 @@
       "shol ×2 + shodaiin (Prognose)"
     ],
     "bildTextKohärenz": "Augenheilkunde-Leitterme (Augenarzt, Pupille, Licht, schwaches Augenlicht) decken sich mit der Kornblumen-Pharmakologie (Augenwasser aus Blüten). Kohärent."
+  },
+  "transcriptions": {
+    "source": "https://voynich.nu/q01/f002v_tr.txt",
+    "date": "1998-12-25",
+    "time": "06:54:39",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "kydainy.ypchol.daiin.otchal-{plant}ypchaiin.ckholsy-{plant}",
+        "C": "kydainy.ypchol.daiin.otchal-{plant}ypchaiin.ckholsy-{plant}",
+        "F": "kydainy.ypchol.daiin.otchal-{plant}ypchaiin.ckholsy-{plant}"
+      },
+      "P.2": {
+        "H": "dorchory-{plant}chkar.s-{plant}shor.cthy.cth!-",
+        "C": "dorchory-{plant}chkar.s-{plant}shor.cthy.***!-",
+        "F": "dorchory-{plant}chkar.s-{plant}shor.cthy.ctho-"
+      },
+      "P.3": {
+        "H": "qotaiin-{plant}cthey.y-{plant}chor.chy.ydy-{plant}chaiin-",
+        "C": "qotaiin-{plant}cthey.y-{plant}chor.chy.ydy-{plant}chaiin-",
+        "F": "qotaiin-{plant}cthey.y-{plant}chor.chy.ydy-{plant}chaiin-"
+      },
+      "P.4": {
+        "H": "chaindy-{plant}chtod.dy-{plant}cphy.dal!s-{plant}chokaiin.d-",
+        "C": "!*aiidy-{plant}chtod.dy-{plant}cphy.dal.s-{plant}chokaiin.d-",
+        "F": "shaiidy-{plant}chtod!dy-{plant}cphy.dal!s-{plant}chokaiin.d-"
+      },
+      "P.5": {
+        "H": "otochor.al-{plant}shodaiin-{plant}chol.!dan-{plant}ytchaiin.dan-",
+        "C": "otochor.al-{plant}shodaiin-{plant}chol.chan-{plant}ytchaiin.dan-",
+        "F": "otochor.al-{plant}shodaiin-{plant}chol.!dan-{plant}ytchaiin.dan-"
+      },
+      "P.6": {
+        "H": "saiin.daind-{plant}d!kol.sor-{plant}ytoldy-{plant}dchol.dchy.cthy-",
+        "C": "saiin.daind-{plant}d.kol.sor-{plant}ytoldy-{plant}dchol.dchy.cthy-",
+        "F": "saiin.daind-{plant}d!kol.sor-{plant}ytoldy-{plant}dchol.dchy.cthy-"
+      },
+      "P.7": {
+        "H": "shor.ckhy.daiiny-{plant}chol.dan={plant}",
+        "C": "shor.ckhy.daiiny-{plant}chol.dan={plant}",
+        "F": "shor.ckhy.daiiny-{plant}chol.dan={plant}"
+      },
+      "P.8": {
+        "H": "kydain.shaiin.qoy.s.shol.fodan-{plant}yksh.olsheey.daiildy-",
+        "C": "kydain.shaiin.qoy.s.shol.fodan-{plant}ytsh.olsheey.daiildy-",
+        "F": "kydain.shaiin.qoy.s.shol.fodan-{plant}yksh.olsheey.daiildy-"
+      },
+      "P.9": {
+        "H": "dlssho.kol.sheey.qokey.ykody.so-{plant}chol.yky.dain.daiirol-",
+        "C": "dlssho.kol.sheey.qokey.ykody.so-{plant}chol.yky.dain.daiirdl-",
+        "F": "dlssho.kol.sheey.qokey.ykody.so-{plant}chol.yky.dain.daiirol-"
+      },
+      "P.10": {
+        "H": "qoky.cholaiin.shol.sheky.daiin-{plant}cthey.keol.s!aiin.saiin-",
+        "C": "qoky.cholaiin.shol.sheky.daiin-{plant}cthey.keol.s!aiin.saiin-",
+        "F": "qoky.cholaiin.shol.sheky.daiin-{plant}cthey.keol.s.aiin.saiin-"
+      },
+      "P.11": {
+        "H": "ychain.dal.chy.dalor.shan.dan-{plant}olsaiin.sheey.ckhor-",
+        "C": "ychain.dal.chy.dalor.shan!!!!-{plant}**saiin.sheey.ckhor-",
+        "F": "ychain.dal.chy.dalor.shan.dan-{plant}olsaiin.sheey.ckhor-"
+      },
+      "P.12": {
+        "H": "okol.chy.chor.cthor.yor.an.chan-{plant}saiin.chety.chyky.sal-",
+        "C": "okol.chy.chor.cthor.yor.an.chan-{plant}saiin.chety.chyky.sal-",
+        "F": "okol.chy.chor.cthor.yor.an.chan-{plant}saiin.chety.chyky.sal-"
+      },
+      "P.13": {
+        "H": "sho.ykeey.chey.daiin.chcthy=",
+        "C": "sho.ykeey.chey.daiin.chcthy=",
+        "F": "sho.ykeey.chey.daiin.chcthy="
+      },
+      "L.1": {
+        "U": "ytoain="
+      }
+    }
   }
 }

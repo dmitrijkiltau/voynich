@@ -1,6 +1,7 @@
 <script>
 	import { FOLIO_PAGES, FOLIO_DATA } from '$lib';
 	import { slide } from 'svelte/transition';
+	import { SvelteMap } from 'svelte/reactivity';
 
 	let open = $state(false);
 
@@ -125,6 +126,71 @@
 		return m ? `f${m[1].padStart(3, '0')}${m[2]}` : pageId;
 	}
 
+	/** @param {Record<string, Record<string, string>>} lines */
+	function deriveTranscribersInfo(lines) {
+		const paragraphs = Object.keys(lines);
+		const total = paragraphs.length;
+		/** @type {Record<string, string[]>} */
+		const siglenParas = {};
+		for (const [para, variants] of Object.entries(lines)) {
+			for (const s of Object.keys(variants)) { (siglenParas[s] ??= []).push(para); }
+		}
+		/** @param {string} text @returns {string[]} */
+		function tokenize(text) {
+			return text.replace(/\{[^}]+\}/g, '.').replace(/[!\-=]/g, '.').split('.').map(t => t.trim()).filter(Boolean);
+		}
+		/** @type {Record<string, Set<string>>} */
+		const divTokens = {};
+		for (const variants of Object.values(lines)) {
+			const entries = Object.entries(variants);
+			if (entries.length < 2) continue;
+			const tok = Object.fromEntries(entries.map(([s, text]) => [s, tokenize(text)]));
+			const maxLen = Math.max(...Object.values(tok).map(t => t.length));
+			for (let i = 0; i < maxLen; i++) {
+				/** @type {Record<string, string[]>} */
+				const votes = {};
+				for (const [s, tokens] of Object.entries(tok)) { const t = tokens[i] ?? ''; (votes[t] ??= []).push(s); }
+				const ranked = Object.entries(votes).sort((a, b) => b[1].length - a[1].length);
+				if (ranked.length < 2) continue;
+				const majorityToken = ranked[0][0];
+				for (const [token, sigs] of ranked.slice(1)) {
+					if (token && token !== majorityToken) { for (const s of sigs) (divTokens[s] ??= new Set()).add(token); }
+				}
+			}
+		}
+		/** @type {Map<string, { siglen: string[], paras: string[] }>} */
+		const groups = new SvelteMap();
+		for (const [s, paras] of Object.entries(siglenParas)) {
+			const key = paras.join('|');
+			if (!groups.has(key)) {
+				groups.set(key, { siglen: [], paras });
+			}
+			const group = groups.get(key);
+			group.siglen.push(s);
+			groups.set(key, group);
+		}
+		const sorted = [...groups.values()].sort((a, b) => b.paras.length - a.paras.length);
+		const transcribers = sorted.map(({ siglen, paras }) => {
+			siglen.sort();
+			const isAll = paras.length === total;
+			const paraStr = isAll ? `${paras[0]}–${paras[total - 1]}` : paras.join('/');
+			const div = [...new Set(siglen.flatMap(s => [...(divTokens[s] ?? [])]))].slice(0, 5);
+			let label = isAll ? `${paraStr} (alle Paragraphen), n=${siglen.length}` : `${paraStr} (${paras.length} von ${total})`;
+			if (div.length) label += ` — abweichend: ${div.join(', ')}`;
+			return { siglen, label };
+		});
+		const consensusDenominators = sorted.map(({ siglen, paras }) => {
+			siglen.sort();
+			const isAll = paras.length === total;
+			const paraStr = isAll ? `${paras[0]}–${paras[total - 1]}` : paras.join('/');
+			const hasDivergences = siglen.some(s => divTokens[s]?.size > 0);
+			let line = `${paraStr}: n=${siglen.length} (${siglen.join('/')})`;
+			if (hasDivergences) line += ' — Divergenzen erkannt';
+			return line;
+		});
+		return { transcribers, consensusDenominators };
+	}
+
 	const ST_LABEL = /** @type {Record<string,string>} */ ({
 		done: 'Vollübersetzung', confirmed: 'analysiert', partial: 'Anker / Teilanalyse', none: 'nicht analysiert',
 	});
@@ -209,6 +275,10 @@
             {@const ico = folioDetail?.iconographic ?? null}
             {@const slug = folioSlug(activeChip.pageId)}
             {@const m = { ...folioDetail, ...d }}
+            {@const _lines = folioDetail?.transcriptions?.lines ?? null}
+            {@const _derived = _lines ? deriveTranscribersInfo(_lines) : null}
+            {@const _transcribers = _derived?.transcribers ?? []}
+            {@const _cds = _derived?.consensusDenominators ?? []}
             <div class="fp-detail fp-detail--{q.hue}" transition:slide={{ duration: 180 }}>
 
               <!-- Header: id · badge · actions · close -->
@@ -250,11 +320,11 @@
                       <span class="fp-detail-val">{m.writerHand}</span>
                     </div>
                   {/if}
-                  {#if m?.transcribers?.length}
+                  {#if _transcribers.length}
                     <div class="fp-detail-field">
                       <span class="fp-detail-key">Transkriptoren</span>
                       <span class="fp-detail-val">
-                        {#each m.transcribers as t (t.siglen.join('-'))}
+                        {#each _transcribers as t (t.siglen.join('-'))}
                           <span class="fp-detail-trow">
                             <span class="fp-detail-siglen">{t.siglen.join(' · ')}</span>
                             <span class="fp-detail-tlabel">{t.label}</span>
@@ -263,11 +333,11 @@
                       </span>
                     </div>
                   {/if}
-                  {#if m?.consensusDenominators?.length}
+                  {#if _cds.length}
                     <div class="fp-detail-field">
                       <span class="fp-detail-key">Konsens-Nenner</span>
                       <span class="fp-detail-val">
-                        {#each m.consensusDenominators as k (k)}
+                        {#each _cds as k (k)}
                           <span class="fp-detail-krow">· {k}</span>
                         {/each}
                       </span>
@@ -856,12 +926,6 @@
 		}
 	}
 
-	.fp-detail-field {
-		display: flex;
-		gap: .55rem;
-		align-items: flex-start;
-	}
-
 	.fp-detail-key {
 		font-family: var(--font-smallcaps);
 		font-size: .64rem;
@@ -875,7 +939,7 @@
 
 	.fp-detail-val {
 		font-family: var(--font-mono);
-		font-size: .76rem;
+		font-size: .72rem;
 		color: var(--ink-l);
 		line-height: 1.45;
 		display: flex;
@@ -903,6 +967,7 @@
 		font-size: .72rem;
 		color: var(--ink-f);
 		line-height: 1.35;
+    word-break: break-word;
 	}
 
 	.fp-detail-krow {
@@ -1054,7 +1119,7 @@
 	}
 
 	.fp-detail-r60-val {
-		font-family: var(--font-smallcaps);
+		font-family: var(--font-mono);
 		font-size: .64rem;
 		color: var(--ink-f);
 		line-height: 1.4;

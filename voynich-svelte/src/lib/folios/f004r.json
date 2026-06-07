@@ -1,0 +1,105 @@
+{
+  "folio": "f4r",
+  "status": "confirmed",
+  "registerType": "Herbal (Standard Kräuterbild) — {plant}-System aktiv · Thema: Auge / Pupille / Wärme / Atemweg / Leben–Scheol-Achse",
+  "languageClass": "Sprache A (Currier)",
+  "writerHand": 1,
+  "scanUrl": "https://collections.library.yale.edu/iiif/2/1006082/full/full/0/default.jpg",
+  "iconographic": {
+    "rules": ["R14", "R60"],
+    "illustrationType": "Eine zentrierte Pflanze, rechte Seitenhälfte, ganzseitig. Zwei Textblöcke in der oberen Seitenhälfte. Block 1 (P.1–P.5): ~3,8 Zeilen, links- und rechtsbündig, einmal durch Blüten unterbrochen. Block 2 (P.6–P.13): ~8,6 Zeilen, linksbündig, folgt der Pflanzenkontour. Stolfi: “very normal, exceptionally well-drawn.”",
+    "plantMorphology": {
+      "radix": "Breite, weitverzweigte Wurzelstruktur unten, hell/unpigmentiert; mehrere fingerartige Ausläufer nach allen Seiten. — textfrei (R60 ✓, R14 ✓)",
+      "caulis": "Kräftiger Einzelstängel, aus der Mitte aufsteigend, ab ca. Höhe 60% in 3–4 Hauptäste übergehend, die sich weiter verzweigen. Parallel zu Stängel/Ästen liegen die Textblöcke (CAULIS-Korrelation ✓).",
+      "folia": "Sehr kleine, paarige, zweifarbige Blättchen (grün außen, rot/orange innen) in dichter Anordnung an allen Ästen — charakteristisch für Calluna/Erica. Stachelfrei, flach anliegend. — textfrei (FOLIUM-Zone, R60 Korollar 3 ★★★★★ ✓)",
+      "flosFructus": "Kelch- oder glockenförmige Blüten (hell/weiß, unpigmentiert) an den Zweigspitzen. Oberer Textblock (P.1–P.5) korreliert mit dem Blütenbereich (FLOS-Zone). {plant}-Marker in P.1 liegt direkt bei einem Seitenast mit Blüten. — Textsignal-Korrelation: FLOS ✓",
+      "coloring": "green, red (Reeds) — Rot als Illustrationsfarbe für Blattzweifarbigkeit (nicht pharmakologisches Terracotta-Pigment, vgl. f3r-Befund v8.4)"
+    },
+    "botanicalIdentification": [
+      "Calluna vulgaris (Besenheide) oder Erica sp. — Quelle: Quire-A-Retroanalyse v8.4 + Bildanalyse, Konf. ★★★",
+      "Erica carnea (Winterheide) ★★★ (sehr ähnliche Blattstruktur und Blütenform)",
+      "Thymus vulgaris (Thymian) ★★ (ähnliche kleine Blattpaare, aber Blüten anders)",
+      "Pharmakologie: Calluna/Erica wird seit der Antike als diuretisches, antiseptisches und Atemwegsmittel verwendet. Mittelalterliche Heilkräuterbücher: Heide-Extrakte gegen Harnsteinleiden, Lungenentzündung, Fieber. Gut vereinbar mit der Semantik: chor (Pupille/Atemweg-Öffnung), choraiin (Augenheilung), chaiin (Leben), Scheol-Gegenpol-Muster."
+    ],
+    "layoutStructure": "2 Textblöcke, 13 EVA-Paragraphen (P.1–P.13). P.4 endet cthy={plant} (Kolophon-Abschluss Block 1). P.13 endet cthey={plant} (Kolophon-Abschluss Block 2). {plant}-Marker: 13 (je 1× pro Paragraph, teils zeilenmittig). P.2 besondere Struktur: chaiin-{plant}!s-{plant}choraiin — zwei unmittelbar aufeinander folgende {plant}-Marker.",
+    "r60Status": "RADIX-Zone textfrei ★★★★★ ✓. FOLIUM-Zone (zweifarbige Blättchen) textfrei ★★★★★ ✓. FLOS-Zone (Zweigspitzen mit Glockenblüten): Textsignal P.1–P.5 ✓. Layout-Typ B/C (Retroanalyse v8.4)."
+  },
+  "transcriptions": {
+    "source": "https://voynich.nu/q01/f004r_tr.txt",
+    "date": "1998-10-09",
+    "time": "00:56:39",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "kodalchy.chpady.sheol.ol.sheey.qotey-{plant}doiin.chor.ytoy-",
+        "C": "kodalchy.chpady.sheol.ol.sheey.qotey-{plant}doiin.chor.ytoy-",
+        "F": "kodalchy.chpady.sheol.ol.sheey.qotey-{plant}doiin.chor.ytoy-"
+      },
+      "P.2": {
+        "H": "dchor.chol.shol.cthol.shtchy.chaiin-{plant}!s-{plant}choraiin.chom-",
+        "C": "dchor.shol.shol.cthol.shtchy.chaiin-{plant}*s-{plant}choraiin.chom-",
+        "F": "dchor.chol.shol.cthol.shtchy.chaiin-{plant}!s-{plant}choraiin.chom-"
+      },
+      "P.3": {
+        "H": "otchol.chol.chy.chaiin.qotaiin-{plant}daiin.shain-",
+        "C": "otchol.chol.chy.chaiin.qotaiin-{plant}daiin.shain-",
+        "F": "otchol.chol.chy.chaiin.qotaiin-{plant}daiin.shain-"
+      },
+      "P.4": {
+        "H": "qotchol.chy.yty.daiin.!okaiin.cthy={plant}",
+        "C": "qotchol.chy.yty.daiin.qokaiin.cthy={plant}",
+        "D": "qotchol.cha.yty.daiin.*okaiin.cthy={plant}",
+        "F": "qotchol.chy.yty.daiin.!okaiin.cthy={plant}"
+      },
+      "P.5": {
+        "H": "pydaiin.qotchy.dy.tydy-{plant}",
+        "C": "pydaiin.qotchy.!*!tydy-{plant}",
+        "D": "pydaiin.qotchy.!*!tady-{plant}",
+        "F": "pydaiin.qotchy.dy.tydy-{plant}"
+      },
+      "P.6": {
+        "H": "chor.shy!tchy.dy.tcheay-{plant}",
+        "C": "chor.shy!tchy.dy!*cheey-{plant}",
+        "D": "chor.shy!tchy.dy!tch!ay-{plant}",
+        "F": "chor.shy.tchy.dy.tcheey-{plant}"
+      },
+      "P.7": {
+        "H": "qotaiin.cthol.daiin.cthom-{plant}",
+        "C": "qotoiin.cthol.daiin.cthom-{plant}",
+        "D": "qotaiin.cthol.daiin.cthom-{plant}",
+        "F": "qotaiin.cthol.daiin.cthom-{plant}"
+      },
+      "P.8": {
+        "H": "shor.shol.shol.cthy.cpholdy-{plant}",
+        "C": "shor.shol.shol.cthy.cpholdy-{plant}",
+        "F": "chor.chol.shol.cthy.cpholdy-{plant}"
+      },
+      "P.9": {
+        "H": "daiin.ckhochy.tchy.koraiin-{plant}",
+        "C": "daiin.ckhochy.tchy.koraiin-{plant}",
+        "F": "daiin.ckhochy.tchy.koraiin-{plant}"
+      },
+      "P.10": {
+        "H": "odal.shor.shyshol.cphaiin-{plant}",
+        "C": "odal.shor.shyshol.cphaiin-{plant}",
+        "F": "odal.shor.shyshol.cphaiin-{plant}"
+      },
+      "P.11": {
+        "H": "qotchoiin.sheyr.qoty-{plant}",
+        "C": "qotchoiin.shear.qoty-{plant}",
+        "D": "qotchoiin.sheor.qoty-{plant}",
+        "F": "qotchoiin.shear.qoty-{plant}"
+      },
+      "P.12": {
+        "H": "soiin.chaiin.chaiin-{plant}",
+        "C": "soiin.chaiin.chaiin-{plant}",
+        "F": "soiin.chaiin.chaiin-{plant}"
+      },
+      "P.13": {
+        "H": "daiin.cthey={plant}",
+        "C": "daiin.cthey={plant}",
+        "F": "daiin.cthey={plant}"
+      }
+    }
+  }
+}

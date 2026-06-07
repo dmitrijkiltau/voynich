@@ -4,15 +4,7 @@
   "registerType": "Herbal (Standard Kräuterbild) — {plant}-System aktiv · Thema: Blut / Wärme / Scheol / Diagnose",
   "languageClass": "Sprache A (Currier)",
   "writerHand": 1,
-  "transcribers": [
-    { "siglen": ["H", "C", "F"], "label": "P.1–P.20 vollständig" },
-    { "siglen": ["D"], "label": "P.4 (chaj statt cham bei Token 5), kein vollständiger Satz" }
-  ],
-  "consensusDenominators": [
-    "P.1–P.20: n=3 (H/C/F)",
-    "Divergenzen dokumentiert in II.3"
-  ],
-  "scanUrl": "https://collections.library.yale.edu/catalog/2002046",
+  "scanUrl": "https://collections.library.yale.edu/iiif/2/1006080/full/full/0/default.jpg",
   "iconographic": {
     "rules": ["R14", "R60"],
     "illustrationType": "Eine zentrierte Pflanze, rechts am Rand anliegend, ganzseitig.",
@@ -45,5 +37,114 @@
       "sam (P.17) — Arznei (Erstbeleg)"
     ],
     "bildTextKohärenz": "Blut/Wärme-Leitterme korrespondieren direkt mit der Pharmakologie von Rumex sanguineus (blutstillend, kühlend, Fieberbehandlung). Scheol-Signale am Textende (P.9, P.11, P.15) folgen dem Standard-Prognose-Schema. Kohärent."
+  },
+  "transcriptions": {
+    "source": "https://voynich.nu/q01/f003r_tr.txt",
+    "date": "1998-12-06",
+    "time": "13:05:41",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "tsheos.qopal.chol.cthol.daimm-",
+        "C": "tsheos.qopal.chol.cthol.daimg-",
+        "F": "tsheos.qopal.chol.cthol.daimm-"
+      },
+      "P.2": {
+        "H": "ycheor.chor.dam.qotcham.cham-{plant}",
+        "C": "ycheor.chor.dam.qotchag.cham-{plant}",
+        "F": "ycheor.chor.dam.qotcham.cham-{plant}"
+      },
+      "P.3": {
+        "H": "ochor.qocheor.chol.daiin.cthy-{plant}",
+        "C": "ochar.qacheor.chol.daiin.cthy-{plant}",
+        "F": "ochor.qocheor.chol.daiin.cthy-{plant}"
+      },
+      "P.4": {
+        "H": "schey.chor.chal.cham.cham.cho-{plant}",
+        "C": "schey.chor.chal.cham.chaj.cho-{plant}",
+        "D": "schey.chor.chal.chaj.chaj.cho-{plant}",
+        "F": "schey.chor.chal.cham.cham.cho-{plant}"
+      },
+      "P.5": {
+        "H": "qokol.chololy.s.cham.cthol-{plant}",
+        "C": "qokol.chololy.s.cham.cthol-{plant}",
+        "F": "qokol.chololy.s.cham.cthol-{plant}"
+      },
+      "P.6": {
+        "H": "ychtaiin.chor.cthom.otal.dam-{plant}",
+        "C": "ychtaiin.chor.cthom.otol!dam-{plant}",
+        "F": "ychtaiin.chor.cthom.otal.dam-{plant}"
+      },
+      "P.7": {
+        "H": "otchol.qodaiin.chom.shom.damo-{plant}",
+        "C": "otchol.qodaiin.chom.shom.damo-{plant}",
+        "F": "otchol.qodaiin.chom.shom.damo-{plant}"
+      },
+      "P.8": {
+        "H": "ysheor.chor.chol.oky.damo-{plant}",
+        "C": "ysheor.chor.chol.oky.dago-{plant}",
+        "F": "ysheor.chor.chol.oky.damo-{plant}"
+      },
+      "P.9": {
+        "H": "sho.*or.sheoldam.otchody.ol-{plant}",
+        "C": "sho.aor.sheoldaj.otchody.ol-{plant}",
+        "F": "sho.*or.sheoldam.otchody.ol-{plant}"
+      },
+      "P.10": {
+        "H": "ydas.chol.cthom=",
+        "C": "ydas.chol!cthom=",
+        "F": "ydar.chol.cthom="
+      },
+      "P.11": {
+        "H": "pcheol.shol.sols.sheol.shey-",
+        "C": "pcheol.shol.sols.sheol.shey-",
+        "F": "pcheol.shol.sols.sheol.shey-"
+      },
+      "P.12": {
+        "H": "okadaiin.qokchor.qoschodam.octhy-{plant}",
+        "C": "okadaiin.qokchor.qoschodam.octhy-{plant}",
+        "F": "okadaiin.qokchor.qoschodam.octhy-{plant}"
+      },
+      "P.13": {
+        "H": "qokeey.qot.shey.qokody.qokchey.cheody-{plant}",
+        "C": "qokeey.qot.shey.qokody.qokshey.cheody-{plant}",
+        "F": "qokeey.qot!shey.qokody.qokchey.cheody-{plant}"
+      },
+      "P.14": {
+        "H": "chor.qodair.okeey.qokeey=",
+        "C": "chor.qodair.okeey.qokeey=",
+        "F": "chor.qodair.okeey.qokeey="
+      },
+      "P.15": {
+        "H": "tsheoarom.shor.or.chor.olchsy.chom.otchom-{plant}oporar-",
+        "C": "tsheoarom.shor.or.chor.olchsy.chom.otchom-{plant}oporar-",
+        "F": "tsheoarom.shor.or.chor.ofchsy.chom.otchom-{plant}oporar-"
+      },
+      "P.16": {
+        "H": "oteol.chol.s.cheol.ekshy.qokeom.qokol.daiin-{plant}soleeg-",
+        "C": "oteol.chol.s.cheol.ekshy.qokeom.qokol.daiin-{plant}soleeg-",
+        "F": "oteol.chol.s.cheol.ekshy.qokeom.qokol.daiin-{plant}soleem-"
+      },
+      "P.17": {
+        "H": "soeom.okeom.yteody.qokeeo.dal.sam=",
+        "C": "soeom.okeom.yteody.qokeeo!dal.sam=",
+        "F": "soeom.okeom.yteody.qokeeo.dal.sam="
+      },
+      "P.18": {
+        "H": "pcheoldom.shodaiin.qopchor.qopol.opchol.qoty-{plant}otolom-",
+        "C": "pcheoldom.shodaiin.qopchor.qopol.opchol.qoty-{plant}otolom-",
+        "F": "pcheoldom.shodaiin.qopchor.qopol.opchol.qoty-{plant}otolom-"
+      },
+      "P.19": {
+        "H": "otchor.ol.cheor.qoeor.dair.qoteol.qosaiin-{plant}chor.cthy-",
+        "C": "otchor.ol!cheor.qoeor.dair.qoteol.qosaiin-{plant}chor.cthy-",
+        "F": "otchor.ol.cheor.qoeor.dair.qoteol.qosaiin-{plant}chor.cthy-"
+      },
+      "P.20": {
+        "H": "ycheor.chol.odaiin.chol.s.aiin.okol!or.am={plant}",
+        "C": "ycheor.chol.odaiin.chol.s.aiin.okol.or.am={plant}",
+        "F": "ycheor.chol.odaiin.chol.s!aiin.okol!or.am={plant}"
+      }
+    }
   }
 }
