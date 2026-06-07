@@ -1,7 +1,5 @@
 <script>
 	import { STATS, isConf5, COMPARISON, FOLIOS, CONCLUSION } from '$lib';
-
-	const plant = "{plant}";
 </script>
 
 <div class="sprache-a">
@@ -13,7 +11,7 @@
 					<tr><th>Merkmal</th><th>Sprache B (f57r, f103r)</th><th>Sprache A ({STATS.foliosA})</th></tr>
 				</thead>
 				<tbody>
-					{#each COMPARISON as c}
+					{#each COMPARISON as c (c.feature)}
 						<tr>
 							<td class="feature-cell">{c.feature}</td>
 							<td class="note-cell">{c.langB}</td>
@@ -32,7 +30,7 @@
 				<tr><th>Folio</th><th>Pflanze</th><th>Textsignal</th><th>Konf.</th></tr>
 			</thead>
 			<tbody>
-				{#each FOLIOS as f}
+				{#each FOLIOS as f (f.folio)}
 					<tr>
 						<td class="folio-cell">{f.folio}</td>
 						<td>{f.plant}</td>
@@ -48,7 +46,7 @@
 		<div class="box-title">{CONCLUSION.title}</div>
 		<p class="conclusion-intro">{CONCLUSION.intro}</p>
 		<ul>
-			{#each CONCLUSION.items as item}
+			{#each CONCLUSION.items as item (item)}
 				<li>{@html item}</li>
 			{/each}
 		</ul>

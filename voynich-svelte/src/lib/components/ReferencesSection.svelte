@@ -4,13 +4,13 @@
 </script>
 
 <div class="references">
-	{#each REFS as ref}
+	{#each REFS as ref (ref.id)}
 		<div>
 			<h3>{ref.id} · {ref.folio} — {ref.title}{#if ref.badge} <span class="new-badge">{ref.badge}</span>{/if}</h3>
 			<div class="box {ref.color} ref-card">
 				{#if ref.sides}
 					<div class="antonym-grid">
-						{#each ref.sides as side}
+						{#each ref.sides as side (side.eva)}
 							<div>
 								<div class="layer-eva">{side.eva}</div>
 								<div class="layer-heb">{side.heb}</div>

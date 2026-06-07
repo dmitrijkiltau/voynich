@@ -19,7 +19,7 @@
 	<div class="box hl updates-box hidden-print">
 		<div class="box-title">Aufstufungen &amp; Absorptionen — Versionshistorie</div>
 		<ul>
-			{#each RULES_CHANGELOG as entry}
+			{#each RULES_CHANGELOG as entry, index (index)}
 				<li>{@html entry}</li>
 			{/each}
 		</ul>
@@ -37,7 +37,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				{#each RULES as r}
+				{#each RULES as r (r.id)}
 					<tr id="rule-{r.id}">
 						<td class="rule-id">{r.id}</td>
 						<td class="rule-focus">{@html r.focus}</td>

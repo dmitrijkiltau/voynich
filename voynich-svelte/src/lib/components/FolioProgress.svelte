@@ -170,7 +170,7 @@
 	<div id="fp-body" class="fp-body" class:open>
     <div class="fp-body-inner">
       <div class="fp-quires">
-        {#each quires as q, qi}
+        {#each quires as q, qi (q.q)}
           <div class="fp-row fp-row--{q.hue}">
             <!-- Label column -->
             <div class="fp-label">
@@ -188,7 +188,7 @@
 
             <!-- Folio chips -->
             <div class="fp-chips">
-              {#each q.pages as p}
+              {#each q.pages as p (p.id)}
                 <span
                   class="fpc-chip fpc-chip--{p.st}"
                   class:fpc-chip--active={activeChip?.pageId === p.id}
@@ -254,7 +254,7 @@
                     <div class="fp-detail-field">
                       <span class="fp-detail-key">Transkriptoren</span>
                       <span class="fp-detail-val">
-                        {#each m.transcribers as t}
+                        {#each m.transcribers as t (t.siglen.join('-'))}
                           <span class="fp-detail-trow">
                             <span class="fp-detail-siglen">{t.siglen.join(' · ')}</span>
                             <span class="fp-detail-tlabel">{t.label}</span>
@@ -267,7 +267,7 @@
                     <div class="fp-detail-field">
                       <span class="fp-detail-key">Konsens-Nenner</span>
                       <span class="fp-detail-val">
-                        {#each m.consensusDenominators as k}
+                        {#each m.consensusDenominators as k (k)}
                           <span class="fp-detail-krow">· {k}</span>
                         {/each}
                       </span>
@@ -283,7 +283,7 @@
                     <!-- Rule pills -->
                     {#if ico.rules?.length}
                       <div class="fp-detail-rules">
-                        {#each ico.rules as r}
+                        {#each ico.rules as r (r)}
 													<a class="fp-detail-rule" href="#rule-{r}" onclick={(e) => e.stopPropagation()}>{r}</a>
                         {/each}
                         <span class="fp-detail-ico-section-label">Ikonographischer Abgleich</span>
@@ -301,7 +301,7 @@
                       <div class="fp-detail-ico-field">
                         <span class="fp-detail-ico-key">Pflanzenmorphologie</span>
                         <div class="fp-detail-morph">
-                          {#each Object.entries(ico.plantMorphology) as [key, val]}
+                          {#each Object.entries(ico.plantMorphology) as [key, val] (key)}
                             <div class="fp-detail-morph-row">
                               <span class="fp-detail-morph-key">{MORPH_LABELS[key] ?? key.toUpperCase()}</span>
                               <span class="fp-detail-morph-val">{val}</span>
@@ -315,7 +315,7 @@
                       <div class="fp-detail-ico-field">
                         <span class="fp-detail-ico-key">Botanik (extern)</span>
                         <div class="fp-detail-ico-bullets">
-                          {#each ico.botanicalIdentification as item}
+                          {#each ico.botanicalIdentification as item (item)}
                             <span class="fp-detail-ico-bullet">· {item}</span>
                           {/each}
                         </div>
@@ -349,7 +349,7 @@
                           <div class="fp-detail-ico-field">
                             <span class="fp-detail-ico-key">Leitterme</span>
                             <div class="fp-detail-ico-bullets">
-                              {#each ts.leitterme as item}
+                              {#each ts.leitterme as item (item)}
                                 <span class="fp-detail-ico-bullet">· {item}</span>
                               {/each}
                             </div>

@@ -3,7 +3,7 @@
 </script>
 
 <div class="mgrid">
-	{#each MAPPING as m}
+	{#each MAPPING as m (m.eva)}
 		<div
 			class="mcell"
 			role="button"

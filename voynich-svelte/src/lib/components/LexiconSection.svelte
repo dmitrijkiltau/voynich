@@ -168,7 +168,7 @@
 	</div>
 
 	<div class="lexicon">
-		{#each TABLES as table}
+		{#each TABLES as table ('table-' + table.id)}
 			{@const rows = rowsFor(table)}
 			<div id={table.id} class="lexicon-table">
 				<h3>
@@ -184,7 +184,7 @@
 					<div class="chips-bar hidden-print">
 						<div>
 							<span class="chips-label">Präfix:</span>
-							{#each GRAMMAR_PREFIXES as pfx}
+							{#each GRAMMAR_PREFIXES as pfx ('pfx-' + pfx.eva)}
 								<button
 									type="button"
 									class="chip"
@@ -197,7 +197,7 @@
 
 						<div>
 							<span class="chips-label">Suffix:</span>
-							{#each GRAMMAR_SUFFIXES as sfx}
+							{#each GRAMMAR_SUFFIXES as sfx ('sfx-' + sfx.eva)}
 								<button
 									type="button"
 									class="chip"
@@ -214,7 +214,7 @@
 					<table class="dt">
 						<thead>
 							<tr>
-								{#each table.columns as col}
+								{#each table.columns as col ('col-' + col.key)}
 									{@const s = sortStates[table.id]}
 									<th
 										data-sortable
@@ -237,7 +237,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							{#each rows as entry}
+							{#each rows as entry, i ('entry-' + entry.eva + '-' + i)}
 								<tr
 									data-clickable
 									title="In Eingabe einfügen: {entry.eva}"
@@ -245,14 +245,14 @@
 									onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onInsert(entry.eva)}
 									tabindex="0"
 								>
-									{#each table.columns as col}
+									{#each table.columns as col ('entry-col-' + col.key)}
 										<td class={col.key === 'evidence' ? 'notes-cell' : col.key === 'anchorFolio' ? 'part-cell' : col.key === 'rules' ? 'rules-cell' : ''}>
 											{#if col.key === 'confidenceStars'}
 												<span class={entry.confidenceStars === 5 ? 'conf5' : 'conf'}>{cellValue(entry, col.key)}</span>{#if entry.candidate}<span class="cand-badge">Kand.</span>{/if}
 											{:else if col.key === 'rules'}
 												{@const rules = getLexiconRules(entry)}
 												{#if rules.length}
-													{#each rules as rule, i}
+													{#each rules as rule, i ('rule-' + rule)}
 														{#if i > 0}<span class="rules-sep">, </span>{/if}<a class="rule-link" href="#rule-{rule}" onclick={(e) => e.stopPropagation()}>{rule}</a>
 													{/each}
 												{:else}
@@ -262,7 +262,7 @@
 												<span class="eva">{cellValue(entry, col.key)}</span>
 											{:else if col.key === 'morph'}
 												{@const cellValueArr = cellValue(entry, col.key).split(' + ')}
-												{#each cellValueArr as part, i}
+												{#each cellValueArr as part, i ('part-' + part + '-' + i)}
 													<span class="eva part-cell">{part}</span>
 													{#if i < cellValueArr.length - 1}
 														<span class="rules-sep">+&nbsp;</span>

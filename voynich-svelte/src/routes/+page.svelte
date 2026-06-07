@@ -170,7 +170,7 @@ import { MAPPING, STATS } from '$lib';
 		</div>
 
 		<nav class="sidebar-nav">
-			{#each NAV_ITEMS as item}
+			{#each NAV_ITEMS as item (item.id)}
 				<button
 					class="nav-item"
 					class:active={activeSection === item.id}
@@ -223,7 +223,7 @@ import { MAPPING, STATS } from '$lib';
 		<nav class="toc" aria-label="Inhaltsangabe">
 			<h2 class="toc-title">Inhaltsangabe</h2>
 			<ol class="toc-list">
-				{#each NAV_ITEMS as item}
+				{#each NAV_ITEMS as item (item.id)}
 					<li class:toc-dim={item.id === 'tool'}>{item.label}</li>
 				{/each}
 			</ol>

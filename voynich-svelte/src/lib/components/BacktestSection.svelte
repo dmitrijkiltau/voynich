@@ -29,7 +29,7 @@
 	</div>
 
 	<div class="stat-bars">
-		{#each STATS as s}
+		{#each STATS as s (s.label)}
 			<div class="stat-row">
 				<span class="stat-label">{s.label}</span>
 				<div class="stat-bar-wrap">
@@ -52,7 +52,7 @@
 				<tr><th>Vorhersage</th><th>Hebräisch</th><th>Befund</th><th>Kontext</th></tr>
 			</thead>
 			<tbody>
-				{#each typeI as t}
+				{#each typeI as t (t.pred)}
 					<tr>
 						<td><span class="eva">{t.pred}</span></td>
 						<td><span class="heb-sm">{t.heb}</span></td>
@@ -72,7 +72,7 @@
 				<tr><th>Vorhersage</th><th>Hebräisch</th><th>Befund</th><th>Kontext</th></tr>
 			</thead>
 			<tbody>
-				{#each typeII as t}
+				{#each typeII as t (t.pred)}
 					<tr class:not-found={t.result.startsWith('✗')}>
 						<td><span class="eva">{t.pred}</span></td>
 						<td><span class="heb-sm">{t.heb}</span></td>

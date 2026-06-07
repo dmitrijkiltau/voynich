@@ -22,7 +22,7 @@
         </tr>
       </thead>
       <tbody>
-        {#each GRAMMAR_PREFIXES as row}
+        {#each GRAMMAR_PREFIXES as row (row.eva)}
           <tr
             class:row-filterable={!!onLinkFilter}
             title={onLinkFilter ? `Im Lexikon nach „${row.eva}" filtern` : undefined}
@@ -56,7 +56,7 @@
         </tr>
       </thead>
       <tbody>
-        {#each GRAMMAR_SUFFIXES as row}
+        {#each GRAMMAR_SUFFIXES as row (row.eva)}
           <tr
             class:row-filterable={!!onLinkFilter}
             title={onLinkFilter ? `Im Lexikon nach „${row.eva}" filtern` : undefined}
@@ -84,7 +84,7 @@
 				<tr><th>EVA</th><th>Hebräisch</th><th>Bedeutung</th><th>Erstbeleg</th><th>Konf.</th></tr>
 			</thead>
 			<tbody>
-				{#each VERB_PARADIGM as row}
+				{#each VERB_PARADIGM as row (row.eva)}
 					<tr style={row.negative ? 'color:var(--red)' : row.candidate ? 'opacity:.55;font-style:italic' : ''}>
 						<td><span class="eva">{row.eva}</span></td>
 						<td><span class="heb-sm">{row.heb}</span></td>

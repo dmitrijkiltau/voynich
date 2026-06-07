@@ -245,7 +245,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					{#each runs as r}
+					{#each runs as r, i (i)}
 						<tr class="proto-row {rateZone(r.passRate)}">
 							<td class="td-run">{r.run}</td>
 							<td class="td-n">{r.total}</td>
@@ -389,7 +389,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					{#each results as r, i}
+					{#each results as r, i (r.word)}
 						<tr class="row-{starsClass(r)}">
 							<td class="td-n">{i + 1}</td>
 							<td class="td-eva">{r.word}</td>

@@ -23,7 +23,7 @@
 	</div>
 
 	<div class="problem-list">
-		{#each OPEN_PROBLEMS as p}
+		{#each OPEN_PROBLEMS as p (p.id)}
 			<div class="problem-card" class:moratorium={p.status === 'moratorium'}>
 				<div class="problem-header">
 					<span class="problem-id">{p.id}</span>

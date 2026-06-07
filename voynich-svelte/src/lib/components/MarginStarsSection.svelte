@@ -17,7 +17,7 @@
 				<tr><th>Typ</th><th>Morphologie</th><th>Funktion</th><th>Konf.</th></tr>
 			</thead>
 			<tbody>
-				{#each STAR_TYPES as s}
+				{#each STAR_TYPES as s (s.type)}
 					<tr>
 						<td><strong>{s.type}</strong></td>
 						<td class="note-cell">{s.morph}</td>
@@ -60,7 +60,7 @@
 				<tr><th>Folio</th><th>Sternprinzip</th><th>Besonderheit</th></tr>
 			</thead>
 			<tbody>
-				{#each FOLIOS as f}
+				{#each FOLIOS as f (f.folio)}
 					<tr>
 						<td class="folio-cell">{f.folio}</td>
 						<td class="note-cell">{f.principle}</td>

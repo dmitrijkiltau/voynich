@@ -214,7 +214,7 @@
 						{/if}
 					</div>
 					<div class="example-btns" role="group" aria-label="Beispielsequenzen">
-						{#each EXAMPLES as ex}
+						{#each EXAMPLES as ex (ex.label)}
 							<button class="ex-btn" onclick={() => input = ex.text} title={ex.text}>{ex.label}</button>
 						{/each}
 					</div>
@@ -251,11 +251,11 @@
 					</header>
 
 					<div class="folio-keyboard" role="navigation" aria-labelledby="lbl-folio">
-						{#each FOLIO_PAGES as group}
+						{#each FOLIO_PAGES as group (group.label)}
 							<details class="folio-group">
 								<summary class="folio-group-label">{group.label}</summary>
 								<div class="folio-btns">
-									{#each group.pages as page}
+									{#each group.pages as page (page)}
 										<button
 											class="folio-btn"
 											onclick={() => dev ? fetchFolio(group.q, page) : window.open(folioUrl(group.q, page), '_blank')}
@@ -282,7 +282,7 @@
 					<div class="token-section">
 						<span class="panel-label">Token-Analyse</span>
 						<div class="token-row" role="list" aria-label="Erkannte Tokens">
-							{#each results as r}
+							{#each results as r (r.word)}
 								<span
 									class="tok"
 									class:found={r.lookup?.matchType === 'found'}
@@ -321,7 +321,7 @@
 									</tr>
 								</thead>
 								<tbody>
-									{#each glossResults as r}
+									{#each glossResults as r (r.word)}
 										<tr class:row-unknown={!r.lookup}>
 											<td class="g-eva">{r.word}</td>
 											<td class="g-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '—'}</td>

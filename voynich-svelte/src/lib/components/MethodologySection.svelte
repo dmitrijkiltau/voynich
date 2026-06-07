@@ -43,7 +43,7 @@
               </tr>
             </thead>
             <tbody>
-              {#each CONFIDENCE_SCALE as row}
+              {#each CONFIDENCE_SCALE as row (row.stars)}
                 <tr>
                   <td class="stars">
                     <span class={isConf5(row.stars) ? "conf5" : "conf"}>{row.stars}</span>
@@ -59,7 +59,7 @@
 
       <div class="anchor-folios">
         <h3>{content.anchorFolios.title}</h3>
-        {#each ANCHOR_FOLIOS as anchor}
+        {#each ANCHOR_FOLIOS as anchor (anchor.folio)}
           <div class="box blue anchor-card">
             <div class="box-title">{anchor.folio} — {anchor.subtitle}</div>
             <p>{anchor.desc}</p>
