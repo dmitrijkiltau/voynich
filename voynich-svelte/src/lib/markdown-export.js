@@ -138,6 +138,8 @@ export function generateMarkdown() {
   line('Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgeleiteten Formen.');
   line();
 
+  const _confMd = (/** @type {any} */ e) => getLexiconConfidence(e.confidenceStars) + (e.candidate ? ' (Kand.)' : '');
+
   h(3, `A. Stammwörter (${STEM_WORDS.length})`);
   line();
   s.push(tbl(
@@ -150,7 +152,7 @@ export function generateMarkdown() {
       e.isAnchor ? 'ja' : '—',
       e.anchorFolio || '—',
       getLexiconRules(e).join(', ') || '—',
-      getLexiconConfidence(e.confidenceStars),
+      _confMd(e),
     ])
   ));
   line();
@@ -166,7 +168,7 @@ export function generateMarkdown() {
       e.de,
       e.evidence || '—',
       getLexiconRules(e).join(', ') || '—',
-      getLexiconConfidence(e.confidenceStars),
+      _confMd(e),
     ])
   ));
   line();

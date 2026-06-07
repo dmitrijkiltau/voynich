@@ -1,5 +1,5 @@
 # Voynich-Manuskript — Formales Mapping-Dokument
-**EVA → Hebräisch-Aramäisch · Version 8.8.5 · Juni 2026**
+**EVA → Hebräisch-Aramäisch · Version 8.8.6 · Juni 2026**
 
 Sprachen A & B · Folios f1r, f1v–f10r (Quire A komplett, Positionskarten f1v–f10r), f11r–f32v (Quires B–D komplett), f33r–f34v (Quire E Eröffnung, 5/16), f57r/v, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
 
@@ -28,12 +28,15 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 
 **Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
 
-**Korrekturen in v8.8.5:**
+**Korrekturen in v8.8.6:**
 
-- f2v-Audit: anchorFolio shty gesetzt; evidence-Fills cheor, otchy, otchor, chokeos
-- f2v-Audit: 13 neue Einträge (otaiin, kchor, chodaiin, kchy, chody, chcthy, keol, cheaiin, chty, cholo, shy, lshy, pchor)
+- f3r-Audit: anchorFolio-Korrekturen chor (f4r→f1r P2.8), shol (Zodiak→f1r P1.1), cham (f69r→f3r P.2); layer-Fills sheol/cham/chom/sam; anchorFolio-Fills sheol/chom/sam
+- f3r-Audit: 9 evidence-Fills (cthom, okeom, opchol Erstbeleg-Korrektur, qokchor, qodaiin, tsheoarom, daiim, sheoldam+C-Divergenz, damo, chal)
+- f3r-Audit: 17 neue Kandidaten (candidate: true) — sho, cthy, octhy, ochor, odaiin, pcheol, qokol, qoschodam, qocheor, ychtaiin, ysheor, chololy, otchom, otchody, oteol, otal; ALIAS chol→kol
+- Grammatik R1+R33: f2r-Frühemergenz §E Option (b) — „ausnahmslos" gestrichen, Progressionsskala erweitert, R59-Querverweis ergänzt
+- Infrastruktur: candidate-Badge in Lexikon-UI + Markdown-Export; STATS.lexicon zählt nur bestätigte Einträge; f003r.json vollständig befüllt
 
-### Kernbefunde — Version 8.8.5
+### Kernbefunde — Version 8.8.6
 
 | Eigenschaft | Wert |
 | --- | --- |
@@ -133,22 +136,22 @@ Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 
 Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgeleiteten Formen.
 
-### A. Stammwörter (50)
+### A. Stammwörter (51)
 
 | EVA | Hebräisch | Deutsch | Schicht | Anker | Folio | Regeln | Konf. |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | dam | דָּם | Blut | Mischna-Hebräisch | ja | f57r | R40 | ★★★★★ |
-| shol | שׁוֹל | Tod / Unterwelt (apokopiert von Sheol) | Jüdisch-Aramäisch (Sprache A) | — | Zodiak-Register | R40 | ★★★★★ |
+| shol | שׁוֹל | Tod / Unterwelt (apokopiert von Sheol) | Jüdisch-Aramäisch (Sprache A) | — | f1r P1.1 | R40 | ★★★★★ |
 | aiin | עַיִן | Auge / Quelle | Mischna-Hebräisch | — | f22r | R2, R42 | ★★★★★ |
 | kol | כֹּל | Alles / Gesamtheit | Hebräisch | — | f58r | R2, R40 | ★★★★★ |
 | shor | שׁוּר | Blick / Reihe / Ochse | Aramäisch / Hebräisch | — | f1v P.9 (H/C/F 3/3) | R15 | ★★★★★ |
 | chdy | חֶדְוָה | Freude / Brust (anatomisch über aram. Schicht) | Jüdisch-Aramäisch | — | f33v | R15 | ★★★★★ |
 | kaiim | קַיָּם | gültig / beständig (Schlussformel) | — | ja | — | — | ★★★★★ |
-| chor | חֹר | Pupille / Höhle / Loch | Mischna-Hebräisch | — | f4r | R15, R40 | ★★★★ |
+| chor | חֹר | Pupille / Höhle / Loch | Mischna-Hebräisch | — | f1r P2.8 | R15, R40 | ★★★★ |
 | or | אוֹר | Licht / Glanz | Hebräisch | ja | f1r | R2 | ★★★★ |
 | chok | חֹק | Satzung / Vorschrift / Rezepturregel | Mischna-Hebräisch | — | f1r P4.27 | R40, R43 | ★★★★ |
 | cheey | חֵיי | Leben | Hebräisch | — | f30v | R50 | ★★★★ |
-| sheol | שְׁאוֹל | Scheol / Tod (Vollform zu shol) | — | ja | — | R40 | ★★★★ |
+| sheol | שְׁאוֹל | Scheol / Tod (Vollform zu shol) | Biblisches Hebräisch | ja | f3r P.11 | R40 | ★★★★ |
 | dal | דַּל | schwach / abgemagert | Hebräisch | ja | f1r | R40 | ★★★★ |
 | ckhy | כְּהִי | Blässe / Trübheit | Mischna-Hebräisch | — | f1v P.3 (×2, H/C/F 3/3) | — | ★★★★ |
 | char | חַר | heiß / Fieber | Mischna-Hebräisch | — | f1v P.1 + P.2 (H/C/F 3/3) | — | ★★★★ |
@@ -165,7 +168,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | tal | טַל | Tau / Pflanzensaft / Feuchtigkeit | Hebräisch | — | f13v (Erstbeleg) | R14, R40 | ★★★ |
 | dar | דּוֹר | Generation / Kreis / Wohnort | Hebräisch / Aramäisch | — | f1r P4.23 | R15, R41, R43 | ★★★ |
 | kar | כָּרָה | graben / untersuchen (med. Kontext) | Mischna-Hebräisch | — | f4r | R40 | ★★★ |
-| cham | חַם | Wärme / Entzündung (hippokr. Befund-Term) | — | — | f69r | — | ★★★ |
+| cham | חַם | Wärme / Entzündung (hippokr. Befund-Term) | Mischna-Hebräisch | — | f3r P.2 | — | ★★★ |
 | ram | רָם | erhöht / Fieber | — | — | — | — | ★★★ |
 | dol | דָּוֶה | Schmerz / Krankheit | Hebräisch | — | f1v P.4 (H/C/F 3/3; 5 Vorkommen auf f1v) | — | ★★★ |
 | shees | אֵשׁ | Feuer / Fieberbrand | — | — | — | — | ★★★ |
@@ -175,21 +178,22 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | shalom | שָׁלוֹם | Friede / günstige Konstellation | — | — | f58r | R43 | ★★★ |
 | alef | אָלֶף | Aleph (Ochse, ikonograph. Buchstabenreferenz) | — | — | f72r1 | — | ★★★ |
 | shod | שׁוֹד | Verheerung / Verwüstung | — | — | f1r P1.3 | R40, R43 | ★★★ |
-| chom | חֹם | Wärme / Hitze (Schwesterform von cham) | — | — | — | — | ★★★ |
+| chom | חֹם | Wärme / Hitze (Schwesterform von cham) | Mischna-Hebräisch | — | f3r P.7 | — | ★★★ |
 | chey | חֵי | lebendig / am Leben (Adj.) | Hebräisch | — | f1r | R40 | ★★★ |
 | dor | דֹּר | Generation / Wachstumszyklus / Zeitraum | — | — | f1r P3.16 | R40, R43 | ★★★ |
 | chod | חֹד | Schärfe / Akutheit (med. Terminus) | — | — | — | — | ★★★ |
 | tolol | תֹּלֹל | geschwächt / hängend (Zustands-Adj.) | — | — | — | — | ★★★ |
-| sam | שַׂם | Arznei | — | — | — | — | ★★★ |
+| sam | שַׂם | Arznei | Mischna-Hebräisch | — | f3r P.17 | — | ★★★ |
 | shty | שְׁתִי | Getränk / Trank | — | — | f2v P.1 (H/C/D/F/U 5/5) | — | ★★★ |
 | pol | פֹּל | Bohne / Beere / Frucht | — | — | f1v P.10 | R60 | ★★★ |
 | pcho | פְּחֹ | Atem / Mund (Sprache-A-Grundform) | — | — | — | — | ★★★ |
 | fol | פֹּל / פּוּל | Röhrenschaft / Stiel-Hülse (CAULIS-Eröffner) | — | — | f13v | — | ★★★ |
+| sho | שׁוֹ | Scheol-Gleichheitspartikel | Jüdisch-Aramäisch | — | f3r P.9 (H/C/F 3/3) | — | ★★★ (Kand.) |
 | dy | דִּי | von / dessen | — | — | — | — | ★★ |
 | qodom | קֶדֶם | Osten / Vorzeit / Vergangenheit | — | — | f24v | R43 | ★★ |
 
 
-### B. Abgeleitete Lexikon-Einträge (334)
+### B. Abgeleitete Lexikon-Einträge (349)
 
 | EVA | Morph. | Hebräisch | Deutsch | Evidenz | Regeln | Konf. |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -226,7 +230,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | kshol | k- + shol | כְּשׁוֹל | wie Scheol | f28v P1.1 | — | ★★★★ |
 | cholam | k- + olom | כֹּעוֹלָם | wie die Welt / wie Ewigkeit | f69r C.3 (Erstbeleg) | — | ★★★★ |
 | cthoiin | k- + t- + aiin | כְּתּעַיִן | wie vollständige Augen-Heilung | f22r P.10 (Erstbeleg) | — | ★★★ |
-| cthom | k- + tom | כְּתֹם | wie Vollständigkeit | — | — | ★★★ |
+| cthom | k- + tom | כְּתֹם | wie Vollständigkeit | f3r P.6+P.10 (H/C/F) | — | ★★★ |
 | kchol | k- + chol | כְּחֹל | wie Augensalbe / Kohl-Pigment (Blaupigment) | — | — | ★★★ |
 | chokeos | k- + okeos | כֹּכֵּאוֹס | wie ein Kelch (Botanik) | f2v P.7 (H/C/F/U 4/5, Erstbeleg; D: chokios) | — | ★★★ |
 | choor | k- + or | כְּאוּר | wie das Licht | — | — | ★★★ |
@@ -234,6 +238,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | koiin | k- + aiin | כֹּעַיִן | wie das Auge | — | — | ★★★ |
 | kaiin | k- + aiin | כְּעַיִן | wie das Auge | f1r P4.23/P4.24 (+ Var. kair P1.2) | R8, R43 | ★★★ |
 | kchom | k- + chom | כְּחֹם | wie Hitze / wie Fieber | f001r P3.16 (1×, kontrovers: H/N kchom vs. C/F/U keeam) | R31, R40 | ★★ |
+| cthy | c- + t- + hy | כְּ+תִי | wie mein Zeichen / wie diese [Form] | f3r P.3+P.19 (H/C/F) | — | ★★★ (Kand.) |
 | chkeey | k- + k- + chey | כְּכְּאֵיִ | wie wie Lebendigkeit | — | — | ★★★ |
 | cthal | k- + t- + chal | כְּתַּחַל | wie vollständig | f1r P4.23 (Erstbeleg) | R43 | ★★★ |
 | chekhol | k- + k- + chol | כְּכָּחֹל | wie das Augenpigment | — | — | ★★★ |
@@ -299,15 +304,18 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | oir | o- + or | עַאוֹר | auf das Licht / Direktional-Heilung | — | — | ★★★ |
 | okshy | o- + k- + shy | עַכְּשֵׁי | auf / für die Gabe (therapeut. Direktional) | — | — | ★★★ |
 | okeor | o- + k- + or | עַכְּאֵוֹר | auf / zu dem Licht hin (direktionale Variante) | — | — | ★★★ |
-| okeom | o- + k- + eom | עַכְּאֵוֹם | auf die Vollendung hin | — | — | ★★★ |
+| okeom | o- + k- + eom | עַכְּאֵוֹם | auf die Vollendung hin | f3r P.17 (H/C/F 3/3) | — | ★★★ |
 | okal | o- + kol | עַכָּל | auf / über alles | f1v P.6 (H/C/F 3/3) | — | ★★★ |
 | oscheor | o- + she- + or | עַשֶׁאוֹר | auf dem, was Licht ist | f19r P.3 | — | ★★★ |
 | okeodaly | o- + k- + ol + dal | עַכֵּעֹדַּל | auf dem Weg des Schwachen | f71v R1 + f72r1 R1 (R43 erfüllt, 2 Folios) | — | ★★★ |
 | odaiim | o- + daiin + -im | עַדִּינִים | auf den (kollektiven) Urteilen | f24v P.16 (Abschluss-Kolophon-Marker, R57) | — | ★★★ |
-| opchol | o- + p- + chol | עַפְּכֹּל | auf allem wirkend | f28r P.1 + f30r P.8 (R43 erfüllt, 2 Folios) | — | ★★★ |
+| opchol | o- + p- + chol | עַפְּכֹּל | auf allem wirkend | f3r P.18 (Erstbeleg, H/C/F) + f28r P.1 + f30r P.8 | — | ★★★ |
 | okeeey | o- + k- + e + e + e | עַכְּאֵאֵאֵ | auf das dreifache Licht (emphat. Schlusskolophon, Spr. B) | f33r P.7 (Erstbeleg) | — | ★★★ |
 | odaldy | o- + dal + -dy | עַדַּלדִּי | über die Schwäche dessen | — | — | ★★★ |
 | oekor | o- + e- + qor | עַאֵקֹר | auf die Kälte / das Uprooting (direktional) | — | — | ★★ |
+| octhy | o- + cth- + y | עַכְּתִּי | auf mein Zeichen (≠ otchy!) | f3r P.12 (H/C/F 3/3) | — | ★★★ (Kand.) |
+| ochor | o- + chor | עַחֹר | auf die Pupille (direktional) | f3r P.3 (H/F 2/3) | — | ★★★ (Kand.) |
+| odaiin | o- + daiin | עַדִּין | auf das Urteil (direktional) | f3r P.20 (H/C/F 3/3) | — | ★★★ (Kand.) |
 | oiin | o- + aiin | עַיִן | das Auge (direkte Form) | f1r P3.14 (Erstbeleg; R43) | R2, R8, R43 | ★★★ |
 | okam | o- + ka + -m | עַכַּם | für das Volk / für alle (universale Therapieangabe) | f28r P.6 (Erstbeleg) | — | ★★★ |
 | okchain | o- + k- + chaiin | עַכְּחַיִּין | hin zu Leben / auf Leben hin | f22v P.13 + Parallelbelege (R43 erfüllt) | — | ★★★★ |
@@ -332,11 +340,12 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | fochof | p- + k- + p- | פֹכֹפְ | Mund/Kehle-alles / Kehlenbereich | f27v P.1 (Erstbeleg) | — | ★★★ |
 | poraiin | p- + or + aiin | פְּאוֹרעַיִן | Licht des Auges | f29r P.1 (Erstbeleg) | — | ★★★ |
 | pchor | p- + chor | פְּ+חֹר | durch die Pupille / Öffnung der Höhle | f2v P.1 (5/5, Erstbeleg) | R41, R43 | ★★★ |
+| pcheol | p- + k- + ol | פְּכֶּעֹל | bei der Last | f3r P.11 (H/C/F 3/3) | — | ★★★ (Kand.) |
 | qoky | qo- + ky | וְכִּי | und denn / weil | — | — | ★★★★★ |
-| qokchor | qo- + o- + k- + chor | וְעַכְּחֹר | und für die Pupille | — | — | ★★★★★ |
+| qokchor | qo- + o- + k- + chor | וְעַכְּחֹר | und für die Pupille | f3r P.12 (H/C/F 3/3) | — | ★★★★★ |
 | qotchor | qo- + t- + chor | קוֹתְּכֹּר | Pupillen-Zeichen / Urteil der Pupille | f15r (Schlusskolophon) | — | ★★★★★ |
 | qokaiin | qo- + k- + aiin | וְכְּעַיִן | und gemäß dem Auge | — | — | ★★★★ |
-| qodaiin | qo- + daiin | וְדִּין | und Urteil | — | — | ★★★★ |
+| qodaiin | qo- + daiin | וְדִּין | und Urteil | f3r P.7 (H/C/F 3/3) | — | ★★★★ |
 | qoeees | qo- + o- + esh | וְעַאֵשׁ | und auf dem Feuer / Fieber | — | — | ★★★★ |
 | qokeees | qo- + k- + esh | וְכְּעֵשׁ | und wie Feuer / Fieber | — | — | ★★★★ |
 | qor | qo- + or | וְאֹר | und Licht (astronomisch) | f58r P.5 | — | ★★★★ |
@@ -354,6 +363,9 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | qotal | qo- + tal | וְטַל | Tau / Schweißzeichen | — | — | ★★★ |
 | qokoral | qo- + k- + or + ol- | וְכְּאֹרעַלְ | und wie Licht-auf | f25v P.6 (R43-Frist abgelaufen) | — | ★★ |
 | qoteedar | qo- + t- + dar | וְתֵּדַּר | und er/du wirst leuchten | f26r P.8 (R43-Frist abgelaufen) | — | ★★ |
+| qokol | qo- + kol | וְ+כֹּל | und alles | f3r P.5+P.16 (H/C/F) | — | ★★★ (Kand.) |
+| qoschodam | qo- + schol + dam | וְשׁכֹּדָּם | und Universalheilmittel des Blutes | f3r P.12 (H/C/F 3/3) | — | ★★★ (Kand.) |
+| qocheor | qo- + cheor | וְכְּאוֹר | und wie Licht (= qokcheor Kurzf.?) | f3r P.3 (H/F 2/3) | — | ★★★ (Kand.) |
 | sor | s- + or | שׂאֹר | Arzt des Lichts (Sprache-A-Vokalalternanz von sar) | f2r P.6 (Erstbeleg) + f9r + f19v + f22v + f30r + f57v | — | ★★★★ |
 | schol | s- + kol | שׂכֹּל | Arznei für alles / Universalheilmittel | — | — | ★★★ |
 | sokar | s- + o- + k- + ar | שׂאוֹכְּאָר | Heilungs-Arzt des Lichts | — | — | ★★★ |
@@ -372,7 +384,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | tchor | t- + chor | תְּחֹר | sie heilt die Pupille | f29v P.8 (Zweitbeleg, R43 ✓) | — | ★★★★ |
 | tshoiin | t- + sho + aiin | תְּשׁוֹעַיִן | [sie] wendet das Auge von Scheol | f28v P1.4 | — | ★★★★ |
 | taiir | t- + ir | תָּאִיר | es wird leuchten / heilen | — | — | ★★★★ |
-| tsheoarom | t- + she- + or + om | תְּשְׁאוֹרוֹם | du wirst von Scheol aufsteigen | — | — | ★★★★ |
+| tsheoarom | t- + she- + or + om | תְּשְׁאוֹרוֹם | du wirst von Scheol aufsteigen | f3r P.15 (H/C/F 3/3) | — | ★★★★ |
 | toror | t- + or + or | תְּאוֹראוֹר | sie heilt | — | — | ★★★ |
 | tsho | t- + sho | תְּשׁוֹ | sie entfernt sich von Scheol | — | — | ★★★ |
 | tshol | t- + shol | תְּשׁוֹל | sie entfernt von Scheol (Vollform von tsho) | f23r P.6 + f23v P.6 (Erstbeleg) | — | ★★★ |
@@ -432,6 +444,8 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | ytom | y- + tom | יְתָּם | er wird vollständig / komplett (Var. ytam) | f29v (R43-Frist abgelaufen) | — | ★★ |
 | ydals | y- + dal + sh- | יְדַּלְשׁ | er wird Schwäche läutern | f24v P.2 (R43-Frist abgelaufen) | — | ★★ |
 | ykeechy | y- + k- + e- + k- + chy | יְכְּאֵכְּהֵי | er heilt wie Blässe-Licht | f26r P.9 (R43-Frist abgelaufen) | — | ★★ |
+| ychtaiin | y- + k- + t- + aiin | יְכְּתָּעַיִן | er heilt das Auge vollständig | f3r P.6 (H/C/F 3/3) | — | ★★★ (Kand.) |
+| ysheor | y- + she- + or | יְשֶׁאוֹר | er/sie wird sein, welches Licht ist | f3r P.8 (H/C/F 3/3) | — | ★★★ (Kand.) |
 | chokchy | chok + k- + chy | חֹקכְּהִי | Vorschrift der Blässe | f30v P.7 (Erstbeleg, H/C/F einig) | — | ★★★★ |
 | chokcheey | chok + cheey | חֹקחֵיי | Lebensvorschrift | f30v P.11 (Erstbeleg, 3/3 Transkriptoren) | — | ★★★★ |
 | choky | chok + -ey | חֹקֵּי | die Vorschriften des [Falls] | f1v P.6 (H/C/F 3/3) | — | ★★★ |
@@ -440,7 +454,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | daiiin | daiin + -in | דִּינִין | Urteile (Aram. Emphase-Plural von דין) | f1r T3 + f26v P.1 + P.7 + f27r P.12 (R43 dreifach erfüllt) | — | ★★★★ |
 | daiinol | daiin + ol- | דִּינעַל | Urteil über [etwas] | f19r P.12 | — | ★★★ |
 | daiidal | daiin + dal | דִּינדַּל | Urteil der Schwäche | f23r P.6 (Erstbeleg) | — | ★★★ |
-| daiim | daiin + -m | דִּינם | Urteile (Plural) | — | — | ★★★ |
+| daiim | daiin + -m | דִּינם | Urteile (Plural) | f3r P.1 (H/F 2/3) | — | ★★★ |
 | daiity | daiin + t- | דִּינתּ | Urteils-tav / juristische Abschlussform | f25v P.3 (R43-Frist abgelaufen) | — | ★★ |
 | daly | dal + -y | דַּלִּי | seine/meine Schwäche | — | — | ★★★★ |
 | daly·dal | dal + -y · dal | דַּלִּידַּל | seine Schwäche | — | — | ★★★★ |
@@ -457,6 +471,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | cholar | kol + -lo + or | כֹּלוֹר | alles sein Licht | — | — | ★★★ |
 | chol·chol | kol + kol | כֹּלכֹּל | alles-alles | f1r P3.15 (R15 Typ A, 7. Beleg) | — | ★★★ |
 | chotshol | kol + t- + sheol | כֹּתּשְׁאוֹל | alles-du-wirst-Scheol (morphologisch fragwürdig) | f21v P.6 (kein Corpus-Parallele) | — | ★★ |
+| chololy | kol + ol + -y | כֹּלעַליְ | alles über ihm / vollständig darüber | f3r P.5 (H/C/F 3/3) | — | ★★★ (Kand.) |
 | oraiin | or + aiin | אוֹרעַיִן | Licht des Auges / Augenheilung | f004r + f009r + f020r + f022r + f023v + f024v + f026v + f031v + f099r (≥9 Folios, R43 weit übererfüllt) | — | ★★★★★ |
 | oraiino | or + aiin + -o | אוֹרעַיִןוֹ | Licht seines Auges | f22r P.9 (Erstbeleg) | — | ★★★★ |
 | orchaiin | or + k- + aiin | אֹרכְּעַיִין | Licht-wie-Auge | f25v P.7 (alle H/C/F einig) | — | ★★★★ |
@@ -481,6 +496,10 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | otalef | ot + alef | אוֹתאָלֶף | Zeichen des Aleph / Zeichen des Ochsen | f72r1 S1.9 | — | ★★★ |
 | otosy | ot + o- + s + -y | אֹתאֹשׂיְ | Zeichen-Scheol-gleich-er | f25r T.7 (R43-Frist abgelaufen) | — | ★★ |
 | otaiphy | ot + a + y + p- + hey | אֹתאַיְפֶּהֵי | Hapax: Zeichen-Blässe-Mund (Einzelbeleg) | f24r P.19 | — | ★★ |
+| otchom | ot + chom | אוֹת+חֹם | Zeichen der Wärme | f3r P.15 (H/C/F 3/3) | — | ★★★ (Kand.) |
+| otchody | ot + k- + dy | אוֹתכֹּדִּי | das ganze Zeichen davon | f3r P.9 (H/C/F 3/3) | — | ★★★ (Kand.) |
+| oteol | ot + eol | אוֹתאֵעֹל | Zeichen des Handelns (vgl. yteol) | f3r P.16 (H/C/F 3/3) | — | ★★★ (Kand.) |
+| otal | ot + al | אוֹתעַל | Zeichen über [etwas] | f3r P.6 (H/F 2/3) | — | ★★★ (Kand.) |
 | pchy | pcho + -y | פְּחִי | mein Atem / mein Mund (FLOS/FRUCTUS) | — | — | ★★★★ |
 | pocheody | pcho + -dy | פְּחֹדִּי | des Atemwegs | — | — | ★★★ |
 | pchodol | pcho + dol | פְּחֹדֹּל | Atemweg der Krankheit / Mundschmerz | — | — | ★★★ |
@@ -488,7 +507,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | saiin | sar + aiin | שַׂעַיִן | Augenarzt | f2r P.6 (Erstbeleg) + f8v/f9r/f15r/f16v/f22v/f30r/f33r | R8, R43 | ★★★★ |
 | saraiir | sar + ir | שַׂראִיר | Arzt des Leuchtenden | f26v P.2 (R43-Frist abgelaufen) | — | ★★ |
 | sheodaiin | sheol + daiin | שְׁאוֹדִּין | Todesurteil (Vollform) | — | — | ★★★★★ |
-| sheoldam | sheol + dam | שְׁאוֹלדָּם | tödlicher Blutverlust | — | — | ★★★★★ |
+| sheoldam | sheol + dam | שְׁאוֹלדָּם | tödlicher Blutverlust | f3r P.9 (H/F 2/3; C: sheoldaj) | — | ★★★★★ |
 | sheeolody | sheol + o- + -dy | שְׁאוֹלעֹדִּי | von jenem Scheol | f71v R1 | — | ★★★ |
 | shoaiin | sheol + aiin | שְׁאוֹלעַיִן | Scheol des Auges (Todesurteil für das Sehorgan) | f1r P4.24 (Erstbeleg; R40+R43) | R40, R43 | ★★★ |
 | sheoltey | sheol + ta + -y | שְׁאוֹלטַיְ | Scheol des Tau-Zeichens | f72r1 R1 | — | ★★★ |
@@ -509,9 +528,9 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | sholor | shol + or | שׁוֹלאֹר | Scheol-Licht | — | — | ★★ |
 | shodaiin | shod + daiin | שׁוֹדִּין | Todesurteil | f2r P.5 (Erstbeleg) + f3r + f4v + f5r | R30, R43 | ★★★★ |
 | keey | keey | כֵּי | denn / weil | f1r P4.26 (keey·keey, R15-Beleg) | R15, R40 | ★★★★ |
-| damo | dam + -o | דָּמוֹ | sein Blut | — | — | ★★★★ |
+| damo | dam + -o | דָּמוֹ | sein Blut | f3r P.7 (H/C/F 3/3) | — | ★★★★ |
 | chain | cha + aiin | חַעַיִן | lebendiges Auge / Auge des Lebens | f29v P.5 + f30r P.7 (R43 erfüllt, 2 Folios) | — | ★★★ |
-| chal | chal | חָל | gilt für / betrifft | — | — | ★★★ |
+| chal | chal | חָל | gilt für / betrifft | f3r P.4 (H/C/F 3/3) | — | ★★★ |
 | chary | char + -y | חַרִי | sein Fieber | — | — | ★★★ |
 | chodl | chodl (Part. von חדל) | חֹדֵל | der Aufhörende / der Sterbende (Aktiv-Partizip) | — | — | ★★★ |
 | dain | dain (Part. QAL דין) | דָּן | Richter (Partizip QAL von דין) | f1r T2/P3 + f30v P.5 (R43 erfüllt, 2 Folios) | — | ★★★ |
@@ -581,11 +600,11 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 
 ## VI. Grammatikregeln
 
-57 Regeln gesamt: **40 validiert** (≥ 2 unabhängige Belege) + **17 Kandidaten**. **Regelmoratorium beendet (v8.8.5)** — Verhältnis 40:17 = 2,35:1 ≥ 1,5:1. R60+ freigegeben. R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
+57 Regeln gesamt: **40 validiert** (≥ 2 unabhängige Belege) + **17 Kandidaten**. **Regelmoratorium beendet (v8.8.6)** — Verhältnis 40:17 = 2,35:1 ≥ 1,5:1. R60+ freigegeben. R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
 
 | # | Regel | Evidenz | Konf. |
 | --- | --- | --- | --- |
-| R1 | qo- = וְ (Vav conjunctive) — ausschließlich Sprache B in Quires A+B — ^qo in Spr. B — ausnahmslosIn Spr. A vollständig absent (0 Belege in 260 Tokens f001r)Gilt mit vollem Geltungsbereich nur für Quires A+B — s. R33, R47 | qokedam, qokol, qokeedy (f57r, f103r); f001r Spr. A: 0 Belege in 260 Tokens ★★★★★; Ausnahmen ab Quire C: s. R33 (emergierend) + R47 (Quire H vollständig integriert) | ★★★★★ |
+| R1 | qo- = וְ (Vav conjunctive) — ausschließlich Sprache B in Quires A+B — ^qo- (Verbundpräfix) im Regelfall ausschließlich in Spr. BSpr. A Quire A: absent im Regelfall — f001r 0/260 Tokens; f2r Frühbefund → s. §E + R33Gilt mit vollem Geltungsbereich nur für Quires A+B — s. R33 (emergierend), R47 (vollständig), R59 (isoliertes qo-Einzeltoken auch in Spr. A) | qokedam, qokol, qokeedy (f57r, f103r); f001r Spr. A: 0 Belege in 260 Tokens ★★★★★; Ausnahmen ab Quire C: s. R33 (emergierend) + R47 (Quire H vollständig integriert) | ★★★★★ |
 | R2 | **o-Positionsdetermination** — ^o → עַ (Ayin, konsonantisch) — ausnahmslos[wortintern]o → ֹ (Ḥolam, Vokalmarker) — ausnahmslosKein Ermessensspielraum (vgl. Mater lectionis: positionell Konsonant _oder_ Vokalmarker)**Negativtest:** 0 Gegenbeispiele in 140+ Einträgen | Wortanfang → Ayin: okol, okoldm, okaiin, odol, okaiin, otor, otam, okchan; wortintern → Ḥolam: qokol (קוֹ+כֹּל), okoldm (עַל+כֹּל+דָּם), sokar, ytor, ychor, shol; Negativtest (v7.5): 0 Gegenbeispiele in 140+ Lexikoneinträgen ✓ | ★★★★ |
 | R3 | y-initiale Wörter = Imperfekt 3. Sg. Mask. — ^y → Yiqtol 3. Sg. Mask. | yteechy, yshdal, ykchaiin, ycheor, ychor; f1r: ykal, ykaiin, yshey, ycho, yto, ycheey (6 neue Belege) — >11 Belege / ≥8 Folios | ★★★★★ |
 | R4 | t-initiale Wörter = Imperfekt 3. Sg. Fem. / 2. Sg. — ^t → Yiqtol 3. Sg. Fem. / 2. Sg. | taiir; tsheoarom | ★★★★ |
@@ -614,7 +633,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | R29 | oto+or — positive Prognose-Abschluss-Geste — otor in Finalposition unmittelbar vor Quire-Abschlusskolophon → positive Prognose | otor in f16v P.12 (vor sokar·oaorar= Quire-B-Abschluss); Zodiak: f71v R2 (eingebettet zwischen shepchol + sheo·shopcho — liturgische Prognose-Formel) + f72r1 R2 (direkt vor chokaiin, am R2-Segment-Ende) — 4 Belege gesamt, ★★★ Kand. | ★★★ |
 | R30 | sho- + Nomen = Scheol-Lokalisierung / Todesform des Nomens — Präfix sho- + Nomen → Todesform des Nomens (Scheol-Lokalisierung) | shodain (f001r P3.12), shoaiin (f001r P4.24), shokcheey (f001r P4.22); shoinn (f13v) ★★★★ | ★★★ |
 | R31 | Temperatur-Antonymenpaar kor ↔ kchom — hippokratisches Diagnostikschema — kor = קֹר (Kälte) ↔ kchom = כְּ+חֹם (Fieber)In aufeinanderfolgenden Zeilen → hippokratisches Diagnostikschema (vgl. R20) | f001r P3.15 (kor) + P3.16 (kchom); Parallele zu lor↔lshol (R20) | ★★★ |
-| R33 | qo--Präfix in Sprache-A-Texten ab Quire C — Übergangszone — Quires A+B: qo- absent in Spr. AQuire C: emergierend (~5–10 %, folio-intern ansteigend)Quire H: vollständig integriert → s. R47R1 gilt mit vollem Geltungsbereich nur für Quires I–II | f17r: 7 qo-Formen (Spr. A); f17v: 6 qo-Formen (Spr. A) — 13 Belege in ~250 Token (~5,2 %); f18r/v (bC2): 8–10 qo-Formen in ~200 Token (~4–5 %); f19r/v (bC3): ~18 qo-Formen in ~175 Token (~10 %) — überschreitet Quire-H-Dichte; 0 Belege in Quires A+B Spr. A (~800 Token); f58r (Quire H, Spr. A): 28+ qo-Formen in ~350 Token (~8 %) — Vollintegration, s. R47 | ★★★ |
+| R33 | qo--Präfix in Sprache-A-Texten ab Quire C — Übergangszone — Quire A (f001r): qo- absent — 0/260 Tokens ★★★★★Quire A (f2r): Frühemergenz — 4 qo-Tokens, 3/3 Transkriptoren-Konsens → s. §EQuire C: emergierend (~5–10 %, folio-intern ansteigend)Quire H: vollständig integriert → s. R47R1 gilt mit vollem Geltungsbereich nur für Quires I–II | f17r: 7 qo-Formen (Spr. A); f17v: 6 qo-Formen (Spr. A) — 13 Belege in ~250 Token (~5,2 %); f18r/v (bC2): 8–10 qo-Formen in ~200 Token (~4–5 %); f19r/v (bC3): ~18 qo-Formen in ~175 Token (~10 %) — überschreitet Quire-H-Dichte; 0 Belege in Quires A+B Spr. A (~800 Token); f58r (Quire H, Spr. A): 28+ qo-Formen in ~350 Token (~8 %) — Vollintegration, s. R47; f2r (Quire A, Spr. A): qotaiin (P.3), qoy (P.8), qokey (P.9), qoky (P.10) — 4 Tokens, 3/3 Konsens — Frühemergenz §E | ★★★ |
 | R34 | sheol (Vollform) in Sprache-A-Texten am Paragraphenende ab Quire C — sheol am Paragraphenende auch in Spr. A ab Quire Cshol (apokor.) bleibt dominant; R17 gilt uneingeschränkt nur für Quires I–II | f17v P.13: ykeor·chol·chol·cthol·chkor·sheol-{plant} — Erstbeleg Spr. A sheol am Paragraphenende; 0 Belege in Quires A+B Spr. A | ★★★ |
 | R35 | Dopplung chol·chol = Vollheilungs-Emphase vor Todesformel **(★★★ validiert)** — chol·chol = כֹּל·כֹּל (alles-alles) vor nachfolgender TodesformelErweitert R19-Intensivierungsschema auf Nominalstämme | f17v P.13: chol·chol·cthol·chkor·sheol — Erstbeleg; f29v P.2 (Zweitbeleg) + f29v P.3 (Drittbeleg) — Foliobeleg-Cluster; R43 erfüllt: f17v + f29v = 2 Folios → ★★★ validiert; Parallele zu chol·chol·chol auf f8v (R19) | ★★★ |
 | R36 | Dopplung dar·dar = Bilateral-/Intensiv-Dopplung **(★★★★★, register-übergreifend)** — dar = דַּר (leuchtend/Licht-davon)Typ A: direkt (dar.dar); Typ B: mit Zwischentext (dar…dar)Gilt für ophthalmologischen und kosmologischen Kontext | f18r P.6: dar.dar — Corpus-Erstbeleg (★★★ Kand.); f26v P.6: dar…dar — 2. Beleg (Typ B) → R43 erfüllt → ★★★★; f69r R.17: dair.dar= — 3. Beleg (Typ A, Terminal, kosmologisch); f69r R.22: dary.dar — 4. Beleg (Typ A, direktional) → 3 Folios · 4 Belege · register-übergreifend (botanisch f18r+f26v, kosmologisch f69r) · 0 Gegenbeispiele → ★★★★★; R19-Strukturkonformität identisch zu daly·dal, chol·chol, or·or-Palindrom | ★★★★★ |
@@ -1068,7 +1087,7 @@ _Arbeitshypothese: Theoretische Reflexion: Wenn FOLIUM-Textfreiheit ein Artefakt
 
 ---
 
-Voynich-Manuskript — Formales Mapping-Dokument · Version 8.8.5 · Juni 2026
+Voynich-Manuskript — Formales Mapping-Dokument · Version 8.8.6 · Juni 2026
 Lexikon: 384 Einträge · Grammatikregeln: 57 · Rückwärtstest: Typ I: 10/10 (100%) · Typ II: 29/32 (91%)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

@@ -248,7 +248,7 @@
 									{#each table.columns as col}
 										<td class={col.key === 'evidence' ? 'notes-cell' : col.key === 'anchorFolio' ? 'part-cell' : col.key === 'rules' ? 'rules-cell' : ''}>
 											{#if col.key === 'confidenceStars'}
-												<span class={entry.confidenceStars === 5 ? 'conf5' : 'conf'}>{cellValue(entry, col.key)}</span>
+												<span class={entry.confidenceStars === 5 ? 'conf5' : 'conf'}>{cellValue(entry, col.key)}</span>{#if entry.candidate}<span class="cand-badge">Kand.</span>{/if}
 											{:else if col.key === 'rules'}
 												{@const rules = getLexiconRules(entry)}
 												{#if rules.length}
@@ -539,6 +539,20 @@
 
   .rules-sep {
     color: var(--ink-f);
+  }
+
+  .cand-badge {
+    display: inline-block;
+    margin-left: .35em;
+    padding: .05em .3em;
+    font-family: var(--font-smallcaps);
+    font-size: .62rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ink-f);
+    border: 1px solid var(--parch-dk);
+    border-radius: 3px;
+    vertical-align: middle;
   }
 
   @media print {

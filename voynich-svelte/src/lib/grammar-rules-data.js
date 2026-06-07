@@ -11,13 +11,14 @@ export const RULES_CHANGELOG = [
   '<strong>v8.4:</strong> R14 Ebene-1-Beleg 10 (f13r Inula helenium, orange-rote Wurzel ohne Text) · R60 Korollar 1 Sprachregister-Unabhängigkeit ★★★ (f57r + f33r) · R60 Korollar 2 Mandrake-Ikonographie ★★★ Kand. · Lexikon: <span class="eva">fol</span> + <span class="eva">tal</span> CAULIS ★★★ Kand. · <span class="eva">opchy/pchy</span> → FLOS ★★★★',
   '<strong>v8.5:</strong> R14 Belege 11+12 (f002r + f007r, 12 Wurzel-Belege gesamt) · R14 Ebene 2 ★★★★★ (f010r Oval-Strukturen = 3. Nicht-Wurzel-Beleg) · Drei-Kategorien-Verfeinerung: Homogene-Fläche ≠ Linienstrich ≠ FLOS-texturell (f009r Punkt-Ähre MIT Text) · R60 Korollar 3 FOLIUM-Textfreiheit ★★★★ (21/21 Folios, 0 Gegenbeispiele) · R60 Korollar 4 Drei-Kategorien-Farbcode ★★★★★ · Layout-Typen A/B/C/D auf Quire A f2r–f10r erweitert · Lexikon: <span class="eva">sary</span> ★★★ → ★★★★★ (Cross-Register FLOS-Eröffner f009r) · <span class="eva">sheey</span> FLOS → THERAPEUTISCH-ALLGEMEIN ★★★ · Neue Spr.-B-Einträge: <span class="eva">tshdar</span>, <span class="eva">yteey</span>, <span class="eva">okeeey</span> (f33r)',
   '<strong>v8.7:</strong> R28 ★★★ → ★★★★ (<span class="eva">ytsho</span> f32r P.4 = 3. Beleg, Scheol-Stamm; alle Licht-/Heilungsstämme abgedeckt) · R58 ★★★ → ★★★★ validiert (f32v P.9 = 3. Folio-Beleg, 3×daiin-Konzentration) · R61 ★★★ Kand. neu (<span class="eva">ol</span>+[Ankerwort] = Intensivierungsformel, 6 Belege in einer Sitzung, cross-register A+B, cross-quire D+E) · R60 Korollar 3 ★★★★ → ★★★★★ (25 Folios, 0 Gegenbeispiele; 25-Schwelle durch f32r/v + f33v + f34r/v überschritten) · R15 neue Typ-A-Belege: <span class="eva">chdy·chdy</span> (f33v P.6), <span class="eva">shedy·shedy</span> (f34r P.5), <span class="eva">qokar·qokar</span> (f34r P.13)',
+  '<strong>v8.8.6:</strong> R1 + R33 f2r-Frühemergenz-Korrektur: „ausnahmslos" gestrichen, §E-Option (b) beschlossen — <span class="eva">qo-</span> ab f2r (Quire A, folio-spät) als Frühbefund belegt (4 Tokens, 3/3 Konsens); R33-Progressionsskala um f2r-Stufe erweitert; R59-Querverweis in R1-Geltungsbereich ergänzt',
 ];
 
 export const RULES = [
   {
     id: 'R1',
     focus: '<span class="eva">qo-</span> = <span class="heb-sm">וְ</span> (Vav conjunctive) — ausschließlich Sprache B in Quires A+B',
-    syntax: '<code>^qo</code> in Spr. B — ausnahmslos<br>In Spr. A vollständig absent (0 Belege in 260 Tokens f001r)<br>Gilt mit vollem Geltungsbereich nur für Quires A+B — s. R33, R47',
+    syntax: '<code>^qo-</code> (Verbundpräfix) im Regelfall ausschließlich in Spr. B<br>Spr. A Quire A: absent im Regelfall — f001r 0/260 Tokens; f2r Frühbefund → s. §E + R33<br>Gilt mit vollem Geltungsbereich nur für Quires A+B — s. R33 (emergierend), R47 (vollständig), R59 (isoliertes qo-Einzeltoken auch in Spr. A)',
     evidence: 'qokedam, qokol, qokeedy (f57r, f103r); f001r Spr. A: 0 Belege in 260 Tokens ★★★★★; Ausnahmen ab Quire C: s. R33 (emergierend) + R47 (Quire H vollständig integriert)',
     confidenceStars: 5,
   },
@@ -220,8 +221,8 @@ export const RULES = [
   {
     id: 'R33',
     focus: '<span class="eva">qo-</span>-Präfix in Sprache-A-Texten ab Quire C — Übergangszone',
-    syntax: 'Quires A+B: <span class="eva">qo-</span> absent in Spr. A<br>Quire C: emergierend (~5–10 %, folio-intern ansteigend)<br>Quire H: vollständig integriert → s. R47<br>R1 gilt mit vollem Geltungsbereich nur für Quires I–II',
-    evidence: 'f17r: 7 qo-Formen (Spr. A); f17v: 6 qo-Formen (Spr. A) — 13 Belege in ~250 Token (~5,2 %); f18r/v (bC2): 8–10 qo-Formen in ~200 Token (~4–5 %); f19r/v (bC3): ~18 qo-Formen in ~175 Token (~10 %) — überschreitet Quire-H-Dichte; 0 Belege in Quires A+B Spr. A (~800 Token); f58r (Quire H, Spr. A): 28+ qo-Formen in ~350 Token (~8 %) — Vollintegration, s. R47',
+    syntax: 'Quire A (f001r): <span class="eva">qo-</span> absent — 0/260 Tokens ★★★★★<br>Quire A (f2r): Frühemergenz — 4 qo-Tokens, 3/3 Transkriptoren-Konsens → s. §E<br>Quire C: emergierend (~5–10 %, folio-intern ansteigend)<br>Quire H: vollständig integriert → s. R47<br>R1 gilt mit vollem Geltungsbereich nur für Quires I–II',
+    evidence: 'f17r: 7 qo-Formen (Spr. A); f17v: 6 qo-Formen (Spr. A) — 13 Belege in ~250 Token (~5,2 %); f18r/v (bC2): 8–10 qo-Formen in ~200 Token (~4–5 %); f19r/v (bC3): ~18 qo-Formen in ~175 Token (~10 %) — überschreitet Quire-H-Dichte; 0 Belege in Quires A+B Spr. A (~800 Token); f58r (Quire H, Spr. A): 28+ qo-Formen in ~350 Token (~8 %) — Vollintegration, s. R47; f2r (Quire A, Spr. A): qotaiin (P.3), qoy (P.8), qokey (P.9), qoky (P.10) — 4 Tokens, 3/3 Konsens — Frühemergenz §E',
     confidenceStars: 3,
   },
   {

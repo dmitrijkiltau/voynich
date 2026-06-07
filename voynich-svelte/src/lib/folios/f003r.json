@@ -1,0 +1,49 @@
+{
+  "folio": "f3r",
+  "status": "confirmed",
+  "registerType": "Herbal (Standard Kräuterbild) — {plant}-System aktiv · Thema: Blut / Wärme / Scheol / Diagnose",
+  "languageClass": "Sprache A (Currier)",
+  "writerHand": 1,
+  "transcribers": [
+    { "siglen": ["H", "C", "F"], "label": "P.1–P.20 vollständig" },
+    { "siglen": ["D"], "label": "P.4 (chaj statt cham bei Token 5), kein vollständiger Satz" }
+  ],
+  "consensusDenominators": [
+    "P.1–P.20: n=3 (H/C/F)",
+    "Divergenzen dokumentiert in II.3"
+  ],
+  "scanUrl": "https://collections.library.yale.edu/catalog/2002046",
+  "iconographic": {
+    "rules": ["R14", "R60"],
+    "illustrationType": "Eine zentrierte Pflanze, rechts am Rand anliegend, ganzseitig.",
+    "plantMorphology": {
+      "radix": "Tentakelförmige, rötlich gefärbte Faserwurzeln, breit ausgreifend, mit dunkler Übertönung — textfrei (R60).",
+      "caulis": "Dicker, gebogener Stängel, leicht S-förmig, hell mit dunklem Schattenstreifen an der linken Seite, grünlich gefärbt.",
+      "folia": "Lanzettförmige Blätter mit S-Biegung, beidseitig dicht am Stängel anliegend, sich gegenseitig überlappend, Stängel endet mit einzelnem unpaarigen Blatt. Grün + Rot. Gepunktete Linie an Blatträndern (Stacheln?). Stolfi: „perhaps they are actually the sheaths of leafstalks„.",
+      "flosFructus": "Keine Blüten/Früchte vorhanden.",
+      "coloring": "Grün und Rot (Reeds) — Blätter zweifarbig (grüne Fläche + roter Streifen/Übertönung); Wurzeln rötlich/dunkel."
+    },
+    "botanicalIdentification": [
+      "*Rumex sanguineus* / *Polygonum* sp. (Blutampfer / Blut-Knöterich) — Quelle: Kontext-Analyse (Blut-Scheol-Semantik + Rotfärbung). Konf. ★★★.",
+      "*Aloe vera* ★★ (dichte lanzettförmige Blätter ähnlich, aber anatomisch abweichend).",
+      "*Allium ampeloprasum* ★★ (übereinandergreifende Scheiden erklären Stolfi's Deutung als Blattscheiden).",
+      "Pharmakologie: *Rumex sanguineus* — Blutstillend, kühlend; im mittelalterlichen Arzneibuch für Blutungen, Augenentzündungen und Fieberbehandlung. Passt zur dominanten Blut/Wärme-Semantik (dam, cham, chom, sheoldam)."
+    ],
+    "layoutStructure": "4 Paragraphen-Blöcke (Stolfi: 9,5 / 3,5 / 2,7 / 2,8 Zeilen) = 20 EVA-Paragraphen (P.1–P.20). Block 1 (P.1–P.10): linksflüchtig, folgt Pflanzenkontour rechts. Block 2–4 (P.11–P.20): links+rechts-flüchtig, vom Hauptstängel unterbrochen. {plant}-Marker: 15× in P.2–P.20.",
+    "r60Status": "RADIX-Zone textfrei ★★★★★ (Bild bestätigt: kein Text neben oder unter den Wurzeln). Korollar 1 aktiv (FOLIUM-Zone schwer abgrenzbar wegen Dichte, Prüfung ausstehend)."
+  },
+  "textSignals": {
+    "registerEinordnung": "Blut / Wärme / Scheol / Diagnose",
+    "leitterme": [
+      "sheoldam (P.9) — tödlicher Blutverlust (Erstbeleg im Corpus; H/F 2/3)",
+      "cham (P.2) — Wärme/Entzündung (Erstbeleg; f69r korrigiert auf f3r)",
+      "chom (P.7) — Wärme/Hitze Schwesterform (Erstbeleg)",
+      "sheol (P.11) — Scheol Vollform (Erstbeleg)",
+      "dam / damo (P.7–P.9) — Blut / sein Blut",
+      "qokchor (P.12) — und für die Pupille",
+      "tsheoarom (P.15) — du wirst von Scheol aufsteigen",
+      "sam (P.17) — Arznei (Erstbeleg)"
+    ],
+    "bildTextKohärenz": "Blut/Wärme-Leitterme korrespondieren direkt mit der Pharmakologie von Rumex sanguineus (blutstillend, kühlend, Fieberbehandlung). Scheol-Signale am Textende (P.9, P.11, P.15) folgen dem Standard-Prognose-Schema. Kohärent."
+  }
+}

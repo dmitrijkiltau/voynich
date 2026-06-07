@@ -16,14 +16,17 @@ const _compact = (/** @type {string} */ n) => n.replace(/ /g, '');
 const _pct     = (/** @type {number} */ p) => `${Math.round(p)}%`;
 
 export const STATS = {
-  version: '8.8.5',
+  version: '8.8.6',
   // Separate each change on a new line and keep only the new changes since the last release.
   changelog: [
-    'f2v-Audit: anchorFolio shty gesetzt; evidence-Fills cheor, otchy, otchor, chokeos',
-    'f2v-Audit: 13 neue Einträge (otaiin, kchor, chodaiin, kchy, chody, chcthy, keol, cheaiin, chty, cholo, shy, lshy, pchor)',
+    'f3r-Audit: anchorFolio-Korrekturen chor (f4r→f1r P2.8), shol (Zodiak→f1r P1.1), cham (f69r→f3r P.2); layer-Fills sheol/cham/chom/sam; anchorFolio-Fills sheol/chom/sam',
+    'f3r-Audit: 9 evidence-Fills (cthom, okeom, opchol Erstbeleg-Korrektur, qokchor, qodaiin, tsheoarom, daiim, sheoldam+C-Divergenz, damo, chal)',
+    'f3r-Audit: 17 neue Kandidaten (candidate: true) — sho, cthy, octhy, ochor, odaiin, pcheol, qokol, qoschodam, qocheor, ychtaiin, ysheor, chololy, otchom, otchody, oteol, otal; ALIAS chol→kol',
+    'Grammatik R1+R33: f2r-Frühemergenz §E Option (b) — „ausnahmslos" gestrichen, Progressionsskala erweitert, R59-Querverweis ergänzt',
+    'Infrastruktur: candidate-Badge in Lexikon-UI + Markdown-Export; STATS.lexicon zählt nur bestätigte Einträge; f003r.json vollständig befüllt',
   ],
   date: 'Juni 2026',
-  lexicon: LEXICON.length,
+  lexicon: LEXICON.filter((/** @type {any} */ e) => !e.candidate).length,
   rules: RULES.length,
   validatedRules: 40,
   backtest: '100%',
