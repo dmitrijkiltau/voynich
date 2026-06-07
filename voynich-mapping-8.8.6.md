@@ -33,7 +33,7 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 - f3r-Audit: anchorFolio-Korrekturen chor (f4r→f1r P2.8), shol (Zodiak→f1r P1.1), cham (f69r→f3r P.2); layer-Fills sheol/cham/chom/sam; anchorFolio-Fills sheol/chom/sam
 - f3r-Audit: 9 evidence-Fills (cthom, okeom, opchol Erstbeleg-Korrektur, qokchor, qodaiin, tsheoarom, daiim, sheoldam+C-Divergenz, damo, chal)
 - f3r-Audit: 17 neue Kandidaten (candidate: true) — sho, cthy, octhy, ochor, odaiin, pcheol, qokol, qoschodam, qocheor, ychtaiin, ysheor, chololy, otchom, otchody, oteol, otal; ALIAS chol→kol
-- Grammatik R1+R33: f2r-Frühemergenz §E Option (b) — „ausnahmslos" gestrichen, Progressionsskala erweitert, R59-Querverweis ergänzt
+- Grammatik R1+R33: f2r-Frühemergenz §E Option (b) — „ausnahmslos“ gestrichen, Progressionsskala erweitert, R59-Querverweis ergänzt
 - Infrastruktur: candidate-Badge in Lexikon-UI + Markdown-Export; STATS.lexicon zählt nur bestätigte Einträge; f003r.json vollständig befüllt
 
 ### Kernbefunde — Version 8.8.6
@@ -70,15 +70,15 @@ Jede Mapping-Hypothese wird durch Rückwärtstests validiert: Ein bekanntes hebr
 ### Anker-Folios
 
 **f57r — Stärkstes Einzelfolio:** Quire 8, Sprache B, Hand 2. Botanisch-pharmazeutische Seite. Enthält die stärkste Einzelsequenz:
-`sar · al · daiindy` = שַׂר עַל דִּין דִּי „Arzt über das Urteil dessen."
+`sar · al · daiindy` = שַׂר עַל דִּין דִּי „Arzt über das Urteil dessen.“
 
 **f103r — Höchste Lexikondichte:** Quire 20, Sprache B. 54 Paragraphen reiner Prosatext mit der höchsten Konzentration bestätigter Wörter und den vollständigsten übersetzten Sätzen.
 
 **f58r — Erster astronomischer Stresstest:** Quire H (Beinecke VIII), Sprache A. Erster analysierter Nicht-Botanical-Folio. Beweist semantische Invarianz des Mappings über Register hinweg — alle Ankerwörter behalten ihre Bedeutungen ohne Ad-hoc-Anpassung:
-`ytor · ar · alom` = יְ+תֹּ+אוֹר · אֹר · עָלוֹם „er wird erleuchten — Licht — in der Welt." (f58r P.30 — R43-Bestätigung für ytor ★★★★)
+`ytor · ar · alom` = יְ+תֹּ+אוֹר · אֹר · עָלוֹם „er wird erleuchten — Licht — in der Welt.“ (f58r P.30 — R43-Bestätigung für ytor ★★★★)
 
 **f71r–f72r2 — Erstes vollständiges Zodiak-Register:** Quire K (Beinecke XI), Sprache B-dominant. Zodiak-Tetraptychon bK1: 4 Panels, 75 Sternlabeln, 12/12 Ankerwörter bestätigt (100 %). Erste Bestätigung von R50 ★★★★ und R52a ★★★★ im Zodiak-Register. R19/R35-Intensivierung erstmals im Zodiak belegt:
-`otam · otam · chotam` = אוֹת+אָם · אוֹת+אָם · כֹּ+אוֹת+אָם "Zeichen der Mutter — Zeichen der Mutter — wie das Zeichen der Mutter." (f72r1 R1 — R35-Dreistufenschema ★★★)
+`otam · otam · chotam` = אוֹת+אָם · אוֹת+אָם · כֹּ+אוֹת+אָם „Zeichen der Mutter — Zeichen der Mutter — wie das Zeichen der Mutter.“ (f72r1 R1 — R35-Dreistufenschema ★★★)
 
 ## III. Zeichenmapping EVA → Hebräisch
 
@@ -554,12 +554,12 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 
 | EVA-Präfix | Hebräisch | Funktion | Beispiel (EVA) | Beispiel (Heb) | Konf. |
 | --- | --- | --- | --- | --- | --- |
-| qo- | וְ | Vav conjunctive „und/auch" | qokedam | וְכְּדָּם | ★★★★ |
-| o- | עַ | Ayin „auf/bei/von" | okol | עַכֹּל | ★★★★ |
-| l- | לְ | Lamed „zu/für/nach" | lchedy | לְכְּדֵי | ★★★★ |
-| d- | דְּ/דִּי | Aramäisches Relativpräfix „von/dessen/welches" (R45) — äußerste morphol. Schale; kein D1-Flag wenn d- vor Konsonant | dsholdy | דְּשׁוֹל+דִּי | ★★★★★ |
+| qo- | וְ | Vav conjunctive „und/auch“ | qokedam | וְכְּדָּם | ★★★★ |
+| o- | עַ | Ayin „auf/bei/von“ | okol | עַכֹּל | ★★★★ |
+| l- | לְ | Lamed „zu/für/nach“ | lchedy | לְכְּדֵי | ★★★★ |
+| d- | דְּ/דִּי | Aramäisches Relativpräfix „von/dessen/welches“ (R45) — äußerste morphol. Schale; kein D1-Flag wenn d- vor Konsonant | dsholdy | דְּשׁוֹל+דִּי | ★★★★★ |
 | p- | פְּ | Pe-Präfix (Nominalkonstrukt) | pchedal | פְּכֶּדַּל | ★★★ |
-| op-/of- | עַ+פֶּ | Ayin+Pe: „auf/an dem Mund/Öffnung von" — astronomischer Koordinatenmarker (R41-Erweiterung per R47) | opcheear | עַ+פֶּ+כְּ+אֵר | ★★★ |
+| op-/of- | עַ+פֶּ | Ayin+Pe: „auf/an dem Mund/Öffnung von“ — astronomischer Koordinatenmarker (R41-Erweiterung per R47) | opcheear | עַ+פֶּ+כְּ+אֵר | ★★★ |
 | y- | יְ | Imperfekt 3. Pers. Sg. Mask. | yshdal | יְשַׁדַּל | ★★★★ |
 | t- | תָּ | Imperfekt 3. Pers. Sg. Fem. / 2. Pers. | taiir | תָּאִיר | ★★★★ |
 
@@ -568,10 +568,10 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 
 | EVA-Suffix | Hebräisch | Funktion | Konf. |
 | --- | --- | --- | --- |
-| -dy | דִּי | Aramäisch: Genitiv/Relativ „von/dessen" | ★★★★ |
-| -dam | דָּם | „Blut" — Zeilenabschluss-Refrain in f57r | ★★★★★ |
-| -dal | דַּל | „schwach/dünn" — Diagnose-Refrain | ★★★★ |
-| -aiin | עַיִן | „Auge" — diagnostischer Terminus in Suffixposition | ★★★★ |
+| -dy | דִּי | Aramäisch: Genitiv/Relativ „von/dessen“ | ★★★★ |
+| -dam | דָּם | „Blut“ — Zeilenabschluss-Refrain in f57r | ★★★★★ |
+| -dal | דַּל | „schwach/dünn“ — Diagnose-Refrain | ★★★★ |
+| -aiin | עַיִן | „Auge“ — diagnostischer Terminus in Suffixposition | ★★★★ |
 | -ody | +דִּי | Vokalhelfer + דִּי; Listenregister f57r P.3–P.4 | ★★★ |
 | -aly | +לִי | Zodiak-Suffix -aly: Vokalhelfer + lamed + Yod; Sternlabel-Register (R52a) | ★★★★ |
 | -ary | +רִי | Zodiak-Suffix -ary: Vokalhelfer + resch + Yod; Sternlabel-Register (R52a) | ★★★★ |
@@ -617,7 +617,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | R11 | Paragraphen-Ende mit = = Abschlussformel — Token X= in Finalposition → Kolophon-Abschluss_Sektionsabschluss-Variante: odaiim= (עַ+דִּינִים, Plural-Intensiv) in Final-Kolophon — eigenständige Regel bei 2+ Belegen zu erheben (ex R57, v8.1)_ | kaiim=, dom=, daiin=, chckhan=, chal=; f57r cphedom=; f1r T1–T4 (alle 6 Transkriptoren einig); f1v P4-Kolophon chokody=, P10-Kolophon chodar= — 6 neue Belege. _Sektionsabschluss-Variante (1 Beleg, f24v P.16): odaiim= in Final-Kolophon des letzten Quire-C-Paragraphen._ | ★★★★ |
 | R12 | Trägersatz-Muster: P.1 (Relativsatz) → P.2 (Hauptsatz mit sar) — Absatz-Sequenz: P.n = Relativsatz → P.(n+1) = Hauptsatz mit sar | f57r P.9; f103r P.1→P.2 | ★★★ |
 | R13 | Paragraphen ohne Randstern = positives Prognose-Vokabular — Kein Randstern → positive Terme (or, lor·aiin) | f103r P.3,17,20; f103v: 5/5 or-Paragraphen sternlos | ★★★★ |
-| R14 | **{plant}-Marker: Strukturelle und pharmakologische Doppelfunktion** — **Ebene 1 (horizontal):** Text links von {plant} = Diagnose/Indikation; rechts = Therapie/Prognose**Ebene 2 (vertikal):** Vertikale Position von {plant} ≡ Pflanzenteil der Illustration:↑ FLOS/FRUCTUS · CAULIS · FOLIUM · RADIX ↓_Korollar: Kein {plant}-Marker oder Text über gesamter Pflanze = Ganzpflanzen-Präparat (TOTUS)_**Farbcode (dreistufig ★★★★★):**Ebene 1: Alle Wurzeln (homogene Terracotta/Dunkelrot-Fläche) = kein Text (13 Belege)Ebene 2: Homogene Fläche an beliebigem Pflanzenteil = kein Text (3 Nicht-Wurzel-Belege)Ebene 3: Grün = prescribiert (Text vorhanden)_Drei-Kategorien: Fläche (stumm) ≠ Linie/Strich (illustrativ) ≠ FLOS-dotted/Textur (prescribiert)_ | f1v–f10v: 100 % konsistent (Ebene 1); Stolfi f16r: „interrupted by the plant's flower" — Blüten-Position explizit dokumentiert ★★★★★; pol (Frucht-Term) an Frucht-Position f22r P.1 ★★★★★; f19r: gesamter Text auf Blüten-Höhe, saiin+chor semantisch kohärent mit Kornblumen-Pharmakologie (Augenwasser, Konjunktivitis) ★★★★★; f14r/f15r/f22r/f28r/f30v: rote Wurzeln ohne Text — 5 Belege ★★★★; f13r (v8.4): Inula helenium orange-rote Hauptwurzel ohne Text — 10. Beleg ★★★★★; f002r (v8.4): dunkel übermale Centaurea-Wurzel ohne Text — Beleg 11 ★★★★★; f007r (v8.4): orange-rote Sternblumen-Rhizomwurzel ohne Text — Beleg 12 ★★★★★; f31r (v8.7): pharmakologisches Dunkelrot-Rhizom Tanacetum parthenium ohne Text — Beleg 13 ★★★★★; f25r: dunkelrote Bohnen an Stengelknoten ohne Text — Erstbeleg Nicht-Wurzel-Rot-Muster; f010r (v8.4): rote Oval-Strukturen (Nicht-Wurzel!) ohne Text — 3. Nicht-Wurzel-Beleg → Ebene 2 ★★★★★; f009r: rote Punkt-Ähre MIT Text = FLOS-therapeutisches Rot (dotted) ≠ homogenes Terracotta — Drei-Kategorien-Verfeinerung bestätigt; 21/21 analysierten Folios zeigen selektive Pflanzenteil-Annotation (Muster I) | ★★★★★ |
+| R14 | **{plant}-Marker: Strukturelle und pharmakologische Doppelfunktion** — **Ebene 1 (horizontal):** Text links von {plant} = Diagnose/Indikation; rechts = Therapie/Prognose**Ebene 2 (vertikal):** Vertikale Position von {plant} ≡ Pflanzenteil der Illustration:↑ FLOS/FRUCTUS · CAULIS · FOLIUM · RADIX ↓_Korollar: Kein {plant}-Marker oder Text über gesamter Pflanze = Ganzpflanzen-Präparat (TOTUS)_**Farbcode (dreistufig ★★★★★):**Ebene 1: Alle Wurzeln (homogene Terracotta/Dunkelrot-Fläche) = kein Text (13 Belege)Ebene 2: Homogene Fläche an beliebigem Pflanzenteil = kein Text (3 Nicht-Wurzel-Belege)Ebene 3: Grün = prescribiert (Text vorhanden)_Drei-Kategorien: Fläche (stumm) ≠ Linie/Strich (illustrativ) ≠ FLOS-dotted/Textur (prescribiert)_ | f1v–f10v: 100 % konsistent (Ebene 1); Stolfi f16r: „interrupted by the plant's flower“ — Blüten-Position explizit dokumentiert ★★★★★; pol (Frucht-Term) an Frucht-Position f22r P.1 ★★★★★; f19r: gesamter Text auf Blüten-Höhe, saiin+chor semantisch kohärent mit Kornblumen-Pharmakologie (Augenwasser, Konjunktivitis) ★★★★★; f14r/f15r/f22r/f28r/f30v: rote Wurzeln ohne Text — 5 Belege ★★★★; f13r (v8.4): Inula helenium orange-rote Hauptwurzel ohne Text — 10. Beleg ★★★★★; f002r (v8.4): dunkel übermale Centaurea-Wurzel ohne Text — Beleg 11 ★★★★★; f007r (v8.4): orange-rote Sternblumen-Rhizomwurzel ohne Text — Beleg 12 ★★★★★; f31r (v8.7): pharmakologisches Dunkelrot-Rhizom Tanacetum parthenium ohne Text — Beleg 13 ★★★★★; f25r: dunkelrote Bohnen an Stengelknoten ohne Text — Erstbeleg Nicht-Wurzel-Rot-Muster; f010r (v8.4): rote Oval-Strukturen (Nicht-Wurzel!) ohne Text — 3. Nicht-Wurzel-Beleg → Ebene 2 ★★★★★; f009r: rote Punkt-Ähre MIT Text = FLOS-therapeutisches Rot (dotted) ≠ homogenes Terracotta — Drei-Kategorien-Verfeinerung bestätigt; 21/21 analysierten Folios zeigen selektive Pflanzenteil-Annotation (Muster I) | ★★★★★ |
 | R15 | **Paradigma-Wiederholungsreihen** (×2–×5) — **Typ A:** X · X (direkt nebeneinander)**Typ B:** X · [ZT] · X (mit Zwischentext)**Typ B-Dreistufig:** Verb → Nomen → Direktional mit Zwischentext**Typ C:** Drei phonologisch verwandte Stämme in direkter Folge (semantisches Spannungsfeld: Licht-Zeichen → Pupille → Scheol)_**Typ D** (Kand., 1 Beleg): Drei semantisch synonyme Heilungsterme in Kolophon-Finalposition (ex R52, v8.1)_ | f1v P.3 (ckhy·ckho·ckhy); f10r P8 (chor·chor·cholor); f20r P.13 (chor·chor — Typ A); f21r P.12 (ykeea·**chor**·sheey·ysheol·**chor**·chol·daiin·chkaiin= — Typ B, 4. Beleg); f22v P.7 (ychor·chor·qokchol·chory — Dreistufig-Schema, Typ B, 5. Beleg); f23r P.7 (qokchol·dar·qokchol — nominale Rahmendopplung, Typ B nominal, 6. Beleg); f1r P3.L15 (chol·chol — Typ A, 7. Beleg, 4/4 Transkriptoren); f1r P4.L26 (keey·keey — Typ A, 8. Beleg, 3/4 Transkriptoren); f1r P4.L23 (dar…dar — Typ B, 9. Beleg, 4/4); f29r P.8 (shor·chor·sho — Typ C, 10. Beleg); f33v P.6 (chdy·chdy — Typ A, 11. Beleg); f34r P.5 (shedy·shedy — Typ A, 12. Beleg); f34r P.13 (qokar·qokar — Typ B, 13. Beleg) — 13 Belege / 9 Folios → ★★★★★ | ★★★★★ |
 | R16 | **Mehrfach-{plant}: Zwei Ebenen** — **Typ 1 (Horizontal-Dreisegment):** Alle {plant}-Marker auf gleicher Höhe: [Diagnose] {plant} [Brücke] {plant} [Prognose] — ein Pflanzenteil**Typ 2 (Vertikal-Zweiteilverschreibung):** {plant}-Marker auf verschiedenen Höhen → jeder Marker kennzeichnet anderen PflanzenteilAbgrenzung: Typ 1 = gleiche Bildzeile; Typ 2 = ≥1 Bildzone Abstand | Typ 1: f2r P.2–P.6: Kornblume mit drei Stielen → drei Segmente auf gleicher Höhe; Typ 2: f15r bilateral-Blüte (zwei Knospen, je eigene Textspalte auf Blüten-Höhe) ★★★★; f30r P.11+P.12: zwei {plant}-Marker auf Blatt-/Rhizom-Höhe → Typ 2 zu prüfen | ★★★★ |
 | R17 | shol (apokor.) medial vs. sheol (Vollform) am Zeilenende — Spr. A: shol → MedialpositionSpr. B: sheol → Zeilenende-FinalpositionR17 gilt uneingeschränkt für Quires I–II | f4r–f10v: shol medial (20+×); f103r: sheol final (8×); Zodiak-Register bestätigt ★★★★: f72r1 R1 shol (2× medial) / f72r1 R2 sheol (direkt vor gap = 5. Register-Bestätigung) | ★★★★ |
@@ -646,21 +646,21 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | R43 | **Multi-Folio-Validierungspflicht** — ★★★+: ≥ 2 verschiedene Folios mit sem. kompatiblem KontextAusnahme: ★★★ Kand. bei ≥ 8 Einzelfolio-Belegen (Bestätigung innerhalb der nächsten 5 analysierten Folios; andernfalls → ★★) | ykam f18v (4×, Erstbeleg) → ★★★ Kand. bis Quire-H-Bestätigung; ytor f18v (3×) + f58r P.30 (R43 erfüllt) → **★★★★**; ykair f16r (1×) → ★★ provisorisch (unter Minimum 8×); kchom f001r (2×) → ★★★ Kand. (Flag bleibt) | ★★★ |
 | R44 | **Konsekutive Kurzwurzel-Sequenzsperre** — 2 aufeinanderfolgende Tokens mit Basis ≤ 3 Konsonanten → Sequenz max. ★★Ausnahmen (beide müssen erfüllt sein):(a) mind. 1 Token = Rückwärtstest-Anker (R40-Ausnahme b)(b) R42-Kongruenzstandard erfülltNicht anwendbar auf Funktionswort-Hauptwort-Paare | ykchaiin + daiin: daiin Rückwärtstest-Anker (b ✓) + R42-Kongruenz ✓ → R44 greift nicht; ky + chor: Funktionswort-Ausnahme → R44 greift nicht; Neues Verb + neues Objekt (je ★★★ Kand.): kein Anker, kein Parallelbeleg → Sequenz ★★; shol + neues Adj. (Einzelbeleg): shol Anker ✓, R42-Kongruenz fehlt → ★★ | ★★★ |
 | D1/D2 | ⚠ **Phonotaktische Warnsignale** (Warnsystem, kein Hard Stop) — **D1 Doppelkonsonanz-Warnung:** 2× identisches Mapping im Basiswort-Kern → ⚠ Flag (erfordert Erklärung: Geminierung/Dagesh, Assimilation, Schreibervarianz)**D2 Kehlkopf-Cluster-Warnung:** 2 laryngale/pharyngale Konsonanten nebeneinander → ⚠ Flag (erfordert morphologische Rechtfertigung)Konfidenz wird _nicht_ automatisch reduziert**R45-Ausnahme:** d--Anlaut vor Konsonant triggert kein D1-Flag | EVA-Phonologie noch nicht gesichert → kein Hard Stop möglich; D1-Erklärungsoptionen: Dagesh-Verdopplung, partielle Assimilation, Schreibervarianz; D2: Doppel-Laryngal im Mischna-Hebräisch selten und markiert; R45-Ausnahme: 6 D1-Fehlklassifikationen auf f58r durch aramäisches d-Relativpräfix aufgelöst | ★★ |
-| R45 | **Aramäisches d-Relativpräfix** als morphologische Klasse — ^d + Konsonant (kein Vokalträger) → דְּ/דִּי (de-/di-, Relativpräfix „von/dessen/welches")(a) Kein D1-Flag(b) Äußerste morphologische Schale in R41-Hierarchie**Abgrenzung:** d- + Vokalindikator = Basiskonsonant (z. B. dal) | f58r: dshodal (P.2), dshor (P.4), dchairam (P.5), dtor (P.34), dtshol (P.38), dchol (P.40) — 6 klare Instanzen; alle durch דְּ-Relativpräfix vollständig aufgelöst; 6 D1-Fehlklassifikationen zurückgezogen | ★★★ |
+| R45 | **Aramäisches d-Relativpräfix** als morphologische Klasse — ^d + Konsonant (kein Vokalträger) → דְּ/דִּי (de-/di-, Relativpräfix „von/dessen/welches“)(a) Kein D1-Flag(b) Äußerste morphologische Schale in R41-Hierarchie**Abgrenzung:** d- + Vokalindikator = Basiskonsonant (z. B. dal) | f58r: dshodal (P.2), dshor (P.4), dchairam (P.5), dtor (P.34), dtshol (P.38), dchol (P.40) — 6 klare Instanzen; alle durch דְּ-Relativpräfix vollständig aufgelöst; 6 D1-Fehlklassifikationen zurückgezogen | ★★★ |
 | R46 | **Wurzelketten-Ausnahme für R44** — ≥ 3 aufeinanderfolgende Tokens morphologisch als Ableitungen einer einzigen validierten Basiswurzel → R44 greift nichtNachweis: explizite Dokumentation aller Ableitungsformen; ein nicht-ableitbares Token bricht die KetteGibberishTest-neutral (Pseudowörter bilden keine systematischen Wurzelketten) | f58r P.5: char.ar.al.char.arary.ytalar — 6 Tokens, alle Derivate der validierten Basiswurzel א-ו-ר (Licht); R44 greift nicht; semantisch: astronomische Licht-Litanei über Sternglanz | ★★★ |
 | R47 | **qo-Präfix-Vollintegration ab Quire H** (Erweiterung von R33) — Quire-Progressionsskala:Quires A+B: absentQuire C: emergierend (R33)Quire T: vollständigQuire H: vollständig (~8 %)Quire H ist keine Übergangszone — vollständig integriertR1 gilt nur für Quires A+B | f58r (Quire H, Spr. A): 28+ qo--Formen in ~350 Token (Stichprobe: qor, qokaiin, qocphody, qokalam, qotyshey, qokaldy, qotaily u. a.); Vergleich: f17r/v Quire C (R33): 13 Belege/250 Token; f57r Quire T (Spr. B): ~8 %; f001r Quire A: 0/260 Token | ★★★ |
 | R48 | **Randstern-System Quire H** — astronomisches Register — 6-Zacken (kein Kern) → Block 1: generisches Sternen-Register7-Zacken (kleiner Kern) → Block 2: Planetenreihe8-Zacken (größerer Kern) → Block 3: op-KoordinatenformatPrinzip register-übergreifend identisch: Randstern = struktureller Gliederungsmarker | f58r: Stern 1 (6-Zacken) über P.1 → Block P.1–P.15 (~150 Token); Stern 2 (7-Zacken) über P.16 → Block P.16–P.25 (~100 Token); Stern 3 (8-Zacken) über P.26 → Block P.26–P.40 (~155 Token); Kolophone (=) an P.15 und P.25 als Blockabschluss | ★★★ |
 | R49 | **y+t-Verb-Litanei als Schlusskolophon** — ≥ 4 aufeinanderfolgende y+t-präfigierte Heilungsverben in Finalposition (unmittelbar vor =)Dreistufiges Schema: Ursachen-Verb(en) → Illuminations-Verb(en) → Organ-Heilungs-Verb(en)Verben sem. kohärent, aber _nicht_ zwingend gleiche Basiswurzel (Unterschied zu R46) | f19v P.12: yees.ykchol.oty.ytor.ytar.ytchor.ytaiin= (7 y-Verben — Corpus-Rekord): yees (Fieber löschen) → ykchol (alles heilen) → oty (Zeichen) → ytor+ytar (Illumination ×2, R19) → ytchor+ytaiin (Pupille→Auge, Organ-Spezifizierung); alle 4 Transkriptoren (H, C, F, U) identisch — Kandidat, 1 Beleg, erfordert Folgebestätigung | ★★★ |
 | R50 | **Galiläische Guttural-Abschwächung** — Sprache-B-Vokalklärung — (a) ee → Tsere-Vokal (ֵ) ausschließlich — nicht als ה+ה (Doppellaryngal)(b) oo → Vav-Holam (וֹ) ausschließlich — nicht als ו+ו(c) D2-Warnungen durch Interpretation B automatisch suspendiert bei validierten Spr.-B-Formen**Ausnahme:** ch+[Vokal]+ol (ח-ע-ל) = genuine Benachbarung — nicht von R50 erfasst_v7.2: ot-Kompositum-Dreikette (otol+otaiir+otchos) = strukturelle Intensivierung durch Dreifach-ot_ | Quire M (f77r): D2-Warnungen 42→3 (93 % Reduktion); häufigste Tokens: qokeedy, qoteedy, cheedy, sheedy, qokeey, cheey, sheeol; Residualfälle: cheeol (P.21), cheol (P.24, P.38). Zodiak-Register (Quire K, 4 Folios, v6.9): 30+ ee-Tokens in f71r/f71v/f72r1/f72r2, kein D2-Gegenbeispiel — **R43 erfüllt: 2. vollständiges Register, ★★★ → ★★★★**. v7.2: ot-Kompositum-Dreikette f24v P.2 (otol+otaiir+otchos) — Beobachtung | ★★★★ |
-| R51 | **Illustrationszwickel-Einschübe** — Platzmangel-Querverweise — Bedingungen für Zwickel-Einschub:(a) 1–3 Zeichen zwischen/nach {plant}-Markern (kein vollständiger Satz)(b) Zeichenqualität verschlechtert (!!!-Notation)(c) mehrere Fragmentparagraphen in FolgeInterpretation: nachträgliche Kreuzreferenz-Einschübe des Schreibers | f20v P.7 (s vor {plant}), P.8 (d.s vor {plant}), P.9 (d.s!!!!!! vor {plant}) — drei Belege auf einem Folio, qualitative Eskalation; f21v P.7 (s vor sheaiin + {plant}) — zweiter Folio-Beleg → Aufstufung auf ★★★ (2 Folios); f22v P.4 (saiin als Vollwort zwischen 2×{plant} — strukturell stärkstes Beispiel: שׂ+עַיִן = „gleich dem Auge") + P.10 (s vor {plant}) — 6 Belege über 3 Folios (R43 erfüllt: ≥3 Folios) → ★★★ gesichert | ★★★ |
+| R51 | **Illustrationszwickel-Einschübe** — Platzmangel-Querverweise — Bedingungen für Zwickel-Einschub:(a) 1–3 Zeichen zwischen/nach {plant}-Markern (kein vollständiger Satz)(b) Zeichenqualität verschlechtert (!!!-Notation)(c) mehrere Fragmentparagraphen in FolgeInterpretation: nachträgliche Kreuzreferenz-Einschübe des Schreibers | f20v P.7 (s vor {plant}), P.8 (d.s vor {plant}), P.9 (d.s!!!!!! vor {plant}) — drei Belege auf einem Folio, qualitative Eskalation; f21v P.7 (s vor sheaiin + {plant}) — zweiter Folio-Beleg → Aufstufung auf ★★★ (2 Folios); f22v P.4 (saiin als Vollwort zwischen 2×{plant} — strukturell stärkstes Beispiel: שׂ+עַיִן = „gleich dem Auge“) + P.10 (s vor {plant}) — 6 Belege über 3 Folios (R43 erfüllt: ≥3 Folios) → ★★★ gesichert | ★★★ |
 | R52a | **Determinans-y im Zodiak-Sternlabel-Register** — Suffixe -y, -dy, -ody (~47 % der Labels) → aramäischer Status Emphaticus (Suffixartikel)Optional: nackter Kernstamm existiert parallel (okal= neben okaly=)Zusatz-Varianten: -ary, -alyAlle resultierenden Kernstämme morphologisch intakt nach Suffix-Abzug | f71r (53 %: 8/15), f71v (47 %: 7/15), f72r1 (40 %: 6/15), f72r2 (47 %: 14/30) — 4 Folios · 75 Labels · 35 Belege; Minimalpaar-Kontrolle: okal= (3×: S1.3, S1.5, S1.12) vs. okaly= (2×: S1.4, S1.12) in f72r2 — Suffix als optionaler Determinant belegt; keine R40-Konflikte nach Suffix-Abzug | ★★★★ |
 | R53 | **Pflanzen-Titel-Duplikation** (T-Klassen-Titelposition am Folioende, ★★★★) — **Subtyp A:** R35-Duplikation: [Duplikation+Direktional=]**Subtyp B:** Emphase-Direktional: [ee-Emphase+Direktional=]**Subtyp C:** Deskriptiv/Identifikatorisch: [Zeichen-Kompositum+Direktional=]Strikt T-Klassen-Titelposition (Unterschied zu R35: allgemeine Vollheilungs-Emphase) | **Beleg 1** f22v T.16: daldalol= (dal·dal+ol) — Subtyp A; **Beleg 2** f23v P.12: eeeoly= ({plant}-Titel) — Subtyp B; **Beleg 3** f24r T.20: sam.chorly= — T-Klassen-Formel: sham + kor + li; **Beleg 4** f25r T.7: dair.otaiir.otosy= — Subtyp C; R43 Mehrfachbestätigung (4 Folios, 3 Subtypen) → ★★★★ | ★★★★ |
 | R55 | **or-Reduplikation als Kolophon-Abschluss** (Kandidat ★★) — oro= = אֹ+ר+אֹ (Licht-Licht-Palindrom) in unmittelbarer Kolophon-Finalposition (=-Marker)Unterschied zu R15: or-Lexem-beschränkt und palindromisch konstruiertLatente Unterregel der R15-Familie | f24v P.5: oro= — Corpus-Erstbeleg (1 Beleg); oro-Frist abgelaufen (f29v). Validierungsbedarf bei erneutem Auftreten. Herabgestuft von ★★★ auf ★★ Kand. (v8.1) | ★★ |
 | R56 | **sho.sho-Emphase** — direkte Wortwiederholung ohne Genitivbrücke **(★★★ validiert, v7.7)** — sho.sho ohne BrückenpartikelUnterschied zu R24 (shol·dy·…·shol): keine GenitivbrückeUnterschied zu R30 (sho- als Präfix in Komposita): Token-Ebene | f24v P.14: sho.sho — Corpus-Erstbeleg; f27v P.7: sho·sho — Folgebeleg (R43 erfüllt: 2 Folios) → ★★★ validiert | ★★★ |
 | R58 | **3×daiin-Konzentration** in einer Zeile **(★★★★ validiert, v8.7)** — 3× daiin-Tokens in einer einzigen Paragraph-Zeile → maximale Urteils-KonzentrationUnterschied zu R19 (allg. Intensivierungsrhetorik): R58 zählt ZeilendichteUnterschied zu R9 (3–5× pro Folio): R9 zählt folio-weite Häufigkeit | f25v P.2: dchor.cthor.chor.daiin.s.okeeaiin.daiin.ckhey.daiin — Corpus-Erstbeleg (alle H/C/F einig); f30v — 2. Beleg; f32v P.9: otchol.daiin.daiin.ctho.daiin.qotaiin — 3. Folio-Beleg (H/C/F/U konsistent); R43-Frist erfüllt: f25v + f30v + f32v = 3 unabhängige Folios → ★★★★ validiert | ★★★★ |
 | R59 | **qo als isolierter Konnektiv-Token** **(★★★ validiert, v7.8)** — qo als Einzelwort-Token (gefolgt von Punkt-Separator) = bare וְ (Vav conjunctivum als Partikel)Abgrenzung von R1: R1 = Verbundpräfix (qo+Stamm); R59 = alleinstehendes WortIn Spr. A (Quire A): max. 1× pro Folio belegbar | f1v P.7: qo.ol.choiees.cheol.dol.cthey- — Erstbeleg (alle 4 Transkriptoren H/C/D/F einig); f28r P.1: Folgebeleg (2. Folio) → R43 erfüllt (f1v + f28r = 2 Folios) → ★★★ validiert | ★★★ |
-| R60 | **R60 — Pharmakologische Pflanzenteil-Annotation** (★★★★; Kor. 3 ★★★★★) — **Layout-Typen:****A** (Apex-Text: gesamter Text über Pflanze = FLOS/FRUCTUS/Triebspitzen als Einheit)**B** (Bilateral-Blüte: Indikation links + Therapie rechts auf Blüten-Höhe)**C** (Vertikale Zonentrennung: oben = FLOS/FRUCTUS, unten = FOLIUM/CAULIS)**D** (Interweaved: jede Textzeile neben anderem Pflanzenteil)_Kein {plant}-Marker = Ganzpflanzen-Präparat (TOTUS)_**Kor. 1 ★★★:** Gilt für Spr. A + B (register-unabhängig)**Kor. 2 ★★★:** Mandrake-Menschenkopf = ikonographisches Toxizitäts-Signal**Kor. 3 ★★★★★:** FOLIUM-Zone systematisch textfrei (25/25 Folios, 0 Gegenbelege)**Kor. 4 ★★★★★:** Drei-Kategorien-Farbcode: Fläche (stumm) / Linie (illustrativ) / Textur (prescribiert) | 21/21 analysierten Folios (Quire A f1v–f10r + f13r/v + f14r + f15r + f16r + f22r + f28r + f30r/v + f33r + f57r): Muster I — selektive Annotation (kein Text neben nicht-verschriebenen Teilen) — 0 Gegenbeispiele ★★★★; Stolfi f16r: „interrupted by the plant's flower" ★★★★★; pol (Frucht-Term) an Frucht-Position f22r P.1 — stärkster semantischer Einzelbeweis ★★★★★; f19r: Blüten-Semantik (saiin+chor) stimmt mit Kornblumen-Pharmakologie (Augenwasser, Konjunktivitis) überein ★★★★★; f21r: keine {plant}-Marker → Thymian-Ganzpflanzen-Präparat ★★★; f14r/f22r/f28r/f30v: rote Wurzeln ohne Text — 4 Belege ★★★★; f25r: Reeds Colors: green,dark-red bestätigt Farbcode unabhängig; f57r + f33r: beide Sprachregister bestätigt ★★★; FOLIUM-Textfreiheit: 25/25 Folios (100 %), 0 Gegenbeispiele — grüne, dunkle, rot-geschattete Blätter alle textfrei; v8.7: f32r/v + f33v + f34r/v ergänzt → 25-Folio-Schwelle → ★★★★★; f009r rote Punkt-Ähre MIT Text = FLOS-therapeutisch (Drei-Kategorien-Bestätigung); f010r rote Ovale OHNE Text = Ebene-2-Nicht-Wurzel-Beleg ★★★★★ | ★★★★ |
-| R61 | **ol+[Ankerwort] — Intensivierungsformel** (Kandidat ★★★, v8.7) — ol (עַל = über/auf) unmittelbar vor validiertem Ankerwort → „Überwindung"/Konfrontation mit dem genannten ZustandPositionstendenz: häufig unmittelbar vor {plant}-Marker (Therapie-Direktional)Steigerungsform: qoldar = qo+ol+dar (dreistufiges Präfix, maximale Intensivierung)Register: Spr. A + B; Quire D + E (cross-register, cross-quire) | olsheol (f31r P.11) = über Scheol; olteedam (f31v P.7) = über das Blut der Zeit; olaiin (f33v P.6) = über das Auge; oldam (f34r P.7 + f34v P.2) = über das Blut; oldar (f34v P.4) = über den Leuchtenden; olchdaiin (f34v P.7) = über Blässe-Urteil — 6 Belege in einer Sitzung, alle Ankerwörter ★★★★★-Klasse; Steigerungsform: qoldar (f34v P.4) = qo + ol + dar = dreistufiges Präfix (maximale Intensivierung) | ★★★ |
+| R60 | **R60 — Pharmakologische Pflanzenteil-Annotation** (★★★★; Kor. 3 ★★★★★) — **Layout-Typen:****A** (Apex-Text: gesamter Text über Pflanze = FLOS/FRUCTUS/Triebspitzen als Einheit)**B** (Bilateral-Blüte: Indikation links + Therapie rechts auf Blüten-Höhe)**C** (Vertikale Zonentrennung: oben = FLOS/FRUCTUS, unten = FOLIUM/CAULIS)**D** (Interweaved: jede Textzeile neben anderem Pflanzenteil)_Kein {plant}-Marker = Ganzpflanzen-Präparat (TOTUS)_**Kor. 1 ★★★:** Gilt für Spr. A + B (register-unabhängig)**Kor. 2 ★★★:** Mandrake-Menschenkopf = ikonographisches Toxizitäts-Signal**Kor. 3 ★★★★★:** FOLIUM-Zone systematisch textfrei (25/25 Folios, 0 Gegenbelege)**Kor. 4 ★★★★★:** Drei-Kategorien-Farbcode: Fläche (stumm) / Linie (illustrativ) / Textur (prescribiert) | 21/21 analysierten Folios (Quire A f1v–f10r + f13r/v + f14r + f15r + f16r + f22r + f28r + f30r/v + f33r + f57r): Muster I — selektive Annotation (kein Text neben nicht-verschriebenen Teilen) — 0 Gegenbeispiele ★★★★; Stolfi f16r: „interrupted by the plant's flower“ ★★★★★; pol (Frucht-Term) an Frucht-Position f22r P.1 — stärkster semantischer Einzelbeweis ★★★★★; f19r: Blüten-Semantik (saiin+chor) stimmt mit Kornblumen-Pharmakologie (Augenwasser, Konjunktivitis) überein ★★★★★; f21r: keine {plant}-Marker → Thymian-Ganzpflanzen-Präparat ★★★; f14r/f22r/f28r/f30v: rote Wurzeln ohne Text — 4 Belege ★★★★; f25r: Reeds Colors: green,dark-red bestätigt Farbcode unabhängig; f57r + f33r: beide Sprachregister bestätigt ★★★; FOLIUM-Textfreiheit: 25/25 Folios (100 %), 0 Gegenbeispiele — grüne, dunkle, rot-geschattete Blätter alle textfrei; v8.7: f32r/v + f33v + f34r/v ergänzt → 25-Folio-Schwelle → ★★★★★; f009r rote Punkt-Ähre MIT Text = FLOS-therapeutisch (Drei-Kategorien-Bestätigung); f010r rote Ovale OHNE Text = Ebene-2-Nicht-Wurzel-Beleg ★★★★★ | ★★★★ |
+| R61 | **ol+[Ankerwort] — Intensivierungsformel** (Kandidat ★★★, v8.7) — ol (עַל = über/auf) unmittelbar vor validiertem Ankerwort → „Überwindung“/Konfrontation mit dem genannten ZustandPositionstendenz: häufig unmittelbar vor {plant}-Marker (Therapie-Direktional)Steigerungsform: qoldar = qo+ol+dar (dreistufiges Präfix, maximale Intensivierung)Register: Spr. A + B; Quire D + E (cross-register, cross-quire) | olsheol (f31r P.11) = über Scheol; olteedam (f31v P.7) = über das Blut der Zeit; olaiin (f33v P.6) = über das Auge; oldam (f34r P.7 + f34v P.2) = über das Blut; oldar (f34v P.4) = über den Leuchtenden; olchdaiin (f34v P.7) = über Blässe-Urteil — 6 Belege in einer Sitzung, alle Ankerwörter ★★★★★-Klasse; Steigerungsform: qoldar (f34v P.4) = qo + ol + dar = dreistufiges Präfix (maximale Intensivierung) | ★★★ |
 
 
 ## VII. Rückwärtstest-Statistik
@@ -712,7 +712,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | chckhy= (Diagnosekolophon) | כְּ+כְּ+הִי | ✓ 4× Korpus: f9v, f11v P.6, f14r P.7, f14v P.6 | Konzentration in Bifolio bB3; auch medial belegt (f14v P.6) |
 | ykshol (y+k+shol) | יְ+כְּ+שׁוֹל | ✓ f15r P.12 — erster negativer y+k+Terminus | ykchaiin→ycheor→ykchor→ykchy→ykaiin→ykshol: komplettes Paradigma, positiv + negativ belegt |
 | qotchor (Pupillenzeichen) | קוֹ+תְּ+כֹּר | ✓ f15r Schlusskolophon ★★★★★ | qotchor·chaiin·chy·kol·daky= — positives Pupillen-Urteil; ophthalmologische Abschlussformel bB2 |
-| soloiin | שׁוֹ+לְ+עַיִן | ✓ f15v P.11 — therapeutisch präzisestes Kompositum | „Arznei für das Auge" — höchste Heilarznei-Präzision im Gesamtkorpus; Gegenstück zu shoiin (f10v) |
+| soloiin | שׁוֹ+לְ+עַיִן | ✓ f15v P.11 — therapeutisch präzisestes Kompositum | „Arznei für das Auge“ — höchste Heilarznei-Präzision im Gesamtkorpus; Gegenstück zu shoiin (f10v) |
 | cthor (vollständige Heilung) | כְּ+תֹּר | ✓ f15v Schlusskolophon | daiin·cthor·chol·chor= — cthor+chor = Heilung der Pupillenpathologie; positiver Abschluss Bifolio bB2 |
 | chaiin · ckhy · or · aiin (Prognose-Tetrade) | Prognose-Tetrade | ✓ f10r P4 (alle vier in einer Zeile) | vollständiges hippokratisches Schema; kombinierter Test post-v7.4 → Typ II (v8.8), Einzelanker or/chaiin bleiben Typ I |
 | dam (Quire B) | דָּם | ✓ f14v P.8 (Blut-Triade) | dol · dair · dam — Erstbeleg Blutpathologie in bB3; verbindet f14v mit f3r; post-v7.4 → Typ II (v8.8) |
@@ -736,7 +736,7 @@ Die am besten verifizierten Sequenzen des Korpus — als Orientierungshilfe beim
 
 EVA: `sar · al · daiindy`
 Heb: שַׂר עַל דִּין דִּי
-DE: „Arzt über — das Urteil dessen"
+DE: „Arzt über — das Urteil dessen“
 
 _Drei unabhängig bestätigte Wörter + aramäischer Genitiv-Suffix in natürlicher Wortfolge. ★★★★★_
 
@@ -744,7 +744,7 @@ _Drei unabhängig bestätigte Wörter + aramäischer Genitiv-Suffix in natürlic
 
 EVA: `daiin · sheckhy · lchedy · chckhy · shol`
 Heb: שְׁאוֹל · כְּכְּהִי · לְכְּדֵי · שֶׁכְּהִי · דִּין
-DE: „Das Urteil: [der,] der Blässe zeigt — um [sie] zu behandeln — wie Blässe — Scheol."
+DE: „Das Urteil: [der,] der Blässe zeigt — um [sie] zu behandeln — wie Blässe — Scheol.“
 
 _Vollständiges hippokratisches Prognose-Schema in fünf Wörtern. ★★★★★_
 
@@ -752,7 +752,7 @@ _Vollständiges hippokratisches Prognose-Schema in fünf Wörtern. ★★★★�
 
 EVA: `… or · aiin`
 Heb: אַיִן · אוֹר
-DE: „Licht — Nichts."
+DE: „Licht — Nichts.“
 
 _Zeilenende-Formel: binäre Prognose (Heilung oder Ausweg-los), identisch mit hippokratisch-arabischem Prognostikon-Schema._
 
@@ -760,11 +760,11 @@ _Zeilenende-Formel: binäre Prognose (Heilung oder Ausweg-los), identisch mit hi
 
 **EVA:** `lor`
 Heb: לְאוֹר
-„zum Licht / zur Heilung"
+„zum Licht / zur Heilung“
 
 **EVA:** `lshol`
 Heb: לְשׁוֹל
-„zum Tod / zu Scheol"
+„zum Tod / zu Scheol“
 
 _Identische l-Direktional-Morphologie, entgegengesetzte Semantik. Hauptneufund v5.2. ★★★★★_
 
@@ -772,7 +772,7 @@ _Identische l-Direktional-Morphologie, entgegengesetzte Semantik. Hauptneufund v
 
 EVA: `tshey · sheol · cheolshy · chalal`
 Heb: חָלָל · [כְּעוֹלְשִׁי] · שְׁאוֹל · תְּשֵׁי
-DE: „Erschöpfung — Scheol — [wie die Last] — der Sterbende."
+DE: „Erschöpfung — Scheol — [wie die Last] — der Sterbende.“
 
 _Dreifache Prognose: Erschöpfung → Tod → Patient im Sterben. chalal erscheint ausschließlich nach sheol._
 
@@ -780,11 +780,11 @@ _Dreifache Prognose: Erschöpfung → Tod → Patient im Sterben. chalal erschei
 
 **EVA:** `odl · chaiin · ykchor · dair`
 Heb: דְּ+אִיר · יְ+כְּ+חֹר · חַיִּין · עַ+דַּל
-„Über die Schwäche — Leben — er heilt die Pupille — der Leuchtende."
+„Über die Schwäche — Leben — er heilt die Pupille — der Leuchtende.“
 
 **EVA:** `ycheor · dor · schold=`
 Heb: שׁ+כֹּ+לֵד · דּוֹר · יְ+כְּ+אוֹר
-„Er wird wie Licht heilen — Generation — [Schlussformel]."
+„Er wird wie Licht heilen — Generation — [Schlussformel].“
 
 _Erster Beleg von ykchor (er heilt die Pupille — 4. Verb im y+k+[Terminus]-Paradigma) und von ycheor= als positivem Schluss-Kolophon. f11v (Borago-Typ) ist das positivste Prognosefolio in Quire B. ★★★★★_
 
@@ -792,11 +792,11 @@ _Erster Beleg von ykchor (er heilt die Pupille — 4. Verb im y+k+[Terminus]-Par
 
 **EVA:** `ykaiin`
 Heb: יְ+כְּ+עַיִן
-„er heilt das Auge" — 5. y+k+Terminus-Verb
+„er heilt das Auge“ — 5. y+k+Terminus-Verb
 
 **EVA:** `dol · dair · dam`
 Heb: דֶּוֶה · דְּ+אִיר · דָּם
-„Schmerz — das Licht davon — Blut"
+„Schmerz — das Licht davon — Blut“
 
 _ykaiin vervollständigt das y+k+[Terminus]-Paradigma auf fünf klinische Verbformen (Leben, Licht, Pupille, Blässe, Auge). Die Blut-Triade dol·dair·dam (f14v P.8) ist der erste dam-Beleg in Quire B und verbindet f14v mit f3r (Blutpflanze). ★★★★★_
 
@@ -804,23 +804,23 @@ _ykaiin vervollständigt das y+k+[Terminus]-Paradigma auf fünf klinische Verbfo
 
 **EVA:** `qotchor · chaiin · chy · kol · daky=`
 Heb: קוֹ+תְּ+כֹּר · חַיִּין · כְּהִי · כֹּל · דַּכִּי=
-f15r Kolophon: „Zeichen der Pupille — Leben — Blässe — alles — Reinheit" (positiv-ambivalent)
+f15r Kolophon: „Zeichen der Pupille — Leben — Blässe — alles — Reinheit“ (positiv-ambivalent)
 
 **EVA:** `daiin · cthor · chol · chor=`
 Heb: דִּין · כְּ+תֹּר · כֹּל · כֹּר=
-f15v Kolophon: „Urteil — vollständige Heilung — alles — Pupille" (positiv)
+f15v Kolophon: „Urteil — vollständige Heilung — alles — Pupille“ (positiv)
 
-_soloiin (f15v P.11) = „Arznei für das Auge" — therapeutisch präzisestes Kompositum im Gesamtkorpus. ykshol (f15r P.12) = erster negativer y+k+Terminus — Paradigma mit 6 Gliedern + Kandidat ykair. Bifolio bB2 (f10r/f10v/f15r/f15v) schließt konsistentes ophthalmologisches Programm ab. ★★★★★_
+_soloiin (f15v P.11) = „Arznei für das Auge“ — therapeutisch präzisestes Kompositum im Gesamtkorpus. ykshol (f15r P.12) = erster negativer y+k+Terminus — Paradigma mit 6 Gliedern + Kandidat ykair. Bifolio bB2 (f10r/f10v/f15r/f15v) schließt konsistentes ophthalmologisches Programm ab. ★★★★★_
 
 ### 9 · f16r / f16v — Bifolio bB1 · Quire-B-Abschluss
 
 **EVA:** `saiin · ytaiin=`
 Heb: יְ+תָּ+עַיִן · שַׂעַיִן
-f16r Mini-Kolophon: „Augenarzt — er wird das Auge heilen" (positiv)
+f16r Mini-Kolophon: „Augenarzt — er wird das Auge heilen“ (positiv)
 
 **EVA:** `sokar · oaorar=`
 Heb: שׂ+אוֹ+כְּ+אָר · עַ+אַ+אוֹר+אָר
-f16v Quire-Kolophon: „Heilungs-Arzt des Lichts — auf das Licht der Heilung" (positiv)
+f16v Quire-Kolophon: „Heilungs-Arzt des Lichts — auf das Licht der Heilung“ (positiv)
 
 _tchor (תְּ+חֹר) — fem. Pupillen-Heilungsverb, zwei Belege in bB1 bestätigt ★★★★. chkar·chkar (f16v P.6) — erste Doppel-Untersuchungsformel im Corpus. Bifolio bB1 (f9r/f9v/f16r/f16v) vollständig — Quire B abgeschlossen; erster rein positiver Quire-Abschluss im analysierten Corpus. ★★★★★_
 
@@ -828,11 +828,11 @@ _tchor (תְּ+חֹר) — fem. Pupillen-Heilungsverb, zwei Belege in bB1 bestä
 
 **EVA:** `or · shaiin · cthor · cthal · okal · dar=`
 Heb: אוֹר · שַׁ+עַיִן · כְּ+תֹּר · כְּ+תַּ+חַל · עַ+כָּל · דַּר=
-f18r Schlusskolophon P.13: „Licht des Auges — vollständige Heilung — wie vollständig — über alles — leuchtend." (stark positiv ★★★★★)
+f18r Schlusskolophon P.13: „Licht des Auges — vollständige Heilung — wie vollständig — über alles — leuchtend.“ (stark positiv ★★★★★)
 
 **EVA:** `yko · dshy · dair · ykol · dom=`
 Heb: יְ+כוֹ · דְּ+שֵׁי · דְּ+אִיר · יְ+כֹּל · דּוֹם=
-f18v Schlusskolophon P.10: „Er wird sich erholen — von der Gabe — der Leuchtende — er heilt alles — Stille/Ende." (positiv-neutral, R39-Erstbeleg dom= in Spr. A)
+f18v Schlusskolophon P.10: „Er wird sich erholen — von der Gabe — der Leuchtende — er heilt alles — Stille/Ende.“ (positiv-neutral, R39-Erstbeleg dom= in Spr. A)
 
 _f18r: Centaurea montana — stärkstes Schlusskolophon in Quire C; dar·dar (R36-Erstbeleg), doldaiin (Krankheits-Urteil, Corpus-Erstbeleg). f18v: Dracunculus vulgaris — erste zoomorphe Begleitfigur im botanischen Corpus; ykam/ytor Auferstehungsverben; qokchy·qokchy R37-Erstbeleg. ★★★★_
 
@@ -840,11 +840,11 @@ _f18r: Centaurea montana — stärkstes Schlusskolophon in Quire C; dar·dar (R3
 
 **EVA:** `otam · otam · chotam`
 Heb: אוֹת+אָם · אוֹת+אָם · כֹּ+אוֹת+אָם
-"Zeichen der Mutter — Zeichen der Mutter — wie das Zeichen der Mutter." (R19/R35 dreistufige Nominal-Intensivierung)
+„Zeichen der Mutter — Zeichen der Mutter — wie das Zeichen der Mutter.“ (R19/R35 dreistufige Nominal-Intensivierung)
 
 **EVA:** `okal= · okaly=`
 Heb: עַ+כָּל / עַ+כָּל+יְ
-"auf allem" neben "auf allem (det.)" — R52a-Minimalpaar: Determinans-y optional (f72r2 S1)
+„auf allem“ neben „auf allem (det.)“ — R52a-Minimalpaar: Determinans-y optional (f72r2 S1)
 
 _Erstes vollständiges Zodiak-Register: R17 ★★★★ (5. Register), R19/R35 ★★★ (Zodiak-Erstbeleg), R50 ★★★★ (2. Register), R52a ★★★★ (4 Folios · 75 Labels · 47%). alef/otalef = erste ikonographische Buchstabenreferenz im Zodiak-Corpus. ★★★★_
 
@@ -909,7 +909,7 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 | f14v | Farn-Typ (Dryopteris-Gruppe) | dam (Blut-Triade P.8, Erstbeleg Quire B); dchckhy= (Intensiv-Siegel); Dreisegment-Kolophon; dy×3 (R25) | ★★★ |
 | f15r | Silberdistel (Carlina acaulis) | qotchor ★★★★★ (Pupillen-Zeichen, Kolophon); ykshol P.12 (erster negativer y+k+Terminus); sheey·cthy·dain (Gabe+Heilung+Auge); chaiin+Abwägungskolophon; Layout Typ B (bilateral: linke Spalte = linke Blütenknospe / rechte Spalte = rechte Blütenknospe); Doppel-{plant}-Marker alle Paragraphen; Sonnen-/Medaillonsymbol über Apex (R60 Muster VI Kand.); rote Wurzel ohne Text (R60 Ebene 2) | ★★★★ |
 | f15v | Einbeere (Paris quadrifolia) | soloiin P.11 (Arznei für Auge) ★★★★★; sor P.10 (Heilungsarznei); opchor P.1 (Atemweg-Pupillen-Befund); cthor·chor= (vollständige Heilung, Kolophon) | ★★★★ |
-| f16r | Cannabis sativa (Hanf) ★★★★ · Alt.: Wunderbaum (Ricinus communis) ★★★ | tchor P2.5 (fem. Pupillen-Verb, 1. Beleg); saiin·ytaiin= (Intra-Paragraph-Kolophon); qokchor·dl·dy·shey= (Schlusskolophon); Layout Typ C (P.1.1–2 Blüten FLOS / P.1.3–P.2 Blätter FOLIUM); opchy+saiin+chor FLOS-Position (Atemweg+Augenarzt+Pupille); beige Wurzel ohne Text (R60 Ebene 1); Stolfi: „interrupted by the plant's flower" ★★★★★ | ★★★★ |
+| f16r | Cannabis sativa (Hanf) ★★★★ · Alt.: Wunderbaum (Ricinus communis) ★★★ | tchor P2.5 (fem. Pupillen-Verb, 1. Beleg); saiin·ytaiin= (Intra-Paragraph-Kolophon); qokchor·dl·dy·shey= (Schlusskolophon); Layout Typ C (P.1.1–2 Blüten FLOS / P.1.3–P.2 Blätter FOLIUM); opchy+saiin+chor FLOS-Position (Atemweg+Augenarzt+Pupille); beige Wurzel ohne Text (R60 Ebene 1); Stolfi: „interrupted by the plant's flower“ ★★★★★ | ★★★★ |
 | f16v | Alpen-Mannstreu (Eryngium alpinum) | chkar·chkar (Doppel-Untersuchungsformel, einmalig); okaiin×2; otor P.12 (Zeichen des Lichts); sokar·oaorar= (Quire-B-Abschlusskolophon) | ★★★★★ |
 | f17r | Skabiosen-Flockenblume (Centaurea scabiosa) | 3 =-Kolophone P.3+P.6+P.12 (Corpus-Rekord für ein Folio); chor 3×; 7 qo-Formen in Spr. A (R33); Marginalinschrift (nicht Voynichesisch, vermutl. Latein) | ★★★★ |
 | f17v | Schwarze Zaunrübe (Tamus communis) | 23 Paragraphen (Kräuter-Rekord); sar P.17 ohne {plant} (wie f57r/f103r); sheol Vollform Spr. A P.13 (R34); char im Schlusskolophon; or·okaiin·or Palindrom P.6 | ★★★ |
@@ -926,7 +926,7 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 | f23r | Wiesen-Storchschnabel (Geranium pratense) | Drei-Kolophon-Architektur P.3+P.5+P.11 (strukturelle Parallele zu f17r — Außenbifolio-Korrespondenz Quire C); tshol P.6 als P.6-Strukturtoken (erster Beleg); R15 6. Beleg Typ B nominal: qokchol·dar·qokchol P.7; daiidal P.6 (Urteil der Schwäche ★★★); ytom P.5 (er wird vollständig ★★★); dalory P.11 (Schwäche zum Licht ★★★) | ★★★★ |
 | f23v | Borretsch (Borago officinalis) | dam·dam P.8 (bilateral — Corpus-Erstbeleg Quire C, Borago-Blutklärungsindikation); tshol P.6 (P.6-Strukturtoken 2. Beleg: beide Seiten desselben Folios f23r+f23v); sar P.6 (Arzt-Supervision über {plant}, 3. Folio-Beleg → ★★★★); qokor P.8 (und alles Licht ★★★); otshor P.6 (Zeichen des Lichts ★★★); olsar P.6 (ärztliche Aufsicht ★★★); aiior P.12 (Auge des Lichts ★★★); Bifolio bC2 vollständig | ★★★★ |
 | f24r | Taubenkropf-Leimkraut (Silene vulgaris) | R53 3. T-Klassen-Beleg T.20: sam.chorly= (so heile meine Pupille — R43 erfüllt); sar×2 P.x (3. Folio-Beleg → sar ★★★★); dal·dam·dal-Triplette P.16 (R54 Erstbeleg ★★ Kand.); sshey P.17 (Doppel-Shin-Blässe, R56 ★★★ Kand.); otaiphy P.19 (Hapax ★★ Kand.); sam.chorly ★★★ Kand.; Botanik: Hämostase + Augenwirkung + Supervision | ★★★★ |
-| f24v | Physalis-Typ / Scabiosa ★★★ · Alt.: Küchenschelle (Pulsatilla vulgaris) ★★ | Quire-Zeichen „39" = III = Quire C (letztes Folio Quire C); ot-Kompositum-Dreikette P.2 (otol+otaiir+otchos — R50-Beobachtung); olom ★★★★ P.7 (Ewigkeit/Welt); otaiir ★★★★ P.2 (Zeichen des Augenlichts); cheekdam ★★★★ P.14 (wie das Zeichen des Blutes); oro= P.5 (or-Palindrom-Reduplikation, R55 ★★★ Kand.); odaiim= P.16 (Abschluss-Kolophon-Marker, R57 ★★ Kand.); sho.sho P.14 (R56 ★★ Kand.); Quire C vollständig (16/16 = 100 %); Layout Typ C unilateral-links (oberer Block Blüten+Knollen FLOS / unterer Block Knollen+Blätter); grüne Knollen mit Text; orange Wurzel ohne Text (R60 Ebene 1) | ★★★★ |
+| f24v | Physalis-Typ / Scabiosa ★★★ · Alt.: Küchenschelle (Pulsatilla vulgaris) ★★ | Quire-Zeichen „39“ = III = Quire C (letztes Folio Quire C); ot-Kompositum-Dreikette P.2 (otol+otaiir+otchos — R50-Beobachtung); olom ★★★★ P.7 (Ewigkeit/Welt); otaiir ★★★★ P.2 (Zeichen des Augenlichts); cheekdam ★★★★ P.14 (wie das Zeichen des Blutes); oro= P.5 (or-Palindrom-Reduplikation, R55 ★★★ Kand.); odaiim= P.16 (Abschluss-Kolophon-Marker, R57 ★★ Kand.); sho.sho P.14 (R56 ★★ Kand.); Quire C vollständig (16/16 = 100 %); Layout Typ C unilateral-links (oberer Block Blüten+Knollen FLOS / unterer Block Knollen+Blätter); grüne Knollen mit Text; orange Wurzel ohne Text (R60 Ebene 1) | ★★★★ |
 | f25r | Brennnessel (Urtica dioica) | R53 4. T-Klassen-Beleg T.7: dair.otaiir.otosy= (Subtyp C — deskriptiv/identifikatorisch: Zeichen-Augenlicht → R53 ★★★★); otaiir Zweitbeleg → ★★★★★ Kand. (R43 erfüllt); daiin·daiin P.5 + daiin P.1 (4×daiin im Bifolio); otosy ★★★ Kand. T.7 (Zeichen-Scheol-gleich-er); cheesees ★★★ Kand. P.3 (Dreifach-Licht-Zeichen); soshy ★★★ Kand. P.1; Bifolio bD1 (Quire D außen): Kontinuität zu Quire C bestätigt; Botanik: Blut/Anämie + Augenindikation; dunkelrote Bohnen an Stengelknoten ohne Text (R60 Ebene 2 Nicht-Wurzel-Erstbeleg ★★★★★ — Reeds: Colors: green,dark-red); T.7 als Pflanzenteil-Deskriptor an Blattspitze (grüne FOLIUM-Zone → R60-Erweiterung, ★★★★ Kand.) | ★★★★ |
 | f25v | Schöllkraut (Chelidonium majus) | orchaiin= P.7 (neue Kolophon-Abschlussformel ★★★★: or+chor/k+aiin = Licht-wie-Auge); 3×daiin P.2 (dchor.cthor.chor.daiin.s.okeeaiin.daiin.ckhey.daiin — Corpus-Erstbeleg 3×daiin in einer Zeile, R58 ★★★ Kand.); daiin·daiin P.5 (4. Doppelurteil im Bifolio); ckhear ★★★★ P.4 (ckh-Variante: wie das Licht); qokoral ★★★ Kand. P.6; daiity ★★★ Kand. P.3; R33 qo-Belege: qochol P.5, qokcho + qotchy P.6 (Quire-D-Einstieg Kontinuität); Drachen-Motiv (Toxizitätssignal + Augenheilung); Botanik: Augen (toxisch) + Scheol | ★★★★ |
 | f26r | Schwarzer Nachtschatten (Solanum nigrum) — Sprache B | Erster Sprache-B-Einschub Quire D (bD2); Diagnose-Leitterm: psheoky (Pe+Scheol-Öffnung), chckhy (Blässe), dal (Schwäche); Therapie: sar+dal+dar; ykeechy ★★★ Kand. P.9 (8. y+k-Verb: er heilt wie Blässe-Licht); qoteedar ★★★ Kand. P.8 (und er/du wirst leuchten); eedy ★★★ Kand. P.5 (Negativ-Licht-Genitiv); 10 Paragraphen; ={plant}-Abschluss P.10 (otal=); Prognose: ambivalent (psheoky-Toxizität / sheey-Gabe); Indikation: Pallor, Augenschwäche, Atemwegsbefund | ★★★ |
@@ -962,7 +962,7 @@ Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.
 | Folio | Prinzip | Notiz |
 | --- | --- | --- |
 | f103r/v | Spärlich (19/54 Para.); sternlos = positiver Ausgang | Inclusio P.1↔P.52; beige Zone ab P.27 |
-| f116r | Regelmäßige ~3er-Gruppen (P.1–P.30); danach sternlose Sektion | Transkriptor: „End of starred paragraphs" |
+| f116r | Regelmäßige ~3er-Gruppen (P.1–P.30); danach sternlose Sektion | Transkriptor: “End of starred paragraphs” |
 | f114v | Strikt alternierend Beige–Rot–Beige–Rot | Paarstruktur; Schleifenlänge als zweite Dimension |
 | f115r/v | Überwiegend 8-zackig mit Schleife | Stark ch-dominiertes Vokabular — anderes Register |
 | f58r | 3 Randsterne (gold) markieren 3 Textblöcke; je ein Stern über dem ersten Paragraphen des Blocks | 6-Zacken (P.1–P.15) · 7-Zacken+Kern (P.16–P.25) · 8-Zacken+Kern (P.26–P.40) — R48 |
@@ -1066,7 +1066,7 @@ _Arbeitshypothese: Bestätigt: Sprache B, Layout-Typ C (vertikale Zonentrennung)
 
 Quire E eröffnet mit zwei zoomorphen Wurzel-Darstellungen: f33r (Mandragora officinarum, humanoid) und f34v (Bryonia alba, quadruped — Hirsch/Hase). Dies markiert einen möglichen ikonographischen Subkodex für Pflanzen mit anthropo- oder zoomorphen Wurzeln. Offen: Setzt sich das Muster in f35r/f35v und weiteren Quire-E-Folios fort?
 
-_Arbeitshypothese: Quire E fokussiert auf Pflanzen mit magisch-pharmakologischer Doppelfunktion, deren Wurzeln in menschliche oder tierische Formen wachsen (Mandragora, Bryonia). Im mittelalterlichen Kräuterbuch sind diese Pflanzen als „Kräfte-Pflanzen" mit besonderer pharmakologischer Potenz klassifiziert. R60 Korollar 2 (Ikonographische Toxizitäts-Warnung) könnte als Quire-E-spezifische Erweiterung formal werden. Prüfen: f35r/f35v auf zoomorphe Elemente._
+_Arbeitshypothese: Quire E fokussiert auf Pflanzen mit magisch-pharmakologischer Doppelfunktion, deren Wurzeln in menschliche oder tierische Formen wachsen (Mandragora, Bryonia). Im mittelalterlichen Kräuterbuch sind diese Pflanzen als „Kräfte-Pflanzen“ mit besonderer pharmakologischer Potenz klassifiziert. R60 Korollar 2 (Ikonographische Toxizitäts-Warnung) könnte als Quire-E-spezifische Erweiterung formal werden. Prüfen: f35r/f35v auf zoomorphe Elemente._
 
 ### OP12 — FOLIUM-Textfreiheit: Regel oder Layout-Artefakt?
 

@@ -26,7 +26,7 @@ export const TESTED = [
   { type: 'II', pred: 'chckhy= (Diagnosekolophon)', heb: 'כְּ+כְּ+הִי', result: '✓ 4× Korpus: f9v, f11v P.6, f14r P.7, f14v P.6', context: 'Konzentration in Bifolio bB3; auch medial belegt (f14v P.6)' },
   { type: 'II', pred: 'ykshol (y+k+shol)', heb: 'יְ+כְּ+שׁוֹל', result: '✓ f15r P.12 — erster negativer y+k+Terminus', context: 'ykchaiin→ycheor→ykchor→ykchy→ykaiin→ykshol: komplettes Paradigma, positiv + negativ belegt' },
   { type: 'II', pred: 'qotchor (Pupillenzeichen)', heb: 'קוֹ+תְּ+כֹּר', result: '✓ f15r Schlusskolophon ★★★★★', context: 'qotchor·chaiin·chy·kol·daky= — positives Pupillen-Urteil; ophthalmologische Abschlussformel bB2' },
-  { type: 'II', pred: 'soloiin', heb: 'שׁוֹ+לְ+עַיִן', result: '✓ f15v P.11 — therapeutisch präzisestes Kompositum', context: '„Arznei für das Auge" — höchste Heilarznei-Präzision im Gesamtkorpus; Gegenstück zu shoiin (f10v)' },
+  { type: 'II', pred: 'soloiin', heb: 'שׁוֹ+לְ+עַיִן', result: '✓ f15v P.11 — therapeutisch präzisestes Kompositum', context: '„Arznei für das Auge“ — höchste Heilarznei-Präzision im Gesamtkorpus; Gegenstück zu shoiin (f10v)' },
   { type: 'II', pred: 'cthor (vollständige Heilung)', heb: 'כְּ+תֹּר', result: '✓ f15v Schlusskolophon', context: 'daiin·cthor·chol·chor= — cthor+chor = Heilung der Pupillenpathologie; positiver Abschluss Bifolio bB2' },
   // ── Post-v7.4 · von Typ I → Typ II reklassifiziert (v8.8) ──────────────────
   { type: 'II', pred: 'chaiin · ckhy · or · aiin (Prognose-Tetrade)', heb: 'Prognose-Tetrade', result: '✓ f10r P4 (alle vier in einer Zeile)', context: 'vollständiges hippokratisches Schema; kombinierter Test post-v7.4 → Typ II (v8.8), Einzelanker or/chaiin bleiben Typ I' },

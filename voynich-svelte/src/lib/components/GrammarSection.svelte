@@ -25,7 +25,7 @@
         {#each GRAMMAR_PREFIXES as row (row.eva)}
           <tr
             class:row-filterable={!!onLinkFilter}
-            title={onLinkFilter ? `Im Lexikon nach „${row.eva}" filtern` : undefined}
+            title={onLinkFilter ? `Im Lexikon nach „${row.eva}“ filtern` : undefined}
             onclick={() => onLinkFilter?.(row.eva)}
             onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onLinkFilter?.(row.eva)}
             tabindex={onLinkFilter ? 0 : undefined}
@@ -59,7 +59,7 @@
         {#each GRAMMAR_SUFFIXES as row (row.eva)}
           <tr
             class:row-filterable={!!onLinkFilter}
-            title={onLinkFilter ? `Im Lexikon nach „${row.eva}" filtern` : undefined}
+            title={onLinkFilter ? `Im Lexikon nach „${row.eva}“ filtern` : undefined}
             onclick={() => onLinkFilter?.(row.eva)}
             onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onLinkFilter?.(row.eva)}
             tabindex={onLinkFilter ? 0 : undefined}
