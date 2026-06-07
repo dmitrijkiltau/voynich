@@ -2,9 +2,9 @@
 	import { OPEN_PROBLEMS } from '$lib/open-problems-data.js';
 
 	const severityLabel = {
-		hoch:           'Schwere: hoch',
-		mittel:         'Schwere: mittel',
-		strukturell:    'Strukturell',
+		hoch:           	'Schwere: hoch',
+		mittel:         	'Schwere: mittel',
+		strukturell:    	'Strukturell',
 		'niedrig-mittel': 'Schwere: niedrig–mittel',
 	};
 

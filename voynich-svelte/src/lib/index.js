@@ -16,11 +16,11 @@ const _compact = (/** @type {string} */ n) => n.replace(/ /g, '');
 const _pct     = (/** @type {number} */ p) => `${Math.round(p)}%`;
 
 export const STATS = {
-  version: '8.8.4',
-  // Separate each change on a new line
+  version: '8.8.5',
+  // Separate each change on a new line and keep only the new changes since the last release.
   changelog: [
-    'f2r-Audit: Erstbelege korrigiert (sor)',
-    'f1v-Audit: Leere layer/anchorFolio/evidence-Felder gefüllt (chan, al, chkar, dalor, saiin, shodaiin, cthor)',
+    'f2v-Audit: anchorFolio shty gesetzt; evidence-Fills cheor, otchy, otchor, chokeos',
+    'f2v-Audit: 13 neue Einträge (otaiin, kchor, chodaiin, kchy, chody, chcthy, keol, cheaiin, chty, cholo, shy, lshy, pchor)',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.length,

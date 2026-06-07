@@ -43,7 +43,7 @@ export const STEM_WORDS = [
   { eva: "chod",    heb: "חֹד",        de: "Schärfe / Akutheit (med. Terminus)",                   layer: "",                                      isAnchor: false,  anchorFolio: "",                                          confidenceStars: 3, rulesApplied: [] },
   { eva: "tolol",   heb: "תֹּלֹל",       de: "geschwächt / hängend (Zustands-Adj.)",                 layer: "",                                      isAnchor: false,  anchorFolio: "",                                          confidenceStars: 3, rulesApplied: [] },
   { eva: "sam",     heb: "שַׂם",        de: "Arznei",                                               layer: "",                                      isAnchor: false,  anchorFolio: "",                                          confidenceStars: 3, rulesApplied: [] },
-  { eva: "shty",    heb: "שְׁתִי",       de: "Getränk / Trank",                                      layer: "",                                      isAnchor: false,  anchorFolio: "",                                          confidenceStars: 3, rulesApplied: [] },
+  { eva: "shty",    heb: "שְׁתִי",       de: "Getränk / Trank",                                      layer: "",                                      isAnchor: false,  anchorFolio: "f2v P.1 (H/C/D/F/U 5/5)",                   confidenceStars: 3, rulesApplied: [] },
   { eva: "pol",     heb: "פֹּל",        de: "Bohne / Beere / Frucht",                               layer: "",                                      isAnchor: false,  anchorFolio: "f1v P.10",                                  confidenceStars: 3, rulesApplied: ["R60"] },
   { eva: "pcho",    heb: "פְּחֹ",        de: "Atem / Mund (Sprache-A-Grundform)",                    layer: "",                                      isAnchor: false,  anchorFolio: "",                                          confidenceStars: 3, rulesApplied: [] },
   { eva: "fol",     heb: "פֹּל / פּוּל",  de: "Röhrenschaft / Stiel-Hülse (CAULIS-Eröffner)",         layer: "",                                      isAnchor: false,  anchorFolio: "f13v",                                      confidenceStars: 3, rulesApplied: [] },
@@ -90,7 +90,7 @@ export const PREF_E = [
 ];
 
 export const PREF_K = [
-  { eva: "cheor",     morph: "k- + or",                 heb: "כְּאוֹר",      de: "wie Licht (Heilungszeichen)",                        evidence: "",                                                                     confidenceStars: 4, rulesApplied: [] },
+  { eva: "cheor",     morph: "k- + or",                 heb: "כְּאוֹר",      de: "wie Licht (Heilungszeichen)",                        evidence: "f2v P.4 (H/C/F/U 4/4, Erstbeleg)",                                    confidenceStars: 4, rulesApplied: [] },
   { eva: "chokshor",  morph: "k- + chok + shor",        heb: "כְּחֹקשׁוֹר",    de: "wie die Vorschrift des Zeichens",                    evidence: "",                                                                     confidenceStars: 4, rulesApplied: [] },
   { eva: "cheekdam",  morph: "k- + e- + k- + dam",      heb: "כְּאֵכְּדָּם",     de: "wie das Zeichen des Blutes",                         evidence: "f24v P.14 (Erstbeleg)",                                                confidenceStars: 4, rulesApplied: [] },
   { eva: "ckhear",    morph: "k- + k- + or",            heb: "כְּכְּאֵר",      de: "wie das Licht",                                      evidence: "f25v P.4 (Minimalpaar mit chkear, Orthographievarianz)",               confidenceStars: 4, rulesApplied: [] },
@@ -99,7 +99,7 @@ export const PREF_K = [
   { eva: "cthoiin",   morph: "k- + t- + aiin",          heb: "כְּתּעַיִן",     de: "wie vollständige Augen-Heilung",                     evidence: "f22r P.10 (Erstbeleg)",                                                confidenceStars: 3, rulesApplied: [] },
   { eva: "cthom",     morph: "k- + tom",                heb: "כְּתֹם",       de: "wie Vollständigkeit",                                evidence: "",                                                                     confidenceStars: 3, rulesApplied: [] },
   { eva: "kchol",     morph: "k- + chol",               heb: "כְּחֹל",       de: "wie Augensalbe / Kohl-Pigment (Blaupigment)",        evidence: "",                                                                     confidenceStars: 3, rulesApplied: [] },
-  { eva: "chokeos",   morph: "k- + okeos",              heb: "כֹּכֵּאוֹס",     de: "wie ein Kelch (Botanik)",                            evidence: "",                                                                     confidenceStars: 3, rulesApplied: [] },
+  { eva: "chokeos",   morph: "k- + okeos",              heb: "כֹּכֵּאוֹס",     de: "wie ein Kelch (Botanik)",                            evidence: "f2v P.7 (H/C/F/U 4/5, Erstbeleg; D: chokios)",                        confidenceStars: 3, rulesApplied: [] },
   { eva: "choor",     morph: "k- + or",                 heb: "כְּאוּר",      de: "wie das Licht",                                      evidence: "",                                                                     confidenceStars: 3, rulesApplied: [] },
   { eva: "ksho",      morph: "k- + sho",                heb: "כְּשׁוֹ",       de: "wie Scheol / Tod",                                   evidence: "",                                                                     confidenceStars: 3, rulesApplied: [] },
   { eva: "koiin",     morph: "k- + aiin",               heb: "כֹּעַיִן",      de: "wie das Auge",                                       evidence: "",                                                                     confidenceStars: 3, rulesApplied: [] },
@@ -125,11 +125,20 @@ export const PREF_K = [
   { eva: "cphal",     morph: "k- + palal",              heb: "כְּפָּלַל",      de: "wie Gebet / Urteil",                                 evidence: "f29v (R43-Frist abgelaufen)",                                          confidenceStars: 2, rulesApplied: [] },
   { eva: "ctheen",    morph: "k- + ten",                heb: "כְּתֵּן",       de: "wie Gewähren / Geben",                               evidence: "f29v (R43-Frist abgelaufen)",                                          confidenceStars: 2, rulesApplied: [] },
   { eva: "kchorl",    morph: "k- + chor + l-",          heb: "כְּחֹרלְ",      de: "wie die Pupille hin",                                evidence: "f29v (R43-Frist abgelaufen)",                                          confidenceStars: 2, rulesApplied: [] },
+  { eva: "kchor",     morph: "k- + chor",               heb: "כְּ+חֹר",      de: "wie die Pupille",                                    evidence: "f2v P.5 (4/4, Erstbeleg)",                                             confidenceStars: 4, rulesApplied: ["R41", "R43"] },
+  { eva: "chodaiin",  morph: "k- + daiin",              heb: "כֹּ+דִּין",     de: "wie das Urteil",                                     evidence: "f1r P3.16 (5/5, Erstbeleg); f2v P.4 (Folgebeleg)",                     confidenceStars: 4, rulesApplied: ["R41", "R43"] },
+  { eva: "kchy",      morph: "k- + chy",                heb: "כְּ+חִי",      de: "wie seine Blässe (Variante von ckhy)",               evidence: "f1r P3.16 (3/5, Erstbeleg); f2v P.2 (Folgebeleg)",                     confidenceStars: 4, rulesApplied: ["R41", "R43"] },
+  { eva: "chody",     morph: "k- + -dy",                heb: "כֹּ+דִּי",      de: "wie von ihm / gemäß ihm",                            evidence: "f1v P.2 (3/3, Erstbeleg); f2v P.3 (Folgebeleg)",                       confidenceStars: 3, rulesApplied: ["R41", "R43"] },
+  { eva: "chcthy",    morph: "k- + k- + t- + hy",       heb: "כְּ+כְּ+תְּ+חִי",  de: "wie wie ich/es heilt (Doppelintensiv)",              evidence: "f2r P.13 (3/3, Erstbeleg); f2v P.3R (Folgebeleg, R43 erfüllt)",        confidenceStars: 3, rulesApplied: ["R19", "R41", "R43"] },
+  { eva: "keol",      morph: "k- + eol",                heb: "כֵּ+עוֹל",     de: "wie das Joch / wie die Last",                        evidence: "f2r P.10 (3/3, Erstbeleg); f2v P.6 (Folgebeleg, R43 erfüllt)",         confidenceStars: 3, rulesApplied: ["R41", "R43"] },
+  { eva: "cheaiin",   morph: "k- + e + aiin",           heb: "כְּ+אֵ+עַיִן",   de: "wie das Licht des Auges",                            evidence: "f2v P.7 (5/5, Erstbeleg)",                                             confidenceStars: 3, rulesApplied: ["R41", "R43"] },
+  { eva: "chty",      morph: "k- + t- + -y",            heb: "כְּ+תְּ+יְ",     de: "wie es heilt (Kurzverb)",                            evidence: "f2v P.6 (4/4, Erstbeleg)",                                             confidenceStars: 3, rulesApplied: ["R41", "R43"] },
+  { eva: "cholo",     morph: "k- + olo",                heb: "כֹּ+לוֹ",      de: "wie für ihn / wie sein Kelch",                       evidence: "f2v P.4 (4/4, Erstbeleg)",                                             confidenceStars: 3, rulesApplied: ["R41", "R43"] },
   { eva: "chedy",     morph: "k- + dy",                 heb: "כְּדֵי",       de: "damit / um zu",                                      evidence: "",                                                                     confidenceStars: 4, rulesApplied: [] },
   { eva: "chorain",   morph: "k- + ar + aiin",          heb: "כֹּאַרעַיִן",    de: "Heilung des Auges / wie das Licht des Auges",        evidence: "f004r (3×, Quire A) + f030r P.3 (2 Folios, 2 Register, R43 erfüllt)",  confidenceStars: 4, rulesApplied: [] },
   { eva: "cphar",     morph: "k- + par",                heb: "כְּפַּר",       de: "Sühne / Bedeckung",                                  evidence: "f1r P1.5 (Erstbeleg)",                                                 confidenceStars: 3, rulesApplied: ["R43"] },
   { eva: "ckhal",     morph: "k- + hal",                heb: "כְּהַל",       de: "Nachlassen des Fiebers",                             evidence: "",                                                                     confidenceStars: 3, rulesApplied: [] },
-  { eva: "cthor",     morph: "k- + tor",                heb: "כְּתֹּר",       de: "vollständige Heilung",                               evidence: "f2r P.12 (Erstbeleg) + f5v/f6r/f8v/f9r … (≥24 Folios)",               confidenceStars: 3, rulesApplied: ["R43"] },
+  { eva: "cthor",     morph: "k- + tor",                heb: "כְּתֹּר",       de: "vollständige Heilung",                               evidence: "f2r P.12 (Erstbeleg) + f5v/f6r/f8v/f9r … (≥24 Folios)",                confidenceStars: 3, rulesApplied: ["R43"] },
   { eva: "cthaiin",   morph: "k- + t- + aiin",          heb: "כְּתַּעַיִן",     de: "vollständige Augen-Heilung",                         evidence: "f1r P1.5 (Erstbeleg)",                                                 confidenceStars: 3, rulesApplied: ["R8", "R43"] },
   { eva: "ksor",      morph: "k- + shar",               heb: "כֵּשָׁר",       de: "denn/wie passend/gesund",                            evidence: "f27r P.1 (Erstbeleg)",                                                 confidenceStars: 3, rulesApplied: [] },
   { eva: "keeod",     morph: "k- + od",                 heb: "כֵּעוֹד",      de: "denn noch / immer noch",                             evidence: "f27r P.9 (Erstbeleg)",                                                 confidenceStars: 3, rulesApplied: [] },
@@ -145,6 +154,7 @@ export const PREF_L = [
   { eva: "lshol",   morph: "l- + shol",           heb: "לְשׁוֹל",      de: "zum Tod / zu Scheol",      evidence: "",                     confidenceStars: 5, rulesApplied: [] },
   { eva: "lchedy",  morph: "l- + k- + dy",        heb: "לְכְּדֵי",      de: "um zu / bis zur Grenze",   evidence: "",                     confidenceStars: 4, rulesApplied: [] },
   { eva: "lshaiir", morph: "l- + s- + aiin + ir", heb: "לְשׂעַיִןאִיר",  de: "für Augenlicht-Glanz",     evidence: "f34v P.5 (Erstbeleg)", confidenceStars: 4, rulesApplied: [] },
+  { eva: "lshy",    morph: "l- + shy",           heb: "לְ+שֵׁי",        de: "für die Gabe / für sein Wesen", evidence: "f2v P.3 (4/4, Erstbeleg)", confidenceStars: 3, rulesApplied: ["R41", "R43"] },
 ];
 
 export const PREF_O = [
@@ -197,13 +207,14 @@ export const PREF_OL = [
 ];
 
 export const PREF_P = [
-  { eva: "pchodar",   morph: "p- + k- + dar",   heb: "פְּכֹּדַּר",    de: "wie Finsternis / Dunkelheit",      evidence: "f28r P.1 (Erstbeleg)", confidenceStars: 3, rulesApplied: [] },
-  { eva: "fshody",    morph: "p- + sho + -dy",  heb: "פְּשׁוֹדִּי",   de: "von Scheol",                       evidence: "",                     confidenceStars: 3, rulesApplied: [] },
-  { eva: "pchraiin",  morph: "p- + r- + aiin",  heb: "פְּרְעַיִן",   de: "für/bei das Licht des Auges",      evidence: "",                     confidenceStars: 3, rulesApplied: [] },
-  { eva: "pchedal",   morph: "p- + k- + dal",   heb: "פְּכֶּדַּל",    de: "bei dem Schwachen",                evidence: "",                     confidenceStars: 3, rulesApplied: [] },
-  { eva: "pochaiin",  morph: "p- + k- + aiin",  heb: "פֹּכְּעַיִן",   de: "beim/am Auge",                     evidence: "f19v P.1",             confidenceStars: 3, rulesApplied: [] },
-  { eva: "fochof",    morph: "p- + k- + p-",    heb: "פֹכֹפְ",     de: "Mund/Kehle-alles / Kehlenbereich", evidence: "f27v P.1 (Erstbeleg)", confidenceStars: 3, rulesApplied: [] },
-  { eva: "poraiin",   morph: "p- + or + aiin",  heb: "פְּאוֹרעַיִן", de: "Licht des Auges",                  evidence: "f29r P.1 (Erstbeleg)", confidenceStars: 3, rulesApplied: [] },
+  { eva: "pchodar",   morph: "p- + k- + dar",   heb: "פְּכֹּדַּר",      de: "wie Finsternis / Dunkelheit",            evidence: "f28r P.1 (Erstbeleg)",     confidenceStars: 3, rulesApplied: [] },
+  { eva: "fshody",    morph: "p- + sho + -dy",  heb: "פְּשׁוֹדִּי",     de: "von Scheol",                             evidence: "",                         confidenceStars: 3, rulesApplied: [] },
+  { eva: "pchraiin",  morph: "p- + r- + aiin",  heb: "פְּרְעַיִן",     de: "für/bei das Licht des Auges",            evidence: "",                         confidenceStars: 3, rulesApplied: [] },
+  { eva: "pchedal",   morph: "p- + k- + dal",   heb: "פְּכֶּדַּל",      de: "bei dem Schwachen",                      evidence: "",                         confidenceStars: 3, rulesApplied: [] },
+  { eva: "pochaiin",  morph: "p- + k- + aiin",  heb: "פֹּכְּעַיִן",     de: "beim/am Auge",                           evidence: "f19v P.1",                 confidenceStars: 3, rulesApplied: [] },
+  { eva: "fochof",    morph: "p- + k- + p-",    heb: "פֹכֹפְ",       de: "Mund/Kehle-alles / Kehlenbereich",       evidence: "f27v P.1 (Erstbeleg)",     confidenceStars: 3, rulesApplied: [] },
+  { eva: "poraiin",   morph: "p- + or + aiin",  heb: "פְּאוֹרעַיִן",   de: "Licht des Auges",                        evidence: "f29r P.1 (Erstbeleg)",     confidenceStars: 3, rulesApplied: [] },
+  { eva: "pchor",     morph: "p- + chor",       heb: "פְּ+חֹר",      de: "durch die Pupille / Öffnung der Höhle",  evidence: "f2v P.1 (5/5, Erstbeleg)", confidenceStars: 3, rulesApplied: ["R41", "R43"] },
 ];
 
 export const PREF_QO = [
@@ -241,9 +252,10 @@ export const PREF_S = [
 ];
 
 export const PREF_SH = [
-  { eva: "shos",  morph: "sh- + a- + sh",     heb: "שׁעַשׁ",   de: "Feuer-Ähnliches",                          evidence: "f29r P.5 (Erstbeleg)",             confidenceStars: 3, rulesApplied: [] },
-  { eva: "sos",   morph: "sh- + a- + sh",     heb: "שׁעַשׁ",   de: "Feuer auf Feuer / Fieber-Intensivierung",  evidence: "f30v P.7 + P.9 (Erstbeleg)",       confidenceStars: 3, rulesApplied: [] },
-  { eva: "sshey", morph: "sh- + sh- + shey",  heb: "שׁשׁהֵי",  de: "Doppel-Shin-Blässe",                       evidence: "f24r P.17 (R43-Frist abgelaufen)", confidenceStars: 2, rulesApplied: [] },
+  { eva: "shy",   morph: "sh + -y",           heb: "שֵׁי",     de: "Gabe (Kurzform von sheey)",               evidence: "f1v P.3 (3/3, Erstbeleg); f2v P.5 (4/4, R43 erfüllt)", confidenceStars: 3, rulesApplied: ["R40", "R43"] },
+  { eva: "shos",  morph: "sh- + a- + sh",     heb: "שׁעַשׁ",   de: "Feuer-Ähnliches",                          evidence: "f29r P.5 (Erstbeleg)",                                 confidenceStars: 3, rulesApplied: [] },
+  { eva: "sos",   morph: "sh- + a- + sh",     heb: "שׁעַשׁ",   de: "Feuer auf Feuer / Fieber-Intensivierung",  evidence: "f30v P.7 + P.9 (Erstbeleg)",                           confidenceStars: 3, rulesApplied: [] },
+  { eva: "sshey", morph: "sh- + sh- + shey",  heb: "שׁשׁהֵי",  de: "Doppel-Shin-Blässe",                       evidence: "f24r P.17 (R43-Frist abgelaufen)",                     confidenceStars: 2, rulesApplied: [] },
 ];
 
 export const PREF_SHE = [
@@ -378,8 +390,9 @@ export const SYNTAX_OR = [
 export const SYNTAX_OT = [
   { eva: "otshol",  morph: "ot + shol",               heb: "אוֹתשׁוֹל",        de: "das Zeichen des Todes",                                        evidence: "",                                                               confidenceStars: 5, rulesApplied: [] },
   { eva: "otaiir",  morph: "ot + aiin + ir",          heb: "אֹתעַיִר",         de: "Zeichen des Augenlichts",                                      evidence: "f24v P.2 + f25r T.7 (R43 erfüllt, T-Klassen-Titel Subtyp C)",    confidenceStars: 5, rulesApplied: [] },
-  { eva: "otchor",  morph: "ot + chor",               heb: "אוֹתחֹר",         de: "das Zeichen der Pupille",                                      evidence: "",                                                               confidenceStars: 4, rulesApplied: [] },
-  { eva: "otchy",   morph: "ot + k- + chy",           heb: "אוֹתכְּהִי",        de: "das Zeichen der Blässe",                                       evidence: "",                                                               confidenceStars: 4, rulesApplied: [] },
+  { eva: "otaiin",  morph: "ot + aiin",               heb: "אוֹת+עַיִן",       de: "Zeichen des Auges",                                            evidence: "f2v P.1 (5/5, Erstbeleg); f1r P1.4 H+N Frühbeleg",               confidenceStars: 4, rulesApplied: ["R2", "R41", "R43"] },
+  { eva: "otchor",  morph: "ot + chor",               heb: "אוֹתחֹר",         de: "das Zeichen der Pupille",                                      evidence: "f2v P.6 (H/C/F/U 4/4, Erstbeleg)",                               confidenceStars: 4, rulesApplied: [] },
+  { eva: "otchy",   morph: "ot + k- + chy",           heb: "אוֹתכְּהִי",        de: "das Zeichen der Blässe",                                       evidence: "f2v P.3 (H/C/F/U 4/4, Erstbeleg)",                               confidenceStars: 4, rulesApplied: [] },
   { eva: "otchdal", morph: "ot + k- + dal",           heb: "אוֹתכְּדַּל",        de: "Zeichen der Schwäche",                                         evidence: "",                                                               confidenceStars: 4, rulesApplied: [] },
   { eva: "otam",    morph: "ot + tam",                heb: "אוֹתתָּם / אוֹתאָם", de: "Zeichen der Vollständigkeit / der Mutter (register-abhängig)", evidence: "f19v P.10 + f72r1 R1 (3×) + f22v P.3 (R43 erfüllt, 2 Register)", confidenceStars: 4, rulesApplied: [] },
   { eva: "otolam",  morph: "ot + ol- + am",           heb: "אוֹתעַלאָם",       de: "Zeichen über alle / Zeichen der Ewigkeit",                     evidence: "f69r C.9 (Erstbeleg)",                                           confidenceStars: 4, rulesApplied: [] },

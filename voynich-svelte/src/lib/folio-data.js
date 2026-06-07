@@ -44,7 +44,8 @@ export const FOLIO_DATA = {
   // ── Lage 1 · Kräuter A (f1–f8) — Language-A lexicon range ────────────────
   f1r: { status: 'confirmed' },  // detail → folios/f001r.json
   f1v: { status: 'confirmed' },  // detail → folios/f001v.json
-  f2r: { status: 'confirmed' },    f2v: { status: 'partial' },
+  f2r: { status: 'confirmed' },  // detail → folios/f002r.json
+  f2v: { status: 'confirmed' },  // detail → folios/f002v.json
   f3r: { status: 'confirmed' },    f3v: { status: 'confirmed' },    f4r: { status: 'confirmed' },    f4v: { status: 'partial' },
   f5r: { status: 'confirmed' },    f5v: { status: 'partial' },      f6r: { status: 'confirmed' },    f6v: { status: 'partial' },
   f7r: { status: 'confirmed' },    f7v: { status: 'partial' },      f8r: { status: 'confirmed' },    f8v: { status: 'partial' },

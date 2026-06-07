@@ -1,5 +1,5 @@
 # Voynich-Manuskript — Formales Mapping-Dokument
-**EVA → Hebräisch-Aramäisch · Version 8.8.4 · Juni 2026**
+**EVA → Hebräisch-Aramäisch · Version 8.8.5 · Juni 2026**
 
 Sprachen A & B · Folios f1r, f1v–f10r (Quire A komplett, Positionskarten f1v–f10r), f11r–f32v (Quires B–D komplett), f33r–f34v (Quire E Eröffnung, 5/16), f57r/v, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
 
@@ -28,19 +28,19 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 
 **Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
 
-**Korrekturen in v8.8.4:**
+**Korrekturen in v8.8.5:**
 
-- f2r-Audit: Erstbelege korrigiert (sor)
-- f1v-Audit: Leere layer/anchorFolio/evidence-Felder gefüllt (chan, al, chkar, dalor, saiin, shodaiin, cthor)
+- f2v-Audit: anchorFolio shty gesetzt; evidence-Fills cheor, otchy, otchor, chokeos
+- f2v-Audit: 13 neue Einträge (otaiin, kchor, chodaiin, kchy, chody, chcthy, keol, cheaiin, chty, cholo, shy, lshy, pchor)
 
-### Kernbefunde — Version 8.8.4
+### Kernbefunde — Version 8.8.5
 
 | Eigenschaft | Wert |
 | --- | --- |
 | Identifizierte Sprache | Mischna-Hebräisch / Jüdisch-Aramäisch |
 | Texttyp | Medizinischer Traktat / Astronomisch-astrologisches Register — Pharmakopöe + Fixsternkatalog (f58r); f1r: deklarativer Haskama-Typ (sui generis) |
 | Analysierte Folios | f1r, f1v–f10r (Quire A komplett, Positionskarten f1v–f10r), f11r–f32v (Quires B–D komplett), f33r–f34v (Quire E Eröffnung, 5/16), f57r/v, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v |
-| Bestätigte Wörter | 371 (★★★ oder höher) |
+| Bestätigte Wörter | 384 (★★★ oder höher) |
 | Rückwärtstest | Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 29/32 (91%) · 0 Falsch-Positive |
 | Sprache A Anker | f1r–f32v: 10/10 Sprache-A-Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4) |
 | Grammatikregeln | 57 (40 validiert + 17 Kandidaten) |
@@ -129,7 +129,7 @@ Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 
 **R2-ext (v7.5):** Das EVA-Zeichen `o` ist positionell vollständig determiniert: (1) `o-` am Wortanfang = ע (Ayin, konsonantisch) — ausnahmslos; (2) `o` im Wortinneren = Ḥolam (Vokalmarker) — ausnahmslos. **Negativtest:** 0 Gegenbeispiele in 140+ validierten Lexikoneinträgen. **f1r Nulltest (positiver Strukturbeleg):** 260 Token analysiert — alle initialen `o` = Ayin, alle internen `o` = Ḥolam, 0 Ausnahmen.
 
-## IV. Bestätigtes Lexikon (371 Einträge)
+## IV. Bestätigtes Lexikon (384 Einträge)
 
 Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgeleiteten Formen.
 
@@ -181,7 +181,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | chod | חֹד | Schärfe / Akutheit (med. Terminus) | — | — | — | — | ★★★ |
 | tolol | תֹּלֹל | geschwächt / hängend (Zustands-Adj.) | — | — | — | — | ★★★ |
 | sam | שַׂם | Arznei | — | — | — | — | ★★★ |
-| shty | שְׁתִי | Getränk / Trank | — | — | — | — | ★★★ |
+| shty | שְׁתִי | Getränk / Trank | — | — | f2v P.1 (H/C/D/F/U 5/5) | — | ★★★ |
 | pol | פֹּל | Bohne / Beere / Frucht | — | — | f1v P.10 | R60 | ★★★ |
 | pcho | פְּחֹ | Atem / Mund (Sprache-A-Grundform) | — | — | — | — | ★★★ |
 | fol | פֹּל / פּוּל | Röhrenschaft / Stiel-Hülse (CAULIS-Eröffner) | — | — | f13v | — | ★★★ |
@@ -189,7 +189,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | qodom | קֶדֶם | Osten / Vorzeit / Vergangenheit | — | — | f24v | R43 | ★★ |
 
 
-### B. Abgeleitete Lexikon-Einträge (321)
+### B. Abgeleitete Lexikon-Einträge (334)
 
 | EVA | Morph. | Hebräisch | Deutsch | Evidenz | Regeln | Konf. |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -219,7 +219,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | doky | do- + ky | דּוֹכִּי | sein denn / weil | — | — | ★★★ |
 | eeor | e- + or | אֵאוֹר | kein Licht | — | — | ★★★ |
 | eedy | e- + -dy | אֵדִּי | kein Licht von | f26r P.5 (Erstbeleg) | — | ★★★ |
-| cheor | k- + or | כְּאוֹר | wie Licht (Heilungszeichen) | — | — | ★★★★ |
+| cheor | k- + or | כְּאוֹר | wie Licht (Heilungszeichen) | f2v P.4 (H/C/F/U 4/4, Erstbeleg) | — | ★★★★ |
 | chokshor | k- + chok + shor | כְּחֹקשׁוֹר | wie die Vorschrift des Zeichens | — | — | ★★★★ |
 | cheekdam | k- + e- + k- + dam | כְּאֵכְּדָּם | wie das Zeichen des Blutes | f24v P.14 (Erstbeleg) | — | ★★★★ |
 | ckhear | k- + k- + or | כְּכְּאֵר | wie das Licht | f25v P.4 (Minimalpaar mit chkear, Orthographievarianz) | — | ★★★★ |
@@ -228,7 +228,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | cthoiin | k- + t- + aiin | כְּתּעַיִן | wie vollständige Augen-Heilung | f22r P.10 (Erstbeleg) | — | ★★★ |
 | cthom | k- + tom | כְּתֹם | wie Vollständigkeit | — | — | ★★★ |
 | kchol | k- + chol | כְּחֹל | wie Augensalbe / Kohl-Pigment (Blaupigment) | — | — | ★★★ |
-| chokeos | k- + okeos | כֹּכֵּאוֹס | wie ein Kelch (Botanik) | — | — | ★★★ |
+| chokeos | k- + okeos | כֹּכֵּאוֹס | wie ein Kelch (Botanik) | f2v P.7 (H/C/F/U 4/5, Erstbeleg; D: chokios) | — | ★★★ |
 | choor | k- + or | כְּאוּר | wie das Licht | — | — | ★★★ |
 | ksho | k- + sho | כְּשׁוֹ | wie Scheol / Tod | — | — | ★★★ |
 | koiin | k- + aiin | כֹּעַיִן | wie das Auge | — | — | ★★★ |
@@ -254,6 +254,15 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | cphal | k- + palal | כְּפָּלַל | wie Gebet / Urteil | f29v (R43-Frist abgelaufen) | — | ★★ |
 | ctheen | k- + ten | כְּתֵּן | wie Gewähren / Geben | f29v (R43-Frist abgelaufen) | — | ★★ |
 | kchorl | k- + chor + l- | כְּחֹרלְ | wie die Pupille hin | f29v (R43-Frist abgelaufen) | — | ★★ |
+| kchor | k- + chor | כְּ+חֹר | wie die Pupille | f2v P.5 (4/4, Erstbeleg) | R41, R43 | ★★★★ |
+| chodaiin | k- + daiin | כֹּ+דִּין | wie das Urteil | f1r P3.16 (5/5, Erstbeleg); f2v P.4 (Folgebeleg) | R41, R43 | ★★★★ |
+| kchy | k- + chy | כְּ+חִי | wie seine Blässe (Variante von ckhy) | f1r P3.16 (3/5, Erstbeleg); f2v P.2 (Folgebeleg) | R41, R43 | ★★★★ |
+| chody | k- + -dy | כֹּ+דִּי | wie von ihm / gemäß ihm | f1v P.2 (3/3, Erstbeleg); f2v P.3 (Folgebeleg) | R41, R43 | ★★★ |
+| chcthy | k- + k- + t- + hy | כְּ+כְּ+תְּ+חִי | wie wie ich/es heilt (Doppelintensiv) | f2r P.13 (3/3, Erstbeleg); f2v P.3R (Folgebeleg, R43 erfüllt) | R19, R41, R43 | ★★★ |
+| keol | k- + eol | כֵּ+עוֹל | wie das Joch / wie die Last | f2r P.10 (3/3, Erstbeleg); f2v P.6 (Folgebeleg, R43 erfüllt) | R41, R43 | ★★★ |
+| cheaiin | k- + e + aiin | כְּ+אֵ+עַיִן | wie das Licht des Auges | f2v P.7 (5/5, Erstbeleg) | R41, R43 | ★★★ |
+| chty | k- + t- + -y | כְּ+תְּ+יְ | wie es heilt (Kurzverb) | f2v P.6 (4/4, Erstbeleg) | R41, R43 | ★★★ |
+| cholo | k- + olo | כֹּ+לוֹ | wie für ihn / wie sein Kelch | f2v P.4 (4/4, Erstbeleg) | R41, R43 | ★★★ |
 | chedy | k- + dy | כְּדֵי | damit / um zu | — | — | ★★★★ |
 | chorain | k- + ar + aiin | כֹּאַרעַיִן | Heilung des Auges / wie das Licht des Auges | f004r (3×, Quire A) + f030r P.3 (2 Folios, 2 Register, R43 erfüllt) | — | ★★★★ |
 | cphar | k- + par | כְּפַּר | Sühne / Bedeckung | f1r P1.5 (Erstbeleg) | R43 | ★★★ |
@@ -271,6 +280,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | lshol | l- + shol | לְשׁוֹל | zum Tod / zu Scheol | — | — | ★★★★★ |
 | lchedy | l- + k- + dy | לְכְּדֵי | um zu / bis zur Grenze | — | — | ★★★★ |
 | lshaiir | l- + s- + aiin + ir | לְשׂעַיִןאִיר | für Augenlicht-Glanz | f34v P.5 (Erstbeleg) | — | ★★★★ |
+| lshy | l- + shy | לְ+שֵׁי | für die Gabe / für sein Wesen | f2v P.3 (4/4, Erstbeleg) | R41, R43 | ★★★ |
 | okaiin | o- + k- + aiin | עַכְּעַיִן | auf das Auge | f1r P1.4 (C/D/F/U; H/N: otaiin) + korpusweit (R8) | R8, R42 | ★★★★ |
 | odol | o- + dol | עַדָּוֶה | auf die Krankheit | — | — | ★★★★ |
 | oaorar | o- + o- + or + or | עַאַאוֹראָר | auf das Licht der Heilung | — | — | ★★★★ |
@@ -321,6 +331,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | pochaiin | p- + k- + aiin | פֹּכְּעַיִן | beim/am Auge | f19v P.1 | — | ★★★ |
 | fochof | p- + k- + p- | פֹכֹפְ | Mund/Kehle-alles / Kehlenbereich | f27v P.1 (Erstbeleg) | — | ★★★ |
 | poraiin | p- + or + aiin | פְּאוֹרעַיִן | Licht des Auges | f29r P.1 (Erstbeleg) | — | ★★★ |
+| pchor | p- + chor | פְּ+חֹר | durch die Pupille / Öffnung der Höhle | f2v P.1 (5/5, Erstbeleg) | R41, R43 | ★★★ |
 | qoky | qo- + ky | וְכִּי | und denn / weil | — | — | ★★★★★ |
 | qokchor | qo- + o- + k- + chor | וְעַכְּחֹר | und für die Pupille | — | — | ★★★★★ |
 | qotchor | qo- + t- + chor | קוֹתְּכֹּר | Pupillen-Zeichen / Urteil der Pupille | f15r (Schlusskolophon) | — | ★★★★★ |
@@ -349,6 +360,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | schor | s- + chor | שׂחֹר | gleich der Pupille | f22r P.4 (Erstbeleg) | — | ★★★ |
 | soshy | s- + o- + sh + -y | שׂאֹשׁיְ | gleich Scheol-er | f25r P.1 (Erstbeleg) | — | ★★★ |
 | soin | s- + a- + aiin | שׂעַיִן | Feuer des Auges / Augenentzündung | f30r P.4 (Erstbeleg) | — | ★★★ |
+| shy | sh + -y | שֵׁי | Gabe (Kurzform von sheey) | f1v P.3 (3/3, Erstbeleg); f2v P.5 (4/4, R43 erfüllt) | R40, R43 | ★★★ |
 | shos | sh- + a- + sh | שׁעַשׁ | Feuer-Ähnliches | f29r P.5 (Erstbeleg) | — | ★★★ |
 | sos | sh- + a- + sh | שׁעַשׁ | Feuer auf Feuer / Fieber-Intensivierung | f30v P.7 + P.9 (Erstbeleg) | — | ★★★ |
 | sshey | sh- + sh- + shey | שׁשׁהֵי | Doppel-Shin-Blässe | f24r P.17 (R43-Frist abgelaufen) | — | ★★ |
@@ -453,8 +465,9 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | oro | or + -o | אֹראֹ | Licht-Palindrom / maximale Heilungs-Affirmation | f23v P.12 + f24v P.5 (R43 erfüllt, 2 Folios) | — | ★★★ |
 | otshol | ot + shol | אוֹתשׁוֹל | das Zeichen des Todes | — | — | ★★★★★ |
 | otaiir | ot + aiin + ir | אֹתעַיִר | Zeichen des Augenlichts | f24v P.2 + f25r T.7 (R43 erfüllt, T-Klassen-Titel Subtyp C) | — | ★★★★★ |
-| otchor | ot + chor | אוֹתחֹר | das Zeichen der Pupille | — | — | ★★★★ |
-| otchy | ot + k- + chy | אוֹתכְּהִי | das Zeichen der Blässe | — | — | ★★★★ |
+| otaiin | ot + aiin | אוֹת+עַיִן | Zeichen des Auges | f2v P.1 (5/5, Erstbeleg); f1r P1.4 H+N Frühbeleg | R2, R41, R43 | ★★★★ |
+| otchor | ot + chor | אוֹתחֹר | das Zeichen der Pupille | f2v P.6 (H/C/F/U 4/4, Erstbeleg) | — | ★★★★ |
+| otchy | ot + k- + chy | אוֹתכְּהִי | das Zeichen der Blässe | f2v P.3 (H/C/F/U 4/4, Erstbeleg) | — | ★★★★ |
 | otchdal | ot + k- + dal | אוֹתכְּדַּל | Zeichen der Schwäche | — | — | ★★★★ |
 | otam | ot + tam | אוֹתתָּם / אוֹתאָם | Zeichen der Vollständigkeit / der Mutter (register-abhängig) | f19v P.10 + f72r1 R1 (3×) + f22v P.3 (R43 erfüllt, 2 Register) | — | ★★★★ |
 | otolam | ot + ol- + am | אוֹתעַלאָם | Zeichen über alle / Zeichen der Ewigkeit | f69r C.9 (Erstbeleg) | — | ★★★★ |
@@ -568,7 +581,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 
 ## VI. Grammatikregeln
 
-57 Regeln gesamt: **40 validiert** (≥ 2 unabhängige Belege) + **17 Kandidaten**. **Regelmoratorium beendet (v8.8.4)** — Verhältnis 40:17 = 2,35:1 ≥ 1,5:1. R60+ freigegeben. R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
+57 Regeln gesamt: **40 validiert** (≥ 2 unabhängige Belege) + **17 Kandidaten**. **Regelmoratorium beendet (v8.8.5)** — Verhältnis 40:17 = 2,35:1 ≥ 1,5:1. R60+ freigegeben. R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
 
 | # | Regel | Evidenz | Konf. |
 | --- | --- | --- | --- |
@@ -1055,7 +1068,7 @@ _Arbeitshypothese: Theoretische Reflexion: Wenn FOLIUM-Textfreiheit ein Artefakt
 
 ---
 
-Voynich-Manuskript — Formales Mapping-Dokument · Version 8.8.4 · Juni 2026
-Lexikon: 371 Einträge · Grammatikregeln: 57 · Rückwärtstest: Typ I: 10/10 (100%) · Typ II: 29/32 (91%)
+Voynich-Manuskript — Formales Mapping-Dokument · Version 8.8.5 · Juni 2026
+Lexikon: 384 Einträge · Grammatikregeln: 57 · Rückwärtstest: Typ I: 10/10 (100%) · Typ II: 29/32 (91%)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

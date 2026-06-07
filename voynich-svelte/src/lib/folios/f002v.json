@@ -1,0 +1,34 @@
+{
+  "folio": "f2v",
+  "status": "confirmed",
+  "registerType": "Herbal (Standard Kräuterbild) — {plant}-System aktiv",
+  "languageClass": "Sprache A (Currier)",
+  "writerHand": 1,
+  "transcribers": [
+    { "siglen": ["H", "C", "F", "U"], "label": "P.1–P.8 (alle Paragraphen), n=4 Standard" },
+    { "siglen": ["D"],                "label": "P.1/P.2/P.7 abweichend (kaoiin, kcha!, chokios/qoteeiy)" }
+  ],
+  "consensusDenominators": [
+    "P.1–P.8: n=4 (H/C/F/U)",
+    "P.1/P.2/P.7: D-Divergenzen dokumentiert"
+  ],
+  "scanUrl": "https://collections.library.yale.edu/iiif/2/1006079/full/full/0/default.jpg",
+  "iconographic": {
+    "rules": ["R14", "R16", "R38", "R60"],
+    "illustrationType": "Eine zentrierte Pflanze, ganzseitig (Nymphaea / Seerose); R60-Layouttyp C — vertikale Zonentrennung FLOS/RADIX.",
+    "plantMorphology": {
+      "radix": "Langer gerader Rhizom, bedeckt mit Schuppen / runden Stielnarben — textfrei (kein Paragraph im RADIX-Bereich); kleines Rundfußmuster am unteren Bildrand (Stolfi). ✓ R14/R60: RADIX-Zone bestätigt textfrei ★★★★★",
+      "caulis": "Einzelner, leicht gebogener Stiel, dunkel bemalt; Stumpf eines verlorenen Nebenastes auf halber Höhe (Stolfi). Text des unteren Blocks (P.5–P.8) liegt links des CAULIS — typischer Interweave-Befund.",
+      "folia": "Ein einziges großes, horizontal gerichtetes Blatt, stark abgerundetes C-Profil, glatter Rand. Durchgehend dunkel bemalt (solid dark, Stolfi / Reeds: green). Textfrei (keine Zeile liegt auf dem Blatt). → R60-Korollar 3 ★★★★★",
+      "flosFructus": "Eine weiße, fast senkrecht aufwärts zeigende Blüte; langer heller Stiel (mit dunkler Ader), teilweise vom Blatt verdeckt. Kelch gut gezeichnet, zungenförmige Sepalen, lilienförmige Petalen, gezähnter Rand (Stolfi). Textsignal shty (שְׁתִי, Trank) im rechten Teil von P.1 korreliert mit Blütenposition oben rechts.",
+      "coloring": "Grün (Reeds: green), kein Dunkelrot, kein Terrakotta-Element → R60-Korollar 1 (Rot-Marker) nicht auslösbar."
+    },
+    "botanicalIdentification": [
+      "Primär: Nymphaea candida Presl. / Nymphaea alba L. (Weiße Seerose) — Quelle: Stolfi-Metadaten (Rene-Vorschlag), Petersen Plant #3. Konf. ★★★★",
+      "Alternative: Nuphar lutea (Gelbe Teichrose) — ähnliche Blattform, aber keine weiße Blüte → ★★",
+      "Pharmakologie: Nymphaea-Wurzelstock und Blüten als Kühlmittel, Schmerz- und Schlafdämpfer sowie zur Behandlung von Augenentzündungen eingesetzt (Dioskorides De Materia Medica IV.81; Hildegard von Bingen). Relevanz für ophthalmologisches Register: direkt."
+    ],
+    "layoutStructure": "8 Paragraphen (P.1–P.8), jeder durch {plant} in linke und rechte Hälfte geteilt (Typ 1 Horizontal-Einfachsegment, kein Vertikal-Split). P.4-Zwischenkolophon: sho.cholo.cheor.chodaiin= teilt das Folio in zwei Blöcke (P.1–P.4 oben / P.5–P.8 unten). P.8 endet mit ={plant} (Kolophon-Marker, kein Inhaltssplit). Kein T-Klassen-Titel. R60-Layouttyp C — vertikale Zonentrennung: FLOS-Zone oben (P.1–P.4), CAULIS/RADIX unten (P.5–P.8), FOLIUM textfrei.",
+    "r60Status": "Kein Dunkelrot-RADIX. RADIX-Zone textfrei ★★★★★. FOLIUM textfrei ★★★★★. R60-Layouttyp C bestätigt. R60-Korollar 1 nicht auslösbar (kein Rot). R60-Beleg-Nr.: eintragen bei nächster Tabellen-Aktualisierung."
+  }
+}
