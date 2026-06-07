@@ -239,7 +239,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | koiin | k- + aiin | כֹּעַיִן | wie das Auge | — | — | ★★★ |
 | kaiin | k- + aiin | כְּעַיִן | wie das Auge | f1r P4.23/P4.24 (+ Var. kair P1.2) | R8, R43 | ★★★ |
 | kchom | k- + chom | כְּחֹם | wie Hitze / wie Fieber | f001r P3.16 (H/N) + f3v P.8 (H/C/F/U 4/4) — R43 erfüllt | R31, R40 | ★★★ |
-| cthy | c- + t- + hy | כְּ+תִי | wie mein Zeichen / wie diese [Form] | f3r P.3+P.19 (H/C/F) + f3v P.9 (H/C/F/U 4/4) | — | ★★★ |
+| cthy | k- + t- + hy | כְּ+תִי | wie mein Zeichen / wie diese [Form] | f001r P3.14 (H/C/F/N/U 5/5, Erstbeleg) + f001r P3.17 (5/5) + f001r P4.26 (5/5) + f001v P.3 (3/3) + f001v P.6 (3/3) + f002r P.2 (3/3) + f002r P.6 (3/3) + f003r P.3+P.19 + f003v P.9 (R43: ≥5 Folios, erfüllt) | R43 | ★★★ |
 | chkeey | k- + k- + chey | כְּכְּאֵיִ | wie wie Lebendigkeit | — | — | ★★★ |
 | cthal | k- + t- + chal | כְּתַּחַל | wie vollständig | f1r P4.23 (Erstbeleg) + f3v P.13 (H/C/F/U 4/4, R43-Folgebeleg) | R43 | ★★★ |
 | chekhol | k- + k- + chol | כְּכָּחֹל | wie das Augenpigment | — | — | ★★★ |
