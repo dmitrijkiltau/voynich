@@ -1,5 +1,5 @@
 # Voynich-Manuskript — Formales Mapping-Dokument
-**EVA → Hebräisch-Aramäisch · Version 8.8.3 · Juni 2026**
+**EVA → Hebräisch-Aramäisch · Version 8.8.4 · Juni 2026**
 
 Sprachen A & B · Folios f1r, f1v–f10r (Quire A komplett, Positionskarten f1v–f10r), f11r–f32v (Quires B–D komplett), f33r–f34v (Quire E Eröffnung, 5/16), f57r/v, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v
 
@@ -28,12 +28,12 @@ Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des 
 
 **Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.
 
-**Korrekturen in v8.8.3:**
+**Korrekturen in v8.8.4:**
 
-- f1v-Audit: Erstbelege korrigiert (shor, cheol, or, pol, ychol)
-- f1v-Audit: Leere layer/anchorFolio/evidence-Felder gefüllt (char, ckhy, dol, dair, okal, otoaiin, choky, otcho)
+- f2r-Audit: Erstbelege korrigiert (sor)
+- f1v-Audit: Leere layer/anchorFolio/evidence-Felder gefüllt (chan, al, chkar, dalor, saiin, shodaiin, cthor)
 
-### Kernbefunde — Version 8.8.3
+### Kernbefunde — Version 8.8.4
 
 | Eigenschaft | Wert |
 | --- | --- |
@@ -155,13 +155,13 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | daiin | דִּין | Urteil / Prognose | Jüdisch-Aramäisch / Mischna-Hebräisch | ja | f1r | R40, R43 | ★★★★ |
 | chalal | חָלָל | Sterbender | — | ja | — | — | ★★★★ |
 | chaiin | חַיִּין | Leben (Chayyim) | — | ja | — | — | ★★★★ |
-| chan | חָן | Gnade / günstige Prognose | — | — | — | — | ★★★★ |
+| chan | חָן | Gnade / günstige Prognose | — | — | f2r P.12 | — | ★★★★ |
 | dom | דּוֹם | Stille / Ende | — | — | — | — | ★★★★ |
 | tam | תָּם | vollständig / rein | — | — | f69r | — | ★★★★ |
 | cheol | ח-ע-ל | schöpfen / heben (balneolog. Augenbad-Marker) | — | — | f1v P.7 (H/C/D/F 4/4) | R43 | ★★★★ |
 | olom | עוֹלָם | Ewigkeit / Welt | — | — | f24v | — | ★★★★ |
 | sar | שַׂר | Arzt / Meister / Vorsteher | — | ja | — | — | ★★★★ |
-| al | עַל | auf / über / betreffend (Basispräposition; Var. ol) | — | — | — | — | ★★★★ |
+| al | עַל | auf / über / betreffend (Basispräposition; Var. ol) | — | — | f2r P.5 | R40 | ★★★★ |
 | tal | טַל | Tau / Pflanzensaft / Feuchtigkeit | Hebräisch | — | f13v (Erstbeleg) | R14, R40 | ★★★ |
 | dar | דּוֹר | Generation / Kreis / Wohnort | Hebräisch / Aramäisch | — | f1r P4.23 | R15, R41, R43 | ★★★ |
 | kar | כָּרָה | graben / untersuchen (med. Kontext) | Mischna-Hebräisch | — | f4r | R40 | ★★★ |
@@ -193,7 +193,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 
 | EVA | Morph. | Hebräisch | Deutsch | Evidenz | Regeln | Konf. |
 | --- | --- | --- | --- | --- | --- | --- |
-| chkar | ch- + kar | חֲקַר | er untersucht (Qal von חקר) | — | — | ★★★ |
+| chkar | ch- + kar | חֲקַר | er untersucht (Qal von חקר) | f2r P.2 (Erstbeleg) + f9r + f16v + f27v + f115r | R43 | ★★★ |
 | chckhy | ch- + k- + chy | חֶכָּהִי | Blässe-Hitze-Zeichen | — | — | ★★★ |
 | dsholdy | d- + shol + -dy | דְּשׁוֹלדִּי | von Scheol (dessen/Genitiv) | — | — | ★★★★★ |
 | deaiin | d- + aiin | דְּעַיִן | vom Auge | f28r P.9 (Kolophon) | — | ★★★★ |
@@ -215,7 +215,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | dchorol | d- + k- + or + ol- | דְּכְּאוֹרעֹלְ | von der Pupille hin | f30r P.6 (Erstbeleg) | — | ★★★ |
 | daid | d- + ai + d- | דַּאִידַּ | ? / תָּמִיד = dauerhaft (Semantik noch offen) | f24v P.7 | — | ★★ |
 | dait | d- + ʿet | דַּעִת | von/aus der Zeit / im Moment (zeitliche Deiktik) | f21v P.5 (Erstbeleg) | — | ★★ |
-| dain | d- + aiin | דַּעַיִן | das Auge (Kurzform) | — | — | ★★★ |
+| dain | d- + aiin | דַּעַיִן | das Auge (Kurzform) | f2r P.9 (provisorisch, §D) | — | ★★★ |
 | doky | do- + ky | דּוֹכִּי | sein denn / weil | — | — | ★★★ |
 | eeor | e- + or | אֵאוֹר | kein Licht | — | — | ★★★ |
 | eedy | e- + -dy | אֵדִּי | kein Licht von | f26r P.5 (Erstbeleg) | — | ★★★ |
@@ -258,7 +258,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | chorain | k- + ar + aiin | כֹּאַרעַיִן | Heilung des Auges / wie das Licht des Auges | f004r (3×, Quire A) + f030r P.3 (2 Folios, 2 Register, R43 erfüllt) | — | ★★★★ |
 | cphar | k- + par | כְּפַּר | Sühne / Bedeckung | f1r P1.5 (Erstbeleg) | R43 | ★★★ |
 | ckhal | k- + hal | כְּהַל | Nachlassen des Fiebers | — | — | ★★★ |
-| cthor | k- + tor | כְּתֹּר | vollständige Heilung | — | — | ★★★ |
+| cthor | k- + tor | כְּתֹּר | vollständige Heilung | f2r P.12 (Erstbeleg) + f5v/f6r/f8v/f9r … (≥24 Folios) | R43 | ★★★ |
 | cthaiin | k- + t- + aiin | כְּתַּעַיִן | vollständige Augen-Heilung | f1r P1.5 (Erstbeleg) | R8, R43 | ★★★ |
 | ksor | k- + shar | כֵּשָׁר | denn/wie passend/gesund | f27r P.1 (Erstbeleg) | — | ★★★ |
 | keeod | k- + od | כֵּעוֹד | denn noch / immer noch | f27r P.9 (Erstbeleg) | — | ★★★ |
@@ -343,7 +343,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | qotal | qo- + tal | וְטַל | Tau / Schweißzeichen | — | — | ★★★ |
 | qokoral | qo- + k- + or + ol- | וְכְּאֹרעַלְ | und wie Licht-auf | f25v P.6 (R43-Frist abgelaufen) | — | ★★ |
 | qoteedar | qo- + t- + dar | וְתֵּדַּר | und er/du wirst leuchten | f26r P.8 (R43-Frist abgelaufen) | — | ★★ |
-| sor | s- + or | שׂאֹר | Arzt des Lichts (Sprache-A-Vokalalternanz von sar) | f28v P2.9 (Heilerkolophon) | — | ★★★★ |
+| sor | s- + or | שׂאֹר | Arzt des Lichts (Sprache-A-Vokalalternanz von sar) | f2r P.6 (Erstbeleg) + f9r + f19v + f22v + f30r + f57v | — | ★★★★ |
 | schol | s- + kol | שׂכֹּל | Arznei für alles / Universalheilmittel | — | — | ★★★ |
 | sokar | s- + o- + k- + ar | שׂאוֹכְּאָר | Heilungs-Arzt des Lichts | — | — | ★★★ |
 | schor | s- + chor | שׂחֹר | gleich der Pupille | f22r P.4 (Erstbeleg) | — | ★★★ |
@@ -433,7 +433,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | daly | dal + -y | דַּלִּי | seine/meine Schwäche | — | — | ★★★★ |
 | daly·dal | dal + -y · dal | דַּלִּידַּל | seine Schwäche | — | — | ★★★★ |
 | dalchy | dal + k- + chy | דַּלכְּהִי | die Schwäche der Blässe | — | — | ★★★★ |
-| dalor | dal + or | דַּלאוֹר | schwaches Augenlicht | — | — | ★★★ |
+| dalor | dal + or | דַּלאוֹר | schwaches Augenlicht | f2r P.11 (Erstbeleg) + f58r | R43 | ★★★ |
 | dala | dal + -a | דַּלָּ | Schwäche (Femininum von dal) | — | — | ★★★ |
 | daldalol | dal + dal + ol | דַּלדַּלעוֹל | doppelte Schwäche des Joches | (R43-Frist abgelaufen; R53-Strukturbeleg erhalten) | — | ★★ |
 | dalory | dal + or + -y | דַּלאוֹריְ | Schwäche zum Licht | f29v (R43-Frist abgelaufen) | — | ★★ |
@@ -472,7 +472,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | pocheody | pcho + -dy | פְּחֹדִּי | des Atemwegs | — | — | ★★★ |
 | pchodol | pcho + dol | פְּחֹדֹּל | Atemweg der Krankheit / Mundschmerz | — | — | ★★★ |
 | sary | sar + -y | שַׂרִי | mein Arzt / Apotheker (Possessiv) | f009r P.1 + f57r + f103r + f77r (Cross-Register ✓) | — | ★★★★★ |
-| saiin | sar + aiin | שַׂעַיִן | Augenarzt | — | — | ★★★★ |
+| saiin | sar + aiin | שַׂעַיִן | Augenarzt | f2r P.6 (Erstbeleg) + f8v/f9r/f15r/f16v/f22v/f30r/f33r | R8, R43 | ★★★★ |
 | saraiir | sar + ir | שַׂראִיר | Arzt des Leuchtenden | f26v P.2 (R43-Frist abgelaufen) | — | ★★ |
 | sheodaiin | sheol + daiin | שְׁאוֹדִּין | Todesurteil (Vollform) | — | — | ★★★★★ |
 | sheoldam | sheol + dam | שְׁאוֹלדָּם | tödlicher Blutverlust | — | — | ★★★★★ |
@@ -494,7 +494,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | sholshdy | shol + sh + -dy | שׁוֹלשׁדִּי | von dem Scheol | f71v S2.5 | — | ★★★ |
 | sholol | shol + ol- | שׁוֹלעַל | Scheol über [etwas] | f23v P.4 (Erstbeleg) | — | ★★ |
 | sholor | shol + or | שׁוֹלאֹר | Scheol-Licht | — | — | ★★ |
-| shodaiin | shod + daiin | שׁוֹדִּין | Todesurteil | — | — | ★★★★ |
+| shodaiin | shod + daiin | שׁוֹדִּין | Todesurteil | f2r P.5 (Erstbeleg) + f3r + f4v + f5r | R30, R43 | ★★★★ |
 | keey | keey | כֵּי | denn / weil | f1r P4.26 (keey·keey, R15-Beleg) | R15, R40 | ★★★★ |
 | damo | dam + -o | דָּמוֹ | sein Blut | — | — | ★★★★ |
 | chain | cha + aiin | חַעַיִן | lebendiges Auge / Auge des Lebens | f29v P.5 + f30r P.7 (R43 erfüllt, 2 Folios) | — | ★★★ |
@@ -568,7 +568,7 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 
 ## VI. Grammatikregeln
 
-57 Regeln gesamt: **40 validiert** (≥ 2 unabhängige Belege) + **17 Kandidaten**. **Regelmoratorium beendet (v8.8.3)** — Verhältnis 40:17 = 2,35:1 ≥ 1,5:1. R60+ freigegeben. R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
+57 Regeln gesamt: **40 validiert** (≥ 2 unabhängige Belege) + **17 Kandidaten**. **Regelmoratorium beendet (v8.8.4)** — Verhältnis 40:17 = 2,35:1 ≥ 1,5:1. R60+ freigegeben. R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).
 
 | # | Regel | Evidenz | Konf. |
 | --- | --- | --- | --- |
@@ -1055,7 +1055,7 @@ _Arbeitshypothese: Theoretische Reflexion: Wenn FOLIUM-Textfreiheit ein Artefakt
 
 ---
 
-Voynich-Manuskript — Formales Mapping-Dokument · Version 8.8.3 · Juni 2026
+Voynich-Manuskript — Formales Mapping-Dokument · Version 8.8.4 · Juni 2026
 Lexikon: 371 Einträge · Grammatikregeln: 57 · Rückwärtstest: Typ I: 10/10 (100%) · Typ II: 29/32 (91%)
 
 _Dieses Dokument ist ein Forschungshilfsmittel. Alle Übersetzungen sind Hypothesen und laden zur Falsifikation ein._

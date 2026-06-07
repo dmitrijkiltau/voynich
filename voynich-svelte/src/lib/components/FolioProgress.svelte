@@ -322,10 +322,45 @@
                       </div>
                     {/if}
 
+                    {#if ico.layoutStructure}
+                      <div class="fp-detail-ico-field">
+                        <span class="fp-detail-ico-key">Layout</span>
+                        <span class="fp-detail-ico-val">{ico.layoutStructure}</span>
+                      </div>
+                    {/if}
+
                     {#if ico.r60Status}
                       <div class="fp-detail-r60">
                         <span class="fp-detail-r60-label">R60</span>
                         <span class="fp-detail-r60-val">{ico.r60Status}</span>
+                      </div>
+                    {/if}
+
+                    {#if folioDetail?.textSignals}
+                      {@const ts = folioDetail.textSignals}
+                      <div class="fp-detail-ts">
+                        {#if ts.registerEinordnung}
+                          <div class="fp-detail-ico-field">
+                            <span class="fp-detail-ico-key">Register</span>
+                            <span class="fp-detail-ico-val">{ts.registerEinordnung}</span>
+                          </div>
+                        {/if}
+                        {#if ts.leitterme?.length}
+                          <div class="fp-detail-ico-field">
+                            <span class="fp-detail-ico-key">Leitterme</span>
+                            <div class="fp-detail-ico-bullets">
+                              {#each ts.leitterme as item}
+                                <span class="fp-detail-ico-bullet">· {item}</span>
+                              {/each}
+                            </div>
+                          </div>
+                        {/if}
+                        {#if ts.bildTextKohärenz}
+                          <div class="fp-detail-ico-field">
+                            <span class="fp-detail-ico-key">Bild-Text</span>
+                            <span class="fp-detail-ico-val">{ts.bildTextKohärenz}</span>
+                          </div>
+                        {/if}
                       </div>
                     {/if}
                   </div>
@@ -990,6 +1025,14 @@
 				}
 			}
 		}
+	}
+
+	.fp-detail-ts {
+		display: flex;
+		flex-direction: column;
+		gap: .5rem;
+		padding-top: .3rem;
+		border-top: 1px solid color-mix(in srgb, var(--border) 40%, transparent);
 	}
 
 	.fp-detail-r60 {

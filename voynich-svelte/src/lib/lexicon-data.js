@@ -17,13 +17,13 @@ export const STEM_WORDS = [
   { eva: "daiin",   heb: "דִּין",       de: "Urteil / Prognose",                                    layer: "Jüdisch-Aramäisch / Mischna-Hebräisch", isAnchor: true,   anchorFolio: "f1r",                                       confidenceStars: 4, rulesApplied: ["R40", "R43"] },
   { eva: "chalal",  heb: "חָלָל",       de: "Sterbender",                                           layer: "",                                      isAnchor: true,   anchorFolio: "",                                          confidenceStars: 4, rulesApplied: [] },
   { eva: "chaiin",  heb: "חַיִּין",      de: "Leben (Chayyim)",                                      layer: "",                                      isAnchor: true,   anchorFolio: "",                                          confidenceStars: 4, rulesApplied: [] },
-  { eva: "chan",    heb: "חָן",        de: "Gnade / günstige Prognose",                            layer: "",                                      isAnchor: false,  anchorFolio: "",                                          confidenceStars: 4, rulesApplied: [] },
+  { eva: "chan",    heb: "חָן",        de: "Gnade / günstige Prognose",                            layer: "",                                      isAnchor: false,  anchorFolio: "f2r P.12",                                  confidenceStars: 4, rulesApplied: [] },
   { eva: "dom",     heb: "דּוֹם",       de: "Stille / Ende",                                        layer: "",                                      isAnchor: false,  anchorFolio: "",                                          confidenceStars: 4, rulesApplied: [] },
   { eva: "tam",     heb: "תָּם",        de: "vollständig / rein",                                   layer: "",                                      isAnchor: false,  anchorFolio: "f69r",                                      confidenceStars: 4, rulesApplied: [] },
   { eva: "cheol",   heb: "ח-ע-ל",     de: "schöpfen / heben (balneolog. Augenbad-Marker)",        layer: "",                                      isAnchor: false,  anchorFolio: "f1v P.7 (H/C/D/F 4/4)",                     confidenceStars: 4, rulesApplied: ["R43"] },
   { eva: "olom",    heb: "עוֹלָם",      de: "Ewigkeit / Welt",                                      layer: "",                                      isAnchor: false,  anchorFolio: "f24v",                                      confidenceStars: 4, rulesApplied: [] },
   { eva: "sar",     heb: "שַׂר",        de: "Arzt / Meister / Vorsteher",                           layer: "",                                      isAnchor: true,   anchorFolio: "",                                          confidenceStars: 4, rulesApplied: [] },
-  { eva: "al",      heb: "עַל",        de: "auf / über / betreffend (Basispräposition; Var. ol)",  layer: "",                                      isAnchor: false,  anchorFolio: "",                                          confidenceStars: 4, rulesApplied: [] },
+  { eva: "al",      heb: "עַל",        de: "auf / über / betreffend (Basispräposition; Var. ol)",  layer: "",                                      isAnchor: false,  anchorFolio: "f2r P.5",                                   confidenceStars: 4, rulesApplied: ["R40"] },
   { eva: "tal",     heb: "טַל",        de: "Tau / Pflanzensaft / Feuchtigkeit",                    layer: "Hebräisch",                             isAnchor: false,  anchorFolio: "f13v (Erstbeleg)",                          confidenceStars: 3, rulesApplied: ["R14", "R40"] },
   { eva: "dar",     heb: "דּוֹר",       de: "Generation / Kreis / Wohnort",                         layer: "Hebräisch / Aramäisch",                 isAnchor: false,  anchorFolio: "f1r P4.23",                                 confidenceStars: 3, rulesApplied: ["R15", "R41", "R43"] },
   { eva: "kar",     heb: "כָּרָה",       de: "graben / untersuchen (med. Kontext)",                  layer: "Mischna-Hebräisch",                     isAnchor: false,  anchorFolio: "f4r",                                       confidenceStars: 3, rulesApplied: ["R40"] },
@@ -52,7 +52,7 @@ export const STEM_WORDS = [
 ];
 
 export const PREF_CH = [
-  { eva: "chkar",   morph: "ch- + kar",       heb: "חֲקַר",   de: "er untersucht (Qal von חקר)",  evidence: "", confidenceStars: 3, rulesApplied: [] },
+  { eva: "chkar",   morph: "ch- + kar",       heb: "חֲקַר",   de: "er untersucht (Qal von חקר)",  evidence: "f2r P.2 (Erstbeleg) + f9r + f16v + f27v + f115r", confidenceStars: 3, rulesApplied: ["R43"] },
   { eva: "chckhy",  morph: "ch- + k- + chy",  heb: "חֶכָּהִי",  de: "Blässe-Hitze-Zeichen",         evidence: "", confidenceStars: 3, rulesApplied: [] },
 ];
 
@@ -77,7 +77,7 @@ export const PREF_D = [
   { eva: "dchorol", morph: "d- + k- + or + ol-",  heb: "דְּכְּאוֹרעֹלְ",     de: "von der Pupille hin",                              evidence: "f30r P.6 (Erstbeleg)",             confidenceStars: 3, rulesApplied: [] },
   { eva: "daid",    morph: "d- + ai + d-",        heb: "דַּאִידַּ",        de: "? / תָּמִיד = dauerhaft (Semantik noch offen)",       evidence: "f24v P.7",                         confidenceStars: 2, rulesApplied: [] },
   { eva: "dait",    morph: "d- + ʿet",            heb: "דַּעִת",         de: "von/aus der Zeit / im Moment (zeitliche Deiktik)", evidence: "f21v P.5 (Erstbeleg)",             confidenceStars: 2, rulesApplied: [] },
-  { eva: "dain",    morph: "d- + aiin",           heb: "דַּעַיִן",        de: "das Auge (Kurzform)",                              evidence: "",                                 confidenceStars: 3, rulesApplied: [] },
+  { eva: "dain",    morph: "d- + aiin",           heb: "דַּעַיִן",        de: "das Auge (Kurzform)",                              evidence: "f2r P.9 (provisorisch, §D)",       confidenceStars: 3, rulesApplied: [] },
 ];
 
 export const PREF_DO = [
@@ -129,7 +129,7 @@ export const PREF_K = [
   { eva: "chorain",   morph: "k- + ar + aiin",          heb: "כֹּאַרעַיִן",    de: "Heilung des Auges / wie das Licht des Auges",        evidence: "f004r (3×, Quire A) + f030r P.3 (2 Folios, 2 Register, R43 erfüllt)",  confidenceStars: 4, rulesApplied: [] },
   { eva: "cphar",     morph: "k- + par",                heb: "כְּפַּר",       de: "Sühne / Bedeckung",                                  evidence: "f1r P1.5 (Erstbeleg)",                                                 confidenceStars: 3, rulesApplied: ["R43"] },
   { eva: "ckhal",     morph: "k- + hal",                heb: "כְּהַל",       de: "Nachlassen des Fiebers",                             evidence: "",                                                                     confidenceStars: 3, rulesApplied: [] },
-  { eva: "cthor",     morph: "k- + tor",                heb: "כְּתֹּר",       de: "vollständige Heilung",                               evidence: "",                                                                     confidenceStars: 3, rulesApplied: [] },
+  { eva: "cthor",     morph: "k- + tor",                heb: "כְּתֹּר",       de: "vollständige Heilung",                               evidence: "f2r P.12 (Erstbeleg) + f5v/f6r/f8v/f9r … (≥24 Folios)",               confidenceStars: 3, rulesApplied: ["R43"] },
   { eva: "cthaiin",   morph: "k- + t- + aiin",          heb: "כְּתַּעַיִן",     de: "vollständige Augen-Heilung",                         evidence: "f1r P1.5 (Erstbeleg)",                                                 confidenceStars: 3, rulesApplied: ["R8", "R43"] },
   { eva: "ksor",      morph: "k- + shar",               heb: "כֵּשָׁר",       de: "denn/wie passend/gesund",                            evidence: "f27r P.1 (Erstbeleg)",                                                 confidenceStars: 3, rulesApplied: [] },
   { eva: "keeod",     morph: "k- + od",                 heb: "כֵּעוֹד",      de: "denn noch / immer noch",                             evidence: "f27r P.9 (Erstbeleg)",                                                 confidenceStars: 3, rulesApplied: [] },
@@ -232,7 +232,7 @@ export const PREF_QO = [
 ];
 
 export const PREF_S = [
-  { eva: "sor",   morph: "s- + or",           heb: "שׂאֹר",     de: "Arzt des Lichts (Sprache-A-Vokalalternanz von sar)", evidence: "f28v P2.9 (Heilerkolophon)", confidenceStars: 4, rulesApplied: [] },
+  { eva: "sor",   morph: "s- + or",           heb: "שׂאֹר",     de: "Arzt des Lichts (Sprache-A-Vokalalternanz von sar)", evidence: "f2r P.6 (Erstbeleg) + f9r + f19v + f22v + f30r + f57v", confidenceStars: 4, rulesApplied: [] },
   { eva: "schol", morph: "s- + kol",          heb: "שׂכֹּל",     de: "Arznei für alles / Universalheilmittel",             evidence: "",                           confidenceStars: 3, rulesApplied: [] },
   { eva: "sokar", morph: "s- + o- + k- + ar", heb: "שׂאוֹכְּאָר",  de: "Heilungs-Arzt des Lichts",                           evidence: "",                           confidenceStars: 3, rulesApplied: [] },
   { eva: "schor", morph: "s- + chor",         heb: "שׂחֹר",     de: "gleich der Pupille",                                 evidence: "f22r P.4 (Erstbeleg)",       confidenceStars: 3, rulesApplied: [] },
@@ -346,7 +346,7 @@ export const SYNTAX_DAL = [
   { eva: "daly",      morph: "dal + -y",        heb: "דַּלִּי",     de: "seine/meine Schwäche",         evidence: "",                                                   confidenceStars: 4, rulesApplied: [] },
   { eva: "daly·dal",  morph: "dal + -y · dal",  heb: "דַּלִּידַּל",   de: "seine Schwäche",               evidence: "",                                                   confidenceStars: 4, rulesApplied: [] },
   { eva: "dalchy",    morph: "dal + k- + chy",  heb: "דַּלכְּהִי",   de: "die Schwäche der Blässe",      evidence: "",                                                   confidenceStars: 4, rulesApplied: [] },
-  { eva: "dalor",     morph: "dal + or",        heb: "דַּלאוֹר",   de: "schwaches Augenlicht",         evidence: "",                                                   confidenceStars: 3, rulesApplied: [] },
+  { eva: "dalor",     morph: "dal + or",        heb: "דַּלאוֹר",   de: "schwaches Augenlicht",         evidence: "f2r P.11 (Erstbeleg) + f58r",                        confidenceStars: 3, rulesApplied: ["R43"] },
   { eva: "dala",      morph: "dal + -a",        heb: "דַּלָּ",      de: "Schwäche (Femininum von dal)", evidence: "",                                                   confidenceStars: 3, rulesApplied: [] },
   { eva: "daldalol",  morph: "dal + dal + ol",  heb: "דַּלדַּלעוֹל", de: "doppelte Schwäche des Joches", evidence: "(R43-Frist abgelaufen; R53-Strukturbeleg erhalten)", confidenceStars: 2, rulesApplied: [] },
   { eva: "dalory",    morph: "dal + or + -y",   heb: "דַּלאוֹריְ",  de: "Schwäche zum Licht",           evidence: "f29v (R43-Frist abgelaufen)",                        confidenceStars: 2, rulesApplied: [] },
@@ -403,7 +403,7 @@ export const SYNTAX_PCHO = [
 
 export const SYNTAX_SAR = [
   { eva: "sary",    morph: "sar + -y",    heb: "שַׂרִי",   de: "mein Arzt / Apotheker (Possessiv)",  evidence: "f009r P.1 + f57r + f103r + f77r (Cross-Register ✓)", confidenceStars: 5, rulesApplied: [] },
-  { eva: "saiin",   morph: "sar + aiin",  heb: "שַׂעַיִן",  de: "Augenarzt",                          evidence: "",                                                   confidenceStars: 4, rulesApplied: [] },
+  { eva: "saiin",   morph: "sar + aiin",  heb: "שַׂעַיִן",  de: "Augenarzt",                          evidence: "f2r P.6 (Erstbeleg) + f8v/f9r/f15r/f16v/f22v/f30r/f33r", confidenceStars: 4, rulesApplied: ["R8", "R43"] },
   { eva: "saraiir", morph: "sar + ir",    heb: "שַׂראִיר", de: "Arzt des Leuchtenden",               evidence: "f26v P.2 (R43-Frist abgelaufen)",                    confidenceStars: 2, rulesApplied: [] },
 ];
 
@@ -437,7 +437,7 @@ export const SYNTAX_SHOL = [
 ];
 
 export const SYNTAX_MISC = [
-  { eva: "shodaiin",    morph: "shod + daiin",          heb: "שׁוֹדִּין",     de: "Todesurteil",                                              evidence: "",                                                     confidenceStars: 4, rulesApplied: [] },
+  { eva: "shodaiin",    morph: "shod + daiin",          heb: "שׁוֹדִּין",     de: "Todesurteil",                                              evidence: "f2r P.5 (Erstbeleg) + f3r + f4v + f5r",               confidenceStars: 4, rulesApplied: ["R30", "R43"] },
   { eva: "keey",        morph: "keey",                  heb: "כֵּי",        de: "denn / weil",                                              evidence: "f1r P4.26 (keey·keey, R15-Beleg)",                     confidenceStars: 4, rulesApplied: ["R15", "R40"] },
   { eva: "damo",        morph: "dam + -o",              heb: "דָּמוֹ",       de: "sein Blut",                                                evidence: "",                                                     confidenceStars: 4, rulesApplied: [] },
   { eva: "chain",       morph: "cha + aiin",            heb: "חַעַיִן",      de: "lebendiges Auge / Auge des Lebens",                        evidence: "f29v P.5 + f30r P.7 (R43 erfüllt, 2 Folios)",          confidenceStars: 3, rulesApplied: [] },

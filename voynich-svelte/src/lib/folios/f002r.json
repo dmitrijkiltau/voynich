@@ -1,0 +1,49 @@
+{
+  "folio": "f2r",
+  "status": "confirmed",
+  "registerType": "Herbal (Standard-Kräuterbild, Augenwasser-Register) — {plant}-System aktiv",
+  "languageClass": "Sprache A (Currier)",
+  "writerHand": 1,
+  "transcribers": [
+    { "siglen": ["H", "C", "F"], "label": "P.1–P.13, n=3 Standard" },
+    { "siglen": ["U"],           "label": "L.1 (Pflanzenlabel), n=1 Stolfi-Lesung" }
+  ],
+  "consensusDenominators": [
+    "P.1–P.13: n=3 (H/C/F)",
+    "L.1: n=1 (U)"
+  ],
+  "scanUrl": "https://collections.library.yale.edu/iiif/2/1006078/full/full/0/default.jpg",
+  "iconographic": {
+    "rules": ["R14", "R16", "R38", "R60"],
+    "illustrationType": "Eine zentrierte, ganzseitige Pflanze ohne Hintergrundornamentik; dezenter blass-grüner Lichthof hinter dem Laub.",
+    "plantMorphology": {
+      "radix": "Links-rechts-symmetrisch, planar, »kopfloser Strichmann mit ausgestreckten Armen und greifenden Händen« (Stolfi); dunkel übermalt (Terracotta/Dunkelrot) → textfrei (R14 Ebene 1 / R60).",
+      "caulis": "Kurz und dünn; zwei aufrechte, leicht gebogene Hauptäste mit dunkler Mittelader.",
+      "folia": "Dunkel übermalt, dreieckiger Fächer mit fünf lanzettlichen »Fingern« → textfrei (R60 Kor. 3).",
+      "flosFructus": "Drei Blüten an den Astspitzen; länglich-ovaler Kelchansatz, viele schmale lange Petalen (Rasierpinsel-Form), Kern verdeckt.",
+      "coloring": "Grün und Rot (Reeds). Dunkelrot-RADIX vorhanden → R60-Farbcode-Korollar einschlägig (Wurzel textfrei)."
+    },
+    "botanicalIdentification": [
+      "Petersen: *Centaurea cyanus* (Kornblume) — »cyanus segetum, cornflower«. Konf. ★★★★.",
+      "voynich.nu-Metadaten: »Petersen's cornflower« (Plant 2).",
+      "Vorbehalt: Blütenform und Verzweigung passen gut; Blätter von *C. cyanus* sind lang, schmal und glattrandig — anders als der dreieckig-gefächerte Blattschnitt auf f2r.",
+      "Pharmakologie: Aufgüsse als Fiebermittel (ganze Pflanze) und Augenwasser (nur Blüten) — stützt das ophthalmologische Register."
+    ],
+    "layoutStructure": "13 Paragraphen (P.1–P.13) + Pflanzenlabel L.1 (ytoain=). R16 Typ 1 (Horizontal-Mehrsegment): drei Blütenstiele gliedern P.2–P.6 in 3–4 Textsegmente. R38: {plant} nicht am Paragraphenanfang (Quire A konform) — Ausnahme P.7 endet chol.dan={plant} (=-Kolophon vor terminalem {plant}). Zwei Textblöcke: oberer Block (FLOS-Höhe, 6.4 Zeilen) + unterer Block (CAULIS-Höhe, 5.4 Zeilen). FOLIUM und RADIX stumm. R60-Layouttyp A/C-Misch.",
+    "r60Status": "Beleg 11 (RADIX-Dunkelrot textfrei) ★★★★★."
+  },
+  "textSignals": {
+    "registerEinordnung": "ophthalmologisch / Augenwasser",
+    "leitterme": [
+      "ytoain= (Label L.1)",
+      "saiin (Augenarzt) + olsaiin",
+      "aiin-Komposita 8+: daiin ×3, qotaiin, chokaiin, cholaiin, chaiin, ychain, daiildy, daiiny",
+      "chor / cthor (Pupille / Heilung)",
+      "chkar (untersuchen)",
+      "dalor (schwaches Augenlicht)",
+      "chan (Gnade)",
+      "shol ×2 + shodaiin (Prognose)"
+    ],
+    "bildTextKohärenz": "Augenheilkunde-Leitterme (Augenarzt, Pupille, Licht, schwaches Augenlicht) decken sich mit der Kornblumen-Pharmakologie (Augenwasser aus Blüten). Kohärent."
+  }
+}
