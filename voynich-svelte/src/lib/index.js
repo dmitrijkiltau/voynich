@@ -16,14 +16,15 @@ const _compact = (/** @type {string} */ n) => n.replace(/ /g, '');
 const _pct     = (/** @type {number} */ p) => `${Math.round(p)}%`;
 
 export const STATS = {
-  version: '8.8.6',
+  version: '8.8.7',
   // Separate each change on a new line and keep only the new changes since the last release.
   changelog: [
-    'f3r-Audit: anchorFolio-Korrekturen chor (f4r→f1r P2.8), shol (Zodiak→f1r P1.1), cham (f69r→f3r P.2); layer-Fills sheol/cham/chom/sam; anchorFolio-Fills sheol/chom/sam',
-    'f3r-Audit: 9 evidence-Fills (cthom, okeom, opchol Erstbeleg-Korrektur, qokchor, qodaiin, tsheoarom, daiim, sheoldam+C-Divergenz, damo, chal)',
-    'f3r-Audit: 17 neue Kandidaten (candidate: true) — sho, cthy, octhy, ochor, odaiin, pcheol, qokol, qoschodam, qocheor, ychtaiin, ysheor, chololy, otchom, otchody, oteol, otal; ALIAS chol→kol',
-    'Grammatik R1+R33: f2r-Frühemergenz §E Option (b) — „ausnahmslos“ gestrichen, Progressionsskala erweitert, R59-Querverweis ergänzt',
-    'Infrastruktur: candidate-Badge in Lexikon-UI + Markdown-Export; STATS.lexicon zählt nur bestätigte Einträge; f003r.json vollständig befüllt',
+    'f3v-Audit: f003v.json neu erstellt (Dipsacus-Identifikation ★★★, R60 ★★★★★, 14 Paragraphen, 2 Textblöcke)',
+    'f3v-Audit: Erstbeleg-Korrekturen tchor (f3v P.7 5/5), ykchy (f3v P.8 4/4), ytchy (f3v P.12 4/4); Folgebelege f11v/f16v ergänzt',
+    'f3v-Audit: sho/cthy/ochor Kandidaten-Flags aufgehoben (R43 erfüllt); kchom ★★ → ★★★ (R43 erfüllt f3v P.8)',
+    'f3v-Audit: 6 f1r-Einträge auf ★★ demotiert (R43-Frist abgelaufen): oksho, shodain, shoaiin, tchey, oiin, ydain',
+    'f3v-Audit: Neue Einträge otcham (Erstbeleg f3v P.7, Parallelform zu otchom) + daiidy (Kandidat f3v P.2, EVA-distinct von daiindy); ALIAS daiidy→daiindy entfernt',
+    'Fristtabelle komplett restrukturiert: 13 f3r-Kandidaten (Frist bis f7r), 1 f3v-Kandidat, 6 abgelaufene f1r-Fristen, 3 bestätigte Einträge',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.filter((/** @type {any} */ e) => !e.candidate).length,
