@@ -18,9 +18,9 @@
 
 	<div class="box hl updates-box hidden-print">
 		<div class="box-title">Aufstufungen &amp; Absorptionen — Versionshistorie</div>
-		<ul>
-			{#each RULES_CHANGELOG as entry, index (index)}
-				<li>{@html entry}</li>
+		<ul class="changelog">
+			{#each RULES_CHANGELOG.slice().reverse() as entry, index (index)}
+				<li><strong>{entry.version}</strong>: {@html entry.change}</li>
 			{/each}
 		</ul>
 	</div>
@@ -59,12 +59,14 @@
 	.updates-box {
 		margin-bottom: 1.4rem;
 
-		& ul {
+		& ul.changelog {
+			max-height: 128px;
 			margin: .4rem 0 0;
 			padding-left: 1.2rem;
 			display: flex;
 			flex-direction: column;
 			gap: .3rem;
+			overflow-y: auto;
 		}
 
 		& li {
