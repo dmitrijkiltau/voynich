@@ -1,0 +1,107 @@
+{
+  "folio": "f24v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q03/f024v_tr.txt",
+    "date": "1998-12-12",
+    "time": "17:20:50",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "tchodar.chocfhhg.opom.shod.chcphy.opshody.ocphoraii!n.ok!ok!!!!!!om-",
+        "C": "tchodar.chocfhey.opod.shod.chcphy.opshody.o!p!oraii!n.ok.ok!!!!!!am-",
+        "F": "tchodar.chocfh!y.opom.shod.chcphy.opshody.ocpho.raiin.ok!o*!!!!!!am-",
+        "U": "tchodar.chocfhey.opam.shod.chcphy.opshody.ocphoraii!n.ok!o*{&146}am-"
+      },
+      "P.2": {
+        "H": "ydals.ckhor.shy.cho.dchar.otol.otaiir.otchos.okchom.okcho-",
+        "C": "yd**s.ckhor.shy.cho.dchor.otol.otaiir.otchos.okchom.okcho-",
+        "F": "ydals.ckhor.shy.cho.dchar.otol.otaiir.otchos.okchom.okcho-",
+        "U": "ydals.ckhor.shy.cho.dchor.otol.otaiir.otchos.okchom.okcho-"
+      },
+      "P.3": {
+        "H": "octhol.odchees.oesear!ees.okam.chcth-{plant}",
+        "C": "***!!*.!dchees.o!sear.ear.okam.chcth-{plant}",
+        "F": "octhol.odchees.o!sear!ies.okam.chcth-{plant}",
+        "U": "octhol.odchees.o!sear!ees.okam.chcth-{plant}"
+      },
+      "P.4": {
+        "H": "yd!al.sh.okol.okaiin.odaiin.dlos-{plant}",
+        "C": "yd.al.sh.okol.okaiin.odaiin.dlor-{plant}",
+        "F": "yd!al.sh.okol.okaiin.odaiin.dlos-{plant}",
+        "U": "yd!al.sh.okol.okaiin.odaiin.dlor-{plant}"
+      },
+      "P.5": {
+        "H": "oeor.oraiin.tchar.oro={plant}",
+        "C": "*!*r.oraiin.tchar.oro={plant}",
+        "F": "oeor.oraiin.tchar.oro={plant}",
+        "U": "olor.oraiin.tchar.oro={plant}"
+      },
+      "P.6": {
+        "H": "tochol.chor.cf!ar!asr-{plant}",
+        "C": "tochol.shor.!!*ar.!*r-{plant}",
+        "F": "tochol.chor.cfhar!a!r-{plant}",
+        "U": "tochol.chor.cfhar!asr-{plant}"
+      },
+      "P.7": {
+        "H": "ycheol.daid.dar.olom-{plant}",
+        "C": "ycheol.daid.dar.olom-{plant}",
+        "F": "ycheol.daid.dar.olom-{plant}",
+        "U": "ycheol.daid.dar.olom-{plant}"
+      },
+      "P.8": {
+        "H": "kochky.chcthy.shol.sain-{plant}",
+        "C": "kochky.chcthy.shol.sain-{plant}",
+        "F": "kochky.chcthy.shol.sain-{plant}",
+        "U": "kochky.chcthy.shol.sain-{plant}"
+      },
+      "P.9": {
+        "H": "y!chol.chol.or.chor!om-{plant}",
+        "C": "y.chol.chol.or.chor.om-{plant}",
+        "F": "y!chol.chol.or.chor!om-{plant}",
+        "U": "y!chol.chol.or.chor!om-{plant}"
+      },
+      "P.10": {
+        "H": "okoeos.ckheod.choy.keol-{plant}",
+        "C": "okoeor.ctheod.choy.keol-{plant}",
+        "F": "okoeos.ckheod.choy.keol-{plant}",
+        "U": "okoeor.ctheod.choy.keol-{plant}"
+      },
+      "P.11": {
+        "H": "ydaiin.cheor.qodom.okodaiin={plant}",
+        "C": "ydaiin.cheor.qodom.okodaiin={plant}",
+        "F": "ydaiin.chear.qodom.okodaiin={plant}",
+        "U": "ydaiin.cheor.qodom.okodaiin={plant}"
+      },
+      "P.12": {
+        "H": "ksho.foar.ct!o.sho.qokch.ok!okchal-{plant}",
+        "C": "ksho.foar.*t!o.sho.qok*!.ok.okchal-{plant}",
+        "F": "ksho.foar.ctho.sho.qokch.ok!okchal-{plant}",
+        "U": "ksho.foar.ct!o.sho.qokch.ok.okchal-{plant}"
+      },
+      "P.13": {
+        "H": "oeeey.cheol.chol.odor.sho.do.ot!olodal-{plant}",
+        "C": "oeeey.cheol.chol.odor.sho.do.ot.olodal-{plant}",
+        "F": "oeeey.cheol.chol.odor.sho.do.ot!olodal-{plant}",
+        "U": "oeeey.cheol.chol.odor.sho.do.ot!olodal-{plant}"
+      },
+      "P.14": {
+        "H": "doiir.cheekdam.sho.sho.dy-{plant}",
+        "C": "doa!r.cheeodam.sho.sho.dy-{plant}",
+        "F": "doiir.cheekdam.sho.sho.dy-{plant}",
+        "U": "doiir.cheeodam.sho.sho.dy-{plant}"
+      },
+      "P.15": {
+        "H": "dchey.kchod.dchol.ochdy-{plant}",
+        "C": "dchey.kchod.dchal.ochdy-{plant}",
+        "F": "dchey.kchod.dchal.ochdy-{plant}",
+        "U": "dchey.kchod.dchal.ochdy-{plant}"
+      },
+      "P.16": {
+        "H": "otchol.odaiim=",
+        "C": "otchol.odaiim=",
+        "F": "otchol.odaiim=",
+        "U": "otchol.odaiim="
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "folio": "f28r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q04/f028r_tr.txt",
+    "date": "1998-12-07",
+    "time": "04:45:11",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "pchodar.shod.chocphy.opchol.daiin-{plant}otchol.chy!qo.l!dy-",
+        "C": "pchodar.shod.chocphy.opchor.daiin-{plant}otchol.chy.qo!l.dy-",
+        "F": "pchodar.shod.chocphy.opchol.daiin-{plant}otchol.chy!qo!l!dy-"
+      },
+      "P.2": {
+        "H": "otchor.otchor.cthol.ct!y.ctheol.dy-{plant}dchar.chakod.dly-",
+        "C": "otchor.o!chor.cthol.cthy.ctheol.dy-{plant}dchar.chakod.dly-",
+        "F": "otchor.otchor.cthol.cthy.ctheol.dy-{plant}dchar.chakod.dly-"
+      },
+      "P.3": {
+        "H": "qotchaiin.shor.cthol.cthol.shor-{plant}chotchy.tchodar-",
+        "C": "qotchaiin.shor.cthol.cthol.shor-{plant}chotchy.tchodar-",
+        "F": "qotchaiin.shor.cthol.cthol.shor-{plant}chotchy.tchodar-"
+      },
+      "P.4": {
+        "H": "choty.chtol.otol.chotchy.cthol-{plant}otol.choky.qoty-",
+        "C": "!!oty.chtol.ot.l.chotchy.cthol-{plant}otol.choky.qoty-",
+        "F": "choty.chtol.otol.chotchy.cthol-{plant}otol.choky.qoty-"
+      },
+      "P.5": {
+        "H": "oksho.otor.chy.kchor!or.chodaiin-{plant}sho.cthody.okoy-",
+        "C": "oksho.otor.chy.kchor!or.chodaiin-{plant}sho.cthody.okoy-",
+        "F": "oksho.otor!chy.kchor.or.chodaiin-{plant}sho.cthody.okoy-"
+      },
+      "P.6": {
+        "H": "qokchol.qodaiin.otcholchy.daiin-{plant}cho.qokol.okam-",
+        "C": "qokchol.qodaiin.otcholchy.daiin-{plant}cho.qokol.okam-",
+        "F": "qokchol.qodaiin.otcholchy.daiin-{plant}cho.qokol.okam-"
+      },
+      "P.7": {
+        "H": "sho.otor.shockhy.shocthy.otol!dy-{plant}dshor.dol.dar-",
+        "C": "sho.otor.shog!!y.shocthy.otor.dy-{plant}dshor.dol.dar-",
+        "F": "sho.otor.shockhy.shocthy.otol!dy-{plant}dshor.dol.dar-"
+      },
+      "P.8": {
+        "H": "oschotshl.daiin.okchey.kol.daiin-{plant}shol.dsho.otaiin-",
+        "C": "oschotshl.daiin.okchey.kol.daiin-{plant}shol.dsho.otaiin-",
+        "F": "oschotshl.daiin.okchey.kol.daiin-{plant}shol.dsho.otaiin-"
+      },
+      "P.9": {
+        "H": "ytchol.deey.yteol.deaiin=",
+        "C": "ytchol.deey.yteol.deaiin=",
+        "F": "ytchol.deey.yteol.deaiin="
+      }
+    }
+  }
+}

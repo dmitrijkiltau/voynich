@@ -1,0 +1,255 @@
+{
+  "folio": "f99r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q19/f099r_tr.txt",
+    "date": "1998-12-11",
+    "time": "13:20:45",
+    "editor": "stolfi",
+    "lines": {
+      "L1.0": {
+        "H": "okoramog=",
+        "V": "okaramog=",
+        "U": "okaroram="
+      },
+      "L1.1": {
+        "H": "okar!y=",
+        "V": "okar.y=",
+        "U": "okar.y="
+      },
+      "L1.2": {
+        "H": "darar=",
+        "V": "darar=",
+        "U": "darar="
+      },
+      "L1.3": {
+        "H": "oky=",
+        "V": "oky=",
+        "U": "oky="
+      },
+      "L1.4": {
+        "H": "salo=",
+        "U": "***!="
+      },
+      "L1.5": {
+        "H": "oro-",
+        "V": "oro-",
+        "U": "ora-"
+      },
+      "L1.5a": {
+        "H": "ain=",
+        "V": "ain=",
+        "U": "ain="
+      },
+      "L1.6": {
+        "H": "okor=",
+        "V": "okar=",
+        "U": "okor="
+      },
+      "L1.7": {
+        "H": "salol=",
+        "V": "salol=",
+        "U": "salol="
+      },
+      "L1.8": {
+        "H": "skeeal=",
+        "V": "skeeal=",
+        "U": "skeeal="
+      },
+      "L1.9": {
+        "H": "okary=",
+        "V": "okary=",
+        "U": "okary="
+      },
+      "L1.10": {
+        "H": "okolo=",
+        "V": "okolo=",
+        "U": "okalo="
+      },
+      "L1.11": {
+        "H": "otalam=",
+        "V": "otalam=",
+        "U": "otalam="
+      },
+      "L1.12": {
+        "H": "otoldy=",
+        "V": "otaldy=",
+        "U": "otoldy="
+      },
+      "P1.1": {
+        "H": "{container}pcheody.oteody.daiin.cpheey.tshol.dal.cfheol.olaiin.rar-",
+        "F": "{container}pcheody.oteody.daiin.cpheey.tshol.dal.cfheol.olaiin.rar-"
+      },
+      "P1.2": {
+        "H": "raroshy.shor.sshor.sheol.kol.sheol.qoeol.shol.kol.ckhol.ckhory-",
+        "F": "raroshy.shor.sshor.cheol.kol.sheol.*oeol.chol.kol.ckhol.ckhory-"
+      },
+      "P1.3": {
+        "H": "dcheor.chs.al.yckhy.okeol.ckhor.oraiin.chor.qokeeor.chory-",
+        "F": "dcheor.chs.al.yckhy.okeol.ckhor.oraiin.chor.qokeeor.chory-"
+      },
+      "P1.4": {
+        "H": "qokeor.chol.ykol.cheey.chody.ckhol.daiin.okeoly.daiin.ckhy=",
+        "F": "qokeor.chol.ykol.cheey.chody.ckhol.daiin.okeoly.daiin.ckhy="
+      },
+      "L2.0": {
+        "H": "op!ara!l=",
+        "U": "***arch*="
+      },
+      "L2.1": {
+        "H": "oaro=",
+        "V": "oalo=",
+        "U": "oaro="
+      },
+      "L2.2": {
+        "H": "aloly=",
+        "V": "aloly=",
+        "U": "alolo="
+      },
+      "L2.3": {
+        "H": "ooror=",
+        "V": "oarar=",
+        "U": "aorar="
+      },
+      "L2.4": {
+        "H": "choky=",
+        "V": "choky=",
+        "U": "choky="
+      },
+      "L2.5": {
+        "H": "oky-{spikes}",
+        "V": "oky-{spikes}",
+        "U": "oky-{spikes}"
+      },
+      "L2.5a": {
+        "H": "okeoly=",
+        "V": "okeoly=",
+        "U": "okeoly="
+      },
+      "L2.6": {
+        "H": "yteold=",
+        "V": "ykeolm=",
+        "U": "yteold="
+      },
+      "L2.7": {
+        "H": "cheotchy=",
+        "V": "cheotchy=",
+        "U": "cheotchy="
+      },
+      "P2.5": {
+        "H": "kodaiin.opchey.qoky.dor.otchor.opsho.okeol.sheol.oteoefol-",
+        "F": "kodaiin.opchey.qoky.dar.otchor.opsha.okeol.sheol.oteoefol-"
+      },
+      "P2.6": {
+        "H": "dsheol.ckhey.ckheol.okeol.ctheol.qokey.ckhol.okeol.okeey.dald-",
+        "F": "dsheol.ckhey.ckheol.okeol.ctheol.qokey.ckhol.okeol.okeey.dald-"
+      },
+      "P2.7": {
+        "H": "tol.cheody.qokol.okoly.okoldy.qokoly.qokal.okchol.qokold-",
+        "F": "tol.cheody.qokol.okoly.okoldy.qokoly.qokal.okchol.qokold-"
+      },
+      "P2.8": {
+        "H": "chees.okeey.qotol.sheol.daiin.qotol.okeol=",
+        "F": "chees.okeey.qotol.cheol.daiin.qotol.okeol="
+      },
+      "L3.0": {
+        "H": "tsholdy=",
+        "V": "tsholdy=",
+        "U": "***ol**="
+      },
+      "L3.1": {
+        "H": "okos=",
+        "V": "okos=",
+        "U": "okos="
+      },
+      "L3.2": {
+        "H": "oekey=",
+        "V": "oekey=",
+        "U": "oekey="
+      },
+      "L3.3": {
+        "H": "dor={plant}",
+        "V": "dar={plant}",
+        "U": "dar={plant}"
+      },
+      "L3.3a": {
+        "H": "chockhhy=",
+        "V": "chockhhy=",
+        "U": "chockhey="
+      },
+      "L3.4": {
+        "H": "r!chey.ot=",
+        "V": "s.chey.et=",
+        "U": "s.chey.et="
+      },
+      "L3.5": {
+        "H": "saiiny=",
+        "V": "saiiny=",
+        "U": "saiiny="
+      },
+      "L3.6": {
+        "H": "rory=",
+        "V": "sary=",
+        "U": "sory="
+      },
+      "L3.7": {
+        "H": "dam=",
+        "V": "dam=",
+        "U": "dam="
+      },
+      "P3.9": {
+        "H": "tsheeor.cpheol.ckey.pchol.ckhey.ypchol.chor.choly.qotocthey.qkory-",
+        "F": "tsheeor.cpheol.ckhy.pchol.ckhey.ypchol.chor.choly.qotocthey.qkary-"
+      },
+      "P3.10": {
+        "H": "sol.sheol.keshey.qokeeey.chs.chey.dol!chey.ctheey.daiin.cheom-",
+        "F": "sol.sheol.keshey.qokeeey.chs.chey.dal.chey.ctheey.daiin.cheom-"
+      },
+      "P3.11": {
+        "H": "daiin.cheeokeey.checkhey.dor.oldy.sheey.keody.okeeey.s.aiin.ols-{plant}",
+        "F": "daiin.cheeokeey.checkhey.dar.oldy.sheey.keody.okeeey.s!aiin.ols-{plant}"
+      },
+      "P3.12": {
+        "H": "qokey.chkeey.chey.ckhey.ckhey.ykeey.oiin.air.chody.oeksa={plant}",
+        "F": "qokey.chkeey.chey.ckhey.ckhey.ykeey.aiin.air.chody.oeksa={plant}"
+      },
+      "L4.0": {
+        "H": "yteoldy=",
+        "V": "yk!alg*="
+      },
+      "L4.1": {
+        "H": "tolsa!s!y=",
+        "V": "tolsa!s!y=",
+        "U": "tolshes,y="
+      },
+      "P4.13": {
+        "H": "tol.keey.ctheey-{plant}",
+        "F": "tol.keey.ctheey-{plant}",
+        "U": "tol,keey.ctheey-{plant}"
+      },
+      "P4.14": {
+        "H": "ykeol.okeol.o.ckheo.chol.cheodal.okeo.r.olcheem.orar-{plant}",
+        "F": "ykeol.okeol.o!ckheo.chol.cheodal.okeo!r.alcheem.orar-{plant}",
+        "U": "ykeol.okeol.o,ckhey.chol.cheodal.okeo!r.alcheem,orar-{plant}"
+      },
+      "P4.15": {
+        "H": "okeeey.keey.keeor.okeey.daiin.okeol!s.aiin.olaiir.o!olsal-{plant}",
+        "F": "okeeey.keey.keeor.okeey.daiin.okeol!s.aiin.olaiir.o!olshl-{plant}",
+        "U": "okeeey.keey.keeor.okeey.daiin.okeol,s.aiin.olaiir.o,olsal-{plant}"
+      },
+      "P4.16": {
+        "H": "qokeeo.okeey.qokeey.okesy.qokeeo.sar.sheseky.or.al-{plant}",
+        "F": "qokeeo.okeey.qokeey.okisy.qokeeo.sar.sheseky.or.al-{plant}",
+        "U": "qokeeo.okeey.qokeey.okesy.qokeeo,sar.sheseky.or.al-{plant}"
+      },
+      "P4.17": {
+        "H": "yshain.y{&Y}khey.octhey.dy.daiin.okor.okeey.shct{&T}y.sh-{plant}",
+        "F": "**aiin.c!!!!khey.acthey.dy.daiin.okor.okeey.shcth!!!*!sh-{plant}",
+        "U": "shai!n.y!!!!keey.acthey.dy.daiin.okor.okeey.she!!!*!y,sh-{plant}"
+      },
+      "P4.18": {
+        "H": "ychor.ols.or.am.air.om=",
+        "U": "ychor.ols.or.am,air!am="
+      }
+    }
+  }
+}

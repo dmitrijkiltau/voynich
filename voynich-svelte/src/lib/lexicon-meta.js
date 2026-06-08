@@ -87,16 +87,49 @@ export function getLexiconMeta(eva) {
 
 	if (folioIds.length > 0) {
 		const parts = [];
+		// When 4+ distinct folios: show para detail only for first 3, collapse the rest to folio-id only
+		const detailLimit = folioIds.length >= 4 ? 3 : Infinity;
+
 		for (let fi = 0; fi < folioIds.length; fi++) {
 			const fid = folioIds[fi];
-			for (const { para, majority, total } of byFolio[fid]) {
-				const tag = fi === 0 ? ', Erstbeleg' : '';
+			const occList = byFolio[fid];
+			const isFirst = fi === 0;
+			const tag = isFirst ? ', Erstbeleg' : '';
+
+			if (fi >= detailLimit) {
+				parts.push(fid);
+				continue;
+			}
+
+			if (occList.length === 1) {
+				const { para, majority, total } = occList[0];
 				const occ = `${fid} ${para} (${majority.join('/')} ${majority.length}/${total}${tag})`;
 				parts.push(occ);
-				if (fi === 0 && !computedAnchorFolio) computedAnchorFolio = occ;
+				if (isFirst) computedAnchorFolio = occ;
+			} else if (occList.length <= 3) {
+				const paraList = occList.map(o => o.para).join(', ');
+				parts.push(`${fid} (${paraList}${tag})`);
+				if (isFirst) {
+					const { para, majority, total } = occList[0];
+					computedAnchorFolio = `${fid} ${para} (${majority.join('/')} ${majority.length}/${total}${tag})`;
+				}
+			} else if (occList.length <= 6) {
+				const paraFirst = occList[0].para;
+				const paraLast = occList[occList.length - 1].para;
+				parts.push(`${fid} (${paraFirst}–${paraLast}, ×${occList.length}${tag})`);
+				if (isFirst) {
+					const { para, majority, total } = occList[0];
+					computedAnchorFolio = `${fid} ${para} (${majority.join('/')} ${majority.length}/${total}${tag})`;
+				}
+			} else {
+				parts.push(isFirst ? `${fid} (Erstbeleg)` : fid);
+				if (isFirst) {
+					const { para, majority, total } = occList[0];
+					computedAnchorFolio = `${fid} ${para} (${majority.join('/')} ${majority.length}/${total}${tag})`;
+				}
 			}
 		}
-		computedEvidence = parts.join(' + ');
+		computedEvidence = parts.join(', ');
 	}
 
 	return { isAnchor, r43, confFloor, computedEvidence, computedAnchorFolio };

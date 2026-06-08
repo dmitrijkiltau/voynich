@@ -1,0 +1,77 @@
+{
+  "folio": "f32v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q04/f032v_tr.txt",
+    "date": "1998-10-10",
+    "time": "03:19:52",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "kcheodaiin.chol.kechy.qotaiin.daiioam-{plant}o.cho!fchody-",
+        "C": "kcheodaiin.chol!kechy.qotaiin.daiioam-{plant}o!cho!fchody-",
+        "F": "kcheodaiin.chol.kechy.qotaiin.dainoam-{plant}o!cho.fchody-",
+        "U": "kcheodaiin.chol,kechy.qotaiin.daiinym-{plant}o!cho,fchody-"
+      },
+      "P.2": {
+        "H": "daiin.odar.chy.daiin.chey.tcho.ldy-{plant}dain.teor-",
+        "C": "daiin.odar.chy.daiin.chey!tcho.ldy-{plant}dain.teor-",
+        "F": "daiin.odar.chy.daiin.chey.tchy.ldy-{plant}dain.teor-",
+        "U": "daiir.odar.chy.daiin.chey.tchy.ldy-{plant}dain.teor-"
+      },
+      "P.3": {
+        "H": "shor.daiin.chckhy.dsho.dain.daiin.s-{plant}shokey.ka-",
+        "C": "shor.daiin.chckhy.dsho.dain.daiin.s-{plant}shokey.ka-",
+        "F": "shor.daiin.chckhy.dsho.dain.daiin.s-{plant}shokey.ka-",
+        "U": "shor.daiin.chckhy.dsho.dain.daiin.s-{plant}shokey.ka-"
+      },
+      "P.4": {
+        "H": "or.chr.chor.dor.chaiin.qotcho.r.chy-{plant}dcho.daiin-",
+        "C": "or.chr.chor.dor.chaiin.qotcho!r.chy-{plant}dcho!daiin-",
+        "F": "or!chr.chor.dor.chaiin.qotcho.r!chy-{plant}dcho.daiin-",
+        "U": "or,chr.chor.dor.chaiin.qotcho!r,chy-{plant}dchy.daiin-"
+      },
+      "P.5": {
+        "H": "chokchy.daiin.shy.chor.qo.kaiin.dain-{plant}dchol.dor!g-",
+        "C": "chokchy.daiin.shy.chor.qo!kaiin.dain-{plant}dchol.dor.g-",
+        "F": "chokchy.daiin.shy.chor.qo!kaiin.dain-{plant}dchol.dor!m-",
+        "U": "chokchy.daiin.shy.chor.qo!kaiin.dain-{plant}dchol.dor!m-"
+      },
+      "P.6": {
+        "H": "okchan.chol.shal.dchcthy={plant}",
+        "C": "okchan.chol.shal.dchcthy={plant}",
+        "F": "okchan.chol.shal.dchcthy={plant}",
+        "U": "okchan.chol,shal.dchcthy={plant}"
+      },
+      "P.7": {
+        "H": "ksho.cphor.she.sheaiin.otshchor.dain-{plant}shckhy.s.odan-",
+        "C": "ksho.cphos.she.sheaiin.otshchor.dain-{plant}shckhy.s.odan-",
+        "F": "ksho.cphor.she.sheaiin.otshchor.dain-{plant}shckhy.s.odan-",
+        "U": "ksho.cphor.she.sheaiin.otshchor.dain-{plant}shckhy.s.odan-"
+      },
+      "P.9": {
+        "H": "otchol.daiin.daiin.ctho.daiin.qotaiin-{plant}otchy.d-{plant}shar-",
+        "C": "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-",
+        "F": "otchol.daiin.daiin.ctho.daiin.qotaiin-{plant}otchy.d-{plant}shar-",
+        "U": "otchol.daiin.daiin.ctho,daiin.qotaiin-{plant}otchy.d-{plant}shar-"
+      },
+      "P.9a": {
+        "H": "qotchy.cfhy.s!key.chocthy.daiin.cthaiin-{plant}daiin-{plant}",
+        "C": "qotd!y.cfhy.s!key.chocthy.daiin.cthaiin-{plant}daiin-{plant}",
+        "F": "qotchy.cfhy.s!key.chocthy.daiin.cthaiin-{plant}daiin-{plant}",
+        "U": "qotchy.cfhy.s,key.chocthy.daiin.cthaiin-{plant}daiin-{plant}"
+      },
+      "P.10": {
+        "H": "sho.keol.chor.chol.daiin.cphol.cthol.da-{plant}ar-{plant}",
+        "C": "sho!keol.chor.chol.daiin.cphol.cthol.da-{plant}ar-{plant}",
+        "F": "sho.keol.chor.chol.daiin.cphol.cthol.dy-{plant}ar-{plant}",
+        "U": "sho,keol.chor.chol.daiin.cphol.cthol.dy-{plant}ar-{plant}"
+      },
+      "P.11": {
+        "H": "ol.sho.chy=",
+        "C": "ol.sho.chy=",
+        "F": "ol.sho.chy=",
+        "U": "ol.sho.chy="
+      }
+    }
+  }
+}

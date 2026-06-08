@@ -1,0 +1,46 @@
+{
+  "folio": "f33r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q05/f033r_tr.txt",
+    "date": "1998-12-07",
+    "time": "06:03:07",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "tshdar.shdor.shepchdy.cphody.yfoldy.qofockhdy.otchedy.lfchdy.daiin-",
+        "C": "tshdar.shdor.shepchdy.cphody.yfoldy.qofockhdy.otchedy.lfchdy.daiin-",
+        "F": "tshdar.shdar.shepchdy.cphody.yfoldy.qofockhdy.otchedy.lfchdy.daiin-"
+      },
+      "P.2": {
+        "H": "ytchedy.qokar.cheky.okaldy.qokaldy.otor.oldor.qotor.otar.otar!dam-",
+        "C": "ytchedy.qokar.cheky.okaldy.qokaldy.otor.oldar.qotar.otar.otar.dam-",
+        "F": "ytchedy.qokar.cheky.okaldy.qokaldy.otor.oldar.qotar.otar.otar!dam-"
+      },
+      "P.3": {
+        "H": "loiin.y.cheky.qokedy.shedy.chdal.chech!daiin.qokchy.ody.chekeedy.ykam-",
+        "C": "laiin.y.cheky.qokedy.shedy.chdal.chech!daiin.qokchy.ody.chekeedy.ykam-",
+        "F": "laiin.y.cheky.qokedy.shedy.chdal.chech.daiin.qokchy.ody.chekeedy.ykam-"
+      },
+      "P.4": {
+        "H": "taiin.chekey.or.al!aiiin.saiin.okaiin.dar.cheedy.chkeey.far.aiin.s-",
+        "C": "taiin.chekey.or.ol.aiiin.saiin.okaiin.dar.cheedy.chkeey.far.aiin.s-",
+        "F": "taiin.chekey.or.al!aiiin.saiin.okaiin.dar.cheedy.chkeey.far.aiin.s-"
+      },
+      "P.5": {
+        "H": "pair.or.aiin.otaiin.ol.kor.aiin.okal.otal.chdal.shekal.qakar.otam-",
+        "C": "pair.or.aiin.otaiin.ol!kor.aiin.okal.otal.chdal.shekal.qokar.otam-",
+        "F": "pair.or!aiin.otaiin.ol!kor.aiin.okal.otal.chdal.shekal.qokar.otam-"
+      },
+      "P.6": {
+        "H": "yteey.shody.tchedy!dy.chekar.okaiin.okaiin.daiin.okal-{plant}",
+        "C": "yteey.shody!kchedy.dy.chekar.okaiin.okaiin.daiin.okal-{plant}",
+        "F": "yteey.shody.tchedy!dy.chekar.okaiin.okaiin.daiin.okal-{plant}"
+      },
+      "P.7": {
+        "H": "dar.chos.aiin.or.aiin.cheekaiin.okain.ar.okeeey=",
+        "C": "dar.chos.aiin.or.aiin.cheekaiin.okain.ar.okeeey=",
+        "F": "dar.chos.aiin.or.aiin.cheekaiin.okain.ar.okeeey="
+      }
+    }
+  }
+}

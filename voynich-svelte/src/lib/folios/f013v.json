@@ -1,0 +1,61 @@
+{
+  "folio": "f13v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q02/f013v_tr.txt",
+    "date": "1998-12-11",
+    "time": "13:53:52",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "koair.chtoiin.otchy.kchod.otol.otchy.octhos-",
+        "C": "koais.chtoiin.otchy.kchod.otol.otchy.octhos-",
+        "F": "koair.chtoiin.otchy.kchod.otol.otchy.octhos-"
+      },
+      "P.2": {
+        "H": "oko.qokol.chodal.otchol.cphol.choty-{plant}",
+        "C": "oko.qokol.chodal.otchol.cphol.choty-{plant}",
+        "F": "oko.qokol.chodal.*tchol.cphol.choty-{plant}"
+      },
+      "P.3": {
+        "H": "qokchy.qokod.chy.otchy.cthody-",
+        "C": "qokchy.qokod.chy.otchy.cthody-",
+        "F": "qokchy.qokod.chy.otchy.cthody-"
+      },
+      "P.4": {
+        "H": "o!l!s.chey.okos.oaiin.okshy.qock!y-{plant}",
+        "C": "o.l.s.chey.okos.oai!n.okshy.qo*!!!-{plant}",
+        "F": "o!l!s!chey.okos.oaiin.okshy.qockhy-{plant}"
+      },
+      "P.5": {
+        "H": "qoky.daiin=",
+        "C": "qoky.daiin=",
+        "F": "qoky.daiin="
+      },
+      "P.6": {
+        "H": "fol!daiin.olcphy.shol-{plant}dy.oty.shor.qotyd-{plant}dairo.d-",
+        "C": "fol!daiin.olcphy.chol-{plant}dy.oty.shor.qotyd-{plant}dairo!d-",
+        "F": "fol.daiin.olcphy.shol-{plant}dy.oty.shor.qotyd-{plant}dairo!d-"
+      },
+      "P.7": {
+        "H": "dain.okal.chy.qokchory-{plant}dchy.koky.daiin-{plant}shoin-",
+        "C": "dain.okal.chy.qokchory-{plant}dchy.koky!daiin-{plant}sho!n-",
+        "F": "dain.okal.chy.qokchory-{plant}dchy.koky.daiin-{plant}sho!n-"
+      },
+      "P.8": {
+        "H": "otchy.daiin.y.dain.ykol-{plant}okchy.okald.d-{plant}ytaiin-",
+        "C": "otchy.daiin.y.dain.ykol-{plant}okchy.okald.d-{plant}ytaiin-",
+        "F": "otchy.daiin.y!dain.ykol-{plant}okchy.okald.d-{plant}ytaiin-"
+      },
+      "P.9": {
+        "H": "tchtod.otal.cthor.ytal-{plant}y.cho.tal-{plant}sho.qocthy-",
+        "C": "tchtod.otal.cthor.ytal-{plant}y.cho.tal-{plant}sho.qocthy-",
+        "F": "tchtod.otal.cthor.ytal-{plant}y!cho!tal-{plant}sho.qocthy-"
+      },
+      "P.10": {
+        "H": "y.ol.chy.kchey.kchor.dal={plant}",
+        "C": "y.ol.chy.kchey.kchor.dal={plant}",
+        "F": "y!ol.chy.kchey.kchor.dal={plant}"
+      }
+    }
+  }
+}

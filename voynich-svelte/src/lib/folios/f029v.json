@@ -1,0 +1,83 @@
+{
+  "folio": "f29v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q04/f029v_tr.txt",
+    "date": "1998-12-11",
+    "time": "12:34:23",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "kooiin.shor.chetchy.ol!als.shy!tchy.cth.y.shy-{plant}cho.shy.daiin-",
+        "C": "kooiin.shor.chetchy.ol!als.shy!tchy.cth!y.shy-{plant}cho.shy.daiin-",
+        "F": "kooiin.shor.chetchy.ol!als.shy.tchy.cth!y!shy-{plant}cho.shy.daiin-",
+        "U": "koaiin.shor.chetchy.ol,als.shy!tchy.cth!y,shy-{plant}cho.shy.daiin-"
+      },
+      "P.2": {
+        "H": "qotcheaiin.s!chol.chol.cthy.chey.cthol!d-{plant}ytchor.dary-",
+        "C": "qotcheaiin.s.chol.chol.cthy.chey.cthol.d-{plant}ytchor.dary-",
+        "F": "qotcheaiin.s!chol.chol.cthy.chey.cthol!d-{plant}ytchor.dary-",
+        "U": "qotcheaiin.s,chol.chol.cthy.chey.cthol!d-{plant}ytshor.dary-"
+      },
+      "P.3": {
+        "H": "chol.chol.kor.shey.odaiin.qotchy.taiin-{plant}s.she.otey.sy-",
+        "C": "chol.chol.kor.shey.odaiin.qotchy.taiin-{plant}s!she!otey.sy-",
+        "F": "chol.chol.kor.shey.odaiin.qotchy.taiin-{plant}s.she.otey.sy-",
+        "U": "chol.chol,kor.shey.odaiin.qotchy.taiin-{plant}s,she,otey,sy-"
+      },
+      "P.4": {
+        "H": "ysho.otshy.okaiin.cthy.oltchy.ct{&T}os!-{plant}shot.sho.okaiin=",
+        "C": "ysho.otshy.okaiin.cthy.oltchy.cth!!!osh-{plant}shot!sho.okaiin=",
+        "F": "ysho.otshy.okaiin.cthy.oltchy.cth!!!!s!-{plant}shot.sho.okaiin=",
+        "U": "ysho.otshy.okaiin.cthy.oltchy.ct!!!!os!-{plant}shot.sho.okaiin="
+      },
+      "P.5": {
+        "H": "tochon.chain.shan.shoty-{plant}chshy-{plant}shy-{plant}",
+        "C": "tochon.chain.shan.shoty-{plant}chshy-{plant}shy-{plant}",
+        "F": "tochon.chain.shan.shoty-{plant}chshy-{plant}shy-{plant}",
+        "U": "tochan.chain.shan.shoty-{plant}chshy-{plant}shy-{plant}"
+      },
+      "P.6": {
+        "H": "dchor.chol.chaiin.shaiin.cthod-{plant}dar-{plant}chs-{plant}shody-",
+        "C": "dchor.chol.chaiin.shaiin.cthod-{plant}dar-{plant}chs-{plant}shody-",
+        "F": "dchor.chol.chaiin.shaiin.cthod-{plant}dar-{plant}chs-{plant}shody-",
+        "U": "dchor.chol.chaiin.shaiin.cthod-{plant}dar-{plant}chs-{plant}shody-"
+      },
+      "P.7": {
+        "H": "qotcho.kchor.daiin.ykaiin.dy-{plant}shdy-{plant}cho.cthy.sheky-",
+        "C": "qodcho.kchor.daiin.ykaiin.d!-{plant}shdy-{plant}cho!cthy.sheky-",
+        "F": "qotcho.kchor.daiin.ykaiin.dy-{plant}shdy-{plant}cho!cthy.sheky-",
+        "U": "qotcho.kchor.daiin.ykaiin.dy-{plant}shdy-{plant}cho,cthy.sheky-"
+      },
+      "P.8": {
+        "H": "otol.sho.tchos.cholody.dain-{plant}chcth-{plant}chy.cthody.dol-",
+        "C": "otol.sho!tchos.cholody.dain-{plant}chcth-{plant}chy.cthody.dol-",
+        "F": "otol.sho.tchor.cholody.dain-{plant}chcth-{plant}chy.cthody.dol-",
+        "U": "otol.sho,tchor.cholody.dain-{plant}chcth-{plant}chy.cthody.dol-"
+      },
+      "P.9": {
+        "H": "sho.chokor.chor.chy.ydaiin.cho-{plant}ykch!n-{plant}oaiin=",
+        "C": "sho.chokor.chor.chy.ydaiin.cho-{plant}ykeee!-{plant}oaiin=",
+        "F": "sho.chokor.chor.chy.ydaiin.cho-{plant}ykaiin-{plant}oaiin=",
+        "U": "sho.chokor.chor.chy.ydaiin.cho-{plant}ykch!b-{plant}oaiin="
+      },
+      "P.10": {
+        "H": "qokoiin.okaiin.cho-{plant}cth-{plant}chyd-{plant}chykar-{plant}",
+        "C": "qokoiin.okaiin.cho-{plant}cth-{plant}chyd-{plant}chykar-{plant}",
+        "F": "qokoiin.okaiin.cho-{plant}cth-{plant}chyd-{plant}chykar-{plant}",
+        "U": "qokoiin.okaiin.cho-{plant}cth-{plant}chyd-{plant}chykar-{plant}"
+      },
+      "P.11": {
+        "H": "daiin.chteor.octhy-{plant}dar-{plant}chyt-{plant}otody-{plant}",
+        "C": "daiin.chteos.octhy-{plant}dar-{plant}chyt-{plant}otody-{plant}",
+        "F": "daiin.chteor.octhy-{plant}dar-{plant}chyt-{plant}otody-{plant}",
+        "U": "daiin.chteor.octhy-{plant}dar-{plant}chyt-{plant}otody-{plant}"
+      },
+      "P.12": {
+        "H": "qekeo!chor.otchey.s.y={plant}",
+        "C": "qokeo.chor.otchey.s!y={plant}",
+        "F": "qekeo!chor.otchey.s!y={plant}",
+        "U": "qekeo!chor.otchey.s!y={plant}"
+      }
+    }
+  }
+}

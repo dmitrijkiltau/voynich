@@ -1,0 +1,168 @@
+{
+  "folio": "f73v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q12/f073v_tr.txt",
+    "date": "1998-12-11",
+    "time": "13:59:50",
+    "editor": "stolfi",
+    "lines": {
+      "S0.1": {
+        "H": "okol=",
+        "V": "okal={Grove's #1, carpet?}"
+      },
+      "S0.2": {
+        "H": "oteody=",
+        "V": "oteody={Grove's #2}"
+      },
+      "S0.3": {
+        "H": "oteody=",
+        "V": "oteody={Grove's #3}"
+      },
+      "S0.4": {
+        "H": "cheody=",
+        "V": "ch!ody={Grove's #4}",
+        "U": "cheody={Grove's #4}"
+      },
+      "R1.1": {
+        "H": "otoar.ykeody.okodeey.qopchey.opaiin.qoteedy.dpy.otedy.csedy.qokeody.cheor!al.okedal.oteody.shedy.otesal!od.air.chy.ykchs.aly.y!keol.y!dys.opchey.dy.toly.chfaikch!.ytedar.echy.qokeey.oty.yteedy.choldy.qokalaiin.ykaipy.orary-{stroke}",
+        "U": "otoar.ykeody.okodchy.qopchey.opaiin.qoteedy.opy.otedy,shedy.qokeody.cheor,al.okedal.oteody.shedy.otesal,*d,air,chy.yta!r!aly.y,keol!y,dy*.opchey,dy.toly.chfaekchy.ytedar.chey.qokeey.oty.yteedy.choldy.qokalaiin.ykaipy.orary-{stroke}"
+      },
+      "S1.1": {
+        "H": "okeody=",
+        "V": "okeody={Grove's #15}",
+        "U": "okeody="
+      },
+      "S1.2": {
+        "H": "sheol=",
+        "V": "sheol={Grove's #16}",
+        "U": "sheol="
+      },
+      "S1.3": {
+        "H": "odees=",
+        "V": "odees={Grove's #1}",
+        "U": "odees="
+      },
+      "S1.4": {
+        "H": "ecsy=",
+        "V": "airy={Grove's #2}",
+        "U": "a!ry={'ai' overlapped?}"
+      },
+      "S1.5": {
+        "H": "ykeor=",
+        "V": "ykeor={Grove's #3}",
+        "U": "ykeor="
+      },
+      "S1.6": {
+        "H": "opals=",
+        "V": "ofals={Grove's #4, male?}",
+        "U": "o*als="
+      },
+      "S1.7": {
+        "H": "ykeody=",
+        "V": "ykeody={Grove's #5}",
+        "U": "ykeody="
+      },
+      "S1.8": {
+        "H": "okeody=",
+        "V": "yteody={Grove's #6}",
+        "U": "oteody="
+      },
+      "S1.9": {
+        "H": "ypaiin=",
+        "V": "ypaiin={Grove's #7}"
+      },
+      "S1.10": {
+        "H": "yfaiin.y=",
+        "V": "yfaiin.y={Grove's #8}"
+      },
+      "S1.11": {
+        "H": "ofcheesy=",
+        "V": "ofcheesy={Grove's #9}",
+        "U": "ofcheesy="
+      },
+      "S1.12": {
+        "H": "oraiiny=",
+        "V": "oraiiny={Grove's #10}",
+        "U": "oraiiny="
+      },
+      "S1.13": {
+        "H": "ykeeody=",
+        "V": "ykchody={Grove's #11}",
+        "U": "ykeeody="
+      },
+      "S1.14": {
+        "H": "okeos=",
+        "V": "okeos={Grove's #12}",
+        "U": "okeos="
+      },
+      "S1.15": {
+        "H": "ykeear=",
+        "V": "ykeear={Grove's #13}",
+        "U": "ykeeo*="
+      },
+      "S1.16": {
+        "H": "qokeoly=",
+        "V": "qokeoly={Grove's #14}",
+        "U": "qokeoly="
+      },
+      "R2.1": {
+        "H": "oteotor.alshy.oteolain.chokeedam.otody.qoty.shedy.chdy.tchol.oteody.cheytey.choty.okey.dy.okecholy.otey.chodaiin.chey.okchdy.saly.ar.daly-{gap}",
+        "U": "oteotor.alshy.oteolain.choka!dam.otody.qoty,shedy.chdy.tchol!oteody.cheytey.choty.okey,dy.okecholy.otey.chodaiin.chey.okeedy.raly.ar.daly-{gap}"
+      },
+      "S2.1": {
+        "H": "ched=",
+        "V": "ched={Grove's #1}",
+        "U": "ched="
+      },
+      "S2.2": {
+        "H": "oky=",
+        "V": "oky={Grove's #2}",
+        "U": "oky="
+      },
+      "S2.3": {
+        "H": "oi!air=",
+        "V": "ai.ain={Grove's #3}",
+        "U": "ar.ain="
+      },
+      "S2.4": {
+        "H": "okal=",
+        "V": "okal={Grove's #4}",
+        "U": "okal="
+      },
+      "S2.5": {
+        "H": "ykey=",
+        "V": "ykey={Grove's #5}",
+        "U": "ykey="
+      },
+      "S2.6": {
+        "H": "ykeeo=",
+        "V": "ykeey={Grove's #6}",
+        "U": "ykeey="
+      },
+      "S2.7": {
+        "H": "okeod!=",
+        "V": "okeed*={Grove's #7}",
+        "U": "okeod!="
+      },
+      "S2.8": {
+        "H": "ykey=",
+        "V": "ykey={Grove's #8}",
+        "U": "ykey="
+      },
+      "S2.9": {
+        "H": "ypal=",
+        "V": "ypal={Grove's #9, star held down}",
+        "U": "ypal="
+      },
+      "S2.10": {
+        "H": "otedy=",
+        "V": "otedy={Grove's #10, writing in star --oiil?}",
+        "U": "otedy="
+      },
+      "R3.1": {
+        "H": "otedchor.alar.olkcho.oto.lam.okees.chory.ytaly.ylaly.otasam-{gap}",
+        "U": "otarchor.alar.olkchy.oto!lam.okchs.chory.ytaly.alaly.otaram-{gap}"
+      }
+    }
+  }
+}

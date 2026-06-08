@@ -1,0 +1,66 @@
+{
+  "folio": "f30v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q04/f030v_tr.txt",
+    "date": "1998-12-07",
+    "time": "05:09:21",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "cthscthain.shosaiin.chocthey.sho.chepchy.shor.sheaiin-",
+        "C": "cthsc!hain.shosaiin.chocthey.sho.chepchy.shor.sheaiin-",
+        "F": "cthscthain.shosaiin.chocthey.sho.chepchy.shor.sheaiin-"
+      },
+      "P.2": {
+        "H": "qotchor.chy.she.kchor.chory.keor.ol.chy.daiin.ctholdy-",
+        "C": "qotchor.chy.she!kchor.chory.keor!ol.chy.daiin.ctholdy-",
+        "F": "qotchor.chy.she.kchor.chory.keor.ol.chy.daiin.ctholdy-"
+      },
+      "P.3": {
+        "H": "chotchol.daiin.cthol.doiin.daiin.chokeor.dal.chtoithy-",
+        "C": "chotchol.daiin.cthol.doiin.daiin.chokeor.dar.chtocthy-",
+        "F": "chotchol.daiin.cthol.doiin.daiin.chokeor.dal.chtocthy-"
+      },
+      "P.4": {
+        "H": "otchey.daiin.chor.checkhy.qotchod.daiin-{plant}",
+        "C": "otchey.daiin.chor.checkhy.qotchod.daiin-{plant}",
+        "F": "otchey.daiin.chor.checkhy.qotchod.daiin-{plant}"
+      },
+      "P.5": {
+        "H": "dain.shoty.chkol.ytor.cheol!dy-{plant}",
+        "C": "dain.choty.chkol.ytor.cheol.dy-{plant}",
+        "F": "dain.shoty.chkol.ytor.cheof!dy-{plant}"
+      },
+      "P.6": {
+        "H": "qokeeor.chokol.chokeody.dair!y-{plant}",
+        "C": "qokeeor.chokol.chokeody.dair.y-{plant}",
+        "F": "qokeeor.chokol.chokeody.dair!y-{plant}"
+      },
+      "P.7": {
+        "H": "chokchy.sho.kcho.tcho.ctho.sos-{plant}",
+        "C": "chakchy.sho!kcho!tcho.ctho.sos-{plant}",
+        "F": "chokchy.sho.kcho.tcho.ctho.sos-{plant}"
+      },
+      "P.8": {
+        "H": "oyshy.cheotol.cphoaiin.cphey-{plant}",
+        "C": "oyshy.cheotol.cphoaiin.cphey-{plant}",
+        "F": "oyshy.cheotol.cphoaiin.cphey-{plant}"
+      },
+      "P.9": {
+        "H": "qotchor.chor.sheey.cheol.sos-",
+        "C": "qotchor.chor.sheey.cheor.sos-",
+        "F": "qotchor.chor.sheey.cheol.sos-"
+      },
+      "P.10": {
+        "H": "sho.sheoldy.otcheor.daiin-{plant}",
+        "C": "sho.sheoldy.otcheor.daiin-{plant}",
+        "F": "sho.sheoldy.otcheor.daiin-{plant}"
+      },
+      "P.11": {
+        "H": "s!ol.chokcheey.daiin.kchydy={plant}",
+        "C": "shol.chokcheey.daiin.kchydy={plant}",
+        "F": "s!ol.chokcheey.daiin.kchody={plant}"
+      }
+    }
+  }
+}

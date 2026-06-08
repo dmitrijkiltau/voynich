@@ -1,0 +1,46 @@
+{
+  "folio": "f25r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q04/f025r_tr.txt",
+    "date": "1998-12-07",
+    "time": "04:13:22",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "fcholdy.soshy.daiin.ck!y.shody.daiin.ocholdy.cpholdy.sy-",
+        "C": "fcholdy.soshy.daiin.*i!n.shody.daiin.ocholdy.cpholdy.sy-",
+        "F": "fcholdy.soshy.daiin.ckhy.shody.daiin.ocholdy.cpholdy.sy-"
+      },
+      "P.2": {
+        "H": "otor.chor.chrky.chotchy.shair.qod.sho.chy.kchy.chkain-",
+        "C": "otor.chor.chsky.chotchy.shain.qod.sha!chy.kchy.chkain-",
+        "F": "otor.chor.chrky.chotchy.shair.qod.sho.chy.kchy.chkain-"
+      },
+      "P.3": {
+        "H": "qotchy.qotshy.cheesees.sheear.s.chain.daiin.chain.dein-",
+        "C": "qotchy.qotshy.cheesees.sheear.s.chain.daiin.chain.da!n-",
+        "F": "qotchy.qotshy.cheesees.sheear.s.chain.daiin.chain.dain-"
+      },
+      "P.4": {
+        "H": "dchckhy.shocthy.ytchey.cthor.s.chan.chaiin.qotchain-",
+        "C": "dchckhy.shocthy.ytchey.cthor.s.chan.chaiin.qotchain-",
+        "F": "dchckhy.shocthy.ytchey.cthor.s.chan.chaiin.qotchain-"
+      },
+      "P.5": {
+        "H": "qotcheaiin.dchain.cthain.daiin.daiin.cthain.qotaiin-",
+        "C": "qotcheaiin.dchain.cthain.daiin.daiin.cthain.qotaiin-",
+        "F": "qotcheaiin.dchain.cthain.daiin.daiin.cthain.qotaiin-"
+      },
+      "P.6": {
+        "H": "okal.chotaiin=",
+        "C": "okal.chotaiin=",
+        "F": "okal.chotaiin="
+      },
+      "T.7": {
+        "H": "dair.otaiir.otosy=",
+        "C": "dair.otaiir.otosy=",
+        "F": "dair.otaiir.otosy="
+      }
+    }
+  }
+}

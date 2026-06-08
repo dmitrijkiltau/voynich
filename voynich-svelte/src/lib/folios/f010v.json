@@ -1,0 +1,53 @@
+{
+  "folio": "f10v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q02/f010v_tr.txt",
+    "date": "1998-12-06",
+    "time": "19:45:47",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "paiin.daiin.sheo.pcheey.qoty.daiin.cthor.oty!dy.sain-",
+        "C": "paiin.daiin.sheo.pcheey.qoty.daiin.cthor.oty!dy.sain-",
+        "F": "paiin.daiin.sheo.pcheey.qoty.daiin.cthor.oty!dy.sain-",
+        "U": "paiin.daiin.sheo.pcheey.qoty.daiin.cthor.oty.dy.sain-"
+      },
+      "P.2": {
+        "H": "dain.daiin.ckhy.chcthor.choiin.qot.chodaiin.cthy.daiin-",
+        "C": "dain.daiin.ckhy.chcthor.choiin.qot.chodaiin.cthy.daiin-",
+        "F": "dain.daiin.ckhy.chcthor.choiin.qot.chodaiin.cthy.daiin-",
+        "U": "dain.daiin.ckhy.chcthor.choiin.qot!chodaiin.cthy.daiin-"
+      },
+      "P.3": {
+        "H": "dsho.ytey.kchol.ol!ty.chol.dy=",
+        "C": "dsho.ytey.kchol.ol.ty.chol.dy=",
+        "F": "dsho.ytey.kchol.ol!ty.chol.dy=",
+        "U": "dsho.ytey.kchol.ol!ty.chol.dy="
+      },
+      "P.4": {
+        "H": "qotchy!tor.shoiin.daiin.qotchey.shcthey.ytor.dain-",
+        "C": "qotchy!tor.shoiin.daiin.qotchey.shcthey.ytor.dain-",
+        "F": "qotchy.tor.shoiin.daiin.qotchey.shcthey.ytor.dain-",
+        "U": "qotchy!tor.shoiin.daiin.qotchey.shcthey.ytor.dain-"
+      },
+      "P.5": {
+        "H": "sho.ykeey.daiin.qotchy.qotor.chol.daiin.qokchy!ky-",
+        "C": "sho.ykeey.daiin.qotchy.qotor.chol.daiin.qokchy!ky-",
+        "F": "sho.ykeey.daiin.qotchy.qotor.chol.daiin.qokchy.ky-",
+        "U": "sho.ykeey.daiin.qotchy.qotor.chol.daiin.qokchy!ky-"
+      },
+      "P.6": {
+        "H": "shoiin.chor.shcthy.qoty.qotoiin.qokol.chor!aiin-",
+        "C": "shoiin.chor.shcthy.qoty.qotoiin.qotol.chor!aiin-",
+        "F": "shoiin.chor.shcthy.qoty.qotoiin.qokol.chor.aiin-",
+        "U": "shoiin.chor.shcthy.qoty.qotoiin.qokol.chor!aiin-"
+      },
+      "P.7": {
+        "H": "qokol.chy!ky.chol.cheky.daiin.dain.chckhan=",
+        "C": "qokol.chy!ky.chol.cheky.daiin.dain.chckhan=",
+        "F": "qokol.chy.ky.chol.cheky.daiin.dain.chckhan=",
+        "U": "qokol.chy!ky.chol.cheky.daiin.dain.chckhan="
+      }
+    }
+  }
+}

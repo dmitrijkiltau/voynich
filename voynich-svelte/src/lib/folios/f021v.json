@@ -1,0 +1,59 @@
+{
+  "folio": "f21v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q03/f021v_tr.txt",
+    "date": "1998-12-06",
+    "time": "21:15:35",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "toldshy.chofchy.qofshey.shckhol.odaiin.shey.ckholy-",
+        "C": "toldshy.chofchy.qofshey.shckhol.odaiin.shey.ckholy-",
+        "F": "toldshy.chofchy.qofshey.shckhal.odaiin.shey.ckholy-",
+        "U": "toldshy.chofchy.qofshey.shckhol.odaiin.shey.ckholy-"
+      },
+      "P.2": {
+        "H": "oeeesoy.qokchy.chody.qotchy.qokchy.choty.tchol.daiin-",
+        "C": "oeeesoy.qokchy.chody.motchy.qokchy.choty.tchol.daiin-",
+        "F": "oeeesoy.qokchy.chody.qotchy.qokchy.choty.tchol.daiin-",
+        "U": "oeeesoy.qokchy.chody.qotchy.qokchy.choty.tchol.daiin-"
+      },
+      "P.3": {
+        "H": "qotol.keeees.chotchy.tcho.choty.chor.qotol.daiin.dal-",
+        "C": "qotal.keeees.chotchy.tcho.choty.chor.qotol.daiin.dal-",
+        "F": "qotof.keeees.chotchy.tcho.choty.chor.qotol.daiin.dal-",
+        "U": "qotol.keeees.chotchy.tcho.choty.chor.qotol.daiin.dal-"
+      },
+      "P.4": {
+        "H": "sho.chodaiin.choty.chol.daiin.daiin.chty.chtol-",
+        "C": "sho.chodaiin.choty.chol.daiin.daiin.chty-chtol-",
+        "F": "sho.chodaiin.choty.chol.daiin.daiin.chty-chtol-",
+        "U": "sho.chodaiin.choty.chol.daiin.daiin.chty-chtol-"
+      },
+      "P.5": {
+        "H": "osho.deey.ctho.l.sho.cthy.daiin.dait.oky-{plant}",
+        "C": "ysho.deey.ctho.l.sho.cthy.daiin.dait.oky-{plant}",
+        "F": "oshy.deey.ctho!l.sho!cthy.daiin.dait!oky-{plant}",
+        "U": "osho.deey.ctho!l.sho.cthy.daiin.dait!oky-{plant}"
+      },
+      "P.6": {
+        "H": "sho.tsho.chotshol.chol.todaiin.daiin-{plant}",
+        "C": "sho.tsho.chotshol.chol.todaiin.daiin-{plant}",
+        "F": "sho.tsho.chotshol.chol.todaiin.daiin-{plant}",
+        "U": "sho.tsho.chotshol.chol.todaiin.daiin-{plant}"
+      },
+      "P.7": {
+        "H": "ykcho.lchol.chol!chaiin.otchy.s.sheaiin-{plant}",
+        "C": "ykcho.lchol.chol.chaiin.otchy.s.sheaiin-{plant}",
+        "F": "ykcho.lchol.chol.chaiin.otchy.s.sheaiin-{plant}",
+        "U": "ykcho.lchol.chol!chaiin.otchy.s.sheaiin-{plant}"
+      },
+      "P.8": {
+        "H": "cho.l.kchochaiin=",
+        "C": "cho.l.kchochaiin=",
+        "F": "cho!l.kchochaiin=",
+        "U": "cho.l.kchochaiin="
+      }
+    }
+  }
+}

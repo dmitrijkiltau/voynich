@@ -1,0 +1,98 @@
+{
+  "folio": "f71r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q11/f071r_tr.txt",
+    "date": "1998-12-28",
+    "time": "00:20:50",
+    "editor": "stolfi",
+    "lines": {
+      "R1.1": {
+        "H": "olkeeody.okody.okchedy.oky.eey.okeodar.okeoky.oteody.oto.otol.oteey.ar.ykooar.aiin.aekeeey.okeo!keo!keody.okeodar.chy.s.aiin.oto!keoar.or.ar.al.otol.al.shckhey.oteeeodar.oteody.otol.aiin.shoekey.sal.al.ald.cheeokseo.q!orky.choly=",
+        "U": "olkeeody.okody.okeeedy.oky,eey.okeodar.okeoky.oteody.oko.okol.okeey,ar.ykodar.aiin.oekeeey.okeo,keo,keody.okeodar.chy.s,aiin.oto,keoar.os.ar,al.otol.al.shckh!y.oteeeodar.oteody.otal,aiin.shoekey.rol,al,ald.ch*,oteeo.**o**y.choly="
+      },
+      "S1.1": {
+        "H": "oteos.arar=",
+        "K": "oteos!arar={was <f71r.06A;K>}",
+        "V": "oteos.arar={Grove's #2, dressed}"
+      },
+      "S1.2": {
+        "H": "okldam=",
+        "K": "okldam={was <f71r.07A;K>}",
+        "V": "okldam={Grove's #3, dressed}"
+      },
+      "S1.3": {
+        "H": "oteoaldy=",
+        "K": "oteoaldy={was <f71r.08A;K>}",
+        "V": "oteoaldy={Grove's #4, dressed}"
+      },
+      "S1.4": {
+        "H": "oteolar=",
+        "K": "oteolar={was <f71r.09A;K>}",
+        "V": "oteolar={Grove's #5, dressed}"
+      },
+      "S1.5": {
+        "H": "okeoaly=",
+        "K": "okeoaly={was <f71r.10A;K>}",
+        "V": "okeoaly={Grove's #6, dressed}"
+      },
+      "S1.6": {
+        "H": "otaleky=",
+        "K": "otaleky={was <f71r.11A;K>}",
+        "V": "otaleky={Grove's #7, dressed}"
+      },
+      "S1.7": {
+        "H": "otalsar=",
+        "K": "opalrar={was <f71r.12A;K>}",
+        "V": "opalsar={Grove's #8, dressed}"
+      },
+      "S1.8": {
+        "H": "chsary=",
+        "K": "cheary={was <f71r.13A;K>}",
+        "V": "cheary={Grove's #9, dressed}"
+      },
+      "S1.9": {
+        "H": "oteo!tey.sary=",
+        "K": "oteo.tey.sary={was <f71r.14A;K>}",
+        "V": "oteo!tey.sary={Grove's #10, dressed}"
+      },
+      "S1.10": {
+        "H": "otalaly=",
+        "K": "otalaly={was <f71r.15A;K>}",
+        "V": "otalaly={Grove's #1, dressed}"
+      },
+      "R2.1": {
+        "H": "oteody.o!teos.ockhey.oteesa!ey.lsheotey.okal!ody.shs.shey.oteey.otechar.che!kal.okody.eeedy.oteodal.!!okol.lkchol.daiin.okeeees.ykees.al.okchy.otey.oteoshaly-{gap}o=",
+        "U": "oteody.o*teor.ockhey.otchechey.lsheod!y.okal,ody.shs.shey.oteey.otechar.checkal.otody.eeedy.oteodal.chokol.lkchol.daiin.okchees.ykees,al,okeey.otey.oteoshaly-{gap}o="
+      },
+      "S2.1": {
+        "H": "otol.chdy=",
+        "K": "otol!chdy={was <f71r.01A;K>}",
+        "V": "otol!chdy={Grove's #2, dressed}"
+      },
+      "S2.2": {
+        "H": "otoloaram=",
+        "K": "otoloaram={was <f71r.02A;K>}",
+        "V": "otoloaram={Grove's #3, dressed}"
+      },
+      "S2.3": {
+        "H": "oteeol=",
+        "K": "ote*ol={was <f71r.03A;K>}",
+        "V": "oteeol={Grove's #4, dressed}"
+      },
+      "S2.4": {
+        "H": "otolchd=",
+        "K": "otolchd={was <f71r.04A;K>}",
+        "V": "otolchd={Grove's #5, dressed}"
+      },
+      "S2.5": {
+        "H": "otal.dar=",
+        "K": "otal!gar={was <f71r.05A;K>}",
+        "V": "otal!dar={Grove's #1, naked}"
+      },
+      "R3.1": {
+        "H": "oteeol.otal.chs.char.cheky.chetshy.okeeody.oteey.chekeen.okeol=",
+        "U": "oteeol.otal,chs.char.cheky.chetshy.okeeody.oteey.cheku!!.okeol="
+      }
+    }
+  }
+}
