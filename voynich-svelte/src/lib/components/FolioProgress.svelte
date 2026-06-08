@@ -1,7 +1,8 @@
 <script>
 	import { FOLIO_PAGES, FOLIO_DATA } from '$lib';
 	import { slide } from 'svelte/transition';
-	import { SvelteMap } from 'svelte/reactivity';
+	import { SvelteMap, SvelteSet } from 'svelte/reactivity';
+	import { majorityTokens } from '$lib/eva-utils.js';
 
 	let open = $state(false);
 
@@ -135,26 +136,13 @@
 		for (const [para, variants] of Object.entries(lines)) {
 			for (const s of Object.keys(variants)) { (siglenParas[s] ??= []).push(para); }
 		}
-		/** @param {string} text @returns {string[]} */
-		function tokenize(text) {
-			return text.replace(/\{[^}]+\}/g, '.').replace(/[!\-=]/g, '.').split('.').map(t => t.trim()).filter(Boolean);
-		}
 		/** @type {Record<string, Set<string>>} */
 		const divTokens = {};
 		for (const variants of Object.values(lines)) {
-			const entries = Object.entries(variants);
-			if (entries.length < 2) continue;
-			const tok = Object.fromEntries(entries.map(([s, text]) => [s, tokenize(text)]));
-			const maxLen = Math.max(...Object.values(tok).map(t => t.length));
-			for (let i = 0; i < maxLen; i++) {
-				/** @type {Record<string, string[]>} */
-				const votes = {};
-				for (const [s, tokens] of Object.entries(tok)) { const t = tokens[i] ?? ''; (votes[t] ??= []).push(s); }
-				const ranked = Object.entries(votes).sort((a, b) => b[1].length - a[1].length);
-				if (ranked.length < 2) continue;
-				const majorityToken = ranked[0][0];
-				for (const [token, sigs] of ranked.slice(1)) {
-					if (token && token !== majorityToken) { for (const s of sigs) (divTokens[s] ??= new Set()).add(token); }
+			if (Object.keys(variants).length < 2) continue;
+			for (const { minority } of majorityTokens(variants)) {
+				for (const [s, divToken] of Object.entries(minority)) {
+					(divTokens[s] ??= new SvelteSet()).add(divToken);
 				}
 			}
 		}

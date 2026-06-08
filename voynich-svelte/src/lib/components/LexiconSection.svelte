@@ -1,10 +1,6 @@
 <script>
-	import {
-		STEM_WORDS,
-		LEXICON_DERIVED,
-		getLexiconConfidence,
-		getLexiconRules,
-	} from '$lib/lexicon-data.js';
+	import { STEM_WORDS, LEXICON_DERIVED } from '$lib';
+	import { getLexiconConfidence, getLexiconRules } from '$lib/lexicon-data.js';
 	import { GRAMMAR_PREFIXES, GRAMMAR_SUFFIXES } from '$lib/grammar-data.js';
 
 	let { STATS, onInsert, filter = $bindable('') } = $props();

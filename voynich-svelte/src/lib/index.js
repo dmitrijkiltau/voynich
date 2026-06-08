@@ -1,11 +1,44 @@
 import { MAPPING, PREFIXES } from './mapping-data.js';
-import { LEXICON } from './lexicon-data.js';
+import { LEXICON as _RAW_LEXICON, STEM_WORDS as _RAW_STEM_WORDS } from './lexicon-data.js';
 import { FOLIO_PAGES, FOLIO_DATA } from './folio-data.js';
 import { RULES, RULES_CHANGELOG } from './grammar-rules-data.js';
 import { COMPARISON, FOLIOS, CONCLUSION } from './language-a-data.js';
 import { TESTED, STATS as BACKTEST_STATS } from './backtest-data.js';
+import { getLexiconMeta } from './lexicon-meta.js';
 
-export { MAPPING, PREFIXES, LEXICON, FOLIO_PAGES, FOLIO_DATA, RULES, RULES_CHANGELOG, COMPARISON, FOLIOS, CONCLUSION };
+// Merge folio-derived metadata into each lexicon entry.
+// Manual values in lexicon-data.js act as fallbacks/overrides:
+// - isAnchor      → always from Typ-I backtest (manual field removed)
+// - r43           → always computed (≥2 folio JSONs contain the token)
+// - anchorFolio   → manual wins if set; computed first-occurrence fills empty
+// - evidence      → manual wins if set; computed string fills empty
+// - confidenceStars → max(manual, confFloor) — computed can only raise, never lower
+// - candidate     → cleared automatically once r43 is met
+// - rulesApplied  → R43 appended when r43 is true and not already listed
+export const LEXICON = _RAW_LEXICON.map((/** @type {any} */ entry) => {
+	const meta = getLexiconMeta(entry.eva);
+	const manualRules = /** @type {string[]} */ (entry.rulesApplied ?? []);
+	return {
+		...entry,
+		isAnchor: meta.isAnchor,
+		r43: meta.r43,
+		anchorFolio: entry.anchorFolio || meta.computedAnchorFolio,
+		evidence: entry.evidence || entry.anchorFolio || meta.computedEvidence,
+		confidenceStars: Math.max(entry.confidenceStars ?? 0, meta.confFloor),
+		candidate: entry.candidate && !meta.r43,
+		rulesApplied: meta.r43 && !manualRules.includes('R43')
+			? [...manualRules, 'R43']
+			: manualRules,
+	};
+});
+
+const _stemSet = new Set(_RAW_STEM_WORDS.map((/** @type {any} */ e) => e.eva));
+
+// Enriched subsets of LEXICON (isAnchor, r43, evidence already merged)
+export const STEM_WORDS = LEXICON.filter((/** @type {any} */ e) => _stemSet.has(e.eva));
+export const LEXICON_DERIVED = LEXICON.filter((/** @type {any} */ e) => !_stemSet.has(e.eva));
+
+export { MAPPING, PREFIXES, FOLIO_PAGES, FOLIO_DATA, RULES, RULES_CHANGELOG, COMPARISON, FOLIOS, CONCLUSION };
 
 /** Returns true when a stars string represents 5-star confidence (★★★★★). */
 export const isConf5 = (/** @type {string} */ stars) => stars.slice(0, 5) === '★★★★★';
