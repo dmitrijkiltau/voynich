@@ -74,9 +74,3 @@ When the user asks to update the version, follow these steps:
 
 1. Update the `version` field in `voynich-svelte/src/lib/index.js` to the new version number, as well as the `version` field in `voynich-svelte/package.json`.
 2. Look through the recent changes (uncommitted or committed) and summarize the key changes in the `changelog` array in `voynich-svelte/src/lib/index.js`, keeping only the new changes since the last version. Each change should be on a new line.
-
-### Updating the deadline schedule
-
-When the user asks to update the deadline schedule, follow these steps:
-
-1. Update the `voynich-fristtabelle.md` file with the new deadlines and any changes to the schedule.

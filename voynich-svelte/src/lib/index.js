@@ -8,29 +8,31 @@ import { getLexiconMeta, CONSECUTIVE_TOKENS } from './lexicon-meta.js';
 
 // Merge folio-derived metadata into each lexicon entry.
 // Manual values in lexicon-data.js act as fallbacks/overrides:
-// - isAnchor      → always from Typ-I backtest (manual field removed)
-// - r43           → always computed (≥2 folio JSONs contain the token)
-// - anchorFolio   → manual wins if set; computed first-occurrence fills empty
-// - evidence      → manual wins if set; computed string fills empty
+// - isAnchor        → always from Typ-I backtest
+// - r43             → always computed (≥2 folio JSONs contain the token)
+// - anchorFolio     → always computed first-occurrence
+// - evidence        → always computed string
 // - confidenceStars → max(manual, confFloor) — computed can only raise, never lower
-// - candidate     → cleared automatically once r43 is met
-// - rulesApplied  → auto-appended (never removed): R41 when morph present, R19 when consecutive
-//                   in corpus, R43 when r43 is met; sorted numerically; manual rules preserved
+// - candidate       → always computed, based on r43 status (candidate = !r43)
+// - rulesApplied    → auto-appended (never removed): R2 when eva contains 'o', R19 when consecutive
+//                   in corpus, R41 when morph contains a prefix morpheme (/\b[a-z]+-\s*\+/),
+//                   R43 when r43 is met; sorted numerically; manual rules preserved
 const _ruleNum = (/** @type {string} */ r) => parseInt(r.slice(1));
 export const LEXICON = _RAW_LEXICON.map((/** @type {any} */ entry) => {
 	const meta = getLexiconMeta(entry.eva);
 	const rules = new Set(/** @type {string[]} */ (entry.rulesApplied ?? []));
-	if (entry.morph) rules.add('R41');
+	if (entry.eva.includes('o')) rules.add('R2');
+	if (entry.morph && /\b[a-z]+-\s*\+/.test(entry.morph)) rules.add('R41');
 	if (CONSECUTIVE_TOKENS.has(entry.eva)) rules.add('R19');
 	if (meta.r43) rules.add('R43');
 	return {
 		...entry,
 		isAnchor: meta.isAnchor,
 		r43: meta.r43,
-		anchorFolio: entry.anchorFolio || meta.computedAnchorFolio,
-		evidence: entry.evidence || entry.anchorFolio || meta.computedEvidence,
+		anchorFolio: meta.computedAnchorFolio,
+		evidence: meta.computedEvidence,
 		confidenceStars: Math.max(entry.confidenceStars ?? 0, meta.confFloor),
-		candidate: entry.candidate && !meta.r43,
+		candidate: !meta.r43,
 		rulesApplied: [...rules].sort((a, b) => _ruleNum(a) - _ruleNum(b)),
 	};
 });
