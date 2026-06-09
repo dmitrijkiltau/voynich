@@ -11,7 +11,22 @@
 		{
 			id: 'stems',
 			title: 'A. Stammwörter',
-			rows: STEM_WORDS,
+			rows: STEM_WORDS.filter((/** @type {any} */ e) => !e.candidate),
+			columns: [
+				{ key: 'eva', label: 'EVA' },
+				{ key: 'heb', label: 'Hebräisch' },
+				{ key: 'de', label: 'Bedeutung' },
+				{ key: 'layer', label: 'Schicht' },
+				{ key: 'isAnchor', label: 'Anker' },
+				{ key: 'anchorFolio', label: 'Folio' },
+				{ key: 'rules', label: 'Regeln' },
+				{ key: 'confidenceStars', label: 'Konf.' },
+			],
+		},
+		{
+			id: 'stems-candidates',
+			title: 'B. Stammwörter (R43 Kandidaten)',
+			rows: STEM_WORDS.filter((/** @type {any} */ e) => e.candidate),
 			columns: [
 				{ key: 'eva', label: 'EVA' },
 				{ key: 'heb', label: 'Hebräisch' },
@@ -25,8 +40,22 @@
 		},
 		{
 			id: 'derived',
-			title: 'B. Abgeleitete Lexikon-Einträge',
-			rows: LEXICON_DERIVED,
+			title: 'C. Abgeleitete Lexikon-Einträge',
+			rows: LEXICON_DERIVED.filter((/** @type {any} */ e) => !e.candidate),
+			columns: [
+				{ key: 'eva', label: 'EVA' },
+				{ key: 'morph', label: 'Morph.' },
+				{ key: 'heb', label: 'Hebräisch' },
+				{ key: 'de', label: 'Bedeutung' },
+				{ key: 'evidence', label: 'Evidenz' },
+				{ key: 'rules', label: 'Regeln' },
+				{ key: 'confidenceStars', label: 'Konf.' },
+			],
+		},
+		{
+			id: 'derived-candidates',
+			title: 'D. Abgeleitete Lexikon-Einträge (R43 Kandidaten)',
+			rows: LEXICON_DERIVED.filter((/** @type {any} */ e) => e.candidate),
 			columns: [
 				{ key: 'eva', label: 'EVA' },
 				{ key: 'morph', label: 'Morph.' },
@@ -127,7 +156,7 @@
 			});
 		}
 
-		if (table.id === 'derived' && filter) {
+		if ((table.id === 'derived'|| table.id === 'derived-candidates') && filter) {
 			rows = rows.filter((entry) => matchesMorphFilter(entry, filter));
 		}
 
@@ -166,7 +195,7 @@
 	<div class="lexicon">
 		{#each TABLES as table ('table-' + table.id)}
 			{@const rows = rowsFor(table)}
-			<div id={table.id} class="lexicon-tables">
+			<div id={table.id} class="lexicon-table">
 				<h3>
 					{table.title}
 					{#if rows.length !== table.rows.length}
@@ -207,7 +236,7 @@
 				{/if}
 
 				<div class="table-wrap">
-					<table class={'dt ' + (table.id === 'derived' ? 'derived-' : 'lexicon-') + 'table'}>
+					<table class={'dt ' + (table.id + '-' + 'table')}>
 						<thead>
 							<tr>
 								{#each table.columns as col ('col-' + col.key)}
@@ -218,7 +247,7 @@
 										onclick={() => toggleSort(table.id, col.key)}
 										onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleSort(table.id, col.key)}
 										tabindex="0"
-										class={(table.id === 'derived' ? 'derived-' : 'lexicon-') + col.key + (col.key === 'evidence' ? ' notes-cell' : '')}
+										class={(table.id + '-' + col.key) + (col.key === 'evidence' ? ' notes-cell' : '')}
 									>
 										{col.label}
 										<span class="sort-icon" aria-hidden="true">
@@ -242,7 +271,7 @@
 									tabindex="0"
 								>
 									{#each table.columns as col ('entry-col-' + col.key)}
-										<td class={(table.id === 'derived' ? 'derived-' : 'lexicon-') + col.key + (col.key === 'evidence' ? ' notes-cell' : col.key === 'anchorFolio' ? ' part-cell' : col.key === 'rules' ? ' rules-cell' : '')}>
+										<td class={(table.id + '-' + col.key) + (col.key === 'evidence' ? ' notes-cell' : col.key === 'anchorFolio' ? ' part-cell' : col.key === 'rules' ? ' rules-cell' : '')}>
 											{#if col.key === 'confidenceStars'}
 												<span class={entry.confidenceStars === 5 ? 'conf5' : 'conf'}>{cellValue(entry, col.key)}</span>{#if entry.candidate}<span class="cand-badge">Kand.</span>{/if}
 											{:else if col.key === 'rules'}
@@ -288,7 +317,7 @@
   #lexicon {
 		container-type: inline-size;
 
-		& .lexicon-tables {
+		& .lexicon-table {
 			& thead {
 				position: sticky;
 				top: 0;
@@ -296,42 +325,8 @@
 			}
 
 			@container (max-width: 768px) {
-				& thead tr {
-					margin-bottom: .8rem;
-				}
-
-				& .lexicon-table tr {
-					grid-template-columns: 2fr 1fr 4rem 3rem;
-					grid-template-areas: "eva eva confidenceStars confidenceStars"
-										"de de heb heb"
-										"layer layer rules rules"
-										"anchorFolio anchorFolio anchorFolio isAnchor";
-
-					& .lexicon-eva { grid-area: eva; }
-					& .lexicon-heb { grid-area: heb; }
-					& .lexicon-de { grid-area: de; }
-					& .lexicon-layer { grid-area: layer; }
-					& .lexicon-isAnchor { grid-area: isAnchor; }
-					& .lexicon-anchorFolio { grid-area: anchorFolio; }
-					& .lexicon-rules { grid-area: rules; }
-					& .lexicon-confidenceStars { grid-area: confidenceStars; }
-
-					& th, & td {
-						padding: 0;
-					}
-
-					& .lexicon-heb, & .lexicon-isAnchor, & .lexicon-rules, & .lexicon-confidenceStars  {
-						justify-self: end;
-						text-align: end;
-					}
-				}
-
 				& tr {
 					display: grid;
-					grid-template-columns: auto auto auto;
-					grid-template-areas: "eva heb heb"
-										"de layer rules"
-										"anchorFolio isAnchor confidenceStars";
 					border: 1px solid var(--border);
 					padding: 1rem;
 					break-inside: avoid;
@@ -340,17 +335,61 @@
 						margin-bottom: .8rem;
 					}
 
-					& .lexicon-eva { grid-area: eva; }
-					& .lexicon-heb { grid-area: heb; }
-					& .lexicon-de { grid-area: de; }
-					& .lexicon-layer { grid-area: layer; }
-					& .lexicon-isAnchor { grid-area: isAnchor; }
-					& .lexicon-anchorFolio { grid-area: anchorFolio; }
-					& .lexicon-rules { grid-area: rules; }
-					& .lexicon-confidenceStars { grid-area: confidenceStars; }
-
 					& td {
 						border-bottom: 0;
+					}
+				}
+
+				& thead tr {
+					margin-bottom: .8rem;
+				}
+
+				& th, & td {
+					padding: 0;
+				}
+
+				& .stems-table tr, & .stems-candidates-table tr {
+					grid-template-columns: 2fr 1fr 4rem 3rem;
+					grid-template-areas: "eva eva confidenceStars confidenceStars"
+										"de de heb heb"
+										"layer layer rules rules"
+										"anchorFolio anchorFolio anchorFolio isAnchor";
+
+					& .stems-eva, & .stems-candidates-eva { grid-area: eva; }
+					& .stems-heb, & .stems-candidates-heb { grid-area: heb; }
+					& .stems-de, & .stems-candidates-de { grid-area: de; }
+					& .stems-layer, & .stems-candidates-layer { grid-area: layer; }
+					& .stems-isAnchor, & .stems-candidates-isAnchor { grid-area: isAnchor; }
+					& .stems-anchorFolio, & .stems-candidates-anchorFolio { grid-area: anchorFolio; }
+					& .stems-rules, & .stems-candidates-rules { grid-area: rules; }
+					& .stems-confidenceStars, & .stems-candidates-confidenceStars { grid-area: confidenceStars; }
+
+					& :is(.stems-heb, .stems-isAnchor, .stems-rules, .stems-confidenceStars),
+					& :is(.stems-candidates-heb, .stems-candidates-isAnchor, .stems-candidates-rules, .stems-candidates-confidenceStars) {
+						justify-self: end;
+						text-align: end;
+					}
+				}
+
+				& .derived-table tr, & .derived-candidates-table tr {
+					grid-template-columns: 2fr 1fr 4rem 3rem;
+					grid-template-areas: "eva eva confidenceStars confidenceStars"
+										"de de heb heb"
+										"layer layer rules rules"
+										"anchorFolio anchorFolio anchorFolio isAnchor";
+					& .derived-eva, & .derived-candidates-eva { grid-area: eva; }
+					& .derived-heb, & .derived-candidates-heb { grid-area: heb; }
+					& .derived-de, & .derived-candidates-de { grid-area: de; }
+					& .derived-layer, & .derived-candidates-layer { grid-area: layer; }
+					& .derived-isAnchor, & .derived-candidates-isAnchor { grid-area: isAnchor; }
+					& .derived-anchorFolio, & .derived-candidates-anchorFolio { grid-area: anchorFolio; }
+					& .derived-rules, & .derived-candidates-rules { grid-area: rules; }
+					& .derived-confidenceStars, & .derived-candidates-confidenceStars { grid-area: confidenceStars; }
+
+					& :is(.derived-heb, .derived-isAnchor, .derived-rules, .derived-confidenceStars),
+					& :is(.derived-candidates-heb, .derived-candidates-isAnchor, .derived-candidates-rules, .derived-candidates-confidenceStars) {
+						justify-self: end;
+						text-align: end;
 					}
 				}
 			}

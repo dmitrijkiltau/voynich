@@ -138,13 +138,13 @@ export function generateMarkdown() {
   line('Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgeleiteten Formen.');
   line();
 
-  const _confMd = (/** @type {any} */ e) => getLexiconConfidence(e.confidenceStars) + (e.candidate ? ' (Kand.)' : '');
+  const _confMd = (/** @type {any} */ e) => getLexiconConfidence(e.confidenceStars) + (e.candidate ? ' (R43 Kandidat)' : '');
 
-  h(3, `A. Stammwörter (${STEM_WORDS.length})`);
+  h(3, `A. Stammwörter (${STEM_WORDS.filter(/** @type {any} */e => !e.candidate).length})`);
   line();
   s.push(tbl(
     ['EVA', 'Hebräisch', 'Deutsch', 'Schicht', 'Anker', 'Folio', 'Regeln', 'Konf.'],
-    STEM_WORDS.map(e => [
+    STEM_WORDS.filter(/** @type {any} */e => !e.candidate).map(e => [
       e.eva,
       e.heb,
       e.de,
@@ -157,11 +157,44 @@ export function generateMarkdown() {
   ));
   line();
 
-  h(3, `B. Abgeleitete Lexikon-Einträge (${LEXICON_DERIVED.length})`);
+  h(3, `B. Stammwörter (R43 Kandidaten) (${STEM_WORDS.filter(/** @type {any} */e => e.candidate).length})`);
+  line();
+  s.push(tbl(
+    ['EVA', 'Hebräisch', 'Deutsch', 'Schicht', 'Anker', 'Folio', 'Regeln', 'Konf.'],
+    STEM_WORDS.filter(/** @type {any} */e => e.candidate).map(e => [
+      e.eva,
+      e.heb,
+      e.de,
+      e.layer || '—',
+      e.isAnchor ? 'ja' : '—',
+      e.anchorFolio || '—',
+      getLexiconRules(e).join(', ') || '—',
+      _confMd(e),
+    ])
+  ));
+  line();
+
+  h(3, `C. Abgeleitete Lexikon-Einträge (${LEXICON_DERIVED.filter(/** @type {any} */e => !e.candidate).length})`);
   line();
   s.push(tbl(
     ['EVA', 'Morph.', 'Hebräisch', 'Deutsch', 'Evidenz', 'Regeln', 'Konf.'],
-    LEXICON_DERIVED.map((/** @type {any} */ e) => [
+    LEXICON_DERIVED.filter(/** @type {any} */e => !e.candidate).map((/** @type {any} */ e) => [
+      e.eva,
+      e.morph || '—',
+      e.heb,
+      e.de,
+      e.evidence || '—',
+      getLexiconRules(e).join(', ') || '—',
+      _confMd(e),
+    ])
+  ));
+  line();
+
+  h(3, `D. Abgeleitete Lexikon-Einträge (R43 Kandidaten) (${LEXICON_DERIVED.filter(/** @type {any} */e => e.candidate).length})`);
+  line();
+  s.push(tbl(
+    ['EVA', 'Morph.', 'Hebräisch', 'Deutsch', 'Evidenz', 'Regeln', 'Konf.'],
+    LEXICON_DERIVED.filter(/** @type {any} */e => e.candidate).map((/** @type {any} */ e) => [
       e.eva,
       e.morph || '—',
       e.heb,

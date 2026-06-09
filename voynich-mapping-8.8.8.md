@@ -133,15 +133,13 @@ Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.
 
 Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgeleiteten Formen.
 
-### A. Stammwörter (52)
+### A. Stammwörter (36)
 
 | EVA | Hebräisch | Deutsch | Schicht | Anker | Folio | Regeln | Konf. |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | aiin | עַיִן | Auge / Quelle | Mischna-Hebräisch | — | f8r P3.17 (H/C 2/2, Erstbeleg) | R42, R43 | ★★★★★ |
 | al | עַל | auf / über / betreffend (Basispräposition; Var. ol) | — | — | f2r P.5 (H/C/F 3/3, Erstbeleg) | R19, R40, R43 | ★★★★ |
-| alef | אָלֶף | Aleph (Ochse, ikonograph. Buchstabenreferenz) | — | — | — | — | ★★★ (Kand.) |
 | chaiin | חַיִּין | Leben (Chayyim) | Biblisches Hebräisch | ja | f2r P.3 (H/C/F 3/3, Erstbeleg) | R18, R19, R43 | ★★★★ |
-| chalal | חָלָל | Sterbender | — | ja | f103r P.42 (H/F 2/2, Erstbeleg) | — | ★★★★ (Kand.) |
 | cham | חַם | Wärme / Entzündung (hippokr. Befund-Term) | Mischna-Hebräisch | — | f3r P.2 (H/C/F 3/3, Erstbeleg) | R19, R43 | ★★★★ |
 | chan | חָן | Gnade / günstige Prognose | — | — | f2r P.12 (H/C/F 3/3, Erstbeleg) | R43 | ★★★★ |
 | char | חַר | heiß / Fieber | Mischna-Hebräisch | — | f1v P.1 (H/C/F 3/3, Erstbeleg) | R43 | ★★★★ |
@@ -150,8 +148,6 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | cheol | ח-ע-ל | schöpfen / heben (balneolog. Augenbad-Marker) | — | — | f2v P.8 (H/F/U 3/4, Erstbeleg) | R2, R43 | ★★★★ |
 | chey | חֵי | lebendig / am Leben (Adj.) | Hebräisch | — | f1r P3.20 (H/C/F/N/X/U 6/6, Erstbeleg) | R19, R40, R43 | ★★★★ |
 | chy | חַי | lebendig / am Leben (Adj.; Vokalvariante von chey) | Hebräisch | — | f1v P.6 (H/F 2/3, Erstbeleg) | R40, R43 | ★★★★ |
-| chod | חֹד | Schärfe / Akutheit (med. Terminus) | — | — | f18v P.7 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★★ (Kand.) |
-| chok | חֹק | Satzung / Vorschrift / Rezepturregel | Mischna-Hebräisch | — | f1r P4.27 (H/C/F/N/X/U 6/6, Erstbeleg) | R2, R40 | ★★★★ (Kand.) |
 | chom | חֹם | Wärme / Hitze (Schwesterform von cham) | Mischna-Hebräisch | — | f3r P.7 (H/C/F 3/3, Erstbeleg) | R2, R40, R43 | ★★★★ |
 | chor | חֹר | Pupille / Höhle / Loch | Mischna-Hebräisch | — | f1r P3.20 (H/C/F/N/X/U 6/6, Erstbeleg) | R2, R15, R19, R40, R43 | ★★★★ |
 | ckhy | כְּהִי | Blässe / Trübheit | Mischna-Hebräisch | — | f1v P.3 (H/C/F 3/3, Erstbeleg) | R43 | ★★★★ |
@@ -159,25 +155,16 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | dal | דַּל | schwach / abgemagert | Hebräisch | ja | f1r P4.26 (H/F/U 3/5, Erstbeleg) | R40, R43 | ★★★★ |
 | dam | דָּם | Blut | Mischna-Hebräisch | ja | f1v P.4 (H/C/F 3/3, Erstbeleg) | R40, R43 | ★★★★★ |
 | dar | דּוֹר | Generation / Kreis / Wohnort | Hebräisch / Aramäisch | — | f1v P.5 (H/C/F 3/3, Erstbeleg) | R15, R19, R43 | ★★★★ |
-| darom | דָּרוֹם | Süden | — | — | f19v P.2 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★★ (Kand.) |
 | dol | דָּוֶה | Schmerz / Krankheit | Hebräisch | — | f1v P.4 (H/C/F 3/3, Erstbeleg) | R2, R19, R43 | ★★★★ |
 | dom | דּוֹם | Stille / Ende | — | — | f15r P.13 (H/C/F 3/4, Erstbeleg) | R2, R43 | ★★★★ |
 | dor | דֹּר | Generation / Wachstumszyklus / Zeitraum | — | — | f2v P.6 (H/C/F/U 4/4, Erstbeleg) | R2, R40, R43 | ★★★★ |
 | dy | דִּי | von / dessen | Jüdisch-Aramäisch | — | f5r P.1 (H/C/F 3/3, Erstbeleg) | R19, R43 | ★★★★ |
-| fol | פֹּל / פּוּל | Röhrenschaft / Stiel-Hülse (CAULIS-Eröffner) | — | — | — | R2 | ★★★ (Kand.) |
-| kaiim | קַיָּם | gültig / beständig (Schlussformel) | — | ja | f6r P.14 (H/C 2/3, Erstbeleg) | — | ★★★★★ (Kand.) |
 | kar | כָּרָה | graben / untersuchen (med. Kontext) | Mischna-Hebräisch | — | f6r P.2 (H/C/F 3/3, Erstbeleg) | R40, R43 | ★★★ |
 | kol | כֹּל | Alles / Gesamtheit | Hebräisch | — | f2r P.9 (H/C/F 3/3, Erstbeleg) | R2, R40, R43 | ★★★★★ |
-| olom | עוֹלָם | Ewigkeit / Welt | — | — | f24v P.7 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★★★ (Kand.) |
 | or | אוֹר | Licht / Glanz | Hebräisch | ja | f1r P1.3 (H/C/F/N/U 5/5, Erstbeleg) | R2, R43 | ★★★★ |
-| otan | עֹתָן | Zeit / Jahreszeit der Erkrankung | — | — | — | R2 | ★★★ (Kand.) |
-| pcho | פְּחֹ | Atem / Mund (Sprache-A-Grundform) | — | — | — | R2 | ★★★ (Kand.) |
 | pol | פֹּל | Bohne / Beere / Frucht | — | — | f1v P.10 (H/C/F 3/3, Erstbeleg) | R2, R43, R60 | ★★★ |
-| qodom | קֶדֶם | Osten / Vorzeit / Vergangenheit | — | — | f24v P.11 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★ (Kand.) |
-| ram | רָם | erhöht / Fieber | — | — | f9r P.3 (H/F 2/3, Erstbeleg) | — | ★★★ (Kand.) |
 | sam | שַׂם | Arznei | Mischna-Hebräisch | — | f3r P.17 (H/F 2/3, Erstbeleg) | R43 | ★★★ |
 | sar | שַׂר | Arzt / Meister / Vorsteher | — | ja | f8v P.2 (H/C/F/U 4/4, Erstbeleg) | R43 | ★★★★ |
-| shalom | שָׁלוֹם | Friede / günstige Konstellation | — | — | f58r P.4 (H/F 2/2, Erstbeleg) | R2 | ★★★ (Kand.) |
 | shees | אֵשׁ | Feuer / Fieberbrand | — | — | f5v P.4 (H/F/U 3/4, Erstbeleg) | R43 | ★★★ |
 | sheey | שֵׁי | Gabe / Wohlbefinden | Biblisches Hebräisch / Aramäisch | — | f2r P.9 (H/C/F 3/3, Erstbeleg) | R40, R43 | ★★★★ |
 | sheol | שְׁאוֹל | Scheol / Tod (Vollform zu shol) | Biblisches Hebräisch | ja | f3r P.11 (H/C/F 3/3, Erstbeleg) | R2, R40, R43 | ★★★★ |
@@ -185,205 +172,121 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | shod | שׁוֹד | Verheerung / Verwüstung | — | — | f1r P1.3 (H/C/F/N/U 5/5, Erstbeleg) | R2, R40, R43 | ★★★★ |
 | shol | שׁוֹל | Tod / Unterwelt (apokopiert von Sheol) | Jüdisch-Aramäisch (Sprache A) | — | f1r P1.1 (H/C/U 3/5, Erstbeleg) | R2, R19, R40, R43 | ★★★★★ |
 | shor | שׁוּר | Blick / Reihe / Ochse | Aramäisch / Hebräisch | — | f1v P.9 (H/C/F 3/3, Erstbeleg) | R2, R15, R19, R43 | ★★★★★ |
-| shty | שְׁתִי | Getränk / Trank | — | — | — | — | ★★★ (Kand.) |
 | tal | טַל | Tau / Pflanzensaft / Feuchtigkeit | Hebräisch | — | f13v P.9 (H/C 2/3, Erstbeleg) | R14, R40, R43 | ★★★ |
-| tam | תָּם | vollständig / rein | — | — | f34r P.8 (H/C/F 3/3, Erstbeleg) | — | ★★★★ (Kand.) |
-| tolol | תֹּלֹל | geschwächt / hängend (Zustands-Adj.) | — | — | f18v P.8 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★★ (Kand.) |
 
 
-### B. Abgeleitete Lexikon-Einträge (375)
+### B. Stammwörter (R43 Kandidaten) (16)
+
+| EVA | Hebräisch | Deutsch | Schicht | Anker | Folio | Regeln | Konf. |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| alef | אָלֶף | Aleph (Ochse, ikonograph. Buchstabenreferenz) | — | — | — | — | ★★★ (R43 Kandidat) |
+| chalal | חָלָל | Sterbender | — | ja | f103r P.42 (H/F 2/2, Erstbeleg) | — | ★★★★ (R43 Kandidat) |
+| chod | חֹד | Schärfe / Akutheit (med. Terminus) | — | — | f18v P.7 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| chok | חֹק | Satzung / Vorschrift / Rezepturregel | Mischna-Hebräisch | — | f1r P4.27 (H/C/F/N/X/U 6/6, Erstbeleg) | R2, R40 | ★★★★ (R43 Kandidat) |
+| darom | דָּרוֹם | Süden | — | — | f19v P.2 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| fol | פֹּל / פּוּל | Röhrenschaft / Stiel-Hülse (CAULIS-Eröffner) | — | — | — | R2 | ★★★ (R43 Kandidat) |
+| kaiim | קַיָּם | gültig / beständig (Schlussformel) | — | ja | f6r P.14 (H/C 2/3, Erstbeleg) | — | ★★★★★ (R43 Kandidat) |
+| olom | עוֹלָם | Ewigkeit / Welt | — | — | f24v P.7 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★★★ (R43 Kandidat) |
+| otan | עֹתָן | Zeit / Jahreszeit der Erkrankung | — | — | — | R2 | ★★★ (R43 Kandidat) |
+| pcho | פְּחֹ | Atem / Mund (Sprache-A-Grundform) | — | — | — | R2 | ★★★ (R43 Kandidat) |
+| qodom | קֶדֶם | Osten / Vorzeit / Vergangenheit | — | — | f24v P.11 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★ (R43 Kandidat) |
+| ram | רָם | erhöht / Fieber | — | — | f9r P.3 (H/F 2/3, Erstbeleg) | — | ★★★ (R43 Kandidat) |
+| shalom | שָׁלוֹם | Friede / günstige Konstellation | — | — | f58r P.4 (H/F 2/2, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| shty | שְׁתִי | Getränk / Trank | — | — | — | — | ★★★ (R43 Kandidat) |
+| tam | תָּם | vollständig / rein | — | — | f34r P.8 (H/C/F 3/3, Erstbeleg) | — | ★★★★ (R43 Kandidat) |
+| tolol | תֹּלֹל | geschwächt / hängend (Zustands-Adj.) | — | — | f18v P.8 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+
+
+### C. Abgeleitete Lexikon-Einträge (163)
 
 | EVA | Morph. | Hebräisch | Deutsch | Evidenz | Regeln | Konf. |
 | --- | --- | --- | --- | --- | --- | --- |
 | chckhy | ch- + k- + chy | חֶכָּהִי | Blässe-Hitze-Zeichen | f6r P.2 (H/C/F 3/3, Erstbeleg), f6v P.2 (H/C/F/U 4/4), f11v P.2 (H/C/F/U 4/4), f13r, f14r, f18r, f19r, f32v, f34r, f34v, f66r, f77r, f103r, f103v, f114v | R41, R43 | ★★★★ |
 | chkar | ch- + kar | חֲקַר | er untersucht (Qal von חקר) | f2r P.2 (H/C/F 3/3, Erstbeleg), f9r T.10 (H/F 2/3), f16v P.6 (H/C/F 3/3), f115r | R41, R43 | ★★★ |
-| daid | d- + ai + d- | דַּאִידַּ | ? / תָּמִיד = dauerhaft (Semantik noch offen) | f24v P.7 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★ (Kand.) |
 | daiir | d- + ir | דַּאִיר | der Leuchtende (verlängerte Form von dair) | f23r P.8 (H/C/F 3/3, Erstbeleg), f31r P.9 (H/C/F 3/3), f57r P.2 (H/C 2/3), f66r | R41, R43 | ★★★ |
 | dain | d- + aiin | דַּעַיִן | das Auge (Kurzform) | f1r (T2.10–P3.20, ×4, Erstbeleg), f2r P.9 (H/C/F 3/3), f3v P.14 (H/C/F/U 4/4), f7r, f7v, f8r, f8v, f10r, f10v, f11r, f11v, f13v, f14r, f15r, f17v, f22r, f23r, f23v, f27r, f28v, f32r, f32v, f33v | R41, R43 | ★★★★ |
-| dainod | d- + aiin + od | דַּאִיןעֹד | er behandelt das Auge weiter | f16r T1.4 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | dair | d- + ir | דְּאִיר | der Leuchtende / Licht davon    | f1v (P.4, P.5, Erstbeleg), f3r P.19 (H/F 2/3), f10r P.7 (H/C/F 3/3), f14v, f17r, f18v, f25r, f27r, f31v, f58r, f66r, f103v, f115r, f115v | R41, R43 | ★★★★ |
-| dairam | d- + ir + am | דְּאִיראָם | von dem Leuchtenden aller | — | R41 | ★★★ (Kand.) |
-| dairin | d- + ir + -in | דְּאִירִין | von dem Leuchtenden | f16v P.6 (H/C/F 3/3, Erstbeleg) | R41 | ★★★ (Kand.) |
-| dait | d- + ʿet | דַּעִת | von/aus der Zeit / im Moment (zeitliche Deiktik) | — | R41 | ★★ (Kand.) |
 | dchal | d- + chal | דְּחַל | von dem was gilt / von dem Sterbenden | f18v P.1 (H/C/F/U 4/4, Erstbeleg), f24v P.15 (C/F/U 3/4) | R41, R43 | ★★★ |
-| dchar | d- + kar | דְּכַּר | vom Widder / männlich (Zutaten-Term) | f28r P.2 (H/C/F 3/3, Erstbeleg) | R41, R45 | ★★★ (Kand.) |
 | dchckhy | d- + k- + k- + chy | דְּכְּכְּהִי | von tiefer Blässe (Intensiv-Diagnosesiegel) | f14v P.9 (H/C/F/U 4/4, Erstbeleg), f25r P.4 (H/C/F 3/3) | R41, R43 | ★★★★ |
-| dchm | d- + cham | דְּחָם | von der Entzündung | f13r P.1 (H/F 2/3, Erstbeleg) | R41 | ★★★ (Kand.) |
 | dchor | d- + chor | דְּ+חֹר | von der Pupille | f1v P.9 (H/C/F 3/3, Erstbeleg), f4r P.2 (H/C/F 3/3), f6v P.20 (H/C/F/U 4/4), f8v, f9v, f13r, f20r, f22r, f25v, f29r, f29v, f30r, f32r | R2, R41, R43 | ★★★★ |
-| dchorol | d- + k- + or + ol- | דְּכְּאוֹרעֹלְ | von der Pupille hin | — | R2, R41 | ★★★ (Kand.) |
 | dchy | d- + k- + chy | דְּכָּהִי | von der Blässe davon | f6v P.4 (H/C/D 3/5, Erstbeleg), f8r P1.2 (H/C 2/3), f10r P.7 (H/C/F 3/3), f11v, f13r, f13v, f18v, f20r, f27r | R41, R43 | ★★★★ |
-| ddor | d- + dor | דְּדֹּר | von Generation/Zeitraum [intensiv] | — | R2, R41 | ★★★ (Kand.) |
-| deaiin | d- + aiin | דְּעַיִן | vom Auge | f28r P.9 (H/C/F 3/3, Erstbeleg) | R41 | ★★★★ (Kand.) |
-| dsheor | d- + she- + or | דְּשֶׁאוֹר | von dem, was Licht ist | — | R2, R41 | ★★★ (Kand.) |
 | dsho | d- + sho | דְּשׁוֹ | von Scheol (Kurzform) | f27v P.6 (H/C/F/U 4/4, Erstbeleg), f28r P.8 (H/C/F 3/3), f32v P.3 (H/C/F/U 4/4) | R2, R41, R43 | ★★★★ |
-| dsholdy | d- + shol + -dy | דְּשׁוֹלדִּי | von Scheol (dessen/Genitiv) | f9r P.5 (H/C 2/3, Erstbeleg) | R2, R41 | ★★★★★ (Kand.) |
 | dshor | d- + shor | דְּשׁוֹר / דְּאֹר | von/des Lichts | f22v P.2 (H/C/F/U 4/4, Erstbeleg), f25v P.5 (H/C/F 3/3), f32r P.4 (H/C/F 3/3), f58r | R2, R41, R43 | ★★★ |
 | dshy | d- + shy | דְּשֵׁי | von der Gabe | f16v P.9 (H/C/F 3/3, Erstbeleg), f18v P.10 (H/F/U 3/4) | R41, R43 | ★★★ |
-| doky | do- + ky | דּוֹכִּי | sein denn / weil | f18v P.9 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| eedy | e- + -dy | אֵדִּי | kein Licht von | f26r P.5 (H/C/F 3/3, Erstbeleg) | R19, R41 | ★★★ (Kand.) |
-| eeor | e- + or | אֵאוֹר | kein Licht | f24r P.4 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| chakod | k- + akod | כְּעַכֹּד | wie zusammen / versammelt | f28r P.2 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | chcthy | k- + k- + t- + hy | כְּ+כְּ+תְּ+חִי | wie wie ich/es heilt (Doppelintensiv) | f2r P.13 (H/C/F 3/3, Erstbeleg), f2v P.3 (H/C/F/U 4/4), f4v P.9 (H/C/F/U 4/4), f10r, f18r, f19v, f21r, f24v, f34v, f77r, f103v, f115v | R41, R43 | ★★★★ |
-| cheaiin | k- + e + aiin | כְּ+אֵ+עַיִן | wie das Licht des Auges | f2v P.7 (H/C/D/F/U 5/5, Erstbeleg) | R41 | ★★★ (Kand.) |
 | chear | k- + e- + ar | כְּאֵעַר | wie erleuchten / wie das Licht wirkt | f8v (P.3, P.16, P.17, Erstbeleg), f23v P.5 (H/C/F/U 4/4), f28v P2.9 (H/C/F/U 4/4), f30r | R19, R41, R43 | ★★★ |
 | chedy | k- + dy | כְּדֵי | damit / um zu | f26r (P.2, P.7, Erstbeleg), f26v (P.3, P.6), f31r (P.7, P.14), f31v, f32r, f33v, f34r, f34v, f57r, f66r, f77r, f85v2, f103r, f103v, f114v, f115r, f115v | R41, R43 | ★★★★ |
 | cheekaiin | k- + k- + aiin | כֵּכְּעַיִן | wie das Auge | f33r P.7 (H/C/F 3/3, Erstbeleg), f71v R3.1 (H/C 2/2) | R41, R43 | ★★★ |
-| cheekdam | k- + e- + k- + dam | כְּאֵכְּדָּם | wie das Zeichen des Blutes | — | R41 | ★★★★ (Kand.) |
 | cheeol | k- + e- + ol | כְּאֵעַל | wie kein Joch / wie Ende des Joches | f17v P.22 (H/C/F 3/3, Erstbeleg), f26v P.3 (H/C/U 3/4), f77r P.21 (H/F/V 3/4) | R2, R41, R43 | ★★★ |
-| cheesees | k- + e- + s- + e- + sh | כְּאֵשׂאֵשׁ | Dreifach-Licht-Zeichen | f25r P.3 (H/C/F 3/3, Erstbeleg) | R41 | ★★ (Kand.) |
-| cheeykam | cheey + k- + am | חֵיי+כְּ+עַם | wie das Leben des Volkes | f3v P.3 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★★ (Kand.) |
-| chekhol | k- + k- + chol | כְּכָּחֹל | wie das Augenpigment | — | R2, R41 | ★★★ (Kand.) |
 | cheor | k- + or | כְּאוֹר | wie Licht (Heilungszeichen) | f2v P.4 (H/C/F/U 4/4, Erstbeleg), f3r P.19 (H/F 2/3), f3v P.6 (H/C/F/U 4/4), f4v, f5r, f8v, f14r, f15v, f17v, f21r, f24r, f24v, f30r, f58r, f66r, f71v, f114v, f115r | R2, R41, R43 | ★★★★ |
 | chkeey | k- + k- + chey | כְּכְּאֵיִ | wie wie Lebendigkeit | f7v P.3 (H/C/U 3/4, Erstbeleg), f17v (P.7, P.23), f30r P.2 (H/F 2/3), f99r | R41, R43 | ★★★ |
 | chodaiin | k- + daiin | כֹּ+דִּין | wie das Urteil | f2v P.4 (H/C/F/U 4/4, Erstbeleg), f3v P.11 (H/C/F/U 4/4), f8r P1.3 (H/C/F 3/3), f10r, f10v, f15r, f17v, f20r, f20v, f21v, f28r, f30r, f114v, f115v | R2, R41, R43 | ★★★★ |
-| chodair | k- + od + ir | כֹּ+עוֹד+אִיר | wie weiteres Leuchten / wie noch Licht | f3v P.12 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| chodaly | k- + od + al + -y | כֹּ+עוֹד+עַל+יְ | wie noch darüber / wie weiter heilend | f3v P.6 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | chody | k- + -dy | כֹּ+דִּי | wie von ihm / gemäß ihm | f1v (P.2, P.10, Erstbeleg), f2v P.3 (H/C/F/U 4/4), f5r P.1 (H/C/F 3/3), f9v, f15v, f16v, f21v, f58r, f66r, f99r, f115r, f115v | R2, R41, R43 | ★★★★ |
-| chokeos | k- + okeos | כֹּכֵּאוֹס | wie ein Kelch (Botanik) | f2v P.7 (H/C/F/U 4/5, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| chokshor | k- + chok + shor | כְּחֹקשׁוֹר | wie die Vorschrift des Zeichens | f14v P.8 (H/C/U 3/4, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
-| cholam | k- + olom | כֹּעוֹלָם | wie die Welt / wie Ewigkeit | — | R2, R41 | ★★★★ (Kand.) |
-| cholo | k- + olo | כֹּ+לוֹ | wie für ihn / wie sein Kelch | f2v P.4 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | choor | k- + or | כְּאוּר | wie das Licht | f8r P1.7 (H/C/F 3/3, Erstbeleg), f14r P.6 (H/C/F 3/3) | R2, R41, R43 | ★★★ |
-| choraiin | k- + ar + aiin | כֹּאַרעַיִן | Heilung des Auges / wie das Licht des Auges | f4r P.2 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
 | chotam | k- + ot + am | כֹּאוֹתאָם | wie das Zeichen der Mutter | f58r P.22 (H/F 2/2, Erstbeleg), f115v P.7 (H/F 2/2) | R2, R41, R43 | ★★★ |
-| chseeor | k- + shee + or | כְּשֵׁאוֹר | wie die Gabe des Lichts | — | R2, R41 | ★★★ (Kand.) |
 | chty | k- + t- + -y | כְּ+תְּ+יְ | wie es heilt (Kurzverb) | f2v P.6 (H/C/F/U 4/4, Erstbeleg), f9v P.5 (H/C/F/U 4/4), f21v P.4 (H/C/F/U 4/4), f34r, f103r | R41, R43 | ★★★★ |
-| chykar | k- + hey + kar | כְּהֵיכַּר | Blässe-Kraft (Zutaten-Variante?) | f29v P.10 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★ (Kand.) |
-| ckhal | k- + hal | כְּהַל | Nachlassen des Fiebers | f6v P.17 (H/C/D 3/5, Erstbeleg) | R41 | ★★★ (Kand.) |
-| ckhear | k- + k- + or | כְּכְּאֵר | wie das Licht | f25v P.4 (H/C/F 3/3, Erstbeleg) | R41 | ★★★★ (Kand.) |
 | ckhol | ck- + hol | כְּכֹּל | vollständig wie alles (Intensiv-Variante) | f3v P.1 (H/C/D/F/U 5/5, Erstbeleg), f8r P3.15 (H/C/F 3/3), f25v P.4 (H/C/F 3/3), f58r, f99r | R2, R41, R43 | ★★★★ |
-| cphal | k- + palal | כְּפָּלַל | wie Gebet / Urteil | — | R41 | ★★ (Kand.) |
-| cphar | k- + par | כְּפַּר | Sühne / Bedeckung | f11v P.1 (H/C/U 3/4, Erstbeleg) | R41 | ★★★ (Kand.) |
-| cphary | k- + par + -y | כְּפַּריְ | wie sein Sühnopfer / wie seine Expiation | f27r P.5 (H/C/F 3/4, Erstbeleg) | R41 | ★★ (Kand.) |
-| cphoaiin | k- + pho + aiin | כְּפְּעַיִן | wie der Atemweg des Auges | f30v P.8 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | cphor | k- + p- + or | כְּפְּאֹר | wie der Mund des Lichts | f3v P.1 (H/C/F/U 4/5, Erstbeleg), f17r P.5 (H/C/F/U 4/4), f32v P.7 (H/F/U 3/4), f115v | R2, R41, R43 | ★★★ |
 | cphoy | k- + p- + cho | כְּפְּהוֹ | wie sein Atemweg / wie sein Mund | f1r P2.7 (H/N/U 3/5, Erstbeleg), f18v P.8 (H/C/F/U 4/4) | R2, R41, R43 | ★★★ |
 | cthaiin | k- + t- + aiin | כְּתַּעַיִן | vollständige Augen-Heilung | f6r (P.5, P.6, Erstbeleg), f8v P.8 (H/F/U 3/4), f10r P.6 (H/C/F 3/3), f15r, f18r, f20v, f32v | R8, R41, R43 | ★★★★ |
 | cthal | k- + t- + chal | כְּתַּחַל | wie vollständig | f3v P.13 (H/C/F/U 4/4, Erstbeleg), f18r P.13 (H/C/F 3/3), f24r P.14 (H/C/F 3/3) | R41, R43 | ★★★ |
 | cthar | k- + t- + char | כְּתַּחַר | wie vollständiges Fieber | f6v P.16 (H/C/D/F/U 5/5, Erstbeleg), f8v (P.4, P.7), f15r P.13 (H/F/U 3/4), f17r, f24r | R15, R19, R41, R43 | ★★★★ |
-| ctheen | k- + ten | כְּתֵּן | wie Gewähren / Geben | — | R41 | ★★ (Kand.) |
-| ctheor | k- + ten + or | כְּתֶּאוֹר | wie Licht-Gewähren / wie Erleuchtung | f22r P.9 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | cthey | k- + t- + ey | כְּ+תֶ | wie diese Form (Vokal-Variante von cthy; Kolophon-Marker) | f1r P3.13 (H/C/F/U 4/5, Erstbeleg), f2r P.3 (H/C/F 3/3), f4r P.13 (H/C/F 3/3), f4v, f5r, f8r, f8v, f17r, f20r, f26r, f27r | R41, R43 | ★★★★ |
-| cthodoaly | k- + t- + ody + al + -y | כְּ+תְּ+עוֹד+עַל+יְ | wie noch weiter darüber (Intensivform zu chodaly) | f3v P.9 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | cthoiin | k- + t- + aiin | כְּתּעַיִן | wie vollständige Augen-Heilung | f15v P.10 (H/C/F/U 4/4, Erstbeleg), f22r P.10 (H/C 2/3) | R2, R41, R43 | ★★★ |
 | cthol | k- + t- + h + ol | כְּתהֹל | Vollständigkeits-Marker | f1v P.6 (H/F 2/3, Erstbeleg), f3r (P.1, P.5), f4r (P.2, P.7), f4v, f6v, f7r, f7v, f8v, f17v, f18r, f19v, f22r, f23v, f24r, f28r, f28v, f30v, f32r | R2, R19, R41, R43 | ★★★★ |
 | cthom | k- + tom | כְּתֹם | wie Vollständigkeit | f3r (P.6, P.10, Erstbeleg), f4r P.7 (H/C/D/F 4/4), f6r P.12 (H/C/F 3/3), f6v, f24r | R2, R41, R43 | ★★★★ |
 | cthor | k- + tor | כְּתֹּר | vollständige Heilung | f2r P.12 (H/C/F 3/3, Erstbeleg), f5v P.4 (H/F/U 3/4), f6r P.2 (H/C/F 3/3), f8v, f9r, f9v, f10r, f11v, f13v, f14v, f15v, f16v, f17v, f18r, f19r, f19v, f21r, f25r, f25v, f28v, f29r | R2, R41, R43 | ★★★★ |
-| cthorchy | k- + t- + or + k- + chy | כְּתְּאוֹרכְּהִי | vollständige Heilung der Blässe | f30r P.7 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | cthy | k- + t- + hy | כְּ+תִי | wie mein Zeichen / wie diese [Form] | f1r (P3.14, P3.17, P4.26, Erstbeleg), f1v (P.3, P.6), f2r P.2 (H/C/F 3/3), f3r, f3v, f4r, f5r, f6r, f6v, f7v, f9r, f9v, f10r, f10v, f11r, f15r, f15v, f16r, f17r, f17v, f18r, f20v, f21r, f22r, f22v, f28r, f29r | R41, R43 | ★★★★ |
 | kaiin | k- + aiin | כְּעַיִן | wie das Auge | f15r P.8 (H/C/F 3/4, Erstbeleg), f29r P.7 (H/C/F 3/4), f71v R2.1 (H/C 2/2), f103r, f115v | R8, R41, R43 | ★★★★ |
 | kchaiin | k- + cha + aiin | כְּחַעַיִן | wie die Wärme des Auges | f18r T.14 (H/C/F 3/3, Erstbeleg), f29r P.3 (H/C/F/U 4/4) | R41, R43 | ★★★ |
-| kcham | k- + cham | כְּ+חַם | wie Wärme/Entzündung (Var. zu kchom mit cham statt chom) | f3v P.12 (H/C/F/U 4/4, Erstbeleg) | R40, R41 | ★★★ (Kand.) |
 | kchol | k- + chol | כְּחֹל | wie Augensalbe / Kohl-Pigment (Blaupigment) | f8v P.7 (H/C/F/U 4/4, Erstbeleg), f9v P.10 (H/C/U 3/4), f11r P.2 (H/C 2/3), f13r, f19v, f22r | R2, R41, R43 | ★★★★ |
-| kchom | k- + chom | כְּחֹם | wie Hitze / wie Fieber | f3v P.8 (H/C/F/U 4/4, Erstbeleg) | R2, R31, R40, R41 | ★★★ (Kand.) |
 | kchor | k- + chor | כְּ+חֹר | wie die Pupille | f8v P.13 (H/C/F/U 4/4, Erstbeleg), f13v P.10 (H/C 2/3), f17v P.4 (H/C/F 3/3), f18r, f19r, f19v, f25v, f30v, f115r | R2, R41, R43 | ★★★★ |
-| kchorl | k- + chor + l- | כְּחֹרלְ | wie die Pupille hin | — | R2, R41 | ★★ (Kand.) |
 | kchy | k- + chy | כְּ+חִי | wie seine Blässe (Variante von ckhy) | f2v P.2 (H/F/U 3/5, Erstbeleg), f5r P.7 (H/F 2/3), f11r P.4 (H/C/F 3/3), f13r, f14r, f15r, f16r, f16v, f19v, f22r, f22v, f25r, f31r, f34r, f103r | R19, R41, R43 | ★★★★ |
-| keeod | k- + od | כֵּעוֹד | denn noch / immer noch | — | R2, R41 | ★★★ (Kand.) |
 | keol | k- + eol | כֵּ+עוֹל | wie das Joch / wie die Last | f2v P.6 (H/C/F/U 4/4, Erstbeleg), f24v P.10 (H/C/F/U 4/4), f27r P.3 (H/C/F/U 4/4), f114v | R2, R41, R43 | ★★★ |
-| koaiin | k- + oaiin | כְּ+עַיִן | wie das Auge (Var. zu kaiin/koiin) | f3v P.1 (H/C/D/F/U 5/5, Erstbeleg) | R2, R8, R41 | ★★★ (Kand.) |
-| koiin | k- + aiin | כֹּעַיִן | wie das Auge | f16r P1.3 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| koshet | k- + she + t- | כֹּשֵׁתְּ | Scheol-Vollständigkeit (temporaler Abschlussterm) | f16v P.3 (H/F 2/3, Erstbeleg) | R2, R41 | ★★ (Kand.) |
 | ksho | k- + sho | כְּשׁוֹ | wie Scheol / Tod | f14v P.4 (C/F/U 3/4, Erstbeleg), f30r P.2 (H/F 2/3), f32v P.7 (H/C/F/U 4/4) | R2, R41, R43 | ★★★ |
 | kshol | k- + shol | כְּשׁוֹל | wie Scheol | f23v P.10 (H/C/U 3/4, Erstbeleg), f28v P1.1 (H/C/F/U 4/4) | R2, R41, R43 | ★★★★ |
 | kshy | k- + shy | כְּשֵׁי | wie die Gabe | f7v (P.3, P.4, Erstbeleg), f11r P.2 (H/C 2/3) | R41, R43 | ★★★ |
-| ksor | k- + shar | כֵּשָׁר | denn/wie passend/gesund | — | R2, R41 | ★★★ (Kand.) |
 | lchedy | l- + k- + dy | לְכְּדֵי | um zu / bis zur Grenze | f66r R.29 (H/C/F 3/3, Erstbeleg), f77r (P.7–P.29, ×4), f103r P.23 (H/F 2/2), f103v, f115v | R41, R43 | ★★★★ |
 | lor | l- + or | לְאוֹר | zum Licht / zur Heilung | f6v P.11 (H/F/U 3/5, Erstbeleg), f34r P.14 (H/C/F 3/3), f66r R.15 (H/C 2/3), f103r, f103v, f115r, f115v | R2, R41, R43 | ★★★★★ |
-| lshaiir | l- + s- + aiin + ir | לְשׂעַיִןאִיר | für Augenlicht-Glanz | f34v P.5 (H/C/F 3/4, Erstbeleg) | R41 | ★★★★ (Kand.) |
-| lshol | l- + shol | לְשׁוֹל | zum Tod / zu Scheol | — | R2, R41 | ★★★★★ (Kand.) |
-| lshy | l- + shy | לְ+שֵׁי | für die Gabe / für sein Wesen | f2v P.3 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★★ (Kand.) |
-| oaorar | o- + o- + or + or | עַאַאוֹראָר | auf das Licht der Heilung | f16v P.13 (H/F 2/3, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
 | ochor | o- + chor | עַחֹר | auf die Pupille (direktional) | f3r P.3 (H/F 2/3, Erstbeleg), f3v P.10 (H/F/U 3/5) | R2, R41, R43 | ★★★ |
-| octhor | o- + k- + t- + or | עַכְּתֹּר | auf vollständige Heilung | — | R2, R41 | ★★★★ (Kand.) |
-| octhos | o- + k- + t- + sh | עַכְּתֹשׁ | auf wie Feuer / Fieber | f13v P.1 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | octhy | o- + cth- + y | עַכְּתִּי | auf mein Zeichen (≠ otchy!) | f3r P.12 (H/C/F 3/3, Erstbeleg), f29v P.11 (H/C/F/U 4/4), f114v P.34 (H/F 2/2) | R2, R41, R43 | ★★★ |
-| odaiim | o- + daiin + -im | עַדִּינִים | auf den (kollektiven) Urteilen | f24v P.16 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | odaiin | o- + daiin | עַדִּין | auf das Urteil (direktional) | f1r P3.14 (H/C/F/N/U 5/5, Erstbeleg), f7r P.4 (H/C/F 3/3), f9r P.1 (H/C 2/3), f17v, f21v, f22r, f22v, f24r, f57r, f58r, f85v2, f114v, f115v | R2, R41, R43 | ★★★★ |
-| odaldy | o- + dal + -dy | עַדַּלדִּי | über die Schwäche dessen | f17v P.1 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| odol | o- + dol | עַדָּוֶה | auf die Krankheit | f9v P.6 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
-| oeeen | o- + een | עַאֵין | auf das Fehlen / Nichts (emphatische Null) | f14r P.12 (H/F 2/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | oeees | o- + esh | עַאֵשׁ | auf dem Feuer / Fieber | f9v P.3 (H/C/F/U 4/4, Erstbeleg), f13r P.3 (H/C 2/3), f24r P.15 (H/C/F 3/3) | R2, R41, R43 | ★★★ |
-| oekor | o- + e- + qor | עַאֵקֹר | auf die Kälte / das Uprooting (direktional) | f17v P.6 (H/F 2/3, Erstbeleg) | R2, R41 | ★★ (Kand.) |
 | oiin | o- + aiin | עַיִן | das Auge (direkte Form) | f1r P3.14 (H/C/F/N/U 5/5, Erstbeleg), f13r P.6 (H/C/F 3/3), f15v P.8 (H/C/F/U 4/4), f23v | R2, R8, R41, R43 | ★★★ |
-| oir | o- + or | עַאוֹר | auf das Licht / Direktional-Heilung | f14r P.6 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | okaiin | o- + k- + aiin | עַכְּעַיִן | auf das Auge | f6r P.7 (H/F 2/3, Erstbeleg), f15r P.11 (H/F/U 3/4), f15v P.3 (H/C/F/U 4/4), f16v, f17r, f17v, f21r, f23r, f29v, f33r, f34r, f66r, f71v, f77r, f85v2, f103r, f103v, f114v, f115r, f115v | R2, R8, R19, R41, R42, R43 | ★★★★ |
 | okal | o- + kol | עַכָּל | auf / über alles | f1v P.6 (H/F 2/3, Erstbeleg), f8r P3.20 (H/C/F 3/3), f13v P.7 (H/F 2/3), f16r, f17v, f18r, f23v, f25r, f31v, f33r, f57v, f58r, f66r, f71v, f72r2, f73v, f85v2, f114v | R2, R19, R41, R43 | ★★★★ |
 | okam | o- + ka + -m | עַכַּם | für das Volk / für alle (universale Therapieangabe) | f28r P.6 (H/C/F 3/3, Erstbeleg), f31v P.8 (H/F 2/3), f34v P.10 (H/C/F/U 4/4), f57r, f72r2, f103r | R2, R41, R43 | ★★★★ |
-| okchain | o- + k- + chaiin | עַכְּחַיִּין | hin zu Leben / auf Leben hin | f22v P.13 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
-| okchan | o- + k- + chan | עַכְּחָן | auf / für die Gnade (positive Prognose-Direktional) | f32v P.6 (H/C/F 3/4, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
-| okchod | o- + k- + chod | עַכְּחֹד | auf die Schärfe / Akutheit (therapeut. Direktional) | f57v R3.1 (V/U 2/3, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
 | okchor | o- + k- + chor | עַ+כְּ+חֹר | auf die Pupille (o+k+chor-Komplex) | f3v P.2 (H/D/F/U 4/5, Erstbeleg), f13r (P.6, P.7), f14v P.5 (H/C/F/U 4/4), f18v, f19v, f20r, f32r | R2, R41, R43 | ★★★★ |
 | okeeey | o- + k- + e + e + e | עַכְּאֵאֵאֵ | auf das dreifache Licht (emphat. Schlusskolophon, Spr. B) | f17v P.4 (H/F 2/3, Erstbeleg), f33r P.7 (H/C/F 3/3), f99r P4.15 (H/F/U 3/3), f103r | R2, R41, R43 | ★★★ |
-| okeodaly | o- + k- + ol + dal | עַכֵּעֹדַּל | auf dem Weg des Schwachen | — | R2, R41 | ★★★ (Kand.) |
 | okeom | o- + k- + eom | עַכְּאֵוֹם | auf die Vollendung hin | f3r P.17 (H/F 2/3, Erstbeleg), f17v P.23 (H/C/F 3/3) | R2, R41, R43 | ★★★ |
 | okeor | o- + k- + or | עַכְּאֵוֹר | auf / zu dem Licht hin (direktionale Variante) | f15v P.3 (H/C/F/U 4/4, Erstbeleg), f17v (P.10, P.23), f18r P.4 (H/C/F 3/3), f103v | R2, R41, R43 | ★★★ |
 | okor | o- + k- + or | עַ+כְּ+אוֹר | auf das Licht hin (Var. zu okeor) | f3v P.2 (H/C/D/F/U 5/5, Erstbeleg), f9r P.3 (H/C/F 3/3), f14r P.6 (H/C/F 3/3), f15r, f17r, f31v, f32r, f34r, f85v2, f99r, f115v | R2, R41, R43 | ★★★★ |
-| okorory | o- + k- + or + or + -y | עַכְּאוֹראוֹרִי | auf das Licht / mein Licht (Possessiv) | f13r P.10 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | oksho | o- + k- + sho | עַכְּשׁוֹ | auf / gegen Scheol | f1r P3.12 (H/C/F/N/U 5/5, Erstbeleg), f28r P.5 (H/C/F 3/3) | R2, R40, R41, R43 | ★★★ |
 | okshy | o- + k- + shy | עַכְּשֵׁי | auf / für die Gabe (therapeut. Direktional) | f14v P.5 (H/C/F/U 4/4, Erstbeleg), f17r P.2 (H/C/F/U 4/4), f18v P.2 (H/C/U 3/4) | R2, R41, R43 | ★★★ |
-| okytaiin | o- + k- + t- + aiin | עַכְּתָּעַיִן | auf die Weise, dass er das Auge heilt | f16v P.11 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | opchol | o- + p- + chol | עַפְּכֹּל | auf allem wirkend | f3r P.18 (H/C/F 3/3, Erstbeleg), f22r P.10 (H/C 2/3), f30r P.8 (H/F 2/3) | R2, R41, R43 | ★★★ |
-| opchor | o- + p- + chor | עַפְּחֹר | auf die Pupille (Atemweg-Befund) | f13r P.1 (H/C 2/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | opchy | o- + p- + chy | עַפְּהִי | auf den Atemweg | f13r P.1 (H/C/F 3/3, Erstbeleg), f16r (P1.1, P2.5), f22r P.1 (H/C 2/3), f103v | R2, R41, R43 | ★★★★ |
-| opsheolaiin | o- + p- + sheol + aiin | עַפֶּשְׁאוֹלעַיִן | am Nadir-Punkt des Sternauges | f58r P.26 (H/F 2/2, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | opydaiin | o- + pi + daiin | עַפִּידִּין | beim Urteil des Mundes | f8v P.1 (H/C/F/U 4/4, Erstbeleg), f17v P.1 (H/C/F 3/3), f58r P.26 (H/F 2/2) | R2, R41, R43 | ★★★ |
-| oscheor | o- + she- + or | עַשֶׁאוֹר | auf dem, was Licht ist | f19r P.3 (H/F 2/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| otoaiin | o- + oto- + aiin | עַתוֹעַיִן | auf seine Augen (Possessiv) | f1v P.5 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| okoldm | ol- + kol + dam | עַלכֹּלדָּם | über alles Blut | — | R2, R41 | ★★★★ (Kand.) |
 | olaiin | ol- + aiin | עַלעַיִן | über das Auge | f17r P.4 (H/C/F/U 4/4, Erstbeleg), f33v P.6 (H/C/F/U 4/4), f77r P.31 (H/C/F/V 4/4), f99r, f103v, f114v | R2, R41, R43, R61 | ★★★★★ |
-| olchdaiin | ol- + chy + daiin | עַלכְּהֵדִּין | über Blässe-Urteil | — | R2, R41, R61 | ★★★★ (Kand.) |
 | oldam | ol- + dam | עַלדָּם | über das Blut | f22r P.10 (H/C 2/3, Erstbeleg), f34r P.7 (H/F 2/3), f34v P.2 (H/C/F 3/4) | R2, R41, R43, R61 | ★★★ |
 | oldar | ol- + d- + ar | עַלדְּאַר | über den Leuchtenden | f23v P.9 (H/F/U 3/4, Erstbeleg), f34v P.4 (H/C/F/U 4/4) | R2, R41, R43, R61 | ★★★★★ |
-| oldckhy | ol- + d- + k- + chy | עַלדְּכְּהִי | über die Blässe davon | — | R2, R41 | ★★★ (Kand.) |
-| olsar | ol- + sar | עַלשַׂר | über den Arzt / ärztliche Aufsicht | f23v P.6 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★ (Kand.) |
-| olsheol | ol- + sheol | עַלשְׁאוֹל | über Scheol | f31r P.11 (H/C/F 3/3, Erstbeleg) | R2, R41, R61 | ★★★ (Kand.) |
-| olsheor | ol- + sho + or | עַלשׁאוֹר | über Scheol-Licht | f31r P.13 (H/C/F 3/3, Erstbeleg) | R2, R41, R61 | ★★★ (Kand.) |
-| olshly | ol- + sh- + l- + -y | עַלשׁלְיְ | auf Scheol hin (direktionale Scheol-Form) | f22v P.14 (H/C/F 3/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| olteedam | ol- + tee + dam | עַלתֵּדָּם | über das Blut der Zeit | f31v P.7 (H/F 2/3, Erstbeleg) | R2, R41, R61 | ★★★★ (Kand.) |
-| olytol | ol- + ytol | עַל+יְ+תֹּלֹל | über dem er geschwächt wird | f3v P.2 (H/C/D/F/U 5/5, Erstbeleg) | R2, R41, R61 | ★★★ (Kand.) |
-| fochof | p- + k- + p- | פֹכֹפְ | Mund/Kehle-alles / Kehlenbereich | — | R2, R41 | ★★★ (Kand.) |
-| fshody | p- + sho + -dy | פְּשׁוֹדִּי | von Scheol | — | R2, R41 | ★★★ (Kand.) |
-| pchedal | p- + k- + dal | פְּכֶּדַּל | bei dem Schwachen | — | R41 | ★★★ (Kand.) |
-| pcheol | p- + k- + ol | פְּכֶּעֹל | bei der Last | f3r P.11 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| pchodar | p- + k- + dar | פְּכֹּדַּר | wie Finsternis / Dunkelheit | f115r P.29 (H/F 2/2, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | pchor | p- + chor | פְּ+חֹר | durch die Pupille / Öffnung der Höhle | f9v P.5 (H/C/F/U 4/4, Erstbeleg), f19r P.1 (H/C/F 3/3), f103v P.12 (H/F 2/2) | R2, R41, R43 | ★★★ |
-| pchraiin | p- + r- + aiin | פְּרְעַיִן | für/bei das Licht des Auges | — | R41 | ★★★ (Kand.) |
-| pochaiin | p- + k- + aiin | פֹּכְּעַיִן | beim/am Auge | f19v P.1 (H/C/U 3/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| poraiin | p- + or + aiin | פְּאוֹרעַיִן | Licht des Auges | — | R2, R41 | ★★★ (Kand.) |
-| qocheor | qo- + cheor | וְכְּאוֹר | und wie Licht (= qokcheor Kurzf.?) | f3r P.3 (H/F 2/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | qodaiin | qo- + daiin | וְדִּין | und Urteil | f3r P.7 (H/C/F 3/3, Erstbeleg), f6r (P.7, P.13), f28r P.6 (H/C/F 3/3) | R2, R41, R43 | ★★★★ |
-| qoeees | qo- + o- + esh | וְעַאֵשׁ | und auf dem Feuer / Fieber | f18v P.2 (H/C/U 3/4, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
 | qokaiin | qo- + k- + aiin | וְכְּעַיִן | und gemäß dem Auge | f5r P.2 (H/C/F 3/3, Erstbeleg), f9v P.2 (H/C/F/U 4/4), f15r P.3 (H/F/U 3/4), f15v, f23r, f23v, f25v, f29r, f77r, f103r, f103v, f114v, f115v | R2, R19, R41, R43 | ★★★★ |
-| qokay | qo- + k- + chey | וְכְּחַי | und wie lebendig | f18v P.4 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| qokcheor | qo- + k- + k- + or | וְכְּכְּאֵוֹר | und wie das Licht | — | R2, R41 | ★★★ (Kand.) |
 | qokchor | qo- + o- + k- + chor | וְעַכְּחֹר | und für die Pupille | f3r P.12 (H/C/F 3/3, Erstbeleg), f11v P.4 (H/C/F/U 4/4), f15r P.2 (H/C/F/U 4/4), f16r, f18r, f32r | R2, R41, R43 | ★★★★★ |
 | qokchy | qo- + k- + chy | וְ+כְּ+הִי | und wie Blässe | f3v P.13 (H/C/F 3/4, Erstbeleg), f7r P.8 (H/F 2/3), f7v P.3 (H/C/F/U 4/4), f10r, f13v, f18r, f18v, f19v, f21v, f22r, f22v, f24r, f29r, f31r, f32r, f34v, f103r, f115r | R2, R19, R41, R43 | ★★★★ |
-| qokedam | qo- + k- + dam | וְכְּדָּם | und wie das Blut | f57r P.8 (H/C 2/3, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
-| qokeees | qo- + k- + esh | וְכְּעֵשׁ | und wie Feuer / Fieber | f18v P.6 (H/C/U 3/4, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
 | qokol | qo- + kol | וְ+כֹּל | und alles | f3r (P.5, P.16, Erstbeleg), f13v P.2 (H/C/F 3/3), f16r P2.11 (C/F 2/3), f17r, f18v, f22r, f22v, f23v, f28r, f66r, f77r, f99r, f114v, f115r | R2, R41, R43 | ★★★★ |
 | qokor | qo- + kol + ar | וְכֹּאָר | und alles Licht | f6v P.14 (H/C/D/F 4/5, Erstbeleg), f15v P.3 (H/C/F/U 4/4), f23v P.8 (H/C/U 3/4), f58r, f77r, f115r, f115v | R2, R41, R43 | ★★★★ |
-| qokoral | qo- + k- + or + ol- | וְכְּאֹרעַלְ | und wie Licht-auf | — | R2, R41 | ★★ (Kand.) |
-| qokorar | qo- + kol + or + ar | וְכֹּאוֹראָר | und alles Licht der Heilung | f19r P.4 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| qokshol | qo- + k- + shol | וְ+כְּ+שׁוֹל | und wie Scheol/Tod | f3v P.10 (H/C/D/F/U 5/5, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | qokshy | qo- + k- + shy | וְכְּשֵׁי | und wie die Gabe | f23r P.8 (H/C/F 3/3, Erstbeleg), f66r R.8 (H/F 2/3), f103v P.22 (H/F 2/2) | R2, R41, R43 | ★★★ |
 | qoky | qo- + ky | וְכִּי | und denn / weil | f7v P.2 (H/C/F/U 4/4, Erstbeleg), f11v P.4 (H/C/F/U 4/4), f13r P.7 (H/C 2/3), f13v, f15v, f19r, f22r, f22v, f24r, f25v, f34r, f58r, f66r, f77r, f99r, f103r, f103v, f115r, f115v | R2, R19, R41, R43 | ★★★★★ |
 | qol | qo- + ol | וְעַל | und auf / über | f77r (P.10–P.36, ×4, Erstbeleg), f103r (P.50, P.52), f103v (P.16, P.34), f115r | R2, R41, R43 | ★★★ |
-| qoldar | qo- + ol- + d- + ar | וְעַלדְּאַר | und über den Leuchtenden | f34v P.4 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| qopchaiin | qo- + p- + k- + aiin | וְפְּכְּעַיִן | und Atemweg des Auges | f17v P.17 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | qor | qo- + or | וְאֹר | und Licht (astronomisch) | f17r P.4 (H/C/F/U 4/4, Erstbeleg), f24r P.14 (H/C/F 3/3), f29r P.9 (H/C/F/U 4/4), f30r, f58r, f66r, f77r | R2, R41, R43 | ★★★★ |
-| qoschodam | qo- + schol + dam | וְשׁכֹּדָּם | und Universalheilmittel des Blutes | f3r P.12 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | qotaiin | qo- + t- + aiin | וְ+תָּ+עַיִן | und sie heilt das Auge | f2r P.3 (H/C/F 3/3, Erstbeleg), f4r (P.3, P.7), f21r P.10 (H/C 2/3), f24r, f25r, f77r, f103v, f114v, f115r | R2, R41, R43 | ★★★★ |
 | qotal | qo- + tal | וְטַל | Tau / Schweißzeichen | f66r R.27 (H/C/F 3/3, Erstbeleg), f77r P.21 (H/C/F/V 4/4), f103r (P.39, P.43), f103v, f114v | R2, R41, R43 | ★★★★ |
 | qotchol | qo- + ot + kol | וְאוֹתכֹּל | und das Universal-Zeichen | f3v P.2 (C/D/U 3/5, Erstbeleg), f4r P.4 (H/C/D/F 4/4), f10r P.5 (H/C/F 3/3), f13r, f20r, f21r, f32r | R2, R41, R43 | ★★★★ |
 | qotchor | qo- + t- + chor | קוֹתְּכֹּר | Pupillen-Zeichen / Urteil der Pupille | f10r P.8 (H/C/F 3/3, Erstbeleg), f15r P.14 (C/F/U 3/4), f19r P.9 (H/C/F 3/3), f30r, f30v | R2, R41, R43 | ★★★★★ |
 | qotchy | qo- + ot + k- + chy | וְאוֹתכְּהִי | und das Zeichen der Blässe | f7r P.3 (H/C/F 3/3, Erstbeleg), f7v P.5 (H/C/F/U 4/4), f10r (P.3, P.12), f11r, f14v, f15r, f16v, f18v, f19r, f19v, f20r, f21v, f22v, f24r, f25r, f30r, f32r, f32v, f103r, f115v | R2, R41, R43 | ★★★★ |
-| qoteedar | qo- + t- + dar | וְתֵּדַּר | und er/du wirst leuchten | f26r P.8 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★ (Kand.) |
 | qoty | qo- + t- + y | וְ+תְּ+יְ | und sie heilt es (Parallelbildung zu qoky) | f2v P.2 (H/F/U 3/5, Erstbeleg), f3r P.18 (H/C/F 3/3), f4r P.11 (H/C/D/F 4/4), f4v, f11r, f11v, f16v, f28v, f29r, f66r, f77r, f103r, f103v | R2, R41, R43 | ★★★★ |
-| schol | s- + kol | שׂכֹּל | Arznei für alles / Universalheilmittel | f8r T3.21 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | schor | s- + chor | שׂחֹר | gleich der Pupille | f22r P.4 (H/C/F 3/3, Erstbeleg), f32r P.4 (H/C/F 3/3) | R2, R41, R43 | ★★★ |
-| soin | s- + a- + aiin | שׂעַיִן | Feuer des Auges / Augenentzündung | — | R2, R41 | ★★★ (Kand.) |
-| sokar | s- + o- + k- + ar | שׂאוֹכְּאָר | Heilungs-Arzt des Lichts | f16v P.13 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | sor | s- + or | שׂאֹר | Arzt des Lichts (Sprache-A-Vokalalternanz von sar) | f9r P.5 (H/C 2/3, Erstbeleg), f10r P.4 (H/F 2/3), f15v P.10 (H/C/F/U 4/4), f16v, f17v, f19v, f28v, f30r, f114v, f115r | R2, R41, R43 | ★★★★ |
 | soshy | s- + o- + sh + -y | שׂאֹשׁיְ | gleich Scheol-er | f14r P.8 (H/C/F 3/3, Erstbeleg), f25r P.1 (H/C/F 3/3) | R2, R41, R43 | ★★★ |
 | shos | sh- + a- + sh | שׁעַשׁ | Feuer-Ähnliches | f1r P2.9 (H/C/N/U 4/6, Erstbeleg), f20v P.6 (H/C/F 3/4), f32r P.11 (H/C/F 3/3) | R2, R41, R43 | ★★★ |
@@ -391,120 +294,49 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | sos | sh- + a- + sh | שׁעַשׁ | Feuer auf Feuer / Fieber-Intensivierung | f20v P.2 (H/C/F/U 4/4, Erstbeleg), f25v P.1 (H/C/F 3/3), f30v (P.7, P.9), f57v | R2, R41, R43 | ★★★ |
 | sshey | sh- + sh- + shey | שׁשׁהֵי | Doppel-Shin-Blässe | f24r P.17 (H/C/F 3/3, Erstbeleg), f103r P.53 (H/F 2/2) | R41, R43 | ★★★ |
 | sheaiin | she- + aiin | שֶׁעַיִן | welche das Auge | f8v P.2 (H/F/U 3/4, Erstbeleg), f21r P.2 (H/C/F 3/3), f30v P.1 (H/C/F 3/3), f32v | R41, R43 | ★★★★ |
-| sheam | she- + am | שֶׁ+עַם | welche das Volk / Gabe der Mutter | f3v P.14 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★★ (Kand.) |
 | shear | she- + ar | שֶׁ+אַר | welches das Licht/die Heilung ist (Vokalvariante von sheor) | f8v P.12 (H/C/F/U 4/4, Erstbeleg), f29r P.3 (H/F/U 3/4), f77r (P.13, P.16) | R41, R43 | ★★★★ |
 | shedy | she- + -dy | שֶׁדִּי | das/welches von | f26r (P.5, P.8, Erstbeleg), f26v (P.1, P.6), f31r P.8 (H/C/F 3/3), f34r, f34v, f66r, f77r, f85v2, f103r, f103v, f114v, f115r, f115v | R19, R41, R43 | ★★★★ |
 | sheor | she- + or | שֶׁאֹר | das/welches Licht ist | f6r P.4 (H/F 2/3, Erstbeleg), f17v P.21 (H/C 2/3), f32r P.2 (H/C/F 3/3), f66r, f103r, f103v | R2, R41, R43 | ★★★★ |
 | shody | sho- + -dy | שְׁאוֹדִּי | von Scheol | f1r (P2.9, P4.26, Erstbeleg), f1v P.9 (H/C/F 3/3), f4v P.13 (H/C/F/U 4/4), f5r, f7r, f16r, f20r, f21r, f22v, f25r, f29v, f33r, f66r, f77r, f103r | R2, R41, R43 | ★★★★ |
-| taiir | t- + ir | תָּאִיר | es wird leuchten / heilen | — | R41 | ★★★★ (Kand.) |
 | tchey | t- + chey | תְּחִי | möge es/sie leben! | f1r P3.17 (H/F/U 3/5, Erstbeleg), f11v P.4 (H/C/F/U 4/4), f19v P.7 (H/C/F/U 4/4), f20r, f27r, f32r, f103r | R4, R41, R43 | ★★★★ |
 | tchor | t- + chor | תְּחֹר | sie heilt die Pupille | f3v (P.7, P.11, P.12, Erstbeleg), f13r P.6 (H/C/F 3/3), f16r P2.5 (H/C 2/3), f18r, f22v, f57v | R2, R41, R43 | ★★★★ |
 | teor | t- + or | תְּאוֹר | sie wird heilen | f14r P.12 (H/F 2/3, Erstbeleg), f32v P.2 (H/F/U 3/4), f103v P.21 (H/F 2/2) | R2, R41, R43 | ★★★★ |
-| told | t- + yld | תּוֹלֵד | es erzeugt / bringt hervor | f18v P.1 (H/C/U 3/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| toror | t- + or + or | תְּאוֹראוֹר | sie heilt | f16r P2.10 (H/C 2/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| tshaiin | t- + sh + aiin | תּשׁעַיִן | du wirst das Auge [behandeln] | f21r P.9 (H/C 2/3, Erstbeleg) | R41 | ★★ (Kand.) |
-| tshdar | t- + sh- + d- + ar | תְּשׁדָּאַר | Jahreszeit-Zeichen (Sprache-B-Variante von torshor) | f33r P.1 (H/C/F 3/3, Erstbeleg) | R41 | ★★★ (Kand.) |
-| tsheoarom | t- + she- + or + om | תְּשְׁאוֹרוֹם | du wirst von Scheol aufsteigen | f3r P.15 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
 | tsho | t- + sho | תְּשׁוֹ | sie entfernt sich von Scheol | f21v P.6 (H/C/F/U 4/4, Erstbeleg), f28v P2.7 (H/C/F/U 4/4) | R2, R41, R43 | ★★★ |
-| tshoiin | t- + sho + aiin | תְּשׁוֹעַיִן | [sie] wendet das Auge von Scheol | — | R2, R41 | ★★★★ (Kand.) |
-| tshokeody | t- + sho + k- + chy | תְּשׁכֵּהִי | Tav-Scheol-Blässe | — | R2, R41 | ★★★ (Kand.) |
 | tshol | t- + shol | תְּשׁוֹל | sie entfernt von Scheol (Vollform von tsho) | f23r P.6 (H/C/F 3/3, Erstbeleg), f23v P.6 (H/C/F/U 4/4), f99r P1.1 (H/F 2/2) | R2, R41, R43 | ★★★ |
-| ychair | y- + char + ir | יְחַאִיר | er wird durch Wärme leuchten | f18r P.12 (H/C/F 3/3, Erstbeleg) | R41 | ★★★ (Kand.) |
 | ychekchy | y- + k- + k- + chy | יְכְּכְּהִי | er heilt wie totale Blässe | f17r P.5 (H/C/F/U 4/4, Erstbeleg), f18r T.14 (H/C/F 3/3) | R41, R43 | ★★★ |
-| ycheol | y- + k- + eol | יְכְּאֵוֹל | er wird wie Scheol-Licht sein (ambivalent) | f24v P.7 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★ (Kand.) |
-| ychody | y- + k- + dy | יְכֹּדִּי | er wird urteilen (Variante von ytchody) | f30r P.2 (H/F 2/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| ychoees | y- + kol + esh | יְכֹּעֵשׁ | er löscht das Feuer / heilt das Fieber | — | R2, R41 | ★★★ (Kand.) |
 | ychol | y- + kol | יְכֹּל | er heilt alles | f6r P.8 (H/C/F 3/3, Erstbeleg), f6v P.7 (H/C/F/U 4/4), f14r P.6 (H/C/F 3/3), f18v | R2, R41, R43 | ★★★★ |
-| ychom | y- + chom | יְחוֹם | er wird genesen / er wird warm | f29r P.9 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | ychor | y- + chor | יְחֹר | er wird die Pupille weiten | f6v P.8 (H/C/D/F/U 5/5, Erstbeleg), f17v P.15 (H/C/F 3/3), f22v P.7 (H/C/F/U 4/4), f23r, f24r | R2, R41, R43 | ★★★★ |
-| ychtaiin | y- + k- + t- + aiin | יְכְּתָּעַיִן | er heilt das Auge vollständig | f3r P.6 (H/F 2/3, Erstbeleg) | R41 | ★★★ (Kand.) |
 | ydaiin | y- + daiin | יְדִּין | er urteilt | f6r P.6 (H/C/F 3/3, Erstbeleg), f17v P.20 (H/F 2/3), f18r P.10 (H/C 2/3), f22r, f24v, f29v, f66r | R41, R43 | ★★★★ |
-| ydain | y- + d- + aiin | יְדַיִן | er wird das Auge behandeln | f16r P2.8 (H/C/F 3/3, Erstbeleg) | R3, R41 | ★★ (Kand.) |
-| ydals | y- + dal + sh- | יְדַּלְשׁ | er wird Schwäche läutern | f24v P.2 (H/F/U 3/4, Erstbeleg) | R41 | ★★ (Kand.) |
-| ydl | y- + dal | יִדַּל | er wird schwach werden (Qal von דלל) | f18v P.4 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★★ (Kand.) |
-| yees | y- + esh | יְאֵשׁ | er löscht das Feuer / Fieber | f19v P.12 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★★ (Kand.) |
-| yfodain | y- + padah + aiin | יְפָּדָהיִן | er wird das Auge erlösen / befreien | — | R2, R41 | ★★★★ (Kand.) |
 | ykaiin | y- + k- + aiin | יְכְּעַיִן | er heilt das Auge | f1r P1.3 (H/C/F/N/U 5/5, Erstbeleg), f9v P.3 (H/C/F/U 4/4), f14r P.8 (H/C/F 3/3), f20v, f22v, f115r | R3, R8, R41, R42, R43 | ★★★★ |
-| ykair | y- + k- + ir | יְכְּאִיר | er heilt leuchtend | f16r P1.3 (H/C/F 3/3, Erstbeleg) | R41 | ★★ (Kand.) |
-| ykam | y- + qam | יְקָם | er wird aufstehen / sich erheben (Qal קום) | f18v P.8 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★★ (Kand.) |
 | ykar | y- + k- + or | יְכְּאָר | er heilt leuchtend (Variante von ykair) | f18v P.6 (H/C/U 3/4, Erstbeleg), f34v P.2 (H/C/F 3/4) | R41, R43 | ★★★★ |
-| ykchaiin | y- + k- + chaiin | יְכְּחַיִּין | er wird wie Leben werden | f10r P.7 (H/C/F 3/3, Erstbeleg) | R41 | ★★★★ (Kand.) |
-| ykcheor | y- + k- + k- + or | יְכְּכְּאוֹר | er wird sein wie Licht (dreifach intensiv) | f22v P.5 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
 | ykchol | y- + k- + chol | יְכֹּל | er heilt alles / er heilt Augenpigment | f18r P.4 (H/C/F 3/3, Erstbeleg), f19v P.12 (H/C/F/U 4/4) | R2, R41, R43 | ★★★ |
-| ykcholy | y- + k- + chol + -y | יְכְּכֹּלְיְ | er heilt alles | — | R2, R41 | ★★★★ (Kand.) |
-| ykchor | y- + k- + chor | יְכְּחֹר | er heilt die Pupille | f19r (P.10, P.12, Erstbeleg) | R2, R41 | ★★★★★ (Kand.) |
 | ykchy | y- + k- + chy | יְכְּהִי | er wird Blässe zeigen | f3v P.8 (H/C/F/U 4/4, Erstbeleg), f11v P.2 (H/C/F/U 4/4), f13r (P.2, P.3), f16v, f17r, f19v, f23r | R41, R43 | ★★★★ |
-| ykeechy | y- + k- + e- + k- + chy | יְכְּאֵכְּהֵי | er heilt wie Blässe-Licht | — | R41 | ★★ (Kand.) |
 | ykeedy | y- + k- + dy | יְכֵּדֵי | er wird anordnen | f26r P.3 (H/F 2/3, Erstbeleg), f31r P.7 (H/C/F 3/3), f103r (P.35, P.39), f115v | R41, R43 | ★★★ |
 | ykeor | y- + k- + or | יְכְּאוֹר | er heilt / wie Licht | f6r P.3 (H/C/F 3/3, Erstbeleg), f17v P.13 (H/C/F 3/3), f73v S1.5 (H/V/U 3/3) | R2, R41, R43 | ★★★★ |
-| ykoaiin | y- + k- + oaiin | יְ+כּוֹ+עַיִן | er heilt wie das Auge | f3v P.1 (H/C/D/F/U 5/5, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| ykoiin | y- + k- + aiin | יְכוֹיִן | er wird sich erholen | f5v P.4 (H/F/U 3/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| yoar | y- + o- + or | יְאַאָר | er wird zum Licht hin [heilen] | — | R2, R41 | ★★ (Kand.) |
-| yodaiin | y- + o- + daiin | יוֹדִּין | er weiß das Urteil | f6v P.13 (H/C/D/F/U 5/5, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
-| ypchor | y- + p- + chor | יְפְּחֹר | er heilt die Pupille [durch Atem] | — | R2, R41 | ★★★ (Kand.) |
-| yshdal | y- + sh- + dal | יְשַׁדַּל | er wird schwächen | — | R41 | ★★★ (Kand.) |
-| ysheol | y- + sheol | יְשׁאֹל | er wird [aus] Scheol [aufsteigen] | f21r P.12 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★ (Kand.) |
-| ysheor | y- + she- + or | יְשֶׁאוֹר | er/sie wird sein, welches Licht ist | f3r P.8 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| ysho | y- + sho | יְשׁוֹ | es führt zum Tod | — | R2, R41 | ★★★★ (Kand.) |
 | ytaiin | y- + t- + aiin | יְתָּעַיִן | er wird das Auge heilen | f6r P.3 (H/C/F 3/3, Erstbeleg), f9r P.2 (H/C/F 3/3), f13v P.8 (H/C 2/3), f16r, f19v, f22v | R41, R43 | ★★★★ |
 | ytal | y- + tal | יְתַּל | er wird suspendieren / aufhängen (Qal von תלל) | f13v P.9 (H/C 2/3, Erstbeleg), f22v P.10 (H/C/U 3/4), f34v P.3 (H/C/F/U 4/4), f58r | R41, R43 | ★★★ |
-| ytalar | y- + tal + or | יְתַּאֹר | er wird [Licht] geben / erleuchten | f58r P.5 (H/F 2/2, Erstbeleg) | R41 | ★★★ (Kand.) |
 | ytar | y- + t- + or | יְתַּאָר | er wird Licht geben | f19v P.12 (H/C/F/U 4/4, Erstbeleg), f34r P.2 (H/C/F 3/3), f58r (P.2, P.13), f85v2, f115v | R41, R43 | ★★★★ |
-| ytchar | y- + t- + char | יְתְּחַר | er/sie wird Fieber zeigen | — | R41 | ★★★ (Kand.) |
-| ytcheear | y- + t- + k- + e + ar | יְ+תְּ+כְּ+אֵ+אָר | er wird sein wie Heilung durch Licht (R28) | f3v P.9 (H/C/F 3/4, Erstbeleg) | R28, R41 | ★★★ (Kand.) |
-| ytchm | y- + t- + cham | יְתְּחֵם | er/sie wird Wärme bringen | — | R41 | ★★★ (Kand.) |
-| ytchody | y- + t- + k- + dy | יְתְּכֹּדִּי | er wird urteilen (Doppelpräfix) | f8r P2.11 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| ytchol | y- + t- + kol | יְתכֹּל | er wird alles vollenden | f28r P.9 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
 | ytchor | y- + t- + chor | יְתְּחֹר | er/sie wird die Pupille heilen | f15v (P.5, P.8, Erstbeleg), f16v P.2 (H/C/F 3/3), f19v P.12 (H/C/F/U 4/4) | R2, R41, R43 | ★★★★ |
 | ytchy | y- + t- + chy | יְתְּכְּהִי | er/sie wird Blässe zeigen | f3v P.12 (H/C/F/U 4/4, Erstbeleg), f11r P.2 (H/C 2/3), f13r P.4 (H/C/F 3/3), f16v, f27r | R41, R43 | ★★★★ |
-| yteam | y- + t- + eam | יְ+תְּ+אָם | er wird das Volk behandeln (R28) | f3v P.14 (H/F/U 3/4, Erstbeleg) | R28, R41 | ★★★ (Kand.) |
-| yteechy | y- + chy | יִחְיֶה | er wird gesund | — | R41 | ★★★ (Kand.) |
 | yteey | y- + t- + ee | יְתֵּאֵי | er wird [es] bringen / heilen (Sprache B) | f33r P.6 (H/C/F 3/3, Erstbeleg), f103v (P.26, P.38) | R41, R43 | ★★★ |
 | yteol | y- + t- + ol | יְתאֵעֹל | er wird handeln / vollbringen | f21r P.11 (H/C/F 3/3, Erstbeleg), f28r P.9 (H/C/F 3/3) | R2, R41, R43 | ★★★★ |
 | ytol | y- + tolol | יְתֹּלֹל | er wird geschwächt | f15r P.13 (H/C/F/U 4/4, Erstbeleg), f18r P.6 (H/F 2/3), f18v P.9 (H/C/F/U 4/4), f19v | R2, R41, R43 | ★★★ |
-| ytom | y- + tom | יְתָּם | er wird vollständig / komplett (Var. ytam) | — | R2, R41 | ★★ (Kand.) |
 | ytor | y- + t- + or | יְתֹּאוֹר | er/sie wird zum Licht werden / erleuchten | f5v P.3 (H/C/F/U 4/4, Erstbeleg), f18v P.8 (H/C/F/U 4/4), f19v P.12 (H/C/F/U 4/4), f58r | R2, R41, R43 | ★★★★★ |
-| ytsho | y- + t- + sho | יְתְּשׁ | er wird Scheol zeigen (R28-Typ) | f32r P.4 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | yty | y- + t- + y | יְ+תְּ+יְ | er heilt es (doppeltes y-Präfix mit t-Infix; Morphemanalyse offen) | f3v P.13 (H/C/F/U 4/4, Erstbeleg), f4r P.4 (H/C/D/F 4/4), f10r (P.3, P.7), f22r | R41, R43 | ★★★ |
-| chokcheey | chok + cheey | חֹקחֵיי | Lebensvorschrift | f30v P.11 (H/C/F 3/3, Erstbeleg) | R2 | ★★★★ (Kand.) |
 | chokchy | chok + k- + chy | חֹקכְּהִי | Vorschrift der Blässe | f8v P.9 (H/C/F/U 4/4, Erstbeleg), f16v P.2 (H/C 2/3), f18r P.11 (H/C 2/3), f30v | R2, R41, R43 | ★★★★ |
-| chokeor | chok + e- + or | חֹקאֵאוֹר | Vorschrift des Lichts | f30v P.3 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | choky | chok + -ey | חֹקֵּי | die Vorschriften des [Falls] | f1v P.6 (H/F 2/3, Erstbeleg), f6r P.3 (H/C/F 3/3), f15v P.4 (H/C/F/U 4/4), f16r, f20r, f58r, f99r, f114v | R2, R43 | ★★★★ |
-| daiidal | daiin + dal | דִּינדַּל | Urteil der Schwäche | f23r P.6 (H/C 2/3, Erstbeleg) | — | ★★★ (Kand.) |
-| daiidy | daii + -dy | דַּיִּדִּי | dessen Urteil (Kurzform ohne Nun; EVA-distinct von daiindy) | f3v P.2 (H/C/F/U 4/5, Erstbeleg) | — | ★★★ (Kand.) |
 | daiiin | daiin + -in | דִּינִין | Urteile (Aram. Emphase-Plural von דין) | f1r T3.21 (H/C/F/N/X/U 6/6, Erstbeleg), f9v P.5 (H/C/F/U 4/4), f28v P1.5 (H/C/F/U 4/4), f77r | R43 | ★★★★ |
-| daiim | daiin + -m | דִּינם | Urteile (Plural) | f3v P.10 (H/C/D/F/U 5/5, Erstbeleg) | — | ★★★ (Kand.) |
-| daiindy | daiin + -dy | דִּינדִּי | das Urteil dessen | — | — | ★★★★★ (Kand.) |
-| daiinol | daiin + ol- | דִּינעַל | Urteil über [etwas] | f19r P.12 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (Kand.) |
-| daiity | daiin + t- | דִּינתּ | Urteils-tav / juristische Abschlussform | f25v P.3 (H/C 2/3, Erstbeleg) | — | ★★ (Kand.) |
-| dala | dal + -a | דַּלָּ | Schwäche (Femininum von dal) | f14r P.5 (H/F 2/3, Erstbeleg) | — | ★★★ (Kand.) |
-| dalchy | dal + k- + chy | דַּלכְּהִי | die Schwäche der Blässe | f58r P.4 (H/F 2/2, Erstbeleg) | R41 | ★★★★ (Kand.) |
-| daldalol | dal + dal + ol | דַּלדַּלעוֹל | doppelte Schwäche des Joches | — | R2 | ★★ (Kand.) |
 | dalor | dal + or | דַּלאוֹר | schwaches Augenlicht | f2r P.11 (H/F 2/3, Erstbeleg), f58r (P.8, P.11) | R2, R43 | ★★★ |
-| dalory | dal + or + -y | דַּלאוֹריְ | Schwäche zum Licht | f23r P.11 (H/C/F 3/3, Erstbeleg) | R2 | ★★ (Kand.) |
 | daly | dal + -y | דַּלִּי | seine/meine Schwäche | f9v P.8 (H/C/F/U 4/4, Erstbeleg), f34r P.14 (H/C/F 3/3), f58r P.29 (H/F 2/2), f66r, f85v2 | R43 | ★★★★ |
-| daly·dal | dal + -y · dal | דַּלִּידַּל | seine Schwäche | — | — | ★★★★ (Kand.) |
 | doiir | dol + y + or | דֹּיִר | sehr schwache Erweckung | f10r P.4 (H/F 2/3, Erstbeleg), f24v P.14 (H/F/U 3/4), f32r P.15 (H/C/F 3/3) | R2, R43 | ★★★ |
 | dolar | dol + l- + or | דָּוֶהלְאוֹר | Krankheit zur Heilung | f8v P.3 (H/C/F/U 4/4, Erstbeleg), f66r R.19 (H/C 2/3) | R2, R41, R43 | ★★★ |
-| doldaiin | dol + daiin | דּוֹלדִּין | Krankheits-Urteil | f18r P.7 (H/F 2/3, Erstbeleg) | R2 | ★★★ (Kand.) |
-| doldy | dol + -dy | דּוֹלדִּי | von der Krankheit davon | f18r P.7 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (Kand.) |
-| dol·shol | dol + shol | דָּוֶהשׁוֹל | Schmerz-Scheol (Warnsignal bei Überdosierung) | — | R2 | ★★★ (Kand.) |
-| cholar | kol + -lo + or | כֹּלוֹר | alles sein Licht | — | R2 | ★★★ (Kand.) |
-| chol·chol | kol + kol | כֹּלכֹּל | alles-alles | — | R2 | ★★★ (Kand.) |
-| chololy | kol + ol + -y | כֹּלעַליְ | alles über ihm / vollständig darüber | f3r P.5 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (Kand.) |
-| chotshol | kol + t- + sheol | כֹּתּשְׁאוֹל | alles-du-wirst-Scheol (morphologisch fragwürdig) | f21v P.6 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★ (Kand.) |
 | oraiin | or + aiin | אוֹרעַיִן | Licht des Auges / Augenheilung | f9r T.10 (H/C/F 3/3, Erstbeleg), f24v P.5 (H/C/F/U 4/4), f26v P.4 (H/C/F/U 4/4), f31v, f85v2, f99r, f103r, f103v | R2, R43 | ★★★★★ |
-| oraiino | or + aiin + -o | אוֹרעַיִןוֹ | Licht seines Auges | — | R2 | ★★★★ (Kand.) |
 | orair | or + aiin + ar | אוֹרעַיִןאַר | Licht-Auge-Licht (Ringstruktur) | f34v P.5 (H/C/F 3/4, Erstbeleg), f115v P.13 (H/F 2/2) | R2, R43 | ★★★★ |
-| orchaiin | or + k- + aiin | אֹרכְּעַיִין | Licht-wie-Auge | f25v P.7 (H/C 2/3, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
 | oro | or + -o | אֹראֹ | Licht-Palindrom / maximale Heilungs-Affirmation | f24v P.5 (H/C/F/U 4/4, Erstbeleg), f99r L1.5 (H/V 2/3) | R2, R43 | ★★★ |
-| ory | or + -y | אוֹריְ | sein Licht / er erleuchtet | — | R2 | ★★★ (Kand.) |
 | otaiin | ot + aiin | אוֹת+עַיִן | Zeichen des Auges | f4v P.10 (H/C/F/U 4/4, Erstbeleg), f6r P.9 (H/C/F 3/3), f7r P.5 (H/C/F 3/3), f8v, f9r, f9v, f15r, f17v, f20r, f21r, f22v, f28r, f58r, f71v, f72r1, f103r, f114v | R2, R43 | ★★★★ |
 | otaiir | ot + aiin + ir | אֹתעַיִר | Zeichen des Augenlichts | f24v P.2 (H/C/F/U 4/4, Erstbeleg), f25r T.7 (H/C/F 3/3) | R2, R43 | ★★★★★ |
 | otain | ot + ain | אוֹתאַיִן | Zeichen des Nichts / Endes | f5r P.4 (H/C/F 3/3, Erstbeleg), f72r1 S1.8 (H/K/V 3/3) | R2, R43 | ★★★ |
-| otaiphy | ot + a + y + p- + hey | אֹתאַיְפֶּהֵי | Hapax: Zeichen-Blässe-Mund (Einzelbeleg) | — | R2, R41 | ★★ (Kand.) |
 | otal | ot + al | אוֹתעַל | Zeichen über [etwas] | f3r P.6 (H/F 2/3, Erstbeleg), f13v P.9 (H/C 2/3), f24r P.6 (H/C/F 3/3), f26r, f27r, f33v, f57v, f58r, f71v, f72r2, f103r, f103v, f114v, f115v | R2, R43 | ★★★★ |
-| otalef | ot + alef | אוֹתאָלֶף | Zeichen des Aleph / Zeichen des Ochsen | f72r1 S1.9 (H/K/V 3/3, Erstbeleg) | R2 | ★★★ (Kand.) |
 | otam | ot + tam | אוֹתתָּם / אוֹתאָם | Zeichen der Vollständigkeit / der Mutter (register-abhängig) | f6v P.11 (H/F/U 3/5, Erstbeleg), f19v P.10 (H/C/F/U 4/4), f24r P.17 (H/C/F 3/3), f33v, f34v, f66r, f72r2, f103r, f103v, f114v | R2, R43 | ★★★★ |
 | otchal | ot + chal | אוֹת+חַל | Zeichen des Geltens / Befund-Zeichen | f2r P.1 (H/C/F 3/3, Erstbeleg), f3v P.5 (H/C/D/F/U 5/5) | R2, R43 | ★★★ |
 | otcham | ot + cham | אוֹת+חַם | Zeichen der Entzündung (Parallelform zu otchom; cham vs. chom) | f3v P.7 (H/C/D/F/U 5/5, Erstbeleg), f6r (P.1, P.4) | R2, R43 | ★★★ |
@@ -512,64 +344,244 @@ Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgele
 | otcho | ot + cho | אוֹתכֹּ | das Zeichen des [Atems] (Kolophon-Kurzform) | f1v P.9 (H/C/F 3/3, Erstbeleg), f14r P.7 (H/C/F 3/3), f15r P.13 (H/C/F/U 4/4) | R2, R43 | ★★★ |
 | otchody | ot + k- + dy | אוֹתכֹּדִּי | das ganze Zeichen davon | f3r P.9 (H/C/F 3/3, Erstbeleg), f71v S1.4 (H/C/K/V 4/4) | R2, R41, R43 | ★★★ |
 | otchol | ot + kol | אוֹתכֹּל | Zeichen von allem / Universalzeichen | f3r P.7 (H/C/F 3/3, Erstbeleg), f4r P.3 (H/C/F 3/3), f5v P.5 (H/C/F/U 4/4), f7r, f9r, f13r, f13v, f17r, f24v, f32r | R2, R43 | ★★★★ |
-| otchom | ot + chom | אוֹת+חֹם | Zeichen der Wärme | f3r P.15 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (Kand.) |
 | otchor | ot + chor | אוֹתחֹר | das Zeichen der Pupille | f2v P.6 (H/C/F/U 4/4, Erstbeleg), f3r P.19 (H/F 2/3), f5v P.3 (H/C/F/U 4/4), f13r, f15r, f15v, f16v, f28r, f99r | R2, R19, R43 | ★★★★ |
 | otchy | ot + k- + chy | אוֹתכְּהִי | das Zeichen der Blässe | f2v P.3 (H/C/F/U 4/4, Erstbeleg), f9v P.6 (H/C/F/U 4/4), f10r P.3 (H/C/F 3/3), f13v, f18v, f19r, f19v, f20r, f85v2 | R2, R41, R43 | ★★★★ |
 | oteol | ot + eol | אוֹתאֵעֹל | Zeichen des Handelns (vgl. yteol) | f1r P3.12 (H/C/F/N/U 5/5, Erstbeleg), f3r P.16 (H/C/F 3/3), f17v P.15 (H/C/F 3/3), f103r | R2, R43 | ★★★ |
-| otly | ot + l- | אוֹתלֵ | Zeichen zu/für | f16r P1.2 (H/C 2/3, Erstbeleg) | R2 | ★★★ (Kand.) |
-| otolam | ot + ol- + am | אוֹתעַלאָם | Zeichen über alle / Zeichen der Ewigkeit | f72r2 S1.16 (H/K 2/3, Erstbeleg) | R2, R41 | ★★★★ (Kand.) |
 | otor | ot + or | אוֹתאוֹר | Zeichen des Lichts / der Heilung | f4v P.8 (H/C/F/U 4/4, Erstbeleg), f10r P.10 (H/C/F 3/3), f16v P.12 (H/C/F 3/3), f17v, f23v, f25r, f28r, f71v | R2, R43 | ★★★★ |
-| otosy | ot + o- + s + -y | אֹתאֹשׂיְ | Zeichen-Scheol-gleich-er | f25r T.7 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★ (Kand.) |
 | otshol | ot + shol | אוֹתשׁוֹל | das Zeichen des Todes | f7v P.1 (H/C/F/U 4/4, Erstbeleg), f18r P.2 (H/C/F 3/3) | R2, R43 | ★★★★★ |
-| otshor | ot + shor | אוֹתשׁאוֹר | das Zeichen des Lichts | f23v P.6 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★★ (Kand.) |
-| otytchy | ot + y- + t- + k- + chy | אוֹתיְתְּכְּהִי | das Zeichen er-wird-Blässe-zeigen | — | R2, R41 | ★★★ (Kand.) |
-| pchodol | pcho + dol | פְּחֹדֹּל | Atemweg der Krankheit / Mundschmerz | f17v P.1 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (Kand.) |
 | pchy | pcho + -y | פְּחִי | mein Atem / mein Mund (FLOS/FRUCTUS) | f8v P.10 (H/C/F/U 4/4, Erstbeleg), f27r P.7 (H/F/U 3/4) | R43 | ★★★★ |
-| pocheody | pcho + -dy | פְּחֹדִּי | des Atemwegs | f16r P1.1 (H/F 2/3, Erstbeleg) | R2 | ★★★ (Kand.) |
 | saiin | sar + aiin | שַׂעַיִן | Augenarzt | f2r P.12 (H/C/F 3/3, Erstbeleg), f8v P.1 (H/C/F/U 4/4), f16r P2.9 (H/C/F 3/3), f16v, f21r, f22v, f26r, f31r, f31v, f34r, f57v, f66r, f77r, f103r, f103v, f115r, f115v | R8, R43 | ★★★★ |
-| saraiir | sar + ir | שַׂראִיר | Arzt des Leuchtenden | — | — |  (Kand.) |
-| sary | sar + -y | שַׂרִי | mein Arzt / Apotheker (Possessiv) | f9r P.1 (H/C 2/3, Erstbeleg) | — | ★★★★★ (Kand.) |
-| sheeolody | sheol + o- + -dy | שְׁאוֹלעֹדִּי | von jenem Scheol | — | R2, R41 | ★★★ (Kand.) |
-| sheodaiin | sheol + daiin | שְׁאוֹדִּין | Todesurteil (Vollform) | f66r R.7 (H/F 2/3, Erstbeleg) | R2 | ★★★★★ (Kand.) |
-| sheoldam | sheol + dam | שְׁאוֹלדָּם | tödlicher Blutverlust | f3r P.9 (H/F 2/3, Erstbeleg) | R2 | ★★★★★ (Kand.) |
-| sheoltey | sheol + ta + -y | שְׁאוֹלטַיְ | Scheol des Tau-Zeichens | — | R2 | ★★★ (Kand.) |
-| shoaiin | sheol + aiin | שְׁאוֹלעַיִן | Scheol des Auges (Todesurteil für das Sehorgan) | — | R2, R40 | ★★ (Kand.) |
-| olsho | sho + -lo | שׁוֹלוֹ | sein Scheol | — | R2 | ★★★ (Kand.) |
-| shockho | sho + k- + ho | שׁוֹ+כְּ+הוֹ | Scheol wie er / wie das Scheol davon | f3v P.11 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | shocthy | sho + k- + t- + -y | שׁוֹכְּתיְ | vollständiges Scheol | f20v P.7 (H/C/F/U 4/4, Erstbeleg), f25r P.4 (H/C/F 3/3), f29r P.6 (H/C/F/U 4/4) | R2, R41, R43 | ★★★ |
 | shoiin | sho + aiin | שׁוֹעַיִן | Scheol des Auges | f20r P.12 (H/C/F 3/3, Erstbeleg), f28v P1.5 (H/C/F/U 4/4) | R2, R43 | ★★★★ |
-| shoin | sho + aiin | שׁוֹיִן | Scheol des Auges | — | R2 | ★★ (Kand.) |
-| shokal | sho + kol | שׁוֹכָּל | Scheol von allem | f58r P.35 (H/F 2/2, Erstbeleg) | R2 | ★★★ (Kand.) |
 | shokchy | sho + k- + ky | שׁוֹכְּכֵּי | Scheol-Blässe / Blässe des Todes | f8r P1.3 (H/C/F 3/3, Erstbeleg), f29r P.7 (H/C/F 3/4), f115v P.31 (H/F 2/2) | R2, R41, R43 | ★★★ |
-| sholo | sho + -lo | שְׁאוֹלוֹ | Scheol für ihn | — | R2 | ★★★ (Kand.) |
 | shosaiin | sho + saiin | שׁוֹשַׂעַיִן | Scheol des Augenarztes (diagnostisches Maximalsignal) | f20r P.5 (H/F 2/3, Erstbeleg), f30v P.1 (H/C/F 3/3) | R2, R43 | ★★★★ |
-| shot | sho + t- | שׁוֹתְּ | vollständiges Scheol | — | R2 | ★★★ (Kand.) |
-| shotoly | sho + t- + ol + -y | שׁוֹתּעוֹליְ | Scheol-Last hin | f22v P.13 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
 | shoty | sho + t- + -y | שׁוֹתְּיְ | vollständiges Scheol von ihm | f15r P.12 (H/C/F/U 4/4, Erstbeleg), f22v P.4 (H/C/F/U 4/4), f29v P.5 (H/C/F/U 4/4) | R2, R41, R43 | ★★★ |
-| sotchaiin | sho + ot + k- + aiin | שׁאוֹתכְּעַיִן | das Zeichen dem Auge gleich | f18r P.11 (H/C 2/3, Erstbeleg) | R2, R41 | ★★★ (Kand.) |
-| sholol | shol + ol- | שׁוֹלעַל | Scheol über [etwas] | — | R2 | ★★ (Kand.) |
-| sholor | shol + or | שׁוֹלאֹר | Scheol-Licht | f17v P.21 (H/C/F 3/3, Erstbeleg) | R2 | ★★ (Kand.) |
-| sholshdy | shol + sh + -dy | שׁוֹלשׁדִּי | von dem Scheol | — | R2 | ★★★ (Kand.) |
-| aiior | aiin + y + or | עַיִאוֹר | Auge des Lichts | — | R2 | ★★ (Kand.) |
 | chain | cha + aiin | חַעַיִן | lebendiges Auge / Auge des Lebens | f25r P.3 (H/C/F 3/3, Erstbeleg), f28v P2.8 (H/C/F/U 4/4), f29v P.5 (H/C/F/U 4/4), f30r, f103r | R43 | ★★★★ |
 | chal | chal | חָל | gilt für / betrifft | f3r P.4 (H/C/D/F 4/4, Erstbeleg), f8r P3.20 (H/C/F 3/3), f8v P.12 (H/C/F/U 4/4), f23r, f58r, f71v, f103r | R43 | ★★★★ |
 | chary | char + -y | חַרִי | sein Fieber | f8v P.4 (H/C/F/U 4/4, Erstbeleg), f58r P.6 (H/F 2/2), f103v P.44 (H/F 2/2) | R43 | ★★★ |
-| chodl | chodl (Part. von חדל) | חֹדֵל | der Aufhörende / der Sterbende (Aktiv-Partizip) | f11r P.5 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (Kand.) |
 | dain | dain (Part. QAL דין) | דָּן | Richter (Partizip QAL von דין) | f1r (T2.10–P3.20, ×4, Erstbeleg), f2r P.9 (H/C/F 3/3), f3v P.14 (H/C/F/U 4/4), f7r, f7v, f8r, f8v, f10r, f10v, f11r, f11v, f13v, f14r, f15r, f17v, f22r, f23r, f23v, f27r, f28v, f32r, f32v, f33v | R43 | ★★★★ |
-| damo | dam + -o | דָּמוֹ | sein Blut | f3r (P.7, P.8, Erstbeleg) | R2 | ★★★★ (Kand.) |
 | dan | dan | דָּן | er hat geurteilt (Qal Perfekt) / Richter | f2r (P.5, P.7, P.11, Erstbeleg), f11v P.1 (H/C/U 3/4), f16v P.5 (H/C/F 3/3) | R43 | ★★★ |
-| darchor | dar + chor | דַּרְכּוֹר | sein Krankheitsverlauf | f5v P.3 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★★ (Kand.) |
 | dary | dar + -y | דַּרִי | mein Leuchtendes / mein Licht | f9v P.9 (H/C/F/U 4/4, Erstbeleg), f66r (L.4, R.20), f77r P.24 (H/F/V 3/4), f114v, f115v | R43 | ★★★★ |
-| dydyd | dy + dy + dy | דִּידִּידִּי | dreifacher Relativpartikel (extremer Betonungsmodus) | f1r P3.17 (H/F/U 3/5, Erstbeleg) | R25 | ★★ (Kand.) |
-| keeees | keeees | ??? | Hapax (Schreiberfehler nicht ausgeschlossen) | f21v P.3 (H/C/F/U 4/4, Erstbeleg) | — | ★★ (Kand.) |
 | keey | keey | כֵּי | denn / weil | f1r P4.26 (H/F/U 3/5, Erstbeleg), f4v P.12 (H/C/F/U 4/4), f5r P.7 (H/F 2/3), f7r, f21r, f27r, f30r, f31r, f99r, f103v, f115r, f115v | R15, R19, R40, R43 | ★★★★ |
-| pysaiinor | pi + s- + aiin + or | פִּישׂעַיִןאוֹר | Mund gleich dem Auge des Lichts | — | R2, R41 | ★★ (Kand.) |
-| sam.chorly | sham + kor + li | שָׁםכֹּרלִי | so heile meine Pupille | — | R2 | ★★★ (Kand.) |
 | shodaiin | shod + daiin | שׁוֹדִּין | Todesurteil | f2r P.5 (H/C/F 3/3, Erstbeleg), f3r P.18 (H/C/F 3/3), f4v P.13 (H/C/F/U 4/4), f5r, f32r | R2, R30, R43 | ★★★★ |
-| shodain | shod + d- + aiin | שׁוֹדדַּעַיִן | Zerstörung des Auges (schärfste negative Augenprognose) | f1r P3.12 (H/C/F/N/U 5/5, Erstbeleg) | R2, R40, R41 | ★★ (Kand.) |
-| shorodo | shor + odo | שׁוֹרעוֹדוֹ | das Zeichen besteht fort | f13r P.5 (H/C 2/3, Erstbeleg) | R2 | ★★★ (Kand.) |
-| shydal | shy + dal | שֵׁידַּל | die Gabe der Schwäche | — | — | ★★★ (Kand.) |
-| torshor | tor + shor | תֹּרשׁוֹר | Jahreszeit-Zeichen / saisonaler Eintrag | f13r P.1 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (Kand.) |
+
+
+### D. Abgeleitete Lexikon-Einträge (R43 Kandidaten) (212)
+
+| EVA | Morph. | Hebräisch | Deutsch | Evidenz | Regeln | Konf. |
+| --- | --- | --- | --- | --- | --- | --- |
+| daid | d- + ai + d- | דַּאִידַּ | ? / תָּמִיד = dauerhaft (Semantik noch offen) | f24v P.7 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★ (R43 Kandidat) |
+| dainod | d- + aiin + od | דַּאִיןעֹד | er behandelt das Auge weiter | f16r T1.4 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| dairam | d- + ir + am | דְּאִיראָם | von dem Leuchtenden aller | — | R41 | ★★★ (R43 Kandidat) |
+| dairin | d- + ir + -in | דְּאִירִין | von dem Leuchtenden | f16v P.6 (H/C/F 3/3, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| dait | d- + ʿet | דַּעִת | von/aus der Zeit / im Moment (zeitliche Deiktik) | — | R41 | ★★ (R43 Kandidat) |
+| dchar | d- + kar | דְּכַּר | vom Widder / männlich (Zutaten-Term) | f28r P.2 (H/C/F 3/3, Erstbeleg) | R41, R45 | ★★★ (R43 Kandidat) |
+| dchm | d- + cham | דְּחָם | von der Entzündung | f13r P.1 (H/F 2/3, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| dchorol | d- + k- + or + ol- | דְּכְּאוֹרעֹלְ | von der Pupille hin | — | R2, R41 | ★★★ (R43 Kandidat) |
+| ddor | d- + dor | דְּדֹּר | von Generation/Zeitraum [intensiv] | — | R2, R41 | ★★★ (R43 Kandidat) |
+| deaiin | d- + aiin | דְּעַיִן | vom Auge | f28r P.9 (H/C/F 3/3, Erstbeleg) | R41 | ★★★★ (R43 Kandidat) |
+| dsheor | d- + she- + or | דְּשֶׁאוֹר | von dem, was Licht ist | — | R2, R41 | ★★★ (R43 Kandidat) |
+| dsholdy | d- + shol + -dy | דְּשׁוֹלדִּי | von Scheol (dessen/Genitiv) | f9r P.5 (H/C 2/3, Erstbeleg) | R2, R41 | ★★★★★ (R43 Kandidat) |
+| doky | do- + ky | דּוֹכִּי | sein denn / weil | f18v P.9 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| eedy | e- + -dy | אֵדִּי | kein Licht von | f26r P.5 (H/C/F 3/3, Erstbeleg) | R19, R41 | ★★★ (R43 Kandidat) |
+| eeor | e- + or | אֵאוֹר | kein Licht | f24r P.4 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| chakod | k- + akod | כְּעַכֹּד | wie zusammen / versammelt | f28r P.2 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| cheaiin | k- + e + aiin | כְּ+אֵ+עַיִן | wie das Licht des Auges | f2v P.7 (H/C/D/F/U 5/5, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| cheekdam | k- + e- + k- + dam | כְּאֵכְּדָּם | wie das Zeichen des Blutes | — | R41 | ★★★★ (R43 Kandidat) |
+| cheesees | k- + e- + s- + e- + sh | כְּאֵשׂאֵשׁ | Dreifach-Licht-Zeichen | f25r P.3 (H/C/F 3/3, Erstbeleg) | R41 | ★★ (R43 Kandidat) |
+| cheeykam | cheey + k- + am | חֵיי+כְּ+עַם | wie das Leben des Volkes | f3v P.3 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| chekhol | k- + k- + chol | כְּכָּחֹל | wie das Augenpigment | — | R2, R41 | ★★★ (R43 Kandidat) |
+| chodair | k- + od + ir | כֹּ+עוֹד+אִיר | wie weiteres Leuchten / wie noch Licht | f3v P.12 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| chodaly | k- + od + al + -y | כֹּ+עוֹד+עַל+יְ | wie noch darüber / wie weiter heilend | f3v P.6 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| chokeos | k- + okeos | כֹּכֵּאוֹס | wie ein Kelch (Botanik) | f2v P.7 (H/C/F/U 4/5, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| chokshor | k- + chok + shor | כְּחֹקשׁוֹר | wie die Vorschrift des Zeichens | f14v P.8 (H/C/U 3/4, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| cholam | k- + olom | כֹּעוֹלָם | wie die Welt / wie Ewigkeit | — | R2, R41 | ★★★★ (R43 Kandidat) |
+| cholo | k- + olo | כֹּ+לוֹ | wie für ihn / wie sein Kelch | f2v P.4 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| choraiin | k- + ar + aiin | כֹּאַרעַיִן | Heilung des Auges / wie das Licht des Auges | f4r P.2 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| chseeor | k- + shee + or | כְּשֵׁאוֹר | wie die Gabe des Lichts | — | R2, R41 | ★★★ (R43 Kandidat) |
+| chykar | k- + hey + kar | כְּהֵיכַּר | Blässe-Kraft (Zutaten-Variante?) | f29v P.10 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★ (R43 Kandidat) |
+| ckhal | k- + hal | כְּהַל | Nachlassen des Fiebers | f6v P.17 (H/C/D 3/5, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| ckhear | k- + k- + or | כְּכְּאֵר | wie das Licht | f25v P.4 (H/C/F 3/3, Erstbeleg) | R41 | ★★★★ (R43 Kandidat) |
+| cphal | k- + palal | כְּפָּלַל | wie Gebet / Urteil | — | R41 | ★★ (R43 Kandidat) |
+| cphar | k- + par | כְּפַּר | Sühne / Bedeckung | f11v P.1 (H/C/U 3/4, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| cphary | k- + par + -y | כְּפַּריְ | wie sein Sühnopfer / wie seine Expiation | f27r P.5 (H/C/F 3/4, Erstbeleg) | R41 | ★★ (R43 Kandidat) |
+| cphoaiin | k- + pho + aiin | כְּפְּעַיִן | wie der Atemweg des Auges | f30v P.8 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| ctheen | k- + ten | כְּתֵּן | wie Gewähren / Geben | — | R41 | ★★ (R43 Kandidat) |
+| ctheor | k- + ten + or | כְּתֶּאוֹר | wie Licht-Gewähren / wie Erleuchtung | f22r P.9 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| cthodoaly | k- + t- + ody + al + -y | כְּ+תְּ+עוֹד+עַל+יְ | wie noch weiter darüber (Intensivform zu chodaly) | f3v P.9 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| cthorchy | k- + t- + or + k- + chy | כְּתְּאוֹרכְּהִי | vollständige Heilung der Blässe | f30r P.7 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| kcham | k- + cham | כְּ+חַם | wie Wärme/Entzündung (Var. zu kchom mit cham statt chom) | f3v P.12 (H/C/F/U 4/4, Erstbeleg) | R40, R41 | ★★★ (R43 Kandidat) |
+| kchom | k- + chom | כְּחֹם | wie Hitze / wie Fieber | f3v P.8 (H/C/F/U 4/4, Erstbeleg) | R2, R31, R40, R41 | ★★★ (R43 Kandidat) |
+| kchorl | k- + chor + l- | כְּחֹרלְ | wie die Pupille hin | — | R2, R41 | ★★ (R43 Kandidat) |
+| keeod | k- + od | כֵּעוֹד | denn noch / immer noch | — | R2, R41 | ★★★ (R43 Kandidat) |
+| koaiin | k- + oaiin | כְּ+עַיִן | wie das Auge (Var. zu kaiin/koiin) | f3v P.1 (H/C/D/F/U 5/5, Erstbeleg) | R2, R8, R41 | ★★★ (R43 Kandidat) |
+| koiin | k- + aiin | כֹּעַיִן | wie das Auge | f16r P1.3 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| koshet | k- + she + t- | כֹּשֵׁתְּ | Scheol-Vollständigkeit (temporaler Abschlussterm) | f16v P.3 (H/F 2/3, Erstbeleg) | R2, R41 | ★★ (R43 Kandidat) |
+| ksor | k- + shar | כֵּשָׁר | denn/wie passend/gesund | — | R2, R41 | ★★★ (R43 Kandidat) |
+| lshaiir | l- + s- + aiin + ir | לְשׂעַיִןאִיר | für Augenlicht-Glanz | f34v P.5 (H/C/F 3/4, Erstbeleg) | R41 | ★★★★ (R43 Kandidat) |
+| lshol | l- + shol | לְשׁוֹל | zum Tod / zu Scheol | — | R2, R41 | ★★★★★ (R43 Kandidat) |
+| lshy | l- + shy | לְ+שֵׁי | für die Gabe / für sein Wesen | f2v P.3 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| oaorar | o- + o- + or + or | עַאַאוֹראָר | auf das Licht der Heilung | f16v P.13 (H/F 2/3, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| octhor | o- + k- + t- + or | עַכְּתֹּר | auf vollständige Heilung | — | R2, R41 | ★★★★ (R43 Kandidat) |
+| octhos | o- + k- + t- + sh | עַכְּתֹשׁ | auf wie Feuer / Fieber | f13v P.1 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| odaiim | o- + daiin + -im | עַדִּינִים | auf den (kollektiven) Urteilen | f24v P.16 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| odaldy | o- + dal + -dy | עַדַּלדִּי | über die Schwäche dessen | f17v P.1 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| odol | o- + dol | עַדָּוֶה | auf die Krankheit | f9v P.6 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| oeeen | o- + een | עַאֵין | auf das Fehlen / Nichts (emphatische Null) | f14r P.12 (H/F 2/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| oekor | o- + e- + qor | עַאֵקֹר | auf die Kälte / das Uprooting (direktional) | f17v P.6 (H/F 2/3, Erstbeleg) | R2, R41 | ★★ (R43 Kandidat) |
+| oir | o- + or | עַאוֹר | auf das Licht / Direktional-Heilung | f14r P.6 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| okchain | o- + k- + chaiin | עַכְּחַיִּין | hin zu Leben / auf Leben hin | f22v P.13 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| okchan | o- + k- + chan | עַכְּחָן | auf / für die Gnade (positive Prognose-Direktional) | f32v P.6 (H/C/F 3/4, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| okchod | o- + k- + chod | עַכְּחֹד | auf die Schärfe / Akutheit (therapeut. Direktional) | f57v R3.1 (V/U 2/3, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| okeodaly | o- + k- + ol + dal | עַכֵּעֹדַּל | auf dem Weg des Schwachen | — | R2, R41 | ★★★ (R43 Kandidat) |
+| okorory | o- + k- + or + or + -y | עַכְּאוֹראוֹרִי | auf das Licht / mein Licht (Possessiv) | f13r P.10 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| okytaiin | o- + k- + t- + aiin | עַכְּתָּעַיִן | auf die Weise, dass er das Auge heilt | f16v P.11 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| opchor | o- + p- + chor | עַפְּחֹר | auf die Pupille (Atemweg-Befund) | f13r P.1 (H/C 2/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| opsheolaiin | o- + p- + sheol + aiin | עַפֶּשְׁאוֹלעַיִן | am Nadir-Punkt des Sternauges | f58r P.26 (H/F 2/2, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| oscheor | o- + she- + or | עַשֶׁאוֹר | auf dem, was Licht ist | f19r P.3 (H/F 2/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| otoaiin | o- + oto- + aiin | עַתוֹעַיִן | auf seine Augen (Possessiv) | f1v P.5 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| okoldm | ol- + kol + dam | עַלכֹּלדָּם | über alles Blut | — | R2, R41 | ★★★★ (R43 Kandidat) |
+| olchdaiin | ol- + chy + daiin | עַלכְּהֵדִּין | über Blässe-Urteil | — | R2, R41, R61 | ★★★★ (R43 Kandidat) |
+| oldckhy | ol- + d- + k- + chy | עַלדְּכְּהִי | über die Blässe davon | — | R2, R41 | ★★★ (R43 Kandidat) |
+| olsar | ol- + sar | עַלשַׂר | über den Arzt / ärztliche Aufsicht | f23v P.6 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★ (R43 Kandidat) |
+| olsheol | ol- + sheol | עַלשְׁאוֹל | über Scheol | f31r P.11 (H/C/F 3/3, Erstbeleg) | R2, R41, R61 | ★★★ (R43 Kandidat) |
+| olsheor | ol- + sho + or | עַלשׁאוֹר | über Scheol-Licht | f31r P.13 (H/C/F 3/3, Erstbeleg) | R2, R41, R61 | ★★★ (R43 Kandidat) |
+| olshly | ol- + sh- + l- + -y | עַלשׁלְיְ | auf Scheol hin (direktionale Scheol-Form) | f22v P.14 (H/C/F 3/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| olteedam | ol- + tee + dam | עַלתֵּדָּם | über das Blut der Zeit | f31v P.7 (H/F 2/3, Erstbeleg) | R2, R41, R61 | ★★★★ (R43 Kandidat) |
+| olytol | ol- + ytol | עַל+יְ+תֹּלֹל | über dem er geschwächt wird | f3v P.2 (H/C/D/F/U 5/5, Erstbeleg) | R2, R41, R61 | ★★★ (R43 Kandidat) |
+| fochof | p- + k- + p- | פֹכֹפְ | Mund/Kehle-alles / Kehlenbereich | — | R2, R41 | ★★★ (R43 Kandidat) |
+| fshody | p- + sho + -dy | פְּשׁוֹדִּי | von Scheol | — | R2, R41 | ★★★ (R43 Kandidat) |
+| pchedal | p- + k- + dal | פְּכֶּדַּל | bei dem Schwachen | — | R41 | ★★★ (R43 Kandidat) |
+| pcheol | p- + k- + ol | פְּכֶּעֹל | bei der Last | f3r P.11 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| pchodar | p- + k- + dar | פְּכֹּדַּר | wie Finsternis / Dunkelheit | f115r P.29 (H/F 2/2, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| pchraiin | p- + r- + aiin | פְּרְעַיִן | für/bei das Licht des Auges | — | R41 | ★★★ (R43 Kandidat) |
+| pochaiin | p- + k- + aiin | פֹּכְּעַיִן | beim/am Auge | f19v P.1 (H/C/U 3/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| poraiin | p- + or + aiin | פְּאוֹרעַיִן | Licht des Auges | — | R2, R41 | ★★★ (R43 Kandidat) |
+| qocheor | qo- + cheor | וְכְּאוֹר | und wie Licht (= qokcheor Kurzf.?) | f3r P.3 (H/F 2/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| qoeees | qo- + o- + esh | וְעַאֵשׁ | und auf dem Feuer / Fieber | f18v P.2 (H/C/U 3/4, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| qokay | qo- + k- + chey | וְכְּחַי | und wie lebendig | f18v P.4 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| qokcheor | qo- + k- + k- + or | וְכְּכְּאֵוֹר | und wie das Licht | — | R2, R41 | ★★★ (R43 Kandidat) |
+| qokedam | qo- + k- + dam | וְכְּדָּם | und wie das Blut | f57r P.8 (H/C 2/3, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| qokeees | qo- + k- + esh | וְכְּעֵשׁ | und wie Feuer / Fieber | f18v P.6 (H/C/U 3/4, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| qokoral | qo- + k- + or + ol- | וְכְּאֹרעַלְ | und wie Licht-auf | — | R2, R41 | ★★ (R43 Kandidat) |
+| qokorar | qo- + kol + or + ar | וְכֹּאוֹראָר | und alles Licht der Heilung | f19r P.4 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| qokshol | qo- + k- + shol | וְ+כְּ+שׁוֹל | und wie Scheol/Tod | f3v P.10 (H/C/D/F/U 5/5, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| qoldar | qo- + ol- + d- + ar | וְעַלדְּאַר | und über den Leuchtenden | f34v P.4 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| qopchaiin | qo- + p- + k- + aiin | וְפְּכְּעַיִן | und Atemweg des Auges | f17v P.17 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| qoschodam | qo- + schol + dam | וְשׁכֹּדָּם | und Universalheilmittel des Blutes | f3r P.12 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| qoteedar | qo- + t- + dar | וְתֵּדַּר | und er/du wirst leuchten | f26r P.8 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★ (R43 Kandidat) |
+| schol | s- + kol | שׂכֹּל | Arznei für alles / Universalheilmittel | f8r T3.21 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| soin | s- + a- + aiin | שׂעַיִן | Feuer des Auges / Augenentzündung | — | R2, R41 | ★★★ (R43 Kandidat) |
+| sokar | s- + o- + k- + ar | שׂאוֹכְּאָר | Heilungs-Arzt des Lichts | f16v P.13 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| sheam | she- + am | שֶׁ+עַם | welche das Volk / Gabe der Mutter | f3v P.14 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| taiir | t- + ir | תָּאִיר | es wird leuchten / heilen | — | R41 | ★★★★ (R43 Kandidat) |
+| told | t- + yld | תּוֹלֵד | es erzeugt / bringt hervor | f18v P.1 (H/C/U 3/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| toror | t- + or + or | תְּאוֹראוֹר | sie heilt | f16r P2.10 (H/C 2/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| tshaiin | t- + sh + aiin | תּשׁעַיִן | du wirst das Auge [behandeln] | f21r P.9 (H/C 2/3, Erstbeleg) | R41 | ★★ (R43 Kandidat) |
+| tshdar | t- + sh- + d- + ar | תְּשׁדָּאַר | Jahreszeit-Zeichen (Sprache-B-Variante von torshor) | f33r P.1 (H/C/F 3/3, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| tsheoarom | t- + she- + or + om | תְּשְׁאוֹרוֹם | du wirst von Scheol aufsteigen | f3r P.15 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| tshoiin | t- + sho + aiin | תְּשׁוֹעַיִן | [sie] wendet das Auge von Scheol | — | R2, R41 | ★★★★ (R43 Kandidat) |
+| tshokeody | t- + sho + k- + chy | תְּשׁכֵּהִי | Tav-Scheol-Blässe | — | R2, R41 | ★★★ (R43 Kandidat) |
+| ychair | y- + char + ir | יְחַאִיר | er wird durch Wärme leuchten | f18r P.12 (H/C/F 3/3, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| ycheol | y- + k- + eol | יְכְּאֵוֹל | er wird wie Scheol-Licht sein (ambivalent) | f24v P.7 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★ (R43 Kandidat) |
+| ychody | y- + k- + dy | יְכֹּדִּי | er wird urteilen (Variante von ytchody) | f30r P.2 (H/F 2/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| ychoees | y- + kol + esh | יְכֹּעֵשׁ | er löscht das Feuer / heilt das Fieber | — | R2, R41 | ★★★ (R43 Kandidat) |
+| ychom | y- + chom | יְחוֹם | er wird genesen / er wird warm | f29r P.9 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| ychtaiin | y- + k- + t- + aiin | יְכְּתָּעַיִן | er heilt das Auge vollständig | f3r P.6 (H/F 2/3, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| ydain | y- + d- + aiin | יְדַיִן | er wird das Auge behandeln | f16r P2.8 (H/C/F 3/3, Erstbeleg) | R3, R41 | ★★ (R43 Kandidat) |
+| ydals | y- + dal + sh- | יְדַּלְשׁ | er wird Schwäche läutern | f24v P.2 (H/F/U 3/4, Erstbeleg) | R41 | ★★ (R43 Kandidat) |
+| ydl | y- + dal | יִדַּל | er wird schwach werden (Qal von דלל) | f18v P.4 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| yees | y- + esh | יְאֵשׁ | er löscht das Feuer / Fieber | f19v P.12 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| yfodain | y- + padah + aiin | יְפָּדָהיִן | er wird das Auge erlösen / befreien | — | R2, R41 | ★★★★ (R43 Kandidat) |
+| ykair | y- + k- + ir | יְכְּאִיר | er heilt leuchtend | f16r P1.3 (H/C/F 3/3, Erstbeleg) | R41 | ★★ (R43 Kandidat) |
+| ykam | y- + qam | יְקָם | er wird aufstehen / sich erheben (Qal קום) | f18v P.8 (H/C/F/U 4/4, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| ykchaiin | y- + k- + chaiin | יְכְּחַיִּין | er wird wie Leben werden | f10r P.7 (H/C/F 3/3, Erstbeleg) | R41 | ★★★★ (R43 Kandidat) |
+| ykcheor | y- + k- + k- + or | יְכְּכְּאוֹר | er wird sein wie Licht (dreifach intensiv) | f22v P.5 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| ykcholy | y- + k- + chol + -y | יְכְּכֹּלְיְ | er heilt alles | — | R2, R41 | ★★★★ (R43 Kandidat) |
+| ykchor | y- + k- + chor | יְכְּחֹר | er heilt die Pupille | f19r (P.10, P.12, Erstbeleg) | R2, R41 | ★★★★★ (R43 Kandidat) |
+| ykeechy | y- + k- + e- + k- + chy | יְכְּאֵכְּהֵי | er heilt wie Blässe-Licht | — | R41 | ★★ (R43 Kandidat) |
+| ykoaiin | y- + k- + oaiin | יְ+כּוֹ+עַיִן | er heilt wie das Auge | f3v P.1 (H/C/D/F/U 5/5, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| ykoiin | y- + k- + aiin | יְכוֹיִן | er wird sich erholen | f5v P.4 (H/F/U 3/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| yoar | y- + o- + or | יְאַאָר | er wird zum Licht hin [heilen] | — | R2, R41 | ★★ (R43 Kandidat) |
+| yodaiin | y- + o- + daiin | יוֹדִּין | er weiß das Urteil | f6v P.13 (H/C/D/F/U 5/5, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| ypchor | y- + p- + chor | יְפְּחֹר | er heilt die Pupille [durch Atem] | — | R2, R41 | ★★★ (R43 Kandidat) |
+| yshdal | y- + sh- + dal | יְשַׁדַּל | er wird schwächen | — | R41 | ★★★ (R43 Kandidat) |
+| ysheol | y- + sheol | יְשׁאֹל | er wird [aus] Scheol [aufsteigen] | f21r P.12 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★ (R43 Kandidat) |
+| ysheor | y- + she- + or | יְשֶׁאוֹר | er/sie wird sein, welches Licht ist | f3r P.8 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| ysho | y- + sho | יְשׁוֹ | es führt zum Tod | — | R2, R41 | ★★★★ (R43 Kandidat) |
+| ytalar | y- + tal + or | יְתַּאֹר | er wird [Licht] geben / erleuchten | f58r P.5 (H/F 2/2, Erstbeleg) | R41 | ★★★ (R43 Kandidat) |
+| ytchar | y- + t- + char | יְתְּחַר | er/sie wird Fieber zeigen | — | R41 | ★★★ (R43 Kandidat) |
+| ytcheear | y- + t- + k- + e + ar | יְ+תְּ+כְּ+אֵ+אָר | er wird sein wie Heilung durch Licht (R28) | f3v P.9 (H/C/F 3/4, Erstbeleg) | R28, R41 | ★★★ (R43 Kandidat) |
+| ytchm | y- + t- + cham | יְתְּחֵם | er/sie wird Wärme bringen | — | R41 | ★★★ (R43 Kandidat) |
+| ytchody | y- + t- + k- + dy | יְתְּכֹּדִּי | er wird urteilen (Doppelpräfix) | f8r P2.11 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| ytchol | y- + t- + kol | יְתכֹּל | er wird alles vollenden | f28r P.9 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| yteam | y- + t- + eam | יְ+תְּ+אָם | er wird das Volk behandeln (R28) | f3v P.14 (H/F/U 3/4, Erstbeleg) | R28, R41 | ★★★ (R43 Kandidat) |
+| yteechy | y- + chy | יִחְיֶה | er wird gesund | — | R41 | ★★★ (R43 Kandidat) |
+| ytom | y- + tom | יְתָּם | er wird vollständig / komplett (Var. ytam) | — | R2, R41 | ★★ (R43 Kandidat) |
+| ytsho | y- + t- + sho | יְתְּשׁ | er wird Scheol zeigen (R28-Typ) | f32r P.4 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| chokcheey | chok + cheey | חֹקחֵיי | Lebensvorschrift | f30v P.11 (H/C/F 3/3, Erstbeleg) | R2 | ★★★★ (R43 Kandidat) |
+| chokeor | chok + e- + or | חֹקאֵאוֹר | Vorschrift des Lichts | f30v P.3 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| daiidal | daiin + dal | דִּינדַּל | Urteil der Schwäche | f23r P.6 (H/C 2/3, Erstbeleg) | — | ★★★ (R43 Kandidat) |
+| daiidy | daii + -dy | דַּיִּדִּי | dessen Urteil (Kurzform ohne Nun; EVA-distinct von daiindy) | f3v P.2 (H/C/F/U 4/5, Erstbeleg) | — | ★★★ (R43 Kandidat) |
+| daiim | daiin + -m | דִּינם | Urteile (Plural) | f3v P.10 (H/C/D/F/U 5/5, Erstbeleg) | — | ★★★ (R43 Kandidat) |
+| daiindy | daiin + -dy | דִּינדִּי | das Urteil dessen | — | — | ★★★★★ (R43 Kandidat) |
+| daiinol | daiin + ol- | דִּינעַל | Urteil über [etwas] | f19r P.12 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| daiity | daiin + t- | דִּינתּ | Urteils-tav / juristische Abschlussform | f25v P.3 (H/C 2/3, Erstbeleg) | — | ★★ (R43 Kandidat) |
+| dala | dal + -a | דַּלָּ | Schwäche (Femininum von dal) | f14r P.5 (H/F 2/3, Erstbeleg) | — | ★★★ (R43 Kandidat) |
+| dalchy | dal + k- + chy | דַּלכְּהִי | die Schwäche der Blässe | f58r P.4 (H/F 2/2, Erstbeleg) | R41 | ★★★★ (R43 Kandidat) |
+| daldalol | dal + dal + ol | דַּלדַּלעוֹל | doppelte Schwäche des Joches | — | R2 | ★★ (R43 Kandidat) |
+| dalory | dal + or + -y | דַּלאוֹריְ | Schwäche zum Licht | f23r P.11 (H/C/F 3/3, Erstbeleg) | R2 | ★★ (R43 Kandidat) |
+| daly·dal | dal + -y · dal | דַּלִּידַּל | seine Schwäche | — | — | ★★★★ (R43 Kandidat) |
+| doldaiin | dol + daiin | דּוֹלדִּין | Krankheits-Urteil | f18r P.7 (H/F 2/3, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| doldy | dol + -dy | דּוֹלדִּי | von der Krankheit davon | f18r P.7 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| dol·shol | dol + shol | דָּוֶהשׁוֹל | Schmerz-Scheol (Warnsignal bei Überdosierung) | — | R2 | ★★★ (R43 Kandidat) |
+| cholar | kol + -lo + or | כֹּלוֹר | alles sein Licht | — | R2 | ★★★ (R43 Kandidat) |
+| chol·chol | kol + kol | כֹּלכֹּל | alles-alles | — | R2 | ★★★ (R43 Kandidat) |
+| chololy | kol + ol + -y | כֹּלעַליְ | alles über ihm / vollständig darüber | f3r P.5 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| chotshol | kol + t- + sheol | כֹּתּשְׁאוֹל | alles-du-wirst-Scheol (morphologisch fragwürdig) | f21v P.6 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★ (R43 Kandidat) |
+| oraiino | or + aiin + -o | אוֹרעַיִןוֹ | Licht seines Auges | — | R2 | ★★★★ (R43 Kandidat) |
+| orchaiin | or + k- + aiin | אֹרכְּעַיִין | Licht-wie-Auge | f25v P.7 (H/C 2/3, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| ory | or + -y | אוֹריְ | sein Licht / er erleuchtet | — | R2 | ★★★ (R43 Kandidat) |
+| otaiphy | ot + a + y + p- + hey | אֹתאַיְפֶּהֵי | Hapax: Zeichen-Blässe-Mund (Einzelbeleg) | — | R2, R41 | ★★ (R43 Kandidat) |
+| otalef | ot + alef | אוֹתאָלֶף | Zeichen des Aleph / Zeichen des Ochsen | f72r1 S1.9 (H/K/V 3/3, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| otchom | ot + chom | אוֹת+חֹם | Zeichen der Wärme | f3r P.15 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| otly | ot + l- | אוֹתלֵ | Zeichen zu/für | f16r P1.2 (H/C 2/3, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| otolam | ot + ol- + am | אוֹתעַלאָם | Zeichen über alle / Zeichen der Ewigkeit | f72r2 S1.16 (H/K 2/3, Erstbeleg) | R2, R41 | ★★★★ (R43 Kandidat) |
+| otosy | ot + o- + s + -y | אֹתאֹשׂיְ | Zeichen-Scheol-gleich-er | f25r T.7 (H/C/F 3/3, Erstbeleg) | R2, R41 | ★★ (R43 Kandidat) |
+| otshor | ot + shor | אוֹתשׁאוֹר | das Zeichen des Lichts | f23v P.6 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| otytchy | ot + y- + t- + k- + chy | אוֹתיְתְּכְּהִי | das Zeichen er-wird-Blässe-zeigen | — | R2, R41 | ★★★ (R43 Kandidat) |
+| pchodol | pcho + dol | פְּחֹדֹּל | Atemweg der Krankheit / Mundschmerz | f17v P.1 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| pocheody | pcho + -dy | פְּחֹדִּי | des Atemwegs | f16r P1.1 (H/F 2/3, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| saraiir | sar + ir | שַׂראִיר | Arzt des Leuchtenden | — | — |  (R43 Kandidat) |
+| sary | sar + -y | שַׂרִי | mein Arzt / Apotheker (Possessiv) | f9r P.1 (H/C 2/3, Erstbeleg) | — | ★★★★★ (R43 Kandidat) |
+| sheeolody | sheol + o- + -dy | שְׁאוֹלעֹדִּי | von jenem Scheol | — | R2, R41 | ★★★ (R43 Kandidat) |
+| sheodaiin | sheol + daiin | שְׁאוֹדִּין | Todesurteil (Vollform) | f66r R.7 (H/F 2/3, Erstbeleg) | R2 | ★★★★★ (R43 Kandidat) |
+| sheoldam | sheol + dam | שְׁאוֹלדָּם | tödlicher Blutverlust | f3r P.9 (H/F 2/3, Erstbeleg) | R2 | ★★★★★ (R43 Kandidat) |
+| sheoltey | sheol + ta + -y | שְׁאוֹלטַיְ | Scheol des Tau-Zeichens | — | R2 | ★★★ (R43 Kandidat) |
+| shoaiin | sheol + aiin | שְׁאוֹלעַיִן | Scheol des Auges (Todesurteil für das Sehorgan) | — | R2, R40 | ★★ (R43 Kandidat) |
+| olsho | sho + -lo | שׁוֹלוֹ | sein Scheol | — | R2 | ★★★ (R43 Kandidat) |
+| shockho | sho + k- + ho | שׁוֹ+כְּ+הוֹ | Scheol wie er / wie das Scheol davon | f3v P.11 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| shoin | sho + aiin | שׁוֹיִן | Scheol des Auges | — | R2 | ★★ (R43 Kandidat) |
+| shokal | sho + kol | שׁוֹכָּל | Scheol von allem | f58r P.35 (H/F 2/2, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| sholo | sho + -lo | שְׁאוֹלוֹ | Scheol für ihn | — | R2 | ★★★ (R43 Kandidat) |
+| shot | sho + t- | שׁוֹתְּ | vollständiges Scheol | — | R2 | ★★★ (R43 Kandidat) |
+| shotoly | sho + t- + ol + -y | שׁוֹתּעוֹליְ | Scheol-Last hin | f22v P.13 (H/C/F/U 4/4, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| sotchaiin | sho + ot + k- + aiin | שׁאוֹתכְּעַיִן | das Zeichen dem Auge gleich | f18r P.11 (H/C 2/3, Erstbeleg) | R2, R41 | ★★★ (R43 Kandidat) |
+| sholol | shol + ol- | שׁוֹלעַל | Scheol über [etwas] | — | R2 | ★★ (R43 Kandidat) |
+| sholor | shol + or | שׁוֹלאֹר | Scheol-Licht | f17v P.21 (H/C/F 3/3, Erstbeleg) | R2 | ★★ (R43 Kandidat) |
+| sholshdy | shol + sh + -dy | שׁוֹלשׁדִּי | von dem Scheol | — | R2 | ★★★ (R43 Kandidat) |
+| aiior | aiin + y + or | עַיִאוֹר | Auge des Lichts | — | R2 | ★★ (R43 Kandidat) |
+| chodl | chodl (Part. von חדל) | חֹדֵל | der Aufhörende / der Sterbende (Aktiv-Partizip) | f11r P.5 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| damo | dam + -o | דָּמוֹ | sein Blut | f3r (P.7, P.8, Erstbeleg) | R2 | ★★★★ (R43 Kandidat) |
+| darchor | dar + chor | דַּרְכּוֹר | sein Krankheitsverlauf | f5v P.3 (H/C/F/U 4/4, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| dydyd | dy + dy + dy | דִּידִּידִּי | dreifacher Relativpartikel (extremer Betonungsmodus) | f1r P3.17 (H/F/U 3/5, Erstbeleg) | R25 | ★★ (R43 Kandidat) |
+| keeees | keeees | ??? | Hapax (Schreiberfehler nicht ausgeschlossen) | f21v P.3 (H/C/F/U 4/4, Erstbeleg) | — | ★★ (R43 Kandidat) |
+| pysaiinor | pi + s- + aiin + or | פִּישׂעַיִןאוֹר | Mund gleich dem Auge des Lichts | — | R2, R41 | ★★ (R43 Kandidat) |
+| sam.chorly | sham + kor + li | שָׁםכֹּרלִי | so heile meine Pupille | — | R2 | ★★★ (R43 Kandidat) |
+| shodain | shod + d- + aiin | שׁוֹדדַּעַיִן | Zerstörung des Auges (schärfste negative Augenprognose) | f1r P3.12 (H/C/F/N/U 5/5, Erstbeleg) | R2, R40, R41 | ★★ (R43 Kandidat) |
+| shorodo | shor + odo | שׁוֹרעוֹדוֹ | das Zeichen besteht fort | f13r P.5 (H/C 2/3, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
+| shydal | shy + dal | שֵׁידַּל | die Gabe der Schwäche | — | — | ★★★ (R43 Kandidat) |
+| torshor | tor + shor | תֹּרשׁוֹר | Jahreszeit-Zeichen / saisonaler Eintrag | f13r P.1 (H/C/F 3/3, Erstbeleg) | R2 | ★★★ (R43 Kandidat) |
 
 
 ## V. Grammatik — Präfixe, Suffixe & Schemata
