@@ -4,7 +4,7 @@ import { FOLIO_PAGES, FOLIO_DATA } from './folio-data.js';
 import { RULES, RULES_CHANGELOG } from './grammar-rules-data.js';
 import { COMPARISON, FOLIOS, CONCLUSION } from './language-a-data.js';
 import { TESTED, STATS as BACKTEST_STATS } from './backtest-data.js';
-import { getLexiconMeta } from './lexicon-meta.js';
+import { getLexiconMeta, CONSECUTIVE_TOKENS } from './lexicon-meta.js';
 
 // Merge folio-derived metadata into each lexicon entry.
 // Manual values in lexicon-data.js act as fallbacks/overrides:
@@ -14,10 +14,15 @@ import { getLexiconMeta } from './lexicon-meta.js';
 // - evidence      → manual wins if set; computed string fills empty
 // - confidenceStars → max(manual, confFloor) — computed can only raise, never lower
 // - candidate     → cleared automatically once r43 is met
-// - rulesApplied  → R43 appended when r43 is true and not already listed
+// - rulesApplied  → auto-appended (never removed): R41 when morph present, R19 when consecutive
+//                   in corpus, R43 when r43 is met; sorted numerically; manual rules preserved
+const _ruleNum = (/** @type {string} */ r) => parseInt(r.slice(1));
 export const LEXICON = _RAW_LEXICON.map((/** @type {any} */ entry) => {
 	const meta = getLexiconMeta(entry.eva);
-	const manualRules = /** @type {string[]} */ (entry.rulesApplied ?? []);
+	const rules = new Set(/** @type {string[]} */ (entry.rulesApplied ?? []));
+	if (entry.morph) rules.add('R41');
+	if (CONSECUTIVE_TOKENS.has(entry.eva)) rules.add('R19');
+	if (meta.r43) rules.add('R43');
 	return {
 		...entry,
 		isAnchor: meta.isAnchor,
@@ -26,9 +31,7 @@ export const LEXICON = _RAW_LEXICON.map((/** @type {any} */ entry) => {
 		evidence: entry.evidence || entry.anchorFolio || meta.computedEvidence,
 		confidenceStars: Math.max(entry.confidenceStars ?? 0, meta.confFloor),
 		candidate: entry.candidate && !meta.r43,
-		rulesApplied: meta.r43 && !manualRules.includes('R43')
-			? [...manualRules, 'R43']
-			: manualRules,
+		rulesApplied: [...rules].sort((a, b) => _ruleNum(a) - _ruleNum(b)),
 	};
 });
 

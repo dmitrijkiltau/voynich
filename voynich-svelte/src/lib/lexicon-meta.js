@@ -18,27 +18,34 @@ const ANCHOR_SET = new Set(
 
 // ── Token index ───────────────────────────────────────────────────────────────
 // Built eagerly from all available folio JSONs.
-// Structure: eva → [{folioId, para, majority (siglen[]), total}]
+// Structure: eva → [{folio, para, majority (siglen[]), agreedCount, totalCount}]
 
 const _folioModules = /** @type {Record<string, any>} */ (
 	import.meta.glob('./folios/*.json', { eager: true })
 );
 
-/** @type {Record<string, {folioId: string, para: string, majority: string[], total: number}[]>} */
+/** @type {Record<string, {folio: string, para: string, majority: string[], agreedCount: number, totalCount: number}[]>} */
 export const TOKEN_INDEX = {};
+
+/** Tokens that appear at two or more consecutive positions in at least one paragraph (R19 signal). */
+export const CONSECUTIVE_TOKENS = /** @type {Set<string>} */ (new Set());
 
 for (const mod of Object.values(_folioModules)) {
 	const data = /** @type {any} */ (mod.default ?? mod);
 	const lines = /** @type {Record<string, Record<string, string>> | undefined} */ (data?.transcriptions?.lines);
 	if (!lines) continue;
-	const folioId = /** @type {string} */ (data.folio);
+	const folio = /** @type {string} */ (data.folio);
 
 	for (const [para, variants] of Object.entries(lines)) {
+		const resolved = majorityTokens(variants);
+		for (let i = 1; i < resolved.length; i++) {
+			if (resolved[i].token === resolved[i - 1].token) CONSECUTIVE_TOKENS.add(resolved[i].token);
+		}
 		const seenInPara = new Set();
-		for (const { token, majority, total } of majorityTokens(variants)) {
-			if (seenInPara.has(token)) continue; // deduplicate same token within a paragraph
+		for (const { token, majority, total } of resolved) {
+			if (seenInPara.has(token)) continue;
 			seenInPara.add(token);
-			(TOKEN_INDEX[token] ??= []).push({ folioId, para, majority, total });
+			(TOKEN_INDEX[token] ??= []).push({ folio, para, majority, agreedCount: majority.length, totalCount: total });
 		}
 	}
 }
@@ -68,19 +75,26 @@ function folioOrder(/** @type {string} */ id) {
  */
 export function getLexiconMeta(eva) {
 	const isAnchor = ANCHOR_SET.has(eva);
-	const occurrences = TOKEN_INDEX[eva] ?? [];
+	// Only count occurrences where the majority of transcribers agreed on this token.
+	const occurrences = (TOKEN_INDEX[eva] ?? [])
+		.filter(occ => occ.agreedCount / occ.totalCount > 0.5);
 
-	/** @type {Record<string, {para: string, majority: string[], total: number}[]>} */
+	/** @type {Record<string, {para: string, majority: string[], agreedCount: number, totalCount: number}[]>} */
 	const byFolio = {};
-	for (const { folioId, para, majority, total } of occurrences) {
-		(byFolio[folioId] ??= []).push({ para, majority, total });
+	for (const { folio, para, majority, agreedCount, totalCount } of occurrences) {
+		(byFolio[folio] ??= []).push({ para, majority, agreedCount, totalCount });
 	}
 
 	const folioIds = Object.keys(byFolio).sort((a, b) => folioOrder(a) - folioOrder(b));
 	const r43 = folioIds.length >= 2;
 
-	// Confidence floor: anchors ≥ 4★, R43 met ≥ 3★, any JSON hit ≥ 2★, no JSON hit → 0 (no constraint)
-	const confFloor = isAnchor ? 4 : r43 ? 3 : occurrences.length > 0 ? 2 : 0;
+	// Confidence floor: anchors ≥ 4★, R43 + ≥5 majority folios ≥ 4★, R43 met ≥ 3★, any hit ≥ 2★
+	const majorityFolioCount = folioIds.length;
+	const confFloor = isAnchor                          ? 4
+	                : r43 && majorityFolioCount >= 5    ? 4
+	                : r43                               ? 3
+	                : occurrences.length > 0            ? 2
+	                : 0;
 
 	let computedEvidence = '';
 	let computedAnchorFolio = '';
@@ -102,30 +116,30 @@ export function getLexiconMeta(eva) {
 			}
 
 			if (occList.length === 1) {
-				const { para, majority, total } = occList[0];
-				const occ = `${fid} ${para} (${majority.join('/')} ${majority.length}/${total}${tag})`;
+				const { para, majority, agreedCount, totalCount } = occList[0];
+				const occ = `${fid} ${para} (${majority.join('/')} ${agreedCount}/${totalCount}${tag})`;
 				parts.push(occ);
 				if (isFirst) computedAnchorFolio = occ;
 			} else if (occList.length <= 3) {
 				const paraList = occList.map(o => o.para).join(', ');
 				parts.push(`${fid} (${paraList}${tag})`);
 				if (isFirst) {
-					const { para, majority, total } = occList[0];
-					computedAnchorFolio = `${fid} ${para} (${majority.join('/')} ${majority.length}/${total}${tag})`;
+					const { para, majority, agreedCount, totalCount } = occList[0];
+					computedAnchorFolio = `${fid} ${para} (${majority.join('/')} ${agreedCount}/${totalCount}${tag})`;
 				}
 			} else if (occList.length <= 6) {
 				const paraFirst = occList[0].para;
 				const paraLast = occList[occList.length - 1].para;
 				parts.push(`${fid} (${paraFirst}–${paraLast}, ×${occList.length}${tag})`);
 				if (isFirst) {
-					const { para, majority, total } = occList[0];
-					computedAnchorFolio = `${fid} ${para} (${majority.join('/')} ${majority.length}/${total}${tag})`;
+					const { para, majority, agreedCount, totalCount } = occList[0];
+					computedAnchorFolio = `${fid} ${para} (${majority.join('/')} ${agreedCount}/${totalCount}${tag})`;
 				}
 			} else {
 				parts.push(isFirst ? `${fid} (Erstbeleg)` : fid);
 				if (isFirst) {
-					const { para, majority, total } = occList[0];
-					computedAnchorFolio = `${fid} ${para} (${majority.join('/')} ${majority.length}/${total}${tag})`;
+					const { para, majority, agreedCount, totalCount } = occList[0];
+					computedAnchorFolio = `${fid} ${para} (${majority.join('/')} ${agreedCount}/${totalCount}${tag})`;
 				}
 			}
 		}
