@@ -76,6 +76,12 @@
 	}
 
 	.rules-wrap {
+		& thead {
+			position: sticky;
+			top: 0;
+			z-index: 1;
+		}
+
 		& td.rule-id {
 			font-family: var(--font-mono);
 			color: var(--ink-f);
@@ -93,13 +99,23 @@
 		}
 
 		@container (max-width: 768px) {
+			& thead tr {
+				margin-bottom: .8rem;
+			}
+
 			& tr {
 				display: grid;
-				grid-template-columns: repeat(2, 1fr);
-				grid-template-areas: "id conf"
-									"focus focus"
-									"syntax syntax"
-									"evidence evidence";
+				grid-template-columns: 3rem 1fr auto;
+				grid-template-areas: "id focus conf"
+									"syntax syntax syntax"
+									"evidence evidence evidence";
+				border: 1px solid var(--border);
+				padding: .6rem;
+				break-inside: avoid;
+
+				&:not(:last-child) {
+					margin-bottom: .8rem;
+				}
 
 				& .rule-id { grid-area: id; }
 				& .rule-focus { grid-area: focus; }
@@ -111,12 +127,65 @@
 					padding-bottom: 0;
 				}
 
-				& td.rule-id, & td.rule-focus, & td.rule-syntax, & td.rule-conf {
+				& td {
 					border-bottom: 0;
+				}
+				
+				& .rule-syntax {
+					padding-top: 0;
+					padding-bottom: 0;
 				}
 
 				& .rule-conf {
 					justify-self: end;
+				}
+			}
+		}
+
+		@container (min-width: 769px) {
+			overflow-x: auto;
+			
+			& thead {
+				& th.rule-id {
+					width: 4rem;
+				}
+
+				& th.rule-focus {
+					min-width: 20rem;
+				}
+
+				& th.rule-syntax {
+					min-width: 32rem;
+				}
+
+				& th.rule-evidence {
+					min-width: 32rem;
+				}
+
+				& th.rule-conf {
+					width: 5rem;
+				}
+			}
+
+			@container screen {
+				& .rule-id {
+					position: sticky;
+					left: 0;
+				}
+
+				& thead th.rule-id {
+					z-index: 1;
+					background: var(--parch-d);
+				}
+
+				& tbody tr {
+					background: var(--parch);
+					
+					& td.rule-id {
+						z-index: 0;
+						background: var(--parch);
+						border-bottom: 1px solid var(--border);
+					}
 				}
 			}
 		}

@@ -191,7 +191,7 @@ table.dt {
   border-collapse: collapse;
   font-size: .88rem;
 
-  & thead {
+  & thead tr {
     background: var(--parch-d);
   }
 

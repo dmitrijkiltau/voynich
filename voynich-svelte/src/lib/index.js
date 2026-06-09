@@ -54,15 +54,11 @@ const _compact = (/** @type {string} */ n) => n.replace(/ /g, '');
 const _pct     = (/** @type {number} */ p) => `${Math.round(p)}%`;
 
 export const STATS = {
-  version: '8.8.7',
+  version: '8.8.8',
   // Separate each change on a new line and keep only the new changes since the last release.
   changelog: [
-    'f3v-Audit: f003v.json neu erstellt (Dipsacus-Identifikation ★★★, R60 ★★★★★, 14 Paragraphen, 2 Textblöcke)',
-    'f3v-Audit: Erstbeleg-Korrekturen tchor (f3v P.7 5/5), ykchy (f3v P.8 4/4), ytchy (f3v P.12 4/4); Folgebelege f11v/f16v ergänzt',
-    'f3v-Audit: sho/cthy/ochor Kandidaten-Flags aufgehoben (R43 erfüllt); kchom ★★ → ★★★ (R43 erfüllt f3v P.8)',
-    'f3v-Audit: 6 f1r-Einträge auf ★★ demotiert (R43-Frist abgelaufen): oksho, shodain, shoaiin, tchey, oiin, ydain',
-    'f3v-Audit: Neue Einträge otcham (Erstbeleg f3v P.7, Parallelform zu otchom) + daiidy (Kandidat f3v P.2, EVA-distinct von daiindy); ALIAS daiidy→daiindy entfernt',
-    'Fristtabelle komplett restrukturiert: 13 f3r-Kandidaten (Frist bis f7r), 1 f3v-Kandidat, 6 abgelaufene f1r-Fristen, 3 bestätigte Einträge',
+    'f4r-Audit',
+    'Weitere Automatisierungen bei der Regelableitung, z.B. die Erkennung von Präfixmorphemen für R41.',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.filter((/** @type {any} */ e) => !e.candidate).length,

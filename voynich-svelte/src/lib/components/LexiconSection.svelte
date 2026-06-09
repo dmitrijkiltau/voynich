@@ -166,7 +166,7 @@
 	<div class="lexicon">
 		{#each TABLES as table ('table-' + table.id)}
 			{@const rows = rowsFor(table)}
-			<div id={table.id} class="lexicon-table">
+			<div id={table.id} class="lexicon-tables">
 				<h3>
 					{table.title}
 					{#if rows.length !== table.rows.length}
@@ -207,7 +207,7 @@
 				{/if}
 
 				<div class="table-wrap">
-					<table class="dt">
+					<table class={'dt ' + (table.id === 'derived' ? 'derived-' : 'lexicon-') + 'table'}>
 						<thead>
 							<tr>
 								{#each table.columns as col ('col-' + col.key)}
@@ -218,7 +218,7 @@
 										onclick={() => toggleSort(table.id, col.key)}
 										onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleSort(table.id, col.key)}
 										tabindex="0"
-										class={col.key === 'evidence' ? ' notes-cell' : ''}
+										class={(table.id === 'derived' ? 'derived-' : 'lexicon-') + col.key + (col.key === 'evidence' ? ' notes-cell' : '')}
 									>
 										{col.label}
 										<span class="sort-icon" aria-hidden="true">
@@ -242,7 +242,7 @@
 									tabindex="0"
 								>
 									{#each table.columns as col ('entry-col-' + col.key)}
-										<td class={col.key === 'evidence' ? 'notes-cell' : col.key === 'anchorFolio' ? 'part-cell' : col.key === 'rules' ? 'rules-cell' : ''}>
+										<td class={(table.id === 'derived' ? 'derived-' : 'lexicon-') + col.key + (col.key === 'evidence' ? ' notes-cell' : col.key === 'anchorFolio' ? ' part-cell' : col.key === 'rules' ? ' rules-cell' : '')}>
 											{#if col.key === 'confidenceStars'}
 												<span class={entry.confidenceStars === 5 ? 'conf5' : 'conf'}>{cellValue(entry, col.key)}</span>{#if entry.candidate}<span class="cand-badge">Kand.</span>{/if}
 											{:else if col.key === 'rules'}
@@ -285,36 +285,98 @@
 </section>
 
 <style>
-  .lexicon {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 2rem;
+  #lexicon {
+		container-type: inline-size;
 
-    & > div {
-      flex: 1 1 560px;
-    }
+		& .lexicon-tables {
+			& thead {
+				position: sticky;
+				top: 0;
+				z-index: 1;
+			}
 
-		& .lexicon-table {
-			overflow: hidden;
+			@container (max-width: 768px) {
+				& thead tr {
+					margin-bottom: .8rem;
+				}
+
+				& .lexicon-table tr {
+					grid-template-columns: 2fr 1fr 4rem 3rem;
+					grid-template-areas: "eva eva confidenceStars confidenceStars"
+										"de de heb heb"
+										"layer layer rules rules"
+										"anchorFolio anchorFolio anchorFolio isAnchor";
+
+					& .lexicon-eva { grid-area: eva; }
+					& .lexicon-heb { grid-area: heb; }
+					& .lexicon-de { grid-area: de; }
+					& .lexicon-layer { grid-area: layer; }
+					& .lexicon-isAnchor { grid-area: isAnchor; }
+					& .lexicon-anchorFolio { grid-area: anchorFolio; }
+					& .lexicon-rules { grid-area: rules; }
+					& .lexicon-confidenceStars { grid-area: confidenceStars; }
+
+					& th, & td {
+						padding: 0;
+					}
+
+					& .lexicon-heb, & .lexicon-isAnchor, & .lexicon-rules, & .lexicon-confidenceStars  {
+						justify-self: end;
+						text-align: end;
+					}
+				}
+
+				& tr {
+					display: grid;
+					grid-template-columns: auto auto auto;
+					grid-template-areas: "eva heb heb"
+										"de layer rules"
+										"anchorFolio isAnchor confidenceStars";
+					border: 1px solid var(--border);
+					padding: 1rem;
+					break-inside: avoid;
+
+					&:not(:last-child) {
+						margin-bottom: .8rem;
+					}
+
+					& .lexicon-eva { grid-area: eva; }
+					& .lexicon-heb { grid-area: heb; }
+					& .lexicon-de { grid-area: de; }
+					& .lexicon-layer { grid-area: layer; }
+					& .lexicon-isAnchor { grid-area: isAnchor; }
+					& .lexicon-anchorFolio { grid-area: anchorFolio; }
+					& .lexicon-rules { grid-area: rules; }
+					& .lexicon-confidenceStars { grid-area: confidenceStars; }
+
+					& td {
+						border-bottom: 0;
+					}
+				}
+			}
 
 			@media screen {
-				& th:first-child, & td:first-child {
-					position: sticky;
-					left: 0;
-				}
+				@container (min-width: 769px) {
+					overflow: hidden;
 
-				& thead th:first-child {
-					z-index: 1;
-					background: var(--parch-d);
-				}
+					& th:first-child, & td:first-child {
+						position: sticky;
+						left: 0;
+					}
 
-				& tbody tr {
-					background: var(--parch);
-					
-					& td:first-child {
-						z-index: 0;
+					& thead th:first-child {
+						z-index: 1;
+						background: var(--parch-d);
+					}
+
+					& tbody tr {
 						background: var(--parch);
-						border-bottom: 1px solid var(--border);
+						
+						& td:first-child {
+							z-index: 0;
+							background: var(--parch);
+							border-bottom: 1px solid var(--border);
+						}
 					}
 				}
 			}
@@ -394,6 +456,12 @@
     background: color-mix(in srgb, var(--parch-d) 55%, transparent);
     border: 1px solid var(--border);
     border-radius: 3px;
+
+		& > div {
+			display: flex;
+			align-items: center;
+			gap: .3rem;
+		}
   }
 
   .chips-label {
