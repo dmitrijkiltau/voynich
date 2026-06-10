@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { LEXICON } from '$lib';
+	import { getLexiconConfidence } from '$lib/lexicon-data.js';
 
 	// ── Word generation ──────────────────────────────────────────────────────
 
@@ -105,7 +106,7 @@
 		if (lexEntry) {
 			return { word, inLexicon: true, lexEntry, prefixes: [], root: word,
 				rootCons: null, r40: 'lexikon', r41: { valid: true }, d1: false, d2: false,
-				maxStars: lexEntry.stars };
+				maxStars: getLexiconConfidence(lexEntry.confidenceStars) };
 		}
 
 		const { prefixes, root } = stripPrefixes(word);
@@ -244,7 +245,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					{#each runs as r}
+					{#each runs as r, i (i)}
 						<tr class="proto-row {rateZone(r.passRate)}">
 							<td class="td-run">{r.run}</td>
 							<td class="td-n">{r.total}</td>
@@ -388,7 +389,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					{#each results as r, i}
+					{#each results as r, i (r.word)}
 						<tr class="row-{starsClass(r)}">
 							<td class="td-n">{i + 1}</td>
 							<td class="td-eva">{r.word}</td>

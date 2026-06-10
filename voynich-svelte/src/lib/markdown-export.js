@@ -1,4 +1,4 @@
-import { STATS, MAPPING, PREFIXES, LEXICON, RULES } from './index.js';
+import { STATS, MAPPING, PREFIXES, RULES, STEM_WORDS, LEXICON_DERIVED } from './index.js';
 import { GRAMMAR_PREFIXES, GRAMMAR_SUFFIXES, VERB_PARADIGM } from './grammar-data.js';
 import { TESTED, STATS as BACKTEST_STATS } from './backtest-data.js';
 import { CLASSES } from './word-classes-data.js';
@@ -7,6 +7,7 @@ import { STAR_TYPES, FOLIOS as STAR_FOLIOS } from './margin-stars-data.js';
 import { REFS } from './references-data.js';
 import { CONFIDENCE_SCALE, ANCHOR_FOLIOS } from './methodology-data.js';
 import { OPEN_PROBLEMS } from './open-problems-data.js';
+import { getLexiconConfidence, getLexiconRules } from './lexicon-data.js';
 
 const _bsI   = BACKTEST_STATS.find(s => s.label.startsWith('Typ I'));
 const _bsII  = BACKTEST_STATS.find(s => s.label.startsWith('Typ II'));
@@ -34,17 +35,6 @@ function tbl(headers, rows) {
     ...rows.map((/** @type {any[]} */ r) => `| ${r.map(esc).join(' | ')} |`),
   ].join('\n') + '\n';
 }
-
-const CAT = /** @type {Record<string, string>} */({
-  symptom:    'Medizinische Nomina & Symptome',
-  prognose:   'Prognose-Termini',
-  syntax:     'Syntaktische Konnektoren',
-  verb:       'Verbformen',
-  akteur:     'Akteure, Anatomie & Botanik',
-  kolophon:   'Kolophon-Formeln',
-  kompositum: 'Bestätigte Komposita',
-  possessiv:  'Possessiv-Formen',
-});
 
 // No TranslatorTool, nor GibberishTest in Markdown export
 const TOC = [
@@ -103,7 +93,7 @@ export function generateMarkdown() {
     ['Analysierte Folios', STATS.foliosAll],
     ['Bestätigte Wörter', `${STATS.lexicon} (★★★ oder höher)`],
     ['Rückwärtstest', `Typ I (genuine Vorhersagen): 10/10 (100%) · Typ II (interne Kohärenz): 29/32 (91%) · 0 Falsch-Positive`],
-    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4)`],
+    ['Sprache A Anker', `${STATS.foliosA}: 10/10 Sprache-A-Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4)`],
     ['Grammatikregeln', `${RULES.length} (${STATS.validatedRules} validiert + ${RULES.length - STATS.validatedRules} Kandidaten)`],
   ]));
   line();
@@ -139,22 +129,82 @@ export function generateMarkdown() {
   line();
   s.push(tbl(['EVA', 'Hebräisch', 'Bedeutung'], PREFIXES.map(p => [p.eva, p.heb, p.de])));
   line();
-  line('**R2-ext (v7.5):** Das EVA-Zeichen `o` ist positionell vollständig determiniert: (1) `o-` am Wortanfang = ע (Ayin, konsonantisch) — ausnahmslos; (2) `o` im Wortinneren = Ḥolam (Vokalmarker) — ausnahmslos. **Negativtest:** 0 Gegenbeispiele in 140+ validierten Lexikoneinträgen.');
+  line('**R2-ext (v7.5):** Das EVA-Zeichen `o` ist positionell vollständig determiniert: (1) `o-` am Wortanfang = ע (Ayin, konsonantisch) — ausnahmslos; (2) `o` im Wortinneren = Ḥolam (Vokalmarker) — ausnahmslos. **Negativtest:** 0 Gegenbeispiele in 140+ validierten Lexikoneinträgen. **f1r Nulltest (positiver Strukturbeleg):** 260 Token analysiert — alle initialen `o` = Ayin, alle internen `o` = Ḥolam, 0 Ausnahmen.');
   line();
 
   // ── IV. Lexikon ────────────────────────────────────────────────
   h(2, `IV. Bestätigtes Lexikon (${STATS.lexicon} Einträge)`);
   line();
-  line('Alle Einträge mit ★★★ oder höher.');
+  line('Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgeleiteten Formen.');
   line();
-  const cats = [...new Set(LEXICON.map(e => e.cat))];
-  for (const cat of cats) {
-    h(3, CAT[cat] || cat);
-    line();
-    s.push(tbl(['EVA', 'Hebräisch', 'Deutsch', 'Notizen', 'Konf.'],
-      LEXICON.filter(e => e.cat === cat).map(e => [e.eva, e.heb, e.de, e.notes, e.stars])));
-    line();
-  }
+
+  const _confMd = (/** @type {any} */ e) => getLexiconConfidence(e.confidenceStars) + (e.candidate ? ' (R43 Kandidat)' : '');
+
+  h(3, `A. Stammwörter (${STEM_WORDS.filter(/** @type {any} */e => !e.candidate).length})`);
+  line();
+  s.push(tbl(
+    ['EVA', 'Hebräisch', 'Deutsch', 'Schicht', 'Anker', 'Folio', 'Regeln', 'Konf.'],
+    STEM_WORDS.filter(/** @type {any} */e => !e.candidate).map(e => [
+      e.eva,
+      e.heb,
+      e.de,
+      e.layer || '—',
+      e.isAnchor ? 'ja' : '—',
+      e.anchorFolio || '—',
+      getLexiconRules(e).join(', ') || '—',
+      _confMd(e),
+    ])
+  ));
+  line();
+
+  h(3, `B. Stammwörter (R43 Kandidaten) (${STEM_WORDS.filter(/** @type {any} */e => e.candidate).length})`);
+  line();
+  s.push(tbl(
+    ['EVA', 'Hebräisch', 'Deutsch', 'Schicht', 'Anker', 'Folio', 'Regeln', 'Konf.'],
+    STEM_WORDS.filter(/** @type {any} */e => e.candidate).map(e => [
+      e.eva,
+      e.heb,
+      e.de,
+      e.layer || '—',
+      e.isAnchor ? 'ja' : '—',
+      e.anchorFolio || '—',
+      getLexiconRules(e).join(', ') || '—',
+      _confMd(e),
+    ])
+  ));
+  line();
+
+  h(3, `C. Abgeleitete Lexikon-Einträge (${LEXICON_DERIVED.filter(/** @type {any} */e => !e.candidate).length})`);
+  line();
+  s.push(tbl(
+    ['EVA', 'Morph.', 'Hebräisch', 'Deutsch', 'Evidenz', 'Regeln', 'Konf.'],
+    LEXICON_DERIVED.filter(/** @type {any} */e => !e.candidate).map((/** @type {any} */ e) => [
+      e.eva,
+      e.morph || '—',
+      e.heb,
+      e.de,
+      e.evidence || '—',
+      getLexiconRules(e).join(', ') || '—',
+      _confMd(e),
+    ])
+  ));
+  line();
+
+  h(3, `D. Abgeleitete Lexikon-Einträge (R43 Kandidaten) (${LEXICON_DERIVED.filter(/** @type {any} */e => e.candidate).length})`);
+  line();
+  s.push(tbl(
+    ['EVA', 'Morph.', 'Hebräisch', 'Deutsch', 'Evidenz', 'Regeln', 'Konf.'],
+    LEXICON_DERIVED.filter(/** @type {any} */e => e.candidate).map((/** @type {any} */ e) => [
+      e.eva,
+      e.morph || '—',
+      e.heb,
+      e.de,
+      e.evidence || '—',
+      getLexiconRules(e).join(', ') || '—',
+      _confMd(e),
+    ])
+  ));
+  line();
 
   // ── V. Grammatik ──────────────────────────────────────────────
   h(2, 'V. Grammatik — Präfixe, Suffixe & Schemata');
@@ -192,7 +242,7 @@ export function generateMarkdown() {
   line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${candidates} Kandidaten**. ${moratoriumStatus} R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).`);
   line();
   s.push(tbl(['#', 'Regel', 'Evidenz', 'Konf.'],
-    RULES.map(r => [r.id, stripHtml(r.rule), stripHtml(r.evidence), r.stars])));
+    RULES.map(r => [r.id, stripHtml(r.focus) + ' — ' + stripHtml(r.syntax), stripHtml(r.evidence), getLexiconConfidence(r.confidenceStars)])));
   line();
 
   // ── VII. Rückwärtstest ────────────────────────────────────────
@@ -221,7 +271,7 @@ export function generateMarkdown() {
   line('Die am besten verifizierten Sequenzen des Korpus — als Orientierungshilfe beim Übersetzen.');
   line();
   for (const ref of REFS) {
-    const badge = ref.badge ? ` (${ref.badge})` : '';
+    const badge = ('badge' in ref && ref.badge) ? ` (${ref.badge})` : '';
     h(3, `${ref.id} · ${ref.folio} — ${ref.title}${badge}`);
     line();
     if (ref.sides) {

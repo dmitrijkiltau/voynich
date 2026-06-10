@@ -1,5 +1,6 @@
 <script>
 	import { STATS, PREFIXES, LEXICON, FOLIO_PAGES } from '$lib';
+	import { LEXICON_ALIASES, getLexiconConfidence, getLexiconKind } from '$lib/lexicon-data';
 	import { dev } from '$app/environment';
 
 	let { input = $bindable('') } = $props();
@@ -21,27 +22,10 @@
 		{ label: 'f23v P.6',   text: 'tshol otshor olsar' },
 	];
 
-	// Canonical redirects for forms consolidated into primary entries (Redundanzanalyse v6.9 + v7.1)
-	const ALIASES = /** @type {Record<string,string>} */ ({
-		daiidy:  'daiindy',
-		kedy:    'chedy',
-		doiin:   'doaiin',
-		ykol:    'ychol',
-		ol:      'al',
-		keaiin:  'kaiin',
-		ckhol:   'kchol',
-		chetom:  'cthom',
-		yteor:   'ytor',
-		cheeol:  'cheol',
-		alif:    'alef',
-		otalif:  'otalef',
-		ytam:    'ytom',
-	});
-
 	/** @param {string} eva */
 	function lexLookup(eva) {
 		return LEXICON.find(e => e.eva === eva)
-			?? LEXICON.find(e => e.eva === ALIASES[eva]);
+			?? LEXICON.find(e => e.eva === LEXICON_ALIASES[eva]);
 	}
 
 	/** @param {string} w */
@@ -49,7 +33,14 @@
 		const wl = w.toLowerCase().trim();
 
 		const direct = lexLookup(wl);
-		if (direct) return { ...direct, eva: wl, matchType: 'found' };
+		if (direct) return {
+			...direct,
+			eva: wl,
+			stars: getLexiconConfidence(direct.confidenceStars),
+			confidenceStars: direct.confidenceStars,
+			kind: getLexiconKind(direct),
+			matchType: 'found',
+		};
 
 		for (const pre of PREFIXES) {
 			if (wl.startsWith(pre.eva) && wl.length > pre.eva.length) {
@@ -59,8 +50,9 @@
 					eva: w,
 					heb: pre.heb + base.heb,
 					de: pre.de + ' + ' + base.de,
-					stars: base.stars,
-					cat: base.cat,
+					stars: getLexiconConfidence(base.confidenceStars),
+					confidenceStars: base.confidenceStars,
+					kind: getLexiconKind(base),
 					matchType: 'prefix',
 				};
 			}
@@ -191,7 +183,7 @@
 			<p class="dropcap">EVA-Text in das Eingabefeld eingeben (Wörter durch Leerzeichen oder · getrennt). Das Tool durchsucht das bestätigte <a href="#lexikon">Lexikon</a>, erkennt Präfixe und zeigt Hebräisch, Wort-für-Wort-Analyse und deutsche Bedeutung an. Unbekannte Wörter werden als solche markiert.</p>
 			<div class="box red method-note">
 				<div class="box-title">Hinweis zur Methodik</div>
-				<p>Das Tool arbeitet auf dem bestätigten <a href="#lexikon">Lexikon</a> ({STATS.lexicon} Einträge, ★★★ oder höher). Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
+				<p>Das Tool arbeitet auf dem bestätigten <a href="#lexikon">Lexikon</a> ({STATS.lexicon} Einträge, ★★★ oder höher). Komplexe Komposita und unbekannte Wörter werden als „unbekannt“ markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
 			</div>
 		</div>
 
@@ -222,7 +214,7 @@
 						{/if}
 					</div>
 					<div class="example-btns" role="group" aria-label="Beispielsequenzen">
-						{#each EXAMPLES as ex}
+						{#each EXAMPLES as ex (ex.label)}
 							<button class="ex-btn" onclick={() => input = ex.text} title={ex.text}>{ex.label}</button>
 						{/each}
 					</div>
@@ -259,11 +251,11 @@
 					</header>
 
 					<div class="folio-keyboard" role="navigation" aria-labelledby="lbl-folio">
-						{#each FOLIO_PAGES as group}
+						{#each FOLIO_PAGES as group (group.label)}
 							<details class="folio-group">
 								<summary class="folio-group-label">{group.label}</summary>
 								<div class="folio-btns">
-									{#each group.pages as page}
+									{#each group.pages as page (page)}
 										<button
 											class="folio-btn"
 											onclick={() => dev ? fetchFolio(group.q, page) : window.open(folioUrl(group.q, page), '_blank')}
@@ -290,7 +282,7 @@
 					<div class="token-section">
 						<span class="panel-label">Token-Analyse</span>
 						<div class="token-row" role="list" aria-label="Erkannte Tokens">
-							{#each results as r}
+							{#each results as r (r.word)}
 								<span
 									class="tok"
 									class:found={r.lookup?.matchType === 'found'}
@@ -325,17 +317,17 @@
 										<th scope="col">Hebräisch</th>
 										<th scope="col">Bedeutung</th>
 										<th scope="col">Konf.</th>
-										<th scope="col">Kat.</th>
+										<th scope="col">Typ</th>
 									</tr>
 								</thead>
 								<tbody>
-									{#each glossResults as r}
+									{#each glossResults as r (r.word)}
 										<tr class:row-unknown={!r.lookup}>
 											<td class="g-eva">{r.word}</td>
 											<td class="g-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '—'}</td>
 											<td class="g-de">{r.lookup ? r.lookup.de : 'unbekannt'}</td>
-											<td class="g-st" class:g5={r.lookup && r.lookup.stars.length >= 9}>{r.lookup ? r.lookup.stars : '—'}</td>
-											<td class="g-cat">{r.lookup ? r.lookup.cat : '—'}</td>
+											<td class="g-st" class:g5={r.lookup && r.lookup.confidenceStars === 5}>{r.lookup ? r.lookup.stars : '—'}</td>
+											<td class="g-kind">{r.lookup ? (r.lookup.kind ?? getLexiconKind(r.lookup)) : '—'}</td>
 										</tr>
 									{/each}
 								</tbody>
@@ -829,7 +821,7 @@
 			white-space: nowrap;
 			&.g5 { color: #8b0000; }
 		}
-		& .g-cat {
+		& .g-kind {
 			font-family: var(--font-smallcaps);
 			font-size: .58rem;
 			letter-spacing: .08em;

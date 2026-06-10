@@ -1,0 +1,61 @@
+{
+  "folio": "f13r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q02/f013r_tr.txt",
+    "date": "1998-12-11",
+    "time": "12:30:00",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "torshor.opchy.shol.dy.qopchy.shol.opchor.dy!pchy.dchm-",
+        "C": "torshor.opchy.shol.dy.qopchy.shol.opchor.dy!pchy.dchg-",
+        "F": "torshor.opchy.shol!dy.qopchy.shol.opchor.dy.pchy.dchm-"
+      },
+      "P.2": {
+        "H": "dchol.chol.dol.shkchy.ydal.shy.ykchy.qotey.daiin.s.y-",
+        "C": "dchol.chol.dol.shkchy.ydal.shy.ykchy.qot*y.daiin.s.y-",
+        "F": "dchol.chol.dol.shkchy.ydal.shy.ykchy.qotey.daiin.s!y-"
+      },
+      "P.3": {
+        "H": "s.y.dchor.shaiin.oeees.ykor.chor.ytshy.ykchy.kchy.dar-",
+        "C": "s.y.dchor.shaiin.oeees.ykor.chor.ytshy.ykchy.kchy.dar-",
+        "F": "s!y!dchor.shaiin.oeees.ykor.chor.ytshy.ykchy.kchy.dar-"
+      },
+      "P.4": {
+        "H": "qodchy.ytchy.otchor=",
+        "C": "qodchy.ytchy.otchor=",
+        "F": "qodchy.ytchy.otchor="
+      },
+      "P.5": {
+        "H": "shorodo.shy.tshy.kchol.dpchy.qopchy.otchol.cfhol.dy-",
+        "C": "shorodo.shy.tshy.kchol.dpchy.qopchy.otchol.cfhol.dy-",
+        "F": "shorodo.shy.tshy.kchol.dpchy.qopchy.otchol.cfhol!dy-"
+      },
+      "P.6": {
+        "H": "tchor.dor.daiin.qotchol.okchy.okchor.oiin.chckhy.d-",
+        "C": "tchor.dor.daiin.qotchol.okchy.okchor.oiin.chckhy.d-",
+        "F": "tchor.dor.daiin.qotchol.okchy.okchor.oiin.chckhy.d-"
+      },
+      "P.7": {
+        "H": "dchy.qoky.chol.dy.qokhy.d.oldy-{plant}okchor.doaiin-",
+        "C": "dchy.qoky.chol.dy.qo**y.d.oldy-{plant}okchor.doaiin-",
+        "F": "dchy.qoky.chol.dy.qokey.d!oldy-{plant}okchor.doaiin-"
+      },
+      "P.8": {
+        "H": "shochy.qokchy.torchy.kcck{&K}!y-{plant}s.okchey.daiin-",
+        "C": "shochy.qokchy.torchy.k*!!!!!!!*-{plant}s.okchey.daiin-",
+        "F": "shochy.qokchy.torchy.keckh!!!!y-{plant}s.okchey.daiin-"
+      },
+      "P.9": {
+        "H": "oldy.shey.chol.doiin.ykoly-{plant}okchal.daldy-",
+        "C": "oldy.shey.chol.doiin.ykoly-{plant}okchal.daldy-",
+        "F": "oldy.shey.chol.doiin.ykoly-{plant}okchal.daldy-"
+      },
+      "P.10": {
+        "H": "sotchy.kchy.okorory=",
+        "C": "sotchy.kchy.okorory=",
+        "F": "sotchy.kchy.okorory="
+      }
+    }
+  }
+}

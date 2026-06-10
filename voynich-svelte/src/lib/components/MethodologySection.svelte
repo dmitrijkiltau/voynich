@@ -33,32 +33,33 @@
 
 			<div class="confidence">
         <h3>{content.confidence.title}</h3>
-        <table class="dt">
-          <thead>
-            <tr>
-              <th>{content.confidence.stars}</th>
-              <th>{content.confidence.label}</th>
-              <th>{content.confidence.criteria}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {#each CONFIDENCE_SCALE as row}
+        <div class="table-wrap">
+          <table class="dt">
+            <thead>
               <tr>
-                <td
-                  ><span class={isConf5(row.stars) ? "conf5" : "conf"}>{row.stars}</span
-                  ></td
-                >
-                <td>{row.label}</td>
-                <td>{row.criteria}</td>
+                <th>{content.confidence.stars}</th>
+                <th>{content.confidence.label}</th>
+                <th>{content.confidence.criteria}</th>
               </tr>
-            {/each}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {#each CONFIDENCE_SCALE as row (row.stars)}
+                <tr>
+                  <td class="stars">
+                    <span class={isConf5(row.stars) ? "conf5" : "conf"}>{row.stars}</span>
+                  </td>
+                  <td class="label">{row.label}</td>
+                  <td class="criteria">{row.criteria}</td>
+                </tr>
+              {/each}
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <div class="anchor-folios">
         <h3>{content.anchorFolios.title}</h3>
-        {#each ANCHOR_FOLIOS as anchor}
+        {#each ANCHOR_FOLIOS as anchor (anchor.folio)}
           <div class="box blue anchor-card">
             <div class="box-title">{anchor.folio} — {anchor.subtitle}</div>
             <p>{anchor.desc}</p>
@@ -88,10 +89,30 @@
       justify-content: space-between;
       align-items: start;
       gap: 0 2rem;
+      overflow: hidden;
 
 			& .backward-test { grid-area: backward; }
 			& .confidence { grid-area: confidence; }
 			& .anchor-folios { grid-area: anchors; }
+
+      @container (max-width: 480px) {
+        & .confidence table tr {
+          display: grid;
+          grid-template-columns: 6rem auto;
+          grid-template-areas:
+            "stars label"
+            "criteria criteria";
+
+          & td.stars { grid-area: stars; }
+          & td.label { grid-area: label; }
+          & td.criteria { grid-area: criteria; }
+
+          & td.stars, & td.label {
+            border-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
 
       @container (min-width: 960px) {
         grid-template-columns: minmax(240px, 480px) minmax(240px, 568px);

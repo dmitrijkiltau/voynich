@@ -1,0 +1,59 @@
+{
+  "folio": "f27v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q04/f027v_tr.txt",
+    "date": "1998-12-19",
+    "time": "18:56:30",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "fochof.chof.cho.sho.s!oly.shol.ytcho!r.ofchory.kchor!chor-",
+        "C": "!ochof.chof.cho.sho.sholy.shol.ytchail.opchory.kchor.chor-",
+        "F": "fochof.chof.cho!sho.s!oly.shol.ytcho!r.opchory.kchor.chor-",
+        "U": "fochof.chof.cho!sho.s!oly.shol.ytcha!r.opchory.kchor.chor-"
+      },
+      "P.2": {
+        "H": "dchy.chkar.otchy.shy.shy.dchy.dshy.kchy.cheo.da.dy.dchy-",
+        "C": "dchy.chkar.otchy.shy.shy.dchy.dshy.kchy.cheo.daijy.dchy-",
+        "F": "dchy.chkar.otchy.shy.shy.dchy.dshy.kchy.cheo.daidy.dchy-",
+        "U": "dchy.chkar.otchy.shy.shy.dchy.dshy.kchy.cheo.daidy.dchy-"
+      },
+      "P.3": {
+        "H": "kchey.kchy.dcho!kchy.dsho.dchir.cho!dchy.etcheody.shl!d-",
+        "C": "kchey.kchy.dcho!kchy.dsho.dchar.cho.dchy.etcheody.shl.d-",
+        "F": "kchey.kchy.dcho.kchy.dsho.dchir.cho!dchy.ctheeody.shl!d-",
+        "U": "kchey.kchy.dcho!kchy.dsho.dchir.cho!dchy.ctcheody.shl!d-"
+      },
+      "P.4": {
+        "H": "okcho.chy.kcheed.chl.chol.kod-{plant}o.oksho.do!eeees!m-",
+        "C": "okcho.chy.kcho!d.chl.chol.kod-{plant}o.oksho.do.chees.g-",
+        "F": "okcho.shy.kch*!d.chl.chol.kod-{plant}o.oksho.do!chees!m-",
+        "U": "otcho.chy.kcheed.chl.chol.kod-{plant}o.oksho.do!chees!m-"
+      },
+      "P.5": {
+        "H": "qoky.shkeeo.s!chod!ar.shkol-{plant}chotchy.ctho!dol-",
+        "C": "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-",
+        "F": "qoky.shkeeo.r!chod.ar.shkof-{plant}chotchy.ctho.dol-",
+        "U": "qoky.shkeeo,s.chod!ar.shkol-{plant}choteey.ctho!dol-"
+      },
+      "P.6": {
+        "H": "dsho.kchrrr.okeedy-{plant}dchschy-{plant}s!otchdy-",
+        "C": "dsho.kchrrr.okeedy-{plant}dchrchy-{plant}shotchdy-",
+        "F": "dsho.kchrrr.okeedy-{plant}dchrchy-{plant}s!otchdy-",
+        "U": "dsho.kchrrs.okeedy-{plant}dchrchy-{plant}s!otchdy-"
+      },
+      "P.7": {
+        "H": "sho.sho.y!kcho.shdy-{plant}dchd-{plant}chschsa-{plant}otchdy-",
+        "C": "sho.sho!y!kcho.shdy-{plant}dchd-{plant}chschsy-{plant}otchdy-",
+        "F": "sho.sho!y.kcho.shdy-{plant}dchd-{plant}chrchra-{plant}otchdy-",
+        "U": "sho.sho!y!kcho.shdy-{plant}dchd-{plant}chrchry-{plant}otchdy-"
+      },
+      "P.8": {
+        "H": "okshes.okcho!kshy={plant}",
+        "C": "okshes.okcho.kshy={plant}",
+        "F": "okshes.okcho.kshy={plant}",
+        "U": "okshes.okcho,kshy={plant}"
+      }
+    }
+  }
+}

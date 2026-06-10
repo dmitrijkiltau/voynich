@@ -1,0 +1,46 @@
+{
+  "folio": "f5r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q01/f005r_tr.txt",
+    "date": "1998-12-06",
+    "time": "13:14:04",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "kshody.fchoy.chkoy.oaiin.oar.olsy.chody.dkshy.dy-",
+        "C": "kchody.fchoy.chkoy.oaiin.oar.olsy.chody.dkchy.dy-",
+        "F": "kshody.pchoy.chkoy.oaiin.oar.olsy.chody.dkshy.dy-"
+      },
+      "P.2": {
+        "H": "ochey.okey.qokaiin.sho.ckhoy.cthey.chey.oka*or.otol-",
+        "C": "ochey.okey.qokaiin.sho.ckhoy.cthey.chey.oka*os.otol-",
+        "F": "ochey.okey.qokaiin.sho.ckhoy.cthey.chey.ok**or.otol-"
+      },
+      "P.3": {
+        "H": "qoaiin.otan.chy.daiin.oteeen.cho.cthy.otchy.qotcho.dy-",
+        "C": "qoaiin.otan.chy.daiin.oteee*.cho!cthy.otchy.qotcho!dy-",
+        "F": "qoaiin.otan.chy.daiin.oteeen.cho.cthy.otchy.qotcho!dy-"
+      },
+      "P.4": {
+        "H": "otain.sheody.chan.s.cheor.chocthy=",
+        "C": "otain.cheody.chan.s.cheor.chocthy=",
+        "F": "otain.sheody.chan.s.cheor.chocthy="
+      },
+      "P.5": {
+        "H": "tshy.shody.qoaiin.cholols.sho.qotcheo.daiin.shodaiin-",
+        "C": "teey.shody.qoaiin.cholols.sho.qotcheo.daiin.shodaiin-",
+        "F": "tshy.shody.qoaiin.cholols.sho.qotcheo.daiin.shodaiin-"
+      },
+      "P.6": {
+        "H": "sho.cheor.chey.qoeeey.qoykeeey.qoeor.cthy.shotshy.dy-",
+        "C": "sho.cheor.chey.qoeeey.qoykeeey.qoeor.cthy.shotshy.dy-",
+        "F": "sho.cheor.chey.qoeeey.qoykeeey.qoeor.cthy.shotshy.dy-"
+      },
+      "P.7": {
+        "H": "qotoeey.keey.cheo.kchy.shody=",
+        "C": "qotoeey.keey.cheo!kchy.shody=",
+        "F": "qotoeey.keey.cheo.kchy.shody="
+      }
+    }
+  }
+}

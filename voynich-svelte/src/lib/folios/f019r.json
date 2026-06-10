@@ -1,0 +1,76 @@
+{
+  "folio": "f19r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q03/f019r_tr.txt",
+    "date": "1998-12-12",
+    "time": "17:19:12",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "pchor.qodchy.qotshy.dy.tchy.qotchy.qoky.daiin.dchydy-",
+        "C": "pchor.qodchy.qotshy.dy.tchy.qotchy.qoky.daiin.dchydy-",
+        "F": "pchor.qodchy.qotshy.dy.tchy.qotchy.qoky.daiin.dchydy-"
+      },
+      "P.2": {
+        "H": "dshy.chor.y.tchy.chol.dytchy.chordy.daiin.dy!ty.s.choy-",
+        "C": "dshy.chor.y.tchy.chol.dytchy.chordy.daiin.dy.ty.*.ch*!-",
+        "F": "dshy.chor.y.tchy.chol.dytchy.chordy.daiin.dy!ty.s.cho*-"
+      },
+      "P.3": {
+        "H": "oscheor.shy.tdaiin.chol.dor.yky-",
+        "C": "oscheos.shy.tdaiin.chol.dor.yky-",
+        "F": "oscheor.shy.tdaiin.chol.dor.yky-"
+      },
+      "P.4": {
+        "H": "qokorar.daiin.chckhy.shy.kchor-",
+        "C": "qokorar.daiin.chckhy.shy.kchor-",
+        "F": "qokorar.daiin.chckhy.shy.kchor-"
+      },
+      "P.5": {
+        "H": "otchy.tchy.qoky.daiin.r-{plant}",
+        "C": "otchy.tchy.qoky.daiin.r-{plant}",
+        "F": "otchy.tchy.qoky.daiin.r-{plant}"
+      },
+      "P.6": {
+        "H": "y.shor.shy.daiin.otytchy.daiin-{plant}",
+        "C": "y!shor.shy.daiin.otytchy.daiin-{plant}",
+        "F": "y!shor.shy.daiin.otytchy.daiin-{plant}"
+      },
+      "P.7": {
+        "H": "qok!cho.ky.cthar.dor.chan.dar-{plant}",
+        "C": "q*t.cho.ty.cthar.dor.chan.dar-{plant}",
+        "F": "qok!cho.ky.cthar.dor.chan.dar-{plant}"
+      },
+      "P.8": {
+        "H": "or.chor.daky.dal.chor.dor!l.shy-{plant}",
+        "C": "or.chor.daky.dal.chor.dor.l.shy-{plant}",
+        "F": "or.chor.daky.dal.chor.dor!l.shy-{plant}"
+      },
+      "P.9": {
+        "H": "qotchor.dy.dor.y.tchy!kchy.shdaiin-{plant}",
+        "C": "qotchor.dy.dor.y.tchy!kchy.shdaiin-{plant}",
+        "F": "qotchor.dy.dor.y!tchy.kchy.shdaiin-{plant}"
+      },
+      "P.10": {
+        "H": "daiin.cthor.chol.ykchor.chordy-",
+        "C": "daiin.cthor.chol.ykchor.chordy-",
+        "F": "daiin.cthor.chol.ykchor.chordy-"
+      },
+      "P.11": {
+        "H": "qotchy.qolody.choldy.cthyd-{plant}",
+        "C": "qotchy.qolody.choldy.cthod-{plant}",
+        "F": "qotchy.qolody.choldy.cthyd-{plant}"
+      },
+      "P.12": {
+        "H": "ykchor.chor.daiin.daiinol-",
+        "C": "ykchor.chor.daiin.daiinol-",
+        "F": "ykchor.chor.daiin.daiinol-"
+      },
+      "P.13": {
+        "H": "os!octhor.y!tchor=",
+        "C": "or.octhor.y.tchor=",
+        "F": "os!octhor.y!tchor="
+      }
+    }
+  }
+}

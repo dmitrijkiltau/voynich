@@ -8,7 +8,7 @@
 			<tr><th>Klasse</th><th>Wörter (EVA)</th><th>Funktion im Text</th></tr>
 		</thead>
 		<tbody>
-			{#each CLASSES as c}
+			{#each CLASSES as c (c.cls)}
 				<tr>
 					<td><strong>{c.cls}</strong></td>
 					<td><span class="eva">{c.words}</span></td>

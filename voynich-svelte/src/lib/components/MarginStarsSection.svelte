@@ -17,7 +17,7 @@
 				<tr><th>Typ</th><th>Morphologie</th><th>Funktion</th><th>Konf.</th></tr>
 			</thead>
 			<tbody>
-				{#each STAR_TYPES as s}
+				{#each STAR_TYPES as s (s.type)}
 					<tr>
 						<td><strong>{s.type}</strong></td>
 						<td class="note-cell">{s.morph}</td>
@@ -50,7 +50,7 @@
 
 	<div class="box blue inclusio">
 		<div class="box-title">Strukturelle Inclusio: P.1 ↔ P.52 (f103r)</div>
-		<p style="margin:0;font-size:.92rem">P.1 öffnet mit <span class="eva">pchedal · dal · yshdal</span> (dreifach „der Schwache"). P.52 — markiert mit dem einzigen Sonderstern der Seite — beginnt ebenfalls mit <span class="eva">pchedal</span>. Diese bewusste literarische Rahmung ist ein Kompositionsmerkmal mittelalterlicher Medizintraktate.</p>
+		<p style="margin:0;font-size:.92rem">P.1 öffnet mit <span class="eva">pchedal · dal · yshdal</span> (dreifach „der Schwache“). P.52 — markiert mit dem einzigen Sonderstern der Seite — beginnt ebenfalls mit <span class="eva">pchedal</span>. Diese bewusste literarische Rahmung ist ein Kompositionsmerkmal mittelalterlicher Medizintraktate.</p>
 	</div>
 
 	<h3>Folio-übergreifender Vergleich</h3>
@@ -60,7 +60,7 @@
 				<tr><th>Folio</th><th>Sternprinzip</th><th>Besonderheit</th></tr>
 			</thead>
 			<tbody>
-				{#each FOLIOS as f}
+				{#each FOLIOS as f (f.folio)}
 					<tr>
 						<td class="folio-cell">{f.folio}</td>
 						<td class="note-cell">{f.principle}</td>

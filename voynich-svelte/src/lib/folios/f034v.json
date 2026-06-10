@@ -1,0 +1,77 @@
+{
+  "folio": "f34v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q05/f034v_tr.txt",
+    "date": "1998-12-19",
+    "time": "18:57:23",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "kschdy.chdy.chefchy.shdy.qopchdy.shdy!dy.chdal!chdy.ypchdy.c!hcthdy.spaiin-",
+        "C": "kshedy.chdy.chefchy.shdy.qopchdy.shdy.dy!chdal.chdy.ypchdy.ckhcthdy.spaiin-",
+        "F": "kechdy.chdy.chefchy.shdy.qopchdy.shdy!dy.chdal!chdy.ypchdy.c!hcthdy.spaiin-",
+        "U": "kschdy.chdy.chcfchy.shdy.qopchdy.shdy!dy.chdal!chdy.ypchdy.c!hcthdy.spaiin-"
+      },
+      "P.2": {
+        "H": "tol.qokchy.dychedy.okchy.chckhdy.chdaiin.ckhy.loees.ykar.aiin.oldam-",
+        "C": "tol.qokchy.dychedy.okchy.chckhdy.chdaiin.ckhy.loees.ykar.aiin.oldam-",
+        "F": "tal.qokchy.dychedy.okchy.chckhdy.chdaiin.ckhy.loees.ykar.aiin.oldam-",
+        "U": "tal.qokchy.dychedy.okchy.chckhdy.chdaiin.ckhy.loees.ytar,aiin.oldam-"
+      },
+      "P.3": {
+        "H": "ytal.seor.chdal.olchdy.char.or.ol.kedaiiin.chcthy.okchdy.chckhy.das!am-",
+        "C": "ytal.shor.chdal.olchdy.char.or.ol.kedaiiin.chcthy.okchdy.chckhy.dar!am-",
+        "F": "ytal.shor.chdal.olchdy.char.or.ol.kedaiiin.chcthy.okchdy.chckhy.das!am-",
+        "U": "ytal.shor.chdal.olchdy.char.or.ol.kedaiiin.chcthy.okchdy.chckhy.dar,am-"
+      },
+      "P.4": {
+        "H": "tchdaiin.chekal.shedy.qokedar.chdaiin.oldar.qoldar.chedy.daiin.otam-",
+        "C": "tchdaiin.chekal.shedy.qokedar.chdaiin.oldar.qoldar.chedy.daiin.otam-",
+        "F": "tchdaiin.chekal.shedy.qokedar.chdaiin.oldar.qoldar.chedy.daiin.otam-",
+        "U": "tchdaiin.chekal.shedy.qokedar.chdaiin.oldar.qoldar.chedy.daiin.otam-"
+      },
+      "P.5": {
+        "H": "lshaiir.orair.shedy.chechey.dy!key.kair.chedy.qokar.chekaly.cholky=",
+        "C": "lshaiir.orair.shedy.chechey.dy.key.kair!chedy.qokar.chekaly.chalky=",
+        "F": "lshaiir.orair.shedy.chechey.dy!key.kair.chedy.qokar.chekaly.cholky=",
+        "U": "lshaiir.orair.shedy.chechey.dy!key,kair.chedy.qokar.chekaly.cholky="
+      },
+      "P.6": {
+        "H": "pchedar.seear.qokchdy.qokees.cheol.ypchdaiin.chedy.lr.ar.chedain-",
+        "C": "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-",
+        "F": "pchedar.shear.qokchdy.qokees.cheol.ypchdaiin.chedy.lr!ar.chedain-",
+        "U": "pchedar.shear.qokchdy.qokees,cheol.ypchdaiin.chedy.lr,ar.chedain-"
+      },
+      "P.7": {
+        "H": "olchdaiin.chedy.chey.keedy.chy.kedy.dy.qokedy.okey.s!air.chkain.otain-",
+        "C": "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-",
+        "F": "olchdaiin.chedy.chey.keedy.chy.kedy.dy.qokedy.okey.s!air.chkain.otain-",
+        "U": "olchdaiin.chedy.chey.keedy.chy,kedy.dy.qokedy.okey.s,air.chkain.otain-"
+      },
+      "P.8": {
+        "H": "ysheos.otar.ar.cho!raiin.cheky.ol!!chdaiin.or.oldar.chdar.okam-",
+        "C": "ysheos.otar.ar.cho!raiin.cheky.!lchchdaiin.or.oldar.chdar.okam-",
+        "F": "ysheos.otar.ar.cho.raiin.cheky.ol!!chdaiin.or.oldar.chdar.okam-",
+        "U": "yshear.otar.ar.cho.raiin.cheky.ol!!chdaiin.or.oldar.chdar.okam-"
+      },
+      "P.9": {
+        "H": "lsheody.cphy.qokeey.keedy.kchdy.chedy.qokedy.chdy.kal.shs.olda!iin-",
+        "C": "lsheody.cphy.qokeey.keedy.kchdy.chedy.qokedy.chdy.arl.shs.olda!iin-",
+        "F": "lsheody.cthy.qokeey.keedy.kchdy.chedy.qokedy.chdy.kal.shs.olda!iin-",
+        "U": "lsheody.cthy.qokeey.keedy.kchdy.chedy.qokedy.chdy.kal,shs.oldaiiin-"
+      },
+      "P.10": {
+        "H": "daiin.chdy.tedy.kchdy.okeedy.checkhy.chdy.kain.cheor.or.okedy.okam-",
+        "C": "daiin.chdy.tedy.kchdy.okeedy.checkhy.chdy.kain.chear.or.okedy.okam-",
+        "F": "daiin.chdy.tedy.kchdy.okeedy.checkhy.chdy.kain.ch!ar.or.akedy.okam-",
+        "U": "daiin.chdy.tedy.kchdy.okeedy.checkhy.chdy.kain.chear.or.ykedy.okam-"
+      },
+      "P.11": {
+        "H": "yshos.ody.s.aiin.okoy.okal.shedy=",
+        "C": "yshos.ody.s.aiin.okey.okal.shedy=",
+        "F": "yshos.ody.s!aiin.okoy.okal.shedy=",
+        "U": "yshos.ody.s.aiin.okoy.okal,shedy="
+      }
+    }
+  }
+}

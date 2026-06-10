@@ -1,0 +1,428 @@
+{
+  "folio": "f85v2",
+  "transcriptions": {
+    "source": "https://voynich.nu/q14/f085v2_tr.txt",
+    "date": "1998-12-29",
+    "time": "04:33:42",
+    "editor": "stolfi",
+    "lines": {
+      "W1.1": {
+        "U": "***in.**r-"
+      },
+      "W1.2": {
+        "U": "***dair-"
+      },
+      "W1.3": {
+        "U": "***kam-"
+      },
+      "W1.4": {
+        "U": "***rchedy="
+      },
+      "W1.5": {
+        "U": "***dy.ry-"
+      },
+      "W1.6": {
+        "U": "*chshy.o***-"
+      },
+      "W1.7": {
+        "U": "*chor.orary-"
+      },
+      "W1.8": {
+        "U": "*sair.ogam="
+      },
+      "V1.1": {
+        "U": "oto.tos,ain.odar.otar.otar.okaiin.dar,ol,chdar.otdar.sh*chs.okos.ol.om.olkeeodaar.shol.okal.orshear.*aii*.okalol.otodr.oar.ar,ol.oqotam-{gap}oteal.cthedy.oked*.*shaiin.or,aiin.okar.okeedy="
+      },
+      "U1.1": {
+        "V": "okchdarar=",
+        "U": "okchdarar="
+      },
+      "U1.21": {
+        "V": "daldar=",
+        "U": "daldar="
+      },
+      "U1.22": {
+        "V": "saiindy=",
+        "U": "saiindy="
+      },
+      "U1.23": {
+        "V": "ddsschx=",
+        "U": "d*sschx="
+      },
+      "U1.24": {
+        "V": "opardy=",
+        "U": "opardy="
+      },
+      "U1.25": {
+        "V": "yt*dar=",
+        "U": "otedar="
+      },
+      "U1.31": {
+        "V": "orarol=",
+        "U": "orarol="
+      },
+      "U1.41": {
+        "V": "daraldy=",
+        "U": "daraldy="
+      },
+      "U1.42": {
+        "U": "daldal="
+      },
+      "V2.1": {
+        "U": "cthshr.otedy.chedaiir.cheekedy.ala*.olka*.oko.k***.okche*.otol.ary-{tower}***,aiir.oral.r.keeai*.***-{tower}okain.olkaiin.ody.{object}rair.ol.r,ar.{begin waterfall}or.okal.o**l.{endwaterfall}s.al.al.okal.**.air.ol.ar.ol.al.**.okan.okod.okor.okeo.**y-{bridgehead}"
+      },
+      "U2.1": {
+        "V": "okory=",
+        "U": "okory="
+      },
+      "U2.2": {
+        "V": "dxar=",
+        "U": "alar="
+      },
+      "U2.3": {
+        "V": "adairy=",
+        "U": "odairy="
+      },
+      "U2.4": {
+        "V": "opar=",
+        "U": "opar="
+      },
+      "U2.5": {
+        "V": "ofain="
+      },
+      "U2.6": {
+        "V": "ofary="
+      },
+      "U2.7": {
+        "V": "ofedy=",
+        "U": "okedy="
+      },
+      "U2.8": {
+        "V": "docfhhy="
+      },
+      "U2.9": {
+        "V": "daiiny=",
+        "U": "daiino="
+      },
+      "U2.10": {
+        "V": "oko=",
+        "U": "oko="
+      },
+      "U3.1": {
+        "V": "opeol.daly="
+      },
+      "U3.2": {
+        "V": "okar="
+      },
+      "U3.3": {
+        "V": "cfhhy="
+      },
+      "U3.4": {
+        "V": "okar.oedody="
+      },
+      "U3.21": {
+        "V": "ot.edy.oto**="
+      },
+      "U3.22": {
+        "V": "opshedaiin="
+      },
+      "U3.23": {
+        "V": "sareecphdy="
+      },
+      "U3.31": {
+        "V": "ydashgarain="
+      },
+      "U3.41": {
+        "V": "opokchor.ody=",
+        "U": "opokchor.ody="
+      },
+      "U3.42": {
+        "V": "okody="
+      },
+      "U3.43": {
+        "V": "opair.ofalcfhy="
+      },
+      "N1.1": {
+        "U": "oran.otar.oto,deedyoty,daiin.**eor.*ar.oked*.qotedy.otchy.otoraiin.chekad*{fold}r.or.aiin.okedal.olor.opaiir,al.cheolky.ytar.qokeol.tshed.ores.oteedaiin.odal.ch*y.otchdar.or,olkoai*.{fold}**olaiin="
+      },
+      "M1.1": {
+        "V": "otedal=",
+        "U": "otedal="
+      },
+      "M1.2": {
+        "V": "opaiiino=",
+        "U": "opaiiino="
+      },
+      "M1.3": {
+        "V": "otchdy=",
+        "U": "*t**dy={on top of fold}"
+      },
+      "M1.4": {
+        "V": "okchy=",
+        "U": "okchy="
+      },
+      "M1.5": {
+        "V": "chkeedy=",
+        "U": "chkeedy="
+      },
+      "M1.6": {
+        "V": "chpair.ain=",
+        "U": "chpair,a!r="
+      },
+      "M1.7": {
+        "V": "odady=",
+        "U": "odady="
+      },
+      "M1.8": {
+        "V": "okody=",
+        "U": "okady="
+      },
+      "N2.1": {
+        "U": "okar.or.o*.oraiin.okeady.okch*.odsheedy.odaiin.okchdy.{fold}okar.shar.okaiin.daiin.ofair.oly.olkais,od,al.olkalo.olor.***.**.o*.sh*a.*.k.r,ol,ar.oteedaii*.otar.a*r.*,qor.aiin.ol.qota*{fold}.ol.o.r.or.or*a.okeeed*.okal.okodain.okech.okady.okedy.chdar.o.**-{gap}"
+      },
+      "M2.1": {
+        "V": "daral=",
+        "U": "daral="
+      },
+      "M2.2": {
+        "V": "opar=",
+        "U": "opar="
+      },
+      "M2.3": {
+        "V": "opchees=",
+        "U": "opcha!r="
+      },
+      "M2.4": {
+        "V": "chdy=",
+        "U": "chdy="
+      },
+      "M2.5": {
+        "V": "odal=",
+        "U": "odal="
+      },
+      "M2.6": {
+        "V": "opy=",
+        "U": "opy="
+      },
+      "M2.7": {
+        "V": "oteedy=",
+        "U": "oteedy="
+      },
+      "M2.11": {
+        "V": "ols=",
+        "U": "ols="
+      },
+      "M2.12": {
+        "V": "ypal=",
+        "U": "ypal="
+      },
+      "M2.13": {
+        "V": "opydch{&X}=",
+        "U": "opydsh!!!!="
+      },
+      "M2.14": {
+        "V": "sshy=",
+        "U": "rchy="
+      },
+      "M2.15": {
+        "V": "ddl=",
+        "U": "dal="
+      },
+      "M2.16": {
+        "V": "dtedg=",
+        "U": "dtedy="
+      },
+      "M2.17": {
+        "V": "opey=",
+        "U": "*p!y="
+      },
+      "M2.18": {
+        "V": "opdam=",
+        "U": "opdam="
+      },
+      "M2.19": {
+        "V": "ddary=",
+        "U": "ddaro="
+      },
+      "M2.20": {
+        "V": "ot.my=",
+        "U": "otedy="
+      },
+      "M2.21": {
+        "V": "daindy=",
+        "U": "dairdy="
+      },
+      "M2.22": {
+        "V": "dody=",
+        "U": "sady="
+      },
+      "M2.51": {
+        "U": "otdo*aidy-"
+      },
+      "M2.52": {
+        "U": "soshxar.arar-"
+      },
+      "M2.53": {
+        "U": "otedaiin.otedy-"
+      },
+      "M2.54": {
+        "U": "otedar.d*="
+      },
+      "M2.55": {
+        "U": "opch**aiin="
+      },
+      "M3.1": {
+        "V": "okchdy.kary.*drain**="
+      },
+      "C1.1": {
+        "U": "oka*-{gap}okedal.orain.otody.toar.chcpar.olarckhy.opchdar.or.ar.al.xar.opar.olchedy.okalm.or.apolairi,dy-{figure}otchdair.otodar.otedar.otar,odaiin.olkaiin.otl.xar,ashe.ol.ar.ackhy.shdaiin.ocfheody.shedy-{gap}"
+      },
+      "B1.1": {
+        "V": "opdar.am=",
+        "U": "opdar!am="
+      },
+      "B1.2": {
+        "V": "ot.dam=",
+        "U": "otedam="
+      },
+      "B1.3": {
+        "V": "!okedshs=",
+        "U": "lokedshs="
+      },
+      "B1.4": {
+        "V": "otodar=",
+        "U": "otodar="
+      },
+      "B1.5": {
+        "V": "otedaiin=",
+        "U": "otedaiin="
+      },
+      "B1.6": {
+        "V": "okedy=",
+        "U": "okedy="
+      },
+      "B1.7": {
+        "V": "loltedy=",
+        "U": "lo**edy="
+      },
+      "B1.8": {
+        "V": "opedam=",
+        "U": "opedam="
+      },
+      "B1.9": {
+        "V": "opchdar=",
+        "U": "opchdar="
+      },
+      "B1.10": {
+        "V": "opchdy="
+      },
+      "B1.11": {
+        "V": "oda=",
+        "U": "ody="
+      },
+      "B1.12": {
+        "V": "okar.amal=",
+        "U": "okar,amal="
+      },
+      "B1.13": {
+        "U": "otchdy-{ring}chdain-"
+      },
+      "B1.14": {
+        "U": "otady-{ring}ote*y="
+      },
+      "B1.15": {
+        "U": "otedy.oparam="
+      },
+      "B1.31": {
+        "V": "cfhedain=",
+        "U": "cphedain="
+      },
+      "B1.32": {
+        "V": "otdar.shed=",
+        "U": "otdar,shed="
+      },
+      "B1.41": {
+        "V": "d.dl=",
+        "U": "y,dl="
+      },
+      "B1.42": {
+        "V": "otch*=",
+        "U": "otch!="
+      },
+      "B1.43": {
+        "V": "d.dy=",
+        "U": "d.dy="
+      },
+      "B1.44": {
+        "V": "osy=",
+        "U": "ory="
+      },
+      "B1.45": {
+        "V": "oteey=",
+        "U": "oteey="
+      },
+      "B1.46": {
+        "V": "lepcheky=",
+        "U": "lcpheeky="
+      },
+      "B1.47": {
+        "U": "opashcfhedy-{circle}oteeoly="
+      },
+      "D1.1": {
+        "U": "*ar.odaiin.or-{gap}"
+      },
+      "D1.2": {
+        "U": "o.dar.air,*-{gap}"
+      },
+      "C2.1": {
+        "U": "okedar.okody.okair.chedy.opar.al,keody.s,ar,al,keoedy.otedaiin.olky.or.aiin.ody.osain.x*.s.odaiin.okedal.ol.ar.odaiin,alo.sal*an.okeedy.otchdaiin.otedy.okas,aiin.yky.odaiin.okal.okalar="
+      },
+      "B2.1": {
+        "V": "otedy=",
+        "U": "otedy="
+      },
+      "B2.2": {
+        "U": "otchdam="
+      },
+      "B2.3": {
+        "U": "otosaiin="
+      },
+      "B2.4": {
+        "U": "otchdy="
+      },
+      "B2.5": {
+        "U": "*kedy="
+      },
+      "B2.6": {
+        "U": "okchdy="
+      },
+      "B2.7": {
+        "V": "ok**lar=",
+        "U": "oka!lar="
+      },
+      "B2.8": {
+        "V": "of!!!!araiin=",
+        "U": "of{&F}araiin="
+      },
+      "B2.9": {
+        "U": "**="
+      },
+      "B3.21": {
+        "V": "darchdy="
+      },
+      "B3.22": {
+        "V": "opodchdal="
+      },
+      "B3.31": {
+        "V": "anvd*l="
+      },
+      "B3.41": {
+        "V": "lyshalg=",
+        "U": "lashalg="
+      },
+      "B3.42": {
+        "U": "okar="
+      }
+    }
+  }
+}

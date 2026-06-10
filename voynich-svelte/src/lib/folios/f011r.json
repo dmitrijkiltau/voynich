@@ -1,0 +1,46 @@
+{
+  "folio": "f11r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q02/f011r_tr.txt",
+    "date": "1998-12-06",
+    "time": "19:47:28",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "tshol.schoal.cfhy.sh!f!ydaiin.cphy.shey.t!chody.shoyty-",
+        "C": "tshol.schoal.!f!y.shcfhydaiin.cphy.shey.k.chody.shoyty-",
+        "F": "tshol.schoal.cfhy.sh!f!ydaiin.cphy.shey.t!chody.shoyty-"
+      },
+      "P.2": {
+        "H": "socthody.qodor.y.kshy.daiin.ytchy.ytchoky.kchol.daiin-",
+        "C": "socthody.qodor.y.kshy.daiin.ytchy.ytchoky.kchol.daiin-",
+        "F": "socthody.qodor!y.kshy.daiin.ytchy.ytchoky.kchol.daiin-"
+      },
+      "P.3": {
+        "H": "qoty.chol.cthy.dor.ykychy.choty.dain.chaiin.daiin.ded-",
+        "C": "qoty.chol.cthy.dor.ykychy.choty.dain.chaiin.daiin.dod-",
+        "F": "qoty.chol.cthy.dor.ykychy.choty.dain.chaiin.daiin.ded-"
+      },
+      "P.4": {
+        "H": "dchol.chy.kchy.dy.daiin=",
+        "C": "dchol.chy.kchy.dy.daiin=",
+        "F": "dchol.chy.kchy.dy.daiin="
+      },
+      "P.5": {
+        "H": "tchol.shor.shor.dky.shcphy.daiin.cthy.dy.chodl.daiin-",
+        "C": "tchol.shor.shor.dky.!!!**y.daiin.cthy.dy.chodl.daiin-",
+        "F": "tchol.shor.shor.dky.shcphy.daiin.cthy.dy.chodl.daiin-"
+      },
+      "P.6": {
+        "H": "odl.d!s.y.otol.chaiin.ykchor.dair.chody.cthy.s.daiin-",
+        "C": "odl.d.s.y.otol.chaiin.ykchor.dair.chody.cthy.s.daiin-",
+        "F": "odl.d!s!y.otol.chaiin.ykchor.dair.chody.cthy.s.daiin-"
+      },
+      "P.7": {
+        "H": "qotchy.okchol.cthy.dy=",
+        "C": "qotchy.okchol.cthy.dy=",
+        "F": "qotchy.okchol.cthy.dy="
+      }
+    }
+  }
+}

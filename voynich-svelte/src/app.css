@@ -191,7 +191,7 @@ table.dt {
   border-collapse: collapse;
   font-size: .88rem;
 
-  & thead {
+  & thead tr {
     background: var(--parch-d);
   }
 
@@ -213,12 +213,12 @@ table.dt {
   }
 
   & tr:last-child td { border-bottom: none; }
-  & tr:hover td { background: var(--parch-d); }
+  & tr:hover { background: var(--parch-d); }
   & td:first-child { white-space: nowrap; }
 
   & tr[data-clickable] {
     cursor: pointer;
-    &:hover td { background: color-mix(in srgb, var(--border) 18%, var(--parch)); }
+    &:hover { background: color-mix(in srgb, var(--border) 18%, var(--parch)); }
   }
 }
 
@@ -231,6 +231,7 @@ table.dt {
   background: rgba(0, 0, 0, .04);
   padding: .05rem .25rem;
   border-radius: 2px;
+  word-break: break-word;
 }
 
 .heb-sm {
@@ -331,7 +332,7 @@ table.dt {
   table { break-inside: avoid; }
 
   table.dt tr:hover td,
-  table.dt tr[data-clickable]:hover td { background: none; }
+  table.dt tr[data-clickable]:hover { background: none; }
 
   .hidden-print { display: none; }
   .section { break-inside: avoid; }

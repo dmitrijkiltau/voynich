@@ -2,10 +2,7 @@
   import { RULES } from "$lib/grammar-rules-data.js";
   import { STATS } from "$lib";
 
-  // Keep for whenever it is accidentally placed
-  const plant = "{plant}";
-
-  const content = {
+  const CONTENT = {
     title: "I. Zusammenfassung",
     summary: `Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.`,
     hypothesis: `Die Grundhypothese: Das Voynich-Manuskript ist in Mischna-Hebräisch mit aramäischen Lehnpartikeln verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines hippokratisch-mittelalterlichen Medizintraktats: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.`,
@@ -30,7 +27,7 @@
       },
       {
         label: "Sprache A Anker",
-        value: `${STATS.foliosA}: 10/10 Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4 vollständig)`,
+        value: `${STATS.foliosA}: 10/10 Sprache-A-Ankerwörter je Folio — 100 % (Quires A+B vollständig, Quire C bC1–bC4, Quire D bD1+bD2+bD3+bD4 vollständig)`,
       },
       {
         label: "Grammatikregeln",
@@ -42,17 +39,17 @@
 </script>
 
 <section class="section" id="abstract">
-  <h2>{content.title}</h2>
+  <h2>{CONTENT.title}</h2>
   <div class="abstract-grid">
     <div id="abstract-text">
-      <p class="dropcap">{content.summary}</p>
-      <p>{content.hypothesis}</p>
+      <p class="dropcap">{CONTENT.summary}</p>
+      <p>{CONTENT.hypothesis}</p>
     </div>
 
     <div class="abstract-findings box hl">
       <table class="dt findings-table">
         <tbody>
-          {#each content.findings as finding}
+          {#each CONTENT.findings as finding (finding.label)}
             <tr>
               <td>{finding.label}</td>
               <td>{finding.value}</td>
@@ -63,9 +60,9 @@
     </div>
 
     <div class="abstract-changelog box hl hidden-print">
-      <div class="box-title">{content.correctionsTitle}</div>
+      <div class="box-title">{CONTENT.correctionsTitle}</div>
       <ul>
-        {#each STATS.changelog as change}
+        {#each STATS.changelog as change, index (index)}
           <li>{change}</li>
         {/each}
       </ul>

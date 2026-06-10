@@ -1,0 +1,137 @@
+{
+  "folio": "f3v",
+  "status": "confirmed",
+  "registerType": "Herbal (Standard Kräuterbild) — {plant}-System aktiv",
+  "languageClass": "Sprache A (Currier)",
+  "writerHand": 1,
+  "scanUrl": "https://collections.library.yale.edu/iiif/2/1006081/full/full/0/default.jpg",
+  "iconographic": {
+    "rules": [
+      "R14",
+      "R60"
+    ],
+    "illustrationType": "Eine zentrierte Pflanze, am rechten und unteren Rand anliegend, ganzseitig. Zwei Textblöcke ausschließlich in der oberen Seitenhälfte, linksbündig um die Pflanzenkontour herum.",
+    "plantMorphology": {
+      "radix": "Einzelne lange Wurzel, bestehend aus 4–5 segmentierten, kegelförmig ineinandergesteckten Abschnitten (wie Teleskopsegmente), rötlich-orange bemalt mit weißen Ringnähten. Spitze nach links eingebogen mit kleinem kreisrundem Knöpfchen. — textfrei (R60 ✓).",
+      "caulis": "Langer, gerader, vertikaler Stängel, beiderseits hell, mit dunklem „Schattenstreifen“ entlang der rechten Flanke, grün. Keine Seitenäste.",
+      "folia": "Paarige, tief gelappt-fiederteilige Blätter in alternierenden Paaren entlang des Stängels; sehr auffällig zackig-stachelig mit langen spitzen Lappen; dunkelgrün, mittellange dünne Stiele. Stolfi: “disk-shaped with two tails, two arms, and a swallowtail-shaped head with long outward-curved tips.” — Stachelige Spitzen im Bild klar sichtbar. Textbereich im FOLIUM/CAULIS-Bereich durch Pflanzenkontour begrenzt.",
+      "flosFructus": "Zwei Blütenköpfe am Apex des Stängels, von sehr unterschiedlicher Größe: (1) Großes, gerundetes Köpfchen mit auffälliger blauer Bemalung (dunkle Kuppel, gut sichtbar) — möglicherweise Knospe in Vollblüte; (2) Kleineres, helles, rundliches Köpfchen mit gepunkteter Füllung (wie ein Pfefferstreuer, laut Stolfi); schwer aufgeblasene Kelche dunkel bemalt. — Textsignal: oberer Textblock (P.1–P.6) liegt im FLOS-Korrelationsbereich.",
+      "coloring": "blue, green (Reeds); orange-tan (Rhizom, Quire-A-Typ C)"
+    },
+    "botanicalIdentification": [
+      "*Dipsacus* sp. (Wilde Karde / Teasel) — Quelle: Quire-A-Retroanalyse v8.4 + Bildanalyse. Konf. ★★★.",
+      "*Cirsium* sp. (Kratzdistel) ★★★ (spitze, gelappte Blätter, runde Blütenköpfe ähnlich).",
+      "*Echinops* sp. (Kugeldistel) ★★ (blaue Rundblüte passt gut, Blattform abweichend).",
+      "Pharmakologie: *Dipsacus*-Wurzel wird seit der Antike für Entzündungen, Bluterkrankungen und als diaphoretisches Mittel verwendet. Paste aus den Blättern galt als wundheilend (Galenos). Gut vereinbar mit der dominanten Semantik des Textes: dam (Blut), chor (Pupille), chom/cham (Wärme/Entzündung), shol (Tod/Scheol). Das orange-tan Rhizom (Quire-A-Typ C) unterstützt die Identifikation."
+    ],
+    "layoutStructure": "2 visuelle Textblöcke (Stolfi: 6,0 + 7,5 Zeilen) = 14 EVA-Paragraphen (P.1–P.14). Block 1 (P.1–P.6): ~6 Zeilen, obere Hälfte, FLOS-Zone. Block 2 (P.7–P.14): ~7,5 Zeilen, unmittelbar darunter, CAULIS/FOLIUM-Zone. {plant}-Marker: P.1–P.13 je einmal (13×); P.6 endet mit `={plant}` (Abschlusskolophon + Pflanzenmarker); P.14 endet mit `=` (reiner Abschluss, kein Pflanzenmarker — Dokument-Ende-Signal).",
+    "r60Status": "RADIX-Zone textfrei ★★★★★ — Bild bestätigt eindeutig: Gesamter Wurzelbereich (untere ~25% der Seite) vollständig ohne Text. FLOS-Zone (oberer Block P.1–P.6) korrespondiert mit blauem Blütenkopf am Apex ✓. CAULIS/FOLIUM-Zone (unterer Block P.7–P.14) liegt neben den stacheligen Blättern ✓."
+  },
+  "textSignals": {
+    "registerEinordnung": "Pupille / Wärme / Scheol / Blut",
+    "leitterme": [
+      "chor (P.1) — Pupille (Leitterm; vgl. qokchor f3r:P.12)",
+      "chom / cham — Wärme / Entzündung (Schwesterformen; f3r-Parallele bestätigt)",
+      "dam — Blut (Kernsemantik; verbindet mit f3r-Corpus)",
+      "shol — Scheol / Tod (Prognoseschema-Marker)"
+    ],
+    "bildTextKohärenz": "Pupillen/Wärme-Leitterme korrespondieren mit der Pharmakologie von Dipsacus (entzündungshemmend, diaphoretisch, wundheilend). Scheol-Signal am Textende folgt dem Standard-Prognose-Schema. FLOS-Zone (P.1–P.6) ↔ blauer Blütenkopf anatomisch bestätigt. Kohärent."
+  },
+  "transcriptions": {
+    "source": "https://voynich.nu/q01/f003v_tr.txt",
+    "date": "1998-12-06",
+    "time": "13:05:41",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "koaiin.cphor.qotoy.sha.ckhol.ykoaiin.s.oly-{plant}",
+        "C": "koaiin.cphor.qotoy.sha.ckhol.ykoaiin.s.oly-{plant}",
+        "D": "koaiin.cphar.qotoa.sha.ckhol.ykoaiin.s.oly-{plant}",
+        "F": "koaiin.cphor.qotoy.sha.ckhol.ykoaiin.s.oly-{plant}",
+        "U": "koaiin.cphor.qotoy.sha.ckhol.ykoaiin.s.oly-{plant}"
+      },
+      "P.2": {
+        "H": "daiidy.qoteeol.okchor.okor.olytol.dol.dar-{plant}",
+        "C": "daiidy.qotchol.okeeor.okor.olytol.dol.dar-{plant}",
+        "D": "daiida.qotchol.okchor.okor.olytol.dol.dar-{plant}",
+        "F": "daiidy.qoteeol.okchor.okor.olytol.dol.dar-{plant}",
+        "U": "daiidy.qotchol.okchor.okor.olytol.dol.dar-{plant}"
+      },
+      "P.3": {
+        "H": "okom.chol.shol.seees.chom.cheeykam.okai!-{plant}",
+        "C": "okom.chol.shol.seees.chom.cheeykam.o!ai*-{plant}",
+        "F": "okom.chol.shol.seees.chom.cheeykam.okai*-{plant}",
+        "U": "okom.chol.shol.sches.chom.cheeykam.okai*-{plant}"
+      },
+      "P.4": {
+        "H": "qodar.ees.eey.kcheol.okal.do.r.chear.een-{plant}",
+        "C": "qodar.chs.eey.kcheol.okal.do.r.chear!een-{plant}",
+        "F": "qodar.ees.eey.kcheol.okal.do!r.chear.een-{plant}",
+        "U": "qodar.chs.chy.tcheol.okal.do!r.chear!eeb-{plant}"
+      },
+      "P.5": {
+        "H": "yeeear.otchal.eeor.eear.ckhy!-{plant}",
+        "C": "ychear.otchal.chor.char.ckha!-{plant}",
+        "D": "ychear.otchal.chor.char.ckhy*-{plant}",
+        "F": "yeeear.otchal.eeor.eear.ckhy!-{plant}",
+        "U": "ychear.otchal.chor.chor.ckh!!-{plant}"
+      },
+      "P.6": {
+        "H": "or.cheor.kor.chodaly.chom={plant}",
+        "C": "os.cheor.kar.chodaly.chom={plant}",
+        "F": "or.cheor.kor.chodaly.chom={plant}",
+        "U": "or.cheor.kor.chodaly.cham={plant}"
+      },
+      "P.7": {
+        "H": "tchor.otcham.chor.cfham.s!-{plant}",
+        "C": "tchor.otcham.chor.cpham.ch-{plant}",
+        "D": "tchor.otcham.chor.cfham.ch-{plant}",
+        "F": "tchor.otcham.chor.cfham.s!-{plant}",
+        "U": "tchor.otcham.chor.cfham.s!-{plant}"
+      },
+      "P.8": {
+        "H": "ykchy.kchom.chor.chekeol.oka-{plant}",
+        "C": "ykchy.kchom.chor.chckhol.oka-{plant}",
+        "F": "ykchy.kchom.chor.chekeol.oka-{plant}",
+        "U": "ykchy.kchom.chor.chckhol.oka-{plant}"
+      },
+      "P.9": {
+        "H": "ytcheear.okeol.cthodoaly.chor.cthy-{plant}",
+        "C": "ytcheear.okeol.cthodoaly.chor.cthy-{plant}",
+        "F": "ytcheear.okeol.cthodoaly.chor.cthy-{plant}",
+        "U": "yteeaiir.okeol.cthodoaly.chor.cthy-{plant}"
+      },
+      "P.10": {
+        "H": "ochor.daiin.qokshol.daiim.chol.okary-{plant}",
+        "C": "ochas.daiin.qokshol.daiim.chol.okary-{plant}",
+        "D": "ochar.daiin.qokshol.daiim.chol.okary-{plant}",
+        "F": "ochor.daiin.qokshol.daiim.chol.okary-{plant}",
+        "U": "ochor.daiin.qokshol.daiim.chol.okary-{plant}"
+      },
+      "P.11": {
+        "H": "sho.shockho.ckhy.tchor.chodaiin.chom-{plant}",
+        "C": "sho.shockho.ckhy.tchor.chodaiin.chom-{plant}",
+        "F": "sho.shockho.ckhy.tchor.chodaiin.chom-{plant}",
+        "U": "sho.shockho.ckhy.tchor.chodaiin.chom-{plant}"
+      },
+      "P.12": {
+        "H": "osh.chodair.ytchy.tchor.kcham.s-{plant}",
+        "C": "osh.chodair.ytchy.tchor.kcham.s-{plant}",
+        "F": "osh.chodair.ytchy.tchor.kcham.s-{plant}",
+        "U": "osh.chodair.ytchy.tchor.kcham.s-{plant}"
+      },
+      "P.13": {
+        "H": "shar.shkaiin.qokchy.yty.cthal.chky-{plant}",
+        "C": "shar.shkaiin.qokchy.yty.cthal.chky-{plant}",
+        "F": "shar.shkaiin.qokchy.yty.cthal.chky-{plant}",
+        "U": "shar.shkaiin.qokcha.yty.cthal.chky-{plant}"
+      },
+      "P.14": {
+        "H": "dain.sheam.yteam=",
+        "C": "dain.sheam.ykeam=",
+        "F": "dain.sheam.yteam=",
+        "U": "dain.sheam.yteam="
+      }
+    }
+  }
+}

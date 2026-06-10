@@ -1,0 +1,47 @@
+{
+  "folio": "f11v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q02/f011v_tr.txt",
+    "date": "1998-12-11",
+    "time": "12:29:30",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "poldchody.shcphy.shordy.qoty-{plant}shol.cphar.dan.y-",
+        "C": "poldchody.shcphy.shordy.qoty-{plant}shol.cphar.dan.y-",
+        "F": "poldchody.shcphy.shordy.qoty-{plant}shol.cphar.dan!y-",
+        "U": "poldchody.shcphy.shordy.qoty-{plant}shol.cphar.dan.y-"
+      },
+      "P.2": {
+        "H": "shol.dy.chckhy.shcthy.daiin.dam-{plant}ykchy.dain.dchy-",
+        "C": "shol.dy.chckhy.shcthy.daiin.dam-{plant}ykchy.dain.dchy-",
+        "F": "shol.dy.chckhy.shcthy.daiin.dam-{plant}ykchy.dain.dchy-",
+        "U": "shol.dy.chckhy.shcthy.daiin.dam-{plant}ykchy.dain.dchy-"
+      },
+      "P.3": {
+        "H": "otchor.dy.kchy.tchy.*{&152}ar.qokchd-{plant}oky.chol.dy.dy-",
+        "C": "otchor.dy.kchy.tchy.d!!!!!!ar.qokchd-{plant}oky.chol.dy.dy-",
+        "F": "otchor.dy.kchy.tchy.d!!!!!!ar.qokchd-{plant}oky.chol.dy.dy-",
+        "U": "otchor.dy.kchy.tchy.d!!!!!!ar.qokchd-{plant}oky.chol.dy.dy-"
+      },
+      "P.4": {
+        "H": "qokchor.chololer.chyky.dchy.qoky-{plant}ctho.tchey.tan-",
+        "C": "qokchor.chololar.chyky.dchy.qoky-{plant}ctho.tchey.tu!-",
+        "F": "qokchor.chololor.chyky.dchy.qoky-{plant}ctho.tchey.ton-",
+        "U": "qokchor.chololor.chyky.dchy.qoky-{plant}ctho.tchey.tu!-"
+      },
+      "P.5": {
+        "H": "soydy.qoteey.qot!chor.dy.ddy-{plant}cthor.shy.arg-",
+        "C": "loydy.qoteey.qot.chor.dy.ddy-{plant}cthor.shy!arg-",
+        "F": "soydy.qoteey.qot!chor.dy.ddy-{plant}cthor.shy.arm-",
+        "U": "soydy.qoteey.qot!chor.dy.ddy-{plant}cthor.shy.arg-"
+      },
+      "P.6": {
+        "H": "ycheor.ksho.dor.cthey.s!chold={plant}",
+        "C": "ycheor.ksho.dor.cthoy.s.chold={plant}",
+        "F": "ycheor.ksho.dor.cthey.s!chold={plant}",
+        "U": "ycheor.ksho.dor.cthey.s.chold={plant}"
+      }
+    }
+  }
+}

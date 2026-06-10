@@ -1,0 +1,46 @@
+{
+  "folio": "f25v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q04/f025v_tr.txt",
+    "date": "1998-12-11",
+    "time": "12:33:15",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "poeeaiin.qoky.shy.daiin.qopchey.otchey.qofchor.sos-",
+        "C": "**!*aiin.qoky.shy.daiin.qopchey.otchey.qofchor.sos-",
+        "F": "poeeaiin.qoky.shy.daiin.qopchey.otchey.qofchor.sos-"
+      },
+      "P.2": {
+        "H": "dchor.cthor.chor.daiin.s.okeeaiin.daiin.ckhey.daiin-",
+        "C": "dchor.cthor.chor.daiin.s.okeeaiin.daiin.ckhey.daiin-",
+        "F": "dchor.cthor.chor.daiin.s.okeeaiin.daiin.ckhey.daiin-"
+      },
+      "P.3": {
+        "H": "orcho.kchor.chol.daiin.shcfhor.daiin.dshey.daiity-",
+        "C": "orcho.kchor.chol.daiin.shcfhor.daiin.dshey.daiity-",
+        "F": "orcho.kchor.chol.daiin.shckhor.daiin.dshey.dainty-"
+      },
+      "P.4": {
+        "H": "qokaiin.qokcho.shol.daiin.ckhear.ckhol.daiin.chkear-",
+        "C": "qokaiin.qokcho.shol.daiin.ckhear.ckhol.daiin.chkear-",
+        "F": "qokaiin.qokcho.shol.daiin.ckhear.ckhol.daiin.chkear-"
+      },
+      "P.5": {
+        "H": "dar.chakeey.dshor.dshey.qochol.dol.cho.daiin.daiin-",
+        "C": "dar.chokeey.dshor.dshey.qochol.dol.cho.daiin.daiin-",
+        "F": "dar.chokeey.dshor.dshey.qochol.dol.cho.daiin.daiin-"
+      },
+      "P.6": {
+        "H": "qokcho.r.ochy.qotchy.qokoral.cho-{plant}!!chain.deeaiir.s-",
+        "C": "qokcho.r.ochy.qotchy.qotoral.cho-{plant}*.chain.deeaiir.s-",
+        "F": "qokcho.r!ochy.qotchy.qokoral.cho-{plant}*.chain.deeaiir.s-"
+      },
+      "P.7": {
+        "H": "os{&S}o.chkey.daii!ol.daiin.shckhy-{plant}orchaiin=",
+        "C": "o*!!!!!.chkey.daii.ol.daiin.shckh!-{plant}orchaiin=",
+        "F": "osh!!!!.chkey.dain!ol.daiin.shckhy-{plant}orchaiin="
+      }
+    }
+  }
+}

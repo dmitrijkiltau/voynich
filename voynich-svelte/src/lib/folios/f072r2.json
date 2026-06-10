@@ -1,0 +1,171 @@
+{
+  "folio": "f72r2",
+  "transcriptions": {
+    "source": "https://voynich.nu/q11/f072r2_tr.txt",
+    "date": "1998-12-24",
+    "time": "21:51:57",
+    "editor": "stolfi",
+    "lines": {
+      "S0.1": {
+        "H": "ofchdady=",
+        "K": "ofchdagy={was <f72r2.26A;K>}",
+        "Q": "ofchdajy={was <f72r2.26A;K>}",
+        "V": "ofchdamy={Grove's #1, carpet}"
+      },
+      "S0.2": {
+        "H": "oklairdy=",
+        "K": "oklairgy={was <f72r2.27A;K>}",
+        "V": "oklairdy={Grove's #2}"
+      },
+      "S0.3": {
+        "H": "okaram=",
+        "K": "okaram={was <f72r2.28A;K>}",
+        "V": "okaram={Grove's #3}"
+      },
+      "S0.4": {
+        "H": "okairy=",
+        "K": "okairy={was <f72r2.29A;K>}",
+        "V": "okairy={Grove's #4}"
+      },
+      "S0.5": {
+        "H": "okeolar=",
+        "K": "okealar={was <f72r2.30A;K>}",
+        "V": "okeolar={Grove's #5}"
+      },
+      "R1.1": {
+        "H": "otais.otees.oteos.aiin.okeo.daiin.okeey.cheo!keodal.cheol.okeol.olcthhy.oteeykeey.tey.okalaiin.okalchal.chey-{fold}al.okeey.daiin.otar.al.ch!taiin.otseey.qooeel.ckhal.chekaiin.otaiin.chy.d.r.aiin.al.y.sho.chekaiin.otedo*.qokeodal.saiin-{gap}",
+        "U": "ot**r.otchs.oteor.aiin.okeo,daiin.okoly.chey,keodol,ch!ol.okeol.olcthey.oteeykeey!tey.okalaiin.okalchal,chey-{fold}**!!!!!*.daiin.ota**!!.chota**!.ok***y.***eol.ckhal.chekaiin.okaiin,chy.d,r,aiin,al.!!cho.chekaiin.otedal.qokeodal.s*!*r-{gap}"
+      },
+      "S1.1": {
+        "H": "otar!aldy=",
+        "K": "otar!algy={was <f72r2.10A;K>}",
+        "V": "otar.aldy={Grove's #1, no barrel}"
+      },
+      "S1.2": {
+        "H": "okalar=",
+        "K": "okalar={was <f72r2.11A;K>}",
+        "V": "okalar={Grove's #2, no barrel}"
+      },
+      "S1.3": {
+        "H": "okal=",
+        "K": "okal={was <f72r2.12A;K>}",
+        "V": "okal={Grove's #3, no barrel}"
+      },
+      "S1.4": {
+        "H": "okaly=",
+        "K": "okaly={was <f72r2.13A;K>}",
+        "V": "okaly={Grove's #12, 3rd carpet, dressed, male?}"
+      },
+      "S1.5": {
+        "H": "okal=",
+        "K": "okal={was <f72r2.14A;K>}",
+        "V": "okal={Grove's #5, male}"
+      },
+      "S1.6": {
+        "H": "okeey.ary=",
+        "K": "okeey.ary={was <f72r2.15A;K>}",
+        "V": "okeey.ary={Grove's #6, no barrel}"
+      },
+      "S1.7": {
+        "H": "oteeary=",
+        "K": "oteeary={was <f72r2.16A;K>}",
+        "V": "oteeary={Grove's #7, no barrel}"
+      },
+      "S1.8": {
+        "H": "otair.dy=",
+        "K": "okair.gy={was <f72r2.17A;K>}",
+        "V": "otair.gy={Grove's #8, no barrel}"
+      },
+      "S1.9": {
+        "H": "okair!cham=",
+        "K": "okair.cham={was <f72r2.18A;K>}",
+        "V": "okair!cham={Grove's #9, no barrel}"
+      },
+      "S1.10": {
+        "H": "okeal=",
+        "K": "okeal={was <f72r2.19A;K>}",
+        "V": "oteal={Grove's #10, 1st carpet}"
+      },
+      "S1.11": {
+        "H": "otarar!!!!=",
+        "K": "otarer!!!!={was <f72r2.20A;K>}",
+        "V": "otar*{&an}={Grove's #11, 2nd carpet, dressed, male?}"
+      },
+      "S1.12": {
+        "H": "okaly=",
+        "K": "okaly={was <f72r2.21A;K>}",
+        "V": "okaly={Grove's #4, no barrel}"
+      },
+      "S1.13": {
+        "H": "orary=",
+        "K": "onary={was <f72r2.22A;K>}",
+        "V": "arary={Grove's #13, dressed, female}"
+      },
+      "S1.15": {
+        "H": "okyd=",
+        "K": "okyd={was <f72r2.24A;K>}",
+        "V": "okyd={Grove's #15, possible male}"
+      },
+      "S1.16": {
+        "H": "otolam=",
+        "K": "otolam={was <f72r2.25A;K>}",
+        "V": "otalam={Grove's #16, possible male}"
+      },
+      "R2.1": {
+        "H": "oteey.tey.teodal.chokaly.ol.cheol.y!aiin.oteodaiin.shokal.otey.otaiin.otal.y.dal.okaly.dalchdy.cseteeey.okal.shey.qoteeody.sheycthy.chotal.chees.otoees.aiin-",
+        "U": "oteey.teo.teodal.chokaly.ol,cheol,*,aiin.oteodaiin.shok**.o***.otaiin.otal!y,*al.otaly.dalchd*.csctheey.okal.csey.qotchody.cseycthy.chotal.cha!s.ot***s.aiir-"
+      },
+      "S2.1": {
+        "H": "otal=",
+        "K": "otal={was <f72r2.01A;K>}",
+        "V": "otal={Grove's #1, no barrel}"
+      },
+      "S2.2": {
+        "H": "salal=",
+        "K": "salal={was <f72r2.02A;K>}",
+        "V": "salal={Grove's #2, no barrel}"
+      },
+      "S2.3": {
+        "H": "okam=",
+        "K": "okam={was <f72r2.03A;K>}",
+        "V": "okam={Grove's #3, no barrel}"
+      },
+      "S2.4": {
+        "H": "otalshy=",
+        "K": "otalshy={was <f72r2.04A;K>}",
+        "V": "otalshy={Grove's #4, no barrel}"
+      },
+      "S2.5": {
+        "H": "okal!dy=",
+        "K": "okal.dy={was <f72r2.05A;K>}",
+        "V": "okal!dy={Grove's #5, no barrel}"
+      },
+      "S2.6": {
+        "H": "chosar=",
+        "K": "chosar={was <f72r2.06A;K>}",
+        "V": "chosan={Grove's #6, no barrel}"
+      },
+      "S2.7": {
+        "H": "otam=",
+        "K": "otam={was <f72r2.07A;K>}",
+        "V": "otam={Grove's #7, no barrel}"
+      },
+      "S2.8": {
+        "H": "ainaly=",
+        "K": "ainaly={was <f72r2.08A;K>}",
+        "Q": "ainaly={was <f72r2.08A;K>}",
+        "V": "ainaly={Grove's #8, no barrel}"
+      },
+      "S2.9": {
+        "H": "okar.cham=",
+        "K": "okar!chaj={was <f72r2.09A;K>}",
+        "Q": "okar!chag={was <f72r2.09A;K>}",
+        "V": "okar.cham={Grove's #9, no barrel}"
+      },
+      "R3.1": {
+        "H": "otees.chs.chchs.ar.yly.kaly.dar.otchey.okaiin.ola.in.dy.otoa!r.air.aloy.okaiin.",
+        "U": "otees.**s.chchs,al,aly.kyly.dar.otchey.okaiin.olaiin.*y.otochs.air,alo*.okaii*."
+      }
+    }
+  }
+}

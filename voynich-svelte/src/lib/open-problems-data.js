@@ -93,7 +93,7 @@ export const OPEN_PROBLEMS = [
     title: 'Quire-E-Zoomorphie-Hypothese',
     severity: 'mittel',
     problem: 'Quire E eröffnet mit zwei zoomorphen Wurzel-Darstellungen: f33r (Mandragora officinarum, humanoid) und f34v (Bryonia alba, quadruped — Hirsch/Hase). Dies markiert einen möglichen ikonographischen Subkodex für Pflanzen mit anthropo- oder zoomorphen Wurzeln. Offen: Setzt sich das Muster in f35r/f35v und weiteren Quire-E-Folios fort?',
-    hypothesis: 'Quire E fokussiert auf Pflanzen mit magisch-pharmakologischer Doppelfunktion, deren Wurzeln in menschliche oder tierische Formen wachsen (Mandragora, Bryonia). Im mittelalterlichen Kräuterbuch sind diese Pflanzen als „Kräfte-Pflanzen" mit besonderer pharmakologischer Potenz klassifiziert. R60 Korollar 2 (Ikonographische Toxizitäts-Warnung) könnte als Quire-E-spezifische Erweiterung formal werden. Prüfen: f35r/f35v auf zoomorphe Elemente.',
+    hypothesis: 'Quire E fokussiert auf Pflanzen mit magisch-pharmakologischer Doppelfunktion, deren Wurzeln in menschliche oder tierische Formen wachsen (Mandragora, Bryonia). Im mittelalterlichen Kräuterbuch sind diese Pflanzen als „Kräfte-Pflanzen“ mit besonderer pharmakologischer Potenz klassifiziert. R60 Korollar 2 (Ikonographische Toxizitäts-Warnung) könnte als Quire-E-spezifische Erweiterung formal werden. Prüfen: f35r/f35v auf zoomorphe Elemente.',
     status: 'offen',
   },
   {

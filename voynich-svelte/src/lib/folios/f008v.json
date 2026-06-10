@@ -1,0 +1,113 @@
+{
+  "folio": "f8v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q01/f008v_tr.txt",
+    "date": "1998-12-11",
+    "time": "12:28:48",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "cthod.soocth-{plant}sol.shol.otol.chol.opcheaiin.opydaiin.saiin-",
+        "C": "!!*od.soo*!!-{plant}sol.shol.otol.chol.opcheaiin.opydaiin.saiin-",
+        "F": "cthod.soocth-{plant}sol.shol.otol.chol.opcheaiin.opydaiin.saiin-",
+        "U": "cthod.soocth-{plant}sol.shol.otol.chol.opchoaiin.opydaiin.saiin-"
+      },
+      "P.2": {
+        "H": "shcthal.sar-{plant}chor.sheaiin.shor.chykchy.otaiin.cty-",
+        "C": "shcthol.sar-{plant}chor.shoaiin.shor.chykchy.otaiin.ety-",
+        "F": "shcthal.sar-{plant}chor.sheaiin.shor.chykchy.otaiin.ety-",
+        "U": "shcthal.sar-{plant}chor.sheaiin.shor.shykchy.otaiin.cty-"
+      },
+      "P.3": {
+        "H": "qody.cheal.sy-{plant}chory-{plant}chear.shol.chaiin.shaiin.dolar-",
+        "C": "qody.cheal.sy-{plant}chor!-{plant}chear.shol.chaiin.shaiin.dolar-",
+        "F": "qody.cheal.sy-{plant}chory-{plant}chear.shol.chaiin.shaiin.dolar-",
+        "U": "qody.cheal.sy-{plant}chory-{plant}chear.shol.chaiin.shaiin.dolar-"
+      },
+      "P.4": {
+        "H": "dshol.shol-{plant}dol-{plant}chean.cthar.shealy.daiin.chary-",
+        "C": "*shol.shol-{plant}dol-{plant}chean.cthar.she!!y.daiin.chary-",
+        "F": "dshol.shol-{plant}dol-{plant}chean.cthar.shealy.daiin.chary-",
+        "U": "dshol.shol-{plant}dal-{plant}chean.cthar.shealy.daiin.chary-"
+      },
+      "P.5": {
+        "H": "chol.chol.dar-{plant}otchar.etaiin.cthol.dar-",
+        "C": "chol.chol.dar-{plant}otchar.otaiin.cthol.dar-",
+        "F": "chol.chol.dar-{plant}otchar.etaiin.cthol.dar-",
+        "U": "chol.chol.dar-{plant}otchar.ctaiin.cthol.dar-"
+      },
+      "P.6": {
+        "H": "daiin.cthan-{plant}ytchy.chey.kaiin.dain.ar-",
+        "C": "daiin.cthan-{plant}ytchy.chey!kaiin.dain.ar-",
+        "F": "daiin.cthan-{plant}ytchy.chey.kaiin.dain.ar-",
+        "U": "daiin.cthan-{plant}ytchy.choy!kaiin.dain.ar-"
+      },
+      "P.7": {
+        "H": "sho.kchol-{plant}dar.shey.cthar.chotain.ry-",
+        "C": "sho.kchol-{plant}dar.shey.cthar.chotain.ry-",
+        "F": "sho.kchol-{plant}dar.shey.cthar.chotain.ry-",
+        "U": "cho.kchol-{plant}dar.shey.cthar.chotain.ry-"
+      },
+      "P.8": {
+        "H": "okchol.ksh-{plant}chol.chol.chol.cthaiin.dain-",
+        "C": "okchol!ksh-{plant}chol.chol.chol.cthaiin.dain-",
+        "F": "okchol.ksh-{plant}chol.chol.chol.cthaiin.dain-",
+        "U": "okchol.ksh-{plant}chol.chol.chol.cthaiin.dain-"
+      },
+      "P.9": {
+        "H": "shol.orchl-{plant}chokchy.chol.cthor.chaiin-",
+        "C": "shol.orchl-{plant}chokchy.chol.cthor.chaiin-",
+        "F": "shol.orchl-{plant}chokchy.chol.cthor.chaiin-",
+        "U": "chol.orchl-{plant}chokchy.chol.cthor.chaiin-"
+      },
+      "P.10": {
+        "H": "scharchy-{plant}oeesody.kchey.pchy.cpharom-",
+        "C": "scharchy-{plant}oeesody.kchey.pchy.cpharom-",
+        "F": "scharchy-{plant}oeesody.kchey.pchy.cpharom-",
+        "U": "scharchy-{plant}oeesody.kchey.pchy.cpharom-"
+      },
+      "P.11": {
+        "H": "sorain={plant}",
+        "C": "sorain={plant}",
+        "F": "sorain={plant}",
+        "U": "sorain={plant}"
+      },
+      "P.12": {
+        "H": "pchar.cho.rol.dal-{plant}shear.cheeotaiin.chal.daiin-",
+        "C": "pchar.cho.rol.dal-{plant}shear.chchotaiin.chal.daiin-",
+        "F": "pchar.cho.rol.dal-{plant}shear.cheeotaiin.chal.daiin-",
+        "U": "pchar.cho.rol.dal-{plant}shear-chchotaiin.chal.daiin-"
+      },
+      "P.13": {
+        "H": "kchor.otchar.oky-{plant}chokain.keoky.otorchy.satar-",
+        "C": "kchor.otchor.oky-{plant}chokain.keoky.otorchy.sytar-",
+        "F": "kchor.otchar.oky-{plant}chokain.keoky.otorchy.satar-",
+        "U": "kchor.otchar.oky-{plant}chokain.keoky.otorchy.satar-"
+      },
+      "P.14": {
+        "H": "shor.okol.lokaiin-{plant}shol.kol.char.cthey.tchy.ckham-",
+        "C": "shor.okol.lokoiin-{plant}shol.kol.char.cthey.tchy.ckham-",
+        "F": "shor.okol.lokaiin-{plant}shol.kol.char.cthey.tchy.ckham-",
+        "U": "shor.okol.lokaiin-{plant}shol.kol.char.cthey.tchy.ckham-"
+      },
+      "P.15": {
+        "H": "or.chol.cheen.chcky-{plant}chor.cheain.char.cheeky.chor.ry-",
+        "C": "or.chol.cha!n.ch*!y-{plant}chor.cheain.char.che*!y.chor.ry-",
+        "F": "or.chol.chiin.cheky-{plant}chor.cheain.char.cheeky.chor.ry-",
+        "U": "or.chol.cheeb.cheky-{plant}chor.cheain.char.cheeky.chor.ry-"
+      },
+      "P.16": {
+        "H": "chor.chear.chear-{plant}oteey.dchor.chodey.cho.raiin-",
+        "C": "chor.cheor.chear-{plant}oteey.dchor.chodey.cho.raiin-",
+        "F": "chor.cheor.chear-{plant}oteey.dchor.chodey.cho.raiin-",
+        "U": "chor.cheor.chear-{plant}oteey.dchor.chodey.cho.raiin-"
+      },
+      "P.17": {
+        "H": "dain.chear.daiin={plant}",
+        "C": "dain.chear.daiin={plant}",
+        "F": "dain.chear.daiin={plant}",
+        "U": "dain.chear.daiin={plant}"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "folio": "f18v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q03/f018v_tr.txt",
+    "date": "1998-12-12",
+    "time": "13:08:21",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "told.shar.ytshy.otchdal.dchal.dchy.ytd!g-",
+        "C": "told.shor.ytshy.otchdal.dchal.dchy.ytchm-",
+        "F": "tofd.shar.ytshy.otchdal.dchal.dchy.ytd!m-",
+        "U": "told.shor.ytshy.otchdal.dchal.dchy.ytd!m-"
+      },
+      "P.2": {
+        "H": "qoeees.or.oaiin.shy!.okshy.qokchy.qokchy.s.g-",
+        "C": "qoeees.or.oaiin.shy*.okshy.qokchy.qokchy.s.g-",
+        "F": "qoeees.or!oaiin.shy!.okshy.qokchy.qokchy.s!m-",
+        "U": "qoeees.or.oaiin.shyr.okshy.qokchy.qokchy.s.g-"
+      },
+      "P.3": {
+        "H": "or.shy.qoky.qoky.chkchy.qokshy.qokam-",
+        "C": "or*shy.qoky.qoky.chkchy.qokshy.qokam-",
+        "F": "or.shy.qoky.qoky.chkchy.qokshy.qokam-",
+        "U": "or!shy.qoky.qoky.chkchy.qokshy.qokam-"
+      },
+      "P.4": {
+        "H": "qotchy.qokay.qokchy.ykcho.ydl.dar-",
+        "C": "qotchy.qokay.qokchy.ykcho.ydl.dan-",
+        "F": "qotchy.qokay.qokchy.ykcho.ydl.dar-",
+        "U": "qotchy.qokay.qokchy.ykcho.ydl.dan-"
+      },
+      "P.5": {
+        "H": "r.ychoees.ykchy.qol.kchy.qotchol.daiir.om-",
+        "C": "!!ychoees.ykchy.qol.kchy.qotchol.dai!r.om-",
+        "F": "!!ychoees.ykchy.qol.kchy.qotchol.daiir.om-",
+        "U": "!!ychoees.ykchy.qol.kchy.qotchol.daiir.om-"
+      },
+      "P.6": {
+        "H": "qotor.chor.otchy.qokeees.chy.s.ar.ykar-",
+        "C": "qotor.chor.otchy.qokeees.chy.s.ar.ykar-",
+        "F": "qotor.chor.otchy.qokeees.chy.s!ar.ykar-",
+        "U": "qotor.chor.otchy.qokeees.chy.s.ar.ykar-"
+      },
+      "P.7": {
+        "H": "ychol.dor.chod.qokol.daiin.qokol.dar.dy-",
+        "C": "ychol.dor.chod.qokol.daiin.qotol.dar.dy-",
+        "F": "ychol.dor.chod.qokol.daiin.qokol.dar.dy-",
+        "U": "ychol.dor.chod.qokol.daiin.qokol.dar.dy-"
+      },
+      "P.8": {
+        "H": "tolol.sh.cphoy.daror.ddy.ytor.ykam-",
+        "C": "tolol.sh.cphoy.daror.ddy.ytor.ykam-",
+        "F": "tolol.sh.cphoy.daror.ddy.ytor.ykam-",
+        "U": "tolol.sh.cphoy.daror.ddy.ytor.ykam-"
+      },
+      "P.9": {
+        "H": "okchor.qotchy.qokchy.ytol.doky.dy-",
+        "C": "okchor.qotchy.qokchy.ytol.doky.dy-",
+        "F": "okchor.qotchy.qokchy.ytol.doky.dy-",
+        "U": "okchor.qotchy.qokchy.ytol.doky.dy-"
+      },
+      "P.10": {
+        "H": "{plant}yka.dshy.dair.ykol.dom=",
+        "C": "{plant}yko.dysh.dair.ykol.dom=",
+        "F": "{plant}yka.dshy.dair.ykol.dom=",
+        "U": "{plant}yko.dshy.dair.ytol.dom="
+      }
+    }
+  }
+}

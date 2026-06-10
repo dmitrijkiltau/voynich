@@ -8,7 +8,7 @@ export const TESTED = [
   { type: 'I', pred: 'dal', heb: 'דַּל', result: '✓ Dreifach-Refrain f103r P.1', context: 'pchedal, yshdal, dal (standalone)' },
   { type: 'I', pred: 'shol · dy · … · shol', heb: 'R24-Struktur', result: '✓ f13r P.1 (Dopplungsformel)', context: 'einmaliges Emphase-Muster mit Genitiv-Brücke dy' },
   { type: 'I', pred: 'or', heb: 'אוֹר', result: '✓ f103r P.17 or·aiin (Heilungszeichen); f6v, f8r, f57r — Prognose-Abschluss', context: 'Anker: or = Licht/Heilung; f103r P.17 endet or·aiin; vgl. lor ★★★★★; R6 bestätigt (v7.4-Anker)' },
-  { type: 'I', pred: 'chaiin', heb: 'חַיִּין', result: '✓ f4r, f4v, f6r, f8v — R18-Diagnosepaar shol·chaiin, Quire A', context: 'Anker: chaiin = Leben; R18 Diagnosepaar shol·chaiin (abwägende Prognose); ★★★★' },
+  { type: 'I', pred: 'chaiin', heb: 'חַיִּין', result: '✓ f2r P.3 (Erstbeleg, H/C/F 3/3), f4r, f4v, f6r, f8v — R18-Diagnosepaar shol·chaiin, Quire A', context: 'Anker: chaiin = Leben; R18 Diagnosepaar shol·chaiin (abwägende Prognose); R43 erfüllt (f2r + f4r ≥2 Folios); ★★★★' },
   { type: 'I', pred: 'kaiim', heb: 'קַיָּם', result: '✓ f6r, f8r kaiim= (Kolophon-Abschlussformel); 10+ Belege', context: 'Anker: kaiim = gültig/beständig; R11-Schlussformel ★★★★★; f57r cphedom= (Parallelform)' },
   // ── Typ II — Post-hoc-Entdeckungen (interne Kohärenz) ─────────────────────
   { type: 'II', pred: 'chedy', heb: 'כְּדֵי', result: '✓ 22× f103r', context: 'nie mit -ody kombiniert (R5)' },
@@ -26,7 +26,7 @@ export const TESTED = [
   { type: 'II', pred: 'chckhy= (Diagnosekolophon)', heb: 'כְּ+כְּ+הִי', result: '✓ 4× Korpus: f9v, f11v P.6, f14r P.7, f14v P.6', context: 'Konzentration in Bifolio bB3; auch medial belegt (f14v P.6)' },
   { type: 'II', pred: 'ykshol (y+k+shol)', heb: 'יְ+כְּ+שׁוֹל', result: '✓ f15r P.12 — erster negativer y+k+Terminus', context: 'ykchaiin→ycheor→ykchor→ykchy→ykaiin→ykshol: komplettes Paradigma, positiv + negativ belegt' },
   { type: 'II', pred: 'qotchor (Pupillenzeichen)', heb: 'קוֹ+תְּ+כֹּר', result: '✓ f15r Schlusskolophon ★★★★★', context: 'qotchor·chaiin·chy·kol·daky= — positives Pupillen-Urteil; ophthalmologische Abschlussformel bB2' },
-  { type: 'II', pred: 'soloiin', heb: 'שׁוֹ+לְ+עַיִן', result: '✓ f15v P.11 — therapeutisch präzisestes Kompositum', context: '„Arznei für das Auge" — höchste Heilarznei-Präzision im Gesamtkorpus; Gegenstück zu shoiin (f10v)' },
+  { type: 'II', pred: 'soloiin', heb: 'שׁוֹ+לְ+עַיִן', result: '✓ f15v P.11 — therapeutisch präzisestes Kompositum', context: '„Arznei für das Auge“ — höchste Heilarznei-Präzision im Gesamtkorpus; Gegenstück zu shoiin (f10v)' },
   { type: 'II', pred: 'cthor (vollständige Heilung)', heb: 'כְּ+תֹּר', result: '✓ f15v Schlusskolophon', context: 'daiin·cthor·chol·chor= — cthor+chor = Heilung der Pupillenpathologie; positiver Abschluss Bifolio bB2' },
   // ── Post-v7.4 · von Typ I → Typ II reklassifiziert (v8.8) ──────────────────
   { type: 'II', pred: 'chaiin · ckhy · or · aiin (Prognose-Tetrade)', heb: 'Prognose-Tetrade', result: '✓ f10r P4 (alle vier in einer Zeile)', context: 'vollständiges hippokratisches Schema; kombinierter Test post-v7.4 → Typ II (v8.8), Einzelanker or/chaiin bleiben Typ I' },

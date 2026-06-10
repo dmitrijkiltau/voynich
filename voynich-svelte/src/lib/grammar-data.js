@@ -1,10 +1,10 @@
 export const GRAMMAR_PREFIXES = [
-  { eva: 'qo-', heb: 'וְ', fn: 'Vav conjunctive „und/auch"', ex_eva: 'qokedam', ex_heb: 'וְכְּדָּם', stars: '★★★★' },
-  { eva: 'o-', heb: 'עַ', fn: 'Ayin „auf/bei/von"', ex_eva: 'okol', ex_heb: 'עַכֹּל', stars: '★★★★' },
-  { eva: 'l-', heb: 'לְ', fn: 'Lamed „zu/für/nach"', ex_eva: 'lchedy', ex_heb: 'לְכְּדֵי', stars: '★★★★' },
-  { eva: 'd-', heb: 'דְּ/דִּי', fn: 'Aramäisches Relativpräfix „von/dessen/welches" (R45) — äußerste morphol. Schale; kein D1-Flag wenn d- vor Konsonant', ex_eva: 'dsholdy', ex_heb: 'דְּשׁוֹל+דִּי', stars: '★★★★★' },
+  { eva: 'qo-', heb: 'וְ', fn: 'Vav conjunctive „und/auch“', ex_eva: 'qokedam', ex_heb: 'וְכְּדָּם', stars: '★★★★' },
+  { eva: 'o-', heb: 'עַ', fn: 'Ayin „auf/bei/von“', ex_eva: 'okol', ex_heb: 'עַכֹּל', stars: '★★★★' },
+  { eva: 'l-', heb: 'לְ', fn: 'Lamed „zu/für/nach“', ex_eva: 'lchedy', ex_heb: 'לְכְּדֵי', stars: '★★★★' },
+  { eva: 'd-', heb: 'דְּ/דִּי', fn: 'Aramäisches Relativpräfix „von/dessen/welches“ (R45) — äußerste morphol. Schale; kein D1-Flag wenn d- vor Konsonant', ex_eva: 'dsholdy', ex_heb: 'דְּשׁוֹל+דִּי', stars: '★★★★★' },
   { eva: 'p-', heb: 'פְּ', fn: 'Pe-Präfix (Nominalkonstrukt)', ex_eva: 'pchedal', ex_heb: 'פְּכֶּדַּל', stars: '★★★' },
-  { eva: 'op-/of-', heb: 'עַ+פֶּ', fn: 'Ayin+Pe: „auf/an dem Mund/Öffnung von" — astronomischer Koordinatenmarker (R41-Erweiterung per R47)', ex_eva: 'opcheear', ex_heb: 'עַ+פֶּ+כְּ+אֵר', stars: '★★★' },
+  { eva: 'op-/of-', heb: 'עַ+פֶּ', fn: 'Ayin+Pe: „auf/an dem Mund/Öffnung von“ — astronomischer Koordinatenmarker (R41-Erweiterung per R47)', ex_eva: 'opcheear', ex_heb: 'עַ+פֶּ+כְּ+אֵר', stars: '★★★' },
   { eva: 'y-', heb: 'יְ', fn: 'Imperfekt 3. Pers. Sg. Mask.', ex_eva: 'yshdal', ex_heb: 'יְשַׁדַּל', stars: '★★★★' },
   { eva: 't-', heb: 'תָּ', fn: 'Imperfekt 3. Pers. Sg. Fem. / 2. Pers.', ex_eva: 'taiir', ex_heb: 'תָּאִיר', stars: '★★★★' },
 ];
@@ -22,10 +22,10 @@ export const VERB_PARADIGM = [
 ];
 
 export const GRAMMAR_SUFFIXES = [
-  { eva: '-dy', heb: 'דִּי', fn: 'Aramäisch: Genitiv/Relativ „von/dessen"', stars: '★★★★' },
-  { eva: '-dam', heb: 'דָּם', fn: '„Blut" — Zeilenabschluss-Refrain in f57r', stars: '★★★★★' },
-  { eva: '-dal', heb: 'דַּל', fn: '„schwach/dünn" — Diagnose-Refrain', stars: '★★★★' },
-  { eva: '-aiin', heb: 'עַיִן', fn: '„Auge" — diagnostischer Terminus in Suffixposition', stars: '★★★★' },
+  { eva: '-dy', heb: 'דִּי', fn: 'Aramäisch: Genitiv/Relativ „von/dessen“', stars: '★★★★' },
+  { eva: '-dam', heb: 'דָּם', fn: '„Blut“ — Zeilenabschluss-Refrain in f57r', stars: '★★★★★' },
+  { eva: '-dal', heb: 'דַּל', fn: '„schwach/dünn“ — Diagnose-Refrain', stars: '★★★★' },
+  { eva: '-aiin', heb: 'עַיִן', fn: '„Auge“ — diagnostischer Terminus in Suffixposition', stars: '★★★★' },
   { eva: '-ody', heb: '+דִּי', fn: 'Vokalhelfer + דִּי; Listenregister f57r P.3–P.4', stars: '★★★' },
   { eva: '-aly', heb: '+לִי', fn: 'Zodiak-Suffix -aly: Vokalhelfer + lamed + Yod; Sternlabel-Register (R52a)', stars: '★★★★' },
   { eva: '-ary', heb: '+רִי', fn: 'Zodiak-Suffix -ary: Vokalhelfer + resch + Yod; Sternlabel-Register (R52a)', stars: '★★★★' },

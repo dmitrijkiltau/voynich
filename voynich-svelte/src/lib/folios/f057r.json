@@ -1,0 +1,66 @@
+{
+  "folio": "f57r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q08/f057r_tr.txt",
+    "date": "1998-12-08",
+    "time": "02:14:23",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "poeeo.ckhey.odai!n.cheop.sheody.shocfhey.dy.sheep.cheody.yodam-",
+        "C": "poeeo!ckhey.odai!n.cheop.sheody.shocfhey.dy.sheep.sheody.!odam-",
+        "F": "poeeo.ckhey.odaiin.cheop.sheody.shocph!y.dy.sheep.che*dy.yodam-"
+      },
+      "P.2": {
+        "H": "daiir.air.chety.cheo.ckhy.chockhy.cheotey.shkchey.s.odaiin.shey-",
+        "C": "daiir.air.chety.cheo.ckhy.chockhy.cheotey.shkchey.s.odaiin.shey-",
+        "F": "dai!r.a!r.chety.cheo.ckhy.checkhy.cheotey.shkchey.s.odaiin.shey-"
+      },
+      "P.3": {
+        "H": "qykeeody.cheooky.qokeody.sheey.okeody.cheody.cheeody.chee!keody-",
+        "C": "qokeeody.cheo!ky.qokeody.sheey.okeody.cheody.cheeody.chee!keody-",
+        "F": "qokeeody.cheooky.qokeody.cheey.okeody.cheody.che*!dy.cheo.kchdy-"
+      },
+      "P.4": {
+        "H": "dchos.cheocthy.cheody.qotchody.octhody.okeeody.chteody.cheody.s-",
+        "C": "deeos.cheocthy.cheody.qoteeody.octhody.okeeody.chteody.cheody.s-",
+        "F": "dchos.cheocthy.cheody.qotchody.octhody.okeeody.chteody.cheody!s-"
+      },
+      "P.5": {
+        "H": "qokcho.daiin.cheeo!dam=",
+        "C": "qokeeo.daiin.cheeo!dam=",
+        "F": "qokcho.daiin.cheeo.dam="
+      },
+      "P.6": {
+        "H": "tsheodal.okam.chckhey.okchdy.doctho.opchey.dy.kodai!n.oforam-",
+        "C": "tcheodal.okam.chckhey.okchdy.doctho.opchey.dy.kedaiin.oforam-",
+        "F": "tcheodar.okam.chckhey.okchdy.doctho.opchey.dy.kedaiin.oforam-"
+      },
+      "P.7": {
+        "H": "daiis.sheedy.qokeedy.chctey-{plant}otchod.shekey.tedy.okoldm-",
+        "C": "daiir.sheedy.qokeedy.chetey-{plant}oteeod.shekey.tedy.okaldg-",
+        "F": "daiin.sheedy.qokeedy.chetey-{plant}ote!od.shekey.tedy.okaldm-"
+      },
+      "P.8": {
+        "H": "tai!r.sheedy.lchedy.ckhchdy-{plant}okchy.chedy.dal.qokedam-",
+        "C": "tai!r.sheedy.ochedy.ckheedy-{plant}okchy.chedy.dal.qokedam-",
+        "F": "taiin.she!dy.*chedy.ok!e!dy-{plant}okchy.chedy.dal.qoked*m-"
+      },
+      "P.9": {
+        "H": "odair.sheeo.ckhy.sar.al.daii!dy-{plant}dcheckhey.daiin.chedy.cthedy-",
+        "C": "odair.sheeo.ckhy.sar.al.daii!jy-{plant}dcheckhey.daiin.chedy.cthedy-",
+        "F": "odair.sheeo!ckhy.sar.al.daiindy-{plant}dcheckhey.daiin.chedy.cthedy-"
+      },
+      "P.10": {
+        "H": "qoctchey.kedy.shedaiin-{plant}s.cheos.ykeos.qcth!hy.tcfhy-",
+        "C": "qoetchey.kedy.shedaiin-{plant}s!cheos.ykeos.acthe!y.tcfhy-",
+        "F": "qo!cthey.kedy.shedaiin-{plant}s!ch!os.ykeos.qcthchy.tcfhy-"
+      },
+      "P.11": {
+        "H": "dshedy.ctechy.cphedom={plant}",
+        "C": "d!aedy.ctheey.cphedam={plant}",
+        "F": "dshedy.!techy.cphedam={plant}"
+      }
+    }
+  }
+}
