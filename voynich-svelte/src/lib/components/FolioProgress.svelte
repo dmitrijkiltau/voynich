@@ -224,8 +224,8 @@
 	}
 
 	const ST_LABEL = /** @type {Record<string,string>} */ ({
-		done:      'Übersetzt',
-		confirmed: 'Erstanalyse',
+		done:      'übersetzt',
+		confirmed: 'analysiert',
 		partial:   'transkribiert',
 		none:      'nicht erfasst',
 		lacuna:    'nicht erhalten',
@@ -247,7 +247,7 @@
 				<span class="fpc done">{totalDone}&nbsp;<em>übersetzt</em></span>
 				<span class="fpc-sep">·</span>
 			{/if}
-			<span class="fpc confirmed">{totalConfirmed}&nbsp;<em>Erstanalyse</em></span>
+			<span class="fpc confirmed">{totalConfirmed}&nbsp;<em>analysiert</em></span>
 			<span class="fpc-sep">·</span>
 			<span class="fpc partial">{totalPartial}&nbsp;<em>transkribiert</em></span>
 			<span class="fpc-sep">·</span>
@@ -287,11 +287,11 @@
             onclick={() => filterStatus = filterStatus === 'done' ? null : 'done'}>Übersetzt</button>
         {/if}
         <button class="fp-fp fp-fp--confirmed" class:fp-fp--active={filterStatus === 'confirmed'}
-          onclick={() => filterStatus = filterStatus === 'confirmed' ? null : 'confirmed'}>Erstanalyse</button>
+          onclick={() => filterStatus = filterStatus === 'confirmed' ? null : 'confirmed'}>analysiert</button>
         <button class="fp-fp fp-fp--partial" class:fp-fp--active={filterStatus === 'partial'}
-          onclick={() => filterStatus = filterStatus === 'partial' ? null : 'partial'}>Transkribiert</button>
+          onclick={() => filterStatus = filterStatus === 'partial' ? null : 'partial'}>transkribiert</button>
         <button class="fp-fp fp-fp--none" class:fp-fp--active={filterStatus === 'none'}
-          onclick={() => filterStatus = filterStatus === 'none' ? null : 'none'}>Ausstehend</button>
+          onclick={() => filterStatus = filterStatus === 'none' ? null : 'none'}>ausstehend</button>
         {#if totalLacuna}
           <button class="fp-fp fp-fp--lacuna" class:fp-fp--active={filterStatus === 'lacuna'}
             onclick={() => filterStatus = filterStatus === 'lacuna' ? null : 'lacuna'}>Lacuna</button>
