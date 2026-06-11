@@ -28,7 +28,7 @@
 	 *   lacuna    — physically missing from the manuscript (LACUNA set)
 	 *   confirmed — JSON contains `iconographic` → Erstanalyse
 	 *   partial   — JSON exists, transcriptions only, no iconographic
-	 *   done      — TODO: lexicon coverage > 90% on transcription lines → Übersetzt
+	 *   done      — TODO: lexicon coverage > 90% on transcription paragraphs → Übersetzt
 	 *   none      — no JSON file exists
 	 * @param {string} pageId @returns {string}
 	 */
@@ -36,7 +36,7 @@
 		if (LACUNA.has(pageId)) return 'lacuna';
 		const data = getFolioData(pageId);
 		if (!data) return 'none';
-		// TODO: compute lexicon coverage across transcription lines → 'done' (Übersetzt)
+		// TODO: compute lexicon coverage across transcription paragraphs → 'done' (Übersetzt)
 		if (data.iconographic) return 'confirmed';
 		return 'partial';
 	}

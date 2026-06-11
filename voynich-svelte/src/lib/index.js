@@ -19,10 +19,12 @@ import { getLexiconMeta, CONSECUTIVE_TOKENS } from './lexicon-meta.js';
 //                   R43 when r43 is met; sorted numerically; manual rules preserved
 const _ruleNum = (/** @type {string} */ r) => parseInt(r.slice(1));
 export const LEXICON = _RAW_LEXICON.map((/** @type {any} */ entry) => {
-	const meta = getLexiconMeta(entry.eva);
+	const hasR40 = (entry.rulesApplied ?? []).includes('R40');
+	const hasR41 = !!(entry.morph && /\b[a-z]+-\s*\+/.test(entry.morph));
+	const meta = getLexiconMeta(entry.eva, { hasR40, hasR41 });
 	const rules = new Set(/** @type {string[]} */ (entry.rulesApplied ?? []));
 	if (entry.eva.includes('o')) rules.add('R2');
-	if (entry.morph && /\b[a-z]+-\s*\+/.test(entry.morph)) rules.add('R41');
+	if (hasR41) rules.add('R41');
 	if (CONSECUTIVE_TOKENS.has(entry.eva)) rules.add('R19');
 	if (meta.r43) rules.add('R43');
 	return {

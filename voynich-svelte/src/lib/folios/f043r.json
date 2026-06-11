@@ -1,0 +1,103 @@
+{
+  "folio": "f43r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q06/f043r_tr.txt",
+    "date": "1998-12-27",
+    "time": "22:26:19",
+    "editor": "stolfi",
+    "paragraphs": {
+      "P.1": {
+        "H": "tarodaiin.ytedy.chody.ofchtar.chcphedy.ypar.shol.folor.aiin.cphhy.dar-",
+        "C": "tarodaiin.ytedy.chody.!fchtar.chcphedy.ypar.shol.folor.aiin.cphey.dar-",
+        "F": "tarodaiin.ytedy.chody.ofchtar.chcphedy.ypar.shol.folor.aiin.cphey.dar-",
+        "U": "tarodaiin.ytedy.chody.ofchtar.chcphedy.ypar.shol.folor,aiin.cphey.dar-"
+      },
+      "P.2": {
+        "H": "yteody.oteol.ytedy.ar.chety.dar.aiir.okaldy.daral.otchdy.daiin.dal.!s-",
+        "C": "yteody.oteol.ytedy.ar.chety.dar.aiir.okaldy.daral.otchdy.daiin.dal.!s-",
+        "F": "yteody.oteol.ytedy.ar.chety.dar!aiir.okaldy.daral.otchdy.daiin.daiinr-",
+        "G": "yteody.oteol.ytedy.ar.chety.dar!aiin.okaldy.daral.otchdy.daiin.daiinr-",
+        "U": "yteody.oteol.ytedy.ar,chcty.dar,aiir.okaldy.daral.otchdy.daiin.dal,!r-"
+      },
+      "P.3": {
+        "H": "yty.yty.oty.she.ody.sh!y.olor.ytch*y.kaiin.chky.qotydy.dar.aiin.ykam-",
+        "C": "yty.yty.oty.she!ody!sh.y!olor.yteedy.kaiin.chky.qotydy.dar!aiin.ykam-",
+        "F": "yty.yty.oty.she.ody.sh!y.olor.ytchdy.kaiin.chky.qotydy.dar.aiin.ykam-",
+        "U": "yty.yty.oty.she,ody.sh!y.olor.ytchdy.kaiin.chky.qotydy.dar,aiin.ykam-"
+      },
+      "P.4": {
+        "H": "das!ar.ytey.tedy.kar.or.ar.she!kalchdy.cholty.qotaly.chedy.oty.otam-",
+        "C": "dar!ar.ytey.tedy.kar.ar!ar.she!kalchdy.cholky.qotaly.chedy.oty.otam-",
+        "F": "dar.ar.ytey.tedy.kar.yr!ar.she!kalchdy.cholty.qotaly.chedy.oty.otam-",
+        "G": "das!ar.ytey.tedy.kar.or!ar.she.kalchdy.cholty.qotaly.chedy.oty.otam-",
+        "U": "dar,ar.ytey,tedy,kar.ar,ar.she,kalchdy.cholky.qotaly.chedy.oty.otam-"
+      },
+      "P.5": {
+        "H": "ykor.ch*dy.shekody.qotody.qotar.okedy.dar.choetchy.dam.otai!n.ytam-",
+        "C": "yakr.chedy.shekody.qotody.qotar.okedy.dar.choetchy.dam.otai!n.ytam-",
+        "F": "okor.chidy.shekody.qotody.qotar.okedy.dar.ch!etchy.dam.otai!n.ytam-",
+        "G": "akar.chidy.shekady.qotody.qotar.okedy.dar.ch!etchy.dam.otaiin.ytam-",
+        "U": "ykar.chedy.shekody.qotody.qotar.okedy.dar.choetchy.dam.otai!n.ytam-"
+      },
+      "P.6": {
+        "H": "kchedy.chedy.daly.cheody.cheol!keepchy=",
+        "C": "kchedy.chedy.daly.cheody.cheol!keepchy=",
+        "F": "kchedy.chedy.daly.cheody.cheol.keepchy=",
+        "G": "kchedy.chedy.dala.cheody.cheol.keepchy=",
+        "U": "kchedy.chedy.daly.cheody.cheol!keepchy="
+      },
+      "P.7": {
+        "H": "pshesy.otey.kshdy.opchdy.kedar.okedy.chdy.shocphhy.dytydy.pchdy.kedy.dam-",
+        "C": "pshesy.otey.kshdy.opchdy.kedar.otedy.chdy.shocphey.dytydy.pchdy.kedy.dam-",
+        "F": "pshesy.otey.kshdy.opchdy.kedar.okedy.chdy.shocphey.dytydy.pchdy.kedy.dam-",
+        "G": "pshesy.otey.kshdy.opchdy.kedar.okedy.chdy.shocph!y.dytydy.pchdy.tedy.dam-",
+        "U": "pshesy.otey.kshdy.opchdy.kedar.okedy.chdy.shocphey.dytydy.pchdy.kedy.dam-"
+      },
+      "P.8": {
+        "H": "ytchedy.chedy.cheody.shy.qoiiin.sheeeky.chedy.dai!n.shy.ykol!or.otaiin.old-",
+        "C": "ytchedy.chedy.cheody.shy.qoiiin.sheeeky.chedy.dai!n.shy.ykol!or.otaiin.old-",
+        "F": "ytchedy.chedy.cheody.shy.qoiiin.sheeeky.chedy.dai!n.shy.ykol!ar.akaiin.old-",
+        "G": "ytchedy.chedy.ch!ody.sey.qo!iin.shee!ky.chedy.daiin.shy.ykal!ar.ataiin.a!!-",
+        "U": "ytchedy.chedy.cheody.shy.qoiiin.sheeeky.chedy.dai!n.shy.ykol,or.akaiin.old-"
+      },
+      "P.9": {
+        "H": "dshedy.qotedy.dor.cheey.odain=",
+        "C": "dshedy.qotedy.dor.cheey.odain=",
+        "F": "dshedy.qotedy.dor.cheey.odain=",
+        "U": "dshedy.qotedy.dor.cheey.odain="
+      },
+      "P.10": {
+        "H": "pshdar.shed.ody.qotedy.yfchdy.qockhhdy.opchdy.daiin.qokedy.dy!dydy.qotar-",
+        "C": "pshdar.shed.ody.qotedy.yfchdy.qockhedy.opchdy.daiin.qokedy.dy!dydy.qotar-",
+        "F": "pshdar.shed.ody.qotedy.yfchdy.qockhedy.opchdy.daiin.qokedy.dy!dydy.qotar-",
+        "U": "pshdar.shed,ody.qotedy.yfchdy.qockhedy.opchdy.daiin.qokedy.dy,dydy.qotar-"
+      },
+      "P.11": {
+        "H": "ytchedy.ty.shol.toldy.shody.otchdy.shdy.otolol.shd.olky.ytol.otary.cheky.dy-",
+        "C": "ytchedy.ty.shol.toldy.shody.otchdy.shdy.otolol.shd.olky.ytol.otary.cheky.dy-",
+        "F": "ytchedy.ty.shol.toldy.shody.otchdy.shdy.otolol.shd.olky.ytol.otary.cheky.dy-",
+        "G": "ytchedy.ty.shol.taldy.shody.otchdy.shdy.otolol.shd.olky.ytol.otary.cheky.dy-",
+        "U": "ytchedy.ty.shol.toldy.shody.otchdy.shdy.otolol.shd,olky.ytol.otary.chcky.dy-"
+      },
+      "P.12": {
+        "H": "dor.shol.qokol.shedy.qotedy.qokehdy.qokody.okehdy.otedy.shedy.oty.yty.dy.saiin-",
+        "C": "dor.shol.qokol.shedy.qotedy.qokeedy.qokody.okeedy.otedy.shedy.oty.yty.dy.sa!!!-",
+        "F": "dor.shol.qokol.shedy.qotedy.qokeedy.qokody.okeedy.otedy.shedy.oty.yty!dy.saiin-",
+        "U": "dor.shol.qokol.shedy.qotedy.qokeedy.qokody.okeedy.otedy.shedy.oty.yty,dy.saiin-"
+      },
+      "P.13": {
+        "H": "tshed.qosheckhhy.odeedy.qeokehy.qotedy.daiin.shodody.shochol.chckhy.ykedy.dy-",
+        "C": "tshed.qosheckhey.odeedy.qeokeey.qotedy.dash!.shodody.shochol.chckhy.ykeey!dy-",
+        "F": "tshed.qosheckhey.odeedy.qeokeey.qotedy.daiin.shodody.shochol.chckhy.ykedy!dy-",
+        "G": "tshed.qosheckh!y.od*!dy.qeokeey.qotedy.daiin.shodody.shochol.chckhy.ykedy!dy-",
+        "U": "tshed.qosheckhey.odeedy.qeokeey.qotedy.daiin.shodody.shochol.chckhy.ykedy,dy-"
+      },
+      "P.14": {
+        "H": "ykeody.checkhy.chotehy.odain.chckhhhy.choko!r.aiin=",
+        "C": "ykeody.checkhy.choteey.odain.chckheey.choko!r!aiin=",
+        "F": "ykeody.checkhy.choteey.odain.chckh!ey.choko.r!aiin=",
+        "U": "ykeody.checkhy.choteey.odain.chckheey.choko!r!aiin="
+      }
+    }
+  }
+}

@@ -282,7 +282,7 @@
 					<div class="token-section">
 						<span class="panel-label">Token-Analyse</span>
 						<div class="token-row" role="list" aria-label="Erkannte Tokens">
-							{#each results as r (r.word)}
+							{#each results as r, i ('word' + r.word + '-' + i)}
 								<span
 									class="tok"
 									class:found={r.lookup?.matchType === 'found'}
@@ -321,7 +321,7 @@
 									</tr>
 								</thead>
 								<tbody>
-									{#each glossResults as r (r.word)}
+									{#each glossResults as r, i ('gloss-' + r.word + '-' + i)}
 										<tr class:row-unknown={!r.lookup}>
 											<td class="g-eva">{r.word}</td>
 											<td class="g-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '—'}</td>

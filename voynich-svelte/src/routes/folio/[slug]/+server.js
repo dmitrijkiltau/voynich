@@ -21,7 +21,7 @@ const ST_LABEL = /** @type {Record<string,string>} */ ({
 /** Derive display status from JSON content (mirrors FolioProgress.svelte st()). */
 function deriveStatus(/** @type {any} */ data) {
 	if (!data) return null;
-	// TODO: lexicon coverage > 90% on transcription lines → 'done' (Übersetzt)
+	// TODO: lexicon coverage > 90% on transcription paragraphs → 'done' (Übersetzt)
 	if (data.iconographic) return 'confirmed';
 	return 'partial';
 }
