@@ -1,0 +1,51 @@
+{
+  "folio": "f38v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q05/f038v_tr.txt",
+    "date": "1998-12-11",
+    "time": "12:38:57",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "okchop.chol.shotol.oteol.okeey.s-{plant}chor.d.aiin.d-",
+        "C": "okchop.chol.shotol.oteol.okeey.s-{plant}char.d!aiin.d-",
+        "F": "okchop.chol.shotol.oteol.okeey.s-{plant}chor.d!aiin.d-"
+      },
+      "P.2": {
+        "H": "choiin.shey.keo.sho.oiin.s.chol.ldy-{plant}okeaiin.okom-",
+        "C": "choiin.shey.key.sho.oiin.s.chol!!dy-{plant}okeaiin.okam-",
+        "F": "choiin.shey.key.sho.oiin.s.chol.ldy-{plant}okeaiin.okom-"
+      },
+      "P.3": {
+        "H": "qokeey.keor.daiin.okey.keey.daiin-{plant}dair.daiin.s-",
+        "C": "qokeey.keor.daiin.okey.keey.daiin-{plant}dair.daiin.s-",
+        "F": "qokeey.keor!daiin.okey.keey.daiin-{plant}dair.daiin.s-"
+      },
+      "P.4": {
+        "H": "okeey.daiin.qokeey.chotey.tody-{plant}oky.aiiin.d-",
+        "C": "okeey.daiin.qokchy.chotey.tody-{plant}oky.aiiin.d-",
+        "F": "okeey.daiin.qokeey.chotey.tody-{plant}oky.aii!n.d-"
+      },
+      "P.5": {
+        "H": "qoty.daiin.chol.oteeol.dody-{plant}cheod.chody-",
+        "C": "qoty.daiin.chol.oteeol.dody-{plant}cheod.chody-",
+        "F": "qoty.daiin.chol.oteeol.dody-{plant}cheod.chody-"
+      },
+      "P.6": {
+        "H": "sho.keeey.key.tey.daiin.daiiin-{plant}dain.dain-",
+        "C": "sho.keeey.key.tey.daiin.daiiin-{plant}dain.dain-",
+        "F": "sho.keeey.key.tey.daiin.daiiin-{plant}dain.dain-"
+      },
+      "P.7": {
+        "H": "daiin.qol.chy.dain.*{&153}.or.daiin-{plant}dais.daldy-",
+        "C": "daiin.qol.chy.dain.s!!!!!!!or.daiin-{plant}dain.daldy-",
+        "F": "daiin.qol!chy.dain.*!!!!!!.or.daiin-{plant}dain.daldy-"
+      },
+      "P.8": {
+        "H": "o.aiin.char.chshol.chokaiin=",
+        "C": "o!aiin.char.chshol.chokaiin=",
+        "F": "o!aiin.char.chshol.chokaiin="
+      }
+    }
+  }
+}

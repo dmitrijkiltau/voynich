@@ -14,11 +14,11 @@ export const STEM_WORDS = [
   { eva: "cheey",   heb: "חֵיי",       de: "Leben",                                                layer: "Hebräisch",                             confidenceStars: 4, rulesApplied: ["R50"] },
   { eva: "cheol",   heb: "ח-ע-ל",     de: "schöpfen / heben (balneolog. Augenbad-Marker)",        layer: "",                                      confidenceStars: 4, rulesApplied: [] },
   { eva: "chey",    heb: "חֵי",        de: "lebendig / am Leben (Adj.)",                           layer: "Hebräisch",                             confidenceStars: 3, rulesApplied: ["R40"] },
-  { eva: "chy",     heb: "חַי",        de: "lebendig / am Leben (Adj.; Vokalvariante von chey)",   layer: "Hebräisch",                             confidenceStars: 3, rulesApplied: ["R40"] },
   { eva: "chod",    heb: "חֹד",        de: "Schärfe / Akutheit (med. Terminus)",                   layer: "",                                      confidenceStars: 3, rulesApplied: [] },
   { eva: "chok",    heb: "חֹק",        de: "Satzung / Vorschrift / Rezepturregel",                 layer: "Mischna-Hebräisch",                     confidenceStars: 4, rulesApplied: ["R40"] },
   { eva: "chom",    heb: "חֹם",        de: "Wärme / Hitze (Schwesterform von cham)",               layer: "Mischna-Hebräisch",                     confidenceStars: 3, rulesApplied: ["R40"] },
   { eva: "chor",    heb: "חֹר",        de: "Pupille / Höhle / Loch",                               layer: "Mischna-Hebräisch",                     confidenceStars: 4, rulesApplied: ["R15", "R40"] },
+  { eva: "chy",     heb: "חַי",        de: "lebendig / am Leben (Adj.; Vokalvariante von chey)",   layer: "Hebräisch",                             confidenceStars: 3, rulesApplied: ["R40"] },
   { eva: "ckhy",    heb: "כְּהִי",       de: "Blässe / Trübheit",                                    layer: "Mischna-Hebräisch",                     confidenceStars: 4, rulesApplied: [] },
   { eva: "daiin",   heb: "דִּין",       de: "Urteil / Prognose",                                    layer: "Jüdisch-Aramäisch / Mischna-Hebräisch",                     rulesApplied: ["R40"] },
   { eva: "dal",     heb: "דַּל",        de: "schwach / abgemagert",                                 layer: "Hebräisch",                             confidenceStars: 4, rulesApplied: ["R40"] },
@@ -33,6 +33,7 @@ export const STEM_WORDS = [
   { eva: "kaiim",   heb: "קַיָּם",       de: "gültig / beständig (Schlussformel)",                   layer: "",                                      confidenceStars: 5, rulesApplied: [] },
   { eva: "kar",     heb: "כָּרָה",       de: "graben / untersuchen (med. Kontext)",                  layer: "Mischna-Hebräisch",                     confidenceStars: 3, rulesApplied: ["R40"] },
   { eva: "kol",     heb: "כֹּל",        de: "Alles / Gesamtheit",                                   layer: "Hebräisch",                             confidenceStars: 5, rulesApplied: ["R40"] },
+  { eva: "ody",     heb: "עֹ+דִּי",      de: "-ody als freies Morphem (Suffix-Verselbständigung, vgl. dy)",   layer: "",                             confidenceStars: 3, rulesApplied: [] },
   { eva: "olom",    heb: "עוֹלָם",      de: "Ewigkeit / Welt",                                      layer: "",                                      confidenceStars: 4, rulesApplied: [] },
   { eva: "or",      heb: "אוֹר",       de: "Licht / Glanz",                                        layer: "Hebräisch",                             confidenceStars: 4, rulesApplied: [] },
   { eva: "otan",    heb: "עֹתָן",       de: "Zeit / Jahreszeit der Erkrankung",                     layer: "",                                      confidenceStars: 3, rulesApplied: [] },
@@ -45,6 +46,7 @@ export const STEM_WORDS = [
   { eva: "shalom",  heb: "שָׁלוֹם",      de: "Friede / günstige Konstellation",                      layer: "",                                      confidenceStars: 3, rulesApplied: [] },
   { eva: "shees",   heb: "אֵשׁ",        de: "Feuer / Fieberbrand",                                  layer: "",                                      confidenceStars: 3, rulesApplied: [] },
   { eva: "sheey",   heb: "שֵׁי",        de: "Gabe / Wohlbefinden",                                  layer: "Biblisches Hebräisch / Aramäisch",      confidenceStars: 3, rulesApplied: ["R40"] },
+  { eva: "sheo",    heb: "שֶׁ+עֹ",       de: "das/welches [Licht/Ende] (apokopierte she-Form; Var. zu sheor)", layer: "Jüdisch-Aramäisch / Hebräisch", confidenceStars: 4, rulesApplied: [] },
   { eva: "sheol",   heb: "שְׁאוֹל",      de: "Scheol / Tod (Vollform zu shol)",                      layer: "Biblisches Hebräisch",                  confidenceStars: 4, rulesApplied: ["R40"] },
   { eva: "sho",     heb: "שׁוֹ",        de: "Scheol-Gleichheitspartikel",                           layer: "Jüdisch-Aramäisch",                     confidenceStars: 3, rulesApplied: [] },
   { eva: "shod",    heb: "שׁוֹד",       de: "Verheerung / Verwüstung",                              layer: "",                                      confidenceStars: 3, rulesApplied: ["R40"] },
@@ -59,12 +61,12 @@ export const STEM_WORDS = [
 export const PREF_CH = [
   { eva: "chckhy",  morph: "ch- + k- + chy",  heb: "חֶכָּהִי",  de: "Blässe-Hitze-Zeichen",        confidenceStars: 3, rulesApplied: [] },
   { eva: "chkar",   morph: "ch- + kar",       heb: "חֲקַר",   de: "er untersucht (Qal von חקר)", confidenceStars: 3, rulesApplied: [] },
+  { eva: "chodain", morph: "k- + dain", heb: "כְּ+דָּן", de: "wie der Richter (k-Komparativ + dain, Part. QAL)", confidenceStars: 4, rulesApplied: [] },
 ];
 
 export const PREF_D = [
   { eva: "daid",    morph: "d- + ai + d-",        heb: "דַּאִידַּ",        de: "? / תָּמִיד = dauerhaft (Semantik noch offen)",       confidenceStars: 2, rulesApplied: [] },
   { eva: "daiir",   morph: "d- + ir",             heb: "דַּאִיר",        de: "der Leuchtende (verlängerte Form von dair)",       confidenceStars: 3, rulesApplied: [] },
-  { eva: "dain",    morph: "d- + aiin",           heb: "דַּעַיִן",        de: "das Auge (Kurzform)",                              confidenceStars: 3, rulesApplied: [] },
   { eva: "dainod",  morph: "d- + aiin + od",      heb: "דַּאִיןעֹד",      de: "er behandelt das Auge weiter",                     confidenceStars: 3, rulesApplied: [] },
   { eva: "dair",    morph: "d- + ir",             heb: "דְּאִיר",        de: "der Leuchtende / Licht davon   ",                  confidenceStars: 3, rulesApplied: [] },
   { eva: "dairam",  morph: "d- + ir + am",        heb: "דְּאִיראָם",      de: "von dem Leuchtenden aller",                        confidenceStars: 3, rulesApplied: [] },
@@ -169,7 +171,7 @@ export const PREF_L = [
   { eva: "lor",     morph: "l- + or",             heb: "לְאוֹר",      de: "zum Licht / zur Heilung",        confidenceStars: 5, rulesApplied: [] },
   { eva: "lshaiir", morph: "l- + s- + aiin + ir", heb: "לְשׂעַיִןאִיר",  de: "für Augenlicht-Glanz",           confidenceStars: 4, rulesApplied: [] },
   { eva: "lshol",   morph: "l- + shol",           heb: "לְשׁוֹל",      de: "zum Tod / zu Scheol",            confidenceStars: 5, rulesApplied: [] },
-  { eva: "lshy",    morph: "l- + shy",           heb: "לְ+שֵׁי",        de: "für die Gabe / für sein Wesen", confidenceStars: 3, rulesApplied: [] },
+  { eva: "lshy",    morph: "l- + shy",            heb: "לְ+שֵׁי",      de: "für die Gabe / für sein Wesen",  confidenceStars: 3, rulesApplied: [] },
 ];
 
 export const PREF_O = [
@@ -281,18 +283,21 @@ export const PREF_S = [
 ];
 
 export const PREF_SH = [
+  { eva: "shaiin",morph: 'sh- + aiin',        heb: "שַׁ+עַיִן", de: "Feuer-Auge / Kurzform zu sheaiin",         confidenceStars: 3, rulesApplied: [] },
+  { eva: "shar",  morph: 'sh- + ar',          heb: "שֶׁ+אַר",  de: "welches das Licht ist (Var. zu shear)",    confidenceStars: 3, rulesApplied: [] },
   { eva: "shos",  morph: "sh- + a- + sh",     heb: "שׁעַשׁ",   de: "Feuer-Ähnliches",                          confidenceStars: 3, rulesApplied: [] },
-  { eva: "shy",   morph: "sh + -y",           heb: "שֵׁי",     de: "Gabe (Kurzform von sheey)",               confidenceStars: 3, rulesApplied: ["R40"] },
+  { eva: "shy",   morph: "sh + -y",           heb: "שֵׁי",    de: "Gabe (Kurzform von sheey)",                confidenceStars: 3, rulesApplied: ["R40"] },
   { eva: "sos",   morph: "sh- + a- + sh",     heb: "שׁעַשׁ",   de: "Feuer auf Feuer / Fieber-Intensivierung",  confidenceStars: 3, rulesApplied: [] },
   { eva: "sshey", morph: "sh- + sh- + shey",  heb: "שׁשׁהֵי",  de: "Doppel-Shin-Blässe",                       confidenceStars: 2, rulesApplied: [] },
 ];
 
 export const PREF_SHE = [
-  { eva: "sheaiin", morph: "she- + aiin", heb: "שֶׁעַיִן",  de: "welche das Auge",                                            confidenceStars: 4, rulesApplied: [] },
-  { eva: "sheam",   morph: "she- + am",   heb: "שֶׁ+עַם",  de: "welche das Volk / Gabe der Mutter",                          confidenceStars: 3, rulesApplied: [] },
-  { eva: "shear",   morph: "she- + ar",  heb: "שֶׁ+אַר",  de: "welches das Licht/die Heilung ist (Vokalvariante von sheor)", confidenceStars: 4, rulesApplied: [] },
-  { eva: "shedy",   morph: "she- + -dy",  heb: "שֶׁדִּי",   de: "das/welches von",                                            confidenceStars: 4, rulesApplied: [] },
-  { eva: "sheor",   morph: "she- + or",   heb: "שֶׁאֹר",   de: "das/welches Licht ist",                                      confidenceStars: 3, rulesApplied: [] },
+  { eva: "sheaiin", morph: "she- + aiin", heb: "שֶׁעַיִן",  de: "welche das Auge",                                              confidenceStars: 4, rulesApplied: [] },
+  { eva: "sheam",   morph: "she- + am",   heb: "שֶׁ+עַם",  de: "welche das Volk / Gabe der Mutter",                            confidenceStars: 3, rulesApplied: [] },
+  { eva: "shear",   morph: "she- + ar",   heb: "שֶׁ+אַר",  de: "welches das Licht/die Heilung ist (Vokalvariante von sheor)",  confidenceStars: 4, rulesApplied: [] },
+  { eva: "shedy",   morph: "she- + -dy",  heb: "שֶׁדִּי",   de: "das/welches von",                                              confidenceStars: 4, rulesApplied: [] },
+  { eva: "sheor",   morph: "she- + or",   heb: "שֶׁאֹר",   de: "das/welches Licht ist",                                        confidenceStars: 3, rulesApplied: [] },
+  { eva: "shey",    morph: "she- + -y",   heb: "שֶׁ+יְ",   de: "sein/welches [Licht] (she-Präfix + -y Possessiv)",             confidenceStars: 4, rulesApplied: [] },
 ];
 
 export const PREF_SHO = [
@@ -501,7 +506,7 @@ export const SYNTAX_MISC = [
   { eva: "chal",        morph: "chal",                  heb: "חָל",        de: "gilt für / betrifft",                                       confidenceStars: 3, rulesApplied: [] },
   { eva: "chary",       morph: "char + -y",             heb: "חַרִי",       de: "sein Fieber",                                               confidenceStars: 3, rulesApplied: [] },
   { eva: "chodl",       morph: "chodl (Part. von חדל)", heb: "חֹדֵל",       de: "der Aufhörende / der Sterbende (Aktiv-Partizip)",           confidenceStars: 3, rulesApplied: [] },
-  { eva: "dain",        morph: "dain (Part. QAL דין)",  heb: "דָּן",        de: "Richter (Partizip QAL von דין)",                            confidenceStars: 3, rulesApplied: [] },
+  { eva: "dain",        morph: "dain (Part. QAL דין)",  heb: "דָּן",        de: "Richter (Part. QAL von דין); Alternativlesung: d- + aiin = das Auge (Kurzform)", confidenceStars: 3, rulesApplied: [] },
   { eva: "damo",        morph: "dam + -o",              heb: "דָּמוֹ",       de: "sein Blut",                                                 confidenceStars: 4, rulesApplied: [] },
   { eva: "dan",         morph: "dan",                   heb: "דָּן",        de: "er hat geurteilt (Qal Perfekt) / Richter",                  confidenceStars: 3, rulesApplied: [] },
   { eva: "darchor",     morph: "dar + chor",            heb: "דַּרְכּוֹר",     de: "sein Krankheitsverlauf",                                    confidenceStars: 3, rulesApplied: [] },
@@ -569,6 +574,7 @@ export const LEXICON_ALIASES = /** @type {Record<string,string>} */ ({
 	okain:   "okaiin",
 	shdy:    "shedy",
 	chorain: "choraiin",
+	choaiin:  "kaiin",
 });
 
 /** @param {number | undefined} confidenceStars */

@@ -1,4 +1,4 @@
-import { FOLIO_DATA, FOLIO_PAGES } from '$lib';
+import { FOLIO_PAGES } from '$lib';
 import { error } from '@sveltejs/kit';
 
 // Eager-import all folio JSON files at build time
@@ -13,10 +13,18 @@ const MORPH_LABELS = /** @type {Record<string,string>} */ ({
 });
 
 const ST_LABEL = /** @type {Record<string,string>} */ ({
-	done:      'Vollübersetzung',
-	confirmed: 'analysiert (★★★★+)',
-	partial:   'Anker / Teilanalyse',
+	done:      'übersetzt',
+	confirmed: 'analysiert',
+	partial:   'transkribiert',
 });
+
+/** Derive display status from JSON content (mirrors FolioProgress.svelte st()). */
+function deriveStatus(/** @type {any} */ data) {
+	if (!data) return null;
+	// TODO: lexicon coverage > 90% on transcription lines → 'done' (Übersetzt)
+	if (data.iconographic) return 'confirmed';
+	return 'partial';
+}
 
 /** @param {string} slug e.g. "f001v" → "f1v" */
 function slugToFolioId(slug) {
@@ -39,8 +47,8 @@ function findQuire(folioId) {
 	return null;
 }
 
-/** @param {string} folioId @param {any} meta @param {any} data */
-function generateMarkdown(folioId, meta, data) {
+/** @param {string} folioId @param {any} data */
+function generateMarkdown(folioId, data) {
 	const quire = findQuire(folioId);
 	const tr = quire ? trUrl(folioId, quire.q) : null;
 	const lines = [];
@@ -48,30 +56,15 @@ function generateMarkdown(folioId, meta, data) {
 	lines.push(`# Folio ${folioId} — Voynich-Manuskript`);
 	lines.push('');
 
-	if (meta?.status) lines.push(`**Status:** ${ST_LABEL[meta.status] ?? meta.status}`);
-	if (meta?.registerType) lines.push(`**Register-Typ:** ${meta.registerType}`);
-	if (meta?.languageClass) lines.push(`**Sprach-Klasse:** ${meta.languageClass}`);
-	if (meta?.writerHand !== undefined) lines.push(`**Schreiber-Hand:** ${meta.writerHand}`);
+	const status = deriveStatus(data);
+	if (status) lines.push(`**Status:** ${ST_LABEL[status]}`);
+	if (data?.registerType) lines.push(`**Register-Typ:** ${data.registerType}`);
+	if (data?.languageClass) lines.push(`**Sprach-Klasse:** ${data.languageClass}`);
+	if (data?.writerHand !== undefined) lines.push(`**Schreiber-Hand:** ${data.writerHand}`);
 
-	if (meta?.transcribers?.length) {
+	if (data?.scanUrl || tr) {
 		lines.push('');
-		lines.push('**Transkriptoren:**');
-		for (const t of meta.transcribers) {
-			lines.push(`- ${t.siglen.join(' · ')} — ${t.label}`);
-		}
-	}
-
-	if (meta?.consensusDenominators?.length) {
-		lines.push('');
-		lines.push('**Konsens-Nenner:**');
-		for (const k of meta.consensusDenominators) {
-			lines.push(`- ${k}`);
-		}
-	}
-
-	if (meta?.scanUrl || tr) {
-		lines.push('');
-		if (meta?.scanUrl) lines.push(`**Scan (Beinecke Digital Library):** ${meta.scanUrl}`);
+		if (data?.scanUrl) lines.push(`**Scan (Beinecke Digital Library):** ${data.scanUrl}`);
 		if (tr) lines.push(`**Transkription (Voynich.nu):** ${tr}`);
 	}
 
@@ -124,16 +117,11 @@ function generateMarkdown(folioId, meta, data) {
 export function GET({ params }) {
 	const { slug } = params;
 	const key = Object.keys(folioModules).find(k => k.endsWith(`/${slug}.json`));
-	const folioId = slugToFolioId(slug);
-	const folioEntry = FOLIO_DATA[folioId] ?? null;
 
-	if (!key && !folioEntry) error(404, `Folio ${slug} nicht gefunden`);
+	if (!key) error(404, `Folio ${slug} nicht gefunden`);
 
-	const data = key ? /** @type {any} */ (folioModules[key]) : null;
-	// Merge: JSON file fields provide rich metadata, FOLIO_DATA wins on conflicts
-	const { folio: _f, iconographic: _i, ...jsonMeta } = data ?? {};
-	const meta = { ...jsonMeta, ...(folioEntry ?? {}) };
-	const md = generateMarkdown(folioId, meta, data);
+	const data = /** @type {any} */ (folioModules[key]);
+	const md = generateMarkdown(slugToFolioId(slug), data);
 
 	return new Response(md, {
 		headers: {

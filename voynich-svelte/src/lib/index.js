@@ -1,6 +1,6 @@
 import { MAPPING, PREFIXES } from './mapping-data.js';
 import { LEXICON as _RAW_LEXICON, STEM_WORDS as _RAW_STEM_WORDS } from './lexicon-data.js';
-import { FOLIO_PAGES, FOLIO_DATA } from './folio-data.js';
+import { FOLIO_PAGES, LACUNA } from './folio-data.js';
 import { RULES, RULES_CHANGELOG } from './grammar-rules-data.js';
 import { COMPARISON, FOLIOS, CONCLUSION } from './language-a-data.js';
 import { TESTED, STATS as BACKTEST_STATS } from './backtest-data.js';
@@ -43,7 +43,7 @@ const _stemSet = new Set(_RAW_STEM_WORDS.map((/** @type {any} */ e) => e.eva));
 export const STEM_WORDS = LEXICON.filter((/** @type {any} */ e) => _stemSet.has(e.eva));
 export const LEXICON_DERIVED = LEXICON.filter((/** @type {any} */ e) => !_stemSet.has(e.eva));
 
-export { MAPPING, PREFIXES, FOLIO_PAGES, FOLIO_DATA, RULES, RULES_CHANGELOG, COMPARISON, FOLIOS, CONCLUSION };
+export { MAPPING, PREFIXES, FOLIO_PAGES, LACUNA, RULES, RULES_CHANGELOG, COMPARISON, FOLIOS, CONCLUSION };
 
 /** Returns true when a stars string represents 5-star confidence (★★★★★). */
 export const isConf5 = (/** @type {string} */ stars) => stars.slice(0, 5) === '★★★★★';

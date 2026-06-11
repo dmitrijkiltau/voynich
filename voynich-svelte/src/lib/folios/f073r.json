@@ -1,0 +1,153 @@
+{
+  "folio": "f73r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q12/f073r_tr.txt",
+    "date": "1998-12-10",
+    "time": "01:06:21",
+    "editor": "stolfi",
+    "lines": {
+      "S0.1": {
+        "H": "otoly=",
+        "V": "otaly={Grove's #1}"
+      },
+      "S0.2": {
+        "H": "chockhy=",
+        "V": "chockhy={Grove's #2}"
+      },
+      "S0.3": {
+        "H": "okedy=",
+        "V": "otedy={Grove's #3}"
+      },
+      "S0.4": {
+        "H": "yteeody=",
+        "V": "yteeody={Grove's #4}"
+      },
+      "R1.1": {
+        "H": "ypolcheey.salchedal.chepchey.daraly.oteos.air.ar.oteosdal.chotchy.soteees.alshey.ches.al.chees.cheoly.leiir*.choteey.cheteey.cheteeeos!aiin.chetchody.chedar.ar.cheteey.oteor.ar.air.alor.shetch.ytchy.cheody.ykeydom.oteos.alar.alcheky.",
+        "U": "ypolcheey.salchedal.chepchey.daraly.oteos,air,ar.oteosdal.chote!y.sot**ar.**sh*y.****.**!ch**s.ch*!*y.l*****!chot*!m.cheteey.cheteeeor,aiin.chetchody.chedar,ar.cheteey.oteor,ar.air!alor.shetol.yteey.cheody.ykeydam.oteos,alar.alcheky."
+      },
+      "S1.1": {
+        "H": "otey=",
+        "V": "otey={Grove's #1}"
+      },
+      "S1.2": {
+        "H": "otaly=",
+        "V": "otaly={Grove's #2}"
+      },
+      "S1.3": {
+        "H": "okeody=",
+        "V": "okeedy={Grove's #3}"
+      },
+      "S1.4": {
+        "H": "oteedyl=",
+        "V": "oteedal={Grove's #4, star with tail}"
+      },
+      "S1.5": {
+        "H": "okesdy=",
+        "V": "cthedy={Grove's #5}"
+      },
+      "S1.6": {
+        "H": "okery=",
+        "V": "okeey={Grove's #6, star with tail}"
+      },
+      "S1.7": {
+        "H": "oksedy=",
+        "V": "okeedy={Grove's #7}"
+      },
+      "S1.8": {
+        "H": "ykeeory=",
+        "V": "ykeeary={Grove's #8}"
+      },
+      "S1.9": {
+        "H": "oteeosy=",
+        "V": "oteeory={Grove's #9}"
+      },
+      "S1.10": {
+        "H": "shekal=",
+        "V": "shekal={Grove's #10}"
+      },
+      "S1.11": {
+        "H": "oteedyg!=",
+        "V": "oteedyg*={Grove's #11}"
+      },
+      "S1.12": {
+        "H": "okedal=",
+        "V": "okedal={Grove's #12}"
+      },
+      "S1.13": {
+        "H": "chdy=",
+        "V": "chdy={Grove's #13}"
+      },
+      "S1.14": {
+        "H": "dalshey=",
+        "V": "dalshey={Grove's #14}"
+      },
+      "S1.15": {
+        "H": "opaiin=",
+        "V": "ofaiin={Grove's #15}"
+      },
+      "S1.16": {
+        "H": "okeos=",
+        "V": "ykeou={Grove's #16}"
+      },
+      "R2.1": {
+        "H": "oteey.dar.al.opaiin.olalaiin.sair.ar.chopchedy.chdar.orom.otor!eees.olteey.okees.otar.chey.oteas.oho!r.op!ar.chey.daiin.qoiheey.s!cheey.dal.cheesy.",
+        "U": "otchy.dar.yl.opaiin.olalaiin.r,aisam.chopchedy.chdar.oram.otar,eees.alteey.okchs.otar!chey.oteas,cho,r.opees,chey.daiin.qoche!y.s,cheey.dal,cha!ry."
+      },
+      "S2.1": {
+        "H": "okeos=",
+        "V": "okeou={Grove's #1}",
+        "U": "okeos="
+      },
+      "S2.2": {
+        "H": "okary=",
+        "V": "otary={Grove's #2}",
+        "U": "otary="
+      },
+      "S2.3": {
+        "H": "ot*!ad!=",
+        "V": "okchody={Grove's #3}",
+        "U": "okeeody="
+      },
+      "S2.4": {
+        "H": "oota!dy=",
+        "V": "oyteedy={Grove's #4}",
+        "U": "oyteedy="
+      },
+      "S2.5": {
+        "H": "oky=",
+        "V": "oky={Grove's #5}",
+        "U": "oky="
+      },
+      "S2.6": {
+        "H": "chefy=",
+        "V": "chefy={Grove's #6}",
+        "U": "chefy="
+      },
+      "S2.7": {
+        "H": "otal=",
+        "V": "otal={Grove's #7}",
+        "U": "otal="
+      },
+      "S2.8": {
+        "H": "shek=",
+        "V": "shek={Grove's #8}",
+        "U": "shek="
+      },
+      "S2.9": {
+        "H": "ar=",
+        "V": "ar={Grove's #9}",
+        "U": "ar="
+      },
+      "S2.10": {
+        "H": "kar=",
+        "V": "kar={Grove's #10}",
+        "U": "kar="
+      },
+      "R3.1": {
+        "H": "osaiin.chedain.oteey.chedaly.okechs.chepchees.aly.oteodal-{gap}",
+        "U": "osaiin.chedain.oteey.chodaly.!!***s.chepche!d!aly.oteadal-{gap}"
+      }
+    }
+  }
+}

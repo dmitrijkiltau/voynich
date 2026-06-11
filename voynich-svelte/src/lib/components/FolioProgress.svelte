@@ -1,15 +1,45 @@
 <script>
-	import { FOLIO_PAGES, FOLIO_DATA } from '$lib';
+	import { FOLIO_PAGES, LACUNA } from '$lib';
 	import { slide } from 'svelte/transition';
 	import { SvelteMap, SvelteSet } from 'svelte/reactivity';
 	import { majorityTokens } from '$lib/eva-utils.js';
 
 	let open = $state(false);
 
-	/** @param {string} p */
-	function entry(p) { return FOLIO_DATA[p] ?? null; }
-	/** @param {string} p */
-	function st(p) { return entry(p)?.status ?? 'none'; }
+	// Eager-load all folio JSONs — used for status derivation and detail panel.
+	const _folios = /** @type {Record<string, any>} */ (
+		import.meta.glob('../folios/*.json', { eager: true })
+	);
+
+	/** @param {string} pageId @returns {string} */
+	function folioSlug(pageId) {
+		const m = pageId.match(/^f(\d+)(.*)$/);
+		return m ? `f${m[1].padStart(3, '0')}${m[2]}` : pageId;
+	}
+
+	/** @param {string} pageId @returns {any} */
+	function getFolioData(pageId) {
+		const mod = _folios[`../folios/${folioSlug(pageId)}.json`];
+		return mod ? (mod.default ?? mod) : null;
+	}
+
+	/**
+	 * Status is derived from JSON content, not set manually:
+	 *   lacuna    — physically missing from the manuscript (LACUNA set)
+	 *   confirmed — JSON contains `iconographic` → Erstanalyse
+	 *   partial   — JSON exists, transcriptions only, no iconographic
+	 *   done      — TODO: lexicon coverage > 90% on transcription lines → Übersetzt
+	 *   none      — no JSON file exists
+	 * @param {string} pageId @returns {string}
+	 */
+	function st(pageId) {
+		if (LACUNA.has(pageId)) return 'lacuna';
+		const data = getFolioData(pageId);
+		if (!data) return 'none';
+		// TODO: compute lexicon coverage across transcription lines → 'done' (Übersetzt)
+		if (data.iconographic) return 'confirmed';
+		return 'partial';
+	}
 
 	const SECTION_ABBR = /** @type {Record<string,string>} */ ({
 		q01:'Kräuter A',  q02:'Kräuter A',  q03:'Kräuter A',  q04:'Kräuter A',
@@ -32,41 +62,58 @@
 		q20:'red',
 	});
 
+	const SECTION_GLYPH = /** @type {Record<string,string>} */ ({
+		q01:'✿', q02:'✿', q03:'✿', q04:'✿', q05:'✿', q06:'✿', q07:'✿',
+		q08:'☽', q09:'✦',
+		q10:'◎', q11:'◎', q12:'◎', q13:'◎',
+		q14:'⊕',
+		q15:'⚗', q16:'⚗', q17:'⚗', q18:'⚗', q19:'⚗',
+		q20:'★',
+	});
+
 	const ROMAN = ['I','II','III','IV','V','VI','VII','VIII','IX','X',
 	               'XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX'];
 
 	const quires = FOLIO_PAGES.map((q, i) => {
-		const pages     = q.pages.map(p => ({ id: p, label: p.slice(1), st: st(p), data: entry(p) }));
-		const done      = pages.filter(p => p.st === 'done').length;
-		const confirmed = pages.filter(p => p.st === 'confirmed').length;
-		const partial   = pages.filter(p => p.st === 'partial').length;
-		const total     = pages.length;
+		const pages      = q.pages.map(p => ({ id: p, label: p.slice(1), st: st(p) }));
+		const done       = pages.filter(p => p.st === 'done').length;
+		const confirmed  = pages.filter(p => p.st === 'confirmed').length;
+		const partial    = pages.filter(p => p.st === 'partial').length;
+		const lacuna     = pages.filter(p => p.st === 'lacuna').length;
+		const total      = pages.length;
+		const analyzable = total - lacuna;
 		return {
 			...q,
-			short: SECTION_ABBR[q.q] ?? '',
-			hue:   SECTION_HUE[q.q]  ?? 'none',
-			roman: ROMAN[i],
-			pages, done, confirmed, partial, total,
-			pctDone:      (done      / total) * 100,
-			pctConfirmed: (confirmed / total) * 100,
-			pctPartial:   (partial   / total) * 100,
+			short:    SECTION_ABBR[q.q]  ?? '',
+			hue:      SECTION_HUE[q.q]   ?? 'none',
+			glyph:    SECTION_GLYPH[q.q] ?? '',
+			roman:    ROMAN[i],
+			pages, done, confirmed, partial, lacuna, total, analyzable,
+			pctDone:      analyzable ? (done      / analyzable) * 100 : 0,
+			pctConfirmed: analyzable ? (confirmed / analyzable) * 100 : 0,
+			pctPartial:   analyzable ? (partial   / analyzable) * 100 : 0,
 		};
 	});
 
-	const totalPages     = quires.reduce((s, q) => s + q.total,     0);
-	const totalDone      = quires.reduce((s, q) => s + q.done,      0);
-	const totalConfirmed = quires.reduce((s, q) => s + q.confirmed, 0);
-	const totalPartial   = quires.reduce((s, q) => s + q.partial,   0);
-	const totalNone      = totalPages - totalDone - totalConfirmed - totalPartial;
+	const totalPages      = quires.reduce((s, q) => s + q.total,      0);
+	const totalDone       = quires.reduce((s, q) => s + q.done,       0);
+	const totalConfirmed  = quires.reduce((s, q) => s + q.confirmed,  0);
+	const totalPartial    = quires.reduce((s, q) => s + q.partial,    0);
+	const totalLacuna     = quires.reduce((s, q) => s + q.lacuna,     0);
+	const totalAnalyzable = totalPages - totalLacuna;
+	const totalNone       = totalAnalyzable - totalDone - totalConfirmed - totalPartial;
 
-	const pctDone      = (totalDone      / totalPages) * 100;
-	const pctConfirmed = (totalConfirmed / totalPages) * 100;
-	const pctPartial   = (totalPartial   / totalPages) * 100;
-	const pctAnalyzed  = ((totalDone + totalConfirmed + totalPartial) / totalPages) * 100;
+	const pctDone      = (totalDone      / totalAnalyzable) * 100;
+	const pctConfirmed = (totalConfirmed / totalAnalyzable) * 100;
+	const pctPartial   = (totalPartial   / totalAnalyzable) * 100;
+	// Only iconographic analyses count as "analyzed" — transcription-only pages do not.
+	const pctAnalyzed  = ((totalDone + totalConfirmed) / totalAnalyzable) * 100;
+
+	// ── Filter ───────────────────────────────────────────────────────────────
+	/** @type {string | null} */
+	let filterStatus = $state(null);
 
 	// ── Accordion detail ─────────────────────────────────────────────────────
-
-	const folioModules = import.meta.glob('../folios/*.json');
 
 	const MORPH_LABELS = /** @type {Record<string,string>} */ ({
 		radix:       'RADIX',
@@ -77,41 +124,48 @@
 	});
 
 	/**
-	 * @typedef {{ pageId: string, quireIdx: number, data: import('../folio-data.js').FolioEntry | null }} ActiveChip
+	 * @typedef {Object} ActiveChip
+	 * @property {string} pageId
+	 * @property {number} quireIdx
 	 */
+
 	/** @type {ActiveChip | null} */
 	let activeChip = $state(null);
 
-	/** @type {any} */
-	let folioDetail = $state(null);
-	let folioLoading = $state(false);
+	// folioDetail is derived synchronously from the eager-loaded JSON map.
+	const folioDetail = $derived(activeChip ? getFolioData(/** @type {ActiveChip} */(activeChip).pageId) : null);
 
-	/** @param {string} pageId @returns {Promise<any>} */
-	async function loadFolioDetail(pageId) {
-		const m = pageId.match(/^f(\d+)(.*)$/);
-		if (!m) return null;
-		const slug = `f${m[1].padStart(3, '0')}${m[2]}`;
-		const loader = folioModules[`../folios/${slug}.json`];
-		if (!loader) return null;
-		const mod = await loader();
-		return /** @type {any} */ (mod).default ?? mod;
+	/** 
+	 * @param {string} pageId
+	 * @param {number} quireIdx
+	 */
+	function toggleChip(pageId, quireIdx) {
+		if (activeChip?.pageId === pageId) { activeChip = null; return; }
+		activeChip = { pageId, quireIdx };
 	}
 
-	/** @param {string} pageId @param {number} quireIdx @param {import('../folio-data.js').FolioEntry | null} data */
-	async function toggleChip(pageId, quireIdx, data) {
-		if (activeChip?.pageId === pageId) {
-			activeChip = null;
-			folioDetail = null;
-			return;
-		}
-		activeChip = { pageId, quireIdx, data };
-		folioDetail = null;
-		folioLoading = true;
-		const detail = await loadFolioDetail(pageId);
-		if (activeChip?.pageId === pageId) {
-			folioDetail = detail;
-			folioLoading = false;
-		}
+	// ── Long-press → open folio markdown in new tab ──────────────────────────
+	/** @type {number|NodeJS.Timeout} */
+	let _lpTimer = 0;
+	let _lpFired = false;
+
+	/** @param {string} slug */
+	function startLongPress(slug) {
+		_lpFired = false;
+		_lpTimer = setTimeout(() => {
+			_lpFired = true;
+			window.open(`/folio/${slug}`, '_blank');
+		}, 600);
+	}
+
+	function endLongPress() {
+		clearTimeout(_lpTimer);
+	}
+
+	/** @param {string} pageId @param {number} quireIdx */
+	function handleChipClick(pageId, quireIdx) {
+		if (_lpFired) { _lpFired = false; return; }
+		toggleChip(pageId, quireIdx);
 	}
 
 	/** @param {string} pageId @param {string} quire @returns {string | null} */
@@ -119,12 +173,6 @@
 		const m = pageId.match(/^f(\d+)(.*)$/);
 		if (!m) return null;
 		return `https://voynich.nu/${quire}/f${m[1].padStart(3, '0')}${m[2]}_tr.txt`;
-	}
-
-	/** @param {string} pageId @returns {string} */
-	function folioSlug(pageId) {
-		const m = pageId.match(/^f(\d+)(.*)$/);
-		return m ? `f${m[1].padStart(3, '0')}${m[2]}` : pageId;
 	}
 
 	/** @param {Record<string, Record<string, string>>} lines */
@@ -150,12 +198,8 @@
 		const groups = new SvelteMap();
 		for (const [s, paras] of Object.entries(siglenParas)) {
 			const key = paras.join('|');
-			if (!groups.has(key)) {
-				groups.set(key, { siglen: [], paras });
-			}
-			const group = groups.get(key);
-			group.siglen.push(s);
-			groups.set(key, group);
+			if (!groups.has(key)) groups.set(key, { siglen: [], paras });
+			groups?.get(key)?.siglen.push(s);
 		}
 		const sorted = [...groups.values()].sort((a, b) => b.paras.length - a.paras.length);
 		const transcribers = sorted.map(({ siglen, paras }) => {
@@ -180,7 +224,11 @@
 	}
 
 	const ST_LABEL = /** @type {Record<string,string>} */ ({
-		done: 'Vollübersetzung', confirmed: 'analysiert', partial: 'Anker / Teilanalyse', none: 'nicht analysiert',
+		done:      'Übersetzt',
+		confirmed: 'Erstanalyse',
+		partial:   'transkribiert',
+		none:      'nicht erfasst',
+		lacuna:    'nicht erhalten',
 	});
 </script>
 
@@ -188,26 +236,32 @@
 	<!-- ── HEADER (toggle) ─────────────────────────── -->
 	<button class="fp-head" onclick={() => open = !open} aria-expanded={open} aria-controls="fp-body">
 		<div class="fp-title-row">
-			<span class="fp-title">Dekodierungsfortschritt</span>
+			<span class="fp-title">Folio-Register</span>
 			<div class="fp-title-right">
 				<span class="fp-pct-badge">{pctAnalyzed.toFixed(1)}&thinsp;%</span>
 				<span class="fp-chevron" class:open>{open ? '▲' : '▼'}</span>
 			</div>
 		</div>
 		<div class="fp-counts">
-			<span class="fpc done">{totalDone}&nbsp;<em>übersetzt</em></span>
+			{#if totalDone}
+				<span class="fpc done">{totalDone}&nbsp;<em>übersetzt</em></span>
+				<span class="fpc-sep">·</span>
+			{/if}
+			<span class="fpc confirmed">{totalConfirmed}&nbsp;<em>Erstanalyse</em></span>
 			<span class="fpc-sep">·</span>
-			<span class="fpc confirmed">{totalConfirmed}&nbsp;<em>analysiert</em></span>
-			<span class="fpc-sep">·</span>
-			<span class="fpc partial">{totalPartial}&nbsp;<em>Anker</em></span>
+			<span class="fpc partial">{totalPartial}&nbsp;<em>transkribiert</em></span>
 			<span class="fpc-sep">·</span>
 			<span class="fpc none">{totalNone}&nbsp;<em>ausstehend</em></span>
+			{#if totalLacuna}
+				<span class="fpc-sep">·</span>
+				<span class="fpc lacuna">{totalLacuna}&nbsp;<em>lacuna</em></span>
+			{/if}
 			<span class="fpc-sep">·</span>
-			<span class="fpc total">{totalPages}&nbsp;<em>Seiten</em></span>
+			<span class="fpc total">{totalAnalyzable}&nbsp;<em>Seiten</em></span>
 		</div>
 
 		<!-- Segmented global progress bar -->
-		<div class="fp-global-bar" title="Gesamt: {pctAnalyzed.toFixed(1)} % analysiert">
+		<div class="fp-global-bar" title="Erstanalyse: {pctAnalyzed.toFixed(1)} %">
 			<div class="fpgb-done"      style="width:{pctDone}%"     ></div>
 			<div class="fpgb-confirmed" style="width:{pctConfirmed}%"></div>
 			<div class="fpgb-partial"   style="width:{pctPartial}%"  ></div>
@@ -223,6 +277,27 @@
 	<!-- ── COLLAPSIBLE BODY ─────────────────────────── -->
 	<div id="fp-body" class="fp-body" class:open>
     <div class="fp-body-inner">
+
+      <!-- ── Filter bar ──────────────────────────────── -->
+      <div class="fp-filters">
+        <button class="fp-fp fp-fp--all" class:fp-fp--active={filterStatus === null}
+          onclick={() => filterStatus = null}>Alle</button>
+        {#if totalDone}
+          <button class="fp-fp fp-fp--done" class:fp-fp--active={filterStatus === 'done'}
+            onclick={() => filterStatus = filterStatus === 'done' ? null : 'done'}>Übersetzt</button>
+        {/if}
+        <button class="fp-fp fp-fp--confirmed" class:fp-fp--active={filterStatus === 'confirmed'}
+          onclick={() => filterStatus = filterStatus === 'confirmed' ? null : 'confirmed'}>Erstanalyse</button>
+        <button class="fp-fp fp-fp--partial" class:fp-fp--active={filterStatus === 'partial'}
+          onclick={() => filterStatus = filterStatus === 'partial' ? null : 'partial'}>Transkribiert</button>
+        <button class="fp-fp fp-fp--none" class:fp-fp--active={filterStatus === 'none'}
+          onclick={() => filterStatus = filterStatus === 'none' ? null : 'none'}>Ausstehend</button>
+        {#if totalLacuna}
+          <button class="fp-fp fp-fp--lacuna" class:fp-fp--active={filterStatus === 'lacuna'}
+            onclick={() => filterStatus = filterStatus === 'lacuna' ? null : 'lacuna'}>Lacuna</button>
+        {/if}
+      </div>
+
       <div class="fp-quires">
         {#each quires as q, qi (q.q)}
           <div class="fp-row fp-row--{q.hue}">
@@ -230,8 +305,9 @@
             <div class="fp-label">
               <div class="fp-label-top">
                 <span class="fp-roman">{q.roman}</span>
+                {#if q.glyph}<span class="fp-glyph">{q.glyph}</span>{/if}
                 <span class="fp-section">{q.short}</span>
-                <span class="fp-fraction">{q.done + q.confirmed + q.partial}/{q.total}</span>
+                <span class="fp-fraction">{q.done + q.confirmed + q.partial}/{q.analyzable}</span>
               </div>
               <div class="fp-qbar">
                 <div class="fp-qb-done"      style="width:{q.pctDone}%"     ></div>
@@ -246,11 +322,16 @@
                 <span
                   class="fpc-chip fpc-chip--{p.st}"
                   class:fpc-chip--active={activeChip?.pageId === p.id}
-                  title="{p.id} · {ST_LABEL[p.st]}"
+                  class:fpc-chip--filtered={filterStatus !== null && p.st !== filterStatus}
+                  title="{p.id} · {p.st === 'lacuna' ? 'nicht erhalten — Folio fehlt im Manuskript' : ST_LABEL[p.st]}"
                   role="button"
-                  tabindex="0"
-                  onclick={() => toggleChip(p.id, qi, p.data)}
-                  onkeydown={(e) => { if (e.key === 'Enter' || e.key === ' ') toggleChip(p.id, qi, p.data); }}
+                  tabindex={p.st === 'lacuna' ? -1 : 0}
+                  onpointerdown={() => { if (p.st !== 'lacuna') startLongPress(folioSlug(p.id)); }}
+                  onpointerup={endLongPress}
+                  onpointerleave={endLongPress}
+                  onpointercancel={endLongPress}
+                  onclick={() => { if (p.st !== 'lacuna') handleChipClick(p.id, qi); }}
+                  onkeydown={(e) => { if ((e.key === 'Enter' || e.key === ' ') && p.st !== 'lacuna') handleChipClick(p.id, qi); }}
                 >{p.label}</span>
               {/each}
             </div>
@@ -258,11 +339,11 @@
 
           <!-- ── Accordion detail row ───────────────── -->
           {#if activeChip?.quireIdx === qi}
-            {@const d = activeChip.data}
             {@const tr = trUrl(activeChip.pageId, q.q)}
             {@const ico = folioDetail?.iconographic ?? null}
             {@const slug = folioSlug(activeChip.pageId)}
-            {@const m = { ...folioDetail, ...d }}
+            {@const m = folioDetail}
+            {@const _chipSt = st(activeChip.pageId)}
             {@const _lines = folioDetail?.transcriptions?.lines ?? null}
             {@const _derived = _lines ? deriveTranscribersInfo(_lines) : null}
             {@const _transcribers = _derived?.transcribers ?? []}
@@ -272,16 +353,16 @@
               <!-- Header: id · badge · actions · close -->
               <div class="fp-detail-header">
                 <span class="fp-detail-id">{activeChip.pageId}</span>
-                <span class="fp-detail-badge fp-detail-badge--{m?.status ?? 'none'}">{ST_LABEL[m?.status ?? 'none']}</span>
+                <span class="fp-detail-badge fp-detail-badge--{_chipSt}">{ST_LABEL[_chipSt]}</span>
                 <div class="fp-detail-header-actions">
                   {#if m?.scanUrl}
                     <a class="fp-detail-btn" href={m.scanUrl} target="_blank" rel="noopener noreferrer">Scan ↗</a>
                   {/if}
                   {#if tr}
-                    <a class="fp-detail-btn fp-detail-btn--tr" href={tr} target="_blank" rel="noopener noreferrer">Transkription ↗</a>
+                    <a class="fp-detail-btn fp-detail-btn--tr" href={tr} target="_blank" rel="noopener noreferrer">Transkription (Voynich.nu) ↗</a>
                   {/if}
                   <a class="fp-detail-btn fp-detail-btn--md" href="/folio/{slug}" target="_blank" rel="noopener noreferrer">Markdown ↗</a>
-                  <button class="fp-detail-close" onclick={() => { activeChip = null; folioDetail = null; }} aria-label="Schließen">×</button>
+                  <button class="fp-detail-close" onclick={() => { activeChip = null; }} aria-label="Schließen">×</button>
                 </div>
               </div>
 
@@ -289,7 +370,7 @@
               <div class="fp-detail-body">
 
                 <!-- Left: metadata fields -->
-                <div class="fp-detail-fields" class:fp-detail-fields--narrow={ico || folioLoading}>
+                <div class="fp-detail-fields" class:fp-detail-fields--narrow={ico}>
                   {#if m?.registerType}
                     <div class="fp-detail-field">
                       <span class="fp-detail-key">Register-Typ</span>
@@ -334,15 +415,13 @@
                 </div>
 
                 <!-- Right: iconographic analysis -->
-                {#if folioLoading}
-                  <div class="fp-detail-ico fp-detail-ico--loading">…</div>
-                {:else if ico}
+                {#if ico}
                   <div class="fp-detail-ico">
                     <!-- Rule pills -->
                     {#if ico.rules?.length}
                       <div class="fp-detail-rules">
                         {#each ico.rules as r (r)}
-													<a class="fp-detail-rule" href="#rule-{r}" onclick={(e) => e.stopPropagation()}>{r}</a>
+												<a class="fp-detail-rule" href="#rule-{r}" onclick={(e) => e.stopPropagation()}>{r}</a>
                         {/each}
                         <span class="fp-detail-ico-section-label">Ikonographischer Abgleich</span>
                       </div>
@@ -432,10 +511,11 @@
 
       <!-- ── LEGEND ──────────────────────────────────── -->
       <div class="fp-legend" style="border-top:none">
-        <span class="fpl-item"><span class="fpl-swatch done"></span>Vollübersetzung</span>
-        <span class="fpl-item"><span class="fpl-swatch confirmed"></span>analysiert</span>
-        <span class="fpl-item"><span class="fpl-swatch partial"></span>Anker / Teilanalyse</span>
-        <span class="fpl-item"><span class="fpl-swatch none"></span>nicht analysiert</span>
+        {#if totalDone}<span class="fpl-item"><span class="fpl-swatch done"></span>Übersetzt</span>{/if}
+        <span class="fpl-item"><span class="fpl-swatch confirmed"></span>Erstanalyse</span>
+        <span class="fpl-item"><span class="fpl-swatch partial"></span>transkribiert</span>
+        <span class="fpl-item"><span class="fpl-swatch none"></span>nicht erfasst</span>
+        <span class="fpl-item"><span class="fpl-swatch lacuna"></span>nicht erhalten</span>
       </div>
     </div><!-- end fp-body-inner -->
 	</div><!-- end fp-body -->
@@ -526,6 +606,7 @@
 			&.confirmed { color: color-mix(in srgb, var(--gold) 85%, var(--ink-f)); font-weight: 600; }
 			&.partial   { color: color-mix(in srgb, var(--gold) 60%, var(--ink-f)); }
 			&.none      { color: var(--ink-f); }
+			&.lacuna    { color: var(--ink-f); opacity: .5; }
 			&.total     { color: var(--ink-l); }
 		}
 	}
@@ -602,6 +683,64 @@
 		&.open { grid-template-rows: 1fr; }
 	}
 
+	/* ── Filter bar ─────────────────────────────────── */
+
+	.fp-filters {
+		display: flex;
+		flex-wrap: wrap;
+		gap: .25rem .3rem;
+		padding: .45rem .7rem .4rem .55rem;
+		border-bottom: 1px solid color-mix(in srgb, var(--parch-dk) 60%, transparent);
+		background: color-mix(in srgb, var(--parch-d) 30%, transparent);
+	}
+
+	.fp-fp {
+		font-family: var(--font-mono);
+		font-size: .52rem;
+		padding: 1px 6px;
+		border-radius: 1px;
+		border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+		background: transparent;
+		color: var(--ink-f);
+		cursor: pointer;
+		transition: background .1s, color .1s, border-color .1s;
+		line-height: 1.6;
+
+		&:hover { background: color-mix(in srgb, var(--parch-d) 80%, transparent); color: var(--ink-l); }
+
+		&.fp-fp--active {
+			border-color: color-mix(in srgb, var(--border) 100%, transparent);
+			background: color-mix(in srgb, var(--parch-d) 90%, transparent);
+			color: var(--ink);
+		}
+
+		&.fp-fp--all.fp-fp--active     { border-color: var(--ink-f); }
+
+		&.fp-fp--done.fp-fp--active {
+			border-color: color-mix(in srgb, var(--gold) 80%, transparent);
+			background: color-mix(in srgb, var(--gold) 18%, var(--parch));
+			color: var(--ink);
+		}
+
+		&.fp-fp--confirmed.fp-fp--active {
+			border-color: color-mix(in srgb, var(--gold) 55%, transparent);
+			background: color-mix(in srgb, var(--gold) 10%, var(--parch));
+			color: var(--ink);
+		}
+
+		&.fp-fp--partial.fp-fp--active {
+			border-color: var(--parch-dk);
+			background: color-mix(in srgb, var(--gold) 6%, var(--parch-d));
+			color: var(--ink-l);
+		}
+
+		&.fp-fp--lacuna.fp-fp--active {
+			border-style: dashed;
+			border-color: var(--border);
+			color: var(--ink-f);
+		}
+	}
+
 	/* ── Quire grid ─────────────────────────────────── */
 
 	.fp-quires {
@@ -646,6 +785,14 @@
 		color: var(--ink-l);
 		min-width: 1.5ch;
 		flex-shrink: 0;
+	}
+
+	.fp-glyph {
+		font-size: .62rem;
+		color: var(--ink-f);
+		flex-shrink: 0;
+		line-height: 1;
+		opacity: .75;
 	}
 
 	.fp-section {
@@ -712,11 +859,13 @@
 		line-height: 1.6;
 		border-radius: 1px;
 		cursor: pointer;
-		transition: transform .1s, box-shadow .1s;
+		transition: transform .1s, box-shadow .1s, opacity .15s;
 		white-space: nowrap;
 		border: 1px solid transparent;
 
 		&:hover, &.fpc-chip--active { transform: translateY(-1px); z-index: 1; }
+
+		&.fpc-chip--filtered { opacity: .1; pointer-events: none; }
 
 		&.fpc-chip--done {
 			background: color-mix(in srgb, var(--gold) 50%, var(--parch));
@@ -757,6 +906,16 @@
 			color: var(--ink-f);
 			opacity: .45;
 		}
+
+		&.fpc-chip--lacuna {
+			background: var(--parch-d);
+			border-color: color-mix(in srgb, var(--border) 35%, transparent);
+			border-style: dashed;
+			color: var(--ink-f);
+			opacity: .3;
+			text-decoration: line-through;
+			cursor: default;
+		}
 	}
 
 	/* ── Legend ─────────────────────────────────────── */
@@ -786,10 +945,11 @@
 		border-radius: 1px;
 		flex-shrink: 0;
 
-		&.done    { background: color-mix(in srgb, var(--gold) 50%, var(--parch)); border: 1px solid color-mix(in srgb, var(--gold) 80%, transparent); }
+		&.done      { background: color-mix(in srgb, var(--gold) 50%, var(--parch)); border: 1px solid color-mix(in srgb, var(--gold) 80%, transparent); }
 		&.confirmed { background: color-mix(in srgb, var(--gold) 28%, var(--parch)); border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent); }
-		&.partial { background: color-mix(in srgb, var(--gold) 10%, var(--parch-d)); border: 1px dashed var(--parch-dk); }
-		&.none    { background: var(--parch-d); border: 1px solid color-mix(in srgb, var(--parch-dk) 50%, transparent); opacity: .45; }
+		&.partial   { background: color-mix(in srgb, var(--gold) 10%, var(--parch-d)); border: 1px dashed var(--parch-dk); }
+		&.none      { background: var(--parch-d); border: 1px solid color-mix(in srgb, var(--parch-dk) 50%, transparent); opacity: .45; }
+		&.lacuna    { background: var(--parch-d); border: 1px dashed color-mix(in srgb, var(--border) 35%, transparent); opacity: .3; }
 	}
 
 	/* ── Folio detail row ────────────────────────────── */
@@ -975,16 +1135,6 @@
 		gap: .5rem;
 		padding-left: 1rem;
 		border-left: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
-
-		&.fp-detail-ico--loading {
-			align-items: center;
-			justify-content: center;
-			color: var(--ink-f);
-			font-family: var(--font-mono);
-			font-size: .64rem;
-			opacity: .4;
-			min-height: 2rem;
-		}
 	}
 
 	.fp-detail-rules {

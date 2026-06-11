@@ -1,0 +1,41 @@
+{
+  "folio": "f38r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q05/f038r_tr.txt",
+    "date": "1998-12-07",
+    "time": "06:43:11",
+    "editor": "stolfi",
+    "lines": {
+      "P.1": {
+        "H": "tolor.chockhy-{plant}oky.choiin.okshol.oly.oky-",
+        "C": "tolor.chockhy-{plant}oky.choiin.okshol.oly.oky-",
+        "F": "tolor.chockhy-{plant}oky.choiin.okshol.oly.oky-"
+      },
+      "P.2": {
+        "H": "okseey.chody!s-{plant}ytoiin.otaiin.otaiin.cthar-",
+        "C": "okshey.chody.s-{plant}ytoiin.otaiin.otaiin.cthar-",
+        "F": "okshey.chody!s-{plant}ytoiin.otaiin.otaiin.cthar-"
+      },
+      "P.3": {
+        "H": "qokor.okaiin-{plant}otaiin.qokchol.chokokor-",
+        "C": "qokor.okaiin-{plant}otaiin.qokchol.chokokor-",
+        "F": "qokor.okaiin-{plant}otaiin.qokchol.chokokor-"
+      },
+      "P.4": {
+        "H": "ychok.chey.chckh-{plant}chy.chka.r.odaiin.daiin.sy-",
+        "C": "ychok!chey.chckh-{plant}chy.chko!r.odaiin.daiin.sy-",
+        "F": "ychok!chey.chckh-{plant}chy.chka.r!odaiin.daiin.sy-"
+      },
+      "P.5": {
+        "H": "okor.chey.kain-{plant}chor.ctho.dain.ckholdy-",
+        "C": "okor.chey.kain-{plant}chor.ctho.dain.ckholdy-",
+        "F": "okor.chey.kain-{plant}chor.ctho.dain.ckholdy-"
+      },
+      "P.6": {
+        "H": "ysho.sho.kos-{plant}daiin.okoy.chochor.daiin=",
+        "C": "ysho.sho.kos-{plant}daiin.okoy.chochor.daiin=",
+        "F": "ysho.sho.kos-{plant}daiin.okoy.chochor.daiin="
+      }
+    }
+  }
+}
