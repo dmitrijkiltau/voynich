@@ -1,0 +1,71 @@
+{
+  "folio": "f55v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q07/f055v_tr.txt",
+    "date": "1998-12-08",
+    "time": "09:21:54",
+    "editor": "stolfi",
+    "paragraphs": {
+      "P.1": {
+        "H": "kcheedchdy.oedaiin.chckhy-{plant}otol.daiin.dodyd-",
+        "C": "kcheedchdy.oedai!n.chckhy-{plant}otol.daiin.dodyd-",
+        "F": "kcheedchdy.oedaiin.chckhy-{plant}otol.daiin.dodyd-"
+      },
+      "P.2": {
+        "H": "oeeed.yteey.okeedy.qoaiin-{plant}okeody.ykeesan-",
+        "C": "oeeed.yteey.okeedy.qoaiin-{plant}okeody.ykeesan-",
+        "F": "oeeed.yteey.okeedy.qoaiin-{plant}okeody.ykeesan-"
+      },
+      "P.3": {
+        "H": "qokeeey.os.aiin.qool.al.chedy-{plant}ear.aiin.ol.kar.am-",
+        "C": "qokeeey.os.ai!n.qool.al.chedy-{plant}sar.aiin.ol.kar.am-",
+        "F": "qokeeey.os.aiin.qool.al.chedy-{plant}charaiin.ol.kar!am-"
+      },
+      "P.4": {
+        "H": "okar.chckhdy.cheady.keey!far.al-{plant}ychedy.qokaiin.ody-",
+        "C": "okar.chckhdy.cheody.keey.far!al-{plant}ochedy.qokai!n.ody-",
+        "F": "okar.!!ckhdy.cheady.keey.far!al-{plant}ychedy.qokaiin.ody-"
+      },
+      "P.5": {
+        "H": "qokaiin.chaiin.ykain.ykan.ody-{plant}daiin.chedy.talam-",
+        "C": "qokaiin.chaiin.ykain.ykan.ody-{plant}daiin.chedy.talam-",
+        "F": "qokaiin.chaiin.ykain.ykan.ody-{plant}daiin.chedy.talam-"
+      },
+      "P.6": {
+        "H": "ykaiin.daiin.ykair.cheky.daiin.y={plant}",
+        "C": "ykaiin.daiin.ykair.cheky.daiin.y={plant}",
+        "F": "ykaiin.daiin.ykair.cheky.daiin!y={plant}"
+      },
+      "P.7": {
+        "H": "okchd.daiin.sheokey.or.air-{plant}cs.kchdy.pchal.ar.aldy.dary-",
+        "C": "okchd.!!ain.cheok!y.or.ain-{plant}ch!keedy.pchal.ar!aldy.dary-",
+        "F": "okchd.daiin.sheakey.or.air-{plant}**.kchey.pchal.ar!aldy.dary-"
+      },
+      "P.8": {
+        "H": "tor.!!!ch*dy.qokaiin.okar.qol-{plant}otar!cho.cthar.talody.okary-",
+        "C": "tar!ch.chedy.qokaiin.okar.qol-{plant}otar.cho!cthar.talody.okary-",
+        "F": "tar.!!!ch!dy.qokaiin.okar.qol-{plant}otar!cho.!t!ar.talody.okary-"
+      },
+      "P.9": {
+        "H": "ykaky.qokchy.okal.chey.or-{plant}or.aiin.okaiin.ykain.otaky-",
+        "C": "ykyky.qokchy.okal.chey.or-{plant}or.aiin.okaiin.ykain.otaky-",
+        "F": "ykaky.qokchy.okal.chey.or-{plant}or!aiin.okaiin.okain.otaky-"
+      },
+      "P.10": {
+        "H": "oaiin.ol.s.aiin.okaiin.oky-{plant}ytaiin.otar.ykal.ykar.ol-",
+        "C": "oaiin.ol.s.aiin!okaiin.oky-{plant}ytaiin.otar.ykal.ykar.ol-",
+        "F": "oaiin.ol.s.aiin.okaiin.oky-{plant}ytaiin.otar.ykal.ykar.ol-"
+      },
+      "P.11": {
+        "H": "ykaiin.cheoar.cheek!y.oldy-{plant}aiin.okal.oltchy.or.y.orai!n-",
+        "C": "ykaiin.cheoar.cheek!y.oldy-{plant}aiin.okal.oltchy.or.y.orai!n-",
+        "F": "ykaiin.cheoar.checkhy.oldy-{plant}aiin.okal.oltchy.or!y.oraiin-"
+      },
+      "P.12": {
+        "H": "daiin.or.cheky.olkeechy.sl-{plant}ar.aiin.daiin.otam=",
+        "C": "daiin.ar.cheky.olkeechy.sl-{plant}ar.aiin.daiin.otam=",
+        "F": "daiin.or.cheky.olkeechy.sl-{plant}ar.aiin.daiin.otam="
+      }
+    }
+  }
+}

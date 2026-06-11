@@ -1,0 +1,77 @@
+{
+  "folio": "f53v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q07/f053v_tr.txt",
+    "date": "1998-12-07",
+    "time": "12:35:13",
+    "editor": "stolfi",
+    "paragraphs": {
+      "P.1": {
+        "H": "tshor.shey.qodckhy.cpho.oltshey.daiin.qopchy-",
+        "C": "tshor.shey.qodckhy.cpho.oltshey.daiin.qopchy-",
+        "F": "tshor.shey.qodckhy.cpho.oltshey.daiin.qopchy-"
+      },
+      "P.2": {
+        "H": "okeey.daiin.sheekol.shom.shol.cthy.dcham.do-{plant}",
+        "C": "okeey.daiin.sheekol.shom.shol.cthy!dchom.do-{plant}",
+        "F": "okeey.daiin.sheekol.shom.shol.etey.dcham.dy-{plant}"
+      },
+      "P.3": {
+        "H": "ydaiin.cphom.chol.dockhy.cthol.dam.oty-{plant}",
+        "C": "ydaiin.cphom.chol.dockhy.cthol.dam.oty-{plant}",
+        "F": "ydaiin.cpham.chol.dockhy.cthol.dam.oty-{plant}"
+      },
+      "P.4": {
+        "H": "qokol.daiin.qockhor.okchor.daiin.daiin.d-{plant}",
+        "C": "qokol.daiin.qockhor.okchor.daiio!dai!n.d-{plant}",
+        "F": "qokol.daiin.qockhor.okchor.daiin.daiin.d-{plant}"
+      },
+      "P.5": {
+        "H": "ysheey.ckhol.chckhey.daiin.ctheody.ydy-{plant}",
+        "C": "ysheey.ckhol.chckhey.daiin.ctheody.ydy-{plant}",
+        "F": "ysheey.ckhol.chckhey.daiin.ctheody.ydy-{plant}"
+      },
+      "P.6": {
+        "H": "ochoiky.dshey.chol.ykcheody.chol.dam-{plant}",
+        "C": "ochoiky.dshey.chol!ykcheody.chol.dam-{plant}",
+        "F": "ochoiky.dshey.chol.qkcheody.chol!dam-{plant}"
+      },
+      "P.7": {
+        "H": "todaiin.shodaiin.qotea.dchy.qotod.odaiin-{plant}",
+        "C": "todaiin.shodaiin.qoteo!deey.qotod.odaiin-{plant}",
+        "F": "todaiin.shodaiin.qotea.dchy.qotod.odaiin-{plant}"
+      },
+      "P.8": {
+        "H": "sheey.kshody.tsheody.sheody.sheetchy.opod-{plant}",
+        "C": "sheey.kshody.tsheody.sheody.sheetchy.opod-{plant}",
+        "F": "sheee.kshady.tsheody.sheody.sheetchy.opod-{plant}",
+        "G": "sheey.kshady.tsheody.sheody.sheetchy.opod-{plant}"
+      },
+      "P.9": {
+        "H": "oc.theody.shody.qodal.cthody.sheor.shodaiin-{plant}",
+        "C": "oc!theody.shody.qodal.cthody.sheos.shodaiin-{plant}",
+        "F": "oc!theody.shody.qodal.cthody.shear.shodaiin-{plant}"
+      },
+      "P.10": {
+        "H": "ychocthy.qodal.shodaiin-{plant}",
+        "C": "ychocthy.qodal.shodaiin-{plant}",
+        "F": "ychocthy.qodal.shodaiin-{plant}"
+      },
+      "P.11": {
+        "H": "otsho.or.chear.sheos.chkodal-{plant}",
+        "C": "otsho.or!chear.sheos.chkodal-{plant}",
+        "F": "otsho.or.chear.sheos.chkodal-{plant}"
+      },
+      "P.12": {
+        "H": "ycheey.kchy.oky.kody-{plant}odam-{plant}",
+        "C": "ycheey.kchy.oky.kody-{plant}ydam-{plant}",
+        "F": "ycheey.kchy.oky.kady-{plant}adam-{plant}"
+      },
+      "P.13": {
+        "H": "ycthodaiin.otoldy=",
+        "C": "yckhodaiin.otoldy=",
+        "F": "ycthadaiin.otaldy="
+      }
+    }
+  }
+}

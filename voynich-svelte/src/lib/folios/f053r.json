@@ -1,0 +1,61 @@
+{
+  "folio": "f53r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q07/f053r_tr.txt",
+    "date": "1998-12-11",
+    "time": "12:52:41",
+    "editor": "stolfi",
+    "paragraphs": {
+      "P.1": {
+        "H": "kodam.chocthody.oty-{plant}",
+        "C": "kodam.chocthody.oky-{plant}",
+        "F": "kadam.chocthody.oty-{plant}"
+      },
+      "P.2": {
+        "H": "dol.dai!n.s!cho!she.oty-{plant}",
+        "C": "dol.dai!n.s.cho.she.oty-{plant}",
+        "F": "dol.dai!n.s!cho.she.oty-{plant}",
+        "G": "dol.daiin.s!cho.she.oty-{plant}"
+      },
+      "P.3": {
+        "H": "sho!ar.chokan.ody-{plant}",
+        "C": "shoeos.chokan.ody-{plant}",
+        "F": "sho!ar.chokan.ody-{plant}"
+      },
+      "P.4": {
+        "H": "ytchodaiin.yky.otchey.okod-{plant}",
+        "C": "!tchodaiin.yky.otchey.otod-{plant}",
+        "F": "ytchodaiin.yky.otchey.okod-{plant}"
+      },
+      "P.5": {
+        "H": "okes.otol.cfhy.cphodol.ykody.qokchod-{plant}otcho.qot.oty-",
+        "C": "okor.otol.cfhy.cphodol.ykody.qokchod-{plant}otcho.qot.oty-",
+        "F": "oksh.otol.cfhy.cphodol.ykody.qokchod-{plant}otcho.qot.oty-"
+      },
+      "P.6": {
+        "H": "ykeodar.oqoor.ockh.odor.chai!n.qokod-{plant}ykchdy.chees.dal-",
+        "C": "ykeodar.oqoor.ockh!odor.chai!n.qokod-{plant}ykchdy.chees.dal-",
+        "F": "ykeodar.oqoor.ockh.odor.chai!n.qokod-{plant}ykchdy.chees.dal-",
+        "G": "ykeodar.oqoar.ockh.odor.chaiin.qokod-{plant}ykchdy.chees.dal-"
+      },
+      "P.7": {
+        "H": "sodar.otos.qoy.tchy.otey.chos.okod-{plant}y!kchody.qokchy-",
+        "C": "sodar.otos.qoy.tchy.otey.chos.okod-{plant}ytkchody.qokeey-",
+        "F": "sodar.otos.qoy.tchy.otey.chos.okod-{plant}y!kchody.qokchy-",
+        "G": "sadar.otos.qoy.tchy.otey.chos.okod-{plant}y!kchody.qokchy-"
+      },
+      "P.8": {
+        "H": "qotchol.dar.qoty.chtor.oltsho.ct{&T}o-{plant}ykeeod.oytoyd-",
+        "C": "qotchol.dar.qoty.chtor.oltsho!cth!!!o-{plant}ykeeod.oytoyd-",
+        "F": "qotchol.dar.qoty.chtor.oltsho.cth!!!o-{plant}ykeeod.oytoyd-",
+        "G": "qotchol.dar.qoty.chtor.oltsho.cth!!!a-{plant}ykeeod.aytayd-"
+      },
+      "P.9": {
+        "H": "otol.chol.ctheees.os.orol.chod.qoty={plant}",
+        "C": "otol.chol.ctheees.os.orol.chod.qoty={plant}",
+        "F": "otol.chol.ctheees.os.orol.chod.qoty={plant}",
+        "G": "otol.chol.cthee!s.os.orol.chod.qoty={plant}"
+      }
+    }
+  }
+}
