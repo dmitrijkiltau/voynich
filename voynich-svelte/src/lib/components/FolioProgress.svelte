@@ -2,7 +2,7 @@
 	import { FOLIO_PAGES, LACUNA } from '$lib';
 	import { slide } from 'svelte/transition';
 	import { SvelteMap, SvelteSet } from 'svelte/reactivity';
-	import { majorityTokens } from '$lib/eva-utils.js';
+	import { majorityTokens, folioSlug } from '$lib/eva-utils.js';
 
 	let open = $state(false);
 
@@ -10,12 +10,6 @@
 	const _folios = /** @type {Record<string, any>} */ (
 		import.meta.glob('../folios/*.json', { eager: true })
 	);
-
-	/** @param {string} pageId @returns {string} */
-	function folioSlug(pageId) {
-		const m = pageId.match(/^f(\d+)(.*)$/);
-		return m ? `f${m[1].padStart(3, '0')}${m[2]}` : pageId;
-	}
 
 	/** @param {string} pageId @returns {any} */
 	function getFolioData(pageId) {
