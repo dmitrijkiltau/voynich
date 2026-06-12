@@ -1,5 +1,6 @@
 <script>
 	import { REFS } from '$lib/references-data.js';
+	import Box from '$lib/components/Box.svelte';
 	let { onInsert } = $props();
 </script>
 
@@ -7,7 +8,7 @@
 	{#each REFS as ref (ref.id)}
 		<div>
 			<h3>{ref.id} · {ref.folio} — {ref.title}{#if ref.badge} <span class="new-badge">{ref.badge}</span>{/if}</h3>
-			<div class="box {ref.color} ref-card">
+			<Box variant={ref.color} class="ref-card">
 				{#if ref.sides}
 					<div class="antonym-grid">
 						{#each ref.sides as side (side.eva)}
@@ -28,7 +29,7 @@
 					{#if ref.stars}<span class={ref.stars === '★★★★★' ? 'conf5' : 'conf'}>{ref.stars}</span>{/if}
 				</p>
 				<button class="ref-insert-btn" onclick={() => onInsert(ref.insert)}>In Übersetzer laden</button>
-			</div>
+			</Box>
 		</div>
 	{/each}
 </div>
@@ -44,12 +45,9 @@
       flex: 1 1 480px;
     }
 
-		.layer-de {
-			font-size: var(--text-sm);
-		}
   }
 
-	.ref-card {
+	:global(.ref-card) {
 		position: relative;
 	}
 

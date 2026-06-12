@@ -139,6 +139,8 @@ hr.rule {
 
 /* ── CALLOUT BOXES ───────────────────────────────────── */
 
+* + .box { margin-top: 1rem; }
+
 .box {
   background: var(--parch-d);
   border: 1px solid var(--border);

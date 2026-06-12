@@ -16,6 +16,7 @@ import { MAPPING, STATS } from '$lib';
 	import GibberishTest from '$lib/components/GibberishTest.svelte';
 	import FolioProgress from '$lib/components/FolioProgress.svelte';
 	import OpenProblemsSection from '$lib/components/OpenProblemsSection.svelte';
+	import Box from '$lib/components/Box.svelte';
 	let evaInput        = $state('');
 	let activeSection   = $state('abstract');
 	let menuOpen        = $state(false);
@@ -245,10 +246,9 @@ import { MAPPING, STATS } from '$lib';
 			<div class="mapping">
 				<div class="mapping-intro">
 					<p>Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab. Klick auf eine Zelle fügt das Zeichen in die Eingabe ein.</p>
-					<div class="box red">
-						<div class="box-title">Sonderregel: o als Ayin vs. Ḥolam</div>
-						<p style="margin:0;font-size:.92rem">Das EVA-Zeichen <span class="eva">o</span> hat zwei Funktionen: (1) als konsonantisches <span class="heb-sm">ע</span> (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam <span class="heb-sm">ֹ</span> im Wortinneren. Das Präfix <span class="eva">o-</span> am Wortanfang entspricht fast immer <span class="heb-sm">עַ</span>.</p>
-					</div>
+					<Box variant="red" title="Sonderregel: o als Ayin vs. Ḥolam">
+						<p style="margin:0;font-size:var(--text-sm)">Das EVA-Zeichen <span class="eva">o</span> hat zwei Funktionen: (1) als konsonantisches <span class="heb-sm">ע</span> (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam <span class="heb-sm">ֹ</span> im Wortinneren. Das Präfix <span class="eva">o-</span> am Wortanfang entspricht fast immer <span class="heb-sm">עַ</span>.</p>
+					</Box>
 				</div>
 				<MappingGrid {MAPPING} onInsert={insertEva} />
 			</div>

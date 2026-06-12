@@ -1,10 +1,10 @@
 <script>
 	import { STATS, isConf5, COMPARISON, FOLIOS, CONCLUSION } from '$lib';
+	import Box from '$lib/components/Box.svelte';
 </script>
 
 <div class="sprache-a">
-	<div class="box hl">
-		<div class="box-title">Sprache A vs. B — Hauptunterschiede</div>
+	<Box variant="hl" title="Sprache A vs. B — Hauptunterschiede">
 		<div class="table-wrap">
 			<table class="dt">
 				<thead>
@@ -21,7 +21,7 @@
 				</tbody>
 			</table>
 		</div>
-	</div>
+	</Box>
 
 	<h3>Quires A–D — Textkorpus (alle analysierten Folios)</h3>
 	<div class="folio-wrap">
@@ -42,14 +42,15 @@
 		</table>
 	</div>
 
-	<div class="box green conclusion">
-		<div class="box-title">{CONCLUSION.title}</div>
-		<p class="conclusion-intro">{CONCLUSION.intro}</p>
-		<ul>
-			{#each CONCLUSION.items as item (item)}
-				<li>{@html item}</li>
-			{/each}
-		</ul>
+	<div class="conclusion">
+		<Box variant="green" title={CONCLUSION.title}>
+			<p class="conclusion-intro">{CONCLUSION.intro}</p>
+			<ul>
+				{#each CONCLUSION.items as item (item)}
+					<li>{@html item}</li>
+				{/each}
+			</ul>
+		</Box>
 	</div>
 </div>
 

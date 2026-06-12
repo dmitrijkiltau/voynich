@@ -1,5 +1,6 @@
 <script>
 	import { STATS, TESTED } from '$lib/backtest-data.js';
+	import Box from '$lib/components/Box.svelte';
 
 	const typeI  = TESTED.filter(t => t.type === 'I');
 	const typeII = TESTED.filter(t => t.type === 'II');
@@ -40,9 +41,9 @@
 		{/each}
 	</div>
 
-	<div class="box green no-fp">
+	<Box variant="green" class="no-fp">
 		<p style="margin:0;font-size:var(--text-sm)">Entscheidend: <strong>Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.</strong> Kein kodiertes Wort taucht in einem semantisch inkohärenten Kontext auf — in beiden Klassen, bei einem Zufallsalphabet statistisch ausgeschlossen.</p>
-	</div>
+	</Box>
 
 	<h3>Typ I — Genuine Vorhersagen <span class="type-badge type-i">{numI} · {pctI}%</span></h3>
 	<p class="type-note">Diese {typeI.length} Wörter wurden als semantische Priors <em>vor</em> jeder Folioanalyse definiert (eingefroren v7.4: dam, or, daiin, sheol, shol, dal, sar, chaiin, kaiim, chalal). Sie können nicht rückwirkend erweitert werden. Ihre Bestätigung ist die valide Kernaussage der Rückwärtsteststärke.</p>
@@ -171,7 +172,7 @@
 		font-size: var(--text-sm);
 	}
 
-	.no-fp {
+	:global(.no-fp) {
 		margin-top: 1rem;
 	}
 

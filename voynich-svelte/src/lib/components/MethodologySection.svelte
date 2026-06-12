@@ -1,6 +1,7 @@
 <script>
   import { CONFIDENCE_SCALE, ANCHOR_FOLIOS } from "$lib/methodology-data.js";
   import { isConf5 } from "$lib";
+  import Box from '$lib/components/Box.svelte';
 
   const content = {
     title: "II. Methodik",
@@ -60,16 +61,17 @@
       <div class="anchor-folios">
         <h3>{content.anchorFolios.title}</h3>
         {#each ANCHOR_FOLIOS as anchor (anchor.folio)}
-          <div class="box blue anchor-card">
-            <div class="box-title">{anchor.folio} — {anchor.subtitle}</div>
-            <p>{anchor.desc}</p>
-            {#if anchor.eva}
-              <div class="layer-eva-heb">
-                <div class="layer-eva">{anchor.eva}</div>
-                <div class="layer-heb">{anchor.heb}</div>
-              </div>
-              <div class="anchor-gloss">{anchor.gloss}</div>
-            {/if}
+          <div class="anchor-card">
+            <Box variant="blue" title="{anchor.folio} — {anchor.subtitle}">
+              <p>{anchor.desc}</p>
+              {#if anchor.eva}
+                <div class="layer-eva-heb">
+                  <div class="layer-eva">{anchor.eva}</div>
+                  <div class="layer-heb">{anchor.heb}</div>
+                </div>
+                <div class="anchor-gloss">{anchor.gloss}</div>
+              {/if}
+            </Box>
           </div>
         {/each}
       </div>

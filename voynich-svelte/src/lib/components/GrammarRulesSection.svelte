@@ -1,6 +1,7 @@
 ﻿<script>
 	import { STATS, RULES, RULES_CHANGELOG } from '$lib';
 	import { getLexiconConfidence } from '$lib/lexicon-data.js';
+	import Box from '$lib/components/Box.svelte';
 </script>
 
 <section class="section" id="grammar-rules">
@@ -16,13 +17,14 @@
 		— Ziel ≥ 1,5:1 erreicht. R60+ freigegeben.
 	</p>
 
-	<div class="box hl updates-box hidden-print">
-		<div class="box-title">Aufstufungen &amp; Absorptionen — Versionshistorie</div>
-		<ul class="changelog">
-			{#each RULES_CHANGELOG.slice().reverse() as entry, index (index)}
-				<li><strong>{entry.version}</strong>: {@html entry.change}</li>
-			{/each}
-		</ul>
+	<div class="updates-box hidden-print">
+		<Box variant="hl" title="Aufstufungen & Absorptionen — Versionshistorie">
+			<ul class="changelog">
+				{#each RULES_CHANGELOG.slice().reverse() as entry, index (index)}
+					<li><strong>{entry.version}</strong>: {@html entry.change}</li>
+				{/each}
+			</ul>
+		</Box>
 	</div>
 
 	<div class="rules-wrap">

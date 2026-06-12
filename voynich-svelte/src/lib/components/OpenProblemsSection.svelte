@@ -1,5 +1,6 @@
 <script>
 	import { OPEN_PROBLEMS } from '$lib/open-problems-data.js';
+	import Box from '$lib/components/Box.svelte';
 
 	const severityLabel = {
 		hoch:           	'Schwere: hoch',
@@ -17,10 +18,9 @@
 </script>
 
 <div class="open-problems">
-	<div class="box red audit-note">
-		<div class="box-title">Methodischer Vorbehalt (v7.5)</div>
+	<Box variant="red" title="Methodischer Vorbehalt (v7.5)" class="audit-note">
 		<p>Das Mapping ist eine <strong>starke Lesehypothese</strong>, keine bewiesene Entzifferung. Die folgenden Probleme widersprechen der Hypothese nicht zwingend, müssen aber sichtbar bleiben. Interne Kohärenz beweist keine externe Gültigkeit.</p>
-	</div>
+	</Box>
 
 	<div class="problem-list">
 		{#each OPEN_PROBLEMS as p (p.id)}
@@ -40,8 +40,7 @@
 		{/each}
 	</div>
 
-	<div class="box blue scheol-stat">
-		<div class="box-title">Scheol-Verteilungsstatistik (v7.5 formalisiert)</div>
+	<Box variant="blue" title="Scheol-Verteilungsstatistik (v7.5 formalisiert)" class="scheol-stat">
 		<div class="table-wrap">
 			<table class="dt">
 				<thead>
@@ -55,15 +54,14 @@
 			</table>
 			<p style="margin:.6rem 0 0;font-size:var(--text-sm);color:var(--ink-f)">Diese Verteilung ist nicht die eines zufällig platzierten Begriffs. Sie folgt präzise R6 (Zeilenabschluss sheol = Tod-Prognose) und R17 (shol apokor. medial / sheol Vollform final).</p>
 		</div>
-	</div>
+	</Box>
 </div>
 
 <style>
-	.audit-note {
+	:global(.audit-note) {
 		margin-bottom: 1.5rem;
-
-		& p { margin: 0; font-size: var(--text-sm); }
 	}
+	:global(.audit-note) p { margin: 0; font-size: var(--text-sm); }
 
 	.problem-list {
 		display: flex;
@@ -147,7 +145,5 @@
 		margin-right: .3rem;
 	}
 
-	.scheol-stat {
-		& p { margin-top: .6rem; }
-	}
+	:global(.scheol-stat) p { margin-top: .6rem; }
 </style>

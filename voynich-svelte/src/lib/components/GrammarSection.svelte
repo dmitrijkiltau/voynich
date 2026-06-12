@@ -1,6 +1,7 @@
 <script>
 	import { GRAMMAR_PREFIXES, GRAMMAR_SUFFIXES, VERB_PARADIGM } from '$lib/grammar-data.js';
 	import { isConf5 } from '$lib';
+	import Box from '$lib/components/Box.svelte';
 
 	let { onLinkFilter = /** @type {((eva: string) => void) | undefined} */ (undefined) } = $props();
 </script>
@@ -75,8 +76,7 @@
   </div>
 </div>
 
-<div class="box hl">
-	<div class="box-title">Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 1 Kandidat ★★ provisorisch (f16r, R43)</div>
+<Box variant="hl" title="Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 1 Kandidat ★★ provisorisch (f16r, R43)">
 	<p style="margin-bottom:.5rem;font-size:var(--text-sm)">Alle klinischen Ankerbegriffe erhalten eine Verbform durch Präfix-Schichtung <span class="eva">y</span> + <span class="eva">k</span> + Terminus (fünf positiv, ein negativ, ein Kandidat):</p>
 	<div class="table-scroll">
 		<table class="dt" style="margin-top:.4rem">
@@ -96,10 +96,9 @@
 			</tbody>
 		</table>
 	</div>
-</div>
+</Box>
 
-<div class="box hl">
-	<div class="box-title">Prognose-Schema Quire A (Kräuter, Spr. A)</div>
+<Box variant="hl" title="Prognose-Schema Quire A (Kräuter, Spr. A)">
 	<p style="margin-bottom:.5rem;font-size:var(--text-sm)">Jeder Paragraph folgt dem botanischen Schema:</p>
 	<div class="schema">
 		<div class="schema-step">
@@ -127,10 +126,9 @@
 			<span class="lbl">Kolophon</span>
 		</div>
 	</div>
-</div>
+</Box>
 
-<div class="box hl">
-	<div class="box-title">Prognose-Schema Quire T / Sprache B</div>
+<Box variant="hl" title="Prognose-Schema Quire T / Sprache B">
 	<p style="margin-bottom:.5rem;font-size:var(--text-sm)">Jeder vollständige Paragraph folgt dem Schema:</p>
 	<div class="schema">
 		<div class="schema-step">
@@ -158,13 +156,9 @@
 			<span class="lbl">Prognose (Tod/Heilung)</span>
 		</div>
 	</div>
-</div>
+</Box>
 
 <style>
-  * + .box {
-    margin-top: 1rem;
-  }
-
   .grammar-systems {
     display: flex;
     flex-wrap: wrap;

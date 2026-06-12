@@ -1,14 +1,14 @@
 ﻿<script>
 	import { STAR_TYPES, FOLIOS } from '$lib/margin-stars-data.js';
+	import Box from '$lib/components/Box.svelte';
 </script>
 
 <div class="randstern">
 	<p>Auf Quire-T-Seiten (f103r/v, f114v, f115r/v, f116r) markieren handgezeichnete Sternzeichen am linken Rand einzelne Paragraphen. Das System ist unabhängig vom Zeichenmapping analysierbar.</p>
 
-	<div class="box hl or-rule">
-		<div class="box-title">Kernbefund: or-Regel (★★★★)</div>
+	<Box variant="hl" title="Kernbefund: or-Regel (★★★★)" class="or-rule">
 		<p style="margin:0">Paragraphen mit positivem Prognose-Vokabular (<span class="eva">or</span>, <span class="eva">lor·aiin</span>, <span class="eva">olor</span>) tragen auf f103r/v <strong>niemals</strong> einen Randstern. Alle fünf or-Paragraphen auf f103v sind sternlos (5/5). Statistisch nicht zufällig (p &lt; 0,01).</p>
-	</div>
+	</Box>
 
 	<h3>Sterntypen und Funktionen</h3>
 	<div class="table-wrap">
@@ -48,10 +48,9 @@
 		</div>
 	</div>
 
-	<div class="box blue inclusio">
-		<div class="box-title">Strukturelle Inclusio: P.1 ↔ P.52 (f103r)</div>
-		<p style="margin:0;font-size:var(--text-sm)">P.1 öffnet mit <span class="eva">pchedal · dal · yshdal</span> (dreifach „der Schwache“). P.52 — markiert mit dem einzigen Sonderstern der Seite — beginnt ebenfalls mit <span class="eva">pchedal</span>. Diese bewusste literarische Rahmung ist ein Kompositionsmerkmal mittelalterlicher Medizintraktate.</p>
-	</div>
+	<Box variant=”blue” title=”Strukturelle Inclusio: P.1 ↔ P.52 (f103r)” class=”inclusio”>
+		<p style=”margin:0;font-size:var(--text-sm)”>P.1 öffnet mit <span class=”eva”>pchedal · dal · yshdal</span> (dreifach „der Schwache”). P.52 — markiert mit dem einzigen Sonderstern der Seite — beginnt ebenfalls mit <span class=”eva”>pchedal</span>. Diese bewusste literarische Rahmung ist ein Kompositionsmerkmal mittelalterlicher Medizintraktate.</p>
+	</Box>
 
 	<h3>Folio-übergreifender Vergleich</h3>
 	<div class="table-wrap">
@@ -73,7 +72,7 @@
 </div>
 
 <style>
-	.or-rule {
+	:global(.or-rule) {
 		margin-bottom: 1.2rem;
 	}
 
@@ -96,7 +95,7 @@
 		&.star-icon--gold { color: var(--gold); }
 	}
 
-	.inclusio {
+	:global(.inclusio) {
 		margin-top: 1rem;
 	}
 </style>
