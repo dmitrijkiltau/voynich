@@ -412,7 +412,7 @@
 
   .filter-label {
     font-family: var(--font-smallcaps);
-    font-size: .7rem;
+    font-size: var(--text-xs);
     letter-spacing: .1em;
     text-transform: uppercase;
     color: var(--ink-f);
@@ -423,7 +423,7 @@
     flex: 1;
     min-width: 0;
     padding: .32rem .6rem;
-    font-size: .85rem;
+    font-size: var(--text-sm);
     font-family: var(--font-mono);
     border: 1px solid var(--border);
     border-radius: 3px;
@@ -451,7 +451,7 @@
   .filter-select {
     width: 100%;
     padding: .3rem .5rem;
-    font-size: .8rem;
+    font-size: var(--text-sm);
     font-family: var(--font-body);
     border: 1px solid var(--border);
     border-radius: 3px;
@@ -470,7 +470,7 @@
     flex-shrink: 0;
     padding: .28rem .45rem;
     font-family: var(--font-smallcaps);
-    font-size: .65rem;
+    font-size: var(--text-2xs);
     letter-spacing: .08em;
     text-transform: uppercase;
     color: var(--ink-f);
@@ -497,7 +497,7 @@
 
   .chips-label {
     font-family: var(--font-smallcaps);
-    font-size: .62rem;
+    font-size: var(--text-2xs);
     letter-spacing: .1em;
     text-transform: uppercase;
     color: var(--ink-f);
@@ -512,7 +512,7 @@
   .chip {
     padding: .13rem .42rem;
     font-family: var(--font-mono);
-    font-size: .72rem;
+    font-size: var(--text-xs);
     border: 1px solid var(--parch-dk);
     border-radius: 3px;
     background: rgba(255, 255, 255, .5);
@@ -545,7 +545,7 @@
     display: inline-block;
     margin-left: .25em;
     padding: 0 .25em;
-    font-size: .68rem;
+    font-size: var(--text-xs);
     font-weight: bold;
     color: color-mix(in srgb, var(--red) 75%, transparent);
     border: 1px solid color-mix(in srgb, var(--red) 35%, transparent);
@@ -559,7 +559,7 @@
     display: inline-block;
     margin-left: .3em;
     padding: .05em .3em;
-    font-size: .67rem;
+    font-size: var(--text-xs);
     font-family: var(--font-smallcaps);
     letter-spacing: .04em;
     color: var(--ink-f);
@@ -573,7 +573,7 @@
   .de-related {
     display: block;
     margin-top: .18em;
-    font-size: .72rem;
+    font-size: var(--text-xs);
     color: var(--ink-f);
     font-style: italic;
 
@@ -586,7 +586,7 @@
 
   .filter-count {
     font-family: var(--font-mono);
-    font-size: .78rem;
+    font-size: var(--text-sm);
     font-weight: normal;
     color: var(--ink-f);
     margin-left: .25em;
@@ -599,7 +599,7 @@
     padding: .8rem;
     font-style: italic;
     color: var(--ink-f);
-    font-size: .85rem;
+    font-size: var(--text-sm);
   }
 
   /* ── Table ──────────────────────────────────────────── */
@@ -622,13 +622,13 @@
 
   td.notes-cell {
     min-width: 240px;
-    font-size: 0.78rem;
+    font-size: var(--text-sm);
     color: var(--ink-f);
     font-style: italic;
   }
 
   .part-cell {
-    font-size: 0.78rem;
+    font-size: var(--text-sm);
     color: var(--ink-f);
     white-space: nowrap;
     font-family: var(--font-mono);
@@ -646,7 +646,7 @@
     & .sort-icon {
       margin-inline-start: 0.3em;
       opacity: 0.4;
-      font-size: 0.75em;
+      font-size: var(--text-xs);
     }
 
     &[aria-sort='ascending'] .sort-icon,
@@ -660,7 +660,7 @@
   .rules-cell {
     white-space: nowrap;
     font-family: var(--font-mono);
-    font-size: 0.78rem;
+    font-size: var(--text-sm);
   }
 
   .rule-link {
@@ -694,7 +694,7 @@
     margin-left: .35em;
     padding: .05em .3em;
     font-family: var(--font-smallcaps);
-    font-size: .62rem;
+    font-size: var(--text-2xs);
     letter-spacing: .06em;
     text-transform: uppercase;
     color: var(--ink-f);

@@ -70,7 +70,7 @@
 		}
 
 		& li {
-			font-size: .88rem;
+			font-size: var(--text-sm);
 			line-height: 1.5;
 		}
 	}
@@ -85,17 +85,17 @@
 		& td.rule-id {
 			font-family: var(--font-mono);
 			color: var(--ink-f);
-			font-size: .82rem;
+			font-size: var(--text-sm);
 			white-space: nowrap;
 		}
 
 		& td.rule-syntax {
-			font-size: .82rem;
+			font-size: var(--text-sm);
 		}
 
 		& td.rule-evidence {
 			color: var(--ink-f);
-			font-size: .82rem;
+			font-size: var(--text-sm);
 		}
 
 		@container (max-width: 768px) {

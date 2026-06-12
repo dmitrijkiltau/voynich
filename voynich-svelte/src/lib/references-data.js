@@ -12,6 +12,7 @@ export const REFS = [
     note: 'Drei unabhängig bestätigte Wörter + aramäischer Genitiv-Suffix in natürlicher Wortfolge.',
     stars: '★★★★★',
     insert: 'sar al daiindy',
+    badge: '',
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const REFS = [
     note: 'Vollständiges hippokratisches Prognose-Schema in fünf Wörtern.',
     stars: '★★★★★',
     insert: 'daiin sheckhy lchedy chckhy shol',
+    badge: '',
   },
   {
     id: 3,
@@ -36,6 +38,7 @@ export const REFS = [
     note: 'Zeilenende-Formel: binäre Prognose (Heilung oder Ausweg-los), identisch mit hippokratisch-arabischem Prognostikon-Schema.',
     stars: null,
     insert: 'or aiin sheol daiin',
+    badge: '',
   },
   {
     id: 4,
@@ -49,6 +52,7 @@ export const REFS = [
     note: 'Identische l-Direktional-Morphologie, entgegengesetzte Semantik. Hauptneufund v5.2.',
     stars: '★★★★★',
     insert: 'lor lshol kaiim',
+    badge: '',
   },
   {
     id: 5,
@@ -61,6 +65,7 @@ export const REFS = [
     note: 'Dreifache Prognose: Erschöpfung → Tod → Patient im Sterben. chalal erscheint ausschließlich nach sheol.',
     stars: null,
     insert: 'tshey sheol cheolshy chalal',
+    badge: '',
   },
   {
     id: 6,
@@ -82,6 +87,7 @@ export const REFS = [
     note: 'Erster Beleg von ykchor (er heilt die Pupille — 4. Verb im y+k+[Terminus]-Paradigma) und von ycheor= als positivem Schluss-Kolophon. f11v (Borago-Typ) ist das positivste Prognosefolio in Quire B.',
     stars: '★★★★★',
     insert: 'odl chaiin ykchor dair ycheor',
+    badge: '',
   },
   {
     id: 7,
@@ -103,6 +109,7 @@ export const REFS = [
     note: 'ykaiin vervollständigt das y+k+[Terminus]-Paradigma auf fünf klinische Verbformen (Leben, Licht, Pupille, Blässe, Auge). Die Blut-Triade dol·dair·dam (f14v P.8) ist der erste dam-Beleg in Quire B und verbindet f14v mit f3r (Blutpflanze).',
     stars: '★★★★★',
     insert: 'ykaiin dol dair dam',
+    badge: '',
   },
   {
     id: 8,
@@ -124,6 +131,7 @@ export const REFS = [
     note: 'soloiin (f15v P.11) = „Arznei für das Auge“ — therapeutisch präzisestes Kompositum im Gesamtkorpus. ykshol (f15r P.12) = erster negativer y+k+Terminus — Paradigma mit 6 Gliedern + Kandidat ykair. Bifolio bB2 (f10r/f10v/f15r/f15v) schließt konsistentes ophthalmologisches Programm ab.',
     stars: '★★★★★',
     insert: 'soloiin sor cthor chor',
+    badge: '',
   },
   {
     id: 9,
@@ -145,6 +153,7 @@ export const REFS = [
     note: 'tchor (תְּ+חֹר) — fem. Pupillen-Heilungsverb, zwei Belege in bB1 bestätigt ★★★★. chkar·chkar (f16v P.6) — erste Doppel-Untersuchungsformel im Corpus. Bifolio bB1 (f9r/f9v/f16r/f16v) vollständig — Quire B abgeschlossen; erster rein positiver Quire-Abschluss im analysierten Corpus.',
     stars: '★★★★★',
     insert: 'saiin ytaiin sokar oaorar',
+    badge: '',
   },
   {
     id: 10,
@@ -166,6 +175,7 @@ export const REFS = [
     note: 'f18r: Centaurea montana — stärkstes Schlusskolophon in Quire C; dar·dar (R36-Erstbeleg), doldaiin (Krankheits-Urteil, Corpus-Erstbeleg). f18v: Dracunculus vulgaris — erste zoomorphe Begleitfigur im botanischen Corpus; ykam/ytor Auferstehungsverben; qokchy·qokchy R37-Erstbeleg.',
     stars: '★★★★',
     insert: 'or shaiin cthor okal dar doldaiin ykam ytor dom',
+    badge: '',
   },
   {
     id: 11,
@@ -187,5 +197,6 @@ export const REFS = [
     note: 'Erstes vollständiges Zodiak-Register: R17 ★★★★ (5. Register), R19/R35 ★★★ (Zodiak-Erstbeleg), R50 ★★★★ (2. Register), R52a ★★★★ (4 Folios · 75 Labels · 47%). alef/otalef = erste ikonographische Buchstabenreferenz im Zodiak-Corpus.',
     stars: '★★★★',
     insert: 'otam otam chotam daiin sheol',
+    badge: '',
   },
 ];

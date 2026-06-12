@@ -14,7 +14,7 @@
 							<div>
 								<div class="layer-eva">{side.eva}</div>
 								<div class="layer-heb">{side.heb}</div>
-								<div class="layer-en" style="font-size:.9rem">{side.de}</div>
+								<div class="layer-en">{side.de}</div>
 							</div>
 						{/each}
 					</div>
@@ -43,6 +43,10 @@
     & > div {
       flex: 1 1 480px;
     }
+
+		.layer-de {
+			font-size: var(--text-sm);
+		}
   }
 
 	.ref-card {
@@ -51,14 +55,14 @@
 
 	.ref-note {
 		margin: .5rem 0 0;
-		font-size: .82rem;
+		font-size: var(--text-sm);
 		color: var(--ink-f);
 	}
 
 	.ref-insert-btn {
 		margin-top: .7rem;
 		font-family: var(--font-smallcaps);
-		font-size: .65rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .1em;
 		text-transform: uppercase;
 		color: var(--blue);

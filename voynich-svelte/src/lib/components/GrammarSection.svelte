@@ -77,7 +77,7 @@
 
 <div class="box hl">
 	<div class="box-title">Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 1 Kandidat ★★ provisorisch (f16r, R43)</div>
-	<p style="margin-bottom:.5rem;font-size:.92rem">Alle klinischen Ankerbegriffe erhalten eine Verbform durch Präfix-Schichtung <span class="eva">y</span> + <span class="eva">k</span> + Terminus (fünf positiv, ein negativ, ein Kandidat):</p>
+	<p style="margin-bottom:.5rem;font-size:var(--text-sm)">Alle klinischen Ankerbegriffe erhalten eine Verbform durch Präfix-Schichtung <span class="eva">y</span> + <span class="eva">k</span> + Terminus (fünf positiv, ein negativ, ein Kandidat):</p>
 	<div class="table-scroll">
 		<table class="dt" style="margin-top:.4rem">
 			<thead>
@@ -100,7 +100,7 @@
 
 <div class="box hl">
 	<div class="box-title">Prognose-Schema Quire A (Kräuter, Spr. A)</div>
-	<p style="margin-bottom:.5rem;font-size:.92rem">Jeder Paragraph folgt dem botanischen Schema:</p>
+	<p style="margin-bottom:.5rem;font-size:var(--text-sm)">Jeder Paragraph folgt dem botanischen Schema:</p>
 	<div class="schema">
 		<div class="schema-step">
 			<span class="heb-sm">דָּם·כְּהִי·חַם</span>
@@ -131,7 +131,7 @@
 
 <div class="box hl">
 	<div class="box-title">Prognose-Schema Quire T / Sprache B</div>
-	<p style="margin-bottom:.5rem;font-size:.92rem">Jeder vollständige Paragraph folgt dem Schema:</p>
+	<p style="margin-bottom:.5rem;font-size:var(--text-sm)">Jeder vollständige Paragraph folgt dem Schema:</p>
 	<div class="schema">
 		<div class="schema-step">
 			<span class="heb-sm">דִּין</span>
@@ -198,7 +198,7 @@
 
   .filter-hint {
     font-family: var(--font-smallcaps);
-    font-size: .6rem;
+    font-size: var(--text-2xs);
     letter-spacing: .08em;
     font-weight: normal;
     color: var(--ink-f);

@@ -41,7 +41,7 @@
 	</div>
 
 	<div class="box green no-fp">
-		<p style="margin:0;font-size:.92rem">Entscheidend: <strong>Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.</strong> Kein kodiertes Wort taucht in einem semantisch inkohärenten Kontext auf — in beiden Klassen, bei einem Zufallsalphabet statistisch ausgeschlossen.</p>
+		<p style="margin:0;font-size:var(--text-sm)">Entscheidend: <strong>Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.</strong> Kein kodiertes Wort taucht in einem semantisch inkohärenten Kontext auf — in beiden Klassen, bei einem Zufallsalphabet statistisch ausgeschlossen.</p>
 	</div>
 
 	<h3>Typ I — Genuine Vorhersagen <span class="type-badge type-i">{numI} · {pctI}%</span></h3>
@@ -107,21 +107,21 @@
 
 	.hs-num {
 		font-family: var(--font-display);
-		font-size: 1.6rem;
+		font-size: var(--text-2xl);
 		line-height: 1.1;
 		color: var(--ink);
 	}
 
 	.hs-label {
 		font-family: var(--font-smallcaps);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		letter-spacing: .08em;
 		color: var(--ink-l);
 		margin-top: .2rem;
 	}
 
 	.hs-sub {
-		font-size: .78rem;
+		font-size: var(--text-sm);
 		color: var(--ink-f);
 		margin-top: .1rem;
 	}
@@ -137,7 +137,7 @@
 		display: flex;
 		align-items: center;
 		gap: .8rem;
-		font-size: .88rem;
+		font-size: var(--text-sm);
 	}
 
 	.stat-label {
@@ -168,7 +168,7 @@
 		min-width: 4.5rem;
 		text-align: right;
 		font-family: var(--font-mono);
-		font-size: .82rem;
+		font-size: var(--text-sm);
 	}
 
 	.no-fp {
@@ -178,7 +178,7 @@
 	.type-badge {
 		display: inline-block;
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		padding: .1rem .5rem;
 		border-radius: 2px;
 		margin-left: .5rem;
@@ -189,7 +189,7 @@
 	}
 
 	.type-note {
-		font-size: .88rem;
+		font-size: var(--text-sm);
 		color: var(--ink-f);
 		margin-bottom: .8rem;
 	}
@@ -206,7 +206,7 @@
 
 	.result-cell {
 		color: var(--green);
-		font-size: .82rem;
+		font-size: var(--text-sm);
 	}
 
 

@@ -436,7 +436,7 @@
 
       & .method-note {
         margin-top: .9rem;
-        font-size: .88rem;
+        font-size: var(--text-sm);
 
         & p { margin: 0; }
       }
@@ -480,7 +480,7 @@
 
 	.panel-label {
 		font-family: var(--font-smallcaps);
-		font-size: .62rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .16em;
 		text-transform: uppercase;
 		color: var(--ink-f);
@@ -490,7 +490,7 @@
 
 	.coverage-badge {
 		font-family: var(--font-mono);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		background: rgba(0, 0, 0, .05);
 		border: 1px solid var(--parch-dk);
@@ -539,7 +539,7 @@
 
 	.ex-btn {
 		font-family: var(--font-mono);
-		font-size: .73rem;
+		font-size: var(--text-xs);
 		color: var(--ink-l);
 		background: rgba(255, 255, 255, .45);
 		border: 1px solid var(--parch-dk);
@@ -571,7 +571,7 @@
 		position: absolute;
 		top: .4rem;
 		right: .4rem;
-		font-size: .8rem;
+		font-size: var(--text-sm);
 		line-height: 1;
 		color: var(--red);
 		background: rgba(255, 255, 255, .75);
@@ -594,7 +594,7 @@
 	.result-heb {
 		max-height: 10rem;
 		font-family: var(--font-hebrew);
-		font-size: 1.25rem;
+		font-size: var(--text-xl);
 		direction: rtl;
 		line-height: 2.1;
 		color: var(--blue);
@@ -609,7 +609,7 @@
 	.result-de {
 		font-family: var(--font-serif);
 		font-style: italic;
-		font-size: .97rem;
+		font-size: var(--text-md);
 		color: var(--ink-l);
 		padding: .45rem 0 .45rem .75rem;
 		border-left: 2px solid var(--gold);
@@ -657,7 +657,7 @@
 
 	.folio-group-label {
 		font-family: var(--font-smallcaps);
-		font-size: .6rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .08em;
 		text-transform: uppercase;
 		color: var(--ink-l);
@@ -670,7 +670,7 @@
 
 		&::after {
 			content: '▶';
-			font-size: .48rem;
+			font-size: var(--text-2xs);
 			opacity: .4;
 			transition: transform .13s;
 			flex-shrink: 0;
@@ -695,7 +695,7 @@
 
 	.folio-btn {
 		font-family: var(--font-mono);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		color: var(--ink-l);
 		background: rgba(255, 255, 255, .5);
 		border: 1px solid var(--parch-dk);
@@ -715,7 +715,7 @@
 	.folio-status {
 		padding: .3rem .7rem;
 		font-family: var(--font-mono);
-		font-size: .7rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		border-top: 1px solid var(--parch-dk);
 		background: rgba(255, 255, 255, .2);
@@ -747,7 +747,7 @@
 
 	.para-acc-count {
 		font-family: var(--font-mono);
-		font-size: .58rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		margin-left: .2rem;
 		font-variant: normal;
@@ -785,7 +785,7 @@
 	}
 
 	.para-hd-chevron {
-		font-size: .48rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		flex-shrink: 0;
 		width: 1ch;
@@ -794,7 +794,7 @@
 
 	.para-hd-id {
 		font-family: var(--font-mono);
-		font-size: .66rem;
+		font-size: var(--text-xs);
 		color: var(--gold);
 		font-weight: 700;
 		flex-shrink: 0;
@@ -803,7 +803,7 @@
 
 	.para-hd-preview {
 		font-family: var(--font-mono);
-		font-size: .6rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		flex: 1;
 		overflow: hidden;
@@ -813,7 +813,7 @@
 
 	.para-hd-cov {
 		font-family: var(--font-mono);
-		font-size: .58rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		background: rgba(0, 0, 0, .04);
 		border: 1px solid var(--parch-dk);
@@ -872,7 +872,7 @@
 	.tok-eva {
 		font-family: var(--font-mono);
 		color: var(--ink-f);
-		font-size: .7rem;
+		font-size: var(--text-xs);
 		line-height: 1.2;
 	}
 
@@ -892,11 +892,11 @@
 	.gloss-table {
 		width: 100%;
 		border-collapse: collapse;
-		font-size: .82rem;
+		font-size: var(--text-sm);
 
 		& th {
 			font-family: var(--font-smallcaps);
-			font-size: .62rem;
+			font-size: var(--text-2xs);
 			letter-spacing: .1em;
 			text-transform: uppercase;
 			color: var(--ink-f);
@@ -922,13 +922,13 @@
 		& .g-de  { font-style: italic; color: var(--ink-l); }
 		& .g-st  {
 			color: var(--gold);
-			font-size: .72rem;
+			font-size: var(--text-xs);
 			white-space: nowrap;
 			&.g5 { color: var(--red-dk); }
 		}
 		& .g-kind {
 			font-family: var(--font-smallcaps);
-			font-size: .58rem;
+			font-size: var(--text-2xs);
 			letter-spacing: .08em;
 			text-transform: uppercase;
 			color: var(--ink-f);
@@ -944,7 +944,7 @@
 		gap: .3rem;
 		cursor: pointer;
 		font-family: var(--font-smallcaps);
-		font-size: .6rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .1em;
 		text-transform: uppercase;
 		color: var(--ink-f);

@@ -556,7 +556,7 @@
 	}
 
 	.fp-chevron {
-		font-size: .55rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		transition: transform .2s ease;
 		line-height: 1;
@@ -564,7 +564,7 @@
 
 	.fp-title {
 		font-family: var(--font-smallcaps);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		letter-spacing: .18em;
 		text-transform: uppercase;
 		color: var(--ink-l);
@@ -572,7 +572,7 @@
 
 	.fp-pct-badge {
 		font-family: var(--font-display);
-		font-size: 1.15rem;
+		font-size: var(--text-md);
 		color: var(--gold);
 		line-height: 1;
 	}
@@ -584,14 +584,14 @@
 		gap: .15rem .3rem;
 		margin-bottom: .6rem;
 		font-family: var(--font-mono);
-		font-size: .6rem;
+		font-size: var(--text-2xs);
 
 		& .fpc-sep { color: var(--border); }
 
 		& .fpc {
 			& em {
 				font-style: normal;
-				font-size: .58rem;
+				font-size: var(--text-2xs);
 				color: var(--ink-f);
 				letter-spacing: .04em;
 			}
@@ -654,14 +654,14 @@
 		position: relative;
 		margin-top: .2rem;
 		font-family: var(--font-mono);
-		font-size: .5rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 
 		& .fp-bar-done-mark {
 			position: absolute;
 			transform: translateX(-50%);
 			color: var(--gold);
-			font-size: .5rem;
+			font-size: var(--text-2xs);
 		}
 	}
 
@@ -690,7 +690,7 @@
 
 	.fp-fp {
 		font-family: var(--font-mono);
-		font-size: .52rem;
+		font-size: var(--text-2xs);
 		padding: 1px 6px;
 		border-radius: 1px;
 		border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
@@ -775,14 +775,14 @@
 
 	.fp-roman {
 		font-family: var(--font-display);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		color: var(--ink-l);
 		min-width: 1.5ch;
 		flex-shrink: 0;
 	}
 
 	.fp-glyph {
-		font-size: .62rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		flex-shrink: 0;
 		line-height: 1;
@@ -791,7 +791,7 @@
 
 	.fp-section {
 		font-family: var(--font-smallcaps);
-		font-size: .6rem;
+		font-size: var(--text-xs);
 		letter-spacing: .05em;
 		color: var(--ink-f);
 		flex: 1;
@@ -802,7 +802,7 @@
 
 	.fp-fraction {
 		font-family: var(--font-mono);
-		font-size: .52rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		flex-shrink: 0;
 		white-space: nowrap;
@@ -849,7 +849,7 @@
 		display: inline-block;
 		padding: 1px 4px;
 		font-family: var(--font-mono);
-		font-size: .5rem;
+		font-size: var(--text-2xs);
 		line-height: 1.6;
 		border-radius: 1px;
 		cursor: pointer;
@@ -928,7 +928,7 @@
 		align-items: center;
 		gap: .35rem;
 		font-family: var(--font-smallcaps);
-		font-size: .6rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .06em;
 		color: var(--ink-f);
 	}
@@ -975,14 +975,14 @@
 
 	.fp-detail-id {
 		font-family: var(--font-display);
-		font-size: .82rem;
+		font-size: var(--text-sm);
 		color: var(--ink);
 		letter-spacing: .04em;
 	}
 
 	.fp-detail-badge {
 		font-family: var(--font-mono);
-		font-size: .5rem;
+		font-size: var(--text-2xs);
 		padding: 1px 5px;
 		border-radius: 1px;
 		flex-shrink: 0;
@@ -1003,7 +1003,7 @@
 
 	.fp-detail-btn {
 		font-family: var(--font-mono);
-		font-size: .5rem;
+		font-size: var(--text-2xs);
 		padding: 1px 7px;
 		border-radius: 1px;
 		text-decoration: none;
@@ -1032,7 +1032,7 @@
 	}
 
 	.fp-detail-close {
-		font-size: .78rem;
+		font-size: var(--text-sm);
 		color: var(--ink-f);
 		line-height: 1;
 		padding: 0 .2rem;
@@ -1070,7 +1070,7 @@
 
 	.fp-detail-key {
 		font-family: var(--font-smallcaps);
-		font-size: .64rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .1em;
 		text-transform: uppercase;
 		color: var(--ink-f);
@@ -1081,7 +1081,7 @@
 
 	.fp-detail-val {
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		color: var(--ink-l);
 		line-height: 1.45;
 		display: flex;
@@ -1097,7 +1097,7 @@
 
 	.fp-detail-siglen {
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		color: var(--ink);
 		font-weight: 600;
 		flex-shrink: 0;
@@ -1106,7 +1106,7 @@
 
 	.fp-detail-tlabel {
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		line-height: 1.35;
     word-break: break-word;
@@ -1114,7 +1114,7 @@
 
 	.fp-detail-krow {
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		color: var(--ink-l);
 		line-height: 1.6;
 	}
@@ -1141,7 +1141,7 @@
 
 	.fp-detail-rule {
 		font-family: var(--font-mono);
-		font-size: .64rem;
+		font-size: var(--text-2xs);
 		padding: 0 4px;
 		line-height: 1.6;
 		border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
@@ -1154,7 +1154,7 @@
 
 	.fp-detail-ico-section-label {
 		font-family: var(--font-smallcaps);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		letter-spacing: .08em;
 		color: var(--ink-f);
 		margin-left: .15rem;
@@ -1167,7 +1167,7 @@
 
 		& .fp-detail-ico-key {
 			font-family: var(--font-mono);
-			font-size: .64rem;
+			font-size: var(--text-2xs);
 			letter-spacing: .1em;
 			text-transform: uppercase;
 			color: var(--ink-f);
@@ -1175,7 +1175,7 @@
 
 		& .fp-detail-ico-val {
 			font-family: var(--font-mono);
-			font-size: .72rem;
+			font-size: var(--text-xs);
 			color: var(--ink-l);
 			line-height: 1.4;
 		}
@@ -1187,7 +1187,7 @@
 
 			& .fp-detail-ico-bullet {
 				font-family: var(--font-mono);
-				font-size: .72rem;
+				font-size: var(--text-xs);
 				color: var(--ink-l);
 				line-height: 1.5;
 			}
@@ -1205,7 +1205,7 @@
 
 				& .fp-detail-morph-key {
 					font-family: var(--font-mono);
-					font-size: .72rem;
+					font-size: var(--text-xs);
 					color: var(--ink);
 					font-weight: 700;
 					letter-spacing: .04em;
@@ -1216,7 +1216,7 @@
 
 				& .fp-detail-morph-val {
 					font-family: var(--font-mono);
-					font-size: .72rem;
+					font-size: var(--text-xs);
 					color: var(--ink-l);
 					line-height: 1.4;
 				}
@@ -1243,7 +1243,7 @@
 
 	.fp-detail-r60-label {
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		color: var(--gold);
 		font-weight: 700;
 		letter-spacing: .06em;
@@ -1252,7 +1252,7 @@
 
 	.fp-detail-r60-val {
 		font-family: var(--font-mono);
-		font-size: .64rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		line-height: 1.4;
 	}

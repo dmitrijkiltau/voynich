@@ -53,7 +53,7 @@
 					<tr><td>Zeilenanfang</td><td><strong>0 %</strong></td><td>—</td></tr>
 				</tbody>
 			</table>
-			<p style="margin:.6rem 0 0;font-size:.85rem;color:var(--ink-f)">Diese Verteilung ist nicht die eines zufällig platzierten Begriffs. Sie folgt präzise R6 (Zeilenabschluss sheol = Tod-Prognose) und R17 (shol apokor. medial / sheol Vollform final).</p>
+			<p style="margin:.6rem 0 0;font-size:var(--text-sm);color:var(--ink-f)">Diese Verteilung ist nicht die eines zufällig platzierten Begriffs. Sie folgt präzise R6 (Zeilenabschluss sheol = Tod-Prognose) und R17 (shol apokor. medial / sheol Vollform final).</p>
 		</div>
 	</div>
 </div>
@@ -62,7 +62,7 @@
 	.audit-note {
 		margin-bottom: 1.5rem;
 
-		& p { margin: 0; font-size: .92rem; }
+		& p { margin: 0; font-size: var(--text-sm); }
 	}
 
 	.problem-list {
@@ -94,7 +94,7 @@
 
 	.problem-id {
 		font-family: var(--font-mono);
-		font-size: .75rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		background: var(--parch-dk);
 		padding: .1rem .35rem;
@@ -103,14 +103,14 @@
 
 	.problem-title {
 		font-weight: 600;
-		font-size: .95rem;
+		font-size: var(--text-base);
 		flex: 1;
 		min-width: 120px;
 	}
 
 	.badge {
 		font-family: var(--font-smallcaps);
-		font-size: .62rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .07em;
 		padding: .15rem .45rem;
 		border-radius: 2px;
@@ -127,13 +127,13 @@
 	.status-gelöst     { background: color-mix(in srgb, var(--green) 12%, transparent); color: color-mix(in srgb, var(--green) 80%, var(--ink)); }
 
 	.problem-body {
-		font-size: .88rem;
+		font-size: var(--text-sm);
 		color: var(--ink);
 		margin-bottom: .5rem;
 	}
 
 	.problem-hyp {
-		font-size: .83rem;
+		font-size: var(--text-sm);
 		color: var(--ink-f);
 		border-left: 2px solid var(--parch-dk);
 		padding-left: .7rem;
@@ -141,7 +141,7 @@
 
 	.hyp-label {
 		font-family: var(--font-smallcaps);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		letter-spacing: .08em;
 		color: var(--ink-f);
 		margin-right: .3rem;

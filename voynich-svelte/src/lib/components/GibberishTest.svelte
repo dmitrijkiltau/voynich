@@ -452,7 +452,7 @@
 		margin-bottom: 1.2rem;
 
 		& p {
-			font-size: .93rem;
+			font-size: var(--text-sm);
 			line-height: 1.65;
 			margin-bottom: .6rem;
 		}
@@ -463,12 +463,12 @@
 		flex-wrap: wrap;
 		align-items: center;
 		gap: .3rem .5rem;
-		font-size: .76rem;
+		font-size: var(--text-xs);
 	}
 
 	.thr {
 		font-family: var(--font-smallcaps);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		letter-spacing: .08em;
 		padding: .18rem .55rem;
 		border-radius: 2px;
@@ -495,7 +495,7 @@
 
 	.ctrl-label {
 		font-family: var(--font-smallcaps);
-		font-size: .65rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .15em;
 		text-transform: uppercase;
 		color: var(--ink-f);
@@ -504,7 +504,7 @@
 	.wc-input {
 		width: 5rem;
 		font-family: var(--font-mono);
-		font-size: .88rem;
+		font-size: var(--text-sm);
 		color: var(--ink);
 		background: rgba(255,255,255,.55);
 		border: 1px solid var(--border);
@@ -520,7 +520,7 @@
 
 	.run-btn {
 		font-family: var(--font-smallcaps);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		letter-spacing: .12em;
 		text-transform: uppercase;
 		color: var(--parch);
@@ -567,7 +567,7 @@
 
 	.protocol-title {
 		font-family: var(--font-smallcaps);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		letter-spacing: .12em;
 		text-transform: uppercase;
 		color: var(--ink-l);
@@ -575,7 +575,7 @@
 
 	.proto-print-btn {
 		font-family: var(--font-smallcaps);
-		font-size: .63rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .1em;
 		text-transform: uppercase;
 		color: var(--ink-f);
@@ -600,13 +600,13 @@
 
 	.proto-table {
 		flex: 1 1 380px;
-		font-size: .82rem;
+		font-size: var(--text-sm);
 		border-right: 1px solid var(--parch-dk);
 	}
 
 	.td-run {
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		width: 2.5rem;
 		text-align: center;
@@ -614,7 +614,7 @@
 
 	.td-rate {
 		font-family: var(--font-mono);
-		font-size: .88rem;
+		font-size: var(--text-sm);
 		text-align: right;
 		padding-right: .8rem;
 	}
@@ -627,14 +627,14 @@
 
 	.proto-mean td {
 		background: var(--parch-d);
-		font-size: .85rem;
+		font-size: var(--text-sm);
 		border-top: 1px solid var(--border);
 	}
 
-	.proto-mean .td-rate { font-size: .95rem; }
+	.proto-mean .td-rate { font-size: var(--text-sm); }
 
 	.mean-note {
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		font-style: italic;
 		color: var(--ink-f);
 	}
@@ -643,12 +643,12 @@
 
 	.desc-stats {
 		flex: 0 1 300px;
-		font-size: .82rem;
+		font-size: var(--text-sm);
 		align-self: stretch;
 
 		& thead th {
 			font-family: var(--font-smallcaps);
-			font-size: .63rem;
+			font-size: var(--text-2xs);
 			letter-spacing: .1em;
 			text-transform: uppercase;
 			color: var(--ink-f);
@@ -659,13 +659,13 @@
 
 		& td:first-child {
 			color: var(--ink-l);
-			font-size: .78rem;
+			font-size: var(--text-sm);
 		}
 	}
 
 	.ds-val {
 		font-family: var(--font-mono);
-		font-size: .85rem;
+		font-size: var(--text-sm);
 		text-align: right;
 		white-space: nowrap;
 		padding-right: .8rem;
@@ -681,7 +681,7 @@
 
 	.proto-verdict {
 		padding: .65rem .9rem;
-		font-size: .83rem;
+		font-size: var(--text-sm);
 		line-height: 1.5;
 		border-top: 1px solid var(--parch-dk);
 		background: rgba(26,74,40,.05);
@@ -719,7 +719,7 @@
 
 	.stat-rate {
 		font-family: var(--font-display);
-		font-size: 2.4rem;
+		font-size: var(--text-2xl);
 		color: #1a4a28;
 		line-height: 1.1;
 		margin: .4rem 0 .2rem;
@@ -729,7 +729,7 @@
 	}
 
 	.stat-verdict {
-		font-size: .78rem;
+		font-size: var(--text-sm);
 		font-style: italic;
 		color: var(--ink-l);
 		line-height: 1.4;
@@ -754,7 +754,7 @@
 		& .sc-n {
 			display: block;
 			font-family: var(--font-display);
-			font-size: 1.5rem;
+			font-size: var(--text-xl);
 			color: var(--red);
 			line-height: 1.1;
 		}
@@ -764,7 +764,7 @@
 		& .sc-l {
 			display: block;
 			font-family: var(--font-smallcaps);
-			font-size: .65rem;
+			font-size: var(--text-2xs);
 			letter-spacing: .07em;
 			text-transform: uppercase;
 			color: var(--ink-f);
@@ -783,7 +783,7 @@
 	}
 
 	.gib-table {
-		font-size: .8rem;
+		font-size: var(--text-sm);
 
 		& thead th {
 			position: sticky;
@@ -795,7 +795,7 @@
 
 	.td-n {
 		font-family: var(--font-mono);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		width: 2rem;
 		text-align: center;
@@ -809,7 +809,7 @@
 
 	.td-pre {
 		font-family: var(--font-mono);
-		font-size: .73rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		white-space: nowrap;
 	}
@@ -817,10 +817,10 @@
 	.td-c {
 		text-align: center;
 		font-family: var(--font-mono);
-		font-size: .78rem;
+		font-size: var(--text-sm);
 	}
 
-	.td-rule { white-space: nowrap; font-size: .73rem; }
+	.td-rule { white-space: nowrap; font-size: var(--text-xs); }
 	.td-stars { white-space: nowrap; }
 
 	.row-ms-invalid td { opacity: .55; }
@@ -832,12 +832,12 @@
 	.flag-invalid { color: var(--red); font-weight: 600; }
 	.flag-warn    { color: var(--gold); font-weight: 600; }
 	.flag-na      { color: var(--ink-f); }
-	.flag-lex     { color: var(--red); font-size: .65rem; font-style: italic; }
+	.flag-lex     { color: var(--red); font-size: var(--text-2xs); font-style: italic; }
 
-	.ms-invalid { color: var(--red); font-size: .72rem; }
+	.ms-invalid { color: var(--red); font-size: var(--text-xs); }
 	.ms-cap     { color: var(--ink-f); }
 	.ms-pass    { color: var(--gold); font-weight: 600; }
-	.ms-lex     { color: var(--red); font-size: .72rem; font-style: italic; }
+	.ms-lex     { color: var(--red); font-size: var(--text-xs); font-style: italic; }
 
 	/* ── Print ──────────────────────────────────────────── */
 
@@ -864,14 +864,14 @@
 		}
 
 		.protocol-title {
-			font-size: .75rem;
+			font-size: var(--text-xs);
 			letter-spacing: .08em;
 			color: #000;
 		}
 
 		.proto-table,
 		.desc-stats {
-			font-size: .78rem;
+			font-size: var(--text-sm);
 			break-inside: avoid;
 		}
 
@@ -893,7 +893,7 @@
 			border-left: 3px solid currentColor;
 			padding-left: .6rem;
 			margin-top: .6rem;
-			font-size: .8rem;
+			font-size: var(--text-sm);
 		}
 
 		.proto-row.zone-fail td { background: none; }

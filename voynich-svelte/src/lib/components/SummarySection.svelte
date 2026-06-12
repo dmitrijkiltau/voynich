@@ -97,7 +97,7 @@
 
             &:first-child {
               color: var(--ink-f);
-              font-size: 0.85rem;
+              font-size: var(--text-sm);
               white-space: nowrap;
               width: 1%;
               padding-right: 1.2rem;

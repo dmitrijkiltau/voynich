@@ -377,7 +377,7 @@ import { MAPPING, STATS } from '$lib';
 
 		& .brand-kicker {
 			font-family: var(--font-smallcaps);
-			font-size: .6rem;
+			font-size: var(--text-2xs);
 			letter-spacing: .2em;
 			text-transform: uppercase;
 			color: var(--ink-f);
@@ -393,7 +393,7 @@ import { MAPPING, STATS } from '$lib';
 
 		& .brand-sub {
 			font-family: var(--font-smallcaps);
-			font-size: .62rem;
+			font-size: var(--text-2xs);
 			letter-spacing: .1em;
 			color: var(--ink-f);
 			margin-top: .25rem;
@@ -414,7 +414,7 @@ import { MAPPING, STATS } from '$lib';
 		text-align: left;
 		padding: .55rem .8rem;
 		font-family: var(--font-smallcaps);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		letter-spacing: .08em;
 		color: var(--ink-l);
 		border-radius: 2px;
@@ -455,7 +455,7 @@ import { MAPPING, STATS } from '$lib';
 			& .ss-n {
 				display: block;
 				font-family: var(--font-display);
-				font-size: 1.1rem;
+				font-size: var(--text-md);
 				color: var(--red);
 				line-height: 1.1;
 			}
@@ -463,7 +463,7 @@ import { MAPPING, STATS } from '$lib';
 			& .ss-l {
 				display: block;
 				font-family: var(--font-smallcaps);
-				font-size: .52rem;
+				font-size: var(--text-2xs);
 				letter-spacing: .08em;
 				text-transform: uppercase;
 				color: var(--ink-f);
@@ -476,7 +476,7 @@ import { MAPPING, STATS } from '$lib';
 		width: calc(100% - 2rem);
 		padding: .45rem .8rem;
 		font-family: var(--font-smallcaps);
-		font-size: .65rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .12em;
 		text-transform: uppercase;
 		color: var(--ink-f);
@@ -513,7 +513,7 @@ import { MAPPING, STATS } from '$lib';
 			& li {
 				padding: .25rem 0;
 				font-family: var(--font-smallcaps);
-				font-size: .85rem;
+				font-size: var(--text-sm);
 				letter-spacing: .06em;
 				border-bottom: 1px dotted var(--parch-dk);
 			}
@@ -525,7 +525,7 @@ import { MAPPING, STATS } from '$lib';
 	}
 
 	.sidebar-meta {
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		text-align: center;
 		padding: .7rem 1rem 0;
@@ -553,7 +553,7 @@ import { MAPPING, STATS } from '$lib';
 
 		& .mobile-title {
 			font-family: var(--font-display);
-			font-size: 1.1rem;
+			font-size: var(--text-md);
 			color: var(--red);
 			flex: 1;
 		}
@@ -564,7 +564,7 @@ import { MAPPING, STATS } from '$lib';
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			font-size: 1.1rem;
+			font-size: var(--text-md);
 			color: var(--ink-l);
 			border: 1px solid var(--parch-dk);
 			border-radius: 2px;
@@ -629,7 +629,7 @@ import { MAPPING, STATS } from '$lib';
 
 		& .kicker {
 			font-family: var(--font-smallcaps);
-			font-size: .68rem;
+			font-size: var(--text-xs);
 			letter-spacing: .22em;
 			text-transform: uppercase;
 			color: var(--ink-f);
@@ -638,7 +638,7 @@ import { MAPPING, STATS } from '$lib';
 
 		& h1 {
 			font-family: var(--font-display);
-			font-size: 2.4rem;
+			font-size: var(--text-2xl);
 			font-weight: 400;
 			line-height: 1.2;
 			margin-bottom: .45rem;
@@ -648,13 +648,13 @@ import { MAPPING, STATS } from '$lib';
 		& .subtitle {
 			font-family: var(--font-display);
 			font-style: italic;
-			font-size: 1.1rem;
+			font-size: var(--text-md);
 			color: var(--ink-l);
 			margin-bottom: 1.1rem;
 		}
 
 		& .meta-line {
-			font-size: .8rem;
+			font-size: var(--text-sm);
 			color: var(--ink-f);
 			letter-spacing: .04em;
 
@@ -668,7 +668,7 @@ import { MAPPING, STATS } from '$lib';
 		margin-top: 4rem;
 		padding-top: 2rem;
 		border-top: 1px solid var(--parch-dk);
-		font-size: .82rem;
+		font-size: var(--text-sm);
 		color: var(--ink-f);
 		text-align: center;
 		line-height: 1.7;
@@ -677,14 +677,14 @@ import { MAPPING, STATS } from '$lib';
 
 		& .disclaimer {
 			margin-top: .5rem;
-			font-size: .72rem;
+			font-size: var(--text-xs);
 			opacity: .7;
 		}
 	}
 
 	.legal-link {
 		display: inline-block;
-		font-size: .8rem;
+		font-size: var(--text-sm);
 		color: var(--color-text);
 		text-decoration: none;
 	}

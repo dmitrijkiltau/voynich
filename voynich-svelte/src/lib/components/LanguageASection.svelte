@@ -56,7 +56,7 @@
 <style>
 	.feature-cell {
 		color: var(--ink-f);
-		font-size: .85rem;
+		font-size: var(--text-sm);
 		white-space: nowrap;
 	}
 
@@ -69,7 +69,7 @@
 
 		& .conclusion-intro {
 			margin: 0 0 .6rem;
-			font-size: .92rem;
+			font-size: var(--text-sm);
 		}
 
 		& ul {
@@ -81,7 +81,7 @@
 		}
 
 		& li {
-			font-size: .88rem;
+			font-size: var(--text-sm);
 			line-height: 1.55;
 		}
 	}

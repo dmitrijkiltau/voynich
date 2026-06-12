@@ -38,7 +38,7 @@
 		background: rgba(255, 255, 255, .4);
 		border: 1px solid var(--parch-dk);
 		border-radius: 2px;
-		font-size: .85rem;
+		font-size: var(--text-sm);
 		cursor: pointer;
 		transition: background .15s, border-color .15s;
 
@@ -50,18 +50,18 @@
 		& .e {
 			font-family: var(--font-mono);
 			color: var(--ink-eva);
-			font-size: .82rem;
+			font-size: var(--text-sm);
 			min-width: 3rem;
 			background: rgba(0, 0, 0, .04);
 			padding: .05rem .2rem;
 			border-radius: 2px;
 		}
 
-		& .arr { color: var(--border); font-size: .75rem; }
+		& .arr { color: var(--border); font-size: var(--text-xs); }
 
 		& .h {
 			font-family: var(--font-hebrew);
-			font-size: 1.1rem;
+			font-size: var(--text-md);
 			color: var(--blue);
 			min-width: 2rem;
 			text-align: center;
@@ -70,7 +70,7 @@
 		& .g {
 			color: var(--ink-l);
 			font-style: italic;
-			font-size: .8rem;
+			font-size: var(--text-sm);
 			min-width: 0;
 			overflow: hidden;
 			text-overflow: ellipsis;
