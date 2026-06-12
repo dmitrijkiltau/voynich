@@ -56,11 +56,13 @@ const _compact = (/** @type {string} */ n) => n.replace(/ /g, '');
 const _pct     = (/** @type {number} */ p) => `${Math.round(p)}%`;
 
 export const STATS = {
-  version: '8.8.8',
+  version: '8.8.9',
   // Separate each change on a new line and keep only the new changes since the last release.
   changelog: [
-    'f4r-Audit',
-    'Weitere Automatisierungen bei der Regelableitung, z.B. die Erkennung von Präfixmorphemen für R41.',
+    'Lexikon-Klammern-Migration: 107 Einträge restrukturiert (de_neu, relatedTo, context, uncertain).',
+    'LexiconSection: Filterleiste erweitert (Schicht, Regeln, Sterne), sticky Sidebar ab 1360 px, neue Felder sichtbar.',
+    'GibberishTest: R41-Klassifikation korrigiert (d- als REL-Klasse per R45, nicht PREP), v- zu Konj. ergänzt.',
+    'f49r–f56v als JSON-Folios hinzugefügt.',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.filter((/** @type {any} */ e) => !e.candidate).length,

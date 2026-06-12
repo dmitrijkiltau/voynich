@@ -1,19 +1,22 @@
 <script>
 	import { onMount } from 'svelte';
-	import { LEXICON } from '$lib';
+	import { LEXICON, STATS } from '$lib';
 	import { getLexiconConfidence } from '$lib/lexicon-data.js';
 
 	// ── Word generation ──────────────────────────────────────────────────────
 
+	/** @type {[string,number][]} */
 	const STARTS = [
 		['d',14],['ch',9],['k',8],['o',10],['qo',5],['sh',7],['s',4],
 		['t',4], ['y',5], ['l',5],['c',3], ['p',2], ['f',1], ['r',2],
 	];
+	/** @type {[string,number][]} */
 	const MIDDLES = [
 		['a',7], ['ai',6],['aiin',8],['o',8], ['or',4], ['al',4],['ol',3],
 		['ch',5],['sh',3],['k',4], ['e',4], ['ee',3],['dy',4],['ky',3],
 		['r',4], ['l',4], ['n',3], ['d',3], ['s',2], ['chy',3],['m',2],
 	];
+	/** @type {[string,number][]} */
 	const ENDINGS = [
 		['y',18],['n',7],['r',6],['aiin',12],['m',5],['l',5],
 		['dy',7],['in',4],['or',4], ['ol',3], ['al',3],
@@ -69,8 +72,9 @@
 	// ── Prefix stripping & R41 ───────────────────────────────────────────────
 
 	const PREFIX_LIST = ['qok','qod','qo','o','l','d','p','y','t'];
-	const CONJ_CLASS  = new Set(['qo','qok','qod','o']);
-	const PREP_CLASS  = new Set(['l','d','p']);
+	const REL_CLASS   = new Set(['d']);
+	const CONJ_CLASS  = new Set(['qo','qok','qod','o','v']);
+	const PREP_CLASS  = new Set(['l','p']);
 
 	/** @param {string} word */
 	function stripPrefixes(word) {
@@ -88,8 +92,10 @@
 	/** @param {string[]} prefixes @param {string} root */
 	function checkR41(prefixes, root) {
 		if (prefixes.length > 2) return { valid: false, reason: 'b' };
-		for (let i = 0; i < prefixes.length - 1; i++) {
-			if (PREP_CLASS.has(prefixes[i]) && CONJ_CLASS.has(prefixes[i + 1]))
+		for (let i = 0; i < prefixes.length; i++) {
+			if (i > 0 && REL_CLASS.has(prefixes[i]))
+				return { valid: false, reason: 'd' };
+			if (i < prefixes.length - 1 && PREP_CLASS.has(prefixes[i]) && CONJ_CLASS.has(prefixes[i + 1]))
 				return { valid: false, reason: 'a' };
 		}
 		const POS_VOCAB = ['or','chaiin','okal'];
@@ -123,8 +129,7 @@
 		const r40      = count <= 3 ? 'cap' : 'pass';
 		const maxStars = r40 === 'cap' ? '★★' : '★★★';
 
-		return { word, inLexicon: false, prefixes, root, rootCons: count,
-			r40, r41, d1, d2, maxStars };
+		return { word, inLexicon: false, prefixes, root, rootCons: count,	r40, r41, d1, d2, maxStars };
 	}
 
 	// ── Run stats helper ─────────────────────────────────────────────────────
@@ -211,7 +216,7 @@
 
 <!-- ── Intro ─────────────────────────────────────────────────────────────── -->
 <div class="gib-intro">
-	<p>Jedes generierte EVA-Pseudowort durchläuft <strong>R40 v2</strong> (Kurzwurzel-Deckel: Basiswurzel ≤ 3 Konsonanten → max. ★★), <strong>R41</strong> (Präfix-Hierarchie) und <strong>D1/D2</strong> (Phonotaktik-Flags). Ein Pseudowort gilt als Falsch-Positiv, wenn es trotz Pseudocharakters ★★★ erreicht oder zufällig einem Lexikoneintrag entspricht. Der Generator verwendet gewichtete EVA-Bigramm-Statistik.</p>
+	<p>Jedes generierte EVA-Pseudowort durchläuft <strong>R40 v2</strong> (Kurzwurzel-Deckel: Basiswurzel ≤ 3 Konsonanten → max. ★★), <strong>R41</strong> (Präfix-Hierarchie: d-/REL → o-/qo-/v-/Konj. → l-/p-/Präp. → Basis) mit <strong>R45</strong> (d-Relativpräfix als äußerste Schale) und <strong>D1/D2</strong> (Phonotaktik-Flags). Ein Pseudowort gilt als Falsch-Positiv, wenn es trotz Pseudocharakters ★★★ erreicht oder zufällig einem Lexikoneintrag entspricht. Der Generator verwendet gewichtete EVA-Bigramm-Statistik.</p>
 	<div class="threshold-bar">
 		<span class="thr thr-fail">Abbruch &gt; 15 %</span>
 		<span class="thr-sep">·</span>
@@ -228,7 +233,7 @@
 	<div class="protocol-section">
 		<div class="protocol-head">
 			<span class="protocol-title no-print">10-Lauf-Protokoll · {wordCount} Wörter/Lauf · {protocolDate}</span>
-			<span class="protocol-title print-only">GibberishTest · 10-Lauf-Protokoll · v7.1 · {wordCount} Wörter/Lauf · {protocolDate}</span>
+			<span class="protocol-title print-only">GibberishTest · 10-Lauf-Protokoll · v{STATS.version} · {wordCount} Wörter/Lauf · {protocolDate}</span>
 		</div>
 
 		<div class="protocol-body">
@@ -389,7 +394,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					{#each results as r, i (r.word)}
+					{#each results as r, i (i)}
 						<tr class="row-{starsClass(r)}">
 							<td class="td-n">{i + 1}</td>
 							<td class="td-eva">{r.word}</td>

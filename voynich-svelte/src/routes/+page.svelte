@@ -301,9 +301,9 @@ import { MAPPING, STATS } from '$lib';
 
 		<!-- XIII. GIBBERISH-TEST -->
 		<section class="section" id="gibberish">
-			<h2>XIII. Gibberish-Test (v6.4)</h2>
-			<p>Empirisches Falsifikationswerkzeug: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch R40 v2, R41, R44–R46 und D1/D2 geführt. Abbruchschwelle: &gt; 15 % · Warnzone: 11–15 % · Zielkorridor: ≤ 10 % strukturelle Falsch-Positive (★★★).</p>
-			<p><em>v8.1-Prüfung:</em> Regelmoratorium beendet — 4 Kandidaten absorbiert (R32→R25, R52→R15, R54→R19, R57→R11), R28 validiert; f30r/f30v: +3 validiert (opchol, dain, chain), R19 Typ E Kand. (ABAB f30r P.11), R28→ytor Kand. (f30v P.5); Verhältnis {STATS.validatedRules}:{STATS.rules - STATS.validatedRules} ≥ 1,5:1 ✓. Testwert bleibt {STATS.gibberishRate} (Warnzone — GibberishTest-Update mit 22 Lexikon-Herabstufungen noch ausstehend).</p>
+			<h2>XIII. Gibberish-Test (v{STATS.version})</h2>
+			<p>Empirisches Falsifikationswerkzeug: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch <strong>R40 v2</strong>, <strong>R41</strong> (Präfix-Hierarchie mit R45-Präzisierung: d-/REL → Konj. → Präp. → Basis) und <strong>D1/D2</strong> geführt. Abbruchschwelle: &gt; 15 % · Warnzone: 11–15 % · Zielkorridor: ≤ 10 % strukturelle Falsch-Positive (★★★).</p>
+			<p><em>v8.8.9-Update:</em> R41-Klassifikation korrigiert — d-Relativpräfix (R45) wird als REL-Klasse (äußerste Schale) behandelt, nicht als PREP; Konjunktionsklasse um v- erweitert. Testwert: {STATS.gibberishRate}.</p>
 			<GibberishTest />
 		</section>
 
