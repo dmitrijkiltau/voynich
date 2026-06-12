@@ -917,14 +917,14 @@
 		& tr:hover td       { background: rgba(255, 255, 255, .45); }
 		& tr.row-unknown td { opacity: .6; }
 
-		& .g-eva { font-family: var(--font-mono); color: #5a3f1a; white-space: nowrap; }
+		& .g-eva { font-family: var(--font-mono); color: var(--ink-eva); white-space: nowrap; }
 		& .g-heb { font-family: var(--font-hebrew); font-size: .98rem; color: var(--blue); }
 		& .g-de  { font-style: italic; color: var(--ink-l); }
 		& .g-st  {
 			color: var(--gold);
 			font-size: .72rem;
 			white-space: nowrap;
-			&.g5 { color: #8b0000; }
+			&.g5 { color: var(--red-dk); }
 		}
 		& .g-kind {
 			font-family: var(--font-smallcaps);

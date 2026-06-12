@@ -48,8 +48,8 @@
 		}
 
 		& .e {
-			font-family: monospace;
-			color: #5a3f1a;
+			font-family: var(--font-mono);
+			color: var(--ink-eva);
 			font-size: .82rem;
 			min-width: 3rem;
 			background: rgba(0, 0, 0, .04);

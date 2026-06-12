@@ -1,4 +1,5 @@
 @import './_fonts.css';
+@import './_tokens.css';
 
 /* ── SCROLLBARS ──────────────────────────────────────── */
 
@@ -32,31 +33,6 @@ details > summary {
   &::-webkit-details-marker { display: none; }
 }
 
-/* ── DESIGN TOKENS ───────────────────────────────────── */
-
-:root {
-  --ink:      #1a1208;
-  --ink-l:    #3d2e14;
-  --ink-f:    #6a5535;
-  --parch:    #f4ead5;
-  --parch-d:  #e8d8b8;
-  --parch-dk: #d4be96;
-  --red:      #7a1c1c;
-  --gold:     #9a7a2a;
-  --border:   #c4a86a;
-  --blue:     #1c3d5a;
-  --green:    #1a4a28;
-
-  --font-serif:     'Crimson Text', Georgia, serif;
-  --font-display:   'IM Fell English', serif;
-  --font-smallcaps: 'IM Fell English SC', serif;
-  --font-hebrew:    'Noto Serif Hebrew', serif;
-  --font-mono:      'Courier Prime', Courier, monospace;
-
-  --sidebar-w:   240px;
-  --nav-h:       52px;
-  --content-max: 860px;
-}
 
 /* ── BASE ────────────────────────────────────────────── */
 
@@ -226,7 +202,7 @@ table.dt {
 
 .eva {
   font-family: var(--font-mono);
-  color: #5a3f1a;
+  color: var(--ink-eva);
   font-size: .84rem;
   background: rgba(0, 0, 0, .04);
   padding: .05rem .25rem;
@@ -244,7 +220,7 @@ table.dt {
 }
 
 .conf  { color: var(--gold);   letter-spacing: .05em; white-space: nowrap; }
-.conf5 { color: #8b0000;        letter-spacing: .05em; white-space: nowrap; }
+.conf5 { color: var(--red-dk); letter-spacing: .05em; white-space: nowrap; }
 .meaning { font-style: italic; color: var(--ink-l); }
 
 .new-badge {
@@ -265,7 +241,7 @@ table.dt {
 .layer-eva {
   font-family: var(--font-mono);
   font-size: .9rem;
-  color: #5a3f1a;
+  color: var(--ink-eva);
   word-spacing: .3em;
   line-height: 1.9;
   margin-bottom: .3rem;
@@ -336,4 +312,58 @@ table.dt {
 
   .hidden-print { display: none; }
   .section { break-inside: avoid; }
+}
+
+/* ── SHARED COMPONENT UTILITIES ──────────────────────── */
+
+/* Table cell types shared across multiple sections */
+
+.note-cell {
+  color: var(--ink-f);
+  font-size: .82rem;
+}
+
+.folio-cell {
+  font-family: var(--font-mono);
+  color: var(--ink-f);
+  font-size: .82rem;
+  white-space: nowrap;
+}
+
+/* Schema diagrams — used in GrammarSection + MarginStarsSection */
+
+.schema {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .6rem .5rem;
+}
+
+.schema-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .25rem;
+  text-align: center;
+  background: var(--parch-d);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: .55rem .9rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .07);
+}
+
+.schema-step .lbl {
+  font-size: .62rem;
+  font-family: var(--font-smallcaps);
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--ink-f);
+  line-height: 1.4;
+}
+
+.schema-arrow {
+  color: var(--ink-f);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  opacity: .55;
 }

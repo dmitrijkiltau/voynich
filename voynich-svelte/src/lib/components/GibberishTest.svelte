@@ -798,7 +798,7 @@
 
 	.td-eva {
 		font-family: var(--font-mono);
-		color: #5a3f1a;
+		color: var(--ink-eva);
 		white-space: nowrap;
 	}
 

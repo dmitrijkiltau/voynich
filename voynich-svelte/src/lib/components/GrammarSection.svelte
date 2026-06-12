@@ -207,42 +207,7 @@
 
   /* ── Schema diagram ─────────────────────────────────── */
 
-  .schema {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: .6rem .5rem;
-    margin-top: .85rem;
-  }
-
-  .schema-step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .25rem;
-    text-align: center;
-    background: var(--parch-d);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: .55rem .9rem;
-    min-width: 5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .07);
-
-    & .lbl {
-      font-size: .62rem;
-      font-family: var(--font-smallcaps);
-      letter-spacing: .09em;
-      text-transform: uppercase;
-      color: var(--ink-f);
-      line-height: 1.4;
-    }
-  }
-
-  .schema-arrow {
-    color: var(--ink-f);
-    font-size: 1.1rem;
-    flex-shrink: 0;
-    margin: 0 .1rem;
-    opacity: .55;
-  }
+  .schema      { margin-top: .85rem; }
+  .schema-step { min-width: 5rem; }
+  .schema-arrow { margin: 0 .1rem; }
 </style>

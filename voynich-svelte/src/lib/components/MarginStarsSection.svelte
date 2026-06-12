@@ -77,59 +77,15 @@
 		margin-bottom: 1.2rem;
 	}
 
-	.note-cell {
-		color: var(--ink-f);
-		font-size: .82rem;
-	}
-
-	.folio-cell {
-		font-family: var(--font-mono);
-		color: var(--ink-f);
-		font-size: .82rem;
-		white-space: nowrap;
-	}
-
 	/* ── Schema ─────────────────────────────────────────── */
 
-	.schema {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		gap: .6rem .5rem;
-		margin: .85rem 0 1.2rem;
-	}
+	.schema { margin: .85rem 0 1.2rem; }
 
 	.schema-step {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: .25rem;
-		text-align: center;
-		background: var(--parch-d);
-		border: 1px solid var(--border);
-		border-radius: 4px;
-		padding: .55rem .9rem;
 		min-width: 6rem;
-		box-shadow: 0 1px 3px rgba(0, 0, 0, .07);
 
 		&.schema-step--red  { background: rgba(122, 28, 28, .08); border-color: var(--red); }
 		&.schema-step--gold { background: rgba(154, 122, 42, .08); border-color: var(--gold); }
-
-		& .lbl {
-			font-size: .62rem;
-			font-family: var(--font-smallcaps);
-			letter-spacing: .09em;
-			text-transform: uppercase;
-			color: var(--ink-f);
-			line-height: 1.4;
-		}
-	}
-
-	.schema-arrow {
-		color: var(--ink-f);
-		font-size: 1.1rem;
-		flex-shrink: 0;
-		opacity: .55;
 	}
 
 	.star-icon {

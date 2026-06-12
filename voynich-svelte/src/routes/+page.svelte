@@ -350,7 +350,7 @@ import { MAPPING, STATS } from '$lib';
 		display: flex;
 		flex-direction: column;
 		padding: 1.8rem 0 2rem;
-		z-index: 100;
+		z-index: var(--z-sidebar);
 		transition: transform .25s ease;
 
 		&::-webkit-scrollbar { width: 4px; }
@@ -542,7 +542,7 @@ import { MAPPING, STATS } from '$lib';
 		left: 0;
 		right: 0;
 		height: var(--nav-h);
-		z-index: 200;
+		z-index: var(--z-nav);
 		background: var(--parch-d);
 		border-bottom: 1px solid var(--border);
 		align-items: center;
@@ -584,7 +584,7 @@ import { MAPPING, STATS } from '$lib';
 		position: fixed;
 		inset: 0;
 		background: rgba(0, 0, 0, .3);
-		z-index: 99;
+		z-index: var(--z-sticky);
 
 		@media (max-width: 768px) {
 			&.visible { display: block; }
@@ -697,7 +697,7 @@ import { MAPPING, STATS } from '$lib';
 		left: 0;
 		right: 0;
 		height: 3px;
-		z-index: 1000;
+		z-index: var(--z-progress);
 		background: rgba(0, 0, 0, .06);
 		pointer-events: none;
 

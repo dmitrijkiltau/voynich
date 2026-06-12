@@ -60,18 +60,6 @@
 		white-space: nowrap;
 	}
 
-	.note-cell {
-		color: var(--ink-f);
-		font-size: .82rem;
-	}
-
-	.folio-cell {
-		font-family: var(--font-mono);
-		color: var(--ink-f);
-		font-size: .82rem;
-		white-space: nowrap;
-	}
-
 	.folio-wrap {
 		overflow-x: auto;
 	}

@@ -209,10 +209,7 @@
 		font-size: .82rem;
 	}
 
-	.note-cell {
-		color: var(--ink-f);
-		font-size: .82rem;
-	}
+
 
 	.not-found td {
 		opacity: .6;
