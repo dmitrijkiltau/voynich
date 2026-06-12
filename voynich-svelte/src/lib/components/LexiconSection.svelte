@@ -121,44 +121,57 @@
 		}
 	}
 
+	let filterLayer  = $state('');
+	let filterRules  = $state('');
+	let filterStarsMin = $state(0);
+
+	const LAYERS = [...new Set(STEM_WORDS.map((/** @type {any} */ e) => e.layer).filter(Boolean))].sort();
+
 	/**
-	 * Checks whether a derived entry matches the active prefix/suffix chip.
-	 * Prefixes (no leading dash) are matched against morph.startsWith.
-	 * Suffixes (leading dash) are matched against entry.eva.endsWith.
-	 * @param {any} entry
-	 * @param {string} filterEva
+	 * Prefix/suffix chip filter — works on every table.
+	 * Derived entries: match on morph. Stems: match on eva.
+	 * @param {any} entry @param {string} chip @param {boolean} isDerived
 	 */
-	function matchesMorphFilter(entry, filterEva) {
-		if (!filterEva) return true;
-		const morph = String(entry.morph ?? '');
-		if (filterEva === 'op-/of-') {
-			return morph.includes('o- + p-') || morph.includes('o- + f-');
+	function matchesChip(entry, chip, isDerived) {
+		if (!chip) return true;
+		if (chip === 'op-/of-') {
+			if (isDerived) return String(entry.morph ?? '').includes('o- + p-') || String(entry.morph ?? '').includes('o- + f-');
+			return entry.eva.startsWith('op') || entry.eva.startsWith('of');
 		}
-		if (filterEva.startsWith('-')) {
-			return entry.eva.endsWith(filterEva.slice(1));
-		}
-		return morph.startsWith(filterEva);
+		if (chip.startsWith('-')) return entry.eva.endsWith(chip.slice(1));
+		if (isDerived) return String(entry.morph ?? '').startsWith(chip);
+		return entry.eva.startsWith(chip.replace(/-$/, ''));
 	}
 
 	/** @param {{ id: string, rows: any[] }} table */
 	function rowsFor(table) {
 		const { col, dir } = sortStates[table.id];
+		const isStems = table.id === 'stems' || table.id === 'stems-candidates';
 		let rows = table.rows;
 
 		const q = searchText.trim().toLowerCase();
 		if (q) {
 			rows = rows.filter((entry) => {
-				const fields =
-					table.id === 'stems'
-						? [entry.eva, entry.heb, entry.de, entry.layer, entry.anchorFolio]
-						: [entry.eva, entry.morph, entry.heb, entry.de, entry.evidence];
+				const fields = isStems
+					? [entry.eva, entry.heb, entry.de, entry.layer, entry.anchorFolio, entry.context, entry.relatedTo?.eva]
+					: [entry.eva, entry.morph, entry.heb, entry.de, entry.evidence, entry.context, entry.relatedTo?.eva];
 				return fields.some((f) => String(f ?? '').toLowerCase().includes(q));
 			});
 		}
 
-		if ((table.id === 'derived'|| table.id === 'derived-candidates') && filter) {
-			rows = rows.filter((entry) => matchesMorphFilter(entry, filter));
+		if (filter)
+			rows = rows.filter((entry) => matchesChip(entry, filter, !isStems));
+
+		if (filterLayer && isStems)
+			rows = rows.filter((entry) => entry.layer === filterLayer);
+
+		if (filterRules.trim()) {
+			const rq = filterRules.trim().toUpperCase();
+			rows = rows.filter((entry) => getLexiconRules(entry).some((/** @type {string} */ r) => r.toUpperCase().includes(rq)));
 		}
+
+		if (filterStarsMin > 0)
+			rows = rows.filter((entry) => (entry.confidenceStars ?? 0) >= filterStarsMin);
 
 		if (!col) return rows;
 		return [...rows].sort((a, b) => {
@@ -172,263 +185,229 @@
 	function toggleChip(chipEva) {
 		filter = filter === chipEva ? '' : chipEva;
 	}
+
+	function clearAll() {
+		searchText = ''; filter = ''; filterLayer = ''; filterRules = ''; filterStarsMin = 0;
+	}
+
+	const hasActiveFilter = $derived(!!(searchText.trim() || filter || filterLayer || filterRules.trim() || filterStarsMin > 0));
 </script>
 
 <section class="section" id="lexicon">
 	<h2>V. Bestätigtes Lexikon ({STATS.lexicon} Einträge)</h2>
-	<p>Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgeleiteten Formen. Klick auf eine Zeile fügt das EVA-Wort in die Eingabe ein.</p>
+	<p>Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgeleiteten Formen. Klick auf das EVA-Wort fügt es in die Eingabe ein.</p>
 
-	<div class="filter-bar hidden-print">
-		<label class="filter-label" for="lex-search">Suche</label>
-		<input
-			id="lex-search"
-			type="search"
-			class="filter-input"
-			bind:value={searchText}
-			placeholder="EVA, Bedeutung, Morph. …"
-		/>
-		{#if searchText.trim() || filter}
-			<button type="button" class="filter-clear" onclick={() => { searchText = ''; filter = ''; }} title="Alle Filter löschen">✕ Alles löschen</button>
-		{/if}
-	</div>
-
-	<div class="lexicon">
-		{#each TABLES as table ('table-' + table.id)}
-			{@const rows = rowsFor(table)}
-			<div id={table.id} class="lexicon-table">
-				<h3>
-					{table.title}
-					{#if rows.length !== table.rows.length}
-						<span class="filter-count">({rows.length} / {table.rows.length})</span>
-					{:else}
-						<span class="filter-count">({rows.length})</span>
+	<div class="lex-layout">
+		<aside class="lex-aside hidden-print">
+			<div class="lex-filter-box">
+				<div class="filter-row">
+					<label class="filter-label" for="lex-search">Suche</label>
+					<input
+						id="lex-search"
+						type="search"
+						class="filter-input"
+						bind:value={searchText}
+						placeholder="EVA, Bedeutung, Morph. …"
+					/>
+					{#if hasActiveFilter}
+						<button type="button" class="filter-clear" onclick={clearAll} title="Alle Filter löschen">✕</button>
 					{/if}
-				</h3>
+				</div>
 
-				{#if table.id === 'derived'}
-					<div class="chips-bar hidden-print">
-						<div>
-							<span class="chips-label">Präfix:</span>
-							{#each GRAMMAR_PREFIXES as pfx ('pfx-' + pfx.eva)}
-								<button
-									type="button"
-									class="chip"
-									class:chip-active={filter === pfx.eva}
-									title="{pfx.fn}"
-									onclick={() => toggleChip(pfx.eva)}
-								>{pfx.eva}</button>
-							{/each}
-						</div>
+				<div class="chips-section">
+					<span class="chips-label">Präfix</span>
+					<div class="chips-row">
+						{#each GRAMMAR_PREFIXES as pfx ('pfx-' + pfx.eva)}
+							<button type="button" class="chip" class:chip-active={filter === pfx.eva} title={pfx.fn} onclick={() => toggleChip(pfx.eva)}>{pfx.eva}</button>
+						{/each}
+					</div>
+				</div>
 
-						<div>
-							<span class="chips-label">Suffix:</span>
-							{#each GRAMMAR_SUFFIXES as sfx ('sfx-' + sfx.eva)}
-								<button
-									type="button"
-									class="chip"
-									class:chip-active={filter === sfx.eva}
-									title="{sfx.fn}"
-									onclick={() => toggleChip(sfx.eva)}
-								>{sfx.eva}</button>
-							{/each}
+				<div class="chips-section">
+					<span class="chips-label">Suffix</span>
+					<div class="chips-row">
+						{#each GRAMMAR_SUFFIXES as sfx ('sfx-' + sfx.eva)}
+							<button type="button" class="chip" class:chip-active={filter === sfx.eva} title={sfx.fn} onclick={() => toggleChip(sfx.eva)}>{sfx.eva}</button>
+						{/each}
+					</div>
+				</div>
+
+				<div class="filter-field">
+					<label class="chips-label" for="lex-layer">Schicht</label>
+					<select id="lex-layer" class="filter-select" bind:value={filterLayer}>
+						<option value="">Alle</option>
+						{#each LAYERS as layer (layer)}
+							<option value={layer}>{layer}</option>
+						{/each}
+					</select>
+				</div>
+
+				<div class="filter-field">
+					<label class="chips-label" for="lex-rules">Regeln</label>
+					<input id="lex-rules" type="search" class="filter-input" bind:value={filterRules} placeholder="z.B. R40" />
+				</div>
+
+				<div class="chips-section">
+					<span class="chips-label">Sterne (min)</span>
+					<div class="chips-row">
+						{#each [4, 5] as s (s)}
+							<button type="button" class="chip" class:chip-active={filterStarsMin === s} onclick={() => filterStarsMin = filterStarsMin === s ? 0 : s}>{'★'.repeat(s)}{s === 4 ? '+' : ''}</button>
+						{/each}
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<div class="lex-content">
+			{#each TABLES as table ('table-' + table.id)}
+				{@const rows = rowsFor(table)}
+				{#if rows.length > 0 || !hasActiveFilter}
+					<div id={table.id} class="lexicon-table">
+						<h3>
+							{table.title}
+							{#if rows.length !== table.rows.length}
+								<span class="filter-count">({rows.length} / {table.rows.length})</span>
+							{:else}
+								<span class="filter-count">({rows.length})</span>
+							{/if}
+						</h3>
+
+						<div class="table-wrap">
+							<table class={'dt ' + table.id + '-table'}>
+								<thead>
+									<tr>
+										{#each table.columns as col ('col-' + col.key)}
+											{@const s = sortStates[table.id]}
+											<th
+												data-sortable
+												aria-sort={s.col === col.key ? (s.dir === 1 ? 'ascending' : 'descending') : 'none'}
+												onclick={() => toggleSort(table.id, col.key)}
+												onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleSort(table.id, col.key)}
+												tabindex="0"
+												class={(table.id + '-' + col.key) + (col.key === 'evidence' ? ' notes-cell' : '')}
+											>
+												{col.label}
+												<span class="sort-icon" aria-hidden="true">
+													{#if s.col === col.key}
+														{s.dir === 1 ? '▲' : '▼'}
+													{:else}
+														⇅
+													{/if}
+												</span>
+											</th>
+										{/each}
+									</tr>
+								</thead>
+								<tbody>
+									{#each rows as entry, i ('entry-' + entry.eva + '-' + i)}
+										<tr>
+											{#each table.columns as col ('entry-col-' + col.key)}
+												<td class={(table.id + '-' + col.key) + (col.key === 'evidence' ? ' notes-cell' : col.key === 'anchorFolio' ? ' part-cell' : col.key === 'rules' ? ' rules-cell' : '')}>
+													{#if col.key === 'confidenceStars'}
+														<span class={entry.confidenceStars === 5 ? 'conf5' : 'conf'}>{cellValue(entry, col.key)}</span>{#if entry.candidate}<span class="cand-badge">Kand.</span>{/if}
+													{:else if col.key === 'rules'}
+														{@const rules = getLexiconRules(entry)}
+														{#if rules.length}
+															{#each rules as rule, ri ('rule-' + rule)}
+																{#if ri > 0}<span class="rules-sep">, </span>{/if}<a class="rule-link" href="#rule-{rule}" onclick={(e) => e.stopPropagation()}>{rule}</a>
+															{/each}
+														{:else}
+															—
+														{/if}
+													{:else if col.key === 'eva'}
+														<span
+															class="eva eva-insert"
+															role="button"
+															tabindex="0"
+															title="In Eingabe einfügen: {entry.eva}"
+															onclick={() => onInsert(entry.eva)}
+															onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onInsert(entry.eva)}
+														>{cellValue(entry, col.key)}</span>
+													{:else if col.key === 'morph'}
+														{@const parts = cellValue(entry, col.key).split(' + ')}
+														{#each parts as part, pi ('part-' + part + '-' + pi)}
+															<span class="eva part-cell">{part}</span>
+															{#if pi < parts.length - 1}
+																<span class="rules-sep">+&nbsp;</span>
+															{/if}
+														{/each}
+													{:else if col.key === 'de'}
+														<span class="de-text">{entry.de ?? '—'}</span>{#if entry.uncertain}<span class="badge-uncertain" title="Semantik unsicher">?</span>{/if}{#if entry.context}<span class="de-ctx">{entry.context}</span>{/if}
+														{#if entry.relatedTo}
+															<span class="de-related">→ {entry.relatedTo.type}: <span class="eva">{entry.relatedTo.eva}</span></span>
+														{/if}
+													{:else}
+														{cellValue(entry, col.key)}
+													{/if}
+												</td>
+											{/each}
+										</tr>
+									{/each}
+									{#if rows.length === 0}
+										<tr>
+											<td colspan={table.columns.length} class="no-results">Keine Einträge gefunden.</td>
+										</tr>
+									{/if}
+								</tbody>
+							</table>
 						</div>
 					</div>
 				{/if}
-
-				<div class="table-wrap">
-					<table class={'dt ' + (table.id + '-' + 'table')}>
-						<thead>
-							<tr>
-								{#each table.columns as col ('col-' + col.key)}
-									{@const s = sortStates[table.id]}
-									<th
-										data-sortable
-										aria-sort={s.col === col.key ? (s.dir === 1 ? 'ascending' : 'descending') : 'none'}
-										onclick={() => toggleSort(table.id, col.key)}
-										onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleSort(table.id, col.key)}
-										tabindex="0"
-										class={(table.id + '-' + col.key) + (col.key === 'evidence' ? ' notes-cell' : '')}
-									>
-										{col.label}
-										<span class="sort-icon" aria-hidden="true">
-											{#if s.col === col.key}
-												{s.dir === 1 ? '▲' : '▼'}
-											{:else}
-												⇅
-											{/if}
-										</span>
-									</th>
-								{/each}
-							</tr>
-						</thead>
-						<tbody>
-							{#each rows as entry, i ('entry-' + entry.eva + '-' + i)}
-								<tr
-									data-clickable
-									title="In Eingabe einfügen: {entry.eva}"
-									onclick={() => onInsert(entry.eva)}
-									onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onInsert(entry.eva)}
-									tabindex="0"
-								>
-									{#each table.columns as col ('entry-col-' + col.key)}
-										<td class={(table.id + '-' + col.key) + (col.key === 'evidence' ? ' notes-cell' : col.key === 'anchorFolio' ? ' part-cell' : col.key === 'rules' ? ' rules-cell' : '')}>
-											{#if col.key === 'confidenceStars'}
-												<span class={entry.confidenceStars === 5 ? 'conf5' : 'conf'}>{cellValue(entry, col.key)}</span>{#if entry.candidate}<span class="cand-badge">Kand.</span>{/if}
-											{:else if col.key === 'rules'}
-												{@const rules = getLexiconRules(entry)}
-												{#if rules.length}
-													{#each rules as rule, i ('rule-' + rule)}
-														{#if i > 0}<span class="rules-sep">, </span>{/if}<a class="rule-link" href="#rule-{rule}" onclick={(e) => e.stopPropagation()}>{rule}</a>
-													{/each}
-												{:else}
-													—
-												{/if}
-											{:else if col.key === 'eva'}
-												<span class="eva">{cellValue(entry, col.key)}</span>
-											{:else if col.key === 'morph'}
-												{@const cellValueArr = cellValue(entry, col.key).split(' + ')}
-												{#each cellValueArr as part, i ('part-' + part + '-' + i)}
-													<span class="eva part-cell">{part}</span>
-													{#if i < cellValueArr.length - 1}
-														<span class="rules-sep">+&nbsp;</span>
-													{/if}
-												{/each}
-											{:else}
-												{cellValue(entry, col.key)}
-											{/if}
-										</td>
-									{/each}
-								</tr>
-							{/each}
-							{#if rows.length === 0}
-								<tr>
-									<td colspan={table.columns.length} class="no-results">Keine Einträge gefunden.</td>
-								</tr>
-							{/if}
-						</tbody>
-					</table>
-				</div>
-			</div>
-		{/each}
+			{/each}
+		</div>
 	</div>
 </section>
 
 <style>
-  #lexicon {
-		container-type: inline-size;
+  /* ── Section layout ─────────────────────────────────── */
 
-		& .lexicon-table {
-			& thead {
-				position: sticky;
-				top: 0;
-				z-index: 1;
-			}
-
-			@container (max-width: 768px) {
-				& tr {
-					display: grid;
-					border: 1px solid var(--border);
-					padding: 1rem;
-					break-inside: avoid;
-
-					&:not(:last-child) {
-						margin-bottom: .8rem;
-					}
-
-					& td {
-						border-bottom: 0;
-					}
-				}
-
-				& thead tr {
-					margin-bottom: .8rem;
-				}
-
-				& th, & td {
-					padding: 0;
-				}
-
-				& .stems-table tr, & .stems-candidates-table tr {
-					grid-template-columns: 2fr 1fr 4rem 3rem;
-					grid-template-areas: "eva eva confidenceStars confidenceStars"
-										"de de heb heb"
-										"layer layer rules rules"
-										"anchorFolio anchorFolio anchorFolio isAnchor";
-
-					& .stems-eva, & .stems-candidates-eva { grid-area: eva; }
-					& .stems-heb, & .stems-candidates-heb { grid-area: heb; }
-					& .stems-de, & .stems-candidates-de { grid-area: de; }
-					& .stems-layer, & .stems-candidates-layer { grid-area: layer; }
-					& .stems-isAnchor, & .stems-candidates-isAnchor { grid-area: isAnchor; }
-					& .stems-anchorFolio, & .stems-candidates-anchorFolio { grid-area: anchorFolio; }
-					& .stems-rules, & .stems-candidates-rules { grid-area: rules; }
-					& .stems-confidenceStars, & .stems-candidates-confidenceStars { grid-area: confidenceStars; }
-
-					& :is(.stems-heb, .stems-isAnchor, .stems-rules, .stems-confidenceStars),
-					& :is(.stems-candidates-heb, .stems-candidates-isAnchor, .stems-candidates-rules, .stems-candidates-confidenceStars) {
-						justify-self: end;
-						text-align: end;
-					}
-				}
-
-				& .derived-table tr, & .derived-candidates-table tr {
-					grid-template-columns: 2fr 1fr 4rem 3rem;
-					grid-template-areas: "eva eva confidenceStars confidenceStars"
-										"de de heb heb"
-										"layer layer rules rules"
-										"anchorFolio anchorFolio anchorFolio isAnchor";
-					& .derived-eva, & .derived-candidates-eva { grid-area: eva; }
-					& .derived-heb, & .derived-candidates-heb { grid-area: heb; }
-					& .derived-de, & .derived-candidates-de { grid-area: de; }
-					& .derived-layer, & .derived-candidates-layer { grid-area: layer; }
-					& .derived-isAnchor, & .derived-candidates-isAnchor { grid-area: isAnchor; }
-					& .derived-anchorFolio, & .derived-candidates-anchorFolio { grid-area: anchorFolio; }
-					& .derived-rules, & .derived-candidates-rules { grid-area: rules; }
-					& .derived-confidenceStars, & .derived-candidates-confidenceStars { grid-area: confidenceStars; }
-
-					& :is(.derived-heb, .derived-isAnchor, .derived-rules, .derived-confidenceStars),
-					& :is(.derived-candidates-heb, .derived-candidates-isAnchor, .derived-candidates-rules, .derived-candidates-confidenceStars) {
-						justify-self: end;
-						text-align: end;
-					}
-				}
-			}
-
-			@media screen {
-				@container (min-width: 769px) {
-					overflow: hidden;
-
-					& th:first-child, & td:first-child {
-						position: sticky;
-						left: 0;
-					}
-
-					& thead th:first-child {
-						z-index: 1;
-						background: var(--parch-d);
-					}
-
-					& tbody tr {
-						background: var(--parch);
-						
-						& td:first-child {
-							z-index: 0;
-							background: var(--parch);
-							border-bottom: 1px solid var(--border);
-						}
-					}
-				}
-			}
-		}
+  .lex-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
-  /* ── Filter bar ─────────────────────────────────────── */
+  .lex-content {
+    container-type: inline-size;
+    min-width: 0;
+  }
 
-  .filter-bar {
+  @media (min-width: 1360px) {
+    .lex-layout {
+      display: grid;
+      grid-template-columns: 1fr 264px;
+      grid-template-areas: "content aside";
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .lex-content { grid-area: content; }
+
+    .lex-aside {
+      grid-area: aside;
+      position: sticky;
+      top: 1rem;
+      max-height: 100dvh;
+      overflow-y: auto;
+    }
+  }
+
+  /* ── Filter box ─────────────────────────────────────── */
+
+  .lex-filter-box {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    padding: .75rem .85rem;
+    background: color-mix(in srgb, var(--parch-d) 55%, transparent);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+
+  .filter-row {
     display: flex;
     align-items: center;
-    gap: .55rem;
-    margin-bottom: .6rem;
+    gap: .45rem;
   }
 
   .filter-label {
@@ -442,7 +421,7 @@
 
   .filter-input {
     flex: 1;
-    max-width: 380px;
+    min-width: 0;
     padding: .32rem .6rem;
     font-size: .85rem;
     font-family: var(--font-mono);
@@ -463,8 +442,33 @@
     }
   }
 
+  .filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: .28rem;
+  }
+
+  .filter-select {
+    width: 100%;
+    padding: .3rem .5rem;
+    font-size: .8rem;
+    font-family: var(--font-body);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--parch);
+    color: var(--ink);
+    outline: none;
+    cursor: pointer;
+
+    &:focus {
+      border-color: var(--red);
+      box-shadow: 0 0 0 2px color-mix(in srgb, var(--red) 20%, transparent);
+    }
+  }
+
   .filter-clear {
-    padding: .28rem .55rem;
+    flex-shrink: 0;
+    padding: .28rem .45rem;
     font-family: var(--font-smallcaps);
     font-size: .65rem;
     letter-spacing: .08em;
@@ -483,24 +487,12 @@
     }
   }
 
-  /* ── Chips bar ──────────────────────────────────────── */
+  /* ── Chips ──────────────────────────────────────────── */
 
-  .chips-bar {
+  .chips-section {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: .28rem .35rem;
-    margin-bottom: 1rem;
-    padding: .45rem .65rem;
-    background: color-mix(in srgb, var(--parch-d) 55%, transparent);
-    border: 1px solid var(--border);
-    border-radius: 3px;
-
-		& > div {
-			display: flex;
-			align-items: center;
-			gap: .3rem;
-		}
+    flex-direction: column;
+    gap: .3rem;
   }
 
   .chips-label {
@@ -509,19 +501,16 @@
     letter-spacing: .1em;
     text-transform: uppercase;
     color: var(--ink-f);
-    white-space: nowrap;
-    margin-right: .1rem;
   }
 
-  .chips-sep {
-    color: var(--parch-dk);
-    font-size: .9rem;
-    margin: 0 .25rem;
-    align-self: center;
+  .chips-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2rem .22rem;
   }
 
   .chip {
-    padding: .15rem .48rem;
+    padding: .13rem .42rem;
     font-family: var(--font-mono);
     font-size: .72rem;
     border: 1px solid var(--parch-dk);
@@ -550,6 +539,49 @@
     color: #fff !important;
   }
 
+  /* ── De cell: new field badges ──────────────────────── */
+
+  .badge-uncertain {
+    display: inline-block;
+    margin-left: .25em;
+    padding: 0 .25em;
+    font-size: .68rem;
+    font-weight: bold;
+    color: color-mix(in srgb, var(--red) 75%, transparent);
+    border: 1px solid color-mix(in srgb, var(--red) 35%, transparent);
+    border-radius: 2px;
+    vertical-align: middle;
+    line-height: 1.45;
+    font-family: var(--font-mono);
+  }
+
+  .de-ctx {
+    display: inline-block;
+    margin-left: .3em;
+    padding: .05em .3em;
+    font-size: .67rem;
+    font-family: var(--font-smallcaps);
+    letter-spacing: .04em;
+    color: var(--ink-f);
+    background: color-mix(in srgb, var(--parch-d) 70%, transparent);
+    border: 1px solid var(--parch-dk);
+    border-radius: 2px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  .de-related {
+    display: block;
+    margin-top: .18em;
+    font-size: .72rem;
+    color: var(--ink-f);
+    font-style: italic;
+
+    & .eva {
+      font-style: normal;
+    }
+  }
+
   /* ── Table title count ──────────────────────────────── */
 
   .filter-count {
@@ -573,8 +605,9 @@
   /* ── Table ──────────────────────────────────────────── */
 
   .table-wrap {
-    max-width: calc(100vw - 2rem);
+    max-width: 100%;
     max-height: 480px;
+    overflow: auto;
   }
 
   .dt {
@@ -588,10 +621,10 @@
   }
 
   td.notes-cell {
+    min-width: 240px;
     font-size: 0.78rem;
     color: var(--ink-f);
     font-style: italic;
-    max-width: 320px;
   }
 
   .part-cell {
@@ -644,6 +677,18 @@
     color: var(--ink-f);
   }
 
+  .eva-insert {
+    cursor: pointer;
+    border-bottom: 1px dotted transparent;
+    transition: border-color .12s, color .12s;
+
+    &:hover, &:focus-visible {
+      border-bottom-color: var(--red);
+      color: var(--red);
+      outline: none;
+    }
+  }
+
   .cand-badge {
     display: inline-block;
     margin-left: .35em;
@@ -658,6 +703,118 @@
     vertical-align: middle;
   }
 
+  /* ── Responsive table layout ────────────────────────── */
+
+  .lex-content {
+    & .lexicon-table {
+      & thead {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+      @container (max-width: 768px) {
+        & tr {
+          display: grid;
+          border: 1px solid var(--border);
+          padding: 1rem;
+          break-inside: avoid;
+
+          &:not(:last-child) {
+            margin-bottom: .8rem;
+          }
+
+          & td {
+            border-bottom: 0;
+          }
+        }
+
+        & thead tr {
+          margin-bottom: .8rem;
+        }
+
+        & th, & td {
+          padding: 0;
+        }
+
+        & .stems-table tr, & .stems-candidates-table tr {
+          grid-template-columns: 2fr 1fr 4rem 3rem;
+          grid-template-areas:
+            "eva eva confidenceStars confidenceStars"
+            "de de heb heb"
+            "layer layer rules rules"
+            "anchorFolio anchorFolio anchorFolio isAnchor";
+
+          & .stems-eva, & .stems-candidates-eva { grid-area: eva; }
+          & .stems-heb, & .stems-candidates-heb { grid-area: heb; }
+          & .stems-de, & .stems-candidates-de { grid-area: de; }
+          & .stems-layer, & .stems-candidates-layer { grid-area: layer; }
+          & .stems-isAnchor, & .stems-candidates-isAnchor { grid-area: isAnchor; }
+          & .stems-anchorFolio, & .stems-candidates-anchorFolio { grid-area: anchorFolio; }
+          & .stems-rules, & .stems-candidates-rules { grid-area: rules; }
+          & .stems-confidenceStars, & .stems-candidates-confidenceStars { grid-area: confidenceStars; }
+
+          & :is(.stems-heb, .stems-isAnchor, .stems-rules, .stems-confidenceStars),
+          & :is(.stems-candidates-heb, .stems-candidates-isAnchor, .stems-candidates-rules, .stems-candidates-confidenceStars) {
+            justify-self: end;
+            text-align: end;
+          }
+        }
+
+        & .derived-table tr, & .derived-candidates-table tr {
+          grid-template-columns: auto auto;
+          grid-template-areas:
+            "eva confidenceStars"
+            "de heb"
+            "morph rules"
+            "evidence evidence";
+
+          & .derived-eva, & .derived-candidates-eva { grid-area: eva; }
+          & .derived-heb, & .derived-candidates-heb { grid-area: heb; }
+          & .derived-de, & .derived-candidates-de { grid-area: de; }
+          & .derived-morph, & .derived-candidates-morph { grid-area: morph; }
+          & .derived-evidence, & .derived-candidates-evidence { grid-area: evidence; }
+          & .derived-rules, & .derived-candidates-rules { grid-area: rules; }
+          & .derived-confidenceStars, & .derived-candidates-confidenceStars { grid-area: confidenceStars; }
+
+          & :is(.derived-heb, .derived-rules, .derived-confidenceStars),
+          & :is(.derived-candidates-heb, .derived-candidates-rules, .derived-candidates-confidenceStars) {
+            justify-self: end;
+            text-align: end;
+          }
+        }
+      }
+
+      @media screen {
+        @container (min-width: 769px) {
+          overflow: hidden;
+
+          & th:first-child, & td:first-child {
+            position: sticky;
+            left: 0;
+          }
+
+          & thead th:first-child {
+            z-index: 1;
+            background: var(--parch-d);
+          }
+
+          & tbody tr {
+            background: var(--parch);
+
+            & td:first-child {
+              z-index: 0;
+              background: var(--parch);
+              border-bottom: 1px solid var(--border);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ── Print ──────────────────────────────────────────── */
+
   @media print {
     .table-wrap {
       max-height: none;
@@ -665,11 +822,6 @@
     }
 
     .notes-cell {
-      display: none;
-    }
-
-    .filter-bar,
-    .chips-bar {
       display: none;
     }
   }
