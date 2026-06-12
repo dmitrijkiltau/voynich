@@ -37,7 +37,7 @@
 		padding: .32rem .55rem;
 		background: rgba(255, 255, 255, .4);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		font-size: var(--text-sm);
 		cursor: pointer;
 		transition: background .15s, border-color .15s;
@@ -54,7 +54,7 @@
 			min-width: 3rem;
 			background: rgba(0, 0, 0, .04);
 			padding: .05rem .2rem;
-			border-radius: 2px;
+			border-radius: var(--radius);
 		}
 
 		& .arr { color: var(--border); font-size: var(--text-xs); }

@@ -66,7 +66,7 @@
 		color: var(--blue);
 		background: rgba(28, 61, 90, .06);
 		border: 1px solid rgba(28, 61, 90, .25);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .25rem .7rem;
 		cursor: pointer;
 		transition: all .15s;

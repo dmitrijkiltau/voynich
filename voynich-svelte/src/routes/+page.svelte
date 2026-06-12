@@ -354,7 +354,7 @@ import { MAPPING, STATS } from '$lib';
 		transition: transform .25s ease;
 
 		&::-webkit-scrollbar { width: 4px; }
-		&::-webkit-scrollbar-thumb { background: var(--parch-dk); border-radius: 2px; }
+		&::-webkit-scrollbar-thumb { background: var(--parch-dk); border-radius: var(--radius); }
 
 		@media (max-width: 768px) {
 			position: fixed;
@@ -417,7 +417,7 @@ import { MAPPING, STATS } from '$lib';
 		font-size: var(--text-xs);
 		letter-spacing: .08em;
 		color: var(--ink-l);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		border-left: 2px solid transparent;
 		cursor: pointer;
 		transition: all .15s;
@@ -450,7 +450,7 @@ import { MAPPING, STATS } from '$lib';
 			padding: .4rem .2rem;
 			background: rgba(255, 255, 255, .3);
 			border: 1px solid var(--parch-dk);
-			border-radius: 2px;
+			border-radius: var(--radius);
 
 			& .ss-n {
 				display: block;
@@ -481,7 +481,7 @@ import { MAPPING, STATS } from '$lib';
 		text-transform: uppercase;
 		color: var(--ink-f);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		background: rgba(255, 255, 255, .3);
 		cursor: pointer;
 		transition: all .15s;
@@ -567,7 +567,7 @@ import { MAPPING, STATS } from '$lib';
 			font-size: var(--text-md);
 			color: var(--ink-l);
 			border: 1px solid var(--parch-dk);
-			border-radius: 2px;
+			border-radius: var(--radius);
 			background: rgba(255, 255, 255, .5);
 			cursor: pointer;
 			transition: all .15s;

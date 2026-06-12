@@ -471,7 +471,7 @@
 		font-size: var(--text-xs);
 		letter-spacing: .08em;
 		padding: .18rem .55rem;
-		border-radius: 2px;
+		border-radius: var(--radius);
 		white-space: nowrap;
 	}
 
@@ -508,7 +508,7 @@
 		color: var(--ink);
 		background: rgba(255,255,255,.55);
 		border: 1px solid var(--border);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .28rem .5rem;
 		outline: none;
 
@@ -526,7 +526,7 @@
 		color: var(--parch);
 		background: var(--red);
 		border: 1px solid var(--red);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .32rem 1rem;
 		cursor: pointer;
 		transition: all .15s;
@@ -552,7 +552,7 @@
 	.protocol-section {
 		margin-bottom: 2rem;
 		border: 1px solid var(--border);
-		border-radius: 3px;
+		border-radius: var(--radius-md);
 		overflow: hidden;
 	}
 
@@ -581,7 +581,7 @@
 		color: var(--ink-f);
 		background: rgba(255,255,255,.4);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .22rem .7rem;
 		cursor: pointer;
 		transition: all .15s;
@@ -749,7 +749,7 @@
 		padding: .4rem .3rem;
 		background: rgba(255,255,255,.3);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 
 		& .sc-n {
 			display: block;
@@ -779,7 +779,7 @@
 		max-height: 560px;
 		overflow-y: auto;
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 	}
 
 	.gib-table {

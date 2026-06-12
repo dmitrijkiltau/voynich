@@ -6,7 +6,7 @@
 
 ::-webkit-scrollbar         { width: 4px; height: 4px; }
 ::-webkit-scrollbar-track   { background: transparent; }
-::-webkit-scrollbar-thumb   { background: var(--parch-dk); border-radius: 2px; }
+::-webkit-scrollbar-thumb   { background: var(--parch-dk); border-radius: var(--radius); }
 ::-webkit-scrollbar-thumb:hover { background: var(--border); }
 
 /* ── RESET ───────────────────────────────────────────── */
@@ -144,7 +144,7 @@ hr.rule {
 .box {
   background: var(--parch-d);
   border: 1px solid var(--border);
-  border-radius: 2px;
+  border-radius: var(--radius);
   padding: 1.1rem 1.5rem;
   font-size: .95rem;
 
@@ -209,7 +209,7 @@ table.dt {
   font-size: .84rem;
   background: rgba(0, 0, 0, .04);
   padding: .05rem .25rem;
-  border-radius: 2px;
+  border-radius: var(--radius);
   word-break: break-word;
 }
 
@@ -234,7 +234,7 @@ table.dt {
   background: var(--green);
   color: white;
   padding: .1rem .35rem;
-  border-radius: 1px;
+  border-radius: var(--radius-sm);
   vertical-align: middle;
   margin-left: .3rem;
 }

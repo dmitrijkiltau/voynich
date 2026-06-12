@@ -73,7 +73,7 @@
 	.problem-card {
 		border: 1px solid var(--parch-dk);
 		border-left: 3px solid var(--red);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .9rem 1.1rem;
 		background: rgba(255, 255, 255, .25);
 
@@ -96,7 +96,7 @@
 		color: var(--ink-f);
 		background: var(--parch-dk);
 		padding: .1rem .35rem;
-		border-radius: 2px;
+		border-radius: var(--radius);
 	}
 
 	.problem-title {
@@ -111,7 +111,7 @@
 		font-size: var(--text-2xs);
 		letter-spacing: .07em;
 		padding: .15rem .45rem;
-		border-radius: 2px;
+		border-radius: var(--radius);
 	}
 
 	.severity-hoch            { background: color-mix(in srgb, var(--red) 12%, transparent); color: var(--red); }

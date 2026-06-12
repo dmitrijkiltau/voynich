@@ -520,7 +520,7 @@
 
 	.fp {
 		border: 1px solid var(--border);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		background: linear-gradient(180deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 100%);
 		overflow: hidden;
 		margin-bottom: 2.8rem;
@@ -612,7 +612,7 @@
 		height: 8px;
 		background: var(--parch-d);
 		border: 1px solid var(--parch-dk);
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		overflow: visible;
 		display: flex;
 
@@ -692,7 +692,7 @@
 		font-family: var(--font-mono);
 		font-size: var(--text-2xs);
 		padding: 1px 6px;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
 		background: transparent;
 		color: var(--ink-f);
@@ -812,7 +812,7 @@
 		height: 3px;
 		background: var(--parch-d);
 		border: 1px solid var(--parch-dk);
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		display: flex;
 		overflow: hidden;
 
@@ -851,7 +851,7 @@
 		font-family: var(--font-mono);
 		font-size: var(--text-2xs);
 		line-height: 1.6;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		cursor: pointer;
 		transition: transform .1s, box-shadow .1s, opacity .15s;
 		white-space: nowrap;
@@ -936,7 +936,7 @@
 	.fpl-swatch {
 		width: 12px;
 		height: 8px;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		flex-shrink: 0;
 
 		&.done      { background: color-mix(in srgb, var(--gold) 50%, var(--parch)); border: 1px solid color-mix(in srgb, var(--gold) 80%, transparent); }
@@ -984,7 +984,7 @@
 		font-family: var(--font-mono);
 		font-size: var(--text-2xs);
 		padding: 1px 5px;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		flex-shrink: 0;
 
 		&.fp-detail-badge--done      { background: color-mix(in srgb, var(--gold) 40%, var(--parch)); border: 1px solid color-mix(in srgb, var(--gold) 70%, transparent); color: var(--ink); font-weight: 600; }
@@ -1005,7 +1005,7 @@
 		font-family: var(--font-mono);
 		font-size: var(--text-2xs);
 		padding: 1px 7px;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		text-decoration: none;
 		transition: background .1s, color .1s;
 		border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
@@ -1036,7 +1036,7 @@
 		color: var(--ink-f);
 		line-height: 1;
 		padding: 0 .2rem;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		cursor: pointer;
 		background: none;
 		border: none;
@@ -1145,7 +1145,7 @@
 		padding: 0 4px;
 		line-height: 1.6;
 		border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		color: var(--gold);
 		background: color-mix(in srgb, var(--gold) 7%, var(--parch));
 		font-weight: 600;

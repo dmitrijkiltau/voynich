@@ -98,7 +98,7 @@
 		flex: 1;
 		min-width: 180px;
 		padding: .9rem 1.2rem;
-		border-radius: 2px;
+		border-radius: var(--radius);
 		border: 1px solid var(--parch-dk);
 		background: rgba(255, 255, 255, .3);
 
@@ -153,14 +153,14 @@
 	.stat-bar-wrap {
 		flex: 1;
 		background: var(--parch-dk);
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		height: 8px;
 		overflow: hidden;
 	}
 
 	.stat-bar {
 		height: 100%;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		transition: width .4s ease;
 	}
 
@@ -181,7 +181,7 @@
 		font-family: var(--font-mono);
 		font-size: var(--text-xs);
 		padding: .1rem .5rem;
-		border-radius: 2px;
+		border-radius: var(--radius);
 		margin-left: .5rem;
 		vertical-align: middle;
 

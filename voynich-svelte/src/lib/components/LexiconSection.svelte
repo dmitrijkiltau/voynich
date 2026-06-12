@@ -401,7 +401,7 @@
     padding: .75rem .85rem;
     background: color-mix(in srgb, var(--parch-d) 55%, transparent);
     border: 1px solid var(--border);
-    border-radius: 4px;
+    border-radius: var(--radius-lg);
   }
 
   .filter-row {
@@ -426,7 +426,7 @@
     font-size: var(--text-sm);
     font-family: var(--font-mono);
     border: 1px solid var(--border);
-    border-radius: 3px;
+    border-radius: var(--radius-md);
     background: var(--parch);
     color: var(--ink);
     outline: none;
@@ -454,7 +454,7 @@
     font-size: var(--text-sm);
     font-family: var(--font-body);
     border: 1px solid var(--border);
-    border-radius: 3px;
+    border-radius: var(--radius-md);
     background: var(--parch);
     color: var(--ink);
     outline: none;
@@ -475,7 +475,7 @@
     text-transform: uppercase;
     color: var(--ink-f);
     border: 1px solid var(--parch-dk);
-    border-radius: 3px;
+    border-radius: var(--radius-md);
     background: transparent;
     cursor: pointer;
     white-space: nowrap;
@@ -514,7 +514,7 @@
     font-family: var(--font-mono);
     font-size: var(--text-xs);
     border: 1px solid var(--parch-dk);
-    border-radius: 3px;
+    border-radius: var(--radius-md);
     background: rgba(255, 255, 255, .5);
     color: var(--ink-l);
     cursor: pointer;
@@ -549,7 +549,7 @@
     font-weight: bold;
     color: color-mix(in srgb, var(--red) 75%, transparent);
     border: 1px solid color-mix(in srgb, var(--red) 35%, transparent);
-    border-radius: 2px;
+    border-radius: var(--radius);
     vertical-align: middle;
     line-height: 1.45;
     font-family: var(--font-mono);
@@ -565,7 +565,7 @@
     color: var(--ink-f);
     background: color-mix(in srgb, var(--parch-d) 70%, transparent);
     border: 1px solid var(--parch-dk);
-    border-radius: 2px;
+    border-radius: var(--radius);
     vertical-align: middle;
     white-space: nowrap;
   }
@@ -699,7 +699,7 @@
     text-transform: uppercase;
     color: var(--ink-f);
     border: 1px solid var(--parch-dk);
-    border-radius: 3px;
+    border-radius: var(--radius-md);
     vertical-align: middle;
   }
 
