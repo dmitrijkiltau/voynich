@@ -166,7 +166,7 @@ import { MAPPING, STATS } from '$lib';
 	<!-- Sidebar -->
 	<aside class="sidebar" class:open={menuOpen} aria-label="Seitennavigation">
 		<div class="sidebar-brand">
-			<div class="brand-kicker">Voynich-Manuskript</div>
+			<div class="lbl-2xs brand-kicker">Voynich-Manuskript</div>
 			<div class="brand-name">EVA → Hebräisch</div>
 			<div class="brand-sub">Formales Mapping-Dokument</div>
 		</div>
@@ -186,15 +186,15 @@ import { MAPPING, STATS } from '$lib';
 		<div class="sidebar-stats">
 			<div class="sidebar-stat">
 				<span class="ss-n">{STATS.lexicon}</span>
-				<span class="ss-l">Lexikon</span>
+				<span class="lbl-2xs ss-l">Lexikon</span>
 			</div>
 			<div class="sidebar-stat">
 				<span class="ss-n">{STATS.rules}</span>
-				<span class="ss-l">Regeln</span>
+				<span class="lbl-2xs ss-l">Regeln</span>
 			</div>
 			<div class="sidebar-stat sidebar-stat--full">
 				<span class="ss-n">{STATS.backtest}</span>
-				<span class="ss-l">Rückwärtstest</span>
+				<span class="lbl-2xs ss-l">Rückwärtstest</span>
 			</div>
 		</div>
 
@@ -211,7 +211,7 @@ import { MAPPING, STATS } from '$lib';
 	<!-- Main content -->
 	<main class="main-content">
 		<header class="page-header">
-			<div class="kicker">Formales Mapping-Dokument · Version {STATS.version} · {STATS.date}</div>
+			<div class="lbl-xs kicker">Formales Mapping-Dokument · Version {STATS.version} · {STATS.date}</div>
 			<h1>Voynich-Manuskript</h1>
 			<div class="subtitle">EVA → Hebräisch-Aramäisch · Zeichenmapping, Lexikon und Grammatikregeln</div>
 			<div class="meta-line">
@@ -376,11 +376,7 @@ import { MAPPING, STATS } from '$lib';
 		text-align: center;
 
 		& .brand-kicker {
-			font-family: var(--font-smallcaps);
-			font-size: var(--text-2xs);
 			letter-spacing: .2em;
-			text-transform: uppercase;
-			color: var(--ink-f);
 			margin-bottom: .4rem;
 		}
 
@@ -462,11 +458,7 @@ import { MAPPING, STATS } from '$lib';
 
 			& .ss-l {
 				display: block;
-				font-family: var(--font-smallcaps);
-				font-size: var(--text-2xs);
 				letter-spacing: .08em;
-				text-transform: uppercase;
-				color: var(--ink-f);
 			}
 		}
 	}
@@ -628,11 +620,7 @@ import { MAPPING, STATS } from '$lib';
 		}
 
 		& .kicker {
-			font-family: var(--font-smallcaps);
-			font-size: var(--text-xs);
 			letter-spacing: .22em;
-			text-transform: uppercase;
-			color: var(--ink-f);
 			margin-bottom: .9rem;
 		}
 

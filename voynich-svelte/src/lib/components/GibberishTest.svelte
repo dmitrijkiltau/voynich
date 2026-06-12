@@ -232,8 +232,8 @@
 {#if protocolDone && protocolStats}
 	<div class="protocol-section">
 		<div class="protocol-head">
-			<span class="protocol-title no-print">10-Lauf-Protokoll · {wordCount} Wörter/Lauf · {protocolDate}</span>
-			<span class="protocol-title print-only">GibberishTest · 10-Lauf-Protokoll · v{STATS.version} · {wordCount} Wörter/Lauf · {protocolDate}</span>
+			<span class="lbl-xs protocol-title no-print">10-Lauf-Protokoll · {wordCount} Wörter/Lauf · {protocolDate}</span>
+			<span class="lbl-xs protocol-title print-only">GibberishTest · 10-Lauf-Protokoll · v{STATS.version} · {wordCount} Wörter/Lauf · {protocolDate}</span>
 		</div>
 
 		<div class="protocol-body">
@@ -310,7 +310,7 @@
 
 <!-- ── Controls ──────────────────────────────────────────────────────────── -->
 <div class="gib-controls">
-	<label class="ctrl-label" for="wc-input">Wörter/Lauf</label>
+	<label class="lbl-2xs ctrl-label" for="wc-input">Wörter/Lauf</label>
 	<input
 		id="wc-input"
 		class="wc-input"
@@ -353,27 +353,27 @@
 			<div class="stat-cells">
 				<div class="stat-cell">
 					<span class="sc-n">{stats.passed}</span>
-					<span class="sc-l">★★★ R40-pass</span>
+					<span class="lbl-2xs sc-l">★★★ R40-pass</span>
 				</div>
 				<div class="stat-cell">
 					<span class="sc-n">{stats.lexhits}</span>
-					<span class="sc-l">Lex.-Zufallstreffer</span>
+					<span class="lbl-2xs sc-l">Lex.-Zufallstreffer</span>
 				</div>
 				<div class="stat-cell">
 					<span class="sc-n">{stats.capped}</span>
-					<span class="sc-l">★★ R40-Deckel</span>
+					<span class="lbl-2xs sc-l">★★ R40-Deckel</span>
 				</div>
 				<div class="stat-cell">
 					<span class="sc-n">{stats.invalid}</span>
-					<span class="sc-l">Ungültig (R41)</span>
+					<span class="lbl-2xs sc-l">Ungültig (R41)</span>
 				</div>
 				<div class="stat-cell">
 					<span class="sc-n sc-warn">{stats.d1count}</span>
-					<span class="sc-l">⚠ D1 Doppelkons.</span>
+					<span class="lbl-2xs sc-l">⚠ D1 Doppelkons.</span>
 				</div>
 				<div class="stat-cell">
 					<span class="sc-n sc-warn">{stats.d2count}</span>
-					<span class="sc-l">⚠ D2 Laryngal</span>
+					<span class="lbl-2xs sc-l">⚠ D2 Laryngal</span>
 				</div>
 			</div>
 		</div>
@@ -494,11 +494,7 @@
 	}
 
 	.ctrl-label {
-		font-family: var(--font-smallcaps);
-		font-size: var(--text-2xs);
 		letter-spacing: .15em;
-		text-transform: uppercase;
-		color: var(--ink-f);
 	}
 
 	.wc-input {
@@ -566,10 +562,7 @@
 	}
 
 	.protocol-title {
-		font-family: var(--font-smallcaps);
-		font-size: var(--text-xs);
 		letter-spacing: .12em;
-		text-transform: uppercase;
 		color: var(--ink-l);
 	}
 
@@ -763,11 +756,7 @@
 
 		& .sc-l {
 			display: block;
-			font-family: var(--font-smallcaps);
-			font-size: var(--text-2xs);
 			letter-spacing: .07em;
-			text-transform: uppercase;
-			color: var(--ink-f);
 			margin-top: .1rem;
 		}
 	}

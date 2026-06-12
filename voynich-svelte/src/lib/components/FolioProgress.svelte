@@ -367,25 +367,25 @@
                 <div class="fp-detail-fields" class:fp-detail-fields--narrow={ico}>
                   {#if m?.registerType}
                     <div class="fp-detail-field">
-                      <span class="fp-detail-key">Register-Typ</span>
+                      <span class="lbl-2xs fp-detail-key">Register-Typ</span>
                       <span class="fp-detail-val">{m.registerType}</span>
                     </div>
                   {/if}
                   {#if m?.languageClass}
                     <div class="fp-detail-field">
-                      <span class="fp-detail-key">Sprach-Klasse</span>
+                      <span class="lbl-2xs fp-detail-key">Sprach-Klasse</span>
                       <span class="fp-detail-val">{m.languageClass}</span>
                     </div>
                   {/if}
                   {#if m?.writerHand !== undefined}
                     <div class="fp-detail-field">
-                      <span class="fp-detail-key">Schreiber-Hand</span>
+                      <span class="lbl-2xs fp-detail-key">Schreiber-Hand</span>
                       <span class="fp-detail-val">{m.writerHand}</span>
                     </div>
                   {/if}
                   {#if _transcribers.length}
                     <div class="fp-detail-field">
-                      <span class="fp-detail-key">Transkriptoren</span>
+                      <span class="lbl-2xs fp-detail-key">Transkriptoren</span>
                       <span class="fp-detail-val">
                         {#each _transcribers as t (t.siglen.join('-'))}
                           <span class="fp-detail-trow">
@@ -398,7 +398,7 @@
                   {/if}
                   {#if _cds.length}
                     <div class="fp-detail-field">
-                      <span class="fp-detail-key">Konsens-Nenner</span>
+                      <span class="lbl-2xs fp-detail-key">Konsens-Nenner</span>
                       <span class="fp-detail-val">
                         {#each _cds as k (k)}
                           <span class="fp-detail-krow">· {k}</span>
@@ -1069,11 +1069,6 @@
 	}
 
 	.fp-detail-key {
-		font-family: var(--font-smallcaps);
-		font-size: var(--text-2xs);
-		letter-spacing: .1em;
-		text-transform: uppercase;
-		color: var(--ink-f);
 		flex: 0 0 7.5rem;
 		padding-top: .08rem;
 		white-space: nowrap;

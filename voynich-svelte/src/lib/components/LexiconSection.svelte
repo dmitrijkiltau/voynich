@@ -201,7 +201,7 @@
 		<aside class="lex-aside hidden-print">
 			<div class="lex-filter-box">
 				<div class="filter-row">
-					<label class="filter-label" for="lex-search">Suche</label>
+					<label class="lbl-xs filter-label" for="lex-search">Suche</label>
 					<input
 						id="lex-search"
 						type="search"
@@ -215,7 +215,7 @@
 				</div>
 
 				<div class="chips-section">
-					<span class="chips-label">Präfix</span>
+					<span class="lbl-2xs">Präfix</span>
 					<div class="chips-row">
 						{#each GRAMMAR_PREFIXES as pfx ('pfx-' + pfx.eva)}
 							<button type="button" class="chip" class:chip-active={filter === pfx.eva} title={pfx.fn} onclick={() => toggleChip(pfx.eva)}>{pfx.eva}</button>
@@ -224,7 +224,7 @@
 				</div>
 
 				<div class="chips-section">
-					<span class="chips-label">Suffix</span>
+					<span class="lbl-2xs">Suffix</span>
 					<div class="chips-row">
 						{#each GRAMMAR_SUFFIXES as sfx ('sfx-' + sfx.eva)}
 							<button type="button" class="chip" class:chip-active={filter === sfx.eva} title={sfx.fn} onclick={() => toggleChip(sfx.eva)}>{sfx.eva}</button>
@@ -233,7 +233,7 @@
 				</div>
 
 				<div class="filter-field">
-					<label class="chips-label" for="lex-layer">Schicht</label>
+					<label class="lbl-2xs" for="lex-layer">Schicht</label>
 					<select id="lex-layer" class="filter-select" bind:value={filterLayer}>
 						<option value="">Alle</option>
 						{#each LAYERS as layer (layer)}
@@ -243,12 +243,12 @@
 				</div>
 
 				<div class="filter-field">
-					<label class="chips-label" for="lex-rules">Regeln</label>
+					<label class="lbl-2xs" for="lex-rules">Regeln</label>
 					<input id="lex-rules" type="search" class="filter-input" bind:value={filterRules} placeholder="z.B. R40" />
 				</div>
 
 				<div class="chips-section">
-					<span class="chips-label">Sterne (min)</span>
+					<span class="lbl-2xs">Sterne (min)</span>
 					<div class="chips-row">
 						{#each [4, 5] as s (s)}
 							<button type="button" class="chip" class:chip-active={filterStarsMin === s} onclick={() => filterStarsMin = filterStarsMin === s ? 0 : s}>{'★'.repeat(s)}{s === 4 ? '+' : ''}</button>
@@ -411,11 +411,6 @@
   }
 
   .filter-label {
-    font-family: var(--font-smallcaps);
-    font-size: var(--text-xs);
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--ink-f);
     white-space: nowrap;
   }
 
@@ -493,14 +488,6 @@
     display: flex;
     flex-direction: column;
     gap: .3rem;
-  }
-
-  .chips-label {
-    font-family: var(--font-smallcaps);
-    font-size: var(--text-2xs);
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--ink-f);
   }
 
   .chips-row {
