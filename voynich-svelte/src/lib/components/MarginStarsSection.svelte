@@ -34,17 +34,17 @@
 	<div class="schema">
 		<div class="schema-step schema-step--red">
 			<span class="star-icon star-icon--red">★</span>
-			<span class="lbl"><strong>Rot</strong> — Falleröffnung<br>Anamnese</span>
+			<span class="lbl-2xs lbl"><strong>Rot</strong> — Falleröffnung<br>Anamnese</span>
 		</div>
 		<span class="schema-arrow">→</span>
 		<div class="schema-step">
 			<span class="star-icon">☆</span>
-			<span class="lbl"><strong>Leer</strong> — Verlauf<br>Krise</span>
+			<span class="lbl-2xs lbl"><strong>Leer</strong> — Verlauf<br>Krise</span>
 		</div>
 		<span class="schema-arrow">→</span>
 		<div class="schema-step schema-step--gold">
 			<span class="star-icon star-icon--gold">✦</span>
-			<span class="lbl"><strong>Punkt</strong> — Abschluss<br>Prognose</span>
+			<span class="lbl-2xs lbl"><strong>Punkt</strong> — Abschluss<br>Prognose</span>
 		</div>
 	</div>
 

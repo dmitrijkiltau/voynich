@@ -3,6 +3,6 @@
 </script>
 
 <div class="box {variant} {extraClass}">
-	{#if title}<div class="box-title">{title}</div>{/if}
+	{#if title}<div class="lbl-xs box-title">{title}</div>{/if}
 	{@render children?.()}
 </div>

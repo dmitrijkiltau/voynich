@@ -239,7 +239,7 @@
 				<!-- Col 1: Input -->
 				<div class="input-col">
 					<header class="col-header">
-						<span class="panel-label" id="lbl-input">EVA-Eingabe</span>
+						<span class="lbl-2xs panel-label" id="lbl-input">EVA-Eingabe</span>
 						{#if totalWords > 0}
 							<span class="coverage-badge" aria-label="{totalKnown} von {totalWords} Tokens erkannt">
 								{totalKnown}/{totalWords}
@@ -268,7 +268,7 @@
 				<!-- Col 2: Folio loader -->
 				<div class="folio-col" aria-label="Folio direkt laden">
 					<header class="col-header">
-						<span class="panel-label" id="lbl-folio">Folio laden</span>
+						<span class="lbl-2xs panel-label" id="lbl-folio">Folio laden</span>
 					</header>
 
 					<div class="folio-keyboard" role="navigation" aria-labelledby="lbl-folio">
@@ -303,14 +303,14 @@
 
 					<!-- Accordion control bar -->
 					<div class="para-acc-bar">
-						<span class="panel-label">
+						<span class="lbl-2xs panel-label">
 							Analyse
 							{#if paraResults.length > 1}
 								<span class="para-acc-count">· {paraResults.length} Paragraphen</span>
 							{/if}
 						</span>
 						<div class="para-acc-controls">
-							<label class="hide-unknown-toggle">
+							<label class="lbl-2xs hide-unknown-toggle">
 								<input type="checkbox" bind:checked={hideUnknown} />
 								<span>Unbekannte ausblenden</span>
 							</label>
@@ -341,7 +341,7 @@
 
 									<!-- Hebrew -->
 									<div class="para-subsec">
-										<span class="panel-label" id="lbl-heb-{i}">Hebräisch (RTL)</span>
+										<span class="lbl-2xs panel-label" id="lbl-heb-{i}">Hebräisch (RTL)</span>
 										<div
 											class="result-heb"
 											aria-labelledby="lbl-heb-{i}"
@@ -355,7 +355,7 @@
 
 									<!-- German -->
 									<div class="para-subsec">
-										<span class="panel-label" id="lbl-de-{i}">Bedeutung (Deutsch)</span>
+										<span class="lbl-2xs panel-label" id="lbl-de-{i}">Bedeutung (Deutsch)</span>
 										<div
 											class="result-de"
 											aria-labelledby="lbl-de-{i}"
@@ -367,7 +367,7 @@
 
 									<!-- Token analysis -->
 									<div class="para-subsec">
-										<span class="panel-label">Token-Analyse</span>
+										<span class="lbl-2xs panel-label">Token-Analyse</span>
 										<div class="token-row" role="list" aria-label="Erkannte Tokens {p.id}">
 											{#each p.results as r, j (r.word + '-' + j)}
 												<span
@@ -387,7 +387,7 @@
 
 									<!-- Word-for-word table -->
 									<div class="para-subsec">
-										<span class="panel-label">Wort-für-Wort-Analyse</span>
+										<span class="lbl-2xs panel-label">Wort-für-Wort-Analyse</span>
 										<div class="gloss-scroll">
 											<table class="gloss-table" aria-label="Wort-für-Wort-Analyse {p.id}">
 												<thead>
@@ -406,7 +406,7 @@
 															<td class="g-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '—'}</td>
 															<td class="g-de">{r.lookup ? r.lookup.de : 'unbekannt'}</td>
 															<td class="g-st" class:g5={r.lookup && r.lookup.confidenceStars === 5}>{r.lookup ? r.lookup.stars : '—'}</td>
-															<td class="g-kind">{r.lookup ? (r.lookup.kind ?? getLexiconKind(r.lookup)) : '—'}</td>
+															<td class="lbl-2xs g-kind">{r.lookup ? (r.lookup.kind ?? getLexiconKind(r.lookup)) : '—'}</td>
 														</tr>
 													{/each}
 												</tbody>
@@ -477,11 +477,7 @@
 	/* ── Panel labels ─────────────────────────────────── */
 
 	.panel-label {
-		font-family: var(--font-smallcaps);
-		font-size: var(--text-2xs);
 		letter-spacing: .16em;
-		text-transform: uppercase;
-		color: var(--ink-f);
 	}
 
 	/* ── Coverage badge ───────────────────────────────── */
@@ -925,11 +921,7 @@
 			&.g5 { color: var(--red-dk); }
 		}
 		& .g-kind {
-			font-family: var(--font-smallcaps);
-			font-size: var(--text-2xs);
 			letter-spacing: .08em;
-			text-transform: uppercase;
-			color: var(--ink-f);
 			white-space: nowrap;
 		}
 	}
@@ -941,11 +933,6 @@
 		align-items: center;
 		gap: .3rem;
 		cursor: pointer;
-		font-family: var(--font-smallcaps);
-		font-size: var(--text-2xs);
-		letter-spacing: .1em;
-		text-transform: uppercase;
-		color: var(--ink-f);
 		user-select: none;
 
 		& input[type="checkbox"] {

@@ -154,11 +154,7 @@ hr.rule {
   &.green { border-left: 3px solid var(--green); }
 
   & .box-title {
-    font-family: var(--font-smallcaps);
-    font-size: var(--text-xs);
     letter-spacing: .15em;
-    text-transform: uppercase;
-    color: var(--ink-f);
     margin-bottom: .5rem;
   }
 }
@@ -356,11 +352,7 @@ table.dt {
 }
 
 .schema-step .lbl {
-  font-size: var(--text-2xs);
-  font-family: var(--font-smallcaps);
   letter-spacing: .09em;
-  text-transform: uppercase;
-  color: var(--ink-f);
   line-height: 1.4;
 }
 
