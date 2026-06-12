@@ -69,7 +69,7 @@
 		border-radius: var(--radius);
 		padding: .25rem .7rem;
 		cursor: pointer;
-		transition: all .15s;
+		transition: all var(--t-norm);
 
 		&:hover {
 			background: rgba(28, 61, 90, .12);

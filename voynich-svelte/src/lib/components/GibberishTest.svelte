@@ -529,7 +529,7 @@
 		border-radius: var(--radius);
 		padding: .32rem 1rem;
 		cursor: pointer;
-		transition: all .15s;
+		transition: all var(--t-norm);
 
 		&:hover, &:focus-visible {
 			background: color-mix(in srgb, var(--red) 85%, black);
@@ -584,7 +584,7 @@
 		border-radius: var(--radius);
 		padding: .22rem .7rem;
 		cursor: pointer;
-		transition: all .15s;
+		transition: all var(--t-norm);
 
 		&:hover { background: rgba(255,255,255,.8); color: var(--ink); }
 	}

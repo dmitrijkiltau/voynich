@@ -45,9 +45,10 @@
   --z-progress: 1000;
 
   /* motion */
-  --t-fast: .12s;
-  --t-norm: .15s;
-  --t-slow: .25s;
+  --t-fast:   .12s;
+  --t-norm:   .15s;
+  --t-slow:   .25s;
+  --t-slower: .4s;
 
   /* shape */
   --radius-sm: 1px;

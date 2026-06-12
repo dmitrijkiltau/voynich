@@ -58,7 +58,7 @@ a {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-color: rgba(122, 28, 28, .35);
-  transition: text-decoration-color .15s, color .15s;
+  transition: text-decoration-color var(--t-norm), color var(--t-norm);
 
   &:hover, &:focus-visible {
     color: var(--ink);

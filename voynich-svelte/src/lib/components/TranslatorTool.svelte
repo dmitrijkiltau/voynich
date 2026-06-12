@@ -511,7 +511,7 @@
 		min-height: 100px;
 		line-height: 1.7;
 		outline: none;
-		transition: border-color .18s, background .18s;
+		transition: border-color var(--t-norm), background var(--t-norm);
 
 		&:focus {
 			border-color: var(--gold);
@@ -544,7 +544,7 @@
 		border-radius: var(--radius);
 		padding: .18rem .55rem;
 		cursor: pointer;
-		transition: all .13s;
+		transition: all var(--t-fast);
 
 		&:hover, &:focus-visible {
 			background: rgba(255, 255, 255, .88);
@@ -578,7 +578,7 @@
 		padding: .2rem .35rem;
 		cursor: pointer;
 		opacity: 0;
-		transition: opacity .15s, background .13s, border-color .13s;
+		transition: opacity var(--t-norm), background var(--t-fast), border-color var(--t-fast);
 
 		&:hover, &:focus-visible {
 			background: rgba(255, 255, 255, .97);
@@ -664,13 +664,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		transition: background .13s;
+		transition: background var(--t-fast);
 
 		&::after {
 			content: '▶';
 			font-size: var(--text-2xs);
 			opacity: .4;
-			transition: transform .13s;
+			transition: transform var(--t-fast);
 			flex-shrink: 0;
 		}
 
@@ -700,7 +700,7 @@
 		border-radius: var(--radius);
 		padding: .15rem .4rem;
 		cursor: pointer;
-		transition: all .12s;
+		transition: all var(--t-fast);
 
 		&:hover, &:focus-visible {
 			background: rgba(255, 255, 255, .9);
@@ -776,7 +776,7 @@
 		border: none;
 		cursor: pointer;
 		text-align: left;
-		transition: background .12s;
+		transition: background var(--t-fast);
 
 		&:hover { background: rgba(255, 255, 255, .28); }
 		&.para-hd--open { background: rgba(255, 255, 255, .18); }
@@ -858,7 +858,7 @@
 		border-radius: var(--radius);
 		border: 1px solid transparent;
 		cursor: default;
-		transition: transform .1s;
+		transition: transform var(--t-fast);
 
 		&:hover { transform: translateY(-1px); }
 

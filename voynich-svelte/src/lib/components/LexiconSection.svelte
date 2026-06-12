@@ -430,7 +430,7 @@
     background: var(--parch);
     color: var(--ink);
     outline: none;
-    transition: border-color .15s, box-shadow .15s;
+    transition: border-color var(--t-norm), box-shadow var(--t-norm);
 
     &:focus {
       border-color: var(--red);
@@ -479,7 +479,7 @@
     background: transparent;
     cursor: pointer;
     white-space: nowrap;
-    transition: all .12s;
+    transition: all var(--t-fast);
 
     &:hover {
       color: var(--red);
@@ -518,7 +518,7 @@
     background: rgba(255, 255, 255, .5);
     color: var(--ink-l);
     cursor: pointer;
-    transition: all .12s;
+    transition: all var(--t-fast);
     white-space: nowrap;
 
     &:hover {
@@ -680,7 +680,7 @@
   .eva-insert {
     cursor: pointer;
     border-bottom: 1px dotted transparent;
-    transition: border-color .12s, color .12s;
+    transition: border-color var(--t-fast), color var(--t-fast);
 
     &:hover, &:focus-visible {
       border-bottom-color: var(--red);

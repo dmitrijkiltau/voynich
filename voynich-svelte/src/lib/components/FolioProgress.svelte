@@ -537,7 +537,7 @@
 		border-bottom: 1px solid var(--border);
 		background: color-mix(in srgb, var(--parch-d) 60%, transparent);
 		cursor: pointer;
-		transition: background .15s;
+		transition: background var(--t-norm);
 
 		&:hover { background: color-mix(in srgb, var(--parch-d) 85%, transparent); }
 	}
@@ -558,7 +558,7 @@
 	.fp-chevron {
 		font-size: var(--text-2xs);
 		color: var(--ink-f);
-		transition: transform .2s ease;
+		transition: transform var(--t-slow) ease;
 		line-height: 1;
 	}
 
@@ -619,14 +619,14 @@
 		& .fpgb-done {
 			height: 100%;
 			background: linear-gradient(90deg, var(--gold), color-mix(in srgb, var(--gold) 85%, #fff));
-			transition: width .4s ease;
+			transition: width var(--t-slower) ease;
 			flex-shrink: 0;
 		}
 
 		& .fpgb-confirmed {
 			height: 100%;
 			background: linear-gradient(90deg, color-mix(in srgb, var(--gold) 75%, var(--red)), color-mix(in srgb, var(--gold) 60%, var(--parch-d)));
-			transition: width .4s ease;
+			transition: width var(--t-slower) ease;
 			flex-shrink: 0;
 		}
 
@@ -634,7 +634,7 @@
 			height: 100%;
 			background: color-mix(in srgb, var(--gold) 38%, var(--parch-d));
 			border-right: 1px dashed var(--border);
-			transition: width .4s ease;
+			transition: width var(--t-slower) ease;
 			flex-shrink: 0;
 		}
 
@@ -670,7 +670,7 @@
 	.fp-body {
 		display: grid;
 		grid-template-rows: 0fr;
-		transition: grid-template-rows .28s ease;
+		transition: grid-template-rows var(--t-slow) ease;
 
 		& .fp-body-inner { overflow: hidden; }
 
@@ -697,7 +697,7 @@
 		background: transparent;
 		color: var(--ink-f);
 		cursor: pointer;
-		transition: background .1s, color .1s, border-color .1s;
+		transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast);
 		line-height: 1.6;
 
 		&:hover { background: color-mix(in srgb, var(--parch-d) 80%, transparent); color: var(--ink-l); }
@@ -749,7 +749,7 @@
 		padding: .38rem .7rem .38rem .55rem;
 		border-bottom: 1px solid color-mix(in srgb, var(--parch-dk) 60%, transparent);
 		border-left: 2px solid transparent;
-		transition: background .12s;
+		transition: background var(--t-fast);
 
 		&:last-child { border-bottom: none; }
 
@@ -853,7 +853,7 @@
 		line-height: 1.6;
 		border-radius: var(--radius-sm);
 		cursor: pointer;
-		transition: transform .1s, box-shadow .1s, opacity .15s;
+		transition: transform var(--t-fast), box-shadow var(--t-fast), opacity var(--t-norm);
 		white-space: nowrap;
 		border: 1px solid transparent;
 
@@ -1007,7 +1007,7 @@
 		padding: 1px 7px;
 		border-radius: var(--radius-sm);
 		text-decoration: none;
-		transition: background .1s, color .1s;
+		transition: background var(--t-fast), color var(--t-fast);
 		border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
 		background: color-mix(in srgb, var(--gold) 14%, var(--parch));
 		color: var(--ink-l);
@@ -1040,7 +1040,7 @@
 		cursor: pointer;
 		background: none;
 		border: none;
-		transition: color .1s;
+		transition: color var(--t-fast);
 		flex-shrink: 0;
 
 		&:hover { color: var(--ink); }

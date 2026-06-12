@@ -351,7 +351,7 @@ import { MAPPING, STATS } from '$lib';
 		flex-direction: column;
 		padding: 1.8rem 0 2rem;
 		z-index: var(--z-sidebar);
-		transition: transform .25s ease;
+		transition: transform var(--t-slow) ease;
 
 		&::-webkit-scrollbar { width: 4px; }
 		&::-webkit-scrollbar-thumb { background: var(--parch-dk); border-radius: var(--radius); }
@@ -420,7 +420,7 @@ import { MAPPING, STATS } from '$lib';
 		border-radius: var(--radius);
 		border-left: 2px solid transparent;
 		cursor: pointer;
-		transition: all .15s;
+		transition: all var(--t-norm);
 
 		&:hover {
 			background: rgba(0, 0, 0, .04);
@@ -484,7 +484,7 @@ import { MAPPING, STATS } from '$lib';
 		border-radius: var(--radius);
 		background: rgba(255, 255, 255, .3);
 		cursor: pointer;
-		transition: all .15s;
+		transition: all var(--t-norm);
 
 		&:hover {
 			background: rgba(255, 255, 255, .7);
@@ -570,7 +570,7 @@ import { MAPPING, STATS } from '$lib';
 			border-radius: var(--radius);
 			background: rgba(255, 255, 255, .5);
 			cursor: pointer;
-			transition: all .15s;
+			transition: all var(--t-norm);
 
 			&:hover {
 				background: rgba(255, 255, 255, .8);

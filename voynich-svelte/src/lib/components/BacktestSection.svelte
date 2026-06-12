@@ -161,7 +161,7 @@
 	.stat-bar {
 		height: 100%;
 		border-radius: var(--radius-sm);
-		transition: width .4s ease;
+		transition: width var(--t-slower) ease;
 	}
 
 	.stat-num {

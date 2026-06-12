@@ -178,7 +178,7 @@
 
   tr.row-filterable {
     cursor: pointer;
-    transition: background-color .12s;
+    transition: background-color var(--t-fast);
 
     &:hover {
       background-color: color-mix(in srgb, var(--red) 7%, transparent);

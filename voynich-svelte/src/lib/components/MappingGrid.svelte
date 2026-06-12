@@ -40,7 +40,7 @@
 		border-radius: var(--radius);
 		font-size: var(--text-sm);
 		cursor: pointer;
-		transition: background .15s, border-color .15s;
+		transition: background var(--t-norm), border-color var(--t-norm);
 
 		&:hover {
 			background: rgba(255, 255, 255, .75);
