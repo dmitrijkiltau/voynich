@@ -1,0 +1,86 @@
+{
+  "folio": "f47v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q06/f047v_tr.txt",
+    "date": "1998-12-19",
+    "time": "19:01:37",
+    "editor": "stolfi",
+    "paragraphs": {
+      "P.1": {
+        "H": "psheot.cheor.cholsho.chopchy.sal-{plant}sary-{plant}",
+        "C": "psheot.cheor.cholsho.chopchy.sal-{plant}sary-{plant}",
+        "F": "pcheot.cheor.cholsho.chopchy.sal-{plant}sary-{plant}"
+      },
+      "P.2": {
+        "H": "dsheey.shy.cphy.otchey.daiidy.chory-{plant}daiiy-",
+        "C": "dsheey.shy.cphy.otchey.daiijy.chory-{plant}dainy-",
+        "F": "dcheey.shy.cphy.otchey.daindy.chory-{plant}dainy-",
+        "G": "dcheey.shy.cphy.otchey.daindy.chory-{plant}daiin-"
+      },
+      "P.3": {
+        "H": "shol.char.oteol.dor.otchol.chkchy-{plant}daiin-",
+        "C": "shol.char.oteol.dor.otchol.chkchy-{plant}daiin-",
+        "F": "shol.char.oteol.dor.otchol.chkchy-{plant}daiin-"
+      },
+      "P.4": {
+        "H": "qotol.sheey.kol.sho.keechy.qoty-{plant}cthy-",
+        "C": "qotol.sheey.kol.sho.keechy.qoty-{plant}cthy-",
+        "F": "qotol.sheey.kol.sho.teechy.qoty-{plant}cthy-"
+      },
+      "P.5": {
+        "H": "dsholy.shees.chor.ody.shy.sy-{plant}sary-",
+        "C": "dcholy.shees.chor.ody.shy.sy-{plant}sary-",
+        "F": "dsholy.shees.chor.ody.shy.sy-{plant}sary-"
+      },
+      "P.6": {
+        "H": "chody.cheor.saiin-{plant}dochod-{plant}chol=",
+        "C": "chody.cheor.saiin-{plant}dochod-{plant}chol=",
+        "F": "chody.cheor.saiin-{plant}dochod-{plant}chol="
+      },
+      "P.7": {
+        "H": "pchodaiin.dair.dcthy-{plant}",
+        "C": "pchodaiin.dair.dcthy-{plant}",
+        "F": "pchodaiin.dair.dcthy-{plant}"
+      },
+      "P.8": {
+        "H": "daiin.cheotar.chodaly.sal-{plant}",
+        "C": "daiin.cheotar.chodaly.sal-{plant}",
+        "F": "daiin.cheotar.chodaly.sal-{plant}"
+      },
+      "P.9": {
+        "H": "qotcheea.chety.chol.chol.dai!n-{plant}",
+        "C": "qotcheeo.chety.chol.chol.dai!n-{plant}",
+        "F": "qotcheey.chety.chol.chol.daiin-{plant}"
+      },
+      "P.10": {
+        "H": "chotcho.l!tchey.o.tcho.tchy.dy-{plant}chol.chody.dar-",
+        "C": "chotcho.l!tchey.y!tcho!tchy.dy-{plant}chol.chody.dar-",
+        "F": "chotcho!l.tchey.o!tcho.tchy.dy-{plant}chol.chody.dar-",
+        "G": "chotcho!l.tchey.o!tcha.tchy.dy-{plant}chol.chody.dar-"
+      },
+      "P.11": {
+        "H": "oteey.cho.chdy.chy.key.chyky-{plant}dchy.daiin.chy-",
+        "C": "oteey.cho.chdy.chy.key.chyky-{plant}dchy.daiin.chy-",
+        "F": "oteey.cho.chdy!chy.key.chyky-{plant}dchy.daiin.chy-",
+        "G": "oteey.cho.chdy%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-"
+      },
+      "P.12": {
+        "H": "cho.cho.keesy.chy.chy.cheky-{plant}chochy.daiin-",
+        "C": "cho.cho!keesy.chy.chy.cheky-{plant}chochy.daiin-",
+        "F": "chy.cho!keesy.chy.chy.cheky-{plant}chochy.daiin-",
+        "G": "%%%%%%%%%%%%%%chy.chy.cheky-{plant}chochy.daiin-"
+      },
+      "P.13": {
+        "H": "dshy.daiin.chdlcty.chaiin-{plant}dcheey.otal!d-",
+        "C": "dshy.daiin.cholety.chaiin-{plant}dcheey.otal.d-",
+        "F": "dshy.daiin.chdlety.chaiin-{plant}dcheey.otal!d-",
+        "G": "dshy.daiin.chdl!ty.chaiin-{plant}dcheey.otal!d-"
+      },
+      "P.14": {
+        "H": "chol.ctche!y=",
+        "C": "chol.cthee!y=",
+        "F": "chol.cthchey="
+      }
+    }
+  }
+}

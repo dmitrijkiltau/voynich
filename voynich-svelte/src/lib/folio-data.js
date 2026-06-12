@@ -22,88 +22,9 @@ export const FOLIO_PAGES = [
   { q: 'q20', label: 'Lage 20 — Rezepte/Sterne · f103–f116',pages: ['f103r','f103v','f104r','f104v','f105r','f105v','f106r','f106v','f107r','f107v','f108r','f108v','f111r','f111v','f112r','f112v','f113r','f113v','f114r','f114v','f115r','f115v','f116r','f116v'] },
 ];
 
-/**
- * @typedef {{
- *   status: 'done' | 'confirmed' | 'partial';
- *   registerType?: string;
- *   languageClass?: string;
- *   writerHand?: number;
- *   transcribers?: { siglen: string[]; label: string }[];
- *   consensusDenominators?: string[];
- *   scanUrl?: string;
- * }} FolioEntry
- */
-
-// Per-folio decryption status and metadata.
-// status: 'done' — full translation
-//         'confirmed' — heavily confirmed (★★★★+) in backtest
-//         'partial' — image studied, lexicon anchors known, or Language-A range without full txt
-//         absent — not yet analyzed (default 'none')
-/** @type {Record<string, FolioEntry>} */
-export const FOLIO_DATA = {
-  // ── Lage 1 · Kräuter A (f1–f8) — Language-A lexicon range ────────────────
-  f1r: { status: 'confirmed' },  // detail → folios/f001r.json
-  f1v: { status: 'confirmed' },  // detail → folios/f001v.json
-  f2r: { status: 'confirmed' },  // detail → folios/f002r.json
-  f2v: { status: 'confirmed' },  // detail → folios/f002v.json
-  f3r: { status: 'confirmed' },  // detail → folios/f003r.json
-  f3v: { status: 'confirmed' },  // detail → folios/f003v.json
-  f4r: { status: 'confirmed' },    f4v: { status: 'partial' },
-  f5r: { status: 'confirmed' },    f5v: { status: 'partial' },      f6r: { status: 'confirmed' },    f6v: { status: 'partial' },
-  f7r: { status: 'confirmed' },    f7v: { status: 'partial' },      f8r: { status: 'confirmed' },    f8v: { status: 'partial' },
-
-  // ── Lage 2 · Kräuter A (f9–f16) — translation HTMLs + txt transcriptions ──
-  f9r:  { status: 'confirmed' },  f9v:  { status: 'confirmed' },
-  f10r: { status: 'confirmed' },  f10v: { status: 'confirmed' },
-  f11r: { status: 'confirmed' },  f11v: { status: 'confirmed' },
-  f13r: { status: 'confirmed' },  f13v: { status: 'confirmed' },
-  f14r: { status: 'confirmed' },  f14v: { status: 'confirmed' },
-  f15r: { status: 'confirmed' },  f15v: { status: 'confirmed' },
-  f16r: { status: 'confirmed' },  f16v: { status: 'confirmed' },
-
-  // ── Lage 3 · Kräuter A (f17–f24) — Quire C (bC1–bC4) ───────────────────
-  f17r: { status: 'confirmed' },  f17v: { status: 'confirmed' },
-  f18r: { status: 'confirmed' },  f18v: { status: 'confirmed' },
-  f19r: { status: 'confirmed' },  f19v: { status: 'confirmed' },
-  f20r: { status: 'confirmed' },  f20v: { status: 'confirmed' },
-  f21r: { status: 'confirmed' },  f21v: { status: 'confirmed' },
-  f22r: { status: 'confirmed' },  f22v: { status: 'confirmed' },
-  f23r: { status: 'confirmed' },  f23v: { status: 'confirmed' },
-  f24r: { status: 'confirmed' },  f24v: { status: 'confirmed' },
-
-  // ── Lage 4 · Kräuter A (f25–f32) — Quire D vollständig ──────────────────
-  f25r: { status: 'confirmed' },  f25v: { status: 'confirmed' },
-  f26r: { status: 'confirmed' },  f26v: { status: 'confirmed' },
-  f27r: { status: 'confirmed' },  f27v: { status: 'confirmed' },
-  f28r: { status: 'confirmed' },  f28v: { status: 'confirmed' },
-  f29r: { status: 'confirmed' },  f29v: { status: 'confirmed' },
-  f30r: { status: 'confirmed' },  f30v: { status: 'confirmed' },
-  f31r: { status: 'confirmed' },  f31v: { status: 'confirmed' },
-  f32r: { status: 'confirmed' },  f32v: { status: 'confirmed' },
-
-  // ── Lage 10 · Kosmologisch — f69r Rad-Diagramm vollständig analysiert ──────
-  f69r: { status: 'confirmed' },
-
-  // ── Lage 5 · Kräuter B — f33r/v + f34r/v analysiert (v8.7, Sprache B) ─────
-  f33r: { status: 'confirmed' },  f33v: { status: 'confirmed' },
-  f34r: { status: 'confirmed' },  f34v: { status: 'confirmed' },
-
-  // ── Lage 11 · Biologisch — f71–f72 · Zodiak bK1 vollständig analysiert ───
-  f71r:  { status: 'confirmed' }, f71v:  { status: 'confirmed' },
-  f72r1: { status: 'confirmed' }, f72r2: { status: 'confirmed' },
-
-  // ── Lage 8 · Astronomisch — f57r+f58r analysiert; f57v = Zodiak-Diagramm ──
-  f57r: { status: 'confirmed' },
-  f57v: { status: 'partial' },
-  f58r: { status: 'confirmed' },
-
-  // ── Lage 14 · Kosmologisch — f85v+f86r txt+jpg asset ────────────────────
-  f85r1: { status: 'partial' }, f85r2: { status: 'partial' }, fRos:  { status: 'partial' },
-  f86v4: { status: 'partial' }, f86v6: { status: 'partial' }, f86v5: { status: 'partial' }, f86v3: { status: 'partial' },
-
-  // ── Lage 20 · Rezepte / Randsterne ───────────────────────────────────────
-  f103r: { status: 'confirmed' }, f103v: { status: 'confirmed' },
-  f114v: { status: 'confirmed' },
-  f115r: { status: 'confirmed' }, f115v: { status: 'confirmed' },
-  f116r: { status: 'confirmed' }, f116v: { status: 'confirmed' },
-};
+// Folios physically missing from the manuscript — no JSON file exists for these.
+// Status for all other folios is derived from folio JSON content at runtime.
+export const LACUNA = new Set([
+  'f91r', 'f91v', 'f92r', 'f92v',
+  'f97r', 'f97v', 'f98r', 'f98v',
+]);

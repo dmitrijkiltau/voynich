@@ -1,0 +1,58 @@
+{
+  "folio": "f52r",
+  "transcriptions": {
+    "source": "https://voynich.nu/q07/f052r_tr.txt",
+    "date": "1998-12-07",
+    "time": "12:26:19",
+    "editor": "stolfi",
+    "paragraphs": {
+      "P.1": {
+        "H": "tdokchcfhy.ycphko.ytair.shar.qofy!daiin.ypchy.otchol.das.yty-",
+        "C": "tdokchcfhy.ycphko.ytair.shar.qofy!daiin.ypchy.otchol.dar.yty-",
+        "F": "tdokchcfhy.ycphko.ytair.shar.qofy.daiin.ypchy.otchol.dar.yty-",
+        "G": "tdokchcfhy.ycphta.ytair.shar.qofy.daiin.ypchy.otchol.dar.yty-"
+      },
+      "P.2": {
+        "H": "oty.shor.ytol!dy.qoky.koldal.oteees.dal.s-{plant}otar.dl-",
+        "C": "oty.shor.ykol!dy.qoky.koldal.oteees.dal!s-{plant}otar.dl-",
+        "F": "oty.shor.ytol.dy.qoky.koldal.oteees.dal!s-{plant}otar!dl-",
+        "G": "oty.shor.ytol.dy.qoky.koldal.oteees.dal!s-{plant}otar!dy-"
+      },
+      "P.3": {
+        "H": "tchot!shey.qoty.okchol.tchody.qotam.oky-{plant}ytoldy-",
+        "C": "tchot!shey.qoty.okchol.tchody.qotam.oky-{plant}ytoldy-",
+        "F": "tchot.shey.qoty.okchol.tchody.qotam.oky-{plant}ytoldy-",
+        "G": "tchot.shey.qoty.okchol.tchody.qotam.oky-{plant}ytaldy-"
+      },
+      "P.4": {
+        "H": "l.shopchy.qoky.qotchy.oty.dar.oty.dam-{plant}ychcthod-",
+        "C": "l!shopchy.qoky.qotchy.oty.dar.oty.dam-{plant}ychcthod-",
+        "F": "l!shopchy.qoky.qotchy.oty.dar.oty.dam-{plant}ychcthod-"
+      },
+      "P.5": {
+        "H": "oky.chor.okchal.okchar.shor.tol.ykair-{plant}ytchdam-",
+        "C": "!ky.chor.okchal.okchar.shor.tol.ykair-{plant}ytchdam-",
+        "F": "oky.chor.okchal.okchar.shor.tol.ykair-{plant}ytchdam-",
+        "G": "oky.chor.okchal.okeear.shor.tol.ykair-{plant}ytchdam-"
+      },
+      "P.6": {
+        "H": "daiin.shedaiin.qodal.dy.chokam.otchordy-{plant}okchol.do-",
+        "C": "daiin.shedaiin.qodal.dy.chokam.otchordy-{plant}okchol.do-",
+        "F": "daiin.shedaiin.qodal.dy.chokam.otchordy-{plant}okchol.do-",
+        "G": "daiin.shedaiin.qodal.dy.chokam.otchordy-{plant}okchol.dy-"
+      },
+      "P.7": {
+        "H": "qokshy.qockhom.dals.shodai!m.t!!chom.dody-{plant}ykeey.daim.am-",
+        "C": "qokshy.qockhom.dals.shodai!m.t!!cham.dody-{plant}ykeey.daim.am-",
+        "F": "qokshy.qockhom.dals.shodai!m.t!!cham.dody-{plant}ykeey.daim.al-",
+        "G": "qokshy.qockhom.dals.shodaiin.iinchom.dody-{plant}ykeey.daim.al-"
+      },
+      "P.8": {
+        "H": "orcheey.dor.shey.kom.s.cheey.dchom.daiin={plant}",
+        "C": "orcheey.dor.shey.kam.s.cheey.dcham.daiin={plant}",
+        "F": "orcheey.dor.shey!kom.s.cheey.dchom.daiin={plant}",
+        "G": "orcheey.dor.shey.kam.s!cheey.dcham.daiin={plant}"
+      }
+    }
+  }
+}

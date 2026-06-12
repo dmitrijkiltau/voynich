@@ -1,6 +1,5 @@
 {
   "folio": "f2v",
-  "status": "confirmed",
   "registerType": "Herbal (Standard Kräuterbild) — {plant}-System aktiv",
   "languageClass": "Sprache A (Currier)",
   "writerHand": 1,
@@ -28,7 +27,7 @@
     "date": "1998-12-06",
     "time": "13:00:34",
     "editor": "stolfi",
-    "lines": {
+    "paragraphs": {
       "P.1": {
         "H": "kooiin.cheo.pchor.otaiin.o.dain.chor-{plant}dair.shty-",
         "C": "kooiin.cheo!pchor.otaiin.o!dain.chor-{plant}dair.shty-",

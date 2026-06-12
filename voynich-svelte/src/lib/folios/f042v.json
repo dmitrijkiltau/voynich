@@ -1,0 +1,97 @@
+{
+  "folio": "f42v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q06/f042v_tr.txt",
+    "date": "1998-12-12",
+    "time": "13:45:48",
+    "editor": "stolfi",
+    "paragraphs": {
+      "P.1": {
+        "H": "tcho.ct{&T}o.sheey.qocho.taiin.shols-{plant}chol.chor.dain-",
+        "C": "pcho.cth!!!o.sheey.qocho!taiin.shols-{plant}chol.chor.dain-",
+        "F": "pcho.cth!!!o.sheey.qocho.taiin.shols-{plant}chol.chor.dain-"
+      },
+      "P.2": {
+        "H": "dshe!y.tchey.y.kchey.chtchy.cphy.dan-{plant}dain.otol.daiin-",
+        "C": "dshchy.tchey.y!kchey.chtchy.cphy.dan-{plant}dain.otol.daiin-",
+        "F": "dshe!y.tchey.y.kchey.chtchy.cphy.dan-{plant}dain.otol.daiin-",
+        "G": "dshe!y.tchey.y!kchey.chtchy.cphy.dan-{plant}dain.otol.daiin-"
+      },
+      "P.3": {
+        "H": "sho.chotody.chotol.oky.chol.chol-{plant}dl.chcthy.otoy-",
+        "C": "sho.chotody.chotol.oky.chol.chol-{plant}dl.chcthy.otoy-",
+        "F": "sho.chotody.chotol.oky.chol.chol-{plant}dl!chcthy.otoy-"
+      },
+      "P.4": {
+        "H": "qotchy.chkchy.sar.dy-{plant}odaiil-{plant}ykchy.okol.dd-",
+        "C": "qotchy.chkchy.sar.dy-{plant}odaiil-{plant}ykchy.okol.dd-",
+        "F": "qotchy.chkchy.sar.dy-{plant}odaiil-{plant}ykchy.okol!dm-",
+        "G": "qotchy.chkchy.sar.dy-{plant}odainl-{plant}ykchy.okol!dm-"
+      },
+      "P.5": {
+        "H": "chokeeor.chey.chetan-{plant}s.ary-{plant}okol.chetaiin-",
+        "C": "chokeeor.chey.chetan-{plant}s!ary-{plant}okol.chetaiin-",
+        "F": "chokeeor.chey.chetan-{plant}s.ary-{plant}okol.chetaiin-",
+        "G": "chokeeor.chey.chetan-{plant}r!ary-{plant}okol.chetaiin-"
+      },
+      "P.6": {
+        "H": "okeokear.cheo!tchar-{plant}sy-{plant}saiin.cthar.dam-",
+        "C": "okeokear.cheo!tchar-{plant}sy-{plant}saiin.cthar.dam-",
+        "F": "okeokear.cheo.tchar-{plant}sy-{plant}saiin.cthar.dam-"
+      },
+      "P.7": {
+        "H": "chok.sheo!key.keeey.d-{plant}cheke!!!!!!!esshy-",
+        "C": "chok.sheo!key.keeey.d-{plant}cheke!!!!!!!esshy-",
+        "F": "chok.sheo.key.keeey!d-{plant}chckh!!!!!!!esshy-",
+        "G": "chok.sheo.tey.keeey!d-{plant}chckhoekeckhesshy-"
+      },
+      "P.8": {
+        "H": "sodal.saiin={plant}",
+        "C": "sodal.saiin={plant}",
+        "F": "sodal.saiin={plant}"
+      },
+      "P.9": {
+        "H": "posheor.sho.char.chekchey.qokod-{plant}sho.cpheo.r!chy-",
+        "C": "posheor.sho.char.chekchey.qokod-{plant}sho.cpheo!r.chy-",
+        "F": "posheor.sho.char.chekchey.qokod-{plant}sho.cpheo.r!chy-",
+        "G": "poshear.sho.char.chekchey.qokod-{plant}sho.cpheo.r!chy-"
+      },
+      "P.10": {
+        "H": "schor.okchey.chy.shol.olor.cheaiin-{plant}ctchy.tcheen.d-",
+        "C": "schor.okchey.chy.shol.olor.cheaiin-{plant}cthey.tcheee.d-",
+        "F": "schor.okchey.chy.shol.olor.cheaiin-{plant}cthey.tcheen.d-"
+      },
+      "P.11": {
+        "H": "qo.aiin.qokeey.kchol.cheal.oteol.d-{plant}shey.teaiin.d-",
+        "C": "qo!aiin.qokeey.kchol.cheal.oteol!d-{plant}shey.teaiin.d-",
+        "F": "qo!aiin.qokeey.kchol.cheal.oteol!d-{plant}shey.teaiin!d-"
+      },
+      "P.12": {
+        "H": "chotcheey.chol.ol.chaiin.oteeaiin-{plant}chkchy.taiin.y-",
+        "C": "chotcheey.chol.ol.chaiin.oteeaiin-{plant}chkchy.taiin.y-",
+        "F": "chotcheey.chol.ol.chaiin.oteeaiin-{plant}chkchy.taiin!y-",
+        "G": "chotcheey.chol.ol.chaiin.oteeaiin-{plant}chtchy.taiin!y-"
+      },
+      "P.13": {
+        "H": "sho.chey.teor.shey.checthhy.daiin-{plant}chokeey.daiin-",
+        "C": "sho.chey.teor.shey.checthey.daiin-{plant}chokeey.daiin-",
+        "F": "sho.chey.teor.shey.checthey.daiin-{plant}chokeey.daiin-"
+      },
+      "P.14": {
+        "H": "qoteey.chy.kchy.cthy.et!sees.choly-{plant}sarar.ar.al-",
+        "C": "qoteey.chy.kchy.cthy.et!shes.choly-{plant}sarar.ar.al-",
+        "F": "qoteey.chy.kchy.cthy.cthsees.choly-{plant}sarar.ar!al-"
+      },
+      "P.15": {
+        "H": "chokey.chol.okey=",
+        "C": "chokey.chol.okey=",
+        "F": "chokey.chol.okey="
+      },
+      "T.15": {
+        "H": "okor.odeey=",
+        "C": "okor.odeey=",
+        "F": "okor.odeey="
+      }
+    }
+  }
+}

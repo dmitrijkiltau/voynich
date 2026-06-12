@@ -1,0 +1,310 @@
+{
+  "folio": "f49v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q07/f049v_tr.txt",
+    "date": "1998-12-27",
+    "time": "22:34:34",
+    "editor": "stolfi",
+    "paragraphs": {
+      "L.1": {
+        "H": "f=",
+        "F": "f=",
+        "U": "f="
+      },
+      "L.2": {
+        "H": "{1-}o=",
+        "F": "{1-}o=",
+        "U": "{1-}o="
+      },
+      "L.3": {
+        "H": "{2-}r=",
+        "F": "{2-}s=",
+        "U": "{2-}r="
+      },
+      "L.4": {
+        "H": "{3-}y=",
+        "F": "{3-}y=",
+        "U": "{3-}y="
+      },
+      "L.5": {
+        "H": "{4-}e!!!!!!!=",
+        "F": "{4-}*!!!!!!!=",
+        "U": "{4-}e{small}="
+      },
+      "L.6": {
+        "H": "{5-}*{&140}!!!!!!!!!=",
+        "F": "{5-}*!!!!!!!!!!!!!!!=",
+        "U": "{5-}*{&140}{or &163}="
+      },
+      "L.7": {
+        "H": "k!!!!!!!=",
+        "F": "k!!!!!!!=",
+        "U": "k{short}="
+      },
+      "L.8": {
+        "H": "s=",
+        "F": "r=",
+        "G": "s=",
+        "U": "s="
+      },
+      "L.9": {
+        "H": "p=",
+        "F": "p=",
+        "U": "p="
+      },
+      "L.10": {
+        "H": "o=",
+        "F": "o=",
+        "U": "o="
+      },
+      "L.11": {
+        "H": "*{&192}=",
+        "F": "*!!!!!!=",
+        "U": "r{&192}="
+      },
+      "L.12": {
+        "H": "y=",
+        "F": "y=",
+        "U": "y="
+      },
+      "L.13": {
+        "H": "e=",
+        "F": "*=",
+        "U": "e="
+      },
+      "L.14": {
+        "H": "*{&140}=",
+        "F": "*!!!!!!=",
+        "U": "*{&140}="
+      },
+      "L.15": {
+        "H": "*{&164}=",
+        "F": "s!!!!!!=",
+        "U": "s!!!!!!="
+      },
+      "L.16": {
+        "H": "p=",
+        "F": "p=",
+        "U": "p="
+      },
+      "L.17": {
+        "H": "o=",
+        "F": "o=",
+        "U": "o="
+      },
+      "L.18": {
+        "H": "*{&192}=",
+        "F": "r!!!!!!=",
+        "U": "r{&192}="
+      },
+      "L.19": {
+        "H": "y=",
+        "F": "y=",
+        "U": "y="
+      },
+      "L.20": {
+        "H": "e!!!!!!!=",
+        "F": "*!!!!!!!=",
+        "U": "e{small}="
+      },
+      "L.21": {
+        "H": "*{&140}=",
+        "F": "*!!!!!!=",
+        "U": "*{&140}="
+      },
+      "L.22": {
+        "H": "d=",
+        "F": "d=",
+        "U": "d="
+      },
+      "L.23": {
+        "H": "y=",
+        "F": "y=",
+        "U": "y="
+      },
+      "L.24": {
+        "H": "s!!!!!!!=",
+        "F": "*!!!!!!!=",
+        "U": "e{small}="
+      },
+      "L.25": {
+        "H": "k=",
+        "F": "k=",
+        "U": "k="
+      },
+      "L.26": {
+        "H": "y=",
+        "F": "y=",
+        "U": "y="
+      },
+      "P.1": {
+        "H": "{label f-}kshor.shol.cphokchol.chcfhhy-",
+        "C": "!!!!!!!!!!kshor.shol.cphokchol.chcfhey-",
+        "F": "{label f-}kshor.shol.cphokchol.chcfh!y-",
+        "G": "{label f-}kshor.shol.cphokchol.chcfhey-",
+        "U": "{label f-}kshor.shol.cphokchol.chcfhhy-"
+      },
+      "P.2": {
+        "H": "{1-}{label o-}qokchy.qokchod.sho.cthy-",
+        "C": "!!!!!!!!!!!!!!qokd!y.qokchod.sho.ckhy-",
+        "F": "{1-}{label o-}qokchy.qokchod.sho.cthy-",
+        "U": "{1-}{label o-}qokchy.qokchod.sho.ckhy-"
+      },
+      "P.3": {
+        "H": "{2-}{label r-}chotchy.chcthy.cth!y.koddy-{plant}",
+        "C": "!!!!!!!!!!!!!!ch!tchy.chcthy.cthey.koddy-{plant}",
+        "F": "{2-}{label s-}chotchy.chcthy.cth!y.koddy-{plant}",
+        "U": "{2-}{label r-}chotchy.chcthy.cth!y.koddy-{plant}"
+      },
+      "P.4": {
+        "H": "{3-}{label y-}okeod.sho.chotshol.dam-{plant}",
+        "C": "!!!!!!!!!!!!!!okeod.sho.chotshol.dam-{plant}",
+        "F": "{3-}{label y-}okeod!sho.chotshol.dam-{plant}",
+        "U": "{3-}{label y-}okeod!sho.chotshol.dam-{plant}"
+      },
+      "P.5": {
+        "H": "{4-}{label e-}shol.sho!daiin.qotchar-{plant}",
+        "C": "!!!!!!!!!!!!!!shol.sho.daiin.qotchar-{plant}",
+        "F": "{4-}{label *-}shol.sho!daiin.qotchar-{plant}",
+        "U": "{4-}{label e-}shol.sho!daiin.qotchar-{plant}"
+      },
+      "P.6": {
+        "H": "{5-}{label *-}qotchy.chokchy.choky-{plant}",
+        "C": "!!!!!!!!!!!!!!qoteey.chokchy.choky-{plant}",
+        "F": "{5-}{label *-}qotchy.chokchy.choky-{plant}",
+        "U": "{5-}{label *-}qotchy.chokchy.choky-{plant}"
+      },
+      "P.7": {
+        "H": "{label k-}chotchy.chodaiin.dan-{plant}",
+        "C": "!!!!!!!!!!!!otchy.chodaiin.dan-{plant}",
+        "F": "{label k-}chotchy.chodaiin.dar-{plant}",
+        "G": "{label k-}chotchy.chodaiin.dan-{plant}",
+        "U": "{label k-}chotchy.chodaiin.dan-{plant}"
+      },
+      "P.8": {
+        "H": "{label s-}qoteees.cheo.daiin.dol-{plant}",
+        "C": "!!!!!!!!!!qoteees.cheo.daiin.dol-{plant}",
+        "F": "{label r-}qoteees.cheo.daiin.dol-{plant}",
+        "G": "{label s-}qoteees.cheo.daiin.dol-{plant}",
+        "U": "{label s-}qoteees.cheo.daiin.dol-{plant}"
+      },
+      "P.9": {
+        "H": "{label p-}ochor.sheeod.ksheo!dl-{plant}",
+        "C": "!!!!!!!!!!ochor.sheeod.ksheo.dl-{plant}",
+        "F": "{label p-}ochor.sheeod.ksheo!dl-{plant}",
+        "U": "{label p-}ochor.sheeod.ksheo!dl-{plant}"
+      },
+      "P.10": {
+        "H": "{label o-}qo!!!!!.ksho!daiin.shckhy.dar-{plant}",
+        "C": "!!!!!!!!!!qo!!!!!!ksho!daiin.shckhy.dar-{plant}",
+        "F": "{label o-}qo{&o'}!ksho.daiin.shckhy.dar-{plant}",
+        "U": "{label o-}qo{&o'}!ksho!daiin.shckhy.dar-{plant}"
+      },
+      "P.11": {
+        "H": "{label &???-}dchol.cthol.daiin.choky-{plant}",
+        "C": "!!!!!!!!!!!!!dchol.cthol.daiin.choky-{plant}",
+        "F": "{label &???-}dchol.cthol.daiin.choky-{plant}",
+        "U": "{label r?-}!!dchol.cthol.daiin.choky-{plant}"
+      },
+      "P.12": {
+        "H": "{label y-}ochokeey.ckhey.daiin.dain.chokam-{plant}",
+        "C": "!!!!!!!!!!ochokeey.ckhey.daiin.dain.chokam-{plant}",
+        "F": "{label y-}ochokeey.ckhey.daiin.dain.chokam-{plant}",
+        "G": "{label y-}ochokeey.ckhey.daiin.dain.chokam-{plant}",
+        "U": "{label y-}ochokeey.ckhey.daiin.dain.choka*-{plant}"
+      },
+      "P.13": {
+        "H": "{label e-}qokeol.chokeeody.otol.kchos.chol.daiin={plant}",
+        "C": "!!!!!!!!!!qokeol.chokeeody.otol.kchos.chol.daiin={plant}",
+        "F": "{label *-}q!keol.chokeeody.otol.kchos.chol.daiin={plant}",
+        "G": "{label *-}qokeol.chokeeody.otol.kchos.chol.daiin={plant}",
+        "U": "{label *-}qokeol.chokeeody.otol.kchor.chol.daiin={plant}"
+      },
+      "P.14": {
+        "H": "{label *-}fcho!chor.shol.tchol.opcheodal.dchsy-{plant}chotchy-",
+        "C": "!!!!!!!!!!fcho.chor.shol.tchol.opcheodal.dchsy-{plant}chotchy-",
+        "F": "{label *-}fcho!chor.shol.tchol.opcheodal.dchsy-{plant}chotchy-",
+        "U": "{label *-}fcho!chor.shol.tchol.opcheodal.dchsy-{plant}chotchy-"
+      },
+      "P.15": {
+        "H": "{label �-}dcho.d.chol.chokchodaiin.chokchy.tchol-{plant}okcho!kol-",
+        "C": "!!!!!!!!!!dcho.d!chol.chokchodaiin.chokchy.tchol-{plant}okcho!kol-",
+        "F": "{label s-}dcho.d!chol.chokchodaiin.chokchy.tchol-{plant}okcho.kol-",
+        "G": "{label s-}dcho.d.chol.chokchodaiin.chokchy.tchol-{plant}okcho.kol-",
+        "U": "{label s-}dcho.d!chol.chokchodaiin.chokchy.tchol-{plant}okcho.kol-"
+      },
+      "P.16": {
+        "H": "{label p-}tchotchey.chokeeo!dol.rcheey.otchodar-{plant}dcho.dchog-",
+        "C": "!!!!!!!!!!tchotchey.chokeeo!dol.rcheey.otchodar-{plant}dcho!dchog-",
+        "F": "{label p-}tchotchey.chokeeo.dol.rcheey.otchodar-{plant}dcho.dchom-",
+        "G": "{label p-}tchotchey.chokeeo!dol.rcheey.otchodar-{plant}dcho.dchom-",
+        "U": "{label p-}tchotchey.chokeeo!dol.rcheey.otchodar-{plant}dcho.dchog-"
+      },
+      "P.17": {
+        "H": "{label o-}shocho!!.oaiin.sheo.choty=",
+        "C": "!!!!!!!!!!shochoch.oaiin.sheo.choty=",
+        "F": "{label o-}shocho!!.oaiin.sheo.choty=",
+        "U": "{label o-}shocho!!.oaiin.sheo.choty="
+      },
+      "P.18": {
+        "H": "{label �-}qotcho.cheol.chol.s.cho.chcthey.dcheol-{plant}chotchody-",
+        "C": "!!!!!!!!!!qotcho.cheol.chol!s.cho.chcthey.dcheol-{plant}chotchody-",
+        "F": "{label r-}qotcho.cheol.chol!s.cho.chcthey.dcheol-{plant}chotchody-",
+        "U": "{label r-}qotcho.cheol.chol!s.cho,chcthey.dcheol-{plant}chotchody-"
+      },
+      "P.19": {
+        "H": "{label y-}chokeo.sho.cheor.cheo!kchet.chor.d.aiin.dy-{plant}daiin.qokg-",
+        "C": "!!!!!!!!!!chokeo.sho.cheor.cheo!kchet.chor.d!aiin.dy-{plant}daiin.qokg-",
+        "F": "{label y-}chokeo.sho.cheor.cheo.kchet.chor.d!aiin.dy-{plant}daiin.qokm-",
+        "G": "{label y-}chokeo.sho.cheor.cheo!kchet.chor.d!aiin.dy-{plant}daiin.qokm-",
+        "U": "{label y-}chokeo.sho.cheor.cheo!kchet!chor.d!aiin.dy-{plant}daiin.qokg-"
+      },
+      "P.20": {
+        "H": "{label e-}oaiin.chy.daiin.chol.chaiin.kshar!dy-{plant}chokchy-",
+        "C": "!!!!!!!!!!oaiin.chy.daiin.chol.chaiin.kshar.dy-{plant}chokchy-",
+        "F": "{label *-}oaiin.chy.daiin.chol.chaiin.kshar!dy-{plant}chokchy-",
+        "U": "{label e-}oaiin.chy.daiin.chol.chaiin.kshar.dy-{plant}chokchy-"
+      },
+      "P.21": {
+        "H": "{label &???-}qokeaiin.cheo.chor.choteey.kcheol.dain-{plant}cho.dairin-",
+        "C": "!!!!!!!!!!!!!!okeaiin.cheo.chor.choteey.kcheol.dain-{plant}cho.dairin-",
+        "F": "{label *-}!!!qokeaiin.cheo.chor.choteey.kcheol.dain-{plant}cho.dairin-",
+        "G": "{label *-}!!!qokeaiin.cheo.chor.choteey.kcheol.dain-{plant}cho.daisin-",
+        "U": "{label &140-}qokeaiin.cheo,chor.choteey.kcheol.dain-{plant}cho.daisin-"
+      },
+      "P.22": {
+        "H": "{label d-}chokaiin.cho.dls.chariin.daiin.chain.dy-{plant}chetcho.dy-",
+        "C": "!!!!!!!!!!chnkaiin.cho.dls.chariin.daiin.chain.dy-{plant}chetcho.dy-",
+        "F": "{label d-}chokaiin.cho.dls.chariin.daiin.chain.dy-{plant}chetcho.dy-",
+        "U": "{label d-}chokaiin.cho.jls.chariin.daiin.chain.dy-{plant}chetcho.dy-"
+      },
+      "P.23": {
+        "H": "{label y-}o!aiin.cheky.r.cho.rchs!!eesy.kchor.sol-{plant}chctho.s-",
+        "C": "!!!!!!!!!!o!aiin.cheky.p.cho.rchs!!chsy.kchor.sol-{plant}chctho!s-",
+        "F": "{label y-}o!aiin.cheky.r.cho.rchsh!eesy.kchor.sol-{plant}chctho.r-",
+        "G": "{label y-}o!aiin.cheky.r.cho.rchsh!!esy.tchor.sol-{plant}chctho.r-",
+        "U": "{label y-}o,aiin.cheky.r.cho.rchse!!esy.kchor.sol-{plant}chctho.s-"
+      },
+      "P.24": {
+        "H": "{label s-}qotcheol.chey.chor.chokaly.chor.dal-{plant}chaiin!d-",
+        "C": "!!!!!!!!!!qotcheol.chey.chor.chokaly.chor.dal-{plant}chaiin.d-",
+        "F": "{label *-}qotcheol.chey.chor.chokaly.chor.dal-{plant}chaiin!d-",
+        "G": "{label *-}qotcheol.chey.chor.chokaly.chor.dal-{plant}chaiin!d-",
+        "U": "{label e-}qotcheol.chey.chor.chokaly.chor,dal-{plant}chaiin!d-"
+      },
+      "P.25": {
+        "H": "{label k-}chol.chor.ches.chkal!chy.chokeeoky-{plant}chokoran-",
+        "C": "!!!!!!!!!!chol.chor.ches.chkal.chy.chokeeoky-{plant}chokoran-",
+        "F": "{label k-}chol.chor.cher.chkaf!chy.chokeeoky-{plant}chokoran-",
+        "G": "{label k-}chol.chor.cher.chkal!chy.chokeeoky-{plant}chokoran-",
+        "U": "{label k-}chol.chor.ches.chkal!chy.chokeeoky-{plant}chokoran-"
+      },
+      "P.26": {
+        "H": "{label y-}ykchokeo.r.cheey.daiin=",
+        "C": "!!!!!!!!!!ykchokeo!r.cheey!!!!!!=",
+        "F": "{label y-}ykchokeo!r.cheey.daiin=",
+        "G": "{label y-}ykchokeo.r.cheey.daiin="
+      }
+    }
+  }
+}

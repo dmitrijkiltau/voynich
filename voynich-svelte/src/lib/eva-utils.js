@@ -5,6 +5,17 @@
  */
 
 /**
+ * Normalize a folio page ID to the zero-padded slug used for filenames.
+ * E.g. "f40r" → "f040r", "f72r1" → "f072r1"
+ * @param {string} pageId
+ * @returns {string}
+ */
+export function folioSlug(pageId) {
+	const m = pageId.match(/^([a-zA-Z]+)(\d+)(.*)/);
+	return m ? `${m[1]}${m[2].padStart(3, '0')}${m[3]}` : pageId;
+}
+
+/**
  * Split a single EVA transcription line into tokens.
  * @param {string} line
  * @returns {string[]}

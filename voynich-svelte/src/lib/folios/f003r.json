@@ -1,6 +1,5 @@
 {
   "folio": "f3r",
-  "status": "confirmed",
   "registerType": "Herbal (Standard Kräuterbild) — {plant}-System aktiv · Thema: Blut / Wärme / Scheol / Diagnose",
   "languageClass": "Sprache A (Currier)",
   "writerHand": 1,
@@ -43,7 +42,7 @@
     "date": "1998-12-06",
     "time": "13:05:41",
     "editor": "stolfi",
-    "lines": {
+    "paragraphs": {
       "P.1": {
         "H": "tsheos.qopal.chol.cthol.daimm-",
         "C": "tsheos.qopal.chol.cthol.daimg-",

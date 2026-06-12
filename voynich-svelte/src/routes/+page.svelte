@@ -1,4 +1,5 @@
 ﻿<script>
+import { pushState, replaceState } from '$app/navigation';
 import { MAPPING, STATS } from '$lib';
 	import TranslatorTool from '$lib/components/TranslatorTool.svelte';
 	import MappingGrid from '$lib/components/MappingGrid.svelte';
@@ -54,8 +55,8 @@ import { MAPPING, STATS } from '$lib';
 	function setActiveSection(id, updateHash = false) {
 		if (!id || activeSection === id) return;
 		activeSection = id;
-		if (updateHash && typeof history !== 'undefined' && location.hash !== `#${id}`) {
-			history.replaceState(null, '', `#${id}`);
+		if (updateHash && location.hash !== `#${id}`) {
+			replaceState(`#${id}`, {});
 		}
 	}
 
@@ -118,8 +119,8 @@ import { MAPPING, STATS } from '$lib';
 	function scrollTo(id) {
 		document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 		setActiveSection(id, true);
-		if (typeof history !== 'undefined' && location.hash !== `#${id}`) {
-			history.pushState(null, '', `#${id}`);
+		if (location.hash !== `#${id}`) {
+			pushState(`#${id}`, {});
 		}
 		menuOpen = false;
 	}

@@ -22,9 +22,10 @@
 
 <style>
 	.mgrid {
+		container-type: inline-size;
 		flex: 1 1 360px;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
 		gap: .38rem;
 		margin: .8rem 0;
 	}

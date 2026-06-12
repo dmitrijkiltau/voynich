@@ -32,11 +32,11 @@ export const CONSECUTIVE_TOKENS = /** @type {Set<string>} */ (new Set());
 
 for (const mod of Object.values(_folioModules)) {
 	const data = /** @type {any} */ (mod.default ?? mod);
-	const lines = /** @type {Record<string, Record<string, string>> | undefined} */ (data?.transcriptions?.lines);
-	if (!lines) continue;
+	const paragraphs = /** @type {Record<string, Record<string, string>> | undefined} */ (data?.transcriptions?.paragraphs);
+	if (!paragraphs) continue;
 	const folio = /** @type {string} */ (data.folio);
 
-	for (const [para, variants] of Object.entries(lines)) {
+	for (const [para, variants] of Object.entries(paragraphs)) {
 		const resolved = majorityTokens(variants);
 		for (let i = 1; i < resolved.length; i++) {
 			if (resolved[i].token === resolved[i - 1].token) CONSECUTIVE_TOKENS.add(resolved[i].token);
@@ -65,6 +65,7 @@ function folioOrder(/** @type {string} */ id) {
  * Only covers folios that have a JSON file in src/lib/folios/.
  *
  * @param {string} eva
+ * @param {{ hasR40?: boolean, hasR41?: boolean }} [opts]
  * @returns {{
  *   isAnchor: boolean,
  *   r43: boolean,
@@ -73,7 +74,7 @@ function folioOrder(/** @type {string} */ id) {
  *   computedAnchorFolio: string,
  * }}
  */
-export function getLexiconMeta(eva) {
+export function getLexiconMeta(eva, { hasR40 = false, hasR41 = false } = {}) {
 	const isAnchor = ANCHOR_SET.has(eva);
 	// Only count occurrences where the majority of transcribers agreed on this token.
 	const occurrences = (TOKEN_INDEX[eva] ?? [])
@@ -88,13 +89,15 @@ export function getLexiconMeta(eva) {
 	const folioIds = Object.keys(byFolio).sort((a, b) => folioOrder(a) - folioOrder(b));
 	const r43 = folioIds.length >= 2;
 
-	// Confidence floor: anchors ≥ 4★, R43 + ≥5 majority folios ≥ 4★, R43 met ≥ 3★, any hit ≥ 2★
+	// Confidence floor: ≥ 10 majority folios ≥ 5★, anchors ≥ 4★, R43 + ≥5 majority folios ≥ 4★, R43 met ≥ 3★, any hit ≥ 2★
 	const majorityFolioCount = folioIds.length;
-	const confFloor = isAnchor                          ? 4
-	                : r43 && majorityFolioCount >= 5    ? 4
-	                : r43                               ? 3
-	                : occurrences.length > 0            ? 2
-	                : 0;
+	const confFloor = majorityFolioCount >= 10     ? 5
+                : isAnchor                         ? 4
+                : r43 && majorityFolioCount >= 5   ? 4
+                : r43                              ? 3
+                : hasR40 && hasR41                 ? 3
+                : occurrences.length > 0           ? 2
+                : 1;
 
 	let computedEvidence = '';
 	let computedAnchorFolio = '';

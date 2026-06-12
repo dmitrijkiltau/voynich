@@ -1,6 +1,5 @@
 {
   "folio": "f4r",
-  "status": "confirmed",
   "registerType": "Herbal (Standard Kräuterbild) — {plant}-System aktiv · Thema: Auge / Pupille / Wärme / Atemweg / Leben–Scheol-Achse",
   "languageClass": "Sprache A (Currier)",
   "writerHand": 1,
@@ -29,7 +28,7 @@
     "date": "1998-10-09",
     "time": "00:56:39",
     "editor": "stolfi",
-    "lines": {
+    "paragraphs": {
       "P.1": {
         "H": "kodalchy.chpady.sheol.ol.sheey.qotey-{plant}doiin.chor.ytoy-",
         "C": "kodalchy.chpady.sheol.ol.sheey.qotey-{plant}doiin.chor.ytoy-",

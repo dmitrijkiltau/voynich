@@ -1,6 +1,5 @@
 {
   "folio": "f3v",
-  "status": "confirmed",
   "registerType": "Herbal (Standard Kräuterbild) — {plant}-System aktiv",
   "languageClass": "Sprache A (Currier)",
   "writerHand": 1,
@@ -42,7 +41,7 @@
     "date": "1998-12-06",
     "time": "13:05:41",
     "editor": "stolfi",
-    "lines": {
+    "paragraphs": {
       "P.1": {
         "H": "koaiin.cphor.qotoy.sha.ckhol.ykoaiin.s.oly-{plant}",
         "C": "koaiin.cphor.qotoy.sha.ckhol.ykoaiin.s.oly-{plant}",
