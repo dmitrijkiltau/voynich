@@ -1,0 +1,61 @@
+{
+  "folio": "f68v1",
+  "transcriptions": {
+    "source": "https://voynich.nu/q09/f068v1_tr.txt",
+    "date": "1998-12-26",
+    "time": "16:38:12",
+    "editor": "stolfi",
+    "paragraphs": {
+      "C.1": {
+        "H": "ees.aiir.ol.cho.aiin.ykeeykeey.shes.chotey.y!keey.s{&S}ses.aiin.okeyteey.cthody.ches!okeeoteody.choikh!y.otol.okeody.sheos.chkorchy.dy.dy.shety.oteey.dair.chotedy.chey.dal.daiin.dakeey.shes.ol.keey.shey.chteey.sheely.shes.yeed.shokeolls.",
+        "U": "ees.aiir.ol.cho!aiin.ykeeykeey.shes.chotey.y,keey.s!!!!hes.aiin.okeykeey.cthody.ches,ykchoteody.chockhey.otol.okeody.sheos.chkorchy.dy.dy.shety.!***y.dair.chotedy.chey.dal.daiin.dokeey.shes.ol!keey.shey.chteey.sheely.shes.yeem.shokeolls.",
+        "V": "ees.aiir.ol.cho.aiin.ykeeykeey.shir.chotey.y.keey.s!!!!hes.aiin.okeyteey.cthody.ches!okchoteody.chockh!y.otol.okeody.sheos.chkorchy.dy.dy.shety.oteey.dair.chotedy.chey.dal.daiin.dckhey.shes.ol!keey.shey.chteey.sheely.shes.yeed.shokeolls.{Grove's R1}"
+      },
+      "C.2": {
+        "H": "sho.yteod.oteeol.okeeos.or.chos.or.ock{&K}o.aiin.chol.ykeey.sheo.s.cheo!ekeey.cheodaiir.cheekchey.chkeody.otchy.teeos.sh.cheo.eky.okey.doleed.s.aly.oteotey.otechs.opai!n.chear.s.oteey.dain.dy!checkhy.oteeos.oteol.okeos!.okeeody.",
+        "U": "sho.yteod.oteeol.okeeor.or.chos.or.oct!!!!o!aiin.chol.ykeey.sheo.s.cheo,ckhey.cheodaiir.cheekchey.chkeody.otchy.teeor.sh.cheo!eky.otey.dola!d.r,oly.cthotey.otechs.opai!n.chear.s.oteey.dain.dy,checkhy.oteeos.oteol.okeor!.okeeody.",
+        "V": "sho.yteod.oteeol.oteeos.or.chos.or.ock!!!!o.aiin.chol.ykeey.sheo.s.cheo!ckhey.cheodaiir.cheekchey.chkeody.okchy.teeos.sh.cheo.eky.otoy.daleed.r.aly.oteotey.otea!r.opoiin.chear!s.oteey.dain.dy!checkhy.oteeos.oteol.oteoss.oteeody.{Grove's R2}"
+      },
+      "X.1": {
+        "H": "dair.cpche!ty.dy=",
+        "U": "dair,!pcheety.dy=",
+        "V": "dair!!pche!ty.dy={Grove's X.1}"
+      },
+      "X.2": {
+        "H": "sair.arolsas!!!!=",
+        "U": "sair.arolser{&r}=",
+        "V": "sair.aroyser{&r}={Grove's X.2}"
+      },
+      "X.3": {
+        "H": "oteeos.araly=",
+        "U": "oteeor.arany=",
+        "V": "oteeos.arany={Grove's X.3}"
+      },
+      "X.4": {
+        "H": "okechdaral=",
+        "U": "okechdaral=",
+        "V": "okechdarol={Grove's X.4}"
+      },
+      "X.5": {
+        "H": "otol.chcs.otaly=",
+        "U": "otol.ches.otaly=",
+        "V": "otol.chcs.otaly={Grove's X.5}"
+      },
+      "X.6": {
+        "H": "okeey.ch.ek.chekeys=",
+        "U": "okeey.ch!ek.chekeys=",
+        "V": "okeey.ch!ek.chekeys={Grove's X.6}"
+      },
+      "X.7": {
+        "H": "dar.shes.shokey=",
+        "U": "dar.shes.shokey=",
+        "V": "dar.shes.shokey={Grove's X.7}"
+      },
+      "X.8": {
+        "H": "oteodain.sar=",
+        "U": "oteodain.sam=",
+        "V": "oteodain.sam={Grove's X.8}"
+      }
+    }
+  }
+}

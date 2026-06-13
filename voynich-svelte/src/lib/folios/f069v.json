@@ -1,0 +1,166 @@
+{
+  "folio": "f69v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q10/f069v_tr.txt",
+    "date": "1998-12-11",
+    "time": "12:58:48",
+    "editor": "stolfi",
+    "paragraphs": {
+      "C.1": {
+        "H": "dair.cheyky.otamy-{gap}sar!a!r.chykar-{gap}okair.sh.ar.chetody.okeeos.o!tey.ot!okchey.okeeody.okeey.doiir.yteeo.y.echa.ot!a.okedy.chsdy.okeod!y.dy.cho.aiin.okar.okar.chol.chese.yto.odair.oty.otcho.dar.o.ey.keody.dchor.char-",
+        "U": "dair.cheyky.okam*-{gap}sar,a!r,chykar-{gap}okair,sh!ar.chetody.okeeas.o!tey.ot!okee!y.okeeody.okeey.doiir.yteeo.y.chey.ot,y.okedy.chrdy.okeod,y,dy.cho!aiin.okar.okar.chol.chees.yty,odair.oty.oteeo.dar.o!ey!keody.dchor.char-",
+        "V": "dair.cheyky.otamy-{gap}sar.air.chykar-{gap}okair.sh.ar.chetody.okeeos.o.tey.ot.okeeey.okeeody.okeey.doiir.yteeo.y.chea.ot.y.okedy.chsdy.okeod.y.dy.cho.aiin.okar.okar.chol.chees.yto.olair.oty.oteeo.dar.o.ey.kiody.dchor.char-{Grove's R1}"
+      },
+      "C.2": {
+        "H": "ykay.chol.ykar-{gap}dal.ykady-{gap}eokeeor.cheoy.choly.ykchal.cheos.oaram.ockhy.shchy.aiin!y.daiial.cheody.cheol.yekey.chsar.y!dy.ykey.chy.dy.chol.ykar.oly.ykeeody.chey.dal.ody.airchy.choky.ychey.chey-",
+        "U": "okay.chol.ykar-{gap}dal,ykady-{gap}*okeear.cheey.choly.ykeeal.cheo*.oaram.octhy.sheey,aiin,y.dairal.cheody.cheal.ycthy.chear,y,dy.ytey.c!y,dy.chol.ykar,oly.ykeeody,chey.dal!ody.airchy.choky.ychey.chey-",
+        "V": "okay.eeol.ykar-{gap}dal.ykady-{gap}eokeeor.cheoy.choly.ykeeal.cheos.oaram.ockhy.sheey.aiin!y.daiial.cheody.cheal.yekey.cheal.y.dy.ykey.chy.dy.chol.ykar.oly.ykeeody.chey.dal.ody.airchy.choky.ychey.chey-{Grove's R2}"
+      },
+      "C.3": {
+        "H": "do!air.otaldal-{gap}dair.y!!!!!!.chdy.otoar.ar.y!!!!!!.chy.qoteor.cho.qotair.chda.oteeal.chear.ar.air.oteody.ytyda.dchy.otoly.okeodal.oteoarar.chetesescher.dair.chey.okody.dal.oteey.oteey=",
+        "U": "do!air.otaldal-{gap}dair.*{&173}.chdy.otoar,ar,*{&173},chy.qoteor.cho.qotair.chdy.oteeal.chear,ar,air.oteody.ytydy.dchy.otoly.okeodal.oteo,arar.chet**r.**r.dair,chey.okody.dal.oteeo.oteey=",
+        "V": "dy.air.otaldal-{gap}dair.*{&173}.chdy.otoar.ar.*{&173}.chy.qoteor.cho.qotair.chdy.oteeal.chear.ar.air.oteody.ytyda.dchy.otoly.okeodal.oteo.arar.chet**s!ear.dair.chey.okody.dal!!!!!!.oteey={Grove's R3}"
+      },
+      "L.1": {
+        "H": "ykeey=",
+        "V": "ykeey={Grove's Y.1}",
+        "U": "ykeey={Grove's Y.1}"
+      },
+      "L.2": {
+        "H": "ytary=",
+        "V": "ytary={Grove's X.2}",
+        "U": "ytary={Grove's X.2}"
+      },
+      "L.3": {
+        "H": "oeesa=",
+        "V": "oeesy={Grove's Y.2}",
+        "U": "oeesy={Grove's Y.2}"
+      },
+      "L.4": {
+        "H": "ytody=",
+        "V": "ytody={Grove's X.3}",
+        "U": "ytody={Grove's X.3}"
+      },
+      "L.5": {
+        "H": "okody=",
+        "V": "okody={Grove's Y.3}",
+        "U": "okody={Grove's Y.3}"
+      },
+      "L.6": {
+        "H": "otody=",
+        "V": "otody={Grove's X.4}",
+        "U": "otody={Grove's X.4}"
+      },
+      "L.7": {
+        "H": "okeol=",
+        "V": "okeal={Grove's Y.4}",
+        "U": "okeal={Grove's Y.4}"
+      },
+      "L.8": {
+        "H": "okeod=",
+        "V": "okeod={Grove's X.5}",
+        "U": "okeod={Grove's X.5}"
+      },
+      "L.9": {
+        "H": "oteeys=",
+        "V": "oteeys={Grove's Y.5}",
+        "U": "oteeys={Grove's Y.5}"
+      },
+      "L.10": {
+        "H": "oteol=",
+        "V": "oteol={Grove's X.6}",
+        "U": "oteol={Grove's X.6}"
+      },
+      "L.11": {
+        "H": "ykeydy=",
+        "V": "ykeydy={Grove's Y.6}",
+        "U": "ykeydy={Grove's Y.6}"
+      },
+      "L.12": {
+        "H": "okeod=",
+        "V": "okeod={Grove's X.7}",
+        "U": "okeod={Grove's X.7}"
+      },
+      "L.13": {
+        "H": "sar!al=",
+        "V": "sar!al={Grove's Y.7}",
+        "U": "sar,al={Grove's Y.7}"
+      },
+      "L.14": {
+        "H": "saiir=",
+        "V": "saiir={Grove's X.8}",
+        "U": "saiir={Grove's X.8}"
+      },
+      "L.15": {
+        "H": "okolar=",
+        "V": "okolar={Grove's Y.8}",
+        "U": "okolar={Grove's Y.8}"
+      },
+      "L.16": {
+        "H": "ykeody=",
+        "V": "ykeody={Grove's X.9}",
+        "U": "ykeody={Grove's X.9}"
+      },
+      "L.17": {
+        "H": "sarydy=",
+        "V": "sarady={Grove's Y.9}",
+        "U": "sarady={Grove's Y.9}"
+      },
+      "L.18": {
+        "H": "otchy=",
+        "V": "otchy={Grove's X.10}",
+        "U": "otchy={Grove's X.10}"
+      },
+      "L.19": {
+        "H": "okchy.dy=",
+        "V": "okeey!dy={Grove's Y.10}",
+        "U": "okeey,dy={Grove's Y.10}"
+      },
+      "L.20": {
+        "H": "okey.d=",
+        "V": "okey!d={Grove's X.11}",
+        "U": "okey,d={Grove's X.11}"
+      },
+      "L.21": {
+        "H": "okeod=",
+        "V": "okeod={Grove's Y.11}",
+        "U": "okead={Grove's Y.11}"
+      },
+      "L.22": {
+        "H": "okodchy=",
+        "V": "okodchy={Grove's X.12}",
+        "U": "okodchy={Grove's X.12}"
+      },
+      "L.23": {
+        "H": "okeody=",
+        "V": "okeody={Grove's Y.12}",
+        "U": "okeody={Grove's Y.12}"
+      },
+      "L.24": {
+        "H": "okchey.s=",
+        "V": "okchey!s={Grove's X.13}",
+        "U": "okchey!s={Grove's X.13}"
+      },
+      "L.25": {
+        "H": "oar.alys=",
+        "V": "oar.alys={Grove's Y.13}",
+        "U": "oar.alys={Grove's Y.13}"
+      },
+      "L.26": {
+        "H": "okchy.sar=",
+        "V": "okeey.sar={Grove's X.14}",
+        "U": "okeey.sar={Grove's X.14}"
+      },
+      "L.27": {
+        "H": "okeo.dy=",
+        "V": "okeo.dy={Grove's Y.14}",
+        "U": "okeo,dy={Grove's Y.14}"
+      },
+      "L.28": {
+        "H": "ochoyk=",
+        "V": "ychoyk={Grove's X.1}",
+        "U": "ochoyk={Grove's X.1}"
+      }
+    }
+  }
+}

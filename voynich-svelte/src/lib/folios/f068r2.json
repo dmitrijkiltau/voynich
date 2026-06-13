@@ -1,0 +1,197 @@
+{
+  "folio": "f68r2",
+  "transcriptions": {
+    "source": "https://voynich.nu/q09/f068r2_tr.txt",
+    "date": "1998-12-27",
+    "time": "23:40:55",
+    "editor": "stolfi",
+    "paragraphs": {
+      "P.1": {
+        "H": "tsheeor.chor.sheal.dar.opchey.oeecthy.sheol.dokechy.otcheoly-",
+        "F": "tshe!or.chor.sheal.dar.opchey.o*!cthy.sheol.dok!chy.otcheoly-",
+        "R": "tsheeor.chor.sheal!dar.opchey.oeecthy.sheol.dokechy.otcheoly-",
+        "U": "tshe!or.chor,sheal,dar.opchey.oeecthy.sheol.dok!chy.otcheoly-"
+      },
+      "P.2": {
+        "H": "dchy.ykeechy.dchyky.okeeoda.rcheodal.chokeey.cheor.oram-",
+        "F": "dchy.ykeechy.dchyky.okeeody.rcheodal.chokeey.ch!or.oram-",
+        "R": "dchy.ykeechy.dchyky.okeeody.rcheodal.chokeey.cheor.oram-",
+        "U": "dchy.ykeechy.dchyky.okeeoda.rcheodal.chokeey.cheor.oram-"
+      },
+      "P.3": {
+        "H": "tcheos.otchoky.okchol.okol.sheeor.chodchy.qokchdar-",
+        "F": "tcheos.otchoky.okchol.okol.she!or.chodchy.qokchdar-",
+        "R": "tcheos.otchoky.okchol.okol.sheeor.chodchy.qokchdar-",
+        "U": "tcheos.otchoky.okchol.okol.sheeor.chodchy.qokchdar-"
+      },
+      "P.4": {
+        "H": "chor.chesy.oriid.qoeeckhy.qockheol.qokeol.cheoal.dchol!al-",
+        "F": "chor.chesy!ora!d.qoa!ckhy.qockheol.qokeol.cheoal.dchol!al-",
+        "R": "chor.chesy.oreed.qoeeckhy.qockheol.qokeol.cheoal.dchol!al-",
+        "U": "chor.chesy.ora!d.qoeeckhy.qockheol.qokeol.cheoal.dchol,al-"
+      },
+      "P.5": {
+        "H": "kcheoey.cheody-{diagram}sai!n.ykeody.chykchy=",
+        "F": "kcheoey.cheody-{diagram}saiin.ykeoay.chykchy=",
+        "R": "kcheoey.cheody-{diagram}rai!n.ykeody.chykchy=",
+        "U": "kcheoey.cheody-{diagram}rai!n.ykeody.chykchy="
+      },
+      "U.1": {
+        "H": "okeo.okor.oko.okemy.oka!isy.qokool.!cheo.qo*ol=",
+        "R": "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%={illegible}",
+        "U": "okeo.okar.oky.oke**yokchesy.qokaol.!cheo.qo*ol=",
+        "V": "okeo.okar.oty.okom!yokchesy.qokool.*cheo.qo*ol={Grove's C1}"
+      },
+      "S.0": {
+        "H": "otolchcthy=",
+        "R": "otolch!tey=",
+        "V": "otolchc!hy={gallows lands on 2nd 'ch'}",
+        "U": "opolchs!hy={gallows lands on 'sh'}"
+      },
+      "S.1": {
+        "H": "cheo!rol=",
+        "R": "cheo!rol=",
+        "V": "cheo.rol=",
+        "U": "cheo,rol="
+      },
+      "S.2": {
+        "H": "odaiin=",
+        "R": "odaiir=",
+        "V": "odaiin=",
+        "U": "odaiin="
+      },
+      "S.3": {
+        "H": "ochory=",
+        "R": "ochory=",
+        "V": "ochary=",
+        "U": "ochory="
+      },
+      "S.4": {
+        "H": "shdar=",
+        "R": "shdar=",
+        "V": "shdar=",
+        "U": "shdar="
+      },
+      "S.5": {
+        "H": "dchol=",
+        "R": "dchol=",
+        "V": "dchol=",
+        "U": "dchol="
+      },
+      "S.6": {
+        "H": "todaraiil!y!!=",
+        "R": "eeodaraii*y!!=",
+        "V": "todaraiil!y!!=",
+        "U": "todaraiil{y?}="
+      },
+      "S.7": {
+        "H": "olcheesey=",
+        "R": "olcheeeey=",
+        "V": "olcheesey=",
+        "U": "olcheesey="
+      },
+      "S.8": {
+        "H": "okchor=",
+        "R": "okchor=",
+        "V": "okchor=",
+        "U": "okchor="
+      },
+      "S.9": {
+        "H": "oteool=",
+        "R": "oteo*l=",
+        "V": "otoa!l=",
+        "U": "oteo*l="
+      },
+      "S.10": {
+        "H": "oydchy=",
+        "R": "oydchy=",
+        "V": "oydchy=",
+        "U": "oydchy="
+      },
+      "S.11": {
+        "H": "cholar=",
+        "R": "chodar=",
+        "V": "cholar=",
+        "U": "cholar="
+      },
+      "S.12": {
+        "H": "okcheody=",
+        "R": "okeeeody=",
+        "V": "okeeeody=",
+        "U": "okeeeody="
+      },
+      "S.13": {
+        "H": "dcheoldy=",
+        "R": "dcheoldy=",
+        "V": "dcheoldy=",
+        "U": "dcheoldy="
+      },
+      "S.14": {
+        "H": "oteeeo!r=",
+        "R": "oteeeiir=",
+        "V": "oteeeo!r=",
+        "U": "oteeea!r="
+      },
+      "S.15": {
+        "H": "etocho=",
+        "R": "otoeeo=",
+        "V": "otoeeo=",
+        "U": "otoeeo="
+      },
+      "S.16": {
+        "H": "ofchsody=",
+        "R": "ofcheody=",
+        "V": "ofcheody=",
+        "U": "ofcheody="
+      },
+      "S.17": {
+        "H": "otcheodar=",
+        "R": "otcheodar=",
+        "V": "otcheodar=",
+        "U": "otcheodar="
+      },
+      "S.18": {
+        "H": "odai!r.chol=",
+        "R": "odiiir.chol={merged with <f68r2.S.19;R>}",
+        "V": "odai!r.chol={merged with <f68r2.S.19;V>}",
+        "U": "odai!r,chol="
+      },
+      "S.20": {
+        "H": "opocphor=",
+        "R": "opocphor=",
+        "V": "opocphar=",
+        "U": "opocphor="
+      },
+      "S.21": {
+        "H": "otoshol=",
+        "R": "otoshos=",
+        "V": "otoshol=",
+        "U": "otoshol="
+      },
+      "S.22": {
+        "H": "chodar=",
+        "R": "chodar=",
+        "V": "chodar=",
+        "U": "chodar="
+      },
+      "S.23": {
+        "H": "shchy=",
+        "R": "shchy=",
+        "V": "shchy=",
+        "U": "sheey="
+      },
+      "S.24": {
+        "H": "okeechor=",
+        "R": "okeechor=",
+        "V": "okeechor=",
+        "U": "okeechor="
+      },
+      "L.1": {
+        "H": "okeo.okoaiin.okol.oky.oeeeo.r.ekey.okcho!l.cheo.o.koiin.",
+        "R": "okey.otoaiin.opol.oky.oshed.r.*key.okeeo!l.chey.o.!***!.",
+        "U": "okey.okoaiin.okol.o**.oeeeo,r.okey.okeeo!l.cheo.o,****!.",
+        "V": "okey.okoaiin.okol.oky.ocheo.r.okey.okeeo.l.cheo.o.****!.{Grove's C2}"
+      }
+    }
+  }
+}

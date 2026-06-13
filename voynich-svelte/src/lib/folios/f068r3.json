@@ -1,0 +1,121 @@
+{
+  "folio": "f68r3",
+  "transcriptions": {
+    "source": "https://voynich.nu/q09/f068r3_tr.txt",
+    "date": "1998-12-23",
+    "time": "05:13:50",
+    "editor": "stolfi",
+    "paragraphs": {
+      "C1.1": {
+        "H": "odchd.otchdy.cheoteeo.oshchey.chokol.cheody.chedy.!!ote!odaiin.otchodal.s!ol.cheor.oteo{crease}.oteey.!oetchdy.opcheody.dchedy.daiin.oteeody.da*!!!cheedy.oteeody.qochecth*m.dchreo.okeodly.do.ls{crease}.os!chaiin.cheockhedchy.chodal.cheody.chol.al.oteo!dched.okedy.qokeey.choky.dol.daleesd.okinaiir.",
+        "U": "o*eed.okeedy.cheoteey.oshchey.chokol.cheody.chedy,*.ote!odaiin.otchodal.s!ol.cheor.ot**{crease}.oteey.!octhody.opcheody.dchedy.daiin.oteeody.dy!!!dche*dy.oteeody.qocheot***.dcheeo.okeodly.do.ls{crease}.*s,chaiin.cheocth*dchy.chodal.cheody.chol,al.oteo,dched.okedy.qokeey.choky.dal.dalees*.ok****ir.",
+        "V": "oleed.oteedy.cheoteey.oshchey.chokal.cheody.chedy.!!otchadaiin.otchodal.s.ol.cheor.oteo{crease}.oteey.chcthedy.opcheody.dchedy.daiin.oteeody.dar.!!cheody.oteeody.qochectham.dchieo.okeodla.do.ls{crease}.os!chaiin.cheockhedchy.chodal.chiody.chol.al.oteo!dched.okedy.qokeey.choky.dol.daleeeg.okeoaiin."
+      },
+      "R.1": {
+        "H": "dchey.qokeey.dcheey.daiir.otchal=",
+        "U": "dchey.qoteey.dcheey.daiir.otchal=",
+        "V": "dchey.qokeey.dcheey.daiin.otchal={Grove's S3}"
+      },
+      "R.2": {
+        "H": "toees.ykeoshe.qokol!chey.qokchdy=",
+        "U": "toa!r.ykeoshy.qokol,chey.qokchdy=",
+        "V": "toees.ykeoshe.qokol.chey.qokchdy={Grove's S2}"
+      },
+      "R.3": {
+        "H": "toees!!.ch!cphy.qokchdy.dol.okyld=",
+        "U": "tochedy.chocphy.qotchdy.dol.okald=",
+        "V": "tochedy.chocphy.qokchdy.dol.okald={Grove's S1}"
+      },
+      "R.4": {
+        "H": "dchy!kchy.daiir.chok{crease}.o!ckho!dar=",
+        "U": "dchy,kchy.daiir.chot{crease}.*,cthy,dar=",
+        "V": "dchy!kchy.daiir.chok{crease}.o,ckhy!dar={Grove's S8}"
+      },
+      "R.5": {
+        "H": "qokol.chdchol.qoteey.ch{crease}etechy.okchdy=",
+        "U": "qokol.chdchol.qoteey.ch{crease}*!echy.okchdy=",
+        "V": "qokol.chdchol.qoteey.ch{crease}ckhchy.okchdy={Grove's S7}"
+      },
+      "R.6": {
+        "H": "dchokchr{crease}.shhy.okey.oteos.okolshy=",
+        "U": "dchokch*{crease}.*chy.okey.oteos.okolshy=",
+        "V": "dchokchr{crease}.shhy.okey.oteos.okolshy={Grove's S6}"
+      },
+      "R.7": {
+        "H": "pchody.qokchy.dshol.ds{&S}y!.otgoldl=",
+        "U": "pchody.qokchy.dshol.d*{&c'y},o!tdoly=",
+        "V": "p**!dy.qokchy.dshol.d*{&c'y}.o,tmodl={Grove's S5}"
+      },
+      "R.8": {
+        "H": "kchoty.oteey.daiin.dcheeody.oteey=",
+        "U": "kchoty.oteey.daiin.dcheeody.oteey=",
+        "V": "kchoty.oteey.daiin.dcheeady.oteey={Grove's S4}"
+      },
+      "X.1": {
+        "H": "doaro=",
+        "U": "doaro=",
+        "V": "doary={Grove's L2}"
+      },
+      "X.2": {
+        "H": "oalcheol=",
+        "U": "oalcheol=",
+        "V": "oalcheol={Grove's L3}"
+      },
+      "X.3": {
+        "H": "dchol.dal=",
+        "U": "dchol!day=",
+        "V": "dchol!day={Grove's L1}"
+      },
+      "X.4": {
+        "H": "otory{crease}=",
+        "U": "otary{crease}=",
+        "V": "okary{crease}={Grove's L5}"
+      },
+      "X.5": {
+        "H": "okos=",
+        "U": "okos=",
+        "V": "okos={Grove's L4}"
+      },
+      "X.6": {
+        "H": "okolchy=",
+        "U": "okolchy=",
+        "V": "okolchy={Grove's L6}"
+      },
+      "X.7": {
+        "H": "a.{crease}cphy=",
+        "U": "o!{crease}cphy=",
+        "V": "ch{crease}cphy={Grove's L7}"
+      },
+      "X.8": {
+        "H": "chdy.yky=",
+        "U": "chdy.oky=",
+        "V": "chky.oky={Grove's L8}"
+      },
+      "X.9": {
+        "H": "darall=",
+        "U": "darall=",
+        "V": "darall={Grove's L10}"
+      },
+      "X.10": {
+        "H": "o.cthyd=",
+        "U": "o,cthyd=",
+        "V": "o!cthyd={Grove's L11}"
+      },
+      "X.11": {
+        "H": "okchoda=",
+        "U": "okchoda=",
+        "V": "okchody={Grove's L9}"
+      },
+      "X.12": {
+        "H": "oty!dm=",
+        "U": "oty,dm=",
+        "V": "oty!dm={Grove's L12}"
+      },
+      "C2.1": {
+        "H": "otchody.chokchy.okol.cheol.dar.cho.keol.dolaiin.okeol.oly.",
+        "U": "otorody.chokchy.okol.cheol.dar.cho,teol.dolaiin.okeol.oly.",
+        "V": "otchody.chokchy.okol.cheal.dar.cho.keos.dolaiin.okeol.oly."
+      }
+    }
+  }
+}
