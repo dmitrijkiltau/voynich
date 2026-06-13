@@ -1,19 +1,22 @@
 <script>
 	import { onMount } from 'svelte';
-	import { LEXICON } from '$lib';
+	import { LEXICON, STATS } from '$lib';
 	import { getLexiconConfidence } from '$lib/lexicon-data.js';
 
 	// ── Word generation ──────────────────────────────────────────────────────
 
+	/** @type {[string,number][]} */
 	const STARTS = [
 		['d',14],['ch',9],['k',8],['o',10],['qo',5],['sh',7],['s',4],
 		['t',4], ['y',5], ['l',5],['c',3], ['p',2], ['f',1], ['r',2],
 	];
+	/** @type {[string,number][]} */
 	const MIDDLES = [
 		['a',7], ['ai',6],['aiin',8],['o',8], ['or',4], ['al',4],['ol',3],
 		['ch',5],['sh',3],['k',4], ['e',4], ['ee',3],['dy',4],['ky',3],
 		['r',4], ['l',4], ['n',3], ['d',3], ['s',2], ['chy',3],['m',2],
 	];
+	/** @type {[string,number][]} */
 	const ENDINGS = [
 		['y',18],['n',7],['r',6],['aiin',12],['m',5],['l',5],
 		['dy',7],['in',4],['or',4], ['ol',3], ['al',3],
@@ -34,6 +37,15 @@
 		const mids  = Array.from({ length: nMid }, () => weightedChoice(MIDDLES));
 		const end   = weightedChoice(ENDINGS);
 		return start + mids.join('') + end;
+	}
+
+	// GPA-1: discard any word that matches a real corpus token; regenerate until genuine hapax
+	function generateHapax() {
+		let word = '';
+		let i = 0;
+		do { word = generateWord(); i++; }
+		while (i < 30 && LEXICON.some(e => e.eva === word));
+		return word;
 	}
 
 	// ── Tokenizer ────────────────────────────────────────────────────────────
@@ -69,8 +81,9 @@
 	// ── Prefix stripping & R41 ───────────────────────────────────────────────
 
 	const PREFIX_LIST = ['qok','qod','qo','o','l','d','p','y','t'];
-	const CONJ_CLASS  = new Set(['qo','qok','qod','o']);
-	const PREP_CLASS  = new Set(['l','d','p']);
+	const REL_CLASS   = new Set(['d']);
+	const CONJ_CLASS  = new Set(['qo','qok','qod','o','v']);
+	const PREP_CLASS  = new Set(['l','p']);
 
 	/** @param {string} word */
 	function stripPrefixes(word) {
@@ -88,8 +101,10 @@
 	/** @param {string[]} prefixes @param {string} root */
 	function checkR41(prefixes, root) {
 		if (prefixes.length > 2) return { valid: false, reason: 'b' };
-		for (let i = 0; i < prefixes.length - 1; i++) {
-			if (PREP_CLASS.has(prefixes[i]) && CONJ_CLASS.has(prefixes[i + 1]))
+		for (let i = 0; i < prefixes.length; i++) {
+			if (i > 0 && REL_CLASS.has(prefixes[i]))
+				return { valid: false, reason: 'd' };
+			if (i < prefixes.length - 1 && PREP_CLASS.has(prefixes[i]) && CONJ_CLASS.has(prefixes[i + 1]))
 				return { valid: false, reason: 'a' };
 		}
 		const POS_VOCAB = ['or','chaiin','okal'];
@@ -123,8 +138,7 @@
 		const r40      = count <= 3 ? 'cap' : 'pass';
 		const maxStars = r40 === 'cap' ? '★★' : '★★★';
 
-		return { word, inLexicon: false, prefixes, root, rootCons: count,
-			r40, r41, d1, d2, maxStars };
+		return { word, inLexicon: false, prefixes, root, rootCons: count,	r40, r41, d1, d2, maxStars };
 	}
 
 	// ── Run stats helper ─────────────────────────────────────────────────────
@@ -153,7 +167,7 @@
 	let protocolDate = $state('');
 
 	function runTest() {
-		results = Array.from({ length: wordCount }, () => analyzeWord(generateWord()));
+		results = Array.from({ length: wordCount }, () => analyzeWord(generateHapax()));
 		tested  = true;
 	}
 
@@ -161,7 +175,7 @@
 
 	function runProtocol() {
 		runs = Array.from({ length: 10 }, (_, i) => {
-			const words = Array.from({ length: wordCount }, () => analyzeWord(generateWord()));
+			const words = Array.from({ length: wordCount }, () => analyzeWord(generateHapax()));
 			const { total, passed, lexhits, capped, invalid, passRate } = computeRunStats(words);
 			return { run: i + 1, total, passRate, passed, lexhits, capped, invalid };
 		});
@@ -211,7 +225,7 @@
 
 <!-- ── Intro ─────────────────────────────────────────────────────────────── -->
 <div class="gib-intro">
-	<p>Jedes generierte EVA-Pseudowort durchläuft <strong>R40 v2</strong> (Kurzwurzel-Deckel: Basiswurzel ≤ 3 Konsonanten → max. ★★), <strong>R41</strong> (Präfix-Hierarchie) und <strong>D1/D2</strong> (Phonotaktik-Flags). Ein Pseudowort gilt als Falsch-Positiv, wenn es trotz Pseudocharakters ★★★ erreicht oder zufällig einem Lexikoneintrag entspricht. Der Generator verwendet gewichtete EVA-Bigramm-Statistik.</p>
+	<p>Jedes generierte EVA-Pseudowort durchläuft <strong>R40 v2</strong> (Kurzwurzel-Deckel: Basiswurzel ≤ 3 Konsonanten → max. ★★), <strong>R41</strong> (Präfix-Hierarchie: d-/REL → o-/qo-/v-/Konj. → l-/p-/Präp. → Basis) mit <strong>R45</strong> (d-Relativpräfix als äußerste Schale) und <strong>D1/D2</strong> (Phonotaktik-Flags). Ein Pseudowort gilt als Falsch-Positiv, wenn es trotz Pseudocharakters ★★★ erreicht oder zufällig einem Lexikoneintrag entspricht. Der Generator verwendet gewichtete EVA-Bigramm-Statistik.</p>
 	<div class="threshold-bar">
 		<span class="thr thr-fail">Abbruch &gt; 15 %</span>
 		<span class="thr-sep">·</span>
@@ -227,8 +241,8 @@
 {#if protocolDone && protocolStats}
 	<div class="protocol-section">
 		<div class="protocol-head">
-			<span class="protocol-title no-print">10-Lauf-Protokoll · {wordCount} Wörter/Lauf · {protocolDate}</span>
-			<span class="protocol-title print-only">GibberishTest · 10-Lauf-Protokoll · v7.1 · {wordCount} Wörter/Lauf · {protocolDate}</span>
+			<span class="lbl-xs protocol-title no-print">10-Lauf-Protokoll · {wordCount} Wörter/Lauf · {protocolDate}</span>
+			<span class="lbl-xs protocol-title print-only">GibberishTest · 10-Lauf-Protokoll · v{STATS.version} · {wordCount} Wörter/Lauf · {protocolDate}</span>
 		</div>
 
 		<div class="protocol-body">
@@ -305,7 +319,7 @@
 
 <!-- ── Controls ──────────────────────────────────────────────────────────── -->
 <div class="gib-controls">
-	<label class="ctrl-label" for="wc-input">Wörter/Lauf</label>
+	<label class="lbl-2xs ctrl-label" for="wc-input">Wörter/Lauf</label>
 	<input
 		id="wc-input"
 		class="wc-input"
@@ -348,27 +362,27 @@
 			<div class="stat-cells">
 				<div class="stat-cell">
 					<span class="sc-n">{stats.passed}</span>
-					<span class="sc-l">★★★ R40-pass</span>
+					<span class="lbl-2xs sc-l">★★★ R40-pass</span>
 				</div>
 				<div class="stat-cell">
 					<span class="sc-n">{stats.lexhits}</span>
-					<span class="sc-l">Lex.-Zufallstreffer</span>
+					<span class="lbl-2xs sc-l">Lex.-Zufallstreffer</span>
 				</div>
 				<div class="stat-cell">
 					<span class="sc-n">{stats.capped}</span>
-					<span class="sc-l">★★ R40-Deckel</span>
+					<span class="lbl-2xs sc-l">★★ R40-Deckel</span>
 				</div>
 				<div class="stat-cell">
 					<span class="sc-n">{stats.invalid}</span>
-					<span class="sc-l">Ungültig (R41)</span>
+					<span class="lbl-2xs sc-l">Ungültig (R41)</span>
 				</div>
 				<div class="stat-cell">
 					<span class="sc-n sc-warn">{stats.d1count}</span>
-					<span class="sc-l">⚠ D1 Doppelkons.</span>
+					<span class="lbl-2xs sc-l">⚠ D1 Doppelkons.</span>
 				</div>
 				<div class="stat-cell">
 					<span class="sc-n sc-warn">{stats.d2count}</span>
-					<span class="sc-l">⚠ D2 Laryngal</span>
+					<span class="lbl-2xs sc-l">⚠ D2 Laryngal</span>
 				</div>
 			</div>
 		</div>
@@ -389,7 +403,7 @@
 					</tr>
 				</thead>
 				<tbody>
-					{#each results as r, i (r.word)}
+					{#each results as r, i (i)}
 						<tr class="row-{starsClass(r)}">
 							<td class="td-n">{i + 1}</td>
 							<td class="td-eva">{r.word}</td>
@@ -447,7 +461,7 @@
 		margin-bottom: 1.2rem;
 
 		& p {
-			font-size: .93rem;
+			font-size: var(--text-sm);
 			line-height: 1.65;
 			margin-bottom: .6rem;
 		}
@@ -458,21 +472,21 @@
 		flex-wrap: wrap;
 		align-items: center;
 		gap: .3rem .5rem;
-		font-size: .76rem;
+		font-size: var(--text-xs);
 	}
 
 	.thr {
 		font-family: var(--font-smallcaps);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		letter-spacing: .08em;
 		padding: .18rem .55rem;
-		border-radius: 2px;
+		border-radius: var(--radius);
 		white-space: nowrap;
 	}
 
-	.thr-fail { background: rgba(122,28,28,.1); color: var(--red); border: 1px solid rgba(122,28,28,.25); }
-	.thr-warn { background: rgba(154,122,42,.1); color: #7a5a00; border: 1px solid rgba(154,122,42,.3); }
-	.thr-ok   { background: rgba(26,74,40,.08);  color: #1a4a28;  border: 1px solid rgba(26,74,40,.2);  }
+	.thr-fail { background: color-mix(in srgb, var(--red) 10%, transparent); color: var(--red); border: 1px solid color-mix(in srgb, var(--red) 25%, transparent); }
+	.thr-warn { background: color-mix(in srgb, var(--gold) 10%, transparent); color: #7a5a00; border: 1px solid color-mix(in srgb, var(--gold) 30%, transparent); }
+	.thr-ok   { background: color-mix(in srgb, var(--green) 8%, transparent);  color: var(--green);  border: 1px solid color-mix(in srgb, var(--green) 20%, transparent);  }
 	.thr-hist { color: var(--ink-f); font-style: italic; padding: 0; background: none; border: none; }
 
 	.thr-sep  { color: var(--ink-f); opacity: .5; }
@@ -489,21 +503,17 @@
 	}
 
 	.ctrl-label {
-		font-family: var(--font-smallcaps);
-		font-size: .65rem;
 		letter-spacing: .15em;
-		text-transform: uppercase;
-		color: var(--ink-f);
 	}
 
 	.wc-input {
 		width: 5rem;
 		font-family: var(--font-mono);
-		font-size: .88rem;
+		font-size: var(--text-sm);
 		color: var(--ink);
 		background: rgba(255,255,255,.55);
 		border: 1px solid var(--border);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .28rem .5rem;
 		outline: none;
 
@@ -515,16 +525,16 @@
 
 	.run-btn {
 		font-family: var(--font-smallcaps);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		letter-spacing: .12em;
 		text-transform: uppercase;
 		color: var(--parch);
 		background: var(--red);
 		border: 1px solid var(--red);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .32rem 1rem;
 		cursor: pointer;
-		transition: all .15s;
+		transition: all var(--t-norm);
 
 		&:hover, &:focus-visible {
 			background: color-mix(in srgb, var(--red) 85%, black);
@@ -538,7 +548,7 @@
 		border-color: var(--red);
 
 		&:hover, &:focus-visible {
-			background: rgba(122,28,28,.08);
+			background: color-mix(in srgb, var(--red) 8%, transparent);
 		}
 	}
 
@@ -547,7 +557,7 @@
 	.protocol-section {
 		margin-bottom: 2rem;
 		border: 1px solid var(--border);
-		border-radius: 3px;
+		border-radius: var(--radius-md);
 		overflow: hidden;
 	}
 
@@ -561,25 +571,22 @@
 	}
 
 	.protocol-title {
-		font-family: var(--font-smallcaps);
-		font-size: .68rem;
 		letter-spacing: .12em;
-		text-transform: uppercase;
 		color: var(--ink-l);
 	}
 
 	.proto-print-btn {
 		font-family: var(--font-smallcaps);
-		font-size: .63rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .1em;
 		text-transform: uppercase;
 		color: var(--ink-f);
 		background: rgba(255,255,255,.4);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .22rem .7rem;
 		cursor: pointer;
-		transition: all .15s;
+		transition: all var(--t-norm);
 
 		&:hover { background: rgba(255,255,255,.8); color: var(--ink); }
 	}
@@ -595,13 +602,13 @@
 
 	.proto-table {
 		flex: 1 1 380px;
-		font-size: .82rem;
+		font-size: var(--text-sm);
 		border-right: 1px solid var(--parch-dk);
 	}
 
 	.td-run {
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		width: 2.5rem;
 		text-align: center;
@@ -609,27 +616,27 @@
 
 	.td-rate {
 		font-family: var(--font-mono);
-		font-size: .88rem;
+		font-size: var(--text-sm);
 		text-align: right;
 		padding-right: .8rem;
 	}
 
-	.proto-row.zone-fail td { background: rgba(122,28,28,.06); }
+	.proto-row.zone-fail td { background: color-mix(in srgb, var(--red) 6%, transparent); }
 	.proto-row.zone-fail .td-rate { color: var(--red); }
-	.proto-row.zone-warn td { background: rgba(154,122,42,.05); }
+	.proto-row.zone-warn td { background: color-mix(in srgb, var(--gold) 5%, transparent); }
 	.proto-row.zone-warn .td-rate { color: #7a5a00; }
-	.proto-row.zone-ok   .td-rate { color: #1a4a28; }
+	.proto-row.zone-ok   .td-rate { color: var(--green); }
 
 	.proto-mean td {
 		background: var(--parch-d);
-		font-size: .85rem;
+		font-size: var(--text-sm);
 		border-top: 1px solid var(--border);
 	}
 
-	.proto-mean .td-rate { font-size: .95rem; }
+	.proto-mean .td-rate { font-size: var(--text-sm); }
 
 	.mean-note {
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		font-style: italic;
 		color: var(--ink-f);
 	}
@@ -638,12 +645,12 @@
 
 	.desc-stats {
 		flex: 0 1 300px;
-		font-size: .82rem;
+		font-size: var(--text-sm);
 		align-self: stretch;
 
 		& thead th {
 			font-family: var(--font-smallcaps);
-			font-size: .63rem;
+			font-size: var(--text-2xs);
 			letter-spacing: .1em;
 			text-transform: uppercase;
 			color: var(--ink-f);
@@ -654,19 +661,19 @@
 
 		& td:first-child {
 			color: var(--ink-l);
-			font-size: .78rem;
+			font-size: var(--text-sm);
 		}
 	}
 
 	.ds-val {
 		font-family: var(--font-mono);
-		font-size: .85rem;
+		font-size: var(--text-sm);
 		text-align: right;
 		white-space: nowrap;
 		padding-right: .8rem;
 	}
 
-	.ds-crit td { background: rgba(122,28,28,.05); }
+	.ds-crit td { background: color-mix(in srgb, var(--red) 5%, transparent); }
 	.ds-crit .ds-val { color: var(--red); font-weight: 600; }
 
 	.ds-abstand { color: var(--ink-f); }
@@ -676,20 +683,20 @@
 
 	.proto-verdict {
 		padding: .65rem .9rem;
-		font-size: .83rem;
+		font-size: var(--text-sm);
 		line-height: 1.5;
 		border-top: 1px solid var(--parch-dk);
-		background: rgba(26,74,40,.05);
-		color: #1a4a28;
+		background: color-mix(in srgb, var(--green) 5%, transparent);
+		color: var(--green);
 	}
 
 	.proto-verdict.verdict-fail {
-		background: rgba(122,28,28,.06);
+		background: color-mix(in srgb, var(--red) 6%, transparent);
 		color: var(--red);
 	}
 
 	.proto-verdict.verdict-warn {
-		background: rgba(154,122,42,.06);
+		background: color-mix(in srgb, var(--gold) 6%, transparent);
 		color: #7a5a00;
 	}
 
@@ -714,8 +721,8 @@
 
 	.stat-rate {
 		font-family: var(--font-display);
-		font-size: 2.4rem;
-		color: #1a4a28;
+		font-size: var(--text-2xl);
+		color: var(--green);
 		line-height: 1.1;
 		margin: .4rem 0 .2rem;
 
@@ -724,7 +731,7 @@
 	}
 
 	.stat-verdict {
-		font-size: .78rem;
+		font-size: var(--text-sm);
 		font-style: italic;
 		color: var(--ink-l);
 		line-height: 1.4;
@@ -744,12 +751,12 @@
 		padding: .4rem .3rem;
 		background: rgba(255,255,255,.3);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 
 		& .sc-n {
 			display: block;
 			font-family: var(--font-display);
-			font-size: 1.5rem;
+			font-size: var(--text-xl);
 			color: var(--red);
 			line-height: 1.1;
 		}
@@ -758,11 +765,7 @@
 
 		& .sc-l {
 			display: block;
-			font-family: var(--font-smallcaps);
-			font-size: .65rem;
 			letter-spacing: .07em;
-			text-transform: uppercase;
-			color: var(--ink-f);
 			margin-top: .1rem;
 		}
 	}
@@ -774,11 +777,11 @@
 		max-height: 560px;
 		overflow-y: auto;
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 	}
 
 	.gib-table {
-		font-size: .8rem;
+		font-size: var(--text-sm);
 
 		& thead th {
 			position: sticky;
@@ -790,7 +793,7 @@
 
 	.td-n {
 		font-family: var(--font-mono);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		width: 2rem;
 		text-align: center;
@@ -798,13 +801,13 @@
 
 	.td-eva {
 		font-family: var(--font-mono);
-		color: #5a3f1a;
+		color: var(--ink-eva);
 		white-space: nowrap;
 	}
 
 	.td-pre {
 		font-family: var(--font-mono);
-		font-size: .73rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		white-space: nowrap;
 	}
@@ -812,27 +815,27 @@
 	.td-c {
 		text-align: center;
 		font-family: var(--font-mono);
-		font-size: .78rem;
+		font-size: var(--text-sm);
 	}
 
-	.td-rule { white-space: nowrap; font-size: .73rem; }
+	.td-rule { white-space: nowrap; font-size: var(--text-xs); }
 	.td-stars { white-space: nowrap; }
 
 	.row-ms-invalid td { opacity: .55; }
-	.row-ms-pass    td { background: rgba(26,74,40,.04); }
-	.row-ms-lex     td { background: rgba(122,28,28,.05); }
+	.row-ms-pass    td { background: color-mix(in srgb, var(--green) 4%, transparent); }
+	.row-ms-lex     td { background: color-mix(in srgb, var(--red) 5%, transparent); }
 
-	.flag-pass    { color: #1a4a28; font-weight: 600; }
+	.flag-pass    { color: var(--green); font-weight: 600; }
 	.flag-cap     { color: var(--ink-f); }
 	.flag-invalid { color: var(--red); font-weight: 600; }
 	.flag-warn    { color: var(--gold); font-weight: 600; }
 	.flag-na      { color: var(--ink-f); }
-	.flag-lex     { color: var(--red); font-size: .65rem; font-style: italic; }
+	.flag-lex     { color: var(--red); font-size: var(--text-2xs); font-style: italic; }
 
-	.ms-invalid { color: var(--red); font-size: .72rem; }
+	.ms-invalid { color: var(--red); font-size: var(--text-xs); }
 	.ms-cap     { color: var(--ink-f); }
 	.ms-pass    { color: var(--gold); font-weight: 600; }
-	.ms-lex     { color: var(--red); font-size: .72rem; font-style: italic; }
+	.ms-lex     { color: var(--red); font-size: var(--text-xs); font-style: italic; }
 
 	/* ── Print ──────────────────────────────────────────── */
 
@@ -859,14 +862,14 @@
 		}
 
 		.protocol-title {
-			font-size: .75rem;
+			font-size: var(--text-xs);
 			letter-spacing: .08em;
 			color: #000;
 		}
 
 		.proto-table,
 		.desc-stats {
-			font-size: .78rem;
+			font-size: var(--text-sm);
 			break-inside: avoid;
 		}
 
@@ -888,7 +891,7 @@
 			border-left: 3px solid currentColor;
 			padding-left: .6rem;
 			margin-top: .6rem;
-			font-size: .8rem;
+			font-size: var(--text-sm);
 		}
 
 		.proto-row.zone-fail td { background: none; }

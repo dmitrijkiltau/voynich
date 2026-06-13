@@ -139,6 +139,14 @@ export function generateMarkdown() {
   line();
 
   const _confMd = (/** @type {any} */ e) => getLexiconConfidence(e.confidenceStars) + (e.candidate ? ' (R43 Kandidat)' : '');
+  /** @param {any} e */
+  const _deMd = (e) => {
+    let d = e.de || '—';
+    if (e.uncertain) d += ' ≈';
+    if (e.context) d += ` _(${e.context})_`;
+    if (e.relatedTo) d += ` → ${e.relatedTo.type}: ${e.relatedTo.eva}`;
+    return d;
+  };
 
   h(3, `A. Stammwörter (${STEM_WORDS.filter(/** @type {any} */e => !e.candidate).length})`);
   line();
@@ -147,7 +155,7 @@ export function generateMarkdown() {
     STEM_WORDS.filter(/** @type {any} */e => !e.candidate).map(e => [
       e.eva,
       e.heb,
-      e.de,
+      _deMd(e),
       e.layer || '—',
       e.isAnchor ? 'ja' : '—',
       e.anchorFolio || '—',
@@ -164,7 +172,7 @@ export function generateMarkdown() {
     STEM_WORDS.filter(/** @type {any} */e => e.candidate).map(e => [
       e.eva,
       e.heb,
-      e.de,
+      _deMd(e),
       e.layer || '—',
       e.isAnchor ? 'ja' : '—',
       e.anchorFolio || '—',
@@ -182,7 +190,7 @@ export function generateMarkdown() {
       e.eva,
       e.morph || '—',
       e.heb,
-      e.de,
+      _deMd(e),
       e.evidence || '—',
       getLexiconRules(e).join(', ') || '—',
       _confMd(e),
@@ -198,7 +206,7 @@ export function generateMarkdown() {
       e.eva,
       e.morph || '—',
       e.heb,
-      e.de,
+      _deMd(e),
       e.evidence || '—',
       getLexiconRules(e).join(', ') || '—',
       _confMd(e),

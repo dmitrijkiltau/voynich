@@ -1,0 +1,58 @@
+/* ── DESIGN TOKENS ───────────────────────────────────── */
+
+:root {
+  /* palette */
+  --ink:      #1a1208;
+  --ink-l:    #3d2e14;
+  --ink-f:    #6a5535;
+  --parch:    #f4ead5;
+  --parch-d:  #e8d8b8;
+  --parch-dk: #d4be96;
+  --red:      #7a1c1c;
+  --gold:     #9a7a2a;
+  --border:   #c4a86a;
+  --blue:     #1c3d5a;
+  --green:    #1a4a28;
+  --ink-eva:  #5a3f1a;    /* EVA / monospace text */
+  --red-dk:   #8b0000;    /* ★★★★★ confidence */
+
+  /* type scale */
+  --text-2xs:  .60rem;   /* badges, micro labels */
+  --text-xs:   .72rem;   /* smallcaps labels, nav, table headers */
+  --text-sm:   .82rem;   /* notes, captions, data cells */
+  --text-base: 1.05rem;  /* body */
+  --text-md:   1.1rem;   /* elevated body */
+  --text-xl:   1.5rem;   /* section headings */
+  --text-2xl:  2.4rem;   /* page title */
+
+  /* typography */
+  --font-serif:     'Crimson Text', Georgia, serif;
+  --font-display:   'IM Fell English', serif;
+  --font-smallcaps: 'IM Fell English SC', serif;
+  --font-hebrew:    'Noto Serif Hebrew', serif;
+  --font-mono:      'Courier Prime', Courier, monospace;
+
+  /* layout */
+  --sidebar-w:   240px;
+  --nav-h:       52px;
+  --content-max: 860px;
+
+  /* z-index scale */
+  --z-base:     1;
+  --z-sticky:   99;
+  --z-sidebar:  100;
+  --z-nav:      200;
+  --z-progress: 1000;
+
+  /* motion */
+  --t-fast:   .12s;
+  --t-norm:   .15s;
+  --t-slow:   .25s;
+  --t-slower: .4s;
+
+  /* shape */
+  --radius-sm: 1px;
+  --radius:    2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+}

@@ -1,47 +1,65 @@
 <script>
 	import { OPEN_PROBLEMS } from '$lib/open-problems-data.js';
+	import Box from '$lib/components/Box.svelte';
+	import { slide } from 'svelte/transition';
 
+	/** @type {Record<string, string>} */
 	const severityLabel = {
-		hoch:           	'Schwere: hoch',
-		mittel:         	'Schwere: mittel',
-		strukturell:    	'Strukturell',
-		'niedrig-mittel': 'Schwere: niedrig–mittel',
+		hoch:                'Schwere: hoch',
+		mittel:              'Schwere: mittel',
+		strukturell:         'Strukturell',
+		'niedrig-mittel':    'Schwere: niedrig–mittel',
+		'hoch (methodisch)': 'Schwere: hoch (methodisch)',
 	};
 
+	/** @type {Record<string, string>} */
 	const statusLabel = {
 		offen:       'offen',
 		ausstehend:  'ausstehend',
 		moratorium:  'Moratorium aktiv',
 		'gelöst':    'gelöst',
 	};
+
+	/** @type {Record<string, boolean>} */
+	let openState = $state(
+		Object.fromEntries(OPEN_PROBLEMS.map(p => [p.id, p.status !== 'gelöst']))
+	);
+
+	/** @param {string} id */
+	function toggle(id) {
+		openState[id] = !openState[id];
+	}
 </script>
 
 <div class="open-problems">
-	<div class="box red audit-note">
-		<div class="box-title">Methodischer Vorbehalt (v7.5)</div>
+	<Box variant="red" title="Methodischer Vorbehalt (v7.5)" class="audit-note">
 		<p>Das Mapping ist eine <strong>starke Lesehypothese</strong>, keine bewiesene Entzifferung. Die folgenden Probleme widersprechen der Hypothese nicht zwingend, müssen aber sichtbar bleiben. Interne Kohärenz beweist keine externe Gültigkeit.</p>
-	</div>
+	</Box>
 
 	<div class="problem-list">
 		{#each OPEN_PROBLEMS as p (p.id)}
-			<div class="problem-card" class:moratorium={p.status === 'moratorium'}>
-				<div class="problem-header">
+			<div class="problem-card" class:moratorium={p.status === 'moratorium'} class:is-closed={!openState[p.id]}>
+				<button class="problem-header" onclick={() => toggle(p.id)} aria-expanded={openState[p.id]}>
 					<span class="problem-id">{p.id}</span>
 					<span class="problem-title">{p.title}</span>
 					<span class="badge severity-{p.severity}">{severityLabel[p.severity] ?? p.severity}</span>
 					<span class="badge status-{p.status}">{statusLabel[p.status] ?? p.status}</span>
-				</div>
-				<p class="problem-body">{p.problem}</p>
-				<div class="problem-hyp">
-					<span class="hyp-label">Arbeitshypothese:</span>
-					{p.hypothesis}
-				</div>
+					<span class="chevron" class:open={openState[p.id]}></span>
+				</button>
+				{#if openState[p.id]}
+					<div class="problem-body-wrap" transition:slide={{ duration: 180 }}>
+						<p class="problem-body">{p.problem}</p>
+						<div class="problem-hyp">
+							<span class="hyp-label">Arbeitshypothese:</span>
+							{p.hypothesis}
+						</div>
+					</div>
+				{/if}
 			</div>
 		{/each}
 	</div>
 
-	<div class="box blue scheol-stat">
-		<div class="box-title">Scheol-Verteilungsstatistik (v7.5 formalisiert)</div>
+	<Box variant="blue" title="Scheol-Verteilungsstatistik (v7.5 formalisiert)" class="scheol-stat">
 		<div class="table-wrap">
 			<table class="dt">
 				<thead>
@@ -53,17 +71,16 @@
 					<tr><td>Zeilenanfang</td><td><strong>0 %</strong></td><td>—</td></tr>
 				</tbody>
 			</table>
-			<p style="margin:.6rem 0 0;font-size:.85rem;color:var(--ink-f)">Diese Verteilung ist nicht die eines zufällig platzierten Begriffs. Sie folgt präzise R6 (Zeilenabschluss sheol = Tod-Prognose) und R17 (shol apokor. medial / sheol Vollform final).</p>
+			<p style="margin:.6rem 0 0;font-size:var(--text-sm);color:var(--ink-f)">Diese Verteilung ist nicht die eines zufällig platzierten Begriffs. Sie folgt präzise R6 (Zeilenabschluss sheol = Tod-Prognose) und R17 (shol apokor. medial / sheol Vollform final).</p>
 		</div>
-	</div>
+	</Box>
 </div>
 
 <style>
-	.audit-note {
+	:global(.audit-note) {
 		margin-bottom: 1.5rem;
-
-		& p { margin: 0; font-size: .92rem; }
 	}
+	:global(.audit-note) p { margin: 0; font-size: var(--text-sm); }
 
 	.problem-list {
 		display: flex;
@@ -75,45 +92,83 @@
 	.problem-card {
 		border: 1px solid var(--parch-dk);
 		border-left: 3px solid var(--red);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .9rem 1.1rem;
 		background: rgba(255, 255, 255, .25);
 
 		&.moratorium {
 			border-left-color: var(--gold);
 		}
+
+		&.is-closed {
+			background: rgba(255, 255, 255, .12);
+		}
 	}
 
 	.problem-header {
+		appearance: none;
+		background: none;
+		border: none;
+		padding: 0;
+		font: inherit;
+		color: inherit;
+		text-align: left;
+		width: 100%;
+		cursor: pointer;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		gap: .4rem .6rem;
 		margin-bottom: .5rem;
+
+		&:focus-visible {
+			outline: 2px solid var(--gold);
+			outline-offset: 3px;
+			border-radius: var(--radius);
+		}
+	}
+
+	.is-closed .problem-header {
+		margin-bottom: 0;
+	}
+
+	.chevron {
+		margin-left: auto;
+		flex-shrink: 0;
+		width: .45rem;
+		height: .45rem;
+		border-right: 1.5px solid var(--ink-f);
+		border-bottom: 1.5px solid var(--ink-f);
+		transform: rotate(-45deg);
+		transition: transform 180ms ease;
+
+		&.open {
+			transform: rotate(45deg);
+		}
 	}
 
 	.problem-id {
 		font-family: var(--font-mono);
-		font-size: .75rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		background: var(--parch-dk);
 		padding: .1rem .35rem;
-		border-radius: 2px;
+		border-radius: var(--radius);
 	}
 
 	.problem-title {
 		font-weight: 600;
-		font-size: .95rem;
+		font-size: var(--text-base);
 		flex: 1;
 		min-width: 120px;
 	}
 
 	.badge {
 		font-family: var(--font-smallcaps);
-		font-size: .62rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .07em;
 		padding: .15rem .45rem;
-		border-radius: 2px;
+		border-radius: var(--radius);
 	}
 
 	.severity-hoch            { background: color-mix(in srgb, var(--red) 12%, transparent); color: var(--red); }
@@ -127,13 +182,13 @@
 	.status-gelöst     { background: color-mix(in srgb, var(--green) 12%, transparent); color: color-mix(in srgb, var(--green) 80%, var(--ink)); }
 
 	.problem-body {
-		font-size: .88rem;
+		font-size: var(--text-sm);
 		color: var(--ink);
 		margin-bottom: .5rem;
 	}
 
 	.problem-hyp {
-		font-size: .83rem;
+		font-size: var(--text-sm);
 		color: var(--ink-f);
 		border-left: 2px solid var(--parch-dk);
 		padding-left: .7rem;
@@ -141,13 +196,11 @@
 
 	.hyp-label {
 		font-family: var(--font-smallcaps);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		letter-spacing: .08em;
 		color: var(--ink-f);
 		margin-right: .3rem;
 	}
 
-	.scheol-stat {
-		& p { margin-top: .6rem; }
-	}
+	:global(.scheol-stat) p { margin-top: .6rem; }
 </style>

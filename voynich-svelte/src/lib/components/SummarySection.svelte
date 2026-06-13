@@ -1,6 +1,7 @@
 <script>
   import { RULES } from "$lib/grammar-rules-data.js";
   import { STATS } from "$lib";
+  import Box from '$lib/components/Box.svelte';
 
   const CONTENT = {
     title: "I. Zusammenfassung",
@@ -59,13 +60,14 @@
       </table>
     </div>
 
-    <div class="abstract-changelog box hl hidden-print">
-      <div class="box-title">{CONTENT.correctionsTitle}</div>
-      <ul>
-        {#each STATS.changelog as change, index (index)}
-          <li>{change}</li>
-        {/each}
-      </ul>
+    <div class="abstract-changelog hidden-print">
+      <Box variant="hl" title={CONTENT.correctionsTitle}>
+        <ul>
+          {#each STATS.changelog as change, index (index)}
+            <li>{change}</li>
+          {/each}
+        </ul>
+      </Box>
     </div>
   </div>
 </section>
@@ -97,7 +99,7 @@
 
             &:first-child {
               color: var(--ink-f);
-              font-size: 0.85rem;
+              font-size: var(--text-sm);
               white-space: nowrap;
               width: 1%;
               padding-right: 1.2rem;

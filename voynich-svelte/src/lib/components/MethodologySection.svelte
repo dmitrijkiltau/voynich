@@ -1,6 +1,7 @@
 <script>
   import { CONFIDENCE_SCALE, ANCHOR_FOLIOS } from "$lib/methodology-data.js";
   import { isConf5 } from "$lib";
+  import Box from '$lib/components/Box.svelte';
 
   const content = {
     title: "II. Methodik",
@@ -60,14 +61,17 @@
       <div class="anchor-folios">
         <h3>{content.anchorFolios.title}</h3>
         {#each ANCHOR_FOLIOS as anchor (anchor.folio)}
-          <div class="box blue anchor-card">
-            <div class="box-title">{anchor.folio} — {anchor.subtitle}</div>
-            <p>{anchor.desc}</p>
-            {#if anchor.eva}
-              <div class="layer-eva">{anchor.eva}</div>
-              <div class="layer-heb">{anchor.heb}</div>
-              <div class="anchor-gloss">{anchor.gloss}</div>
-            {/if}
+          <div class="anchor-card">
+            <Box variant="blue" title="{anchor.folio} — {anchor.subtitle}">
+              <p>{anchor.desc}</p>
+              {#if anchor.eva}
+                <div class="layer-eva-heb">
+                  <div class="layer-eva">{anchor.eva}</div>
+                  <div class="layer-heb">{anchor.heb}</div>
+                </div>
+                <div class="anchor-gloss">{anchor.gloss}</div>
+              {/if}
+            </Box>
           </div>
         {/each}
       </div>
@@ -135,29 +139,38 @@
 			grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 			gap: 1rem;
 
+      @container (min-width: 960px) {
+				grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+			}
+
 			& h3 {
 				grid-column: 1 / -1;
 				margin-bottom: -0.8rem;
 			}
-      @container (min-width: 960px) {
-				grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-			}
-		}
 
-    & .anchor-card {
-      & p {
-        margin-bottom: 0.5rem;
-        font-size: 0.9rem;
+      & .anchor-card {
+        & p {
+          margin-bottom: 0.5rem;
+          font-size: var(--text-sm);
+        }
+
+        & .layer-eva-heb {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          gap: 0.2rem;
+        }
       }
-    }
 
-    & .anchor-gloss {
-      font-style: italic;
-      color: var(--ink-l);
-      font-size: 0.9rem;
-      border-left: 2px solid var(--gold);
-      padding-left: 0.7rem;
-      margin-top: 0.3rem;
-    }
+      & .anchor-gloss {
+        font-style: italic;
+        color: var(--ink-l);
+        font-size: var(--text-sm);
+        border-left: 2px solid var(--gold);
+        padding-left: 0.7rem;
+        margin-top: 0.3rem;
+      }
+		}
   }
 </style>

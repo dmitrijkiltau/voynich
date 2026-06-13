@@ -1,6 +1,7 @@
 <script>
 	import { GRAMMAR_PREFIXES, GRAMMAR_SUFFIXES, VERB_PARADIGM } from '$lib/grammar-data.js';
 	import { isConf5 } from '$lib';
+	import Box from '$lib/components/Box.svelte';
 
 	let { onLinkFilter = /** @type {((eva: string) => void) | undefined} */ (undefined) } = $props();
 </script>
@@ -75,9 +76,8 @@
   </div>
 </div>
 
-<div class="box hl">
-	<div class="box-title">Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 1 Kandidat ★★ provisorisch (f16r, R43)</div>
-	<p style="margin-bottom:.5rem;font-size:.92rem">Alle klinischen Ankerbegriffe erhalten eine Verbform durch Präfix-Schichtung <span class="eva">y</span> + <span class="eva">k</span> + Terminus (fünf positiv, ein negativ, ein Kandidat):</p>
+<Box variant="hl" title="Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 1 Kandidat ★★ provisorisch (f16r, R43)">
+	<p style="margin-bottom:.5rem;font-size:var(--text-sm)">Alle klinischen Ankerbegriffe erhalten eine Verbform durch Präfix-Schichtung <span class="eva">y</span> + <span class="eva">k</span> + Terminus (fünf positiv, ein negativ, ein Kandidat):</p>
 	<div class="table-scroll">
 		<table class="dt" style="margin-top:.4rem">
 			<thead>
@@ -96,75 +96,69 @@
 			</tbody>
 		</table>
 	</div>
-</div>
+</Box>
 
-<div class="box hl">
-	<div class="box-title">Prognose-Schema Quire A (Kräuter, Spr. A)</div>
-	<p style="margin-bottom:.5rem;font-size:.92rem">Jeder Paragraph folgt dem botanischen Schema:</p>
+<Box variant="hl" title="Prognose-Schema Quire A (Kräuter, Spr. A)">
+	<p style="margin-bottom:.5rem;font-size:var(--text-sm)">Jeder Paragraph folgt dem botanischen Schema:</p>
 	<div class="schema">
 		<div class="schema-step">
 			<span class="heb-sm">דָּם·כְּהִי·חַם</span>
-			<span class="lbl">Symptom (links)</span>
+			<span class="lbl-2xs lbl">Symptom (links)</span>
 		</div>
 		<span class="schema-arrow">‡</span>
 		<div class="schema-step" style="background:rgba(28,61,90,.06);border-color:var(--blue)">
 			<span class="heb-sm">{'{'+'plant}'}</span>
-			<span class="lbl">Trennmarker</span>
+			<span class="lbl-2xs lbl">Trennmarker</span>
 		</div>
 		<span class="schema-arrow">‡</span>
 		<div class="schema-step">
 			<span class="heb-sm">שַׂם·חֲקַר</span>
-			<span class="lbl">Therapie (rechts)</span>
+			<span class="lbl-2xs lbl">Therapie (rechts)</span>
 		</div>
 		<span class="schema-arrow">→</span>
-		<div class="schema-step" style="background:rgba(122,28,28,.08);border-color:var(--red)">
+		<div class="schema-step" style="background:color-mix(in srgb, var(--red) 8%, transparent);border-color:var(--red)">
 			<span class="heb-sm">שְאוֹל·אוֹר</span>
-			<span class="lbl">sheol / or<br>Prognose</span>
+			<span class="lbl-2xs lbl">sheol / or<br>Prognose</span>
 		</div>
 		<span class="schema-arrow">→</span>
-		<div class="schema-step" style="background:rgba(154,122,42,.08)">
+		<div class="schema-step" style="background:color-mix(in srgb, var(--gold) 8%, transparent)">
 			<span class="heb-sm">= / קַיָּם</span>
-			<span class="lbl">Kolophon</span>
+			<span class="lbl-2xs lbl">Kolophon</span>
 		</div>
 	</div>
-</div>
+</Box>
 
-<div class="box hl">
-	<div class="box-title">Prognose-Schema Quire T / Sprache B</div>
-	<p style="margin-bottom:.5rem;font-size:.92rem">Jeder vollständige Paragraph folgt dem Schema:</p>
+<Box variant="hl" title="Prognose-Schema Quire T / Sprache B">
+	<p style="margin-bottom:.5rem;font-size:var(--text-sm)">Jeder vollständige Paragraph folgt dem Schema:</p>
 	<div class="schema">
 		<div class="schema-step">
 			<span class="heb-sm">דִּין</span>
-			<span class="lbl">daiin<br>Urteil</span>
+			<span class="lbl-2xs lbl">daiin<br>Urteil</span>
 		</div>
 		<span class="schema-arrow">→</span>
 		<div class="schema-step">
 			<span class="heb-sm">שֶׁ+Symptom</span>
-			<span class="lbl">shedy+X</span>
+			<span class="lbl-2xs lbl">shedy+X</span>
 		</div>
 		<span class="schema-arrow">→</span>
 		<div class="schema-step">
 			<span class="heb-sm">כְּהִי · דַּל · דָּם</span>
-			<span class="lbl">Befund</span>
+			<span class="lbl-2xs lbl">Befund</span>
 		</div>
 		<span class="schema-arrow">→</span>
 		<div class="schema-step">
 			<span class="heb-sm">לְכְּדֵי</span>
-			<span class="lbl">lchedy<br>Therapieziel</span>
+			<span class="lbl-2xs lbl">lchedy<br>Therapieziel</span>
 		</div>
 		<span class="schema-arrow">→</span>
-		<div class="schema-step" style="background:rgba(122,28,28,.08);border-color:var(--red)">
+		<div class="schema-step" style="background:color-mix(in srgb, var(--red) 8%, transparent);border-color:var(--red)">
 			<span class="heb-sm">שְׁאוֹל · אוֹר</span>
-			<span class="lbl">Prognose (Tod/Heilung)</span>
+			<span class="lbl-2xs lbl">Prognose (Tod/Heilung)</span>
 		</div>
 	</div>
-</div>
+</Box>
 
 <style>
-  * + .box {
-    margin-top: 1rem;
-  }
-
   .grammar-systems {
     display: flex;
     flex-wrap: wrap;
@@ -184,7 +178,7 @@
 
   tr.row-filterable {
     cursor: pointer;
-    transition: background-color .12s;
+    transition: background-color var(--t-fast);
 
     &:hover {
       background-color: color-mix(in srgb, var(--red) 7%, transparent);
@@ -198,7 +192,7 @@
 
   .filter-hint {
     font-family: var(--font-smallcaps);
-    font-size: .6rem;
+    font-size: var(--text-2xs);
     letter-spacing: .08em;
     font-weight: normal;
     color: var(--ink-f);
@@ -207,42 +201,7 @@
 
   /* ── Schema diagram ─────────────────────────────────── */
 
-  .schema {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: .6rem .5rem;
-    margin-top: .85rem;
-  }
-
-  .schema-step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .25rem;
-    text-align: center;
-    background: var(--parch-d);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: .55rem .9rem;
-    min-width: 5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .07);
-
-    & .lbl {
-      font-size: .62rem;
-      font-family: var(--font-smallcaps);
-      letter-spacing: .09em;
-      text-transform: uppercase;
-      color: var(--ink-f);
-      line-height: 1.4;
-    }
-  }
-
-  .schema-arrow {
-    color: var(--ink-f);
-    font-size: 1.1rem;
-    flex-shrink: 0;
-    margin: 0 .1rem;
-    opacity: .55;
-  }
+  .schema      { margin-top: .85rem; }
+  .schema-step { min-width: 5rem; }
+  .schema-arrow { margin: 0 .1rem; }
 </style>

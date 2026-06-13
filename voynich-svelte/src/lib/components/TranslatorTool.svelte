@@ -1,5 +1,6 @@
 <script>
 	import { STATS, PREFIXES, LEXICON, FOLIO_PAGES } from '$lib';
+	import Box from '$lib/components/Box.svelte';
 	import { LEXICON_ALIASES, getLexiconConfidence, getLexiconKind } from '$lib/lexicon-data';
 	import { folioSlug } from '$lib/eva-utils.js';
 	import { slide } from 'svelte/transition';
@@ -226,10 +227,9 @@
 	<div class="tool">
 		<div class="tool-intro">
 			<p class="dropcap">EVA-Text in das Eingabefeld eingeben (Wörter durch Leerzeichen oder · getrennt; neue Zeile = neuer Paragraph). Das Tool durchsucht das bestätigte <a href="#lexikon">Lexikon</a>, erkennt Präfixe und zeigt Hebräisch, Wort-für-Wort-Analyse und deutsche Bedeutung an. Unbekannte Wörter werden als solche markiert.</p>
-			<div class="box red method-note">
-				<div class="box-title">Hinweis zur Methodik</div>
-				<p>Das Tool arbeitet auf dem bestätigten <a href="#lexikon">Lexikon</a> ({STATS.lexicon} Einträge, ★★★ oder höher). Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
-			</div>
+			<Box variant="red" title="Hinweis zur Methodik" class="method-note">
+				<p style="margin:0">Das Tool arbeitet auf dem bestätigten <a href="#lexikon">Lexikon</a> ({STATS.lexicon} Einträge, ★★★ oder höher). Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
+			</Box>
 		</div>
 
 		<div class="tool-area" aria-label="EVA-Übersetzer">
@@ -239,7 +239,7 @@
 				<!-- Col 1: Input -->
 				<div class="input-col">
 					<header class="col-header">
-						<span class="panel-label" id="lbl-input">EVA-Eingabe</span>
+						<span class="lbl-2xs panel-label" id="lbl-input">EVA-Eingabe</span>
 						{#if totalWords > 0}
 							<span class="coverage-badge" aria-label="{totalKnown} von {totalWords} Tokens erkannt">
 								{totalKnown}/{totalWords}
@@ -268,7 +268,7 @@
 				<!-- Col 2: Folio loader -->
 				<div class="folio-col" aria-label="Folio direkt laden">
 					<header class="col-header">
-						<span class="panel-label" id="lbl-folio">Folio laden</span>
+						<span class="lbl-2xs panel-label" id="lbl-folio">Folio laden</span>
 					</header>
 
 					<div class="folio-keyboard" role="navigation" aria-labelledby="lbl-folio">
@@ -303,14 +303,14 @@
 
 					<!-- Accordion control bar -->
 					<div class="para-acc-bar">
-						<span class="panel-label">
+						<span class="lbl-2xs panel-label">
 							Analyse
 							{#if paraResults.length > 1}
 								<span class="para-acc-count">· {paraResults.length} Paragraphen</span>
 							{/if}
 						</span>
 						<div class="para-acc-controls">
-							<label class="hide-unknown-toggle">
+							<label class="lbl-2xs hide-unknown-toggle">
 								<input type="checkbox" bind:checked={hideUnknown} />
 								<span>Unbekannte ausblenden</span>
 							</label>
@@ -341,7 +341,7 @@
 
 									<!-- Hebrew -->
 									<div class="para-subsec">
-										<span class="panel-label" id="lbl-heb-{i}">Hebräisch (RTL)</span>
+										<span class="lbl-2xs panel-label" id="lbl-heb-{i}">Hebräisch (RTL)</span>
 										<div
 											class="result-heb"
 											aria-labelledby="lbl-heb-{i}"
@@ -355,7 +355,7 @@
 
 									<!-- German -->
 									<div class="para-subsec">
-										<span class="panel-label" id="lbl-de-{i}">Bedeutung (Deutsch)</span>
+										<span class="lbl-2xs panel-label" id="lbl-de-{i}">Bedeutung (Deutsch)</span>
 										<div
 											class="result-de"
 											aria-labelledby="lbl-de-{i}"
@@ -367,7 +367,7 @@
 
 									<!-- Token analysis -->
 									<div class="para-subsec">
-										<span class="panel-label">Token-Analyse</span>
+										<span class="lbl-2xs panel-label">Token-Analyse</span>
 										<div class="token-row" role="list" aria-label="Erkannte Tokens {p.id}">
 											{#each p.results as r, j (r.word + '-' + j)}
 												<span
@@ -387,7 +387,7 @@
 
 									<!-- Word-for-word table -->
 									<div class="para-subsec">
-										<span class="panel-label">Wort-für-Wort-Analyse</span>
+										<span class="lbl-2xs panel-label">Wort-für-Wort-Analyse</span>
 										<div class="gloss-scroll">
 											<table class="gloss-table" aria-label="Wort-für-Wort-Analyse {p.id}">
 												<thead>
@@ -406,7 +406,7 @@
 															<td class="g-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '—'}</td>
 															<td class="g-de">{r.lookup ? r.lookup.de : 'unbekannt'}</td>
 															<td class="g-st" class:g5={r.lookup && r.lookup.confidenceStars === 5}>{r.lookup ? r.lookup.stars : '—'}</td>
-															<td class="g-kind">{r.lookup ? (r.lookup.kind ?? getLexiconKind(r.lookup)) : '—'}</td>
+															<td class="lbl-2xs g-kind">{r.lookup ? (r.lookup.kind ?? getLexiconKind(r.lookup)) : '—'}</td>
 														</tr>
 													{/each}
 												</tbody>
@@ -434,11 +434,9 @@
     & > .tool-intro {
       flex: 0 1 480px;
 
-      & .method-note {
+      & :global(.method-note) {
         margin-top: .9rem;
-        font-size: .88rem;
-
-        & p { margin: 0; }
+        font-size: var(--text-sm);
       }
     }
   }
@@ -450,7 +448,7 @@
 		container-type: inline-size;
 		background: rgba(255, 255, 255, .22);
 		border: 1px solid var(--border);
-		border-radius: 3px;
+		border-radius: var(--radius-md);
 		padding: 1.25rem 1.5rem 1rem;
 		margin: 1rem 0 1.5rem;
 	}
@@ -479,22 +477,18 @@
 	/* ── Panel labels ─────────────────────────────────── */
 
 	.panel-label {
-		font-family: var(--font-smallcaps);
-		font-size: .62rem;
 		letter-spacing: .16em;
-		text-transform: uppercase;
-		color: var(--ink-f);
 	}
 
 	/* ── Coverage badge ───────────────────────────────── */
 
 	.coverage-badge {
 		font-family: var(--font-mono);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		background: rgba(0, 0, 0, .05);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .05rem .35rem;
 	}
 
@@ -507,13 +501,13 @@
 		color: var(--ink);
 		background: rgba(255, 255, 255, .55);
 		border: 1px solid var(--border);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .55rem .75rem;
 		resize: vertical;
 		min-height: 100px;
 		line-height: 1.7;
 		outline: none;
-		transition: border-color .18s, background .18s;
+		transition: border-color var(--t-norm), background var(--t-norm);
 
 		&:focus {
 			border-color: var(--gold);
@@ -539,14 +533,14 @@
 
 	.ex-btn {
 		font-family: var(--font-mono);
-		font-size: .73rem;
+		font-size: var(--text-xs);
 		color: var(--ink-l);
 		background: rgba(255, 255, 255, .45);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .18rem .55rem;
 		cursor: pointer;
-		transition: all .13s;
+		transition: all var(--t-fast);
 
 		&:hover, &:focus-visible {
 			background: rgba(255, 255, 255, .88);
@@ -571,16 +565,16 @@
 		position: absolute;
 		top: .4rem;
 		right: .4rem;
-		font-size: .8rem;
+		font-size: var(--text-sm);
 		line-height: 1;
 		color: var(--red);
 		background: rgba(255, 255, 255, .75);
 		border: 1px solid rgba(122, 28, 28, .2);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .2rem .35rem;
 		cursor: pointer;
 		opacity: 0;
-		transition: opacity .15s, background .13s, border-color .13s;
+		transition: opacity var(--t-norm), background var(--t-fast), border-color var(--t-fast);
 
 		&:hover, &:focus-visible {
 			background: rgba(255, 255, 255, .97);
@@ -594,13 +588,13 @@
 	.result-heb {
 		max-height: 10rem;
 		font-family: var(--font-hebrew);
-		font-size: 1.25rem;
+		font-size: var(--text-xl);
 		direction: rtl;
 		line-height: 2.1;
 		color: var(--blue);
 		background: rgba(255, 255, 255, .38);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .45rem .75rem;
 		word-break: break-word;
 		overflow: auto;
@@ -609,7 +603,7 @@
 	.result-de {
 		font-family: var(--font-serif);
 		font-style: italic;
-		font-size: .97rem;
+		font-size: var(--text-md);
 		color: var(--ink-l);
 		padding: .45rem 0 .45rem .75rem;
 		border-left: 2px solid var(--gold);
@@ -624,7 +618,7 @@
 		flex-direction: column;
 		gap: 0;
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		overflow: hidden;
 		background: rgba(255, 255, 255, .18);
 	}
@@ -657,7 +651,7 @@
 
 	.folio-group-label {
 		font-family: var(--font-smallcaps);
-		font-size: .6rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .08em;
 		text-transform: uppercase;
 		color: var(--ink-l);
@@ -666,13 +660,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		transition: background .13s;
+		transition: background var(--t-fast);
 
 		&::after {
 			content: '▶';
-			font-size: .48rem;
+			font-size: var(--text-2xs);
 			opacity: .4;
-			transition: transform .13s;
+			transition: transform var(--t-fast);
 			flex-shrink: 0;
 		}
 
@@ -695,14 +689,14 @@
 
 	.folio-btn {
 		font-family: var(--font-mono);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		color: var(--ink-l);
 		background: rgba(255, 255, 255, .5);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: .15rem .4rem;
 		cursor: pointer;
-		transition: all .12s;
+		transition: all var(--t-fast);
 
 		&:hover, &:focus-visible {
 			background: rgba(255, 255, 255, .9);
@@ -715,7 +709,7 @@
 	.folio-status {
 		padding: .3rem .7rem;
 		font-family: var(--font-mono);
-		font-size: .7rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		border-top: 1px solid var(--parch-dk);
 		background: rgba(255, 255, 255, .2);
@@ -731,7 +725,7 @@
 	.para-accordion {
 		margin-top: 1.1rem;
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		overflow: hidden;
 	}
 
@@ -747,7 +741,7 @@
 
 	.para-acc-count {
 		font-family: var(--font-mono);
-		font-size: .58rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		margin-left: .2rem;
 		font-variant: normal;
@@ -778,14 +772,14 @@
 		border: none;
 		cursor: pointer;
 		text-align: left;
-		transition: background .12s;
+		transition: background var(--t-fast);
 
 		&:hover { background: rgba(255, 255, 255, .28); }
 		&.para-hd--open { background: rgba(255, 255, 255, .18); }
 	}
 
 	.para-hd-chevron {
-		font-size: .48rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		flex-shrink: 0;
 		width: 1ch;
@@ -794,7 +788,7 @@
 
 	.para-hd-id {
 		font-family: var(--font-mono);
-		font-size: .66rem;
+		font-size: var(--text-xs);
 		color: var(--gold);
 		font-weight: 700;
 		flex-shrink: 0;
@@ -803,7 +797,7 @@
 
 	.para-hd-preview {
 		font-family: var(--font-mono);
-		font-size: .6rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		flex: 1;
 		overflow: hidden;
@@ -813,11 +807,11 @@
 
 	.para-hd-cov {
 		font-family: var(--font-mono);
-		font-size: .58rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		background: rgba(0, 0, 0, .04);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		padding: 0 .35rem;
 		flex-shrink: 0;
 	}
@@ -846,7 +840,7 @@
 		padding: .35rem .4rem;
 		background: rgba(0, 0, 0, .02);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		min-height: 2.2rem;
 		align-items: center;
 	}
@@ -857,10 +851,10 @@
 		align-items: center;
 		gap: 1px;
 		padding: .2rem .4rem;
-		border-radius: 2px;
+		border-radius: var(--radius);
 		border: 1px solid transparent;
 		cursor: default;
-		transition: transform .1s;
+		transition: transform var(--t-fast);
 
 		&:hover { transform: translateY(-1px); }
 
@@ -872,7 +866,7 @@
 	.tok-eva {
 		font-family: var(--font-mono);
 		color: var(--ink-f);
-		font-size: .7rem;
+		font-size: var(--text-xs);
 		line-height: 1.2;
 	}
 
@@ -892,11 +886,11 @@
 	.gloss-table {
 		width: 100%;
 		border-collapse: collapse;
-		font-size: .82rem;
+		font-size: var(--text-sm);
 
 		& th {
 			font-family: var(--font-smallcaps);
-			font-size: .62rem;
+			font-size: var(--text-2xs);
 			letter-spacing: .1em;
 			text-transform: uppercase;
 			color: var(--ink-f);
@@ -917,21 +911,17 @@
 		& tr:hover td       { background: rgba(255, 255, 255, .45); }
 		& tr.row-unknown td { opacity: .6; }
 
-		& .g-eva { font-family: var(--font-mono); color: #5a3f1a; white-space: nowrap; }
+		& .g-eva { font-family: var(--font-mono); color: var(--ink-eva); white-space: nowrap; }
 		& .g-heb { font-family: var(--font-hebrew); font-size: .98rem; color: var(--blue); }
 		& .g-de  { font-style: italic; color: var(--ink-l); }
 		& .g-st  {
 			color: var(--gold);
-			font-size: .72rem;
+			font-size: var(--text-xs);
 			white-space: nowrap;
-			&.g5 { color: #8b0000; }
+			&.g5 { color: var(--red-dk); }
 		}
 		& .g-kind {
-			font-family: var(--font-smallcaps);
-			font-size: .58rem;
 			letter-spacing: .08em;
-			text-transform: uppercase;
-			color: var(--ink-f);
 			white-space: nowrap;
 		}
 	}
@@ -943,11 +933,6 @@
 		align-items: center;
 		gap: .3rem;
 		cursor: pointer;
-		font-family: var(--font-smallcaps);
-		font-size: .6rem;
-		letter-spacing: .1em;
-		text-transform: uppercase;
-		color: var(--ink-f);
 		user-select: none;
 
 		& input[type="checkbox"] {

@@ -35,24 +35,35 @@ The JSON file should have the following structure:
     "_target": "STEM_WORDS",
     "eva": "sheo",
     "heb": "שֶׁ+עֹ",
-    "de": "das/welches [Licht/Ende] (apokopierte she-Form; Var. zu sheor)",
+    "de": "das/welches [Licht/Ende]",
     "layer": "Jüdisch-Aramäisch / Hebräisch",
-    "confidenceStars": 4,
+    "relatedTo": { "type": "Kurzform", "eva": "sheor" },
     "rulesApplied": []
   },
   {
     "_target": "PREF_SHE",
-    "eva": "sheq",
-    "morph": "she- + q",
-    "heb": "שֶׁקֶל",
-    "de": "Gewicht / Schekel",
-    "confidenceStars": 3,
+    "eva": "shedy",
+    "morph": "she- + -dy",
+    "heb": "שֶׁדִּי",
+    "de": "das/welches von",
     "rulesApplied": []
   }
 ]
 ```
 
-Allowed fields per array are derived from the existing entries in that array. `eva`, `heb`, `de`, and `rulesApplied` are always required. `confidenceStars` must be an integer between 1 and 5.
+Allowed fields per array are derived from the existing entries in that array. `eva`, `heb`, `de`, and `rulesApplied` are always required.
+
+**Optional fields:**
+
+| Field | Type | Description |
+|---|---|---|
+| `morph` | string | Morphological breakdown (used in prefix/syntax arrays) |
+| `layer` | string | Language layer (e.g. `"Biblisches Hebräisch"`) |
+| `context` | string | Short usage note (e.g. `"medizinisch"`, `"Kolophon"`) |
+| `relatedTo` | object | Link to a related entry: `{ "type": "Kurzform", "eva": "sheor" }` |
+| `uncertain` | boolean | Set to `true` if the reading is uncertain |
+
+**Note:** `confidenceStars` is derived automatically at build time — do not set it manually.
 
 ### Import aliases
 
@@ -70,4 +81,15 @@ To add entries to `LEXICON_ALIASES`, use the `import-aliases.js` script. It expe
     "shdy": "shedy"
   }
 }
+```
+
+### Reorganize arrays
+
+To reorganize all non-stem entries into properly-named `PREF_` / `SYNTAX_` arrays based on their first morpheme, use `reorganize-lexicon.js`. Groups with fewer than `--min-size` entries (default: 3) are folded into `SYNTAX_MISC`.
+
+```bash
+  node scripts/reorganize-lexicon.js                    # dry-run
+  node scripts/reorganize-lexicon.js --min-size=3       # fold groups smaller than 3
+  node scripts/reorganize-lexicon.js --write            # actually reorganize
+  node scripts/reorganize-lexicon.js --min-size=3 --write
 ```

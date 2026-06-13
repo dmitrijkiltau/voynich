@@ -1,5 +1,6 @@
 <script>
 	import { STATS, TESTED } from '$lib/backtest-data.js';
+	import Box from '$lib/components/Box.svelte';
 
 	const typeI  = TESTED.filter(t => t.type === 'I');
 	const typeII = TESTED.filter(t => t.type === 'II');
@@ -40,9 +41,9 @@
 		{/each}
 	</div>
 
-	<div class="box green no-fp">
-		<p style="margin:0;font-size:.92rem">Entscheidend: <strong>Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.</strong> Kein kodiertes Wort taucht in einem semantisch inkohärenten Kontext auf — in beiden Klassen, bei einem Zufallsalphabet statistisch ausgeschlossen.</p>
-	</div>
+	<Box variant="green" class="no-fp">
+		<p style="margin:0;font-size:var(--text-sm)">Entscheidend: <strong>Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.</strong> Kein kodiertes Wort taucht in einem semantisch inkohärenten Kontext auf — in beiden Klassen, bei einem Zufallsalphabet statistisch ausgeschlossen.</p>
+	</Box>
 
 	<h3>Typ I — Genuine Vorhersagen <span class="type-badge type-i">{numI} · {pctI}%</span></h3>
 	<p class="type-note">Diese {typeI.length} Wörter wurden als semantische Priors <em>vor</em> jeder Folioanalyse definiert (eingefroren v7.4: dam, or, daiin, sheol, shol, dal, sar, chaiin, kaiim, chalal). Sie können nicht rückwirkend erweitert werden. Ihre Bestätigung ist die valide Kernaussage der Rückwärtsteststärke.</p>
@@ -97,7 +98,7 @@
 		flex: 1;
 		min-width: 180px;
 		padding: .9rem 1.2rem;
-		border-radius: 2px;
+		border-radius: var(--radius);
 		border: 1px solid var(--parch-dk);
 		background: rgba(255, 255, 255, .3);
 
@@ -107,21 +108,21 @@
 
 	.hs-num {
 		font-family: var(--font-display);
-		font-size: 1.6rem;
+		font-size: var(--text-2xl);
 		line-height: 1.1;
 		color: var(--ink);
 	}
 
 	.hs-label {
 		font-family: var(--font-smallcaps);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		letter-spacing: .08em;
 		color: var(--ink-l);
 		margin-top: .2rem;
 	}
 
 	.hs-sub {
-		font-size: .78rem;
+		font-size: var(--text-sm);
 		color: var(--ink-f);
 		margin-top: .1rem;
 	}
@@ -137,7 +138,7 @@
 		display: flex;
 		align-items: center;
 		gap: .8rem;
-		font-size: .88rem;
+		font-size: var(--text-sm);
 	}
 
 	.stat-label {
@@ -152,15 +153,15 @@
 	.stat-bar-wrap {
 		flex: 1;
 		background: var(--parch-dk);
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		height: 8px;
 		overflow: hidden;
 	}
 
 	.stat-bar {
 		height: 100%;
-		border-radius: 1px;
-		transition: width .4s ease;
+		border-radius: var(--radius-sm);
+		transition: width var(--t-slower) ease;
 	}
 
 	.stat-num {
@@ -168,19 +169,19 @@
 		min-width: 4.5rem;
 		text-align: right;
 		font-family: var(--font-mono);
-		font-size: .82rem;
+		font-size: var(--text-sm);
 	}
 
-	.no-fp {
+	:global(.no-fp) {
 		margin-top: 1rem;
 	}
 
 	.type-badge {
 		display: inline-block;
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		padding: .1rem .5rem;
-		border-radius: 2px;
+		border-radius: var(--radius);
 		margin-left: .5rem;
 		vertical-align: middle;
 
@@ -189,7 +190,7 @@
 	}
 
 	.type-note {
-		font-size: .88rem;
+		font-size: var(--text-sm);
 		color: var(--ink-f);
 		margin-bottom: .8rem;
 	}
@@ -206,13 +207,10 @@
 
 	.result-cell {
 		color: var(--green);
-		font-size: .82rem;
+		font-size: var(--text-sm);
 	}
 
-	.note-cell {
-		color: var(--ink-f);
-		font-size: .82rem;
-	}
+
 
 	.not-found td {
 		opacity: .6;

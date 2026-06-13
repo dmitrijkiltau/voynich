@@ -367,25 +367,25 @@
                 <div class="fp-detail-fields" class:fp-detail-fields--narrow={ico}>
                   {#if m?.registerType}
                     <div class="fp-detail-field">
-                      <span class="fp-detail-key">Register-Typ</span>
+                      <span class="lbl-2xs fp-detail-key">Register-Typ</span>
                       <span class="fp-detail-val">{m.registerType}</span>
                     </div>
                   {/if}
                   {#if m?.languageClass}
                     <div class="fp-detail-field">
-                      <span class="fp-detail-key">Sprach-Klasse</span>
+                      <span class="lbl-2xs fp-detail-key">Sprach-Klasse</span>
                       <span class="fp-detail-val">{m.languageClass}</span>
                     </div>
                   {/if}
                   {#if m?.writerHand !== undefined}
                     <div class="fp-detail-field">
-                      <span class="fp-detail-key">Schreiber-Hand</span>
+                      <span class="lbl-2xs fp-detail-key">Schreiber-Hand</span>
                       <span class="fp-detail-val">{m.writerHand}</span>
                     </div>
                   {/if}
                   {#if _transcribers.length}
                     <div class="fp-detail-field">
-                      <span class="fp-detail-key">Transkriptoren</span>
+                      <span class="lbl-2xs fp-detail-key">Transkriptoren</span>
                       <span class="fp-detail-val">
                         {#each _transcribers as t (t.siglen.join('-'))}
                           <span class="fp-detail-trow">
@@ -398,7 +398,7 @@
                   {/if}
                   {#if _cds.length}
                     <div class="fp-detail-field">
-                      <span class="fp-detail-key">Konsens-Nenner</span>
+                      <span class="lbl-2xs fp-detail-key">Konsens-Nenner</span>
                       <span class="fp-detail-val">
                         {#each _cds as k (k)}
                           <span class="fp-detail-krow">· {k}</span>
@@ -520,7 +520,7 @@
 
 	.fp {
 		border: 1px solid var(--border);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		background: linear-gradient(180deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,0) 100%);
 		overflow: hidden;
 		margin-bottom: 2.8rem;
@@ -537,7 +537,7 @@
 		border-bottom: 1px solid var(--border);
 		background: color-mix(in srgb, var(--parch-d) 60%, transparent);
 		cursor: pointer;
-		transition: background .15s;
+		transition: background var(--t-norm);
 
 		&:hover { background: color-mix(in srgb, var(--parch-d) 85%, transparent); }
 	}
@@ -556,15 +556,15 @@
 	}
 
 	.fp-chevron {
-		font-size: .55rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
-		transition: transform .2s ease;
+		transition: transform var(--t-slow) ease;
 		line-height: 1;
 	}
 
 	.fp-title {
 		font-family: var(--font-smallcaps);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		letter-spacing: .18em;
 		text-transform: uppercase;
 		color: var(--ink-l);
@@ -572,7 +572,7 @@
 
 	.fp-pct-badge {
 		font-family: var(--font-display);
-		font-size: 1.15rem;
+		font-size: var(--text-md);
 		color: var(--gold);
 		line-height: 1;
 	}
@@ -584,14 +584,14 @@
 		gap: .15rem .3rem;
 		margin-bottom: .6rem;
 		font-family: var(--font-mono);
-		font-size: .6rem;
+		font-size: var(--text-2xs);
 
 		& .fpc-sep { color: var(--border); }
 
 		& .fpc {
 			& em {
 				font-style: normal;
-				font-size: .58rem;
+				font-size: var(--text-2xs);
 				color: var(--ink-f);
 				letter-spacing: .04em;
 			}
@@ -612,21 +612,21 @@
 		height: 8px;
 		background: var(--parch-d);
 		border: 1px solid var(--parch-dk);
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		overflow: visible;
 		display: flex;
 
 		& .fpgb-done {
 			height: 100%;
 			background: linear-gradient(90deg, var(--gold), color-mix(in srgb, var(--gold) 85%, #fff));
-			transition: width .4s ease;
+			transition: width var(--t-slower) ease;
 			flex-shrink: 0;
 		}
 
 		& .fpgb-confirmed {
 			height: 100%;
 			background: linear-gradient(90deg, color-mix(in srgb, var(--gold) 75%, var(--red)), color-mix(in srgb, var(--gold) 60%, var(--parch-d)));
-			transition: width .4s ease;
+			transition: width var(--t-slower) ease;
 			flex-shrink: 0;
 		}
 
@@ -634,7 +634,7 @@
 			height: 100%;
 			background: color-mix(in srgb, var(--gold) 38%, var(--parch-d));
 			border-right: 1px dashed var(--border);
-			transition: width .4s ease;
+			transition: width var(--t-slower) ease;
 			flex-shrink: 0;
 		}
 
@@ -654,14 +654,14 @@
 		position: relative;
 		margin-top: .2rem;
 		font-family: var(--font-mono);
-		font-size: .5rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 
 		& .fp-bar-done-mark {
 			position: absolute;
 			transform: translateX(-50%);
 			color: var(--gold);
-			font-size: .5rem;
+			font-size: var(--text-2xs);
 		}
 	}
 
@@ -670,7 +670,7 @@
 	.fp-body {
 		display: grid;
 		grid-template-rows: 0fr;
-		transition: grid-template-rows .28s ease;
+		transition: grid-template-rows var(--t-slow) ease;
 
 		& .fp-body-inner { overflow: hidden; }
 
@@ -690,14 +690,14 @@
 
 	.fp-fp {
 		font-family: var(--font-mono);
-		font-size: .52rem;
+		font-size: var(--text-2xs);
 		padding: 1px 6px;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		border: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
 		background: transparent;
 		color: var(--ink-f);
 		cursor: pointer;
-		transition: background .1s, color .1s, border-color .1s;
+		transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast);
 		line-height: 1.6;
 
 		&:hover { background: color-mix(in srgb, var(--parch-d) 80%, transparent); color: var(--ink-l); }
@@ -749,7 +749,7 @@
 		padding: .38rem .7rem .38rem .55rem;
 		border-bottom: 1px solid color-mix(in srgb, var(--parch-dk) 60%, transparent);
 		border-left: 2px solid transparent;
-		transition: background .12s;
+		transition: background var(--t-fast);
 
 		&:last-child { border-bottom: none; }
 
@@ -762,8 +762,8 @@
 	}
 
 	.fp-label {
-		flex: 0 0 148px;
-		min-width: 148px;
+		flex: 0 0 180px;
+		min-width: 180px;
 	}
 
 	.fp-label-top {
@@ -775,14 +775,14 @@
 
 	.fp-roman {
 		font-family: var(--font-display);
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		color: var(--ink-l);
 		min-width: 1.5ch;
 		flex-shrink: 0;
 	}
 
 	.fp-glyph {
-		font-size: .62rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		flex-shrink: 0;
 		line-height: 1;
@@ -791,7 +791,7 @@
 
 	.fp-section {
 		font-family: var(--font-smallcaps);
-		font-size: .6rem;
+		font-size: var(--text-xs);
 		letter-spacing: .05em;
 		color: var(--ink-f);
 		flex: 1;
@@ -802,7 +802,7 @@
 
 	.fp-fraction {
 		font-family: var(--font-mono);
-		font-size: .52rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		flex-shrink: 0;
 		white-space: nowrap;
@@ -812,7 +812,7 @@
 		height: 3px;
 		background: var(--parch-d);
 		border: 1px solid var(--parch-dk);
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		display: flex;
 		overflow: hidden;
 
@@ -849,11 +849,11 @@
 		display: inline-block;
 		padding: 1px 4px;
 		font-family: var(--font-mono);
-		font-size: .5rem;
+		font-size: var(--text-2xs);
 		line-height: 1.6;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		cursor: pointer;
-		transition: transform .1s, box-shadow .1s, opacity .15s;
+		transition: transform var(--t-fast), box-shadow var(--t-fast), opacity var(--t-norm);
 		white-space: nowrap;
 		border: 1px solid transparent;
 
@@ -928,7 +928,7 @@
 		align-items: center;
 		gap: .35rem;
 		font-family: var(--font-smallcaps);
-		font-size: .6rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .06em;
 		color: var(--ink-f);
 	}
@@ -936,7 +936,7 @@
 	.fpl-swatch {
 		width: 12px;
 		height: 8px;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		flex-shrink: 0;
 
 		&.done      { background: color-mix(in srgb, var(--gold) 50%, var(--parch)); border: 1px solid color-mix(in srgb, var(--gold) 80%, transparent); }
@@ -975,16 +975,16 @@
 
 	.fp-detail-id {
 		font-family: var(--font-display);
-		font-size: .82rem;
+		font-size: var(--text-sm);
 		color: var(--ink);
 		letter-spacing: .04em;
 	}
 
 	.fp-detail-badge {
 		font-family: var(--font-mono);
-		font-size: .5rem;
+		font-size: var(--text-2xs);
 		padding: 1px 5px;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		flex-shrink: 0;
 
 		&.fp-detail-badge--done      { background: color-mix(in srgb, var(--gold) 40%, var(--parch)); border: 1px solid color-mix(in srgb, var(--gold) 70%, transparent); color: var(--ink); font-weight: 600; }
@@ -1003,11 +1003,11 @@
 
 	.fp-detail-btn {
 		font-family: var(--font-mono);
-		font-size: .5rem;
+		font-size: var(--text-2xs);
 		padding: 1px 7px;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		text-decoration: none;
-		transition: background .1s, color .1s;
+		transition: background var(--t-fast), color var(--t-fast);
 		border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
 		background: color-mix(in srgb, var(--gold) 14%, var(--parch));
 		color: var(--ink-l);
@@ -1032,15 +1032,15 @@
 	}
 
 	.fp-detail-close {
-		font-size: .78rem;
+		font-size: var(--text-sm);
 		color: var(--ink-f);
 		line-height: 1;
 		padding: 0 .2rem;
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		cursor: pointer;
 		background: none;
 		border: none;
-		transition: color .1s;
+		transition: color var(--t-fast);
 		flex-shrink: 0;
 
 		&:hover { color: var(--ink); }
@@ -1069,11 +1069,6 @@
 	}
 
 	.fp-detail-key {
-		font-family: var(--font-smallcaps);
-		font-size: .64rem;
-		letter-spacing: .1em;
-		text-transform: uppercase;
-		color: var(--ink-f);
 		flex: 0 0 7.5rem;
 		padding-top: .08rem;
 		white-space: nowrap;
@@ -1081,7 +1076,7 @@
 
 	.fp-detail-val {
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		color: var(--ink-l);
 		line-height: 1.45;
 		display: flex;
@@ -1097,7 +1092,7 @@
 
 	.fp-detail-siglen {
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		color: var(--ink);
 		font-weight: 600;
 		flex-shrink: 0;
@@ -1106,7 +1101,7 @@
 
 	.fp-detail-tlabel {
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		line-height: 1.35;
     word-break: break-word;
@@ -1114,7 +1109,7 @@
 
 	.fp-detail-krow {
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		color: var(--ink-l);
 		line-height: 1.6;
 	}
@@ -1141,11 +1136,11 @@
 
 	.fp-detail-rule {
 		font-family: var(--font-mono);
-		font-size: .64rem;
+		font-size: var(--text-2xs);
 		padding: 0 4px;
 		line-height: 1.6;
 		border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
-		border-radius: 1px;
+		border-radius: var(--radius-sm);
 		color: var(--gold);
 		background: color-mix(in srgb, var(--gold) 7%, var(--parch));
 		font-weight: 600;
@@ -1154,7 +1149,7 @@
 
 	.fp-detail-ico-section-label {
 		font-family: var(--font-smallcaps);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		letter-spacing: .08em;
 		color: var(--ink-f);
 		margin-left: .15rem;
@@ -1167,7 +1162,7 @@
 
 		& .fp-detail-ico-key {
 			font-family: var(--font-mono);
-			font-size: .64rem;
+			font-size: var(--text-2xs);
 			letter-spacing: .1em;
 			text-transform: uppercase;
 			color: var(--ink-f);
@@ -1175,7 +1170,7 @@
 
 		& .fp-detail-ico-val {
 			font-family: var(--font-mono);
-			font-size: .72rem;
+			font-size: var(--text-xs);
 			color: var(--ink-l);
 			line-height: 1.4;
 		}
@@ -1187,7 +1182,7 @@
 
 			& .fp-detail-ico-bullet {
 				font-family: var(--font-mono);
-				font-size: .72rem;
+				font-size: var(--text-xs);
 				color: var(--ink-l);
 				line-height: 1.5;
 			}
@@ -1205,7 +1200,7 @@
 
 				& .fp-detail-morph-key {
 					font-family: var(--font-mono);
-					font-size: .72rem;
+					font-size: var(--text-xs);
 					color: var(--ink);
 					font-weight: 700;
 					letter-spacing: .04em;
@@ -1216,7 +1211,7 @@
 
 				& .fp-detail-morph-val {
 					font-family: var(--font-mono);
-					font-size: .72rem;
+					font-size: var(--text-xs);
 					color: var(--ink-l);
 					line-height: 1.4;
 				}
@@ -1243,7 +1238,7 @@
 
 	.fp-detail-r60-label {
 		font-family: var(--font-mono);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		color: var(--gold);
 		font-weight: 700;
 		letter-spacing: .06em;
@@ -1252,7 +1247,7 @@
 
 	.fp-detail-r60-val {
 		font-family: var(--font-mono);
-		font-size: .64rem;
+		font-size: var(--text-2xs);
 		color: var(--ink-f);
 		line-height: 1.4;
 	}

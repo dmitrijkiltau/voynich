@@ -16,6 +16,7 @@ import { MAPPING, STATS } from '$lib';
 	import GibberishTest from '$lib/components/GibberishTest.svelte';
 	import FolioProgress from '$lib/components/FolioProgress.svelte';
 	import OpenProblemsSection from '$lib/components/OpenProblemsSection.svelte';
+	import Box from '$lib/components/Box.svelte';
 	let evaInput        = $state('');
 	let activeSection   = $state('abstract');
 	let menuOpen        = $state(false);
@@ -165,7 +166,7 @@ import { MAPPING, STATS } from '$lib';
 	<!-- Sidebar -->
 	<aside class="sidebar" class:open={menuOpen} aria-label="Seitennavigation">
 		<div class="sidebar-brand">
-			<div class="brand-kicker">Voynich-Manuskript</div>
+			<div class="lbl-2xs brand-kicker">Voynich-Manuskript</div>
 			<div class="brand-name">EVA → Hebräisch</div>
 			<div class="brand-sub">Formales Mapping-Dokument</div>
 		</div>
@@ -185,15 +186,15 @@ import { MAPPING, STATS } from '$lib';
 		<div class="sidebar-stats">
 			<div class="sidebar-stat">
 				<span class="ss-n">{STATS.lexicon}</span>
-				<span class="ss-l">Lexikon</span>
+				<span class="lbl-2xs ss-l">Lexikon</span>
 			</div>
 			<div class="sidebar-stat">
 				<span class="ss-n">{STATS.rules}</span>
-				<span class="ss-l">Regeln</span>
+				<span class="lbl-2xs ss-l">Regeln</span>
 			</div>
 			<div class="sidebar-stat sidebar-stat--full">
 				<span class="ss-n">{STATS.backtest}</span>
-				<span class="ss-l">Rückwärtstest</span>
+				<span class="lbl-2xs ss-l">Rückwärtstest</span>
 			</div>
 		</div>
 
@@ -210,7 +211,7 @@ import { MAPPING, STATS } from '$lib';
 	<!-- Main content -->
 	<main class="main-content">
 		<header class="page-header">
-			<div class="kicker">Formales Mapping-Dokument · Version {STATS.version} · {STATS.date}</div>
+			<div class="lbl-xs kicker">Formales Mapping-Dokument · Version {STATS.version} · {STATS.date}</div>
 			<h1>Voynich-Manuskript</h1>
 			<div class="subtitle">EVA → Hebräisch-Aramäisch · Zeichenmapping, Lexikon und Grammatikregeln</div>
 			<div class="meta-line">
@@ -245,10 +246,9 @@ import { MAPPING, STATS } from '$lib';
 			<div class="mapping">
 				<div class="mapping-intro">
 					<p>Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab. Klick auf eine Zelle fügt das Zeichen in die Eingabe ein.</p>
-					<div class="box red">
-						<div class="box-title">Sonderregel: o als Ayin vs. Ḥolam</div>
-						<p style="margin:0;font-size:.92rem">Das EVA-Zeichen <span class="eva">o</span> hat zwei Funktionen: (1) als konsonantisches <span class="heb-sm">ע</span> (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam <span class="heb-sm">ֹ</span> im Wortinneren. Das Präfix <span class="eva">o-</span> am Wortanfang entspricht fast immer <span class="heb-sm">עַ</span>.</p>
-					</div>
+					<Box variant="red" title="Sonderregel: o als Ayin vs. Ḥolam">
+						<p style="margin:0;font-size:var(--text-sm)">Das EVA-Zeichen <span class="eva">o</span> hat zwei Funktionen: (1) als konsonantisches <span class="heb-sm">ע</span> (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam <span class="heb-sm">ֹ</span> im Wortinneren. Das Präfix <span class="eva">o-</span> am Wortanfang entspricht fast immer <span class="heb-sm">עַ</span>.</p>
+					</Box>
 				</div>
 				<MappingGrid {MAPPING} onInsert={insertEva} />
 			</div>
@@ -301,9 +301,9 @@ import { MAPPING, STATS } from '$lib';
 
 		<!-- XIII. GIBBERISH-TEST -->
 		<section class="section" id="gibberish">
-			<h2>XIII. Gibberish-Test (v6.4)</h2>
-			<p>Empirisches Falsifikationswerkzeug: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch R40 v2, R41, R44–R46 und D1/D2 geführt. Abbruchschwelle: &gt; 15 % · Warnzone: 11–15 % · Zielkorridor: ≤ 10 % strukturelle Falsch-Positive (★★★).</p>
-			<p><em>v8.1-Prüfung:</em> Regelmoratorium beendet — 4 Kandidaten absorbiert (R32→R25, R52→R15, R54→R19, R57→R11), R28 validiert; f30r/f30v: +3 validiert (opchol, dain, chain), R19 Typ E Kand. (ABAB f30r P.11), R28→ytor Kand. (f30v P.5); Verhältnis {STATS.validatedRules}:{STATS.rules - STATS.validatedRules} ≥ 1,5:1 ✓. Testwert bleibt {STATS.gibberishRate} (Warnzone — GibberishTest-Update mit 22 Lexikon-Herabstufungen noch ausstehend).</p>
+			<h2>XIII. Gibberish-Test (v{STATS.version})</h2>
+			<p>Empirisches Falsifikationswerkzeug: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch <strong>R40 v2</strong>, <strong>R41</strong> (Präfix-Hierarchie mit R45-Präzisierung: d-/REL → Konj. → Präp. → Basis) und <strong>D1/D2</strong> geführt. Abbruchschwelle: &gt; 15 % · Warnzone: 11–15 % · Zielkorridor: ≤ 10 % strukturelle Falsch-Positive (★★★).</p>
+			<p><em>v8.8.9-Update:</em> R41-Klassifikation korrigiert — d-Relativpräfix (R45) wird als REL-Klasse (äußerste Schale) behandelt, nicht als PREP; Konjunktionsklasse um v- erweitert. Testwert: {STATS.gibberishRate}.</p>
 			<GibberishTest />
 		</section>
 
@@ -350,11 +350,11 @@ import { MAPPING, STATS } from '$lib';
 		display: flex;
 		flex-direction: column;
 		padding: 1.8rem 0 2rem;
-		z-index: 100;
-		transition: transform .25s ease;
+		z-index: var(--z-sidebar);
+		transition: transform var(--t-slow) ease;
 
 		&::-webkit-scrollbar { width: 4px; }
-		&::-webkit-scrollbar-thumb { background: var(--parch-dk); border-radius: 2px; }
+		&::-webkit-scrollbar-thumb { background: var(--parch-dk); border-radius: var(--radius); }
 
 		@media (max-width: 768px) {
 			position: fixed;
@@ -376,11 +376,7 @@ import { MAPPING, STATS } from '$lib';
 		text-align: center;
 
 		& .brand-kicker {
-			font-family: var(--font-smallcaps);
-			font-size: .6rem;
 			letter-spacing: .2em;
-			text-transform: uppercase;
-			color: var(--ink-f);
 			margin-bottom: .4rem;
 		}
 
@@ -393,7 +389,7 @@ import { MAPPING, STATS } from '$lib';
 
 		& .brand-sub {
 			font-family: var(--font-smallcaps);
-			font-size: .62rem;
+			font-size: var(--text-2xs);
 			letter-spacing: .1em;
 			color: var(--ink-f);
 			margin-top: .25rem;
@@ -414,13 +410,13 @@ import { MAPPING, STATS } from '$lib';
 		text-align: left;
 		padding: .55rem .8rem;
 		font-family: var(--font-smallcaps);
-		font-size: .72rem;
+		font-size: var(--text-xs);
 		letter-spacing: .08em;
 		color: var(--ink-l);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		border-left: 2px solid transparent;
 		cursor: pointer;
-		transition: all .15s;
+		transition: all var(--t-norm);
 
 		&:hover {
 			background: rgba(0, 0, 0, .04);
@@ -450,23 +446,19 @@ import { MAPPING, STATS } from '$lib';
 			padding: .4rem .2rem;
 			background: rgba(255, 255, 255, .3);
 			border: 1px solid var(--parch-dk);
-			border-radius: 2px;
+			border-radius: var(--radius);
 
 			& .ss-n {
 				display: block;
 				font-family: var(--font-display);
-				font-size: 1.1rem;
+				font-size: var(--text-md);
 				color: var(--red);
 				line-height: 1.1;
 			}
 
 			& .ss-l {
 				display: block;
-				font-family: var(--font-smallcaps);
-				font-size: .52rem;
 				letter-spacing: .08em;
-				text-transform: uppercase;
-				color: var(--ink-f);
 			}
 		}
 	}
@@ -476,15 +468,15 @@ import { MAPPING, STATS } from '$lib';
 		width: calc(100% - 2rem);
 		padding: .45rem .8rem;
 		font-family: var(--font-smallcaps);
-		font-size: .65rem;
+		font-size: var(--text-2xs);
 		letter-spacing: .12em;
 		text-transform: uppercase;
 		color: var(--ink-f);
 		border: 1px solid var(--parch-dk);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		background: rgba(255, 255, 255, .3);
 		cursor: pointer;
-		transition: all .15s;
+		transition: all var(--t-norm);
 
 		&:hover {
 			background: rgba(255, 255, 255, .7);
@@ -513,7 +505,7 @@ import { MAPPING, STATS } from '$lib';
 			& li {
 				padding: .25rem 0;
 				font-family: var(--font-smallcaps);
-				font-size: .85rem;
+				font-size: var(--text-sm);
 				letter-spacing: .06em;
 				border-bottom: 1px dotted var(--parch-dk);
 			}
@@ -525,7 +517,7 @@ import { MAPPING, STATS } from '$lib';
 	}
 
 	.sidebar-meta {
-		font-size: .68rem;
+		font-size: var(--text-xs);
 		color: var(--ink-f);
 		text-align: center;
 		padding: .7rem 1rem 0;
@@ -542,7 +534,7 @@ import { MAPPING, STATS } from '$lib';
 		left: 0;
 		right: 0;
 		height: var(--nav-h);
-		z-index: 200;
+		z-index: var(--z-nav);
 		background: var(--parch-d);
 		border-bottom: 1px solid var(--border);
 		align-items: center;
@@ -553,7 +545,7 @@ import { MAPPING, STATS } from '$lib';
 
 		& .mobile-title {
 			font-family: var(--font-display);
-			font-size: 1.1rem;
+			font-size: var(--text-md);
 			color: var(--red);
 			flex: 1;
 		}
@@ -564,13 +556,13 @@ import { MAPPING, STATS } from '$lib';
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			font-size: 1.1rem;
+			font-size: var(--text-md);
 			color: var(--ink-l);
 			border: 1px solid var(--parch-dk);
-			border-radius: 2px;
+			border-radius: var(--radius);
 			background: rgba(255, 255, 255, .5);
 			cursor: pointer;
-			transition: all .15s;
+			transition: all var(--t-norm);
 
 			&:hover {
 				background: rgba(255, 255, 255, .8);
@@ -584,7 +576,7 @@ import { MAPPING, STATS } from '$lib';
 		position: fixed;
 		inset: 0;
 		background: rgba(0, 0, 0, .3);
-		z-index: 99;
+		z-index: var(--z-sticky);
 
 		@media (max-width: 768px) {
 			&.visible { display: block; }
@@ -628,17 +620,13 @@ import { MAPPING, STATS } from '$lib';
 		}
 
 		& .kicker {
-			font-family: var(--font-smallcaps);
-			font-size: .68rem;
 			letter-spacing: .22em;
-			text-transform: uppercase;
-			color: var(--ink-f);
 			margin-bottom: .9rem;
 		}
 
 		& h1 {
 			font-family: var(--font-display);
-			font-size: 2.4rem;
+			font-size: var(--text-2xl);
 			font-weight: 400;
 			line-height: 1.2;
 			margin-bottom: .45rem;
@@ -648,13 +636,13 @@ import { MAPPING, STATS } from '$lib';
 		& .subtitle {
 			font-family: var(--font-display);
 			font-style: italic;
-			font-size: 1.1rem;
+			font-size: var(--text-md);
 			color: var(--ink-l);
 			margin-bottom: 1.1rem;
 		}
 
 		& .meta-line {
-			font-size: .8rem;
+			font-size: var(--text-sm);
 			color: var(--ink-f);
 			letter-spacing: .04em;
 
@@ -668,7 +656,7 @@ import { MAPPING, STATS } from '$lib';
 		margin-top: 4rem;
 		padding-top: 2rem;
 		border-top: 1px solid var(--parch-dk);
-		font-size: .82rem;
+		font-size: var(--text-sm);
 		color: var(--ink-f);
 		text-align: center;
 		line-height: 1.7;
@@ -677,14 +665,14 @@ import { MAPPING, STATS } from '$lib';
 
 		& .disclaimer {
 			margin-top: .5rem;
-			font-size: .72rem;
+			font-size: var(--text-xs);
 			opacity: .7;
 		}
 	}
 
 	.legal-link {
 		display: inline-block;
-		font-size: .8rem;
+		font-size: var(--text-sm);
 		color: var(--color-text);
 		text-decoration: none;
 	}
@@ -697,7 +685,7 @@ import { MAPPING, STATS } from '$lib';
 		left: 0;
 		right: 0;
 		height: 3px;
-		z-index: 1000;
+		z-index: var(--z-progress);
 		background: rgba(0, 0, 0, .06);
 		pointer-events: none;
 

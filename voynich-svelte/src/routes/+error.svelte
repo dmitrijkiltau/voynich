@@ -32,7 +32,7 @@
 		padding: 3rem 2rem;
 		background: rgba(255, 255, 255, 0.22);
 		border: 1px solid var(--border);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
 	}
 
@@ -63,7 +63,7 @@
 		display: inline-block;
 		padding: 0.55rem 1rem;
 		border: 1px solid var(--border);
-		border-radius: 2px;
+		border-radius: var(--radius);
 		background: rgba(255, 255, 255, 0.35);
 		text-decoration: none;
 	}
