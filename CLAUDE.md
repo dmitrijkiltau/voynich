@@ -2,6 +2,8 @@
 
 The quotations might be in the wrong format when given to you. Make sure to always correct quotation marks for the respective language (e.g., „Deutsche Zitate“ and “English quotes”).
 
+ALWAYS use CSS tokens (`_tokens.css`) for styling, and do not hardcode any colors, font sizes, etc. in the components. This ensures that the styling is consistent across the project and can be easily updated in one place if needed.
+
 ## Update instructions
 
 These are the instructions for updating the various sections of the project when the user asks for updates. Follow these steps carefully to ensure that all updates are made correctly and consistently across the project.

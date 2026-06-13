@@ -13,14 +13,9 @@
 			id: 'stems',
 			title: C.tables.stems,
 			rows: STEM_WORDS.filter((/** @type {any} */ e) => !e.candidate),
-			columns: [
+			sortCols: [
 				{ key: 'eva',             label: C.columns.eva },
-				{ key: 'heb',             label: C.columns.heb },
-				{ key: 'de',              label: C.columns.de },
 				{ key: 'layer',           label: C.columns.layer },
-				{ key: 'isAnchor',        label: C.columns.isAnchor },
-				{ key: 'anchorFolio',     label: C.columns.anchorFolio },
-				{ key: 'rules',           label: C.columns.rules },
 				{ key: 'confidenceStars', label: C.columns.confidenceStars },
 			],
 		},
@@ -28,14 +23,9 @@
 			id: 'stems-candidates',
 			title: C.tables.stemsCandidates,
 			rows: STEM_WORDS.filter((/** @type {any} */ e) => e.candidate),
-			columns: [
+			sortCols: [
 				{ key: 'eva',             label: C.columns.eva },
-				{ key: 'heb',             label: C.columns.heb },
-				{ key: 'de',              label: C.columns.de },
 				{ key: 'layer',           label: C.columns.layer },
-				{ key: 'isAnchor',        label: C.columns.isAnchor },
-				{ key: 'anchorFolio',     label: C.columns.anchorFolio },
-				{ key: 'rules',           label: C.columns.rules },
 				{ key: 'confidenceStars', label: C.columns.confidenceStars },
 			],
 		},
@@ -43,13 +33,8 @@
 			id: 'derived',
 			title: C.tables.derived,
 			rows: LEXICON_DERIVED.filter((/** @type {any} */ e) => !e.candidate),
-			columns: [
+			sortCols: [
 				{ key: 'eva',             label: C.columns.eva },
-				{ key: 'morph',           label: C.columns.morph },
-				{ key: 'heb',             label: C.columns.heb },
-				{ key: 'de',              label: C.columns.de },
-				{ key: 'evidence',        label: C.columns.evidence },
-				{ key: 'rules',           label: C.columns.rules },
 				{ key: 'confidenceStars', label: C.columns.confidenceStars },
 			],
 		},
@@ -57,13 +42,8 @@
 			id: 'derived-candidates',
 			title: C.tables.derivedCandidates,
 			rows: LEXICON_DERIVED.filter((/** @type {any} */ e) => e.candidate),
-			columns: [
+			sortCols: [
 				{ key: 'eva',             label: C.columns.eva },
-				{ key: 'morph',           label: C.columns.morph },
-				{ key: 'heb',             label: C.columns.heb },
-				{ key: 'de',              label: C.columns.de },
-				{ key: 'evidence',        label: C.columns.evidence },
-				{ key: 'rules',           label: C.columns.rules },
 				{ key: 'confidenceStars', label: C.columns.confidenceStars },
 			],
 		},
@@ -73,27 +53,6 @@
 	let sortStates = $state(
 		Object.fromEntries(TABLES.map((table) => [table.id, { col: '', dir: 1 }]))
 	);
-
-	/** @param {any} entry @param {string} key */
-	function cellValue(entry, key) {
-		switch (key) {
-			case 'layer':
-			case 'morph':
-			case 'evidence':
-			case 'anchorFolio':
-				return entry[key] || '—';
-			case 'isAnchor':
-				return entry.isAnchor ? 'I' : '—';
-			case 'rules': {
-				const rules = getLexiconRules(entry);
-				return rules.length ? rules.join(', ') : '—';
-			}
-			case 'confidenceStars':
-				return getLexiconConfidence(entry.confidenceStars);
-			default:
-				return entry[key] ?? '—';
-		}
-	}
 
 	/** @param {any} entry @param {string} key */
 	function sortValue(entry, key) {
@@ -130,8 +89,6 @@
 	const LAYERS = [...new Set(STEM_WORDS.map((/** @type {any} */ e) => e.layer).filter(Boolean))].sort();
 
 	/**
-	 * Prefix/suffix chip filter — works on every table.
-	 * Derived entries: match on morph. Stems: match on eva.
 	 * @param {any} entry @param {string} chip @param {boolean} isDerived
 	 */
 	function matchesChip(entry, chip, isDerived) {
@@ -196,7 +153,7 @@
 </script>
 
 <section class="section" id="lexicon">
-	<h2>{C.title(STATS.lexicon)}</h2>
+	<h2>{C.title(STATS.lexicon.toString())}</h2>
 	<p>{C.intro}</p>
 
 	<div class="lex-layout">
@@ -264,94 +221,116 @@
 			{#each TABLES as table ('table-' + table.id)}
 				{@const rows = rowsFor(table)}
 				{#if rows.length > 0 || !hasActiveFilter}
-					<div id={table.id} class="lexicon-table">
-						<h3>
-							{table.title}
-							{#if rows.length !== table.rows.length}
-								<span class="filter-count">({rows.length} / {table.rows.length})</span>
-							{:else}
-								<span class="filter-count">({rows.length})</span>
-							{/if}
-						</h3>
+					<div id={table.id} class="lexicon-group">
+						<div class="group-header">
+							<h3>
+								{table.title}
+								{#if rows.length !== table.rows.length}
+									<span class="filter-count">({rows.length} / {table.rows.length})</span>
+								{:else}
+									<span class="filter-count">({rows.length})</span>
+								{/if}
+							</h3>
+							<div class="sort-bar hidden-print">
+								{#each table.sortCols as col ('sort-' + col.key)}
+									{@const s = sortStates[table.id]}
+									<button
+										type="button"
+										class="sort-btn"
+										class:sort-btn-active={s.col === col.key}
+										onclick={() => toggleSort(table.id, col.key)}
+									>
+										{col.label}{#if s.col === col.key}<span class="sort-icon" aria-hidden="true">{s.dir === 1 ? ' ▲' : ' ▼'}</span>{/if}
+									</button>
+								{/each}
+							</div>
+						</div>
 
-						<div class="table-wrap">
-							<table class={'dt ' + table.id + '-table'}>
-								<thead>
-									<tr>
-										{#each table.columns as col ('col-' + col.key)}
-											{@const s = sortStates[table.id]}
-											<th
-												data-sortable
-												aria-sort={s.col === col.key ? (s.dir === 1 ? 'ascending' : 'descending') : 'none'}
-												onclick={() => toggleSort(table.id, col.key)}
-												onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && toggleSort(table.id, col.key)}
+						<div class="lex-list">
+							{#each rows as entry, i ('entry-' + entry.eva + '-' + i)}
+								{@const isDerived = table.id === 'derived' || table.id === 'derived-candidates'}
+								{@const rules = getLexiconRules(entry)}
+								{@const morphParts = isDerived && entry.morph ? entry.morph.split(' + ') : []}
+								<div class="lex-entry">
+									<div class="lex-top">
+										<div class="lex-main">
+											<span
+												class="lex-eva eva eva-insert"
+												role="button"
 												tabindex="0"
-												class={(table.id + '-' + col.key) + (col.key === 'evidence' ? ' notes-cell' : '')}
-											>
-												{col.label}
-												<span class="sort-icon" aria-hidden="true">
-													{#if s.col === col.key}
-														{s.dir === 1 ? '▲' : '▼'}
-													{:else}
-														⇅
-													{/if}
+												title={C.insertTitle(entry.eva)}
+												onclick={() => onInsert(entry.eva)}
+												onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onInsert(entry.eva)}
+											>{entry.eva}</span>
+
+											{#if morphParts.length}
+												<span class="lex-morph">
+													{#each morphParts as part, pi ('morph-' + part + '-' + pi)}
+														<span class="eva part-tag">{part}</span>{#if pi < morphParts.length - 1}<span class="morph-sep"> + </span>{/if}
+													{/each}
 												</span>
-											</th>
-										{/each}
-									</tr>
-								</thead>
-								<tbody>
-									{#each rows as entry, i ('entry-' + entry.eva + '-' + i)}
-										<tr>
-											{#each table.columns as col ('entry-col-' + col.key)}
-												<td class={(table.id + '-' + col.key) + (col.key === 'evidence' ? ' notes-cell' : col.key === 'anchorFolio' ? ' part-cell' : col.key === 'rules' ? ' rules-cell' : '')}>
-													{#if col.key === 'confidenceStars'}
-														<span class={entry.confidenceStars === 5 ? 'conf5' : 'conf'}>{cellValue(entry, col.key)}</span>{#if entry.candidate}<span class="cand-badge">{C.candidateBadge}</span>{/if}
-													{:else if col.key === 'rules'}
-														{@const rules = getLexiconRules(entry)}
-														{#if rules.length}
-															{#each rules as rule, ri ('rule-' + rule)}
-																{#if ri > 0}<span class="rules-sep">, </span>{/if}<a class="rule-link" href="#rule-{rule}" onclick={(e) => e.stopPropagation()}>{rule}</a>
-															{/each}
-														{:else}
-															—
-														{/if}
-													{:else if col.key === 'eva'}
-														<span
-															class="eva eva-insert"
-															role="button"
-															tabindex="0"
-															title={C.insertTitle(entry.eva)}
-															onclick={() => onInsert(entry.eva)}
-															onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onInsert(entry.eva)}
-														>{cellValue(entry, col.key)}</span>
-													{:else if col.key === 'morph'}
-														{@const parts = cellValue(entry, col.key).split(' + ')}
-														{#each parts as part, pi ('part-' + part + '-' + pi)}
-															<span class="eva part-cell">{part}</span>
-															{#if pi < parts.length - 1}
-																<span class="rules-sep">+&nbsp;</span>
-															{/if}
-														{/each}
-													{:else if col.key === 'de'}
-														<span class="de-text">{entry.de ?? '—'}</span>{#if entry.uncertain}<span class="badge-uncertain" title={C.uncertainTitle}>?</span>{/if}{#if entry.context}<span class="de-ctx">{entry.context}</span>{/if}
-														{#if entry.relatedTo}
-															<span class="de-related">→ {entry.relatedTo.type}: <span class="eva">{entry.relatedTo.eva}</span></span>
-														{/if}
-													{:else}
-														{cellValue(entry, col.key)}
-													{/if}
-												</td>
-											{/each}
-										</tr>
-									{/each}
-									{#if rows.length === 0}
-										<tr>
-											<td colspan={table.columns.length} class="no-results">{C.noResults}</td>
-										</tr>
+											{/if}
+
+											{#if entry.heb}
+												<span class="lex-heb">{entry.heb}</span>
+											{/if}
+
+											<div class="lex-details">
+												<span class="de-text">{entry.de ?? '—'}{#if entry.uncertain}<span class="badge-uncertain" title={C.uncertainTitle}>?</span>{/if}</span>
+												{#if entry.context}<span class="de-ctx">{entry.context}</span>{/if}
+												{#if entry.relatedTo}
+													<span class="de-related">→ {entry.relatedTo.type}: <span class="eva">{entry.relatedTo.eva}</span></span>
+												{/if}
+											</div>
+										</div>
+
+										<div class="lex-right">
+											{#if !isDerived && (entry.layer || entry.isAnchor)}
+												<div class="meta-badges">
+													{#if entry.layer}<span class="meta-badge meta-layer">{entry.layer}</span>{/if}
+													{#if entry.isAnchor}<span class="meta-badge meta-anchor">{C.columns.isAnchor} I</span>{/if}
+												</div>
+											{/if}
+											<div class="meta-bottom">
+												<span class="lex-conf {entry.confidenceStars === 5 ? 'conf5' : 'conf'}">{getLexiconConfidence(entry.confidenceStars)}</span>
+												{#if entry.candidate}<span class="cand-badge">{C.candidateBadge}</span>{/if}
+											</div>
+										</div>
+									</div>
+
+									{#if !isDerived && (entry.anchorFolio || rules.length)}
+										<div class="lex-footer">
+											{#if entry.anchorFolio}
+												<span class="lex-evidence" title={entry.anchorFolio}>{entry.anchorFolio}</span>
+											{/if}
+											{#if rules.length}
+												<div class="meta-rules">
+													{#each rules as rule ('rule-' + rule)}
+														<a class="rule-link" href="#rule-{rule}" onclick={(e) => e.stopPropagation()}>{rule}</a>
+													{/each}
+												</div>
+											{/if}
+										</div>
 									{/if}
-								</tbody>
-							</table>
+									{#if isDerived && (entry.evidence || rules.length)}
+										<div class="lex-footer">
+											{#if entry.evidence}
+												<span class="lex-evidence">{entry.evidence}</span>
+											{/if}
+											{#if rules.length}
+												<div class="meta-rules">
+													{#each rules as rule ('rule-' + rule)}
+														<a class="rule-link" href="#rule-{rule}" onclick={(e) => e.stopPropagation()}>{rule}</a>
+													{/each}
+												</div>
+											{/if}
+										</div>
+									{/if}
+								</div>
+							{/each}
+							{#if rows.length === 0}
+								<p class="no-results">{C.noResults}</p>
+							{/if}
 						</div>
 					</div>
 				{/if}
@@ -362,28 +341,37 @@
 
 <style>
   /* ── Section layout ─────────────────────────────────── */
+  #lexicon {
+    container-type: inline-size;
+  }
 
   .lex-layout {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    & .lex-content {
+      min-width: 0;
+      
+      @media screen {
+        & .lex-list {
+          max-height: 480px;
+          overflow-y: auto;
+        }
+      }
+    }
   }
 
-  .lex-content {
-    container-type: inline-size;
-    min-width: 0;
-  }
-
-  @media (min-width: 1360px) {
+  @container (min-width: 640px) {
     .lex-layout {
       display: grid;
       grid-template-columns: 1fr 264px;
       grid-template-areas: "content aside";
       gap: 1.5rem;
       align-items: start;
-    }
 
-    .lex-content { grid-area: content; }
+      & .lex-content { grid-area: content; }
+    }
 
     .lex-aside {
       grid-area: aside;
@@ -449,7 +437,7 @@
     width: 100%;
     padding: .3rem .5rem;
     font-size: var(--text-sm);
-    font-family: var(--font-body);
+    font-family: var(--font-serif);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
     background: var(--parch);
@@ -525,10 +513,190 @@
   .chip-active {
     background: var(--red) !important;
     border-color: var(--red) !important;
-    color: #fff !important;
+    color: white !important;
   }
 
-  /* ── De cell: new field badges ──────────────────────── */
+  /* ── Group header ───────────────────────────────────── */
+
+  .lexicon-group {
+    margin-bottom: 2rem;
+  }
+
+  .group-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: .65rem;
+  }
+
+  .group-header h3 {
+    margin: 0;
+  }
+
+  .filter-count {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    font-weight: normal;
+    color: var(--ink-f);
+    margin-left: .25em;
+  }
+
+  /* ── Sort bar ───────────────────────────────────────── */
+
+  .sort-bar {
+    display: flex;
+    gap: .25rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .sort-btn {
+    padding: .18rem .5rem;
+    font-size: var(--text-xs);
+    font-family: var(--font-serif);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, .5);
+    color: var(--ink-l);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all var(--t-fast);
+
+    &:hover {
+      background: rgba(255, 255, 255, .9);
+      color: var(--ink);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--red);
+      outline-offset: 1px;
+    }
+  }
+
+  .sort-btn-active {
+    background: var(--parch-d) !important;
+    border-color: var(--parch-dk) !important;
+    color: var(--ink) !important;
+  }
+
+  .sort-icon {
+    font-size: .75em;
+    opacity: .6;
+  }
+
+  /* ── Card list ──────────────────────────────────────── */
+
+  .lex-list {
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+  }
+
+  .no-results {
+    text-align: center;
+    padding: .8rem;
+    font-style: italic;
+    color: var(--ink-f);
+    font-size: var(--text-sm);
+    margin: 0;
+  }
+
+  /* ── Card entry ─────────────────────────────────────── */
+
+  .lex-entry {
+    background: var(--parch);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: .7rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    break-inside: avoid;
+    transition: border-color var(--t-fast), transform var(--t-fast);
+
+    @media screen {
+      &:hover {
+        border-color: var(--parch-dk);
+        transform: translateY(-1px);
+      }
+    }
+  }
+
+  /* ── Card left side ─────────────────────────────────── */
+
+  .lex-main {
+    display: flex;
+    align-items: baseline;
+    gap: .5rem .85rem;
+    flex: 1;
+    min-width: 0;
+    flex-wrap: wrap;
+  }
+
+  .lex-eva {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    font-weight: bold;
+    color: var(--red);
+    background: color-mix(in srgb, var(--red) 10%, var(--parch));
+    padding: .1rem .45rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+    border-bottom: 1px dotted transparent;
+    transition: background var(--t-fast), border-color var(--t-fast);
+
+    &:hover, &:focus-visible {
+      background: color-mix(in srgb, var(--red) 18%, var(--parch));
+      border-bottom-color: var(--red);
+      outline: none;
+    }
+  }
+
+  .lex-morph {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: .1rem;
+    font-size: var(--text-sm);
+  }
+
+  .part-tag {
+    font-size: var(--text-sm);
+    color: var(--ink-f);
+    white-space: nowrap;
+    font-family: var(--font-mono);
+  }
+
+  .morph-sep {
+    color: var(--ink-f);
+    font-size: var(--text-sm);
+  }
+
+  .lex-heb {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--ink-l);
+    direction: rtl;
+    background: var(--parch-d);
+    padding: .05rem .35rem;
+    border-radius: var(--radius);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .lex-details {
+    font-size: var(--text-sm);
+    color: var(--ink);
+    min-width: 0;
+  }
+
+  .de-text {
+    display: inline;
+  }
 
   .badge-uncertain {
     display: inline-block;
@@ -560,7 +728,6 @@
   }
 
   .de-related {
-    display: block;
     margin-top: .18em;
     font-size: var(--text-xs);
     color: var(--ink-f);
@@ -571,116 +738,117 @@
     }
   }
 
-  /* ── Table title count ──────────────────────────────── */
+  /* ── Card structure ────────────────────────────────── */
 
-  .filter-count {
-    font-family: var(--font-mono);
-    font-size: var(--text-sm);
-    font-weight: normal;
+  .lex-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .lex-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .3rem;
+    flex-shrink: 0;
+  }
+
+  .meta-badges {
+    display: flex;
+    gap: .3rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .meta-bottom {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .lex-footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: .75rem;
+    border-top: 1px dashed var(--border);
+    padding-top: .45rem;
+  }
+
+  .lex-evidence {
+    flex: 1;
+    min-width: 0;
+    font-size: var(--text-xs);
     color: var(--ink-f);
-    margin-left: .25em;
-  }
-
-  /* ── No results row ─────────────────────────────────── */
-
-  .no-results {
-    text-align: center;
-    padding: .8rem;
-    font-style: italic;
-    color: var(--ink-f);
-    font-size: var(--text-sm);
-  }
-
-  /* ── Table ──────────────────────────────────────────── */
-
-  .table-wrap {
-    max-width: 100%;
-    max-height: 480px;
-    overflow: auto;
-  }
-
-  .dt {
-    width: 100%;
-
-    & thead {
-      position: sticky;
-      top: 0;
-      z-index: 1;
-    }
-  }
-
-  td.notes-cell {
-    min-width: 240px;
-    font-size: var(--text-sm);
-    color: var(--ink-f);
-    font-style: italic;
-  }
-
-  .part-cell {
-    font-size: var(--text-sm);
-    color: var(--ink-f);
-    white-space: nowrap;
     font-family: var(--font-mono);
   }
 
-  th[data-sortable] {
-    cursor: pointer;
-    user-select: none;
+  .meta-badge {
+    font-size: var(--text-2xs);
+    font-family: var(--font-smallcaps);
+    letter-spacing: .04em;
+    padding: .15rem .45rem;
+    border-radius: var(--radius);
+    background: var(--parch-d);
+    color: var(--ink-l);
+    border: 1px solid var(--border);
     white-space: nowrap;
-
-    &:hover {
-      background-color: color-mix(in srgb, currentColor 8%, transparent);
-    }
-
-    & .sort-icon {
-      margin-inline-start: 0.3em;
-      opacity: 0.4;
-      font-size: var(--text-xs);
-    }
-
-    &[aria-sort='ascending'] .sort-icon,
-    &[aria-sort='descending'] .sort-icon {
-      opacity: 1;
-    }
   }
+
+  .meta-anchor {
+    background: color-mix(in srgb, var(--red) 12%, var(--parch-d));
+    color: var(--red);
+    border-color: color-mix(in srgb, var(--red) 30%, transparent);
+    font-weight: 600;
+  }
+
 
   /* ── Rule links ─────────────────────────────────────── */
 
-  .rules-cell {
-    white-space: nowrap;
-    font-family: var(--font-mono);
-    font-size: var(--text-sm);
+  .meta-rules {
+    display: flex;
+    gap: .2rem;
+    flex-wrap: wrap;
   }
 
   .rule-link {
-    color: var(--red);
+    font-size: var(--text-xs);
+    font-family: var(--font-mono);
+    font-weight: bold;
+    background: var(--parch-d);
+    color: var(--ink-l);
     text-decoration: none;
-    border-bottom: 1px dotted color-mix(in srgb, var(--red) 50%, transparent);
+    padding: .1rem .35rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    white-space: nowrap;
+    transition: background var(--t-fast), color var(--t-fast);
 
     &:hover {
-      border-bottom-style: solid;
+      background: var(--parch-dk);
+      color: var(--ink);
     }
   }
 
-  .rules-sep {
+  /* ── Confidence ─────────────────────────────────────── */
+
+  .lex-conf {
     color: var(--ink-f);
+    font-size: var(--text-sm);
+    letter-spacing: .05em;
+    white-space: nowrap;
   }
 
-  .eva-insert {
-    cursor: pointer;
-    border-bottom: 1px dotted transparent;
-    transition: border-color var(--t-fast), color var(--t-fast);
-
-    &:hover, &:focus-visible {
-      border-bottom-color: var(--red);
-      color: var(--red);
-      outline: none;
-    }
+  .conf5 {
+    color: var(--red);
   }
 
   .cand-badge {
     display: inline-block;
-    margin-left: .35em;
     padding: .05em .3em;
     font-family: var(--font-smallcaps);
     font-size: var(--text-2xs);
@@ -692,126 +860,56 @@
     vertical-align: middle;
   }
 
-  /* ── Responsive table layout ────────────────────────── */
+  /* ── Mobile ─────────────────────────────────────────── */
 
-  .lex-content {
-    & .lexicon-table {
-      & thead {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-      }
+  @container (max-width: 768px) {
+    .lex-top {
+      flex-direction: column;
+      gap: .5rem;
+    }
 
-      @container (max-width: 768px) {
-        & tr {
-          display: grid;
-          border: 1px solid var(--border);
-          padding: 1rem;
-          break-inside: avoid;
+    .lex-main {
+      gap: .4rem .7rem;
+    }
 
-          &:not(:last-child) {
-            margin-bottom: .8rem;
-          }
+    .lex-right {
+      width: 100%;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border-top: 1px dashed var(--border);
+      padding-top: .5rem;
+    }
 
-          & td {
-            border-bottom: 0;
-          }
-        }
-
-        & thead tr {
-          margin-bottom: .8rem;
-        }
-
-        & th, & td {
-          padding: 0;
-        }
-
-        & .stems-table tr, & .stems-candidates-table tr {
-          grid-template-columns: 2fr 1fr 4rem 3rem;
-          grid-template-areas:
-            "eva eva confidenceStars confidenceStars"
-            "de de heb heb"
-            "layer layer rules rules"
-            "anchorFolio anchorFolio anchorFolio isAnchor";
-
-          & .stems-eva, & .stems-candidates-eva { grid-area: eva; }
-          & .stems-heb, & .stems-candidates-heb { grid-area: heb; }
-          & .stems-de, & .stems-candidates-de { grid-area: de; }
-          & .stems-layer, & .stems-candidates-layer { grid-area: layer; }
-          & .stems-isAnchor, & .stems-candidates-isAnchor { grid-area: isAnchor; }
-          & .stems-anchorFolio, & .stems-candidates-anchorFolio { grid-area: anchorFolio; }
-          & .stems-rules, & .stems-candidates-rules { grid-area: rules; }
-          & .stems-confidenceStars, & .stems-candidates-confidenceStars { grid-area: confidenceStars; }
-
-          & :is(.stems-heb, .stems-isAnchor, .stems-rules, .stems-confidenceStars),
-          & :is(.stems-candidates-heb, .stems-candidates-isAnchor, .stems-candidates-rules, .stems-candidates-confidenceStars) {
-            justify-self: end;
-            text-align: end;
-          }
-        }
-
-        & .derived-table tr, & .derived-candidates-table tr {
-          grid-template-columns: auto auto;
-          grid-template-areas:
-            "eva confidenceStars"
-            "de heb"
-            "morph rules"
-            "evidence evidence";
-
-          & .derived-eva, & .derived-candidates-eva { grid-area: eva; }
-          & .derived-heb, & .derived-candidates-heb { grid-area: heb; }
-          & .derived-de, & .derived-candidates-de { grid-area: de; }
-          & .derived-morph, & .derived-candidates-morph { grid-area: morph; }
-          & .derived-evidence, & .derived-candidates-evidence { grid-area: evidence; }
-          & .derived-rules, & .derived-candidates-rules { grid-area: rules; }
-          & .derived-confidenceStars, & .derived-candidates-confidenceStars { grid-area: confidenceStars; }
-
-          & :is(.derived-heb, .derived-rules, .derived-confidenceStars),
-          & :is(.derived-candidates-heb, .derived-candidates-rules, .derived-candidates-confidenceStars) {
-            justify-self: end;
-            text-align: end;
-          }
-        }
-      }
-
-      @media screen {
-        @container (min-width: 769px) {
-          overflow: hidden;
-
-          & th:first-child, & td:first-child {
-            position: sticky;
-            left: 0;
-          }
-
-          & thead th:first-child {
-            z-index: 1;
-            background: var(--parch-d);
-          }
-
-          & tbody tr {
-            background: var(--parch);
-
-            & td:first-child {
-              z-index: 0;
-              background: var(--parch);
-              border-bottom: 1px solid var(--border);
-            }
-          }
-        }
-      }
+    .meta-bottom {
+      justify-content: flex-start;
     }
   }
 
   /* ── Print ──────────────────────────────────────────── */
 
   @media print {
-    .table-wrap {
-      max-height: none;
-      overflow: visible;
+    .sort-bar {
+      display: none;
     }
 
-    .notes-cell {
-      display: none;
+    .lex-entry {
+      border: 1px solid var(--border);
+      padding: .5rem .75rem;
+      margin-bottom: .4rem;
+      box-shadow: none;
+    }
+
+    .meta-badge {
+      border: 1px solid var(--border);
+    }
+
+    .rule-link {
+      border: 1px solid var(--border);
+    }
+
+    .lex-heb {
+      background: var(--parch-d);
     }
   }
 </style>
