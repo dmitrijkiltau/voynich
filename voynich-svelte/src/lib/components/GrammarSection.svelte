@@ -116,12 +116,12 @@
 			<span class="lbl-2xs lbl">Therapie (rechts)</span>
 		</div>
 		<span class="schema-arrow">→</span>
-		<div class="schema-step" style="background:rgba(122,28,28,.08);border-color:var(--red)">
+		<div class="schema-step" style="background:color-mix(in srgb, var(--red) 8%, transparent);border-color:var(--red)">
 			<span class="heb-sm">שְאוֹל·אוֹר</span>
 			<span class="lbl-2xs lbl">sheol / or<br>Prognose</span>
 		</div>
 		<span class="schema-arrow">→</span>
-		<div class="schema-step" style="background:rgba(154,122,42,.08)">
+		<div class="schema-step" style="background:color-mix(in srgb, var(--gold) 8%, transparent)">
 			<span class="heb-sm">= / קַיָּם</span>
 			<span class="lbl-2xs lbl">Kolophon</span>
 		</div>
@@ -151,7 +151,7 @@
 			<span class="lbl-2xs lbl">lchedy<br>Therapieziel</span>
 		</div>
 		<span class="schema-arrow">→</span>
-		<div class="schema-step" style="background:rgba(122,28,28,.08);border-color:var(--red)">
+		<div class="schema-step" style="background:color-mix(in srgb, var(--red) 8%, transparent);border-color:var(--red)">
 			<span class="heb-sm">שְׁאוֹל · אוֹר</span>
 			<span class="lbl-2xs lbl">Prognose (Tod/Heilung)</span>
 		</div>
