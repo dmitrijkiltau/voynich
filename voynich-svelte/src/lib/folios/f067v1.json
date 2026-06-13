@@ -1,0 +1,156 @@
+{
+  "folio": "f67v1",
+  "transcriptions": {
+    "source": "https://voynich.nu/q09/f067v1_tr.txt",
+    "date": "1998-12-24",
+    "time": "21:15:19",
+    "editor": "stolfi",
+    "paragraphs": {
+      "X.1": {
+        "H": "dch*sy!kchy!!!!!=",
+        "U": "dchedy,kchy!!!!!=",
+        "V": "d**{curled page}="
+      },
+      "X.4": {
+        "H": "ykeodar=",
+        "U": "ykeodar=",
+        "V": "ykeodar="
+      },
+      "X.5": {
+        "H": "dechoe!kol=",
+        "U": "dcheor,kal=",
+        "V": "dcheoe!kal="
+      },
+      "X.6": {
+        "H": "ockh!o!sam=",
+        "U": "ockheo.sam=",
+        "V": "ockheo!sam="
+      },
+      "X.7": {
+        "H": "kochar!dy=",
+        "U": "kochar,dy=",
+        "V": "kochar!dy="
+      },
+      "X.8": {
+        "H": "ochodare=",
+        "U": "ochodars=",
+        "V": "ochodale="
+      },
+      "X.9": {
+        "H": "ols.aiin!y=",
+        "U": "ols.aiin,y=",
+        "V": "ols.aiin!y="
+      },
+      "X.13": {
+        "H": "damam!m!=",
+        "U": "damam!m!=",
+        "V": "damaiim*="
+      },
+      "X.14": {
+        "H": "dairkal=",
+        "U": "dairkal=",
+        "V": "dairtal="
+      },
+      "X.15": {
+        "H": "okal.ary=",
+        "U": "okal.ary=",
+        "V": "okal.ary="
+      },
+      "X.16": {
+        "H": "dor.echkolal=",
+        "U": "dar,*chkalal=",
+        "V": "dar!ichkalal="
+      },
+      "X.17": {
+        "H": "okol!aldy=",
+        "U": "okol,aldy=",
+        "V": "okol!aldy="
+      },
+      "Y.1": {
+        "H": "pchodai!s.otch.oeka!ody=",
+        "U": "pchodaiin.otch.oekeeody=",
+        "V": "pchodaiin.otch.oekchody={Grove's T1}"
+      },
+      "Y.2": {
+        "H": "dcheeos.qokiiiody.eees.oloesdr!!!!!!!!!!!!!=",
+        "U": "dcheeos.qokeeeody.ches.olcheeg!!!!!!!!!!!!!=",
+        "V": "dcheeos.qokeeeody.ches.olcheed{curled page}={Grove's T2}"
+      },
+      "Y.3": {
+        "H": "yko!o.cheo.daiin.ypcheg.oty=",
+        "U": "ykcho.cheo.daiin.ypcheg.oty=",
+        "V": "ykcho.cheo.daiin.ypcheg.oty={Grove's T3}"
+      },
+      "Y.4": {
+        "H": "opcheey.chso.cheey.chedaly=",
+        "U": "opcheey.chso.cheey.eeedaly=",
+        "V": "opcheey.ch*o.cheey.eeedaly={Grove's T4}"
+      },
+      "Y.5": {
+        "H": "ykeeey.qokeey.chokeear=",
+        "U": "ykeeey.qokeey.chokeeas=",
+        "V": "ykeeey.qokeey.chokeear={Grove's T5}"
+      },
+      "Y.6": {
+        "H": "osheey.keeody.che.dals=",
+        "U": "osheey.keeody.cheedals=",
+        "V": "osheey.keeody.cheedals={Grove's T6}"
+      },
+      "Y.7": {
+        "H": "okor.shey.qokcheor.doii!r=",
+        "U": "ofar,shey.qokcheor.daiiin=",
+        "V": "ofor.shey.qokcheor.daiiin={Grove's T7}"
+      },
+      "Y.8": {
+        "H": "oeees.otechy.o!keey=",
+        "U": "oeees.otechy.o,keey=",
+        "V": "oeees.otechy.o,keey={Grove's T8}"
+      },
+      "Y.9": {
+        "H": "okeeodaiin.siiin.dairal=",
+        "U": "okeeodaiin.sai!n.dairal=",
+        "V": "okeeodaiin.sai!r.dairal={Grove's T9}"
+      },
+      "Y.10": {
+        "H": "oksheeoda.or.aral=",
+        "U": "oksheeody.or,aral=",
+        "V": "okcheeody.or,aral={Grove's T10}"
+      },
+      "Y.11": {
+        "H": "olar.aroka=",
+        "U": "olar.aroky=",
+        "V": "olar.araky={Grove's T11}"
+      },
+      "Y.12": {
+        "H": "otorkeol.or.cheey.dary=",
+        "U": "otorkeol.or,sheey.dary=",
+        "V": "otoskeol.or.sheey.dary={Grove's T12}"
+      },
+      "Y.13": {
+        "H": "okechey.cheody.*eoky=",
+        "U": "okechey.cheody.cheky=",
+        "V": "okechey.cheody.cheka={Grove's T13}"
+      },
+      "Y.14": {
+        "H": "otechodor.o!dreeey=",
+        "U": "otechodor.o,dcheey=",
+        "V": "oteeeodor.o!dcheey={Grove's T14}"
+      },
+      "Y.15": {
+        "H": "chockhdy.cheockhy=",
+        "U": "checkhey.cheockhy=",
+        "V": "chockhey.cheockhy={Grove's T15}"
+      },
+      "Y.16": {
+        "H": "ytchoy.kchochy.dair.oekey=",
+        "U": "ytchey.keeochy.dair.ockhy=",
+        "V": "ytchey.keeochy.dair.ockey={Grove's T16}"
+      },
+      "Y.17": {
+        "H": "!kchcsey.chy.koldy=",
+        "U": "!keechey.chy.koldy=",
+        "V": "ikhechey.chy.koldy={Grove's T17}"
+      }
+    }
+  }
+}

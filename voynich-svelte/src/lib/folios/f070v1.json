@@ -1,0 +1,109 @@
+{
+  "folio": "f70v1",
+  "transcriptions": {
+    "source": "https://voynich.nu/q10/f070v1_tr.txt",
+    "date": "1998-12-09",
+    "time": "18:06:50",
+    "editor": "stolfi",
+    "paragraphs": {
+      "R2.1": {
+        "H": "sheal.dalalody.oteoshey.okoksheo.shokey.r!aiin.otor.ochy.s!ais.cheody.cheey.oteo!eey.oamr!.chcthy.dlal.oteo!daiin.ykeody.oteody.sheo.daiin.oteedy.chekalchs.dar.shoteeody.okeeo.dal.cheody.okchoteees.oteeody.cheokeo.otaiin.shes.toa!r.aly.daly.sheal.daly.",
+        "U": "sheal.dalalody.oteeshey.okoksheo.shokey.r,aiin.otor.ochy.s,air.cheody.cheey.okeo,chy.oa***.chcthy.dlal.oteo,daiin.ykeody.oteody.sheo.daiin.oteedy.chekalchr.dar.shoteeody.okeeo!dal.cheody.okchoteees.ot**ody.cheokeo.otaiin.shes.toair.aly.daly.!!!!!!!!!!!"
+      },
+      "S2.1": {
+        "H": "otalchy.tar.am.dy=",
+        "K": "otalchy.tar.am.gy={was <f70v1.06A;K>}",
+        "V": "otalchy.tar.am!dy=",
+        "U": "otalchy.tar.am,dy="
+      },
+      "S2.2": {
+        "H": "opchey.sal=",
+        "K": "opchey.sal={was <f70v1.07A;K>}",
+        "V": "opchey.sal=",
+        "U": "opchey.sal="
+      },
+      "S2.3": {
+        "H": "otokaiman=",
+        "K": "otakaiman={was <f70v1.08A;K>}",
+        "V": "otakaiman=",
+        "U": "otakaiman="
+      },
+      "S2.4": {
+        "H": "okalal=",
+        "K": "okalal={was <f70v1.09A;K>}",
+        "V": "okalal=",
+        "U": "okalal="
+      },
+      "S2.5": {
+        "H": "otyly=",
+        "K": "otaly={was <f70v1.10A;K>}",
+        "V": "otaly=",
+        "U": "otaly="
+      },
+      "S2.6": {
+        "H": "oalcheg=",
+        "K": "oalcheg={was <f70v1.11A;K>}",
+        "V": "oalcheg=",
+        "U": "oalcheg="
+      },
+      "S2.7": {
+        "H": "otchodals=",
+        "K": "otchodals={was <f70v1.12A;K>}",
+        "V": "otchodals=",
+        "U": "otchodals="
+      },
+      "S2.8": {
+        "H": "okolshy=",
+        "K": "okolshy={was <f70v1.13A;K>}",
+        "V": "okolcsy=",
+        "U": "okolshy="
+      },
+      "S2.9": {
+        "H": "otshshdy=",
+        "K": "otshshdy={was <f70v1.14A;K>}",
+        "V": "otshshdy=",
+        "U": "otshshdy="
+      },
+      "S2.10": {
+        "H": "otol.ypsharal=",
+        "K": "otal.ypsharal={was <f70v1.15A;K>}",
+        "V": "otal.ypcsaral=",
+        "U": "otal.ypsharal="
+      },
+      "R1.2": {
+        "H": "dal.daiin.okey.otodal.cheokeeo.okeodal.shol.olaiin.s!aiin.sheo.qokeeol.oteey!key.chekeal.oteo!s!aiin.chekey.okeolol.chees.oteey.opotey.dal.al.s.otecheo.",
+        "U": "dal.daiin.okey.otodal.cheokeeo.okeodal.shol.olaiin.s,aiin.sheo,qokeeol.okeey,key.chekeal.oteo,s,aiin.chekey.okeolol,chees.o**ey.*potey.dal,al,s.otecheo."
+      },
+      "S1.1": {
+        "H": "okoly=",
+        "K": "okoly={was <f70v1.01A;K>}",
+        "V": "okoey=",
+        "U": "okoly="
+      },
+      "S1.2": {
+        "H": "otolaiin=",
+        "K": "otalaiin={was <f70v1.02A;K>}",
+        "V": "otalaiin=",
+        "U": "otalaiin="
+      },
+      "S1.3": {
+        "H": "oteo.alols.asaly=",
+        "K": "oteo.alols.araly={was <f70v1.03A;K>}",
+        "V": "oteo.alols.araly=",
+        "U": "oteo,alols.araly="
+      },
+      "S1.4": {
+        "H": "oteoeey!!.otal.okeal.ar=",
+        "K": "otooeey!!.otal.okeal!ar={was <f70v1.04A;K>}",
+        "V": "oteoeeyd*.otal.okeal.ar=",
+        "U": "oteoeey!!.otal.okeal,ar="
+      },
+      "S1.5": {
+        "H": "oteas.araydy=",
+        "K": "otear.araydy={was <f70v1.05A;K>}",
+        "V": "otear.araydy=",
+        "U": "otear.araydy="
+      }
+    }
+  }
+}

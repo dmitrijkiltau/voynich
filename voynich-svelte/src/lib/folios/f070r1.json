@@ -1,0 +1,105 @@
+{
+  "folio": "f70r1",
+  "transcriptions": {
+    "source": "https://voynich.nu/q10/f070r1_tr.txt",
+    "date": "1998-12-27",
+    "time": "23:55:32",
+    "editor": "stolfi",
+    "paragraphs": {
+      "C.1": {
+        "H": "*{&.}*{&.}*{&.}*{&.}*{&.}*{&.}*{&.}*{&.}*{&.}*{&.}*{&.}*{&.}oooooooool!ar*{&.}*{&.}*{&.}*{&.}*{&.}!s*{&.}*{&.}r*{&.}*{&.}!!!!!!=",
+        "V": "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%oooooooool.ar.*!!!*!!!!*!!!!*!!!!!!!!!!s*!!!!*!!!!r*!!!!*!!!!!*%%%%={Grove's Z}",
+        "U": "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%oooooooool,ar.*{&.}*{&.}s!!!*{&.}*{&.}.s*{&.}*{&.}s*{&.}*{&.}.*{&.}="
+      },
+      "C.2": {
+        "H": "okchedy.oteos.okes.okeos.cy.okchol.s!air.ody.o.chopcheopchy.chol.air.shekchy.choteo!dy.oteeshs.opcheody.otol.choky.chody.chotey.sheal.ar.ykeody.oteey.chedaiin.chotar.soly-{gap}oteody.choekeeos.alair!dy.okol.okeey.dar!y.otor!sheod-",
+        "V": "okchody.oteos.okes!okeas.ey.okchol.s!air!ody.o.chopcheopchy.chol!air.shekchy.chotee.dy.oteeshs.opcheody.otol.choky.chody.chotey.sheal.ar.ykeody.oteey.chedaiin.chotar.soly-{gap}oteody.choekeeos.alair.dy.okal.okeey.dar!y.otar!sheod-{Grove'sR1}",
+        "U": "okchody.oteor.okes.okeos.*y.okchol,s,air!ody.o,chopcheopchy.chol,air.shekchy.choteo!dy.oteeshs.opcheody.otol.**oky.chody.chotey.sheal,ar.ykeody.oteey.chedaiin.chotar.soly-{gap}oteody.chockheos.alair,dy.okal.okeey.dar,y.otor,sheod-"
+      },
+      "C.3": {
+        "H": "okeol.choly.yky.okchedy.chkal.ofchor.qokal.opolaiin.okeos.oty.dal.choekeey.dal.choekeey.dal.cheo.al.otchoky.chety.chodalar.okal.chear.aly.oteos.ar.os.al.oko!l!air.dy-{gap}oteodas.chy.oteody.tochody.okchody.ytar.ytory-",
+        "V": "okeol.choly.qky.okchedy.chkal.ofchon.qokal.opolaiin.okeor.oty.dol.choekeey.dal.!!!!!!!!!!!!!cheo.ol.oteeoky.chety.chodalar.okal.chear.aly.oteos.ar.os.al.oko.l.air.dy-{gap}oteodar.chy.oteody.tochody.okchody.ytar.ytory-{Grove's R2}",
+        "U": "okeol.choly.yky.okchedy.chkal.ofchon.qokal.opolaiin.okeos.oty.dal.chockhey.dal.!!!!!!!!!!!!!cheo,al.oteeoky.chety.chodalar.otol,chear,aly.oteor.ar.os.al.oko!l!air.dy-{gap}oteodar.chy.oteody.tochady.okchody.ytar.ytory-"
+      },
+      "Y.1": {
+        "H": "otcho.dar.yky=",
+        "V": "otcho.dar.yky={Grove's Y.9}",
+        "U": "otcho.dar.yky="
+      },
+      "Y.2": {
+        "H": "opar.ykchy=",
+        "V": "opar.ykchy={Grove's Y.8}",
+        "U": "opar.ykchy="
+      },
+      "Y.3": {
+        "H": "y.saimchy.dam=",
+        "V": "y!saikchy.dam={Grove's Y.7}",
+        "U": "y,saikchy.dam="
+      },
+      "Y.4": {
+        "H": "otair.orolgy=",
+        "V": "otair!oroldy={Grove's Y.6}",
+        "U": "otair,oroldy="
+      },
+      "Y.5": {
+        "H": "dchal.da!m=",
+        "V": "dchal.daim={Grove's Y.5}",
+        "U": "dchal.daim="
+      },
+      "Y.6": {
+        "H": "yteody.sam=",
+        "V": "yteody.san={Grove's Y.4}",
+        "U": "yteody.sam="
+      },
+      "Y.7": {
+        "H": "okchy.dal.dy=",
+        "V": "okchy.dal!dy={Grove's Y.3}",
+        "U": "okchy.dal,dy="
+      },
+      "Y.8": {
+        "H": "yfcheodly=",
+        "V": "yfcheodly={Grove's Y.2}",
+        "U": "yfcheodly="
+      },
+      "Y.9": {
+        "H": "ytcheas.aly=",
+        "V": "ytcheos.aly={Grove's Y.1}",
+        "U": "ytcheos.aly="
+      },
+      "I.1": {
+        "H": "otechg.tshey.ol.oteey.ched.ar.oteos.sheor.al!al.otar.ar!y.oteod!shey.keody.oteos.al.",
+        "U": "okeeed.tshsy.ol.oteey.ched,ar.oteos.cheor,al,al.otar,ar,y.oteod,chey.keody.oteos,al."
+      },
+      "X.1": {
+        "H": "okeody=",
+        "V": "okeody=",
+        "U": "okeody={Grove's X.1}"
+      },
+      "X.2": {
+        "H": "otody=",
+        "V": "otody=",
+        "U": "otody={Grove's X.6}"
+      },
+      "X.3": {
+        "H": "ypolol=",
+        "V": "ypolol=",
+        "U": "ypolol={Grove's X.5}"
+      },
+      "X.4": {
+        "H": "chodal=",
+        "V": "chodal=",
+        "U": "chodal={Grove's X.4}"
+      },
+      "X.5": {
+        "H": "okosd=",
+        "V": "okard=",
+        "U": "okasd={Grove's X.3}"
+      },
+      "X.6": {
+        "H": "ykeal=",
+        "V": "ykeal=",
+        "U": "ykeal={Grove's X.2}"
+      }
+    }
+  }
+}

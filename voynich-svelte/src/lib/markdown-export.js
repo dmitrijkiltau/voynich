@@ -7,7 +7,8 @@ import { STAR_TYPES, FOLIOS as STAR_FOLIOS } from './margin-stars-data.js';
 import { REFS } from './references-data.js';
 import { CONFIDENCE_SCALE, ANCHOR_FOLIOS } from './methodology-data.js';
 import { OPEN_PROBLEMS } from './open-problems-data.js';
-import { getLexiconConfidence, getLexiconRules } from './lexicon-data.js';
+import { getLexiconRules } from './lexicon-data.js';
+import { CONTENT } from './content.js';
 
 const _bsI   = BACKTEST_STATS.find(s => s.label.startsWith('Typ I'));
 const _bsII  = BACKTEST_STATS.find(s => s.label.startsWith('Typ II'));
@@ -26,6 +27,12 @@ function stripHtml(html) {
     .replace(/\s+/g, ' ').trim();
 }
 
+/** @param {number | undefined} n */
+function starRating(n) {
+  const count = Number(n ?? 0);
+  return `${count} von 5 Sternen (${'★'.repeat(count)}${'☆'.repeat(5 - count)})`;
+}
+
 /** @param {string[]} headers @param {any[][]} rows */
 function tbl(headers, rows) {
   const esc = (/** @type {any} */ s) => String(s ?? '').replace(/\|/g, '\\|').replace(/[\n\r]+/g, ' ');
@@ -36,21 +43,17 @@ function tbl(headers, rows) {
   ].join('\n') + '\n';
 }
 
-// No TranslatorTool, nor GibberishTest in Markdown export
-const TOC = [
-  'I. Zusammenfassung',
-  'II. Methodik',
-  'III. Zeichenmapping',
-  'IV. Lexikon',
-  'V. Grammatik',
-  'VI. Grammatikregeln',
-  'VII. Rückwärtstest',
-  'VIII. Referenzen',
-  'IX. Wortklassen',
-  'X. Sprache A',
-  'XI. Randsterne',
-  'XII. Offene Probleme',
+// No TranslatorTool, nor GibberishTest in Markdown export — renumbered accordingly
+const _MD_SECTION_IDS = [
+  'abstract', 'methodology', 'mapping', 'lexicon', 'grammar',
+  'grammar-rules', 'backwards-test', 'references', 'word-classes',
+  'language-a', 'margin-stars', 'open-problems',
 ];
+const _ROM = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII'];
+const TOC = _MD_SECTION_IDS.map((id, i) => {
+  const text = (CONTENT.nav.find(n => n.id === id)?.label ?? '').replace(/^[IVX]+\.\s*/, '');
+  return `${_ROM[i]}. ${text}`;
+});
 
 export function generateMarkdown() {
   const s = /** @type {string[]} */([]);
@@ -75,9 +78,9 @@ export function generateMarkdown() {
   line();
 
   // ── I. Zusammenfassung ─────────────────────────────────────────
-  h(2, 'I. Zusammenfassung');
+  h(2, CONTENT.summary.title);
   line();
-  line('Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.');
+  line(CONTENT.summary.abstract);
   line();
   line('**Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.');
   line();
@@ -99,18 +102,19 @@ export function generateMarkdown() {
   line();
 
   // ── II. Methodik ───────────────────────────────────────────────
-  h(2, 'II. Methodik');
+  h(2, CONTENT.methodology.title);
   line();
-  h(3, 'Rückwärtstest-Prinzip');
+  h(3, CONTENT.methodology.backwardsTest.title);
   line();
-  line('Jede Mapping-Hypothese wird durch Rückwärtstests validiert: Ein bekanntes hebräisches oder aramäisches Wort wird nach dem vorgeschlagenen Mapping in EVA kodiert und im Voynich-Korpus gesucht. Bestätigung erfordert: (a) Vorkommen im Korpus, (b) semantisch plausible Position, (c) kontextuell passende Nachbarwörter.');
+  line(CONTENT.methodology.backwardsTest.description);
   line();
-  h(3, 'Konfidenzskala');
+  h(3, CONTENT.methodology.confidence.title);
   line();
-  s.push(tbl(['Sterne', 'Bedeutung', 'Kriterien'],
+  s.push(tbl(
+    [CONTENT.methodology.confidence.stars, CONTENT.methodology.confidence.label, CONTENT.methodology.confidence.criteria],
     CONFIDENCE_SCALE.map(c => [c.stars, c.label, c.criteria])));
   line();
-  h(3, 'Anker-Folios');
+  h(3, CONTENT.methodology.anchorFolios.title);
   line();
   for (const anchor of ANCHOR_FOLIOS) {
     line(`**${anchor.folio} — ${anchor.subtitle}:** ${anchor.desc}`);
@@ -121,117 +125,109 @@ export function generateMarkdown() {
   // ── III. Zeichenmapping ────────────────────────────────────────
   h(2, 'III. Zeichenmapping EVA → Hebräisch');
   line();
-  line('Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab.');
+  line('Positionell determiniertes Konsonanten- und Vokalmarker-Alphabet. Jedes EVA-Zeichen ist eindeutig einem hebräischen Äquivalent zugeordnet.');
   line();
-  s.push(tbl(['EVA', 'Hebräisch', 'Name'], MAPPING.map(m => [m.eva, m.heb, m.name])));
+  for (const m of MAPPING) {
+    h(3, `Zeichenmapping: ${m.eva}`);
+    line();
+    line(`- **EVA-Zeichen:** ${m.eva}`);
+    line(`- **Hebräisches Zeichen:** ${m.heb}`);
+    line(`- **Name / Funktion:** ${m.name}`);
+    line();
+  }
+  line('**Morphologische Präfixe** — greedy-sortiert (längste zuerst):');
   line();
-  h(3, 'Morphologische Präfixe');
-  line();
-  s.push(tbl(['EVA', 'Hebräisch', 'Bedeutung'], PREFIXES.map(p => [p.eva, p.heb, p.de])));
-  line();
+  for (const p of PREFIXES) {
+    h(3, `Morphologisches Präfix: ${p.eva}`);
+    line();
+    line(`- **EVA-Präfix:** ${p.eva}`);
+    line(`- **Hebräisch:** ${p.heb}`);
+    line(`- **Bedeutung / Funktion:** ${p.de}`);
+    line();
+  }
   line('**R2-ext (v7.5):** Das EVA-Zeichen `o` ist positionell vollständig determiniert: (1) `o-` am Wortanfang = ע (Ayin, konsonantisch) — ausnahmslos; (2) `o` im Wortinneren = Ḥolam (Vokalmarker) — ausnahmslos. **Negativtest:** 0 Gegenbeispiele in 140+ validierten Lexikoneinträgen. **f1r Nulltest (positiver Strukturbeleg):** 260 Token analysiert — alle initialen `o` = Ayin, alle internen `o` = Ḥolam, 0 Ausnahmen.');
   line();
 
   // ── IV. Lexikon ────────────────────────────────────────────────
   h(2, `IV. Bestätigtes Lexikon (${STATS.lexicon} Einträge)`);
   line();
-  line('Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgeleiteten Formen.');
+  line('Alle Einträge mit ★★★ oder höher — Stammwörter, Ableitungen und R43-Kandidaten.');
   line();
 
-  const _confMd = (/** @type {any} */ e) => getLexiconConfidence(e.confidenceStars) + (e.candidate ? ' (R43 Kandidat)' : '');
   /** @param {any} e */
-  const _deMd = (e) => {
-    let d = e.de || '—';
-    if (e.uncertain) d += ' ≈';
-    if (e.context) d += ` _(${e.context})_`;
-    if (e.relatedTo) d += ` → ${e.relatedTo.type}: ${e.relatedTo.eva}`;
-    return d;
+  const _ragDe = (e) => (e.de || '—') + (e.uncertain ? ' ≈' : '');
+  /** @param {any} e */
+  const _ragContext = (e) => {
+    const parts = [];
+    if (e.context) parts.push(e.context);
+    if (e.relatedTo) parts.push(`${e.relatedTo.type}: ${e.relatedTo.eva}`);
+    return parts.join(' / ') || 'Keine zusätzlichen Kontextinformationen';
   };
 
-  h(3, `A. Stammwörter (${STEM_WORDS.filter(/** @type {any} */e => !e.candidate).length})`);
-  line();
-  s.push(tbl(
-    ['EVA', 'Hebräisch', 'Deutsch', 'Schicht', 'Anker', 'Folio', 'Regeln', 'Konf.'],
-    STEM_WORDS.filter(/** @type {any} */e => !e.candidate).map(e => [
-      e.eva,
-      e.heb,
-      _deMd(e),
-      e.layer || '—',
-      e.isAnchor ? 'ja' : '—',
-      e.anchorFolio || '—',
-      getLexiconRules(e).join(', ') || '—',
-      _confMd(e),
-    ])
-  ));
-  line();
+  const _allLexEntries = /** @type {any[]} */([
+    ...STEM_WORDS.map(e => ({ ...e, _kind: 'Stammwort' })),
+    ...LEXICON_DERIVED.map(e => ({ ...e, _kind: 'Ableitung' })),
+  ]);
 
-  h(3, `B. Stammwörter (R43 Kandidaten) (${STEM_WORDS.filter(/** @type {any} */e => e.candidate).length})`);
-  line();
-  s.push(tbl(
-    ['EVA', 'Hebräisch', 'Deutsch', 'Schicht', 'Anker', 'Folio', 'Regeln', 'Konf.'],
-    STEM_WORDS.filter(/** @type {any} */e => e.candidate).map(e => [
-      e.eva,
-      e.heb,
-      _deMd(e),
-      e.layer || '—',
-      e.isAnchor ? 'ja' : '—',
-      e.anchorFolio || '—',
-      getLexiconRules(e).join(', ') || '—',
-      _confMd(e),
-    ])
-  ));
-  line();
-
-  h(3, `C. Abgeleitete Lexikon-Einträge (${LEXICON_DERIVED.filter(/** @type {any} */e => !e.candidate).length})`);
-  line();
-  s.push(tbl(
-    ['EVA', 'Morph.', 'Hebräisch', 'Deutsch', 'Evidenz', 'Regeln', 'Konf.'],
-    LEXICON_DERIVED.filter(/** @type {any} */e => !e.candidate).map((/** @type {any} */ e) => [
-      e.eva,
-      e.morph || '—',
-      e.heb,
-      _deMd(e),
-      e.evidence || '—',
-      getLexiconRules(e).join(', ') || '—',
-      _confMd(e),
-    ])
-  ));
-  line();
-
-  h(3, `D. Abgeleitete Lexikon-Einträge (R43 Kandidaten) (${LEXICON_DERIVED.filter(/** @type {any} */e => e.candidate).length})`);
-  line();
-  s.push(tbl(
-    ['EVA', 'Morph.', 'Hebräisch', 'Deutsch', 'Evidenz', 'Regeln', 'Konf.'],
-    LEXICON_DERIVED.filter(/** @type {any} */e => e.candidate).map((/** @type {any} */ e) => [
-      e.eva,
-      e.morph || '—',
-      e.heb,
-      _deMd(e),
-      e.evidence || '—',
-      getLexiconRules(e).join(', ') || '—',
-      _confMd(e),
-    ])
-  ));
-  line();
+  for (const e of _allLexEntries) {
+    const typLabel = e._kind + (e.candidate ? ' (R43 Kandidat)' : '');
+    h(3, `Lexikoneintrag: ${e.eva}`);
+    line();
+    line(`- **Wort (EVA-Transkription):** ${e.eva}`);
+    line(`- **Hebräische Entsprechung:** ${e.heb}`);
+    line(`- **Typ:** ${typLabel}`);
+    if (e.morph) line(`- **Morphologie:** ${e.morph}`);
+    line(`- **Bedeutung:** ${_ragDe(e)}`);
+    line(`- **Linguistischer Kontext:** ${_ragContext(e)}`);
+    line(`- **Sprachschicht:** ${e.layer || 'Nicht zugewiesen / Unbekannt'}`);
+    line(`- **Anker-Status:** ${e.isAnchor ? 'Anker-Typ I' : 'Kein Anker'}`);
+    line(`- **Folio-Referenz (Erstbeleg):** ${e.anchorFolio || e.evidence || '—'}`);
+    line(`- **Zugehörige Regeln:** ${getLexiconRules(e).join(', ') || '—'}`);
+    line(`- **Konfidenz-Bewertung:** ${starRating(e.confidenceStars)}`);
+    line();
+  }
 
   // ── V. Grammatik ──────────────────────────────────────────────
   h(2, 'V. Grammatik — Präfixe, Suffixe & Schemata');
   line();
-  h(3, 'Präfix-System');
+  line('**Präfix-System**');
   line();
-  s.push(tbl(['EVA-Präfix', 'Hebräisch', 'Funktion', 'Beispiel (EVA)', 'Beispiel (Heb)', 'Konf.'],
-    GRAMMAR_PREFIXES.map(r => [r.eva, r.heb, r.fn, r.ex_eva, r.ex_heb, r.stars])));
+  for (const r of GRAMMAR_PREFIXES) {
+    h(3, `Grammatik-Präfix: ${r.eva}`);
+    line();
+    line(`- **EVA-Präfix:** ${r.eva}`);
+    line(`- **Hebräisch:** ${r.heb}`);
+    line(`- **Funktion:** ${r.fn}`);
+    line(`- **Beispiel (EVA):** ${r.ex_eva}`);
+    line(`- **Beispiel (Hebräisch):** ${r.ex_heb}`);
+    line(`- **Konfidenz-Bewertung:** ${r.stars}`);
+    line();
+  }
+  line('**Suffix-System**');
   line();
-  h(3, 'Suffix-System');
+  for (const r of GRAMMAR_SUFFIXES) {
+    h(3, `Grammatik-Suffix: ${r.eva}`);
+    line();
+    line(`- **EVA-Suffix:** ${r.eva}`);
+    line(`- **Hebräisch:** ${r.heb}`);
+    line(`- **Funktion:** ${r.fn}`);
+    line(`- **Konfidenz-Bewertung:** ${r.stars}`);
+    line();
+  }
+  line('**Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 3 Kandidaten**');
   line();
-  s.push(tbl(['EVA-Suffix', 'Hebräisch', 'Funktion', 'Konf.'],
-    GRAMMAR_SUFFIXES.map(r => [r.eva, r.heb, r.fn, r.stars])));
-  line();
-  h(3, 'Verb-Paradigma y+k+[Terminus] — 6 bestätigt + 3 Kandidaten');
-  line();
-  s.push(tbl(['EVA', 'Hebräisch', 'Bedeutung', 'Erstbeleg', 'Konf.'],
-    VERB_PARADIGM.map(r => [r.eva, r.heb, r.de, r.folio, r.stars])));
-  line();
+  for (const r of VERB_PARADIGM) {
+    h(3, `Verb-Paradigma: ${r.eva}`);
+    line();
+    line(`- **EVA:** ${r.eva}`);
+    line(`- **Hebräisch:** ${r.heb}`);
+    line(`- **Bedeutung:** ${r.de}`);
+    line(`- **Erstbeleg:** ${r.folio}`);
+    if (r.negative) line(`- **Prognose-Typ:** Negativ (Scheol-Richtung)`);
+    line(`- **Status:** ${r.candidate ? 'R43 Kandidat' : 'Bestätigt'}`);
+    line(`- **Konfidenz-Bewertung:** ${r.stars}`);
+    line();
+  }
   h(3, 'Prognose-Schemata');
   line();
   line('**Quire A (Kräuter, Sprache A):** Symptom (links) ‡ {plant} ‡ Therapie (rechts) → sheol/or (Prognose) → = (Kolophon)');
@@ -249,9 +245,16 @@ export function generateMarkdown() {
     : `**v${STATS.version}-Regelmoratorium aktiv** — keine neuen Regeln (R60+) bis Verhältnis ≥ 1,5:1 (aktuell ${STATS.validatedRules}:${candidates} = ${moratoriumRatio}:1).`;
   line(`${RULES.length} Regeln gesamt: **${STATS.validatedRules} validiert** (≥ 2 unabhängige Belege) + **${candidates} Kandidaten**. ${moratoriumStatus} R2-ext (v7.5): explizite o-Positionsregel mit Negativtest. R14 und R20 gesichert (★★★★★).`);
   line();
-  s.push(tbl(['#', 'Regel', 'Evidenz', 'Konf.'],
-    RULES.map(r => [r.id, stripHtml(r.focus) + ' — ' + stripHtml(r.syntax), stripHtml(r.evidence), getLexiconConfidence(r.confidenceStars)])));
-  line();
+  for (const r of RULES) {
+    h(3, `Regel ${r.id}`);
+    line();
+    line(`- **Regel-ID:** ${r.id}`);
+    line(`- **Name / Fokus:** ${stripHtml(r.focus)}`);
+    line(`- **Formale Syntax und Bedingung:** ${stripHtml(r.syntax)}`);
+    line(`- **Empirische Evidenz:** ${stripHtml(r.evidence)}`);
+    line(`- **Konfidenz-Bewertung:** ${starRating(r.confidenceStars)}`);
+    line();
+  }
 
   // ── VII. Rückwärtstest ────────────────────────────────────────
   h(2, 'VII. Rückwärtstest-Statistik');
@@ -262,21 +265,35 @@ export function generateMarkdown() {
   line();
   line('**Entscheidend: Keine einzige Vorhersage ergab einen Falsch-Positiv-Treffer.** Bei einem Zufallsalphabet statistisch ausgeschlossen.');
   line();
-  h(3, `Typ I — Genuine Vorhersagen (${_numI} · ${_pctI}%)`);
+  line(`**Typ I — Genuine Vorhersagen (${_numI} · ${_pctI}%)**`);
   line();
-  s.push(tbl(['Vorhersage', 'Hebräisch', 'Befund', 'Kontext'],
-    TESTED.filter(t => t.type === 'I').map(t => [t.pred, t.heb, t.result, t.context])));
+  for (const t of TESTED.filter(t => t.type === 'I')) {
+    h(3, `Rückwärtstest Typ I: ${t.pred}`);
+    line();
+    line(`- **Vorhersage (EVA):** ${t.pred}`);
+    line(`- **Hebräisch:** ${t.heb}`);
+    line(`- **Befund:** ${t.result}`);
+    line(`- **Kontext:** ${t.context}`);
+    line(`- **Klasse:** Typ I — Genuine Vorhersage (eingefroren)`);
+    line();
+  }
+  line(`**Typ II — Interne Kohärenz (${_numII} · ${_pctII}%)**`);
   line();
-  h(3, `Typ II — Interne Kohärenz (${_numII} · ${_pctII}%)`);
-  line();
-  s.push(tbl(['Vorhersage', 'Hebräisch', 'Befund', 'Kontext'],
-    TESTED.filter(t => t.type === 'II').map(t => [t.pred, t.heb, t.result, t.context])));
-  line();
+  for (const t of TESTED.filter(t => t.type === 'II')) {
+    h(3, `Rückwärtstest Typ II: ${t.pred}`);
+    line();
+    line(`- **Vorhersage (EVA):** ${t.pred}`);
+    line(`- **Hebräisch:** ${t.heb}`);
+    line(`- **Befund:** ${t.result}`);
+    line(`- **Kontext:** ${t.context}`);
+    line(`- **Klasse:** Typ II — Interne Kohärenz`);
+    line();
+  }
 
   // ── VIII. Referenz-Sequenzen ───────────────────────────────────
   h(2, 'VIII. Verankerte Referenz-Sequenzen');
   line();
-  line('Die am besten verifizierten Sequenzen des Korpus — als Orientierungshilfe beim Übersetzen.');
+  line(CONTENT.references.intro);
   line();
   for (const ref of REFS) {
     const badge = ('badge' in ref && ref.badge) ? ` (${ref.badge})` : '';
@@ -303,36 +320,58 @@ export function generateMarkdown() {
   // ── IX. Wortklassen ───────────────────────────────────────────
   h(2, 'IX. Wortklassen-System');
   line();
-  line('Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.');
+  line(CONTENT.wordClasses.intro);
   line();
-  s.push(tbl(['Klasse', 'Wörter (Auswahl)', 'Funktion'], CLASSES.map(c => [c.cls, c.words, c.fn])));
-  line();
+  for (const c of CLASSES) {
+    h(3, `Wortklasse: ${c.cls}`);
+    line();
+    line(`- **Klasse:** ${c.cls}`);
+    line(`- **Beispielwörter:** ${c.words}`);
+    line(`- **Syntaktische Funktion:** ${c.fn}`);
+    line();
+  }
 
   // ── X. Sprache A ──────────────────────────────────────────────
   h(2, `X. Sprache A — Quires A–D (${STATS.foliosA})`);
   line();
-  h(3, 'Sprachvergleich Spr. A vs. Spr. B');
-  line();
-  s.push(tbl(['Merkmal', 'Sprache B', 'Sprache A'], COMPARISON.map(c => [c.feature, c.langB, c.langA])));
-  line();
-  h(3, 'Folio-Analyse');
-  line();
-  s.push(tbl(['Folio', 'Pflanze', 'Signale', 'Konf.'],
-    LANG_A_FOLIOS.map(f => [f.folio, f.plant, f.signal, f.stars])));
-  line();
+  for (const c of COMPARISON) {
+    h(3, `Sprachvergleich — ${c.feature}`);
+    line();
+    line(`- **Merkmal:** ${c.feature}`);
+    line(`- **Sprache B:** ${c.langB}`);
+    line(`- **Sprache A:** ${c.langA}`);
+    line();
+  }
+  for (const f of LANG_A_FOLIOS) {
+    h(3, `Sprache-A-Folio: ${f.folio}`);
+    line();
+    line(`- **Folio:** ${f.folio}`);
+    line(`- **Pflanze / Inhalt:** ${f.plant}`);
+    line(`- **Signale und Befunde:** ${f.signal}`);
+    line(`- **Konfidenz-Bewertung:** ${f.stars}`);
+    line();
+  }
 
   // ── XI. Randsterne ────────────────────────────────────────────
   h(2, 'XI. Das Randstern-System');
   line();
-  h(3, 'Sterntypen');
-  line();
-  s.push(tbl(['Typ', 'Morphologie', 'Funktion', 'Konf.'],
-    STAR_TYPES.map(st => [st.type, st.morph, st.fn, st.stars])));
-  line();
-  h(3, 'Folio-Prinzipien');
-  line();
-  s.push(tbl(['Folio', 'Prinzip', 'Notiz'], STAR_FOLIOS.map(f => [f.folio, f.principle, f.note])));
-  line();
+  for (const st of STAR_TYPES) {
+    h(3, `Randsterntyp: ${st.type}`);
+    line();
+    line(`- **Typ-Bezeichnung:** ${st.type}`);
+    line(`- **Morphologie:** ${st.morph}`);
+    line(`- **Funktion / Bedeutung:** ${st.fn}`);
+    line(`- **Konfidenz-Bewertung:** ${st.stars}`);
+    line();
+  }
+  for (const f of STAR_FOLIOS) {
+    h(3, `Randstern-Folio: ${f.folio}`);
+    line();
+    line(`- **Folio:** ${f.folio}`);
+    line(`- **Strukturprinzip:** ${f.principle}`);
+    line(`- **Notiz:** ${f.note}`);
+    line();
+  }
 
   // ── XII. Offene Probleme ──────────────────────────────────────
   h(2, 'XII. Offene Probleme und ungelöste Widersprüche');

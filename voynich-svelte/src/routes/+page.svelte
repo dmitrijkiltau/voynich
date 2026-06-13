@@ -1,22 +1,22 @@
 ﻿<script>
 import { pushState, replaceState } from '$app/navigation';
-import { MAPPING, STATS } from '$lib';
-	import TranslatorTool from '$lib/components/TranslatorTool.svelte';
-	import MappingGrid from '$lib/components/MappingGrid.svelte';
-	import LexiconSection from '$lib/components/LexiconSection.svelte';
-	import GrammarSection from '$lib/components/GrammarSection.svelte';
-	import GrammarRulesSection from '$lib/components/GrammarRulesSection.svelte';
-	import ReferencesSection from '$lib/components/ReferencesSection.svelte';
-	import SummarySection from '$lib/components/SummarySection.svelte';
-	import MethodologySection from '$lib/components/MethodologySection.svelte';
-	import BacktestSection from '$lib/components/BacktestSection.svelte';
-	import WordClassesSection from '$lib/components/WordClassesSection.svelte';
-	import LanguageASection from '$lib/components/LanguageASection.svelte';
-	import MarginStarsSection from '$lib/components/MarginStarsSection.svelte';
-	import GibberishTest from '$lib/components/GibberishTest.svelte';
-	import FolioProgress from '$lib/components/FolioProgress.svelte';
-	import OpenProblemsSection from '$lib/components/OpenProblemsSection.svelte';
-	import Box from '$lib/components/Box.svelte';
+import { STATS } from '$lib';
+	import { CONTENT } from '$lib/content.js';
+	import TranslatorSection from '$lib/components/sections/TranslatorSection.svelte';
+	import MappingSection from '$lib/components/sections/MappingSection.svelte';
+	import LexiconSection from '$lib/components/sections/LexiconSection.svelte';
+	import GrammarSection from '$lib/components/sections/GrammarSection.svelte';
+	import GrammarRulesSection from '$lib/components/sections/GrammarRulesSection.svelte';
+	import ReferencesSection from '$lib/components/sections/ReferencesSection.svelte';
+	import SummarySection from '$lib/components/sections/SummarySection.svelte';
+	import MethodologySection from '$lib/components/sections/MethodologySection.svelte';
+	import BacktestSection from '$lib/components/sections/BacktestSection.svelte';
+	import WordClassesSection from '$lib/components/sections/WordClassesSection.svelte';
+	import LanguageASection from '$lib/components/sections/LanguageASection.svelte';
+	import MarginStarsSection from '$lib/components/sections/MarginStarsSection.svelte';
+	import GibberishSection from '$lib/components/sections/GibberishSection.svelte';
+	import FolioRegister from '$lib/components/FolioRegister.svelte';
+	import OpenProblemsSection from '$lib/components/sections/OpenProblemsSection.svelte';
 	let evaInput        = $state('');
 	let activeSection   = $state('abstract');
 	let menuOpen        = $state(false);
@@ -33,22 +33,7 @@ import { MAPPING, STATS } from '$lib';
 		return () => window.removeEventListener('scroll', updateProgress);
 	});
 
-	const NAV_ITEMS = [
-		{ id: 'abstract',      		label: 'I. Zusammenfassung' },
-		{ id: 'methodology',   		label: 'II. Methodik' },
-		{ id: 'translator-tool',	label: 'III. Übersetzer' },
-		{ id: 'mapping',       		label: 'IV. Zeichenmapping' },
-		{ id: 'lexicon',       		label: 'V. Lexikon' },
-		{ id: 'grammar',       		label: 'VI. Grammatik' },
-		{ id: 'grammar-rules', 		label: 'VII. Grammatikregeln' },
-		{ id: 'backwards-test',		label: 'VIII. Rückwärtstest' },
-		{ id: 'references',    		label: 'IX. Referenzen' },
-		{ id: 'word-classes',  		label: 'X. Wortklassen' },
-		{ id: 'language-a',    		label: 'XI. Sprache A' },
-		{ id: 'margin-stars',  		label: 'XII. Randsterne' },
-		{ id: 'gibberish',     		label: 'XIII. Gibberish-Test' },
-		{ id: 'open-problems', 		label: 'XIV. Offene Probleme' },
-	];
+	const NAV_ITEMS = CONTENT.nav;
 
 	const SECTION_SELECTOR = 'main .section[id]';
 
@@ -87,8 +72,10 @@ import { MAPPING, STATS } from '$lib';
 				const visible = entries.filter((entry) => entry.isIntersecting);
 				if (!visible.length) return;
 
+				// @ts-ignore
 				const current = visible.reduce((best, entry) => {
 					if (!best) return entry;
+					// @ts-ignore
 					return Math.abs(entry.boundingClientRect.top) < Math.abs(best.boundingClientRect.top)
 						? entry
 						: best;
@@ -219,7 +206,7 @@ import { MAPPING, STATS } from '$lib';
 			</div>
 		</header>
 
-		<FolioProgress />
+		<FolioRegister />
 
 		<!-- Print-only table of contents -->
 		<nav class="toc" aria-label="Inhaltsangabe">
@@ -238,81 +225,40 @@ import { MAPPING, STATS } from '$lib';
 		<MethodologySection />
 
 		<!-- III. ÜBERSETZER-TOOL -->
-		<TranslatorTool bind:input={evaInput} />
+		<TranslatorSection bind:input={evaInput} />
 
 		<!-- IV. ZEICHENMAPPING -->
-		<section class="section" id="mapping">
-			<h2>IV. Zeichenmapping EVA → Hebräisch</h2>
-			<div class="mapping">
-				<div class="mapping-intro">
-					<p>Das folgende Mapping bildet EVA-Buchstaben auf hebräische Konsonanten ab. Klick auf eine Zelle fügt das Zeichen in die Eingabe ein.</p>
-					<Box variant="red" title="Sonderregel: o als Ayin vs. Ḥolam">
-						<p style="margin:0;font-size:var(--text-sm)">Das EVA-Zeichen <span class="eva">o</span> hat zwei Funktionen: (1) als konsonantisches <span class="heb-sm">ע</span> (Ayin) am Wortanfang, und (2) als Vokalmarker Ḥolam <span class="heb-sm">ֹ</span> im Wortinneren. Das Präfix <span class="eva">o-</span> am Wortanfang entspricht fast immer <span class="heb-sm">עַ</span>.</p>
-					</Box>
-				</div>
-				<MappingGrid {MAPPING} onInsert={insertEva} />
-			</div>
-		</section>
+		<MappingSection onInsert={insertEva} />
 
 		<!-- V. LEXIKON -->
-		<LexiconSection {STATS} onInsert={insertEva} bind:filter={lexiconFilter} />
+		<LexiconSection onInsert={insertEva} bind:filter={lexiconFilter} />
 
 		<!-- VI. GRAMMATIK -->
-		<section class="section" id="grammar">
-			<h2>VI. Grammatik — Präfixe, Suffixe &amp; Schemata</h2>
-			<p>Die wichtigsten morphologischen Regeln für das Lesen von EVA-Sequenzen.</p>
-			<GrammarSection onLinkFilter={linkLexiconFilter} />
-		</section>
+		<GrammarSection onLinkFilter={linkLexiconFilter} />
 
 		<!-- VII. GRAMMATIKREGELN -->
 		<GrammarRulesSection />
 
 		<!-- VIII. RÜCKWÄRTSTEST -->
-		<section class="section" id="backwards-test">
-			<h2>VIII. Rückwärtstest-Statistik</h2>
-			<BacktestSection />
-		</section>
+		<BacktestSection />
 
 		<!-- IX. REFERENZEN -->
-		<section class="section" id="references">
-			<h2>IX. Verankerte Referenz-Sequenzen</h2>
-			<p>Die am besten verifizierten Sequenzen des Korpus — als Orientierungshilfe beim Übersetzen.</p>
-			<ReferencesSection onInsert={insertEva} />
-		</section>
+		<ReferencesSection onInsert={insertEva} />
 
 		<!-- X. WORTKLASSEN -->
-		<section class="section" id="word-classes">
-			<h2>X. Wortklassen-System</h2>
-			<p>Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.</p>
-			<WordClassesSection />
-		</section>
+		<WordClassesSection />
 
 		<!-- XI. SPRACHE A -->
-		<section class="section" id="language-a">
-			<h2>XI. Sprache A — Quires A–D ({STATS.foliosA})</h2>
-			<LanguageASection />
-		</section>
+		<LanguageASection />
 
 		<!-- XII. RANDSTERNE -->
-		<section class="section" id="margin-stars">
-			<h2>XII. Das Randstern-System</h2>
-			<MarginStarsSection />
-		</section>
+		<MarginStarsSection />
 
 		<!-- XIII. GIBBERISH-TEST -->
-		<section class="section" id="gibberish">
-			<h2>XIII. Gibberish-Test (v{STATS.version})</h2>
-			<p>Empirisches Falsifikationswerkzeug: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch <strong>R40 v2</strong>, <strong>R41</strong> (Präfix-Hierarchie mit R45-Präzisierung: d-/REL → Konj. → Präp. → Basis) und <strong>D1/D2</strong> geführt. Abbruchschwelle: &gt; 15 % · Warnzone: 11–15 % · Zielkorridor: ≤ 10 % strukturelle Falsch-Positive (★★★).</p>
-			<p><em>v8.8.9-Update:</em> R41-Klassifikation korrigiert — d-Relativpräfix (R45) wird als REL-Klasse (äußerste Schale) behandelt, nicht als PREP; Konjunktionsklasse um v- erweitert. Testwert: {STATS.gibberishRate}.</p>
-			<GibberishTest />
-		</section>
+		<GibberishSection />
 
 		<!-- XIV. OFFENE PROBLEME -->
-		<section class="section" id="open-problems">
-			<h2>XIV. Offene Probleme und ungelöste Widersprüche</h2>
-			<p>Ehrliche Dokumentation der statistischen Anomalien und methodischen Grenzen, die das System nicht erklärt. Eingeführt in v7.5.</p>
-			<OpenProblemsSection />
-		</section>
+		<OpenProblemsSection />
 
 		<footer class="page-footer">
 			<p>Voynich-Manuskript — Formales Mapping-Dokument · Version {STATS.version} · {STATS.date}</p>
@@ -735,14 +681,4 @@ import { MAPPING, STATS } from '$lib';
 		}
 	}
 
-	.mapping {
-    display: flex;
-		align-items: start;
-    flex-wrap: wrap;
-    gap: 0 2rem;
-		
-    & > .mapping-intro {
-      flex: 0 1 480px;
-		}
-	}
 </style>

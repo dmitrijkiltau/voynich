@@ -1,0 +1,109 @@
+{
+  "folio": "f67r1",
+  "transcriptions": {
+    "source": "https://voynich.nu/q09/f067r1_tr.txt",
+    "date": "1998-12-26",
+    "time": "05:48:00",
+    "editor": "stolfi",
+    "paragraphs": {
+      "P.1": {
+        "H": "teeodaiin.shey.epairody.osaiin.yteeoey.shey.epaiin.o!aiin-",
+        "C": "teeodaiin.shey.epainody.osaiin.yta!oey.shey.epaiin.o.aiir-",
+        "F": "teeodaiin.shey.epairody.osaiin.yteeoey.shey.epaiin.o!aiin-",
+        "U": "teeodaiin.shey.epairody.osaiin.yteeoey.shey.cpaiin.o,aiin-"
+      },
+      "P.2": {
+        "H": "daiir.okeody.qoeksh!g.sar.oeteody.oteey.keey.keo.keeodal-",
+        "C": "daiir.okeody.qoekchey.sar.aeteedy.oteey.keey.keo.keeod**-",
+        "F": "daiir.okeody.qoekeee*.sar.oeteody.oteey.keey.keo.keeodal-",
+        "G": "daiir.okeody.qoeke!sy.sar.oekeody.oteey.keey.teo.keeodal-",
+        "U": "daiir.okeody.qoekeesy.sar.oeteody.oteey.keey.keo.keeodal-"
+      },
+      "P.3": {
+        "H": "ycheo.s.o.g.cheos.aiin.okesoe.ar!am.shees.dalaiin.dam-",
+        "C": "ycheo!s.o.j.eeeor.aiin.okesoe.ar.aj.shchy.dy*aiin.daj-",
+        "F": "ycheo.s!aim.cheos.aiin.okesoe.ar!am.shees.dalaiin.dam-",
+        "G": "ycheo.s.aim.cheos.aiin.okesoe.ar.am.shees.dalaiin.dam-",
+        "U": "ycheo.s.aim.cheos.aiin.okesoe.ar.am.shees.dalaiin.dam-"
+      },
+      "P.4": {
+        "H": "cheo!daiin.chekeey.s!ar.air.s!oar.cheey.dair.cthey=",
+        "C": "cheo!daiin.!aekeey.s!ar.ain.s!oar.cheey.dain.cthey=",
+        "F": "cheo.daiin.!aekeey.s!ar.air.s!oar.cheey.dair.cthey=",
+        "U": "cheo!daiin.chekeey.s,ar.air.s,oar.cheey.dair.cthey="
+      },
+      "R.1": {
+        "H": "soairal.shdy.chokeody.ykeedal.ol.oteodaiin.choikhedy.ot.chteokeeiin.choteedy.otor.epchy.chpiir.ar.sheees.!dady.soeteed.octhchy.soeokeot.y.choteoky.chockhy.okees.sor.aiin.daram.seeder.chdar.dar.deeschdy.dar.dar.ar.otar.dar.ykaras=",
+        "C": "soainal.shdy.chokeody.ykeedal.ol.oteodaiin.chocthedy.ot.chteoka!iin.choteedy.otor.epchy.chpiir.ar.sheeer.*eedy.soeteed.*cthchy.soe*keot.y.choteoky.chockhy.okees.sor.aiin.daraj.seedir.chdar.dar.da!rchdy.dar!dar!ar.otar.dar.okarar="
+      },
+      "R.2": {
+        "H": "dair.al.cheol.dal.oekaiin.sol.daiin.eetees.sainn.ykeos.l.chy.otodaiin.chetegy.otar.daiir.ar.chedar.okeedy.oteodaiin.ychsy.cheteey.ot.dol.al.cheor.okeor.oiin.cheeky.ary.okeokedr.oshey.shchey.chol.daiir.dain.cho.dar.aldy=",
+        "C": "dair.al.cheol.dal.oekaiin.sol.daiin.eetees.saiin.ykeos.*.chy.otodaiin.chet!jy.otar.daiir.ar.che*ar.okeedy.otiodaiin.ychry.chekeey.ot.dol.al.cheor.okeor.oiin.cheeky.ary.okeokedr.ochey.chchey.chol.dai!r.dain.cho.dar.aldy="
+      },
+      "R.3": {
+        "H": "archeor.qoikeey.oteeos.cheockhey.oteochedy.okeohdar.dararal.okeosar.sotey.dair.yto!y.oteos.oteees.oteo.oteesy.sheokeey.oteodal.chokeed.sar.ainy.oto!keedar.deeety.okeey.teodain.chekchy.dair.chparam=",
+        "C": "aecheor.qoikeey.oteeos.cheocthey.oteochedy.ok!oedar.dararal.okeorar.sotey.dair.yteey.oteo.s.otees.oteo.oteeey.sheokeey.oteodal.chokeed.sar.ain!.oto.keedar.deeety.okee!.teodiin.chetchy.dair.chparaj="
+      },
+      "S.1": {
+        "H": "otaldy=",
+        "C": "otaldy=",
+        "V": "otaldy="
+      },
+      "S.2": {
+        "H": "otoky=",
+        "C": "otoky=",
+        "V": "otoky="
+      },
+      "S.3": {
+        "H": "seeoa!r=",
+        "C": "seeya!r=",
+        "V": "seeaiir="
+      },
+      "S.4": {
+        "H": "yka!s.asa=",
+        "C": "yka!s.asy=",
+        "V": "ykees.ary="
+      },
+      "S.5": {
+        "H": "sosaiir=",
+        "C": "sosainr=",
+        "V": "sosaiir="
+      },
+      "S.6": {
+        "H": "oteey.dar=",
+        "C": "oteey.dar=",
+        "V": "oteey.dar="
+      },
+      "S.7": {
+        "H": "yto.daiir=",
+        "C": "yto!daiir=",
+        "V": "yto!daiir="
+      },
+      "S.8": {
+        "H": "sheosam=",
+        "C": "sheoraj=",
+        "V": "cheosam="
+      },
+      "S.9": {
+        "H": "ykeeody=",
+        "C": "ykeeody=",
+        "V": "ykeeody="
+      },
+      "S.10": {
+        "H": "okeol.sal=",
+        "C": "okeol.sal=",
+        "V": "okeol.sal="
+      },
+      "S.11": {
+        "H": "okeey.sar=",
+        "C": "okeey.sar=",
+        "V": "okeey.sar="
+      },
+      "S.12": {
+        "H": "dalary=",
+        "C": "dalary=",
+        "V": "dalary="
+      }
+    }
+  }
+}

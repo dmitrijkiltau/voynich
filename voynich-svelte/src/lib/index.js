@@ -5,6 +5,7 @@ import { RULES, RULES_CHANGELOG } from './grammar-rules-data.js';
 import { COMPARISON, FOLIOS, CONCLUSION } from './language-a-data.js';
 import { TESTED, STATS as BACKTEST_STATS } from './backtest-data.js';
 import { getLexiconMeta, CONSECUTIVE_TOKENS } from './lexicon-meta.js';
+import { runProtocol } from './gibberish-utils.js';
 
 // Merge folio-derived metadata into each lexicon entry.
 // Manual values in lexicon-data.js act as fallbacks/overrides:
@@ -54,15 +55,14 @@ const _bsI  = BACKTEST_STATS.find(s => s.label.startsWith('Typ I'));
 const _bsII = BACKTEST_STATS.find(s => s.label.startsWith('Typ II'));
 const _compact = (/** @type {string} */ n) => n.replace(/ /g, '');
 const _pct     = (/** @type {number} */ p) => `${Math.round(p)}%`;
+const _gibberish = runProtocol(LEXICON);
 
 export const STATS = {
-  version: '8.8.9',
+  version: '8.9.0',
   // Separate each change on a new line and keep only the new changes since the last release.
   changelog: [
-    'Lexikon-Klammern-Migration: 107 Einträge restrukturiert (de_neu, relatedTo, context, uncertain).',
-    'LexiconSection: Filterleiste erweitert (Schicht, Regeln, Sterne), sticky Sidebar ab 1360 px, neue Felder sichtbar.',
-    'GibberishTest: R41-Klassifikation korrigiert (d- als REL-Klasse per R45, nicht PREP), v- zu Konj. ergänzt.',
-    'f49r–f56v als JSON-Folios hinzugefügt.',
+    'GibberishTest Neues Baseline-Protokoll (10 × 50 Wörter): 7,2 % Brutto-Mittelwert, LEX-TREFFER = 0, 10/10 Läufe im Zielkorridor — Brutto-Baseline von 16,4 % auf 7,2 % durch GPA-1-Corpus-Vorab-Filter verschoben.',
+    'R40-Evidenz: v8.9.0-Baseline-Wert dokumentiert (7,2 % Mittelwert, ±2,7 %, Min 2 %, Max 10 %).',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.filter((/** @type {any} */ e) => !e.candidate).length,
@@ -71,7 +71,7 @@ export const STATS = {
   backtest: '100%',
   backtestFraction: `Typ I: ${_compact(_bsI?.num ?? '?')} (${_pct(_bsI?.pct ?? 0)}) · Typ II: ${_compact(_bsII?.num ?? '?')} (${_pct(_bsII?.pct ?? 0)})`,
   backtestTotal: String(TESTED.length),
-  gibberishRate: '10,4 %',
+  gibberishRate: `${_gibberish.mean.toFixed(1).replace('.', ',')} %`,
   foliosA: 'f1r–f32v',
   foliosAll: 'f1r, f1v–f10r (Quire A komplett, Positionskarten f1v–f10r), f11r–f32v (Quires B–D komplett), f33r–f34v (Quire E Eröffnung, 5/16), f57r/v, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v',
 };

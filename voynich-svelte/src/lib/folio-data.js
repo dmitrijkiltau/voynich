@@ -28,6 +28,7 @@ export const LACUNA = new Set([
   'f59r', 'f59v', 'f60r', 'f60v',
   'f61r', 'f61v', 'f62r', 'f62v',
   'f63r', 'f63v', 'f64r', 'f64v',
+  'f74r', 'f74v',
   'f91r', 'f91v', 'f92r', 'f92v',
   'f97r', 'f97v', 'f98r', 'f98v',
 ]);

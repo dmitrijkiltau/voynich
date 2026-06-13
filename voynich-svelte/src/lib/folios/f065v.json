@@ -1,0 +1,40 @@
+{
+  "folio": "f65v",
+  "transcriptions": {
+    "source": "https://voynich.nu/q08/f065v_tr.txt",
+    "date": "1998-12-25",
+    "time": "04:41:19",
+    "editor": "stolfi",
+    "paragraphs": {
+      "P.1": {
+        "H": "cphy.fchecfhy.dy-{plant}dchepain.shety.qopy.fol.chpdy-",
+        "C": "cphy.fchecfhy.dy-{plant}dchepain.shety.qopy.fol.chpdy-"
+      },
+      "P.2": {
+        "H": "daiin.sheek.l.ody-{plant}yteo.qop*!.air.cheoteey.dalam-",
+        "C": "daiin.sheek.l.ody-{plant}yteo.qops!.air.cheoteeo.dalom-",
+        "D": "daiin.sheek.l.ody-{plant}yteo.qopr*.air.cheoteey.dalam-",
+        "U": "daiin.sheek.l.ody-{plant}yteo.qops!.air.cheotchy.dalam-"
+      },
+      "P.3": {
+        "H": "ytal.cheot.shky.y-{plant}!eas.cheody=",
+        "C": "ytal.cheot.shky.y-{plant}*sas.cheody=",
+        "U": "ytal.cheot!shky.y-{plant}!*as.cheody="
+      },
+      "P.4": {
+        "H": "toeedy.otor.shedy-{plant}yteey.sheody.qokesd.yfchey-",
+        "C": "toeedy.otor.shedy-{plant}yteey.sheody.qokshd.yfchey-"
+      },
+      "P.5": {
+        "H": "dshedy.okeody.qokd-{plant}shckhy.choky.chokeody.oke!y.dy-",
+        "C": "dshedy.okeody.qokd-{plant}shckhy.choky.chokeody.oke.y!dy-",
+        "U": "dshedy.okeody.qokd-{plant}shckhy.choky.chokeody.oke!y.dy-"
+      },
+      "P.6": {
+        "H": "qo.ytchey.shckhh.cphy-{plant}ykchhdy.chedy.shckhdy=",
+        "C": "qo.ytchey.shckhe!cphy-{plant}ykchedy.chedy.shckhdy=",
+        "U": "qo.ytchey.shckh*!cphy-{plant}ykchedy.chedy.shckhdy="
+      }
+    }
+  }
+}

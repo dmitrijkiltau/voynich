@@ -1,0 +1,134 @@
+{
+  "folio": "f67v2",
+  "transcriptions": {
+    "source": "https://voynich.nu/q09/f067v2_tr.txt",
+    "date": "1998-12-26",
+    "time": "09:34:01",
+    "editor": "stolfi",
+    "paragraphs": {
+      "F.1": {
+        "H": "otararain=",
+        "V": "otarara**=",
+        "U": "otararain="
+      },
+      "F.2": {
+        "H": "okchos!am=",
+        "C": "okch*schj=",
+        "V": "okchos.am=",
+        "U": "okchos.am="
+      },
+      "F.3": {
+        "U": "%%%%%%%%%="
+      },
+      "F.4": {
+        "U": "%%%%%%%%%="
+      },
+      "C.1a": {
+        "H": "tol.or.oir.om.otoly.eain.m-",
+        "C": "tol.or.oir.aj.otoly.eair.j-",
+        "V": "tol.or.air.am.otoly.ea!r.g-",
+        "U": "tol.or.air.am.otoly.sa!r.g-"
+      },
+      "C.1b": {
+        "H": "daiin.taedaiin.or.okor=",
+        "C": "daiin.tasdaiin.or.okor=",
+        "V": "daiin.taedaiin.or.okor=",
+        "U": "daiin.taedaiin.or.okor="
+      },
+      "C.2a": {
+        "H": "okeey.keoy.osalal-",
+        "C": "***{Illegible}!!!-",
+        "V": "okeey.kedy.!!alal-",
+        "U": "okeey.keey.!ralal-"
+      },
+      "C.2b": {
+        "H": "ykyral.am.oralady.odam=",
+        "C": "***{Illegible}!!!!!!!!=",
+        "V": "okaral!am.olalad!.odam=",
+        "U": "okaral!am.olalady.odam="
+      },
+      "C.3a": {
+        "H": "toal.daim.sakar.dam-",
+        "C": "taol.daij.rakar.daj-",
+        "V": "taol.daig.sakar.dam-",
+        "U": "toal.daig.rakar.dam-"
+      },
+      "C.3b": {
+        "H": "solair.cfhey.solal.daly=",
+        "C": "so*ain.cph!y.solal.daly=",
+        "V": "solair.cphey.solal.daly=",
+        "U": "solair.cfhey.solal.daly="
+      },
+      "C.4a": {
+        "H": "okeol.chol.ar.okol.dam-",
+        "C": "***{Illegible}!!!!!!!!-",
+        "V": "okeol.chol.ar.okal!dam-"
+      },
+      "C.4b": {
+        "H": "koaiin.ofyl.ol.ofalaiin.oar=",
+        "C": "***{Illegible}!!!!!!!!!!!!!=",
+        "V": "koaiin.ofal.ol.opalaiin!oar="
+      },
+      "R.5": {
+        "H": "o*eeey.oekchdy=",
+        "C": "ekeeey.*ekeedy=",
+        "V": "okeeey.oekchdy=",
+        "U": "okeeey.oekchdy="
+      },
+      "R.6": {
+        "H": "oeola.les.airar=",
+        "C": "oeola!les.airar=",
+        "V": "oeola!les.airar=",
+        "U": "oeola!les.airar="
+      },
+      "R.7": {
+        "H": "oar.ykalo.char=",
+        "C": "oin.ykaly.char=",
+        "V": "oar.ykaly.char=",
+        "U": "oar.ykaly.char="
+      },
+      "R.8": {
+        "H": "okar!alet.olkao!=",
+        "C": "okar.alet.olkao!=",
+        "V": "okar.alet.olkao!=",
+        "U": "okar.alct.olkain="
+      },
+      "L.1": {
+        "H": "okydseog.oa!foaly=",
+        "C": "okydseoj.oeepoaly=",
+        "V": "okydsham.oiipoaly=",
+        "U": "okydshom.oeepoaly="
+      },
+      "L.2": {
+        "H": "ocs.ekais.okolarm=",
+        "C": "o.chekair.okolinj=",
+        "V": "o.chekais.okolaig=",
+        "U": "o.chekair.okolaig="
+      },
+      "L.3": {
+        "H": "qokoaiis.ocfhhy=",
+        "C": "qokoaiin.ockhey=",
+        "V": "qokoaiin.ockhhy=",
+        "U": "qokoaiin.ockhey="
+      },
+      "L.4": {
+        "H": "dcsesor.ochepalain=",
+        "C": "dcheeor.ochepalain=",
+        "V": "dcheeor.ochepalain=",
+        "U": "dcheeor.ochepalain="
+      },
+      "S.1": {
+        "H": "soaiin-{plant}dalam=",
+        "C": "soaiin-{plant}dolaj=",
+        "V": "soeiin-{plant}dalam=",
+        "U": "soaiin-{plant}dalam="
+      },
+      "S.2": {
+        "H": "sory-{plant}okoral=",
+        "C": "soly-{plant}okorad=",
+        "V": "sary-{plant}okoral=",
+        "U": "sary-{plant}okoral="
+      }
+    }
+  }
+}
