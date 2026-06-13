@@ -5,6 +5,7 @@ import { RULES, RULES_CHANGELOG } from './grammar-rules-data.js';
 import { COMPARISON, FOLIOS, CONCLUSION } from './language-a-data.js';
 import { TESTED, STATS as BACKTEST_STATS } from './backtest-data.js';
 import { getLexiconMeta, CONSECUTIVE_TOKENS } from './lexicon-meta.js';
+import { runProtocol } from './gibberish-utils.js';
 
 // Merge folio-derived metadata into each lexicon entry.
 // Manual values in lexicon-data.js act as fallbacks/overrides:
@@ -54,6 +55,7 @@ const _bsI  = BACKTEST_STATS.find(s => s.label.startsWith('Typ I'));
 const _bsII = BACKTEST_STATS.find(s => s.label.startsWith('Typ II'));
 const _compact = (/** @type {string} */ n) => n.replace(/ /g, '');
 const _pct     = (/** @type {number} */ p) => `${Math.round(p)}%`;
+const _gibberish = runProtocol(LEXICON);
 
 export const STATS = {
   version: '8.8.9',
@@ -71,7 +73,7 @@ export const STATS = {
   backtest: '100%',
   backtestFraction: `Typ I: ${_compact(_bsI?.num ?? '?')} (${_pct(_bsI?.pct ?? 0)}) · Typ II: ${_compact(_bsII?.num ?? '?')} (${_pct(_bsII?.pct ?? 0)})`,
   backtestTotal: String(TESTED.length),
-  gibberishRate: '10,4 %',
+  gibberishRate: `${_gibberish.mean.toFixed(1).replace('.', ',')} %`,
   foliosA: 'f1r–f32v',
   foliosAll: 'f1r, f1v–f10r (Quire A komplett, Positionskarten f1v–f10r), f11r–f32v (Quires B–D komplett), f33r–f34v (Quire E Eröffnung, 5/16), f57r/v, f58r, f69r (Quire J Kosmogramm), f71r–f72r2 (Quire K Zodiak), f103r/v, f114v, f115r/v, f116r/v',
 };
