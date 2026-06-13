@@ -1,9 +1,18 @@
 {
   "folio": "f1r",
-  "registerType": "Prosa / Haskama-Typ (sui generis) — kein {plant}-System",
+  "registerType": "Deklarativ (Haskama-Typ, sui generis) — kein {plant}-System aktiv",
   "languageClass": "Sprache A (Currier)",
   "writerHand": 1,
   "scanUrl": "https://collections.library.yale.edu/iiif/2/1006076/full/full/0/default.jpg",
+  "iconographic": {
+    "illustrationType": "Reiner Prosatext ohne Kräuterbild — Haskama-Typ: vier Absätze (P1–P4) mit rechtsbündigen Titeln (T1–T4) und roten Großinitialen &252/&253 (P2/P3)",
+    "layoutStructure": "P1 Z.1–5 + T1 Z.6; P2 Z.7–9 (Großinitiale &252, rot) + T2 Z.10; P3 Z.12–20 (Großinitiale &253, rot) + T3 Z.21; P4 Z.22–27 + T4 Z.28; Kolophon-Marker '=' je Absatz-Ende (R11); Erased Key rechter Rand (J-Transkription Reeds 1994, 3 Spalten: A–Z + Voynich + versetzt); Jacobus-de-Tepenecz-Signatur verblasst am Seitenanfang; grüne Wischmarken = Farbdurchschlag von Gegenfolio, kein intentionales Bild",
+    "botanicalIdentification": [],
+    "rules": [
+      "R11"
+    ],
+    "r60Status": "nicht anwendbar — kein Kräuterbild"
+  },
   "transcriptions": {
     "source": "https://voynich.nu/q01/f001v_tr.txt",
     "date": "1998-10-30",
