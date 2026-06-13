@@ -53,7 +53,7 @@ export const STEM_WORDS = [
   { eva: "shol",    heb: "שׁוֹל",       de: "Tod / Unterwelt",                                      layer: "Jüdisch-Aramäisch (Sprache A)", relatedTo: { type: "Kurzform", eva: "sheol" },   rulesApplied: ["R40"] },
   { eva: "shor",    heb: "שׁוּר",       de: "Blick / Reihe / Ochse",                                layer: "Aramäisch / Hebräisch",                   rulesApplied: ["R15"] },
   { eva: "shty",    heb: "שְׁתִי",       de: "Getränk / Trank",                                      layer: "",                                        rulesApplied: [] },
-  { eva: "tal",     heb: "טַל",        de: "Tau / Pflanzensaft / Feuchtigkeit",                    layer: "Hebräisch",                               rulesApplied: ["R14", "R40"] },
+  { eva: "tal",     heb: "טַל",        de: "Tau / Pflanzensaft / Feuchtigkeit",                    layer: "Hebräisch",                       context: "CAULIS-Marker", rulesApplied: ["R14", "R40"] },
   { eva: "tam",     heb: "תָּם",        de: "vollständig / rein",                                   layer: "",                                        rulesApplied: [] },
   { eva: "tolol",   heb: "תֹּלֹל",       de: "geschwächt / hängend",                                 layer: "",                                        rulesApplied: [] },
 ];

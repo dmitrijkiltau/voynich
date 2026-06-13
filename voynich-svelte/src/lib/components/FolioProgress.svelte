@@ -762,8 +762,8 @@
 	}
 
 	.fp-label {
-		flex: 0 0 148px;
-		min-width: 148px;
+		flex: 0 0 180px;
+		min-width: 180px;
 	}
 
 	.fp-label-top {

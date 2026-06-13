@@ -39,6 +39,15 @@
 		return start + mids.join('') + end;
 	}
 
+	// GPA-1: discard any word that matches a real corpus token; regenerate until genuine hapax
+	function generateHapax() {
+		let word = '';
+		let i = 0;
+		do { word = generateWord(); i++; }
+		while (i < 30 && LEXICON.some(e => e.eva === word));
+		return word;
+	}
+
 	// ── Tokenizer ────────────────────────────────────────────────────────────
 
 	const MULTI = ['aiin','sh','ch','ee','ii','oo','ai'];
@@ -158,7 +167,7 @@
 	let protocolDate = $state('');
 
 	function runTest() {
-		results = Array.from({ length: wordCount }, () => analyzeWord(generateWord()));
+		results = Array.from({ length: wordCount }, () => analyzeWord(generateHapax()));
 		tested  = true;
 	}
 
@@ -166,7 +175,7 @@
 
 	function runProtocol() {
 		runs = Array.from({ length: 10 }, (_, i) => {
-			const words = Array.from({ length: wordCount }, () => analyzeWord(generateWord()));
+			const words = Array.from({ length: wordCount }, () => analyzeWord(generateHapax()));
 			const { total, passed, lexhits, capped, invalid, passRate } = computeRunStats(words);
 			return { run: i + 1, total, passRate, passed, lexhits, capped, invalid };
 		});

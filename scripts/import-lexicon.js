@@ -32,6 +32,9 @@ const FIELD_TYPES = {
   de:              v => typeof v === 'string' && v.length > 0,
   morph:           v => typeof v === 'string' && v.length > 0,
   layer:           v => typeof v === 'string',
+  context:         v => typeof v === 'string' && v.length > 0,
+  relatedTo:       v => v !== null && typeof v === 'object' && !Array.isArray(v) && typeof v.type === 'string' && typeof v.eva === 'string',
+  uncertain:       v => typeof v === 'boolean',
   confidenceStars: v => Number.isInteger(v) && v >= 1 && v <= 5,
   rulesApplied:    v => Array.isArray(v) && v.every(r => typeof r === 'string'),
 };
@@ -39,7 +42,7 @@ const FIELD_TYPES = {
 const REQUIRED = ['eva', 'heb', 'de', 'rulesApplied'];
 
 // Canonical field order for formatting
-const FIELD_ORDER = ['eva', 'morph', 'heb', 'de', 'layer', 'confidenceStars', 'rulesApplied'];
+const FIELD_ORDER = ['eva', 'morph', 'heb', 'de', 'layer', 'confidenceStars', 'context', 'relatedTo', 'uncertain', 'rulesApplied'];
 
 // Arrays that must not be written to directly (they are derived/spread/alias)
 const NON_WRITABLE = new Set(['LEXICON', 'LEXICON_DERIVED', 'LEXICON_ALIASES']);
@@ -85,6 +88,9 @@ function discoverArrays(src) {
 function fmtVal(v) {
   if (Array.isArray(v)) return `[${v.map(s => JSON.stringify(s)).join(', ')}]`;
   if (typeof v === 'string') return JSON.stringify(v);
+  if (typeof v === 'object' && v !== null) {
+    return `{ ${Object.entries(v).map(([k, vv]) => `${k}: ${JSON.stringify(vv)}`).join(', ')} }`;
+  }
   return String(v);
 }
 

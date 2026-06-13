@@ -1,20 +1,34 @@
 <script>
 	import { OPEN_PROBLEMS } from '$lib/open-problems-data.js';
 	import Box from '$lib/components/Box.svelte';
+	import { slide } from 'svelte/transition';
 
+	/** @type {Record<string, string>} */
 	const severityLabel = {
-		hoch:           	'Schwere: hoch',
-		mittel:         	'Schwere: mittel',
-		strukturell:    	'Strukturell',
-		'niedrig-mittel': 'Schwere: niedrig–mittel',
+		hoch:                'Schwere: hoch',
+		mittel:              'Schwere: mittel',
+		strukturell:         'Strukturell',
+		'niedrig-mittel':    'Schwere: niedrig–mittel',
+		'hoch (methodisch)': 'Schwere: hoch (methodisch)',
 	};
 
+	/** @type {Record<string, string>} */
 	const statusLabel = {
 		offen:       'offen',
 		ausstehend:  'ausstehend',
 		moratorium:  'Moratorium aktiv',
 		'gelöst':    'gelöst',
 	};
+
+	/** @type {Record<string, boolean>} */
+	let openState = $state(
+		Object.fromEntries(OPEN_PROBLEMS.map(p => [p.id, p.status !== 'gelöst']))
+	);
+
+	/** @param {string} id */
+	function toggle(id) {
+		openState[id] = !openState[id];
+	}
 </script>
 
 <div class="open-problems">
@@ -24,18 +38,23 @@
 
 	<div class="problem-list">
 		{#each OPEN_PROBLEMS as p (p.id)}
-			<div class="problem-card" class:moratorium={p.status === 'moratorium'}>
-				<div class="problem-header">
+			<div class="problem-card" class:moratorium={p.status === 'moratorium'} class:is-closed={!openState[p.id]}>
+				<button class="problem-header" onclick={() => toggle(p.id)} aria-expanded={openState[p.id]}>
 					<span class="problem-id">{p.id}</span>
 					<span class="problem-title">{p.title}</span>
 					<span class="badge severity-{p.severity}">{severityLabel[p.severity] ?? p.severity}</span>
 					<span class="badge status-{p.status}">{statusLabel[p.status] ?? p.status}</span>
-				</div>
-				<p class="problem-body">{p.problem}</p>
-				<div class="problem-hyp">
-					<span class="hyp-label">Arbeitshypothese:</span>
-					{p.hypothesis}
-				</div>
+					<span class="chevron" class:open={openState[p.id]}></span>
+				</button>
+				{#if openState[p.id]}
+					<div class="problem-body-wrap" transition:slide={{ duration: 180 }}>
+						<p class="problem-body">{p.problem}</p>
+						<div class="problem-hyp">
+							<span class="hyp-label">Arbeitshypothese:</span>
+							{p.hypothesis}
+						</div>
+					</div>
+				{/if}
 			</div>
 		{/each}
 	</div>
@@ -80,14 +99,52 @@
 		&.moratorium {
 			border-left-color: var(--gold);
 		}
+
+		&.is-closed {
+			background: rgba(255, 255, 255, .12);
+		}
 	}
 
 	.problem-header {
+		appearance: none;
+		background: none;
+		border: none;
+		padding: 0;
+		font: inherit;
+		color: inherit;
+		text-align: left;
+		width: 100%;
+		cursor: pointer;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		gap: .4rem .6rem;
 		margin-bottom: .5rem;
+
+		&:focus-visible {
+			outline: 2px solid var(--gold);
+			outline-offset: 3px;
+			border-radius: var(--radius);
+		}
+	}
+
+	.is-closed .problem-header {
+		margin-bottom: 0;
+	}
+
+	.chevron {
+		margin-left: auto;
+		flex-shrink: 0;
+		width: .45rem;
+		height: .45rem;
+		border-right: 1.5px solid var(--ink-f);
+		border-bottom: 1.5px solid var(--ink-f);
+		transform: rotate(-45deg);
+		transition: transform 180ms ease;
+
+		&.open {
+			transform: rotate(45deg);
+		}
 	}
 
 	.problem-id {

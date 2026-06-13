@@ -93,24 +93,24 @@ if (miscEntries.length > 0) {
 
 // ── 3. Serialize entries ──────────────────────────────────────────────────────
 
-function fmtArr(arr) {
-  return arr.length === 0
-    ? '[]'
-    : `["${arr.join('", "')}"]`;
+// Fields that are auto-derived at build time and must not be written back to source
+const AUTO_DERIVED = new Set(['r43', 'anchorFolio', 'evidence', 'candidate', 'confidenceStars', 'index']);
+
+const FIELD_ORDER = ['eva', 'morph', 'heb', 'de', 'layer', 'context', 'relatedTo', 'uncertain', 'rulesApplied'];
+
+function fmtVal(v) {
+  if (Array.isArray(v)) return v.length === 0 ? '[]' : `["${v.join('", "')}"]`;
+  if (typeof v === 'string') return JSON.stringify(v);
+  if (typeof v === 'object' && v !== null) {
+    return `{ ${Object.entries(v).map(([k, vv]) => `${k}: ${JSON.stringify(vv)}`).join(', ')} }`;
+  }
+  return String(v);
 }
 
 function fmtEntry(e) {
-  const ev  = pad(JSON.stringify(e.eva),    14);
-  const mo  = pad(JSON.stringify(e.morph),  32);
-  const hb  = pad(JSON.stringify(e.heb),    22);
-  const de  = pad(JSON.stringify(e.de),     60);
-  const ev2 = pad(JSON.stringify(e.evidence ?? ''), 44);
-  const cs  = e.confidenceStars ?? 0;
-  const ra  = fmtArr(e.rulesApplied ?? []);
-  return `  { eva: ${ev} morph: ${mo} heb: ${hb} de: ${de} evidence: ${ev2} confidenceStars: ${cs}, rulesApplied: ${ra} },`;
+  const fields = FIELD_ORDER.filter(k => k in e && !AUTO_DERIVED.has(k));
+  return '  { ' + fields.map(k => `${k}: ${fmtVal(e[k])}`).join(', ') + ' },';
 }
-
-function pad(s, n) { return (s + ',').padEnd(n); }
 
 // ── 4. Build replacement section ─────────────────────────────────────────────
 
