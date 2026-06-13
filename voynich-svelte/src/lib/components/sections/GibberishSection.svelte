@@ -84,15 +84,15 @@
 
 	<!-- ── Intro ─────────────────────────────────────────────────────────────── -->
 	<div class="gib-intro">
-		<p>Jedes generierte EVA-Pseudowort durchläuft <strong>R40 v2</strong> (Kurzwurzel-Deckel: Basiswurzel ≤ 3 Konsonanten → max. ★★), <strong>R41</strong> (Präfix-Hierarchie: d-/REL → o-/qo-/v-/Konj. → l-/p-/Präp. → Basis) mit <strong>R45</strong> (d-Relativpräfix als äußerste Schale) und <strong>D1/D2</strong> (Phonotaktik-Flags). Ein Pseudowort gilt als Falsch-Positiv, wenn es trotz Pseudocharakters ★★★ erreicht oder zufällig einem Lexikoneintrag entspricht. Der Generator verwendet gewichtete EVA-Bigramm-Statistik.</p>
+		<p>{@html C.technicalIntroHtml}</p>
 		<div class="threshold-bar">
-			<span class="thr thr-fail">Abbruch &gt; 15 %</span>
+			<span class="thr thr-fail">{C.thresholds.abort}</span>
 			<span class="thr-sep">·</span>
-			<span class="thr thr-warn">Warnzone 11–15 %</span>
+			<span class="thr thr-warn">{C.thresholds.warn}</span>
 			<span class="thr-sep">·</span>
-			<span class="thr thr-ok">Ziel ≤ 10 %</span>
+			<span class="thr thr-ok">{C.thresholds.target}</span>
 			<span class="thr-divider"></span>
-			<span class="thr thr-hist">Befund v6.2: ∅ 31 % → Auslöser R40 v2</span>
+			<span class="thr thr-hist">{C.thresholds.historical}</span>
 		</div>
 	</div>
 
@@ -100,21 +100,21 @@
 	{#if protocolDone && protocolStats}
 		<div class="protocol-section">
 			<div class="protocol-head">
-				<span class="lbl-xs protocol-title no-print">10-Lauf-Protokoll · {wordCount} Wörter/Lauf · {protocolDate}</span>
-				<span class="lbl-xs protocol-title print-only">GibberishTest · 10-Lauf-Protokoll · v{STATS.version} · {wordCount} Wörter/Lauf · {protocolDate}</span>
+				<span class="lbl-xs protocol-title no-print">{C.protocol.title(wordCount, protocolDate)}</span>
+				<span class="lbl-xs protocol-title print-only">{C.protocol.titlePrint(STATS.version, wordCount, protocolDate)}</span>
 			</div>
 
 			<div class="protocol-body">
 				<table class="dt proto-table">
 					<thead>
 						<tr>
-							<th>Lauf</th>
-							<th>Wörter</th>
-							<th>★★★+ Rate</th>
-							<th>★★★ (R40)</th>
-							<th>Lex.-Treffer</th>
-							<th>★★ (Deckel)</th>
-							<th>Ungültig (R41)</th>
+							<th>{C.protocol.columns.run}</th>
+							<th>{C.protocol.columns.words}</th>
+							<th>{C.protocol.columns.rate}</th>
+							<th>{C.protocol.columns.passedR40}</th>
+							<th>{C.protocol.columns.lexHits}</th>
+							<th>{C.protocol.columns.capped}</th>
+							<th>{C.protocol.columns.invalid}</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -133,28 +133,28 @@
 							<td>∅</td>
 							<td>{protocolStats.totalWords}</td>
 							<td><strong>{protocolStats.mean} %</strong></td>
-							<td colspan="4" class="mean-note">Mittelwert über 10 Läufe</td>
+							<td colspan="4" class="mean-note">{C.protocol.meanNote}</td>
 						</tr>
 					</tbody>
 				</table>
 
 				<table class="dt desc-stats">
 					<thead>
-						<tr><th colspan="2">Deskriptive Statistik</th></tr>
+						<tr><th colspan="2">{C.protocol.descStats}</th></tr>
 					</thead>
 					<tbody>
-						<tr><td>Mittelwert</td><td class="ds-val">{protocolStats.mean} %</td></tr>
-						<tr><td>Standardabweichung</td><td class="ds-val">± {protocolStats.sd} %</td></tr>
-						<tr><td>Minimum</td><td class="ds-val">{protocolStats.min} %</td></tr>
-						<tr><td>Maximum</td><td class="ds-val">{protocolStats.max} %</td></tr>
+						<tr><td>{C.protocol.descRows.mean}</td><td class="ds-val">{protocolStats.mean} %</td></tr>
+						<tr><td>{C.protocol.descRows.sd}</td><td class="ds-val">± {protocolStats.sd} %</td></tr>
+						<tr><td>{C.protocol.descRows.min}</td><td class="ds-val">{protocolStats.min} %</td></tr>
+						<tr><td>{C.protocol.descRows.max}</td><td class="ds-val">{protocolStats.max} %</td></tr>
 						<tr class:ds-crit={protocolStats.overAbbruch > 0}>
-							<td>Läufe über Abbruchschwelle (&gt; 15 %)</td>
+							<td>{C.protocol.descRows.overAbort}</td>
 							<td class="ds-val">{protocolStats.overAbbruch} / 10</td>
 						</tr>
-						<tr><td>Läufe in Warnzone (11–15 %)</td><td class="ds-val">{protocolStats.inWarnzone} / 10</td></tr>
-						<tr><td>Läufe im Zielkorridor (≤ 10 %)</td><td class="ds-val">{protocolStats.inZielkorr} / 10</td></tr>
+						<tr><td>{C.protocol.descRows.inWarn}</td><td class="ds-val">{protocolStats.inWarnzone} / 10</td></tr>
+						<tr><td>{C.protocol.descRows.inTarget}</td><td class="ds-val">{protocolStats.inZielkorr} / 10</td></tr>
 						<tr>
-							<td>Abstand Mittelwert → Abbruchschwelle (15 %)</td>
+							<td>{C.protocol.descRows.distance}</td>
 							<td class="ds-val ds-abstand" class:ds-pos={protocolStats.abstand.startsWith('+')}>{protocolStats.abstand} PP</td>
 						</tr>
 					</tbody>
@@ -166,11 +166,11 @@
 				class:verdict-warn={protocolStats.warnProtocol}
 			>
 				{#if protocolStats.failProtocol}
-					⚠ Mittlere ★★★+-Rate {protocolStats.mean} % — Abbruchschwelle 15 % überschritten. Weitere Verschärfung von R40 v2 oder zusätzliche Regeln erforderlich.
+					{C.protocol.verdicts.fail(protocolStats.mean)}
 				{:else if protocolStats.warnProtocol}
-					⚠ Mittlere ★★★+-Rate {protocolStats.mean} % — Warnzone (11–15 %). Systembeobachtung aktiv; keine Sofortmaßnahme erforderlich.
+					{C.protocol.verdicts.warn(protocolStats.mean)}
 				{:else}
-					✓ Mittlere ★★★+-Rate {protocolStats.mean} % — Zielkorridor ≤ 10 % erreicht. R40 v2 ist ausreichend gehärtet.
+					{C.protocol.verdicts.ok(protocolStats.mean)}
 				{/if}
 			</div>
 		</div>
@@ -178,7 +178,7 @@
 
 	<!-- ── Controls ──────────────────────────────────────────────────────────── -->
 	<div class="gib-controls">
-		<label class="lbl-2xs ctrl-label" for="wc-input">Wörter/Lauf</label>
+		<label class="lbl-2xs ctrl-label" for="wc-input">{C.controls.wordsLabel}</label>
 		<input
 			id="wc-input"
 			class="wc-input"
@@ -187,10 +187,10 @@
 			bind:value={wordCount}
 		/>
 		<button class="run-btn" onclick={runTest}>
-			{tested ? 'Einzeltest ↺' : 'Einzeltest'}
+			{tested ? C.controls.singleRepeat : C.controls.single}
 		</button>
 		<button class="run-btn run-btn--proto" onclick={runProtocol}>
-			{protocolDone ? '10-Lauf-Protokoll ↺' : '10-Lauf-Protokoll'}
+			{protocolDone ? C.controls.protocolRepeat : C.controls.protocol}
 		</button>
 	</div>
 
@@ -202,18 +202,18 @@
 					class:stat-fail={stats.passRate > 15}
 					class:stat-warn={stats.passRate > 10 && stats.passRate <= 15}
 				>
-					<div class="box-title">Falsch-Positiv-Rate (★★★+)</div>
+					<div class="box-title">{C.singleTest.rateTitle}</div>
 					<div class="stat-rate"
 						class:rate-fail={stats.passRate > 15}
 						class:rate-warn={stats.passRate > 10 && stats.passRate <= 15}
 					>{stats.passRate} %</div>
 					<div class="stat-verdict">
 						{#if stats.passRate > 15}
-							⚠ Abbruchschwelle überschritten
+							{C.singleTest.verdictAbort}
 						{:else if stats.passRate > 10}
-							⚠ Warnzone — Systembeobachtung
+							{C.singleTest.verdictWarn}
 						{:else}
-							✓ Zielkorridor erreicht
+							{C.singleTest.verdictOk}
 						{/if}
 					</div>
 				</div>
@@ -221,27 +221,27 @@
 				<div class="stat-cells">
 					<div class="stat-cell">
 						<span class="sc-n">{stats.passed}</span>
-						<span class="lbl-2xs sc-l">★★★ R40-pass</span>
+						<span class="lbl-2xs sc-l">{C.singleTest.statLabels.passedR40}</span>
 					</div>
 					<div class="stat-cell">
 						<span class="sc-n">{stats.lexhits}</span>
-						<span class="lbl-2xs sc-l">Lex.-Zufallstreffer</span>
+						<span class="lbl-2xs sc-l">{C.singleTest.statLabels.lexHits}</span>
 					</div>
 					<div class="stat-cell">
 						<span class="sc-n">{stats.capped}</span>
-						<span class="lbl-2xs sc-l">★★ R40-Deckel</span>
+						<span class="lbl-2xs sc-l">{C.singleTest.statLabels.capped}</span>
 					</div>
 					<div class="stat-cell">
 						<span class="sc-n">{stats.invalid}</span>
-						<span class="lbl-2xs sc-l">Ungültig (R41)</span>
+						<span class="lbl-2xs sc-l">{C.singleTest.statLabels.invalid}</span>
 					</div>
 					<div class="stat-cell">
 						<span class="sc-n sc-warn">{stats.d1count}</span>
-						<span class="lbl-2xs sc-l">⚠ D1 Doppelkons.</span>
+						<span class="lbl-2xs sc-l">{C.singleTest.statLabels.d1}</span>
 					</div>
 					<div class="stat-cell">
 						<span class="sc-n sc-warn">{stats.d2count}</span>
-						<span class="lbl-2xs sc-l">⚠ D2 Laryngal</span>
+						<span class="lbl-2xs sc-l">{C.singleTest.statLabels.d2}</span>
 					</div>
 				</div>
 			</div>
@@ -250,15 +250,15 @@
 				<table class="dt gib-table">
 					<thead>
 						<tr>
-							<th>#</th>
-							<th>EVA-Pseudowort</th>
-							<th>Präfixe</th>
-							<th>Wurzel</th>
-							<th title="Konsonanten in der Basiswurzel">Kons.</th>
-							<th>R40 v2</th>
-							<th>R41</th>
-							<th>D1/D2</th>
-							<th>Max. Konf.</th>
+							<th>{C.resultsColumns.num}</th>
+							<th>{C.resultsColumns.word}</th>
+							<th>{C.resultsColumns.prefixes}</th>
+							<th>{C.resultsColumns.root}</th>
+							<th title={C.resultsColumns.consTitle}>{C.resultsColumns.consAbbr}</th>
+							<th>{C.resultsColumns.r40}</th>
+							<th>{C.resultsColumns.r41}</th>
+							<th>{C.resultsColumns.d12}</th>
+							<th>{C.resultsColumns.maxConf}</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -271,11 +271,11 @@
 								<td class="td-c">{r.rootCons ?? '—'}</td>
 								<td class="td-rule">
 									{#if r.r40 === 'cap'}
-										<span class="flag-cap">Deckel</span>
+										<span class="flag-cap">{C.flags.cap}</span>
 									{:else if r.r40 === 'pass'}
-										<span class="flag-pass">pass</span>
+										<span class="flag-pass">{C.flags.pass}</span>
 									{:else if r.r40 === 'lexikon'}
-										<span class="flag-lex">Lex.</span>
+										<span class="flag-lex">{C.flags.lex}</span>
 									{:else}
 										<span class="flag-na">—</span>
 									{/if}
@@ -296,9 +296,9 @@
 								</td>
 								<td class="td-stars">
 									{#if r.maxStars === 'ungültig'}
-										<span class="ms-invalid">ungültig</span>
+										<span class="ms-invalid">{C.flags.ungültig}</span>
 									{:else if r.inLexicon}
-										<span class="ms-lex" title="Lexikon-Treffer: {r.lexEntry?.de}">{r.maxStars} Lex.</span>
+										<span class="ms-lex" title={C.flags.lexTitle(r.lexEntry?.de)}>{r.maxStars}{C.flags.lexSuffix}</span>
 									{:else if r.maxStars === '★★★'}
 										<span class="ms-pass">{r.maxStars}</span>
 									{:else}

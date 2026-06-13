@@ -33,7 +33,7 @@
 					{#each GRAMMAR_PREFIXES as row (row.eva)}
 						<tr
 							class:row-filterable={!!onLinkFilter}
-							title={onLinkFilter ? `Im Lexikon nach „${row.eva}" filtern` : undefined}
+							title={onLinkFilter ? C.filterTitle(row.eva) : undefined}
 							onclick={() => onLinkFilter?.(row.eva)}
 							onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onLinkFilter?.(row.eva)}
 							tabindex={onLinkFilter ? 0 : undefined}
@@ -67,7 +67,7 @@
 					{#each GRAMMAR_SUFFIXES as row (row.eva)}
 						<tr
 							class:row-filterable={!!onLinkFilter}
-							title={onLinkFilter ? `Im Lexikon nach „${row.eva}" filtern` : undefined}
+							title={onLinkFilter ? C.filterTitle(row.eva) : undefined}
 							onclick={() => onLinkFilter?.(row.eva)}
 							onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onLinkFilter?.(row.eva)}
 							tabindex={onLinkFilter ? 0 : undefined}
@@ -116,27 +116,27 @@
 		<div class="schema">
 			<div class="schema-step">
 				<span class="heb-sm">דָּם·כְּהִי·חַם</span>
-				<span class="lbl-2xs lbl">Symptom (links)</span>
+				<span class="lbl-2xs lbl">{@html C.prognosisA.steps.symptom}</span>
 			</div>
 			<span class="schema-arrow">‡</span>
 			<div class="schema-step" style="background:rgba(28,61,90,.06);border-color:var(--blue)">
 				<span class="heb-sm">{'{'+'plant}'}</span>
-				<span class="lbl-2xs lbl">Trennmarker</span>
+				<span class="lbl-2xs lbl">{@html C.prognosisA.steps.separator}</span>
 			</div>
 			<span class="schema-arrow">‡</span>
 			<div class="schema-step">
 				<span class="heb-sm">שַׂם·חֲקַר</span>
-				<span class="lbl-2xs lbl">Therapie (rechts)</span>
+				<span class="lbl-2xs lbl">{@html C.prognosisA.steps.therapy}</span>
 			</div>
 			<span class="schema-arrow">→</span>
 			<div class="schema-step" style="background:color-mix(in srgb, var(--red) 8%, transparent);border-color:var(--red)">
 				<span class="heb-sm">שְאוֹל·אוֹר</span>
-				<span class="lbl-2xs lbl">sheol / or<br>Prognose</span>
+				<span class="lbl-2xs lbl">{@html C.prognosisA.steps.prognosis}</span>
 			</div>
 			<span class="schema-arrow">→</span>
 			<div class="schema-step" style="background:color-mix(in srgb, var(--gold) 8%, transparent)">
 				<span class="heb-sm">= / קַיָּם</span>
-				<span class="lbl-2xs lbl">Kolophon</span>
+				<span class="lbl-2xs lbl">{@html C.prognosisA.steps.colon}</span>
 			</div>
 		</div>
 	</Box>
@@ -146,27 +146,27 @@
 		<div class="schema">
 			<div class="schema-step">
 				<span class="heb-sm">דִּין</span>
-				<span class="lbl-2xs lbl">daiin<br>Urteil</span>
+				<span class="lbl-2xs lbl">{@html C.prognosisT.steps.verdict}</span>
 			</div>
 			<span class="schema-arrow">→</span>
 			<div class="schema-step">
 				<span class="heb-sm">שֶׁ+Symptom</span>
-				<span class="lbl-2xs lbl">shedy+X</span>
+				<span class="lbl-2xs lbl">{@html C.prognosisT.steps.condition}</span>
 			</div>
 			<span class="schema-arrow">→</span>
 			<div class="schema-step">
 				<span class="heb-sm">כְּהִי · דַּל · דָּם</span>
-				<span class="lbl-2xs lbl">Befund</span>
+				<span class="lbl-2xs lbl">{@html C.prognosisT.steps.finding}</span>
 			</div>
 			<span class="schema-arrow">→</span>
 			<div class="schema-step">
 				<span class="heb-sm">לְכְּדֵי</span>
-				<span class="lbl-2xs lbl">lchedy<br>Therapieziel</span>
+				<span class="lbl-2xs lbl">{@html C.prognosisT.steps.goal}</span>
 			</div>
 			<span class="schema-arrow">→</span>
 			<div class="schema-step" style="background:color-mix(in srgb, var(--red) 8%, transparent);border-color:var(--red)">
 				<span class="heb-sm">שְׁאוֹל · אוֹר</span>
-				<span class="lbl-2xs lbl">Prognose (Tod/Heilung)</span>
+				<span class="lbl-2xs lbl">{@html C.prognosisT.steps.prognosis}</span>
 			</div>
 		</div>
 	</Box>

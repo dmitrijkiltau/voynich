@@ -1,29 +1,34 @@
 // All translatable German UI strings, organized by section.
-// Functions accept runtime values (STATS, RULES) where interpolation is needed.
+// Functions accept runtime values where interpolation is needed.
+
+const _NAV = [
+  { id: 'abstract',        label: 'I. Zusammenfassung' },
+  { id: 'methodology',     label: 'II. Methodik' },
+  { id: 'translator-tool', label: 'III. Übersetzer' },
+  { id: 'mapping',         label: 'IV. Zeichenmapping' },
+  { id: 'lexicon',         label: 'V. Lexikon' },
+  { id: 'grammar',         label: 'VI. Grammatik' },
+  { id: 'grammar-rules',   label: 'VII. Grammatikregeln' },
+  { id: 'backwards-test',  label: 'VIII. Rückwärtstest' },
+  { id: 'references',      label: 'IX. Referenzen' },
+  { id: 'word-classes',    label: 'X. Wortklassen' },
+  { id: 'language-a',      label: 'XI. Sprache A' },
+  { id: 'margin-stars',    label: 'XII. Randsterne' },
+  { id: 'gibberish',       label: 'XIII. Gibberish-Test' },
+  { id: 'open-problems',   label: 'XIV. Offene Probleme' },
+];
+
+/** @param {string} id */
+const _navLabel = id => _NAV.find(n => n.id === id)?.label ?? '';
 
 export const CONTENT = {
 
   // ── Navigation ─────────────────────────────────────────────────────────────
-  nav: [
-    { id: 'abstract',        label: 'I. Zusammenfassung' },
-    { id: 'methodology',     label: 'II. Methodik' },
-    { id: 'translator-tool', label: 'III. Übersetzer' },
-    { id: 'mapping',         label: 'IV. Zeichenmapping' },
-    { id: 'lexicon',         label: 'V. Lexikon' },
-    { id: 'grammar',         label: 'VI. Grammatik' },
-    { id: 'grammar-rules',   label: 'VII. Grammatikregeln' },
-    { id: 'backwards-test',  label: 'VIII. Rückwärtstest' },
-    { id: 'references',      label: 'IX. Referenzen' },
-    { id: 'word-classes',    label: 'X. Wortklassen' },
-    { id: 'language-a',      label: 'XI. Sprache A' },
-    { id: 'margin-stars',    label: 'XII. Randsterne' },
-    { id: 'gibberish',       label: 'XIII. Gibberish-Test' },
-    { id: 'open-problems',   label: 'XIV. Offene Probleme' },
-  ],
+  nav: _NAV,
 
   // ── I. Zusammenfassung ─────────────────────────────────────────────────────
   summary: {
-    title: 'I. Zusammenfassung',
+    title: _navLabel('abstract'),
     abstract: `Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.`,
     hypothesis: `Die Grundhypothese: Das Voynich-Manuskript ist in Mischna-Hebräisch mit aramäischen Lehnpartikeln verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines hippokratisch-mittelalterlichen Medizintraktats: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.`,
     findings: [
@@ -40,7 +45,7 @@ export const CONTENT = {
 
   // ── II. Methodik ───────────────────────────────────────────────────────────
   methodology: {
-    title: 'II. Methodik',
+    title: _navLabel('methodology'),
     backwardsTest: {
       title: 'Rückwärtstest-Prinzip',
       description: 'Jede Mapping-Hypothese wird durch Rückwärtstests validiert: Ein bekanntes hebräisches oder aramäisches Wort wird nach dem vorgeschlagenen Mapping in EVA kodiert und im Voynich-Korpus gesucht. Bestätigung erfordert: (a) Vorkommen im Korpus, (b) semantisch plausible Position, (c) kontextuell passende Nachbarwörter.',
@@ -65,6 +70,34 @@ export const CONTENT = {
       text: (/** @type {string} */ lexicon) => `Das Tool arbeitet auf dem bestätigten <a href="#lexicon">Lexikon</a> (${lexicon} Einträge, ★★★ oder höher). Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.`,
     },
     inputPlaceholder: "z.B.  daiin · shedy · sar · al · dam\n→ neue Zeile = neuer Paragraph",
+    panels: {
+      input:          'EVA-Eingabe',
+      folio:          'Folio laden',
+      analysis:       'Analyse',
+      paragraphCount: (/** @type {number} */ n) => `· ${n} Paragraphen`,
+      hideUnknown:    'Unbekannte ausblenden',
+      hebrew:         'Hebräisch (RTL)',
+      german:         'Bedeutung (Deutsch)',
+      tokens:         'Token-Analyse',
+      gloss:          'Wort-für-Wort-Analyse',
+    },
+    clearAriaLabel:     'Eingabe löschen',
+    examplesAriaLabel:  'Beispielsequenzen',
+    folioAreaAriaLabel: 'Folio direkt laden',
+    folioLoadAriaLabel: (/** @type {string} */ page) => `Folio ${page} laden`,
+    coverageAriaLabel:  (/** @type {number} */ known, /** @type {number} */ total) => `${known} von ${total} Tokens erkannt`,
+    paraCountTitle:     (/** @type {number} */ known, /** @type {number} */ total) => `${known} von ${total} erkannt`,
+    tokensAriaLabel:    (/** @type {string} */ id) => `Erkannte Tokens ${id}`,
+    glossAriaLabel:     (/** @type {string} */ id) => `Wort-für-Wort-Analyse ${id}`,
+    glossColumns:       { eva: 'EVA', heb: 'Hebräisch', de: 'Bedeutung', conf: 'Konf.', type: 'Typ' },
+    unknown:            'unbekannt',
+    folioStatus: {
+      loading: (/** @type {string} */ page) => `Lade ${page} …`,
+      local:   (/** @type {string} */ page, /** @type {number} */ n) => `${page} — ${n} Abs. (lokal)`,
+      network: (/** @type {string} */ page, /** @type {number} */ n, /** @type {number} */ wc) => `${page} — ${n} Abs. · ${wc} Wörter (Netz)`,
+      newTab:  (/** @type {string} */ page) => `${page} — Transkription in neuem Tab geöffnet`,
+      error:   (/** @type {string} */ msg) => `Fehler: ${msg}`,
+    },
   },
 
   // ── IV. Zeichenmapping ─────────────────────────────────────────────────────
@@ -82,10 +115,10 @@ export const CONTENT = {
     title: (/** @type {string} */ lexicon) => `V. Bestätigtes Lexikon (${lexicon} Einträge)`,
     intro: 'Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgeleiteten Formen. Klick auf das EVA-Wort fügt es in die Eingabe ein.',
     tables: {
-      stems:            'A. Stammwörter',
-      stemsCandidates:  'B. Stammwörter (R43 Kandidaten)',
-      derived:          'C. Abgeleitete Lexikon-Einträge',
-      derivedCandidates:'D. Abgeleitete Lexikon-Einträge (R43 Kandidaten)',
+      stems:             'A. Stammwörter',
+      stemsCandidates:   'B. Stammwörter (R43 Kandidaten)',
+      derived:           'C. Abgeleitete Lexikon-Einträge',
+      derivedCandidates: 'D. Abgeleitete Lexikon-Einträge (R43 Kandidaten)',
     },
     columns: {
       eva:             'EVA',
@@ -99,6 +132,22 @@ export const CONTENT = {
       morph:           'Morph.',
       evidence:        'Evidenz',
     },
+    filter: {
+      searchLabel:       'Suche',
+      searchPlaceholder: 'EVA, Bedeutung, Morph. …',
+      clearAll:          'Alle Filter löschen',
+      prefix:            'Präfix',
+      suffix:            'Suffix',
+      layer:             'Schicht',
+      layerAll:          'Alle',
+      rules:             'Regeln',
+      rulesPh:           'z.B. R40',
+      starsMin:          'Sterne (min)',
+    },
+    noResults:      'Keine Einträge gefunden.',
+    candidateBadge: 'Kand.',
+    uncertainTitle: 'Semantik unsicher',
+    insertTitle:    (/** @type {string} */ eva) => `In Eingabe einfügen: ${eva}`,
   },
 
   // ── VI. Grammatik ──────────────────────────────────────────────────────────
@@ -120,11 +169,26 @@ export const CONTENT = {
     prognosisA: {
       title: 'Prognose-Schema Quire A (Kräuter, Spr. A)',
       intro: 'Jeder Paragraph folgt dem botanischen Schema:',
+      steps: {
+        symptom:   'Symptom (links)',
+        separator: 'Trennmarker',
+        therapy:   'Therapie (rechts)',
+        prognosis: 'sheol / or<br>Prognose',
+        colon:     'Kolophon',
+      },
     },
     prognosisT: {
       title: 'Prognose-Schema Quire T / Sprache B',
       intro: 'Jeder vollständige Paragraph folgt dem Schema:',
+      steps: {
+        verdict:   'daiin<br>Urteil',
+        condition: 'shedy+X',
+        finding:   'Befund',
+        goal:      'lchedy<br>Therapieziel',
+        prognosis: 'Prognose (Tod/Heilung)',
+      },
     },
+    filterTitle: (/** @type {string} */ eva) => `Im Lexikon nach „${eva}" filtern`,
     columns: {
       evaPrefix:  'EVA-Präfix',
       evaSuffix:  'EVA-Suffix',
@@ -139,7 +203,12 @@ export const CONTENT = {
 
   // ── VII. Grammatikregeln ───────────────────────────────────────────────────
   grammarRules: {
-    title: 'VII. Grammatikregeln',
+    title: _navLabel('grammar-rules'),
+    introHtml: (/** @type {number} */ total, /** @type {number} */ validated) => {
+      const candidates = total - validated;
+      const ratio = (validated / candidates).toFixed(2).replace('.', ',');
+      return `${total} Regeln gesamt: <strong>${validated} validiert</strong> (≥ 2 unabhängige Belege) + <strong>${candidates} Kandidaten</strong>. R14 und R20 gesichert (★★★★★). Regeln mit ⚠ im Titel sind Warnsignale ohne automatische Konfidenzreduktion. <strong>Regelmoratorium beendet (v8.1):</strong> Verhältnis ${validated}:${candidates} = ${ratio}:1 — Ziel ≥ 1,5:1 erreicht. R60+ freigegeben.`;
+    },
     changelogTitle: 'Aufstufungen & Absorptionen — Versionshistorie',
     columns: {
       id:         '#',
@@ -232,6 +301,84 @@ export const CONTENT = {
     title: (/** @type {string} */ version) => `XIII. Gibberish-Test (v${version})`,
     intro: 'Empirisches Falsifikationswerkzeug: Pseudowörter mit Voynich-ähnlicher Bigramm-Statistik werden durch <strong>R40 v2</strong>, <strong>R41</strong> (Präfix-Hierarchie mit R45-Präzisierung: d-/REL → Konj. → Präp. → Basis) und <strong>D1/D2</strong> geführt. Abbruchschwelle: &gt; 15 % · Warnzone: 11–15 % · Zielkorridor: ≤ 10 % strukturelle Falsch-Positive (★★★).',
     updateNoteHtml: (/** @type {string} */ rate) => `<em>v8.8.9-Update:</em> R41-Klassifikation korrigiert — d-Relativpräfix (R45) wird als REL-Klasse (äußerste Schale) behandelt, nicht als PREP; Konjunktionsklasse um v- erweitert. Testwert: ${rate}.`,
+    technicalIntroHtml: 'Jedes generierte EVA-Pseudowort durchläuft <strong>R40 v2</strong> (Kurzwurzel-Deckel: Basiswurzel ≤ 3 Konsonanten → max. ★★), <strong>R41</strong> (Präfix-Hierarchie: d-/REL → o-/qo-/v-/Konj. → l-/p-/Präp. → Basis) mit <strong>R45</strong> (d-Relativpräfix als äußerste Schale) und <strong>D1/D2</strong> (Phonotaktik-Flags). Ein Pseudowort gilt als Falsch-Positiv, wenn es trotz Pseudocharakters ★★★ erreicht oder zufällig einem Lexikoneintrag entspricht. Der Generator verwendet gewichtete EVA-Bigramm-Statistik.',
+    thresholds: {
+      abort:      'Abbruch > 15 %',
+      warn:       'Warnzone 11–15 %',
+      target:     'Ziel ≤ 10 %',
+      historical: 'Befund v6.2: ∅ 31 % → Auslöser R40 v2',
+    },
+    protocol: {
+      title:      (/** @type {number} */ wordCount, /** @type {string} */ date) => `10-Lauf-Protokoll · ${wordCount} Wörter/Lauf · ${date}`,
+      titlePrint: (/** @type {string} */ version, /** @type {number} */ wordCount, /** @type {string} */ date) => `GibberishTest · 10-Lauf-Protokoll · v${version} · ${wordCount} Wörter/Lauf · ${date}`,
+      columns: {
+        run:       'Lauf',
+        words:     'Wörter',
+        rate:      '★★★+ Rate',
+        passedR40: '★★★ (R40)',
+        lexHits:   'Lex.-Treffer',
+        capped:    '★★ (Deckel)',
+        invalid:   'Ungültig (R41)',
+      },
+      meanNote:  'Mittelwert über 10 Läufe',
+      descStats: 'Deskriptive Statistik',
+      descRows: {
+        mean:      'Mittelwert',
+        sd:        'Standardabweichung',
+        min:       'Minimum',
+        max:       'Maximum',
+        overAbort: 'Läufe über Abbruchschwelle (> 15 %)',
+        inWarn:    'Läufe in Warnzone (11–15 %)',
+        inTarget:  'Läufe im Zielkorridor (≤ 10 %)',
+        distance:  'Abstand Mittelwert → Abbruchschwelle (15 %)',
+      },
+      verdicts: {
+        fail: (/** @type {string} */ mean) => `⚠ Mittlere ★★★+-Rate ${mean} % — Abbruchschwelle 15 % überschritten. Weitere Verschärfung von R40 v2 oder zusätzliche Regeln erforderlich.`,
+        warn: (/** @type {string} */ mean) => `⚠ Mittlere ★★★+-Rate ${mean} % — Warnzone (11–15 %). Systembeobachtung aktiv; keine Sofortmaßnahme erforderlich.`,
+        ok:   (/** @type {string} */ mean) => `✓ Mittlere ★★★+-Rate ${mean} % — Zielkorridor ≤ 10 % erreicht. R40 v2 ist ausreichend gehärtet.`,
+      },
+    },
+    controls: {
+      wordsLabel:     'Wörter/Lauf',
+      single:         'Einzeltest',
+      singleRepeat:   'Einzeltest ↺',
+      protocol:       '10-Lauf-Protokoll',
+      protocolRepeat: '10-Lauf-Protokoll ↺',
+    },
+    singleTest: {
+      rateTitle:    'Falsch-Positiv-Rate (★★★+)',
+      verdictAbort: '⚠ Abbruchschwelle überschritten',
+      verdictWarn:  '⚠ Warnzone — Systembeobachtung',
+      verdictOk:    '✓ Zielkorridor erreicht',
+      statLabels: {
+        passedR40: '★★★ R40-pass',
+        lexHits:   'Lex.-Zufallstreffer',
+        capped:    '★★ R40-Deckel',
+        invalid:   'Ungültig (R41)',
+        d1:        '⚠ D1 Doppelkons.',
+        d2:        '⚠ D2 Laryngal',
+      },
+    },
+    resultsColumns: {
+      num:       '#',
+      word:      'EVA-Pseudowort',
+      prefixes:  'Präfixe',
+      root:      'Wurzel',
+      consAbbr:  'Kons.',
+      consTitle: 'Konsonanten in der Basiswurzel',
+      r40:       'R40 v2',
+      r41:       'R41',
+      d12:       'D1/D2',
+      maxConf:   'Max. Konf.',
+    },
+    flags: {
+      cap:       'Deckel',
+      pass:      'pass',
+      lex:       'Lex.',
+      ungültig:  'ungültig',
+      lexSuffix: ' Lex.',
+      lexTitle:  (/** @type {string | undefined} */ de) => `Lexikon-Treffer: ${de}`,
+    },
   },
 
   // ── XIV. Offene Probleme ───────────────────────────────────────────────────

@@ -203,21 +203,21 @@
 		<aside class="lex-aside hidden-print">
 			<div class="lex-filter-box">
 				<div class="filter-row">
-					<label class="lbl-xs filter-label" for="lex-search">Suche</label>
+					<label class="lbl-xs filter-label" for="lex-search">{C.filter.searchLabel}</label>
 					<input
 						id="lex-search"
 						type="search"
 						class="filter-input"
 						bind:value={searchText}
-						placeholder="EVA, Bedeutung, Morph. …"
+						placeholder={C.filter.searchPlaceholder}
 					/>
 					{#if hasActiveFilter}
-						<button type="button" class="filter-clear" onclick={clearAll} title="Alle Filter löschen">✕</button>
+						<button type="button" class="filter-clear" onclick={clearAll} title={C.filter.clearAll}>✕</button>
 					{/if}
 				</div>
 
 				<div class="chips-section">
-					<span class="lbl-2xs">Präfix</span>
+					<span class="lbl-2xs">{C.filter.prefix}</span>
 					<div class="chips-row">
 						{#each GRAMMAR_PREFIXES as pfx ('pfx-' + pfx.eva)}
 							<button type="button" class="chip" class:chip-active={filter === pfx.eva} title={pfx.fn} onclick={() => toggleChip(pfx.eva)}>{pfx.eva}</button>
@@ -226,7 +226,7 @@
 				</div>
 
 				<div class="chips-section">
-					<span class="lbl-2xs">Suffix</span>
+					<span class="lbl-2xs">{C.filter.suffix}</span>
 					<div class="chips-row">
 						{#each GRAMMAR_SUFFIXES as sfx ('sfx-' + sfx.eva)}
 							<button type="button" class="chip" class:chip-active={filter === sfx.eva} title={sfx.fn} onclick={() => toggleChip(sfx.eva)}>{sfx.eva}</button>
@@ -235,9 +235,9 @@
 				</div>
 
 				<div class="filter-field">
-					<label class="lbl-2xs" for="lex-layer">Schicht</label>
+					<label class="lbl-2xs" for="lex-layer">{C.filter.layer}</label>
 					<select id="lex-layer" class="filter-select" bind:value={filterLayer}>
-						<option value="">Alle</option>
+						<option value="">{C.filter.layerAll}</option>
 						{#each LAYERS as layer (layer)}
 							<option value={layer}>{layer}</option>
 						{/each}
@@ -245,12 +245,12 @@
 				</div>
 
 				<div class="filter-field">
-					<label class="lbl-2xs" for="lex-rules">Regeln</label>
-					<input id="lex-rules" type="search" class="filter-input" bind:value={filterRules} placeholder="z.B. R40" />
+					<label class="lbl-2xs" for="lex-rules">{C.filter.rules}</label>
+					<input id="lex-rules" type="search" class="filter-input" bind:value={filterRules} placeholder={C.filter.rulesPh} />
 				</div>
 
 				<div class="chips-section">
-					<span class="lbl-2xs">Sterne (min)</span>
+					<span class="lbl-2xs">{C.filter.starsMin}</span>
 					<div class="chips-row">
 						{#each [4, 5] as s (s)}
 							<button type="button" class="chip" class:chip-active={filterStarsMin === s} onclick={() => filterStarsMin = filterStarsMin === s ? 0 : s}>{'★'.repeat(s)}{s === 4 ? '+' : ''}</button>
@@ -306,7 +306,7 @@
 											{#each table.columns as col ('entry-col-' + col.key)}
 												<td class={(table.id + '-' + col.key) + (col.key === 'evidence' ? ' notes-cell' : col.key === 'anchorFolio' ? ' part-cell' : col.key === 'rules' ? ' rules-cell' : '')}>
 													{#if col.key === 'confidenceStars'}
-														<span class={entry.confidenceStars === 5 ? 'conf5' : 'conf'}>{cellValue(entry, col.key)}</span>{#if entry.candidate}<span class="cand-badge">Kand.</span>{/if}
+														<span class={entry.confidenceStars === 5 ? 'conf5' : 'conf'}>{cellValue(entry, col.key)}</span>{#if entry.candidate}<span class="cand-badge">{C.candidateBadge}</span>{/if}
 													{:else if col.key === 'rules'}
 														{@const rules = getLexiconRules(entry)}
 														{#if rules.length}
@@ -321,7 +321,7 @@
 															class="eva eva-insert"
 															role="button"
 															tabindex="0"
-															title="In Eingabe einfügen: {entry.eva}"
+															title={C.insertTitle(entry.eva)}
 															onclick={() => onInsert(entry.eva)}
 															onkeydown={(e) => (e.key === 'Enter' || e.key === ' ') && onInsert(entry.eva)}
 														>{cellValue(entry, col.key)}</span>
@@ -334,7 +334,7 @@
 															{/if}
 														{/each}
 													{:else if col.key === 'de'}
-														<span class="de-text">{entry.de ?? '—'}</span>{#if entry.uncertain}<span class="badge-uncertain" title="Semantik unsicher">?</span>{/if}{#if entry.context}<span class="de-ctx">{entry.context}</span>{/if}
+														<span class="de-text">{entry.de ?? '—'}</span>{#if entry.uncertain}<span class="badge-uncertain" title={C.uncertainTitle}>?</span>{/if}{#if entry.context}<span class="de-ctx">{entry.context}</span>{/if}
 														{#if entry.relatedTo}
 															<span class="de-related">→ {entry.relatedTo.type}: <span class="eva">{entry.relatedTo.eva}</span></span>
 														{/if}
@@ -347,7 +347,7 @@
 									{/each}
 									{#if rows.length === 0}
 										<tr>
-											<td colspan={table.columns.length} class="no-results">Keine Einträge gefunden.</td>
+											<td colspan={table.columns.length} class="no-results">{C.noResults}</td>
 										</tr>
 									{/if}
 								</tbody>

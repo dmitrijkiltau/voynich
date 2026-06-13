@@ -10,15 +10,7 @@
 <section class="section" id="grammar-rules">
 	<h2>{C.title}</h2>
 
-	<p>
-		{RULES.length} Regeln gesamt: <strong>{STATS.validatedRules} validiert</strong> (≥ 2 unabhängige Belege)
-		+ <strong>{RULES.length - STATS.validatedRules} Kandidaten</strong>.
-		R14 und R20 gesichert (★★★★★). Regeln mit ⚠ im Titel sind Warnsignale ohne automatische Konfidenzreduktion.
-		<strong>Regelmoratorium beendet (v8.1):</strong> Verhältnis
-		{STATS.validatedRules}:{RULES.length - STATS.validatedRules}
-		= {(STATS.validatedRules / (RULES.length - STATS.validatedRules)).toFixed(2).replace('.', ',')}:1
-		— Ziel ≥ 1,5:1 erreicht. R60+ freigegeben.
-	</p>
+	<p>{@html C.introHtml(RULES.length, STATS.validatedRules)}</p>
 
 	<div class="updates-box hidden-print">
 		<Box variant="hl" title={C.changelogTitle}>

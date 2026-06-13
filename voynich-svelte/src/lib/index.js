@@ -58,13 +58,11 @@ const _pct     = (/** @type {number} */ p) => `${Math.round(p)}%`;
 const _gibberish = runProtocol(LEXICON);
 
 export const STATS = {
-  version: '8.8.9',
+  version: '8.9.0',
   // Separate each change on a new line and keep only the new changes since the last release.
   changelog: [
-    'Lexikon-Klammern-Migration: 107 Einträge restrukturiert (de_neu, relatedTo, context, uncertain).',
-    'LexiconSection: Filterleiste erweitert (Schicht, Regeln, Sterne), sticky Sidebar ab 1360 px, neue Felder sichtbar.',
-    'GibberishTest: R41-Klassifikation korrigiert (d- als REL-Klasse per R45, nicht PREP), v- zu Konj. ergänzt.',
-    'f49r–f56v als JSON-Folios hinzugefügt.',
+    'GibberishTest Neues Baseline-Protokoll (10 × 50 Wörter): 7,2 % Brutto-Mittelwert, LEX-TREFFER = 0, 10/10 Läufe im Zielkorridor — Brutto-Baseline von 16,4 % auf 7,2 % durch GPA-1-Corpus-Vorab-Filter verschoben.',
+    'R40-Evidenz: v8.9.0-Baseline-Wert dokumentiert (7,2 % Mittelwert, ±2,7 %, Min 2 %, Max 10 %).',
   ],
   date: 'Juni 2026',
   lexicon: LEXICON.filter((/** @type {any} */ e) => !e.candidate).length,

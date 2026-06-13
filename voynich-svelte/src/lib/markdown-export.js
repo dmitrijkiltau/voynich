@@ -8,6 +8,7 @@ import { REFS } from './references-data.js';
 import { CONFIDENCE_SCALE, ANCHOR_FOLIOS } from './methodology-data.js';
 import { OPEN_PROBLEMS } from './open-problems-data.js';
 import { getLexiconRules } from './lexicon-data.js';
+import { CONTENT } from './content.js';
 
 const _bsI   = BACKTEST_STATS.find(s => s.label.startsWith('Typ I'));
 const _bsII  = BACKTEST_STATS.find(s => s.label.startsWith('Typ II'));
@@ -42,21 +43,17 @@ function tbl(headers, rows) {
   ].join('\n') + '\n';
 }
 
-// No TranslatorTool, nor GibberishTest in Markdown export
-const TOC = [
-  'I. Zusammenfassung',
-  'II. Methodik',
-  'III. Zeichenmapping',
-  'IV. Lexikon',
-  'V. Grammatik',
-  'VI. Grammatikregeln',
-  'VII. Rückwärtstest',
-  'VIII. Referenzen',
-  'IX. Wortklassen',
-  'X. Sprache A',
-  'XI. Randsterne',
-  'XII. Offene Probleme',
+// No TranslatorTool, nor GibberishTest in Markdown export — renumbered accordingly
+const _MD_SECTION_IDS = [
+  'abstract', 'methodology', 'mapping', 'lexicon', 'grammar',
+  'grammar-rules', 'backwards-test', 'references', 'word-classes',
+  'language-a', 'margin-stars', 'open-problems',
 ];
+const _ROM = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII'];
+const TOC = _MD_SECTION_IDS.map((id, i) => {
+  const text = (CONTENT.nav.find(n => n.id === id)?.label ?? '').replace(/^[IVX]+\.\s*/, '');
+  return `${_ROM[i]}. ${text}`;
+});
 
 export function generateMarkdown() {
   const s = /** @type {string[]} */([]);
@@ -81,9 +78,9 @@ export function generateMarkdown() {
   line();
 
   // ── I. Zusammenfassung ─────────────────────────────────────────
-  h(2, 'I. Zusammenfassung');
+  h(2, CONTENT.summary.title);
   line();
-  line('Das vorliegende Dokument fasst den aktuellen Stand der Entzifferungsanalyse des Voynich-Manuskripts zusammen. Es richtet sich an Hebraisten, Aramaisten und Kodikographen, die eine unabhängige Prüfung der vorgeschlagenen Übersetzungen vornehmen möchten.');
+  line(CONTENT.summary.abstract);
   line();
   line('**Die Grundhypothese:** Das Voynich-Manuskript ist in **Mischna-Hebräisch mit aramäischen Lehnpartikeln** verfasst, verschlüsselt durch ein konsonantisches Alphabet mit Niqqud-Markierungen als Vokalhelfer. Die Texte folgen dem Schema eines _hippokratisch-mittelalterlichen Medizintraktats_: Diagnose → Symptombeschreibung → Therapieindikation → Prognose.');
   line();
@@ -105,18 +102,19 @@ export function generateMarkdown() {
   line();
 
   // ── II. Methodik ───────────────────────────────────────────────
-  h(2, 'II. Methodik');
+  h(2, CONTENT.methodology.title);
   line();
-  h(3, 'Rückwärtstest-Prinzip');
+  h(3, CONTENT.methodology.backwardsTest.title);
   line();
-  line('Jede Mapping-Hypothese wird durch Rückwärtstests validiert: Ein bekanntes hebräisches oder aramäisches Wort wird nach dem vorgeschlagenen Mapping in EVA kodiert und im Voynich-Korpus gesucht. Bestätigung erfordert: (a) Vorkommen im Korpus, (b) semantisch plausible Position, (c) kontextuell passende Nachbarwörter.');
+  line(CONTENT.methodology.backwardsTest.description);
   line();
-  h(3, 'Konfidenzskala');
+  h(3, CONTENT.methodology.confidence.title);
   line();
-  s.push(tbl(['Sterne', 'Bedeutung', 'Kriterien'],
+  s.push(tbl(
+    [CONTENT.methodology.confidence.stars, CONTENT.methodology.confidence.label, CONTENT.methodology.confidence.criteria],
     CONFIDENCE_SCALE.map(c => [c.stars, c.label, c.criteria])));
   line();
-  h(3, 'Anker-Folios');
+  h(3, CONTENT.methodology.anchorFolios.title);
   line();
   for (const anchor of ANCHOR_FOLIOS) {
     line(`**${anchor.folio} — ${anchor.subtitle}:** ${anchor.desc}`);
@@ -295,7 +293,7 @@ export function generateMarkdown() {
   // ── VIII. Referenz-Sequenzen ───────────────────────────────────
   h(2, 'VIII. Verankerte Referenz-Sequenzen');
   line();
-  line('Die am besten verifizierten Sequenzen des Korpus — als Orientierungshilfe beim Übersetzen.');
+  line(CONTENT.references.intro);
   line();
   for (const ref of REFS) {
     const badge = ('badge' in ref && ref.badge) ? ` (${ref.badge})` : '';
@@ -322,7 +320,7 @@ export function generateMarkdown() {
   // ── IX. Wortklassen ───────────────────────────────────────────
   h(2, 'IX. Wortklassen-System');
   line();
-  line('Taxonomie der neun Wortklassen mit statistischen Exklusionsmustern.');
+  line(CONTENT.wordClasses.intro);
   line();
   for (const c of CLASSES) {
     h(3, `Wortklasse: ${c.cls}`);

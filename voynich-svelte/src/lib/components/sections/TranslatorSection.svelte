@@ -187,7 +187,7 @@
 			if (lines?.length) {
 				input = lines.join('\n');
 				openPara = 0;
-				folioMsg  = `${pageId} — ${lines.length} Abs. (lokal)`;
+				folioMsg  = C.folioStatus.local(pageId, lines.length);
 				folioType = 'ok';
 				return;
 			}
@@ -196,12 +196,12 @@
 		// Fallback: network fetch (dev only via CORS proxy; live opens tab).
 		if (!dev) {
 			window.open(folioUrl(quire, pageId), '_blank');
-			folioMsg  = `${pageId} — Transkription in neuem Tab geöffnet`;
+			folioMsg  = C.folioStatus.newTab(pageId);
 			folioType = 'ok';
 			return;
 		}
 
-		folioMsg  = `Lade ${pageId} …`;
+		folioMsg  = C.folioStatus.loading(pageId);
 		folioType = 'loading';
 		try {
 			const res = await fetch(folioUrl(quire, pageId));
@@ -212,11 +212,11 @@
 			input = lines.join('\n');
 			openPara = 0;
 			const wc = lines.reduce((s, l) => s + l.split(/\s+/).filter(Boolean).length, 0);
-			folioMsg  = `${pageId} — ${lines.length} Abs. · ${wc} Wörter (Netz)`;
+			folioMsg  = C.folioStatus.network(pageId, lines.length, wc);
 			folioType = 'ok';
 		} catch (e) {
 			const msg = e instanceof Error ? e.message : String(e);
-			folioMsg  = `Fehler: ${msg}`;
+			folioMsg  = C.folioStatus.error(msg);
 			folioType = 'error';
 		}
 	}
@@ -233,16 +233,16 @@
 			</Box>
 		</div>
 
-		<div class="tool-area" aria-label="EVA-Übersetzer">
+		<div class="tool-area" aria-label={C.title}>
 			<!-- ── Top grid: Input | Folio ── -->
 			<div class="top-grid">
 
 				<!-- Col 1: Input -->
 				<div class="input-col">
 					<header class="col-header">
-						<span class="lbl-2xs panel-label" id="lbl-input">EVA-Eingabe</span>
+						<span class="lbl-2xs panel-label" id="lbl-input">{C.panels.input}</span>
 						{#if totalWords > 0}
-							<span class="coverage-badge" aria-label="{totalKnown} von {totalWords} Tokens erkannt">
+							<span class="coverage-badge" aria-label={C.coverageAriaLabel(totalKnown, totalWords)}>
 								{totalKnown}/{totalWords}
 							</span>
 						{/if}
@@ -256,10 +256,10 @@
 							aria-labelledby="lbl-input"
 						></textarea>
 						{#if input}
-							<button class="clear-btn" onclick={() => input = ''} aria-label="Eingabe löschen">✕</button>
+							<button class="clear-btn" onclick={() => input = ''} aria-label={C.clearAriaLabel}>✕</button>
 						{/if}
 					</div>
-					<div class="example-btns" role="group" aria-label="Beispielsequenzen">
+					<div class="example-btns" role="group" aria-label={C.examplesAriaLabel}>
 						{#each EXAMPLES as ex (ex.label)}
 							<button class="ex-btn" onclick={() => input = ex.text} title={ex.text}>{ex.label}</button>
 						{/each}
@@ -267,9 +267,9 @@
 				</div>
 
 				<!-- Col 2: Folio loader -->
-				<div class="folio-col" aria-label="Folio direkt laden">
+				<div class="folio-col" aria-label={C.folioAreaAriaLabel}>
 					<header class="col-header">
-						<span class="lbl-2xs panel-label" id="lbl-folio">Folio laden</span>
+						<span class="lbl-2xs panel-label" id="lbl-folio">{C.panels.folio}</span>
 					</header>
 
 					<div class="folio-keyboard" role="navigation" aria-labelledby="lbl-folio">
@@ -281,7 +281,7 @@
 										<button
 											class="folio-btn"
 											onclick={() => fetchFolio(group.q, page)}
-											aria-label="Folio {page} laden"
+											aria-label={C.folioLoadAriaLabel(page)}
 										>{page}</button>
 									{/each}
 								</div>
@@ -305,15 +305,15 @@
 					<!-- Accordion control bar -->
 					<div class="para-acc-bar">
 						<span class="lbl-2xs panel-label">
-							Analyse
+							{C.panels.analysis}
 							{#if paraResults.length > 1}
-								<span class="para-acc-count">· {paraResults.length} Paragraphen</span>
+								<span class="para-acc-count">{C.panels.paragraphCount(paraResults.length)}</span>
 							{/if}
 						</span>
 						<div class="para-acc-controls">
 							<label class="lbl-2xs hide-unknown-toggle">
 								<input type="checkbox" bind:checked={hideUnknown} />
-								<span>Unbekannte ausblenden</span>
+								<span>{C.panels.hideUnknown}</span>
 							</label>
 						</div>
 					</div>
@@ -332,7 +332,7 @@
 									<span class="para-hd-chevron">{openPara === i ? '▼' : '▶'}</span>
 									<span class="para-hd-id">{p.id}</span>
 									<span class="para-hd-preview">{p.raw.length > 60 ? p.raw.slice(0, 60) + '…' : p.raw}</span>
-									<span class="para-hd-cov" title="{p.knownCount} von {p.totalCount} erkannt">{p.knownCount}/{p.totalCount}</span>
+									<span class="para-hd-cov" title={C.paraCountTitle(p.knownCount, p.totalCount)}>{p.knownCount}/{p.totalCount}</span>
 								</button>
 							{/if}
 
@@ -342,7 +342,7 @@
 
 									<!-- Hebrew -->
 									<div class="para-subsec">
-										<span class="lbl-2xs panel-label" id="lbl-heb-{i}">Hebräisch (RTL)</span>
+										<span class="lbl-2xs panel-label" id="lbl-heb-{i}">{C.panels.hebrew}</span>
 										<div
 											class="result-heb"
 											aria-labelledby="lbl-heb-{i}"
@@ -356,7 +356,7 @@
 
 									<!-- German -->
 									<div class="para-subsec">
-										<span class="lbl-2xs panel-label" id="lbl-de-{i}">Bedeutung (Deutsch)</span>
+										<span class="lbl-2xs panel-label" id="lbl-de-{i}">{C.panels.german}</span>
 										<div
 											class="result-de"
 											aria-labelledby="lbl-de-{i}"
@@ -368,8 +368,8 @@
 
 									<!-- Token analysis -->
 									<div class="para-subsec">
-										<span class="lbl-2xs panel-label">Token-Analyse</span>
-										<div class="token-row" role="list" aria-label="Erkannte Tokens {p.id}">
+										<span class="lbl-2xs panel-label">{C.panels.tokens}</span>
+										<div class="token-row" role="list" aria-label={C.tokensAriaLabel(p.id)}>
 											{#each p.results as r, j (r.word + '-' + j)}
 												<span
 													class="tok"
@@ -377,7 +377,7 @@
 													class:prefix={r.lookup?.matchType === 'prefix'}
 													class:unknown={!r.lookup}
 													role="listitem"
-													title={r.lookup ? r.lookup.de : 'unbekannt'}
+													title={r.lookup ? r.lookup.de : C.unknown}
 												>
 													<span class="tok-eva">{r.word}</span>
 													<span class="tok-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '?'}</span>
@@ -388,16 +388,16 @@
 
 									<!-- Word-for-word table -->
 									<div class="para-subsec">
-										<span class="lbl-2xs panel-label">Wort-für-Wort-Analyse</span>
+										<span class="lbl-2xs panel-label">{C.panels.gloss}</span>
 										<div class="gloss-scroll">
-											<table class="gloss-table" aria-label="Wort-für-Wort-Analyse {p.id}">
+											<table class="gloss-table" aria-label={C.glossAriaLabel(p.id)}>
 												<thead>
 													<tr>
-														<th scope="col">EVA</th>
-														<th scope="col">Hebräisch</th>
-														<th scope="col">Bedeutung</th>
-														<th scope="col">Konf.</th>
-														<th scope="col">Typ</th>
+														<th scope="col">{C.glossColumns.eva}</th>
+														<th scope="col">{C.glossColumns.heb}</th>
+														<th scope="col">{C.glossColumns.de}</th>
+														<th scope="col">{C.glossColumns.conf}</th>
+														<th scope="col">{C.glossColumns.type}</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -405,7 +405,7 @@
 														<tr class:row-unknown={!r.lookup}>
 															<td class="g-eva">{r.word}</td>
 															<td class="g-heb" lang="he" dir="rtl">{r.lookup ? r.lookup.heb : '—'}</td>
-															<td class="g-de">{r.lookup ? r.lookup.de : 'unbekannt'}</td>
+															<td class="g-de">{r.lookup ? r.lookup.de : C.unknown}</td>
 															<td class="g-st" class:g5={r.lookup && r.lookup.confidenceStars === 5}>{r.lookup ? r.lookup.stars : '—'}</td>
 															<td class="lbl-2xs g-kind">{r.lookup ? (r.lookup.kind ?? getLexiconKind(r.lookup)) : '—'}</td>
 														</tr>
