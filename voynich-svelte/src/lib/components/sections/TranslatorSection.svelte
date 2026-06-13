@@ -5,8 +5,11 @@
 	import { folioSlug } from '$lib/eva-utils.js';
 	import { slide } from 'svelte/transition';
 	import { dev } from '$app/environment';
+	import { CONTENT } from '$lib/content.js';
 
 	let { input = $bindable('') } = $props();
+
+	const C = CONTENT.translator;
 
 	const EXAMPLES = [
 		{ label: 'f103r P.23', text: 'daiin sheckhy lchedy chckhy shol' },
@@ -25,9 +28,7 @@
 		{ label: 'f23v P.6',   text: 'tshol otshor olsar' },
 	];
 
-	const INPUT_PLACEHOLDER = "z.B.  daiin · shedy · sar · al · dam\n→ neue Zeile = neuer Paragraph";
-
-	// ── Folio JSON eager-load (shared pattern with FolioProgress) ────────────
+	// ── Folio JSON eager-load (shared pattern with FolioRegister) ────────────
 	const _folios = /** @type {Record<string, any>} */ (
 		import.meta.glob('../folios/*.json', { eager: true })
 	);
@@ -222,13 +223,13 @@
 </script>
 
 <section class="section" id="translator-tool">
-	<h2>III. Übersetzungstool</h2>
+	<h2>{C.title}</h2>
 
 	<div class="tool">
 		<div class="tool-intro">
-			<p class="dropcap">EVA-Text in das Eingabefeld eingeben (Wörter durch Leerzeichen oder · getrennt; neue Zeile = neuer Paragraph). Das Tool durchsucht das bestätigte <a href="#lexikon">Lexikon</a>, erkennt Präfixe und zeigt Hebräisch, Wort-für-Wort-Analyse und deutsche Bedeutung an. Unbekannte Wörter werden als solche markiert.</p>
-			<Box variant="red" title="Hinweis zur Methodik" class="method-note">
-				<p style="margin:0">Das Tool arbeitet auf dem bestätigten <a href="#lexikon">Lexikon</a> ({STATS.lexicon} Einträge, ★★★ oder höher). Komplexe Komposita und unbekannte Wörter werden als „unbekannt" markiert. Die Ausgabe ist eine <em>Hypothese</em> — keine abgeschlossene Übersetzung.</p>
+			<p class="dropcap">{@html C.intro}</p>
+			<Box variant="red" title={C.methodNote.title} class="method-note">
+				<p style="margin:0">{@html C.methodNote.text(STATS.lexicon.toString())}</p>
 			</Box>
 		</div>
 
@@ -250,7 +251,7 @@
 						<textarea
 							class="eva-input"
 							bind:value={input}
-							placeholder={INPUT_PLACEHOLDER}
+							placeholder={C.inputPlaceholder}
 							rows="6"
 							aria-labelledby="lbl-input"
 						></textarea>

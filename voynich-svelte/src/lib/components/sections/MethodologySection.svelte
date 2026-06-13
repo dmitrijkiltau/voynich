@@ -1,46 +1,31 @@
 <script>
-  import { CONFIDENCE_SCALE, ANCHOR_FOLIOS } from "$lib/methodology-data.js";
-  import { isConf5 } from "$lib";
+  import { CONFIDENCE_SCALE, ANCHOR_FOLIOS } from '$lib/methodology-data.js';
+  import { isConf5 } from '$lib';
   import Box from '$lib/components/Box.svelte';
+  import { CONTENT } from '$lib/content.js';
 
-  const content = {
-    title: "II. Methodik",
-    backwardsTest: {
-      title: "Rückwärtstest-Prinzip",
-      description:
-        "Jede Mapping-Hypothese wird durch Rückwärtstests validiert: Ein bekanntes hebräisches oder aramäisches Wort wird nach dem vorgeschlagenen Mapping in EVA kodiert und im Voynich-Korpus gesucht. Bestätigung erfordert: (a) Vorkommen im Korpus, (b) semantisch plausible Position, (c) kontextuell passende Nachbarwörter.",
-		},
-		confidence: {
-			title: "Konfidenzskala",
-      stars: "Sterne",
-      label: "Bedeutung",
-      criteria: "Kriterien",
-    },
-    anchorFolios: {
-      title: "Anker-Folios",
-    },
-  };
+  const C = CONTENT.methodology;
 </script>
 
 <section class="section" id="methodology">
-  <h2>{content.title}</h2>
+  <h2>{C.title}</h2>
 
   <div class="methodology">
     <div class="methodology-grid">
       <div class="backward-test">
-        <h3>{content.backwardsTest.title}</h3>
-        <p>{content.backwardsTest.description}</p>
-			</div>
+        <h3>{C.backwardsTest.title}</h3>
+        <p>{C.backwardsTest.description}</p>
+      </div>
 
-			<div class="confidence">
-        <h3>{content.confidence.title}</h3>
+      <div class="confidence">
+        <h3>{C.confidence.title}</h3>
         <div class="table-wrap">
           <table class="dt">
             <thead>
               <tr>
-                <th>{content.confidence.stars}</th>
-                <th>{content.confidence.label}</th>
-                <th>{content.confidence.criteria}</th>
+                <th>{C.confidence.stars}</th>
+                <th>{C.confidence.label}</th>
+                <th>{C.confidence.criteria}</th>
               </tr>
             </thead>
             <tbody>
@@ -59,7 +44,7 @@
       </div>
 
       <div class="anchor-folios">
-        <h3>{content.anchorFolios.title}</h3>
+        <h3>{C.anchorFolios.title}</h3>
         {#each ANCHOR_FOLIOS as anchor (anchor.folio)}
           <div class="anchor-card">
             <Box variant="blue" title="{anchor.folio} — {anchor.subtitle}">
@@ -85,19 +70,19 @@
 
     & .methodology-grid {
       display: grid;
-			grid-template-columns: 1fr;
-			grid-template-rows: auto auto auto;
-			grid-template-areas: "backward"
-													 "confidence"
-													 "anchors";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "backward"
+                           "confidence"
+                           "anchors";
       justify-content: space-between;
       align-items: start;
       gap: 0 2rem;
       overflow: hidden;
 
-			& .backward-test { grid-area: backward; }
-			& .confidence { grid-area: confidence; }
-			& .anchor-folios { grid-area: anchors; }
+      & .backward-test { grid-area: backward; }
+      & .confidence { grid-area: confidence; }
+      & .anchor-folios { grid-area: anchors; }
 
       @container (max-width: 480px) {
         & .confidence table tr {
@@ -120,33 +105,33 @@
 
       @container (min-width: 960px) {
         grid-template-columns: minmax(240px, 480px) minmax(240px, 568px);
-				grid-template-rows: auto 1fr;
-				grid-template-areas:
-					"backward confidence"
-					"anchors anchors";
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+          "backward confidence"
+          "anchors anchors";
       }
 
       @container (min-width: 1280px) {
         grid-template-columns: minmax(240px, 568px) 1fr;
-				grid-template-areas:
-					"backward anchors"
-					"confidence anchors";
+        grid-template-areas:
+          "backward anchors"
+          "confidence anchors";
       }
     }
 
-		& .anchor-folios {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-			gap: 1rem;
+    & .anchor-folios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 1rem;
 
       @container (min-width: 960px) {
-				grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-			}
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      }
 
-			& h3 {
-				grid-column: 1 / -1;
-				margin-bottom: -0.8rem;
-			}
+      & h3 {
+        grid-column: 1 / -1;
+        margin-bottom: -0.8rem;
+      }
 
       & .anchor-card {
         & p {
@@ -171,6 +156,6 @@
         padding-left: 0.7rem;
         margin-top: 0.3rem;
       }
-		}
+    }
   }
 </style>

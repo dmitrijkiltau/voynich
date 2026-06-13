@@ -1,69 +1,70 @@
 <script>
-	import { STEM_WORDS, LEXICON_DERIVED } from '$lib';
+	import { STATS, STEM_WORDS, LEXICON_DERIVED } from '$lib';
 	import { getLexiconConfidence, getLexiconRules } from '$lib/lexicon-data.js';
 	import { GRAMMAR_PREFIXES, GRAMMAR_SUFFIXES } from '$lib/grammar-data.js';
+	import { CONTENT } from '$lib/content.js';
 
-	let { STATS, onInsert, filter = $bindable('') } = $props();
+	let { onInsert, filter = $bindable('') } = $props();
 
-	let searchText = $state('');
+	const C = CONTENT.lexicon;
 
 	const TABLES = [
 		{
 			id: 'stems',
-			title: 'A. Stammwörter',
+			title: C.tables.stems,
 			rows: STEM_WORDS.filter((/** @type {any} */ e) => !e.candidate),
 			columns: [
-				{ key: 'eva', label: 'EVA' },
-				{ key: 'heb', label: 'Hebräisch' },
-				{ key: 'de', label: 'Bedeutung' },
-				{ key: 'layer', label: 'Schicht' },
-				{ key: 'isAnchor', label: 'Anker' },
-				{ key: 'anchorFolio', label: 'Folio' },
-				{ key: 'rules', label: 'Regeln' },
-				{ key: 'confidenceStars', label: 'Konf.' },
+				{ key: 'eva',             label: C.columns.eva },
+				{ key: 'heb',             label: C.columns.heb },
+				{ key: 'de',              label: C.columns.de },
+				{ key: 'layer',           label: C.columns.layer },
+				{ key: 'isAnchor',        label: C.columns.isAnchor },
+				{ key: 'anchorFolio',     label: C.columns.anchorFolio },
+				{ key: 'rules',           label: C.columns.rules },
+				{ key: 'confidenceStars', label: C.columns.confidenceStars },
 			],
 		},
 		{
 			id: 'stems-candidates',
-			title: 'B. Stammwörter (R43 Kandidaten)',
+			title: C.tables.stemsCandidates,
 			rows: STEM_WORDS.filter((/** @type {any} */ e) => e.candidate),
 			columns: [
-				{ key: 'eva', label: 'EVA' },
-				{ key: 'heb', label: 'Hebräisch' },
-				{ key: 'de', label: 'Bedeutung' },
-				{ key: 'layer', label: 'Schicht' },
-				{ key: 'isAnchor', label: 'Anker' },
-				{ key: 'anchorFolio', label: 'Folio' },
-				{ key: 'rules', label: 'Regeln' },
-				{ key: 'confidenceStars', label: 'Konf.' },
+				{ key: 'eva',             label: C.columns.eva },
+				{ key: 'heb',             label: C.columns.heb },
+				{ key: 'de',              label: C.columns.de },
+				{ key: 'layer',           label: C.columns.layer },
+				{ key: 'isAnchor',        label: C.columns.isAnchor },
+				{ key: 'anchorFolio',     label: C.columns.anchorFolio },
+				{ key: 'rules',           label: C.columns.rules },
+				{ key: 'confidenceStars', label: C.columns.confidenceStars },
 			],
 		},
 		{
 			id: 'derived',
-			title: 'C. Abgeleitete Lexikon-Einträge',
+			title: C.tables.derived,
 			rows: LEXICON_DERIVED.filter((/** @type {any} */ e) => !e.candidate),
 			columns: [
-				{ key: 'eva', label: 'EVA' },
-				{ key: 'morph', label: 'Morph.' },
-				{ key: 'heb', label: 'Hebräisch' },
-				{ key: 'de', label: 'Bedeutung' },
-				{ key: 'evidence', label: 'Evidenz' },
-				{ key: 'rules', label: 'Regeln' },
-				{ key: 'confidenceStars', label: 'Konf.' },
+				{ key: 'eva',             label: C.columns.eva },
+				{ key: 'morph',           label: C.columns.morph },
+				{ key: 'heb',             label: C.columns.heb },
+				{ key: 'de',              label: C.columns.de },
+				{ key: 'evidence',        label: C.columns.evidence },
+				{ key: 'rules',           label: C.columns.rules },
+				{ key: 'confidenceStars', label: C.columns.confidenceStars },
 			],
 		},
 		{
 			id: 'derived-candidates',
-			title: 'D. Abgeleitete Lexikon-Einträge (R43 Kandidaten)',
+			title: C.tables.derivedCandidates,
 			rows: LEXICON_DERIVED.filter((/** @type {any} */ e) => e.candidate),
 			columns: [
-				{ key: 'eva', label: 'EVA' },
-				{ key: 'morph', label: 'Morph.' },
-				{ key: 'heb', label: 'Hebräisch' },
-				{ key: 'de', label: 'Bedeutung' },
-				{ key: 'evidence', label: 'Evidenz' },
-				{ key: 'rules', label: 'Regeln' },
-				{ key: 'confidenceStars', label: 'Konf.' },
+				{ key: 'eva',             label: C.columns.eva },
+				{ key: 'morph',           label: C.columns.morph },
+				{ key: 'heb',             label: C.columns.heb },
+				{ key: 'de',              label: C.columns.de },
+				{ key: 'evidence',        label: C.columns.evidence },
+				{ key: 'rules',           label: C.columns.rules },
+				{ key: 'confidenceStars', label: C.columns.confidenceStars },
 			],
 		},
 	];
@@ -121,6 +122,7 @@
 		}
 	}
 
+	let searchText = $state('');
 	let filterLayer  = $state('');
 	let filterRules  = $state('');
 	let filterStarsMin = $state(0);
@@ -194,8 +196,8 @@
 </script>
 
 <section class="section" id="lexicon">
-	<h2>V. Bestätigtes Lexikon ({STATS.lexicon} Einträge)</h2>
-	<p>Alle Einträge mit ★★★ oder höher, getrennt nach Stammwörtern und abgeleiteten Formen. Klick auf das EVA-Wort fügt es in die Eingabe ein.</p>
+	<h2>{C.title(STATS.lexicon)}</h2>
+	<p>{C.intro}</p>
 
 	<div class="lex-layout">
 		<aside class="lex-aside hidden-print">

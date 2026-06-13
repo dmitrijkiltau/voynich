@@ -2,23 +2,9 @@
 	import { OPEN_PROBLEMS } from '$lib/open-problems-data.js';
 	import Box from '$lib/components/Box.svelte';
 	import { slide } from 'svelte/transition';
+	import { CONTENT } from '$lib/content.js';
 
-	/** @type {Record<string, string>} */
-	const severityLabel = {
-		hoch:                'Schwere: hoch',
-		mittel:              'Schwere: mittel',
-		strukturell:         'Strukturell',
-		'niedrig-mittel':    'Schwere: niedrig–mittel',
-		'hoch (methodisch)': 'Schwere: hoch (methodisch)',
-	};
-
-	/** @type {Record<string, string>} */
-	const statusLabel = {
-		offen:       'offen',
-		ausstehend:  'ausstehend',
-		moratorium:  'Moratorium aktiv',
-		'gelöst':    'gelöst',
-	};
+	const C = CONTENT.openProblems;
 
 	/** @type {Record<string, boolean>} */
 	let openState = $state(
@@ -31,50 +17,59 @@
 	}
 </script>
 
-<div class="open-problems">
-	<Box variant="red" title="Methodischer Vorbehalt (v7.5)" class="audit-note">
-		<p>Das Mapping ist eine <strong>starke Lesehypothese</strong>, keine bewiesene Entzifferung. Die folgenden Probleme widersprechen der Hypothese nicht zwingend, müssen aber sichtbar bleiben. Interne Kohärenz beweist keine externe Gültigkeit.</p>
-	</Box>
+<section class="section" id="open-problems">
+	<h2>{C.title}</h2>
+	<p>{C.intro}</p>
 
-	<div class="problem-list">
-		{#each OPEN_PROBLEMS as p (p.id)}
-			<div class="problem-card" class:moratorium={p.status === 'moratorium'} class:is-closed={!openState[p.id]}>
-				<button class="problem-header" onclick={() => toggle(p.id)} aria-expanded={openState[p.id]}>
-					<span class="problem-id">{p.id}</span>
-					<span class="problem-title">{p.title}</span>
-					<span class="badge severity-{p.severity}">{severityLabel[p.severity] ?? p.severity}</span>
-					<span class="badge status-{p.status}">{statusLabel[p.status] ?? p.status}</span>
-					<span class="chevron" class:open={openState[p.id]}></span>
-				</button>
-				{#if openState[p.id]}
-					<div class="problem-body-wrap" transition:slide={{ duration: 180 }}>
-						<p class="problem-body">{p.problem}</p>
-						<div class="problem-hyp">
-							<span class="hyp-label">Arbeitshypothese:</span>
-							{p.hypothesis}
+	<div class="open-problems">
+		<Box variant="red" title={C.auditNote.title} class="audit-note">
+			<p>{@html C.auditNote.textHtml}</p>
+		</Box>
+
+		<div class="problem-list">
+			{#each OPEN_PROBLEMS as p (p.id)}
+				<div class="problem-card" class:moratorium={p.status === 'moratorium'} class:is-closed={!openState[p.id]}>
+					<button class="problem-header" onclick={() => toggle(p.id)} aria-expanded={openState[p.id]}>
+						<span class="problem-id">{p.id}</span>
+						<span class="problem-title">{p.title}</span>
+						<span class="badge severity-{p.severity}">{C.severity[p.severity] ?? p.severity}</span>
+						<span class="badge status-{p.status}">{C.status[p.status] ?? p.status}</span>
+						<span class="chevron" class:open={openState[p.id]}></span>
+					</button>
+					{#if openState[p.id]}
+						<div class="problem-body-wrap" transition:slide={{ duration: 180 }}>
+							<p class="problem-body">{p.problem}</p>
+							<div class="problem-hyp">
+								<span class="hyp-label">{C.workingHypothesisLabel}</span>
+								{p.hypothesis}
+							</div>
 						</div>
-					</div>
-				{/if}
-			</div>
-		{/each}
-	</div>
-
-	<Box variant="blue" title="Scheol-Verteilungsstatistik (v7.5 formalisiert)" class="scheol-stat">
-		<div class="table-wrap">
-			<table class="dt">
-				<thead>
-					<tr><th>Strukturposition</th><th>sheol/shol-Vorkommen</th><th>Andere Lexeme</th></tr>
-				</thead>
-				<tbody>
-					<tr><td>Zeilenende / Kolophon-Final</td><td><strong>&gt;85 % aller Belege</strong></td><td>or, dom, kaiim</td></tr>
-					<tr><td>Zeilenmitte (medial)</td><td>&lt;15 % — immer in Kompositum</td><td>—</td></tr>
-					<tr><td>Zeilenanfang</td><td><strong>0 %</strong></td><td>—</td></tr>
-				</tbody>
-			</table>
-			<p style="margin:.6rem 0 0;font-size:var(--text-sm);color:var(--ink-f)">Diese Verteilung ist nicht die eines zufällig platzierten Begriffs. Sie folgt präzise R6 (Zeilenabschluss sheol = Tod-Prognose) und R17 (shol apokor. medial / sheol Vollform final).</p>
+					{/if}
+				</div>
+			{/each}
 		</div>
-	</Box>
-</div>
+
+		<Box variant="blue" title={C.scheolBoxTitle} class="scheol-stat">
+			<div class="table-wrap">
+				<table class="dt">
+					<thead>
+						<tr>
+							<th>{C.scheolColumns.position}</th>
+							<th>{C.scheolColumns.sheol}</th>
+							<th>{C.scheolColumns.other}</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><td>Zeilenende / Kolophon-Final</td><td><strong>&gt;85 % aller Belege</strong></td><td>or, dom, kaiim</td></tr>
+						<tr><td>Zeilenmitte (medial)</td><td>&lt;15 % — immer in Kompositum</td><td>—</td></tr>
+						<tr><td>Zeilenanfang</td><td><strong>0 %</strong></td><td>—</td></tr>
+					</tbody>
+				</table>
+				<p style="margin:.6rem 0 0;font-size:var(--text-sm);color:var(--ink-f)">{C.scheolNote}</p>
+			</div>
+		</Box>
+	</div>
+</section>
 
 <style>
 	:global(.audit-note) {

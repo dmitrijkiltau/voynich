@@ -1,11 +1,14 @@
-﻿<script>
+<script>
 	import { STATS, RULES, RULES_CHANGELOG } from '$lib';
 	import { getLexiconConfidence } from '$lib/lexicon-data.js';
 	import Box from '$lib/components/Box.svelte';
+	import { CONTENT } from '$lib/content.js';
+
+	const C = CONTENT.grammarRules;
 </script>
 
 <section class="section" id="grammar-rules">
-	<h2>VII. Grammatikregeln</h2>
+	<h2>{C.title}</h2>
 
 	<p>
 		{RULES.length} Regeln gesamt: <strong>{STATS.validatedRules} validiert</strong> (≥ 2 unabhängige Belege)
@@ -18,7 +21,7 @@
 	</p>
 
 	<div class="updates-box hidden-print">
-		<Box variant="hl" title="Aufstufungen & Absorptionen — Versionshistorie">
+		<Box variant="hl" title={C.changelogTitle}>
 			<ul class="changelog">
 				{#each RULES_CHANGELOG.slice().reverse() as entry, index (index)}
 					<li><strong>{entry.version}</strong>: {@html entry.change}</li>
@@ -31,11 +34,11 @@
 		<table class="dt">
 			<thead>
 				<tr>
-					<th class="rule-id">#</th>
-					<th class="rule-focus">Regelfokus &amp; Name</th>
-					<th class="rule-syntax">Formale Syntax / Bedingung</th>
-					<th class="rule-evidence">Empirische Evidenz</th>
-					<th class="rule-conf">Konf.</th>
+					<th class="rule-id">{C.columns.id}</th>
+					<th class="rule-focus">{C.columns.focus}</th>
+					<th class="rule-syntax">{C.columns.syntax}</th>
+					<th class="rule-evidence">{C.columns.evidence}</th>
+					<th class="rule-conf">{C.columns.confidence}</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -132,7 +135,7 @@
 				& td {
 					border-bottom: 0;
 				}
-				
+
 				& .rule-syntax {
 					padding-top: 0;
 					padding-bottom: 0;
@@ -146,7 +149,7 @@
 
 		@container (min-width: 769px) {
 			overflow-x: auto;
-			
+
 			& thead {
 				& th.rule-id {
 					width: 4rem;
@@ -182,7 +185,7 @@
 
 				& tbody tr {
 					background: var(--parch);
-					
+
 					& td.rule-id {
 						z-index: 0;
 						background: var(--parch);

@@ -10,7 +10,7 @@ These are the instructions for updating the various sections of the project when
 
 When the user asks to update the summary section, follow these steps:
 
-1. Update the `content` array in `voynich-svelte/src/lib/components/SummarySection.svelte` with any new summary points or corrections to existing summary points.
+1. Update the `content` array in `voynich-svelte/src/lib/components/sections/SummarySection.svelte` with any new summary points or corrections to existing summary points.
 
 ### Updating the folio progress
 
@@ -26,7 +26,7 @@ When the user asks to update the folio progress, follow these steps:
 
 When the user asks to update the translator tool, follow these steps:
 
-1. Update the `EXAMPLES` array in `voynich-svelte/src/lib/components/TranslatorTool.svelte` with any new examples or corrections to existing examples.
+1. Update the `EXAMPLES` array in `voynich-svelte/src/lib/components/sections/TranslatorSection.svelte` with any new examples or corrections to existing examples.
 2. Make sure the translator tool is still up to date and implement the grammar rules and lexicon correctly.
 
 ### Updating the lexicon
@@ -60,7 +60,7 @@ When the user asks to update the references, follow these steps:
 
 When the user asks to update the gibberish test, follow these steps:
 
-1. Update the `TESTS` array in `voynich-svelte/src/lib/components/GibberishTest.svelte` with any new test cases or corrections to existing test cases.
+1. Update the `TESTS` array in `voynich-svelte/src/lib/components/sections/GibberishSection.svelte` with any new test cases or corrections to existing test cases.
 
 ### Updating the open problems
 
